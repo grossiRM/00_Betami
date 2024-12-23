@@ -1,1 +1,1 @@
-Msg: - Folders in continual update, seeking to rationalize the learning curve. 
+Folders in continual update, seeking to rationalize the learning curve. 
