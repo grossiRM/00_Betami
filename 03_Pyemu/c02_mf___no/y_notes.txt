@@ -1,0 +1,5 @@
+conda activate Flopy
+
+E:\15_REPOS\04_Flopy_Main\01_Flopy\.docs\Notebooks
+
+

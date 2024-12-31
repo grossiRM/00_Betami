@@ -1,0 +1,71 @@
+
+01	pred_csv = os.path.join('..', '..', 'models', 'daily_freyberg_mf6_truth',	"pred_data.csv")					daily_freyberg_mf6_truth
+
+02	t_d = os.path.join('..', 'models', 'freyberg_pstfrom_pest_setup')
+	pst = pyemu.Pst(os.path.join(t_d, 						'freyberg_mf6.pst'))		SUPRESSED ARCHIVE (!)
+
+03	E:\15_REPOS\01_GMDSI_notebooks\tutorials\part0_intro_to_pyemu\handling_files	prior_pe.jcb			
+
+	python forward_run.py	pm.pg1.sloc	freyberg_mp.mpsim	E:\15_REPOS\01_GMDSI_notebooks\models\					monthly_model_files_1lyr_newstress
+
+	freyberg_mp.mpend 	where? (outputfile)
+
+File design							'heads.csv' = = = 'sfr.csv' (!)
+		
+	    obs_sites = ['GAGE-1','TRGW-0-26-6','TRGW-2-26-6','TRGW-0-3-8','TRGW-2-3-8']
+
+		    obs_data = pd.DataFrame()
+		    obs_data = make_obsdata(meas_sfr, obs_data, obs_sites, noise_scale=None)
+		    obs_data = make_obsdata(meas_hds, obs_data, obs_sites, noise_scale=0.1)
+		    obs_data.columns=['site', 'time', 'value']
+		    obs_data.set_index('site', inplace=True)						(!)
+
+05	# instruction files
+
+**	def prep_pest(tmp_d):	good	freyberg6.rch	heads.csv = sfr.csv
+
+	# build lists of tpl, in, ins, and out files							(!) Important 				& headwater:4383.5','tailwater:4383.5
+	# build a control file
+					
+	OBS & Weights = obs_data.csv				MOD SEO					# restructure the obsevration data 	Needed
+
+15	def add_ppoints(tmp_d='freyberg_mf6'):								Pilot Points (!)
+
+16	###--add SFR params					PAR_SEN ?				freyberg6.sfr_perioddata_1.txt.tpl
+
+															'wel',['parval1', 'parlbnd', 'parubnd', 'scale']]		
+	hkpp.dat (!)	rchpp.dat (+/- ?!)
+
+------------------------------------------------------------------------------------------------------------------------------------------------ halfway through ----------------------
+
+E:\15_REPOS\01_GMDSI_notebooks\models\daily_model_files_newstress	\	freyberg6.sfr_perioddata_1.txt.tpl
+	
+freyberg6.npf_k_layer1.txt.tpl
+freyberg6.npf_k_layer2.txt
+freyberg6.npf_k_layer3.txt
+
+E:\15_REPOS\01_GMDSI_notebooks\models\daily_model_files_newstress	\	freyberg.rch.ref			['parval1','parlbnd','parubnd']]
+
+
+	geostats	k_layer1.txt
+	geostats	rch0_fac.txt					(!)	freyberg_pp.pst
+
+	Singular vector showing parameter contributions to 		(!)	singular vector
+
+    # Plot grid 
+    # you can plot BC cells using the plot_bc() 
+    mm.plot_bc('ghb')
+    mm.plot_bc('sfr')	= 	heads.csv	__________________	(!)
+    mm.plot_bc('wel')
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------ so far so good  ----------------------
+
+def prep_notebooks(rebuild_truth=True):						prep_notebooks
+
+def svd_enchilada(gwf, m_d):
+
+
+
+
+

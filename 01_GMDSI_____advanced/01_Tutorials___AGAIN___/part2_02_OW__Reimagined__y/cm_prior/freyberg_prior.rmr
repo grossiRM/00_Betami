@@ -1,0 +1,346 @@
+
+PANTHER master listening on socket:0.0.0.0:4004 (IPv4)
+running model 100 times
+12/28/24 14:45:36->waiting for agents to appear
+
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64057
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 socket:DESKTOP-AIRQM2M:64057 number of agents:1
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64058
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 socket:DESKTOP-AIRQM2M:64058 number of agents:2
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64059
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 socket:DESKTOP-AIRQM2M:64059 number of agents:3
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64060
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 socket:DESKTOP-AIRQM2M:64060 number of agents:4
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64061
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 socket:DESKTOP-AIRQM2M:64061 number of agents:5
+12/28/24 14:45:37->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 socket:DESKTOP-AIRQM2M:64057
+12/28/24 14:45:37->Sending run_id:0 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:0 concurrent:1)
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64062
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 socket:DESKTOP-AIRQM2M:64062 number of agents:6
+12/28/24 14:45:37->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 socket:DESKTOP-AIRQM2M:64058
+12/28/24 14:45:37->Sending run_id:1 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:1 concurrent:1)
+12/28/24 14:45:37->new connection from:DESKTOP-AIRQM2M:64063
+12/28/24 14:45:37->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 socket:DESKTOP-AIRQM2M:64063 number of agents:7
+12/28/24 14:45:38->new connection from:DESKTOP-AIRQM2M:64064
+12/28/24 14:45:38->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 socket:DESKTOP-AIRQM2M:64064 number of agents:8
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 socket:DESKTOP-AIRQM2M:64059
+12/28/24 14:45:38->Sending run_id:2 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:2 concurrent:1)
+12/28/24 14:45:38->new connection from:DESKTOP-AIRQM2M:64065
+12/28/24 14:45:38->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 socket:DESKTOP-AIRQM2M:64065 number of agents:9
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 socket:DESKTOP-AIRQM2M:64060
+12/28/24 14:45:38->Sending run_id:3 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:3 concurrent:1)
+12/28/24 14:45:38->new connection from:DESKTOP-AIRQM2M:64066
+12/28/24 14:45:38->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 socket:DESKTOP-AIRQM2M:64066 number of agents:10
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 socket:DESKTOP-AIRQM2M:64061
+12/28/24 14:45:38->Sending run_id:4 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:4 concurrent:1)
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 socket:DESKTOP-AIRQM2M:64062
+12/28/24 14:45:38->Sending run_id:5 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:5 concurrent:1)
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 socket:DESKTOP-AIRQM2M:64063
+12/28/24 14:45:38->Sending run_id:6 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:6 concurrent:1)
+12/28/24 14:45:38->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 socket:DESKTOP-AIRQM2M:64064
+12/28/24 14:45:38->Sending run_id:7 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:7 concurrent:1)
+12/28/24 14:45:39->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 socket:DESKTOP-AIRQM2M:64065
+12/28/24 14:45:39->Sending run_id:8 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:8 concurrent:1)
+12/28/24 14:45:39->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 socket:DESKTOP-AIRQM2M:64066
+12/28/24 14:45:39->Sending run_id:9 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:9 concurrent:1)
+12/28/24 14:45:43-> run_id:0 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0977167  avg_run_time:0.0977167 group_id:2  da_cycle:-9999   realization:0  worker_time:0.0958 concurrent:1
+12/28/24 14:45:43->run 0 processed
+12/28/24 14:45:43->Sending run_id:10 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:10 concurrent:1)
+12/28/24 14:45:43-> run_id:1 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0974667  avg_run_time:0.0975917 group_id:2  da_cycle:-9999   realization:1  worker_time:0.0958 concurrent:1
+12/28/24 14:45:43->run 1 processed
+12/28/24 14:45:43->Sending run_id:11 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:11 concurrent:1)
+12/28/24 14:45:44-> run_id:2 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0976833  avg_run_time:0.0976222 group_id:2  da_cycle:-9999   realization:2  worker_time:0.0957 concurrent:1
+12/28/24 14:45:44->run 2 processed
+12/28/24 14:45:44->Sending run_id:12 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:12 concurrent:1)
+12/28/24 14:45:44-> run_id:3 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0976  avg_run_time:0.0976167 group_id:2  da_cycle:-9999   realization:3  worker_time:0.0959 concurrent:1
+12/28/24 14:45:44->run 3 processed
+12/28/24 14:45:44->Sending run_id:13 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:13 concurrent:1)
+12/28/24 14:45:44-> run_id:4 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.09745  avg_run_time:0.0975833 group_id:2  da_cycle:-9999   realization:4  worker_time:0.09565 concurrent:1
+12/28/24 14:45:44->run 4 processed
+12/28/24 14:45:44->Sending run_id:14 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:14 concurrent:1)
+12/28/24 14:45:44-> run_id:5 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0978167  avg_run_time:0.0976222 group_id:2  da_cycle:-9999   realization:5  worker_time:0.0959 concurrent:1
+12/28/24 14:45:44->run 5 processed
+12/28/24 14:45:44->Sending run_id:15 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:15 concurrent:1)
+12/28/24 14:45:44-> run_id:6 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.09735  avg_run_time:0.0975833 group_id:2  da_cycle:-9999   realization:6  worker_time:0.0956333 concurrent:1
+12/28/24 14:45:44->run 6 processed
+12/28/24 14:45:44->Sending run_id:16 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:16 concurrent:1)
+12/28/24 14:45:44-> run_id:7 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.09725  avg_run_time:0.0975417 group_id:2  da_cycle:-9999   realization:7  worker_time:0.09565 concurrent:1
+12/28/24 14:45:44->run 7 processed
+12/28/24 14:45:44->Sending run_id:17 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:17 concurrent:1)
+12/28/24 14:45:44-> run_id:8 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0976167  avg_run_time:0.09755 group_id:2  da_cycle:-9999   realization:8  worker_time:0.0959 concurrent:1
+12/28/24 14:45:44->run 8 processed
+12/28/24 14:45:44->Sending run_id:18 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:18 concurrent:1)
+12/28/24 14:45:45-> run_id:9 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0977167  avg_run_time:0.0975667 group_id:2  da_cycle:-9999   realization:9  worker_time:0.0958 concurrent:1
+12/28/24 14:45:45->run 9 processed
+12/28/24 14:45:45->Sending run_id:19 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:19 concurrent:1)
+12/28/24 14:45:48-> run_id:10 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0874667  avg_run_time:0.0965417 group_id:2  da_cycle:-9999   realization:10  worker_time:0.07535 concurrent:1
+12/28/24 14:45:48->run 10 processed
+12/28/24 14:45:48->Sending run_id:20 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:20 concurrent:1)
+12/28/24 14:45:48-> run_id:11 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.08735  avg_run_time:0.09553 group_id:2  da_cycle:-9999   realization:11  worker_time:0.0753667 concurrent:1
+12/28/24 14:45:48->run 11 processed
+12/28/24 14:45:48->Sending run_id:21 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:21 concurrent:1)
+12/28/24 14:45:48-> run_id:12 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0876333  avg_run_time:0.094525 group_id:2  da_cycle:-9999   realization:12  worker_time:0.0757 concurrent:1
+12/28/24 14:45:48->run 12 processed
+12/28/24 14:45:48->Sending run_id:22 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:22 concurrent:1)
+12/28/24 14:45:49-> run_id:13 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0900333  avg_run_time:0.0937683 group_id:2  da_cycle:-9999   realization:13  worker_time:0.0806 concurrent:1
+12/28/24 14:45:49->run 13 processed
+12/28/24 14:45:49->Sending run_id:23 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:23 concurrent:1)
+12/28/24 14:45:49-> run_id:14 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0900167  avg_run_time:0.093025 group_id:2  da_cycle:-9999   realization:14  worker_time:0.0807167 concurrent:1
+12/28/24 14:45:49->run 14 processed
+12/28/24 14:45:49->Sending run_id:24 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:24 concurrent:1)
+12/28/24 14:45:49-> run_id:15 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.09015  avg_run_time:0.0922583 group_id:2  da_cycle:-9999   realization:15  worker_time:0.0806 concurrent:1
+12/28/24 14:45:49->run 15 processed
+12/28/24 14:45:49->Sending run_id:25 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:25 concurrent:1)
+12/28/24 14:45:49-> run_id:16 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0899167  avg_run_time:0.091515 group_id:2  da_cycle:-9999   realization:16  worker_time:0.0806 concurrent:1
+12/28/24 14:45:49->run 16 processed
+12/28/24 14:45:49->Sending run_id:26 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:26 concurrent:1)
+12/28/24 14:45:49-> run_id:17 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.08985  avg_run_time:0.090775 group_id:2  da_cycle:-9999   realization:17  worker_time:0.0806 concurrent:1
+12/28/24 14:45:49->run 17 processed
+12/28/24 14:45:49->Sending run_id:27 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:27 concurrent:1)
+12/28/24 14:45:49-> run_id:19 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.08775  avg_run_time:0.0897783 group_id:2  da_cycle:-9999   realization:19  worker_time:0.07585 concurrent:1
+12/28/24 14:45:49->run 19 processed
+12/28/24 14:45:49->Sending run_id:28 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:28 concurrent:1)
+12/28/24 14:45:49-> run_id:18 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0900333  avg_run_time:0.08902 group_id:2  da_cycle:-9999   realization:18  worker_time:0.0806 concurrent:1
+12/28/24 14:45:49->run 18 processed
+12/28/24 14:45:49->Sending run_id:29 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:29 concurrent:1)
+12/28/24 14:45:52-> run_id:20 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0799167  avg_run_time:0.088265 group_id:2  da_cycle:-9999   realization:20  worker_time:0.0704333 concurrent:1
+12/28/24 14:45:52->run 20 processed
+12/28/24 14:45:52->Sending run_id:30 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:30 concurrent:1)
+12/28/24 14:45:53-> run_id:21 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0825  avg_run_time:0.08778 group_id:2  da_cycle:-9999   realization:21  worker_time:0.0757 concurrent:1
+12/28/24 14:45:53->run 21 processed
+12/28/24 14:45:53->Sending run_id:31 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:31 concurrent:1)
+12/28/24 14:45:53-> run_id:22 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.08235  avg_run_time:0.0872517 group_id:2  da_cycle:-9999   realization:22  worker_time:0.0752 concurrent:1
+12/28/24 14:45:53->run 22 processed
+12/28/24 14:45:53->Sending run_id:32 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:32 concurrent:1)
+12/28/24 14:45:54-> run_id:23 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0863  avg_run_time:0.0868783 group_id:2  da_cycle:-9999   realization:23  worker_time:0.0807 concurrent:1
+12/28/24 14:45:54->run 23 processed
+12/28/24 14:45:54->Sending run_id:33 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:33 concurrent:1)
+12/28/24 14:45:54-> run_id:24 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0862333  avg_run_time:0.0865 group_id:2  da_cycle:-9999   realization:24  worker_time:0.0806 concurrent:1
+12/28/24 14:45:54->run 24 processed
+12/28/24 14:45:54->Sending run_id:34 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:34 concurrent:1)
+12/28/24 14:45:54-> run_id:25 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0863667  avg_run_time:0.0861217 group_id:2  da_cycle:-9999   realization:25  worker_time:0.0807 concurrent:1
+12/28/24 14:45:54->run 25 processed
+12/28/24 14:45:54->Sending run_id:35 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:35 concurrent:1)
+12/28/24 14:45:54-> run_id:26 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.08625  avg_run_time:0.085755 group_id:2  da_cycle:-9999   realization:26  worker_time:0.0807 concurrent:1
+12/28/24 14:45:54->run 26 processed
+12/28/24 14:45:54->Sending run_id:36 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:36 concurrent:1)
+12/28/24 14:45:54-> run_id:27 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.0862  avg_run_time:0.08539 group_id:2  da_cycle:-9999   realization:27  worker_time:0.0805833 concurrent:1
+12/28/24 14:45:54->run 27 processed
+12/28/24 14:45:54->Sending run_id:37 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:37 concurrent:1)
+12/28/24 14:45:54-> run_id:28 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.08515  avg_run_time:0.08513 group_id:2  da_cycle:-9999   realization:28  worker_time:0.0807 concurrent:1
+12/28/24 14:45:54->run 28 processed
+12/28/24 14:45:54->Sending run_id:38 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:38 concurrent:1)
+12/28/24 14:45:54-> run_id:29 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0863  avg_run_time:0.0847567 group_id:2  da_cycle:-9999   realization:29  worker_time:0.0807 concurrent:1
+12/28/24 14:45:54->run 29 processed
+12/28/24 14:45:54->Sending run_id:39 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:39 concurrent:1)
+12/28/24 14:45:57-> run_id:30 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0762167  avg_run_time:0.0843867 group_id:2  da_cycle:-9999   realization:30  worker_time:0.0706833 concurrent:1
+12/28/24 14:45:57->run 30 processed
+12/28/24 14:45:57->Sending run_id:40 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:40 concurrent:1)
+12/28/24 14:45:57-> run_id:31 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0774  avg_run_time:0.0838767 group_id:2  da_cycle:-9999   realization:31  worker_time:0.0703333 concurrent:1
+12/28/24 14:45:57->run 31 processed
+12/28/24 14:45:57->Sending run_id:41 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:41 concurrent:1)
+12/28/24 14:45:57-> run_id:32 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.07745  avg_run_time:0.0833867 group_id:2  da_cycle:-9999   realization:32  worker_time:0.0705833 concurrent:1
+12/28/24 14:45:57->run 32 processed
+12/28/24 14:45:57->Sending run_id:42 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:42 concurrent:1)
+12/28/24 14:45:59-> run_id:33 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0844333  avg_run_time:0.0832 group_id:2  da_cycle:-9999   realization:33  worker_time:0.0806833 concurrent:1
+12/28/24 14:45:59->run 33 processed
+12/28/24 14:45:59->Sending run_id:43 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:43 concurrent:1)
+12/28/24 14:45:59-> run_id:34 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0845333  avg_run_time:0.08303 group_id:2  da_cycle:-9999   realization:34  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 34 processed
+12/28/24 14:45:59->Sending run_id:44 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:44 concurrent:1)
+12/28/24 14:45:59-> run_id:35 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0845833  avg_run_time:0.0828517 group_id:2  da_cycle:-9999   realization:35  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 35 processed
+12/28/24 14:45:59->Sending run_id:45 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:45 concurrent:1)
+12/28/24 14:45:59-> run_id:36 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0845333  avg_run_time:0.08268 group_id:2  da_cycle:-9999   realization:36  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 36 processed
+12/28/24 14:45:59->Sending run_id:46 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:46 concurrent:1)
+12/28/24 14:45:59-> run_id:37 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.0845  avg_run_time:0.08251 group_id:2  da_cycle:-9999   realization:37  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 37 processed
+12/28/24 14:45:59->Sending run_id:47 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:47 concurrent:1)
+12/28/24 14:45:59-> run_id:38 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0839833  avg_run_time:0.0823933 group_id:2  da_cycle:-9999   realization:38  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 38 processed
+12/28/24 14:45:59->Sending run_id:48 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:48 concurrent:1)
+12/28/24 14:45:59-> run_id:39 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0845333  avg_run_time:0.0822167 group_id:2  da_cycle:-9999   realization:39  worker_time:0.0809333 concurrent:1
+12/28/24 14:45:59->run 39 processed
+12/28/24 14:45:59->Sending run_id:49 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:49 concurrent:1)
+12/28/24 14:46:01-> run_id:40 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.07435  avg_run_time:0.08203 group_id:2  da_cycle:-9999   realization:40  worker_time:0.0706333 concurrent:1
+12/28/24 14:46:01->run 40 processed
+12/28/24 14:46:01->Sending run_id:50 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:50 concurrent:1)
+12/28/24 14:46:01-> run_id:41 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0749333  avg_run_time:0.0817833 group_id:2  da_cycle:-9999   realization:41  worker_time:0.0706333 concurrent:1
+12/28/24 14:46:01->run 41 processed
+12/28/24 14:46:01->Sending run_id:51 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:51 concurrent:1)
+12/28/24 14:46:02-> run_id:42 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0752667  avg_run_time:0.081565 group_id:2  da_cycle:-9999   realization:42  worker_time:0.0712333 concurrent:1
+12/28/24 14:46:02->run 42 processed
+12/28/24 14:46:02->Sending run_id:52 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:52 concurrent:1)
+12/28/24 14:46:03-> run_id:43 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0809333  avg_run_time:0.081215 group_id:2  da_cycle:-9999   realization:43  worker_time:0.07555 concurrent:1
+12/28/24 14:46:03->run 43 processed
+12/28/24 14:46:03->Sending run_id:53 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:53 concurrent:1)
+12/28/24 14:46:04-> run_id:46 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0809833  avg_run_time:0.08086 group_id:2  da_cycle:-9999   realization:46  worker_time:0.0755667 concurrent:1
+12/28/24 14:46:04->run 46 processed
+12/28/24 14:46:04->Sending run_id:54 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:54 concurrent:1)
+12/28/24 14:46:04-> run_id:44 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0838  avg_run_time:0.0807867 group_id:2  da_cycle:-9999   realization:44  worker_time:0.0812 concurrent:1
+12/28/24 14:46:04->run 44 processed
+12/28/24 14:46:04->Sending run_id:55 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:55 concurrent:1)
+12/28/24 14:46:04-> run_id:45 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0835167  avg_run_time:0.08068 group_id:2  da_cycle:-9999   realization:45  worker_time:0.0805667 concurrent:1
+12/28/24 14:46:04->run 45 processed
+12/28/24 14:46:04->Sending run_id:56 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:56 concurrent:1)
+12/28/24 14:46:04-> run_id:49 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0818  avg_run_time:0.0804067 group_id:2  da_cycle:-9999   realization:49  worker_time:0.0772333 concurrent:1
+12/28/24 14:46:04->run 49 processed
+12/28/24 14:46:04->Sending run_id:57 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:57 concurrent:1)
+12/28/24 14:46:04-> run_id:47 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.08375  avg_run_time:0.0803317 group_id:2  da_cycle:-9999   realization:47  worker_time:0.0812 concurrent:1
+12/28/24 14:46:04->run 47 processed
+12/28/24 14:46:04->Sending run_id:58 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:58 concurrent:1)
+12/28/24 14:46:04-> run_id:48 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0832167  avg_run_time:0.080255 group_id:2  da_cycle:-9999   realization:48  worker_time:0.0805667 concurrent:1
+12/28/24 14:46:04->run 48 processed
+12/28/24 14:46:04->Sending run_id:59 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:59 concurrent:1)
+12/28/24 14:46:06-> run_id:50 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0759667  avg_run_time:0.0804167 group_id:2  da_cycle:-9999   realization:50  worker_time:0.0757167 concurrent:1
+12/28/24 14:46:06->run 50 processed
+12/28/24 14:46:06->Sending run_id:60 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:60 concurrent:1)
+12/28/24 14:46:06-> run_id:51 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0762667  avg_run_time:0.08055 group_id:2  da_cycle:-9999   realization:51  worker_time:0.0757167 concurrent:1
+12/28/24 14:46:06->run 51 processed
+12/28/24 14:46:06->Sending run_id:61 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:61 concurrent:1)
+12/28/24 14:46:06-> run_id:52 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0762833  avg_run_time:0.0806517 group_id:2  da_cycle:-9999   realization:52  worker_time:0.07545 concurrent:1
+12/28/24 14:46:06->run 52 processed
+12/28/24 14:46:06->Sending run_id:62 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:62 concurrent:1)
+12/28/24 14:46:08-> run_id:53 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0791167  avg_run_time:0.08047 group_id:2  da_cycle:-9999   realization:53  worker_time:0.0754167 concurrent:1
+12/28/24 14:46:08->run 53 processed
+12/28/24 14:46:08->Sending run_id:63 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:63 concurrent:1)
+12/28/24 14:46:09-> run_id:54 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.08165  avg_run_time:0.0805367 group_id:2  da_cycle:-9999   realization:54  worker_time:0.08045 concurrent:1
+12/28/24 14:46:09->run 54 processed
+12/28/24 14:46:09->Sending run_id:64 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:64 concurrent:1)
+12/28/24 14:46:09-> run_id:55 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0830667  avg_run_time:0.0804633 group_id:2  da_cycle:-9999   realization:55  worker_time:0.08045 concurrent:1
+12/28/24 14:46:09->run 55 processed
+12/28/24 14:46:09->Sending run_id:65 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:65 concurrent:1)
+12/28/24 14:46:09-> run_id:56 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0829167  avg_run_time:0.0804033 group_id:2  da_cycle:-9999   realization:56  worker_time:0.0804333 concurrent:1
+12/28/24 14:46:09->run 56 processed
+12/28/24 14:46:09->Sending run_id:66 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:66 concurrent:1)
+12/28/24 14:46:09-> run_id:57 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.08205  avg_run_time:0.0804283 group_id:2  da_cycle:-9999   realization:57  worker_time:0.0804333 concurrent:1
+12/28/24 14:46:09->run 57 processed
+12/28/24 14:46:09->Sending run_id:67 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:67 concurrent:1)
+12/28/24 14:46:09-> run_id:58 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.08315  avg_run_time:0.0803683 group_id:2  da_cycle:-9999   realization:58  worker_time:0.0807 concurrent:1
+12/28/24 14:46:09->run 58 processed
+12/28/24 14:46:09->Sending run_id:68 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:68 concurrent:1)
+12/28/24 14:46:09-> run_id:59 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0827333  avg_run_time:0.08032 group_id:2  da_cycle:-9999   realization:59  worker_time:0.08045 concurrent:1
+12/28/24 14:46:09->run 59 processed
+12/28/24 14:46:09->Sending run_id:69 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:69 concurrent:1)
+12/28/24 14:46:10-> run_id:60 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0788833  avg_run_time:0.0806117 group_id:2  da_cycle:-9999   realization:60  worker_time:0.0798167 concurrent:1
+12/28/24 14:46:10->run 60 processed
+12/28/24 14:46:10->Sending run_id:70 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:70 concurrent:1)
+12/28/24 14:46:11-> run_id:61 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.07905  avg_run_time:0.08089 group_id:2  da_cycle:-9999   realization:61  worker_time:0.0798833 concurrent:1
+12/28/24 14:46:11->run 61 processed
+12/28/24 14:46:11-> run_id:62 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0776833  avg_run_time:0.08103 group_id:2  da_cycle:-9999   realization:62  worker_time:0.0763333 concurrent:1
+12/28/24 14:46:11->run 62 processed
+12/28/24 14:46:11->Sending run_id:71 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:71 concurrent:1)
+12/28/24 14:46:11->Sending run_id:72 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:72 concurrent:1)
+12/28/24 14:46:13-> run_id:63 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0808  avg_run_time:0.0811983 group_id:2  da_cycle:-9999   realization:63  worker_time:0.0806167 concurrent:1
+12/28/24 14:46:13->run 63 processed
+12/28/24 14:46:13->Sending run_id:73 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:73 concurrent:1)
+12/28/24 14:46:14-> run_id:64 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0846667  avg_run_time:0.0815 group_id:2  da_cycle:-9999   realization:64  worker_time:0.0858167 concurrent:1
+12/28/24 14:46:14->run 64 processed
+12/28/24 14:46:14->Sending run_id:74 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:74 concurrent:1)
+12/28/24 14:46:14-> run_id:65 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0855  avg_run_time:0.0817433 group_id:2  da_cycle:-9999   realization:65  worker_time:0.0860833 concurrent:1
+12/28/24 14:46:14->run 65 processed
+12/28/24 14:46:14->Sending run_id:75 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:75 concurrent:1)
+12/28/24 14:46:14-> run_id:66 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0853  avg_run_time:0.0819817 group_id:2  da_cycle:-9999   realization:66  worker_time:0.0858167 concurrent:1
+12/28/24 14:46:14->run 66 processed
+12/28/24 14:46:14->Sending run_id:76 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:76 concurrent:1)
+12/28/24 14:46:14-> run_id:67 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0848167  avg_run_time:0.0822583 group_id:2  da_cycle:-9999   realization:67  worker_time:0.0858667 concurrent:1
+12/28/24 14:46:14->run 67 processed
+12/28/24 14:46:14->Sending run_id:77 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:77 concurrent:1)
+12/28/24 14:46:14-> run_id:69 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0852333  avg_run_time:0.0825083 group_id:2  da_cycle:-9999   realization:69  worker_time:0.0858667 concurrent:1
+12/28/24 14:46:14->run 69 processed
+12/28/24 14:46:14-> run_id:68 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.0856167  avg_run_time:0.082755 group_id:2  da_cycle:-9999   realization:68  worker_time:0.0861333 concurrent:1
+12/28/24 14:46:14->run 68 processed
+12/28/24 14:46:14->Sending run_id:78 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:78 concurrent:1)
+12/28/24 14:46:14->Sending run_id:79 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:79 concurrent:1)
+12/28/24 14:46:16-> run_id:70 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.08125  avg_run_time:0.0829917 group_id:2  da_cycle:-9999   realization:70  worker_time:0.08175 concurrent:1
+12/28/24 14:46:16->run 70 processed
+12/28/24 14:46:16->Sending run_id:80 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:80 concurrent:1)
+12/28/24 14:46:16-> run_id:72 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0770333  avg_run_time:0.0829267 group_id:2  da_cycle:-9999   realization:72  worker_time:0.0763667 concurrent:1
+12/28/24 14:46:16->run 72 processed
+12/28/24 14:46:16-> run_id:71 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0779333  avg_run_time:0.082815 group_id:2  da_cycle:-9999   realization:71  worker_time:0.0766333 concurrent:1
+12/28/24 14:46:16->run 71 processed
+12/28/24 14:46:16->Sending run_id:81 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:81 concurrent:1)
+12/28/24 14:46:16->Sending run_id:82 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:82 concurrent:1)
+12/28/24 14:46:17-> run_id:73 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0767333  avg_run_time:0.0824083 group_id:2  da_cycle:-9999   realization:73  worker_time:0.0707167 concurrent:1
+12/28/24 14:46:17->run 73 processed
+12/28/24 14:46:17->Sending run_id:83 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:83 concurrent:1)
+12/28/24 14:46:19-> run_id:75 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.08165  avg_run_time:0.0820233 group_id:2  da_cycle:-9999   realization:75  worker_time:0.0758833 concurrent:1
+12/28/24 14:46:19->run 75 processed
+12/28/24 14:46:19->Sending run_id:84 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:84 concurrent:1)
+12/28/24 14:46:19-> run_id:76 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0815333  avg_run_time:0.0816467 group_id:2  da_cycle:-9999   realization:76  worker_time:0.0759 concurrent:1
+12/28/24 14:46:19->run 76 processed
+12/28/24 14:46:19->Sending run_id:85 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:85 concurrent:1)
+12/28/24 14:46:19-> run_id:74 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0837333  avg_run_time:0.0815533 group_id:2  da_cycle:-9999   realization:74  worker_time:0.0809167 concurrent:1
+12/28/24 14:46:19->run 74 processed
+12/28/24 14:46:19->Sending run_id:86 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:86 concurrent:1)
+12/28/24 14:46:19-> run_id:77 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0836  avg_run_time:0.0814317 group_id:2  da_cycle:-9999   realization:77  worker_time:0.0808167 concurrent:1
+12/28/24 14:46:19->run 77 processed
+12/28/24 14:46:19->Sending run_id:87 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:87 concurrent:1)
+12/28/24 14:46:19-> run_id:78 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0838167  avg_run_time:0.08129 group_id:2  da_cycle:-9999   realization:78  worker_time:0.0807333 concurrent:1
+12/28/24 14:46:19->run 78 processed
+12/28/24 14:46:19-> run_id:79 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.084  avg_run_time:0.0811283 group_id:2  da_cycle:-9999   realization:79  worker_time:0.0807333 concurrent:1
+12/28/24 14:46:19->run 79 processed
+12/28/24 14:46:19->Sending run_id:88 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:88 concurrent:1)
+12/28/24 14:46:19->Sending run_id:89 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:89 concurrent:1)
+12/28/24 14:46:20-> run_id:80 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0794667  avg_run_time:0.08095 group_id:2  da_cycle:-9999   realization:80  worker_time:0.0758167 concurrent:1
+12/28/24 14:46:20->run 80 processed
+12/28/24 14:46:20->Sending run_id:90 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0 group_id:2  da_cycle:-9999   realization:90 concurrent:1)
+12/28/24 14:46:21-> run_id:81 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0798667  avg_run_time:0.0812333 group_id:2  da_cycle:-9999   realization:81  worker_time:0.0808333 concurrent:1
+12/28/24 14:46:21->run 81 processed
+12/28/24 14:46:21-> run_id:82 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0803333  avg_run_time:0.0814733 group_id:2  da_cycle:-9999   realization:82  worker_time:0.0808333 concurrent:1
+12/28/24 14:46:21->run 82 processed
+12/28/24 14:46:21->Sending run_id:91 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2 group_id:2  da_cycle:-9999   realization:91 concurrent:1)
+12/28/24 14:46:21->Sending run_id:92 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1 group_id:2  da_cycle:-9999   realization:92 concurrent:1)
+12/28/24 14:46:22-> run_id:83 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0746333  avg_run_time:0.0812633 group_id:2  da_cycle:-9999   realization:83  worker_time:0.07095 concurrent:1
+12/28/24 14:46:22->run 83 processed
+12/28/24 14:46:22->Sending run_id:93 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3 group_id:2  da_cycle:-9999   realization:93 concurrent:1)
+12/28/24 14:46:23-> run_id:84 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0796333  avg_run_time:0.0810617 group_id:2  da_cycle:-9999   realization:84  worker_time:0.0757167 concurrent:1
+12/28/24 14:46:23->run 84 processed
+12/28/24 14:46:23->Sending run_id:94 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4 group_id:2  da_cycle:-9999   realization:94 concurrent:1)
+12/28/24 14:46:23-> run_id:85 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.0796  avg_run_time:0.0808683 group_id:2  da_cycle:-9999   realization:85  worker_time:0.0757167 concurrent:1
+12/28/24 14:46:23->run 85 processed
+12/28/24 14:46:23->Sending run_id:95 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5 group_id:2  da_cycle:-9999   realization:95 concurrent:1)
+12/28/24 14:46:23-> run_id:86 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.0805667  avg_run_time:0.0805517 group_id:2  da_cycle:-9999   realization:86  worker_time:0.0757667 concurrent:1
+12/28/24 14:46:23->run 86 processed
+12/28/24 14:46:23->Sending run_id:96 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6 group_id:2  da_cycle:-9999   realization:96 concurrent:1)
+12/28/24 14:46:24-> run_id:87 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0806333  avg_run_time:0.080255 group_id:2  da_cycle:-9999   realization:87  worker_time:0.0758167 concurrent:1
+12/28/24 14:46:24->run 87 processed
+12/28/24 14:46:24->Sending run_id:97 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8 group_id:2  da_cycle:-9999   realization:97 concurrent:1)
+12/28/24 14:46:24-> run_id:88 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.08075  avg_run_time:0.0799483 group_id:2  da_cycle:-9999   realization:88  worker_time:0.0758167 concurrent:1
+12/28/24 14:46:24->run 88 processed
+12/28/24 14:46:24-> run_id:89 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.08085  avg_run_time:0.0796333 group_id:2  da_cycle:-9999   realization:89  worker_time:0.0758167 concurrent:1
+12/28/24 14:46:24->run 89 processed
+12/28/24 14:46:24->Sending run_id:98 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9 group_id:2  da_cycle:-9999   realization:98 concurrent:1)
+12/28/24 14:46:24->Sending run_id:99 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7 group_id:2  da_cycle:-9999   realization:BASE concurrent:1)
+12/28/24 14:46:25-> run_id:90 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_0  run_time:0.0785333  avg_run_time:0.07954 group_id:2  da_cycle:-9999   realization:90  worker_time:0.0757167 concurrent:1
+12/28/24 14:46:25->run 90 processed
+12/28/24 14:46:25-> run_id:91 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_2  run_time:0.0788333  avg_run_time:0.0794367 group_id:2  da_cycle:-9999   realization:91  worker_time:0.0759667 concurrent:1
+12/28/24 14:46:25->run 91 processed
+12/28/24 14:46:25-> run_id:92 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_1  run_time:0.0790667  avg_run_time:0.07931 group_id:2  da_cycle:-9999   realization:92  worker_time:0.0759667 concurrent:1
+12/28/24 14:46:25->run 92 processed
+12/28/24 14:46:26-> run_id:93 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_3  run_time:0.0763167  avg_run_time:0.0794783 group_id:2  da_cycle:-9999   realization:93  worker_time:0.0760333 concurrent:1
+12/28/24 14:46:26->run 93 processed
+12/28/24 14:46:28-> run_id:94 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_4  run_time:0.0761667  avg_run_time:0.0791317 group_id:2  da_cycle:-9999   realization:94  worker_time:0.0708167 concurrent:1
+12/28/24 14:46:28->run 94 processed
+12/28/24 14:46:28-> run_id:95 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_5  run_time:0.07615  avg_run_time:0.0787867 group_id:2  da_cycle:-9999   realization:95  worker_time:0.0710167 concurrent:1
+12/28/24 14:46:28->run 95 processed
+12/28/24 14:46:28-> run_id:96 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_6  run_time:0.07645  avg_run_time:0.078375 group_id:2  da_cycle:-9999   realization:96  worker_time:0.0707167 concurrent:1
+12/28/24 14:46:28->run 96 processed
+12/28/24 14:46:28-> run_id:97 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_8  run_time:0.0765833  avg_run_time:0.07797 group_id:2  da_cycle:-9999   realization:97  worker_time:0.0707 concurrent:1
+12/28/24 14:46:28->run 97 processed
+12/28/24 14:46:28-> run_id:99 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_7  run_time:0.0766833  avg_run_time:0.0775533 group_id:2  da_cycle:-9999   realization:base  worker_time:0.0707 concurrent:1
+12/28/24 14:46:28->run 99 processed
+12/28/24 14:46:28-> run_id:98 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__y\worker_9  run_time:0.0766667  avg_run_time:0.077145 group_id:2  da_cycle:-9999   realization:98  worker_time:0.0707 concurrent:1
+12/28/24 14:46:28->run 98 processed
+
+---------------------
+   100 runs complete :  0 runs failed
+   0.0771 avg run time (min) : 0.915 run mgr time (min)
+   10 agents connected
+
+
+
+12/28/24 14:46:31->Started idle ping thread.
+12/28/24 14:46:31->Panther idle ping thread resumed.
+12/28/24 14:46:32->Stopped idle ping thread, as Panther manager is shutting down.

@@ -1,0 +1,8 @@
+2024-12-28 14:51:07.216403 starting: opening PstFrom.log for logging
+2024-12-28 14:51:07.216567 starting PstFrom process
+2024-12-28 14:51:07.216668 starting: setting up dirs
+2024-12-28 14:51:07.216856 starting: removing existing new_d 'Beta2_02_template'
+2024-12-28 14:51:07.237922 finished: removing existing new_d 'Beta2_02_template' took: 0:00:00.021066
+2024-12-28 14:51:07.238015 starting: copying original_d '..\..\models\monthly_model_files_1lyr_newstress' to new_d 'Beta2_02_template'
+2024-12-28 14:51:07.311751 finished: copying original_d '..\..\models\monthly_model_files_1lyr_newstress' to new_d 'Beta2_02_template' took: 0:00:00.073736
+2024-12-28 14:51:07.312466 finished: setting up dirs took: 0:00:00.095798

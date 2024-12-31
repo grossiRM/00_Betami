@@ -1,0 +1,27 @@
+conda activate gmdsitut
+conda activate pyclass
+conda activate flopy_example
+conda activate Flopy			pleasant-lake-flopy-example
+jupyter notebook
+
+
+---------------------------------------------------------------------------------------
+git init
+git add .
+git commit -m "001"
+git push origin 
+---------------------------------------------------------------------------------------
+EnvironmentS 
+	Anaconda Prompt
+		conda env create -f environment_gmdsitut.yml
+		conda env create -f environment_pyclass.yml
+		conda env create -f environment_Flopy_Example.yml
+		conda env create -f environment_04_Flopy.yml
+		conda env create -f environment_api_demo.yml
+
+---------------------------------------------------------------------------------------
+OPEN GIT BASH HERE
+CTRL INSERT
+CTRL C
+---------------------------------------------------------------------------------------
+https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
