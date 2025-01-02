@@ -1,0 +1,9 @@
+Regression
+Bayes
+intro Freyberg
+Choose
+EVA
+Geostats
+intro Pyemu
+SVD
+Trial and Error
