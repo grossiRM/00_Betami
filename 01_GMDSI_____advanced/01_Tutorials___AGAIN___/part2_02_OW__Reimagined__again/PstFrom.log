@@ -1,0 +1,30 @@
+2025-01-02 14:52:39.606010 starting: opening PstFrom.log for logging
+2025-01-02 14:52:39.606234 starting PstFrom process
+2025-01-02 14:52:39.606382 starting: setting up dirs
+2025-01-02 14:52:39.606596 starting: removing existing new_d 'a2_Pstfrom_Fienen_new_folder'
+2025-01-02 14:52:39.634229 finished: removing existing new_d 'a2_Pstfrom_Fienen_new_folder' took: 0:00:00.027633
+2025-01-02 14:52:39.634312 starting: copying original_d '..\..\models\monthly_model_files_1lyr_newstress' to new_d 'a2_Pstfrom_Fienen_new_folder'
+2025-01-02 14:52:39.704212 finished: copying original_d '..\..\models\monthly_model_files_1lyr_newstress' to new_d 'a2_Pstfrom_Fienen_new_folder' took: 0:00:00.069900
+2025-01-02 14:52:39.705021 finished: setting up dirs took: 0:00:00.098639
+2025-01-02 14:52:40.773924 transform was not passed, setting default tranform to 'log'
+2025-01-02 14:52:40.774347 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt']
+2025-01-02 14:52:40.774561 starting: loading array a2_Pstfrom_Fienen_new_folder\freyberg6.npf_k_layer1.txt
+2025-01-02 14:52:40.784528 finished: loading array a2_Pstfrom_Fienen_new_folder\freyberg6.npf_k_layer1.txt took: 0:00:00.009967
+2025-01-02 14:52:40.784599 loaded array '..\..\models\monthly_model_files_1lyr_newstress\freyberg6.npf_k_layer1.txt' of shape (40, 20)
+2025-01-02 14:52:40.787068 starting: writing array-style template file 'a2_Pstfrom_Fienen_new_folder\p_inst0_grid.csv.tpl'
+2025-01-02 14:52:40.787149 starting: writing template file a2_Pstfrom_Fienen_new_folder\p_inst0_grid.csv.tpl for ['p_inst:0']
+2025-01-02 14:52:40.799616 finished: writing template file a2_Pstfrom_Fienen_new_folder\p_inst0_grid.csv.tpl for ['p_inst:0'] took: 0:00:00.012467
+2025-01-02 14:52:40.799672 starting: writing array-based template file 'a2_Pstfrom_Fienen_new_folder\p_inst0_grid.csv.tpl'
+2025-01-02 14:52:40.806201 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt'] took: 0:00:00.031854
+2025-01-02 14:52:41.960348 starting: adding observations from output file heads.csv
+2025-01-02 14:52:41.960642 starting: adding observations from tabular output file '['heads.csv']'
+2025-01-02 14:52:41.960790 starting: reading list-style file: a2_Pstfrom_Fienen_new_folder\heads.csv
+2025-01-02 14:52:41.965372 finished: reading list-style file: a2_Pstfrom_Fienen_new_folder\heads.csv took: 0:00:00.004582
+2025-01-02 14:52:41.967758 starting: building insfile for tabular output file heads.csv
+2025-01-02 14:52:41.974269 finished: building insfile for tabular output file heads.csv took: 0:00:00.006511
+2025-01-02 14:52:41.974456 starting: adding observation from instruction file 'a2_Pstfrom_Fienen_new_folder\heads.csv.ins'
+2025-01-02 14:52:41.992022 finished: adding observation from instruction file 'a2_Pstfrom_Fienen_new_folder\heads.csv.ins' took: 0:00:00.017566
+2025-01-02 14:52:41.992927 finished: adding observations from tabular output file '['heads.csv']' took: 0:00:00.032285
+2025-01-02 14:52:41.993020 finished: adding observations from output file heads.csv took: 0:00:00.032672
+2025-01-02 14:52:44.356359 forward_run line:pyemu.os_utils.run(r'mf6')
+
