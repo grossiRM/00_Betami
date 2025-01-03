@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# %%
 
 # # Exploration of adding noise to observations (or not) when using the Iterative Ensemble Smoother (iES)
 
@@ -20,7 +21,7 @@
 # $$\Phi\left(\boldsymbol{\beta}\right)=\left(\mathbf{y}\mathbf{-}\mathbf{X}\boldsymbol{\beta}\right)^{T}\mathbf{Q}\left(\mathbf{y}-\mathbf{X}\boldsymbol{\beta}\right) = \sum_{i=1}^{N_{obs}}\left(\omega_i \left(y_i - \sum_{j=1}^{N_{par}} X_{ij}\beta_{j}\right)\right)^2$$  
 # 
 
-# In[1]:
+# %%
 
 
 from wvn_helper import plot_mod_obs
@@ -28,7 +29,7 @@ from wvn_helper import plot_mod_obs
 
 # Without observation noise, we hope that the modeled output distribution will overlap (or "cover") the single observation value.
 
-# In[2]:
+# %%
 
 
 plot_mod_obs(6)
@@ -36,7 +37,7 @@ plot_mod_obs(6)
 
 # If the modeled output distribution does _not_ overlap the observed value, that observation is in "prior data conflict".
 
-# In[3]:
+# %%
 
 
 plot_mod_obs(11,pdc=True)
@@ -54,13 +55,13 @@ plot_mod_obs(11,pdc=True)
 # $\sigma=0.5m$ is a reasonable starting point might be $\omega=\frac{1}{.5}=2.0$
 # 
 
-# In[4]:
+# %%
 
 
 plot_mod_obs(6, noisy=True, std=.5)
 
 
-# In[5]:
+# %%
 
 
 plot_mod_obs(11, noisy=True, std=.5, pdc=True)
@@ -70,7 +71,7 @@ plot_mod_obs(11, noisy=True, std=.5, pdc=True)
 # 
 # If we adjust $\omega$ to be $0.2$ then $\sigma = \frac{1}{\omega} = \frac{1}{0.2} = 5.0$
 
-# In[6]:
+# %%
 
 
 plot_mod_obs(11, noisy=True, std=[.5,5] )

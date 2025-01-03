@@ -13,7 +13,7 @@ binary compiled on Aug 15 2023 at 14:55:58
 using control file: "freyberg_mf6.pst"
 in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__again\a1_Pstfrom_Katie_new_folder"
 on host: "DESKTOP-AIRQM2M"
-started at 01/02/25 16:36:32
+started at 01/03/25 10:34:47
 
 ...reading external file 'freyberg_mf6.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
@@ -4370,6 +4370,6 @@ oname:hdstd_otype:lst_usecol:trgw-0-3-8       0.371         0     0.371     0.37
 
 
 pestpp-ies analysis complete...
-started at 01/02/25 16:36:32
-finished at 01/02/25 16:36:37
+started at 01/03/25 10:34:47
+finished at 01/03/25 10:34:53
 took 0.0833333 minutes
