@@ -11,9 +11,9 @@ version: 5.2.6
 binary compiled on Aug 15 2023 at 14:55:58
 
 using control file: "freyberg_mf6.pst"
-in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_03_Prior_MC  __________almost beginning\a1_Pstfrom_Katie_new_folder_II"
+in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__again\a1_Pstfrom_Katie_new_folder"
 on host: "DESKTOP-AIRQM2M"
-started at 01/03/25 11:43:58
+started at 01/03/25 16:41:14
 
 ...reading external file 'freyberg_mf6.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
@@ -30,10 +30,6 @@ started at 01/03/25 11:43:58
 ...reading external file 'freyberg_mf6.insfile_data.csv'
 ...header line: PEST_FILE,MODEL_FILE
 ...read 9 lines from external file
-
-Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
-
-noptmax = 0, resetting max_run_fail = 1
 
     This software has been approved for release by the
     U.S.Geological Survey(USGS).Although the software has 
@@ -61,7 +57,7 @@ PEST Control Information
     facparmax = 1.1
     facorig = 0.001
     phiredswh = 0.1
-    noptmax = 0
+    noptmax = -1
     phiredstp = 0.01
     nphistp = 3
     nphinored = 3
@@ -75,7 +71,7 @@ PEST Control Information
 svd_pack: redsvd
 lambda_scale_fac: 0.75,1,1.1,
 forgive_unknown_args: 0
-max_run_fail: 1
+max_run_fail: 3
 panther_poll_interval: 1
 parameter_covariance: 
 observation_covariance: 
@@ -210,7 +206,7 @@ mou_shuffle_fixed_pars: 0
 
 ...shared pestpp-ies/pestpp-da options:
 (note: 'da' args override 'ies' args when using pestpp-da)
-ies_parameter_ensemble: prior_pe.jcb
+ies_parameter_ensemble: 
 ies_observation_ensemble: 
 ies_weights_ensemble: 
 ies_restart_parameter_ensemble: 
@@ -4338,18 +4334,122 @@ PEST SVD Information
 ...resetting overdue_resched_fac to 1.15
 
   ---  initializing  ---  
-
-  ---  'noptmax'=0, running control file parameter values and quitting  ---  
-...saving control file parameter ensemble to  freyberg_mf6.base.par.csv
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  1
 ...initializing prior parameter covariance matrix
 ...parcov loaded  from parameter bounds, using par_sigma_range 4
-...running control file parameter values
-...saving results from control file parameter value run to  freyberg_mf6.base.obs.csv
+...initializing observation noise covariance matrix
+Note: the following observations have 'standard_deviation' defined - this will be used
+      instead of weight for the observation noise covariance matrix : 
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3683.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3712.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3743.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3773.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3804.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3834.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3865.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3896.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3926.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3957.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3987.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:4018.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3683.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3712.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3743.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3773.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3804.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3834.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3865.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3896.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3926.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3957.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3987.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:4018.5 0.5
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3683.5 281.538
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3712.5 274.912
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3743.5 281.68
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3773.5 289.231
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3804.5 302.325
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3834.5 303.412
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3865.5 298.213
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3896.5 291.085
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3926.5 264.88
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3957.5 242.873
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3987.5 220.418
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:4018.5 200.667
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3683.5 12.7861
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3712.5 19.4117
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3743.5 12.6441
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3773.5 5.0925
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3804.5 8.00091
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3834.5 9.08791
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3865.5 3.88887
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3896.5 3.23927
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3926.5 29.4438
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3957.5 51.4506
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3987.5 73.9055
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:4018.5 93.6573
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3683.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3712.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3743.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3773.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3804.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3834.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3865.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3896.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3926.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3957.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3987.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:4018.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3683.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3712.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3743.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3773.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3804.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3834.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3865.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3896.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3926.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3957.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3987.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:4018.5 0.01
+WARNING: Cov::try_from(): 1980 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
 
-  ---  control file parameter phi report:  ---  
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  50
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  50
+...setting weights ensemble from control file weights
+...saved weight ensemble to  freyberg_mf6.weights.csv
+checking for denormal values in weights ensemble
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+...adding 'base' weight values to weight ensemble
+checking for denormal values in pe
+...saved initial parameter ensemble to  freyberg_mf6.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  freyberg_mf6.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  4
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 50
+...saved initial obs ensemble to freyberg_mf6.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
        phi type           mean            std            min            max
-       measured    9.51327e+06              0    9.51327e+06    9.51327e+06
-         actual    9.51327e+06              0    9.51327e+06    9.51327e+06
+       measured     8.6067e+07    1.16239e+08    9.51327e+06    5.30002e+08
+         actual     8.5651e+07     1.1623e+08    9.51327e+06    5.28967e+08
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -4357,19 +4457,46 @@ PEST SVD Information
        (computed using 'actual' phi)
            (sorted by mean phi)
 group                                          mean       std       min       max   percent       std
-oname:sfrtd_otype:lst_usecol:gage-1        1.59e+06         0  1.59e+06  1.59e+06      16.7         0
-oname:hdstd_otype:lst_usecol:trgw-0-26-6   1.59e+06         0  1.59e+06  1.59e+06      16.7         0
-oname:hds_otype:lst_usecol:trgw-0-3-8      1.59e+06         0  1.59e+06  1.59e+06      16.7         0
-oname:hds_otype:lst_usecol:trgw-0-26-6     1.59e+06         0  1.59e+06  1.59e+06      16.7         0
-oname:hdstd_otype:lst_usecol:trgw-0-3-8    1.59e+06         0  1.59e+06  1.59e+06      16.7         0
-oname:sfr_otype:lst_usecol:gage-1          1.59e+06         0  1.59e+06  1.59e+06      16.7         0
+oname:hdstd_otype:lst_usecol:trgw-0-26-6   3.76e+07  7.25e+07  1.14e+06  3.28e+08      33.9      21.2
+oname:hdstd_otype:lst_usecol:trgw-0-3-8    2.77e+07  7.49e+07  9.83e+05  4.17e+08      23.3      22.8
+oname:sfr_otype:lst_usecol:gage-1          7.75e+06  6.09e+06  6.89e+05  2.57e+07      17.2      11.9
+oname:sfrtd_otype:lst_usecol:gage-1        7.65e+06  1.14e+07  1.21e+05  5.93e+07      14.3      15.5
+oname:hds_otype:lst_usecol:trgw-0-26-6     3.08e+06  4.76e+06  6.99e+04  3.36e+07      6.37       4.4
+oname:hds_otype:lst_usecol:trgw-0-3-8       1.9e+06  2.14e+06  3.64e+04   1.4e+07      4.92      4.82
     Note: 'percent' is the percentage of the actual phi for each realization.
 
 
 
+...checking for prior-data conflict...
+...bad_phi_sigma 1e+300 and mean 8.6067e+07 yields bad phi threshold of 1.16239e+308
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured     8.6067e+07    1.16239e+08    9.51327e+06    5.30002e+08
+         actual     8.5651e+07     1.1623e+08    9.51327e+06    5.28967e+08
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group                                          mean       std       min       max   percent       std
+oname:hdstd_otype:lst_usecol:trgw-0-26-6   3.76e+07  7.25e+07  1.14e+06  3.28e+08      33.9      21.2
+oname:hdstd_otype:lst_usecol:trgw-0-3-8    2.77e+07  7.49e+07  9.83e+05  4.17e+08      23.3      22.8
+oname:sfr_otype:lst_usecol:gage-1          7.75e+06  6.09e+06  6.89e+05  2.57e+07      17.2      11.9
+oname:sfrtd_otype:lst_usecol:gage-1        7.65e+06  1.14e+07  1.21e+05  5.93e+07      14.3      15.5
+oname:hds_otype:lst_usecol:trgw-0-26-6     3.08e+06  4.76e+06  6.99e+04  3.36e+07      6.37       4.4
+oname:hds_otype:lst_usecol:trgw-0-3-8       1.9e+06  2.14e+06  3.64e+04   1.4e+07      4.92      4.82
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 100000
+
+  ---  initialization complete  ---  
 
 
 pestpp-ies analysis complete...
-started at 01/03/25 11:43:58
-finished at 01/03/25 11:44:04
-took 0.0833333 minutes
+started at 01/03/25 16:41:14
+finished at 01/03/25 16:44:59
+took 3.75 minutes

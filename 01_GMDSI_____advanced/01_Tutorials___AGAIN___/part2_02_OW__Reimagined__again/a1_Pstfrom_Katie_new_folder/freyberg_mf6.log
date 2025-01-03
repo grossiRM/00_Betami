@@ -1,18 +1,65 @@
 time,elapsed_seconds,message
-10:34:47,5.16e-05,PEST++ performance logger started
-10:34:47,0.0007027,starting to process control file
-10:34:47,0.0958982,finished processing control file
-10:34:47,0.0387897,starting basic model IO error checking
-10:34:48,0.487296,finished basic model IO error checking
-10:34:48,0.0082052,initializing
-10:34:48,0.0006871,'noptmax'=0, running control file parameter values and quitting
-10:34:48,0.0016996,saving control file parameter ensemble to  freyberg_mf6.base.par.csv
-10:34:48,0.0027231,initializing prior parameter covariance matrix
-10:34:48,2.91e-05,initializing parcov
-10:34:48,0.0032804,parcov loaded  from parameter bounds, using par_sigma_range 4
-10:34:48,0.0061609,running control file parameter values
-10:34:48,0.0001882,queuing 1 runs
-10:34:48,0.0075449,making runs
-10:34:53,5.19377,processing runs
-10:34:53,0.0038872,saving results from control file parameter value run to  freyberg_mf6.base.obs.csv
-10:34:53,0.0096365,control file parameter phi report:
+16:41:14,6.65e-05,PEST++ performance logger started
+16:41:14,0.0008125,starting to process control file
+16:41:14,0.122372,finished processing control file
+16:41:14,0.0366541,starting basic model IO error checking
+16:41:14,0.0588768,finished basic model IO error checking
+16:41:14,0.0076988,initializing
+16:41:14,0.0005934,using glm algorithm
+16:41:14,9.08e-05,using REDSVD for truncated svd solve
+16:41:14,0.0001014,maxsing: 10000000
+16:41:14,9.93e-05,eigthresh:  1e-06
+16:41:14,8.65e-05,initializing localizer
+16:41:14,9.76e-05,not using localization
+16:41:14,9.33e-05,using lambda multipliers: 
+16:41:14,9.97e-05,using lambda scaling factors: 
+16:41:14,8.95e-05,acceptable phi factor:  1.05
+16:41:14,8.92e-05,lambda increase factor:  10
+16:41:14,8.86e-05,lambda decrease factor:  0.75
+16:41:14,8.59e-05,max run fail:  1
+16:41:14,0.001354,initializing prior parameter covariance matrix
+16:41:14,1.09e-05,initializing parcov
+16:41:14,0.0029525,parcov loaded  from parameter bounds, using par_sigma_range 4
+16:41:14,0.0040383,initializing observation noise covariance matrix
+16:41:14,0.0108564,obscov loaded  from observation weights
+16:41:14,0.0003675,using reg_factor:  0
+16:41:14,0.0001013,drawing parameter realizations:  50
+16:41:14,0.0160116,parameters not grouped by parameter groups, reordering par ensemble
+16:41:14,0.005378,making standard normal draws
+16:41:14,0.0028443,scaling by std
+16:41:14,7.35e-05,checking realization for invalid values
+16:41:14,0.0004977,resizing reals matrix
+16:41:14,0.0002565,filling reals matrix and adding mean values
+16:41:14,0.0092588,not using prior parameter covariance matrix scaling
+16:41:14,0.0001176,drawing observation noise realizations:  50
+16:41:14,0.0015559,making standard normal draws
+16:41:14,0.0001285,scaling by std
+16:41:14,1.06e-05,checking realization for invalid values
+16:41:14,5.66e-05,resizing reals matrix
+16:41:14,1.07e-05,filling reals matrix and adding mean values
+16:41:14,0.0048565,setting weights ensemble from control file weights
+16:41:14,0.0104543,saved weight ensemble to  freyberg_mf6.weights.csv
+16:41:14,2e-05,checking for denormal values in weights ensemble
+16:41:14,0.0001249,adding 'base' parameter values to ensemble
+16:41:14,0.0025496,adding 'base' observation values to ensemble
+16:41:14,0.0013439,adding 'base' weight values to weight ensemble
+16:41:14,0.0001866,checking for denormal values in pe
+16:41:14,0.131319,saved initial parameter ensemble to  freyberg_mf6.0.par.csv
+16:41:14,3.17e-05,checking for denormal values in obs + noise ensemble
+16:41:15,0.273764,saved obs+noise observation ensemble (obsval + noise realizations) to  freyberg_mf6.obs+noise.csv
+16:41:15,0.0001233,using subset in lambda testing, number of realizations used in subset testing:  4
+16:41:15,9.69e-05,subset how:  RANDOM
+16:41:15,0.0027895,centering on ensemble mean vector
+16:41:15,2.3e-05,running initial ensemble
+16:41:15,9.57e-05,running initial ensemble of size 50
+16:41:15,1.83e-05,queuing 50 runs
+16:41:15,0.0445817,making runs
+16:44:59,224.387,processing runs
+16:44:59,0.335747,saved initial obs ensemble to freyberg_mf6.0.obs.csv
+16:44:59,0.0766565,calc pre-drop phi
+16:44:59,0.0044726,pre-drop initial phi summary
+16:44:59,0.0125588,checking for prior-data conflict...
+16:44:59,0.0025316,calc initial phi
+16:44:59,0.0032991,initial phi summary
+16:44:59,0.0058921,current lambda: 100000
+16:44:59,0.0001145,initialization complete

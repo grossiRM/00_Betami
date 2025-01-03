@@ -13,7 +13,7 @@ binary compiled on Aug 15 2023 at 14:55:58
 using control file: "freyberg_mf6.pst"
 in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_02_OW__Reimagined__again\a1_Pstfrom_Katie_new_folder"
 on host: "DESKTOP-AIRQM2M"
-started at 01/03/25 10:34:47
+started at 01/03/25 16:41:14
 
 ...reading external file 'freyberg_mf6.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
@@ -22,7 +22,7 @@ started at 01/03/25 10:34:47
 ...header line: PARNME,PARTRANS,PARCHGLIM,PARVAL1,PARLBND,PARUBND,PARGP,SCALE,OFFSET,DERCOM,I,IDX0,IDX1,IDX2,INST,J,PNAME,PSTYLE,PTYPE,USECOL,X,Y,ZONE
 ...read 1732 lines from external file
 ...reading external file 'freyberg_mf6.obs_data.csv'
-...header line: OBSNME,OBSVAL,WEIGHT,OBGNME,I,J,ONAME,OTYPE,TIME,TOTIM,USECOL
+...header line: OBSNME,OBSVAL,WEIGHT,OBGNME,I,J,ONAME,OTYPE,TIME,TOTIM,USECOL,OBSERVED,STANDARD_DEVIATION
 ...read 2053 lines from external file
 ...reading external file 'freyberg_mf6.tplfile_data.csv'
 ...header line: PEST_FILE,MODEL_FILE
@@ -30,10 +30,6 @@ started at 01/03/25 10:34:47
 ...reading external file 'freyberg_mf6.insfile_data.csv'
 ...header line: PEST_FILE,MODEL_FILE
 ...read 9 lines from external file
-
-Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
-
-noptmax = 0, resetting max_run_fail = 1
 
     This software has been approved for release by the
     U.S.Geological Survey(USGS).Although the software has 
@@ -61,7 +57,7 @@ PEST Control Information
     facparmax = 1.1
     facorig = 0.001
     phiredswh = 0.1
-    noptmax = 0
+    noptmax = -1
     phiredstp = 0.01
     nphistp = 3
     nphinored = 3
@@ -75,7 +71,7 @@ PEST Control Information
 svd_pack: redsvd
 lambda_scale_fac: 0.75,1,1.1,
 forgive_unknown_args: 0
-max_run_fail: 1
+max_run_fail: 3
 panther_poll_interval: 1
 parameter_covariance: 
 observation_covariance: 
@@ -2440,18 +2436,18 @@ oname:hds_otype:lst_usecol:trgw-0-24-4_time:4322.5                       30.0859
 oname:hds_otype:lst_usecol:trgw-0-24-4_time:4352.5                       29.3268         oname:hds_otype:lst_usecol:trgw-0-24-4                   0
 oname:hds_otype:lst_usecol:trgw-0-24-4_time:4383.5                       27.7487         oname:hds_otype:lst_usecol:trgw-0-24-4                   0
 oname:hds_otype:lst_usecol:trgw-0-26-6_time:3652.5                       37.3758         oname:hds_otype:lst_usecol:trgw-0-26-6                   0
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3683.5                       37.1684         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3712.5                       37.1165         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3743.5                       37.1829         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3773.5                       37.2833         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3804.5                       37.2744         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3834.5                        37.325         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3865.5                       37.3005         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3896.5                       37.1997         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3926.5                         36.96         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3957.5                       36.6277         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:3987.5                       36.3855         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
-oname:hds_otype:lst_usecol:trgw-0-26-6_time:4018.5                       36.1564         oname:hds_otype:lst_usecol:trgw-0-26-6                   1
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3683.5                       37.1684         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3712.5                       37.1165         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3743.5                       37.1829         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3773.5                       37.2833         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3804.5                       37.2744         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3834.5                        37.325         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3865.5                       37.3005         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3896.5                       37.1997         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3926.5                         36.96         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3957.5                       36.6277         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:3987.5                       36.3855         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
+oname:hds_otype:lst_usecol:trgw-0-26-6_time:4018.5                       36.1564         oname:hds_otype:lst_usecol:trgw-0-26-6             169.861
 oname:hds_otype:lst_usecol:trgw-0-26-6_time:4049.5                       36.0555         oname:hds_otype:lst_usecol:trgw-0-26-6                   0
 oname:hds_otype:lst_usecol:trgw-0-26-6_time:4077.5                       35.9824         oname:hds_otype:lst_usecol:trgw-0-26-6                   0
 oname:hds_otype:lst_usecol:trgw-0-26-6_time:4108.5                       35.9063         oname:hds_otype:lst_usecol:trgw-0-26-6                   0
@@ -2490,18 +2486,18 @@ oname:hds_otype:lst_usecol:trgw-0-29-15_time:4322.5                      34.4098
 oname:hds_otype:lst_usecol:trgw-0-29-15_time:4352.5                      34.2876        oname:hds_otype:lst_usecol:trgw-0-29-15                   0
 oname:hds_otype:lst_usecol:trgw-0-29-15_time:4383.5                      34.1895        oname:hds_otype:lst_usecol:trgw-0-29-15                   0
 oname:hds_otype:lst_usecol:trgw-0-3-8_time:3652.5                        38.0309          oname:hds_otype:lst_usecol:trgw-0-3-8                   0
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3683.5                        38.0065          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3712.5                        38.0434          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3743.5                        38.1174          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3773.5                        38.1898          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3804.5                        38.3103          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3834.5                        38.4187          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3865.5                        38.4033          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3896.5                        38.3372          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3926.5                        38.1719          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3957.5                        37.9331          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:3987.5                        37.7642          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
-oname:hds_otype:lst_usecol:trgw-0-3-8_time:4018.5                        37.6086          oname:hds_otype:lst_usecol:trgw-0-3-8                   1
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3683.5                        38.0065          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3712.5                        38.0434          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3743.5                        38.1174          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3773.5                        38.1898          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3804.5                        38.3103          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3834.5                        38.4187          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3865.5                        38.4033          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3896.5                        38.3372          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3926.5                        38.1719          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3957.5                        37.9331          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:3987.5                        37.7642          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
+oname:hds_otype:lst_usecol:trgw-0-3-8_time:4018.5                        37.6086          oname:hds_otype:lst_usecol:trgw-0-3-8             153.693
 oname:hds_otype:lst_usecol:trgw-0-3-8_time:4049.5                         37.557          oname:hds_otype:lst_usecol:trgw-0-3-8                   0
 oname:hds_otype:lst_usecol:trgw-0-3-8_time:4077.5                        37.5594          oname:hds_otype:lst_usecol:trgw-0-3-8                   0
 oname:hds_otype:lst_usecol:trgw-0-3-8_time:4108.5                         37.666          oname:hds_otype:lst_usecol:trgw-0-3-8                   0
@@ -2590,18 +2586,18 @@ oname:hds_otype:lst_usecol:trgw-0-9-1_time:4322.5                        38.9412
 oname:hds_otype:lst_usecol:trgw-0-9-1_time:4352.5                        38.6806          oname:hds_otype:lst_usecol:trgw-0-9-1                   0
 oname:hds_otype:lst_usecol:trgw-0-9-1_time:4383.5                        38.4732          oname:hds_otype:lst_usecol:trgw-0-9-1                   0
 oname:sfr_otype:lst_usecol:gage-1_time:3652.5                            2943.24              oname:sfr_otype:lst_usecol:gage-1                   0
-oname:sfr_otype:lst_usecol:gage-1_time:3683.5                            2815.38              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3712.5                            2749.12              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3743.5                             2816.8              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3773.5                            2892.31              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3804.5                            3023.25              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3834.5                            3034.12              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3865.5                            2982.13              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3896.5                            2910.85              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3926.5                             2648.8              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3957.5                            2428.73              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:3987.5                            2204.18              oname:sfr_otype:lst_usecol:gage-1                   1
-oname:sfr_otype:lst_usecol:gage-1_time:4018.5                            2006.67              oname:sfr_otype:lst_usecol:gage-1                   1
+oname:sfr_otype:lst_usecol:gage-1_time:3683.5                            2815.38              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3712.5                            2749.12              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3743.5                             2816.8              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3773.5                            2892.31              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3804.5                            3023.25              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3834.5                            3034.12              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3865.5                            2982.13              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3896.5                            2910.85              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3926.5                             2648.8              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3957.5                            2428.73              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:3987.5                            2204.18              oname:sfr_otype:lst_usecol:gage-1            0.536731
+oname:sfr_otype:lst_usecol:gage-1_time:4018.5                            2006.67              oname:sfr_otype:lst_usecol:gage-1            0.536731
 oname:sfr_otype:lst_usecol:gage-1_time:4049.5                            2077.45              oname:sfr_otype:lst_usecol:gage-1                   0
 oname:sfr_otype:lst_usecol:gage-1_time:4077.5                            2136.34              oname:sfr_otype:lst_usecol:gage-1                   0
 oname:sfr_otype:lst_usecol:gage-1_time:4108.5                             2302.4              oname:sfr_otype:lst_usecol:gage-1                   0
@@ -3915,18 +3911,18 @@ oname:cum_otype:lst_usecol:wel_totim:4322.5                           -4.694e+06
 oname:cum_otype:lst_usecol:wel_totim:4352.5                          -4.7645e+06                 oname:cum_otype:lst_usecol:wel                   0
 oname:cum_otype:lst_usecol:wel_totim:4383.5                         -4.83735e+06                 oname:cum_otype:lst_usecol:wel                   0
 oname:sfrtd_otype:lst_usecol:gage-1_time:3652.5                                0            oname:sfrtd_otype:lst_usecol:gage-1                   0
-oname:sfrtd_otype:lst_usecol:gage-1_time:3683.5                         -127.861            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3712.5                         -194.117            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3743.5                         -126.441            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3773.5                          -50.925            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3804.5                          80.0091            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3834.5                          90.8791            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3865.5                          38.8887            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3896.5                         -32.3927            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3926.5                         -294.438            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3957.5                         -514.506            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:3987.5                         -739.055            oname:sfrtd_otype:lst_usecol:gage-1                   1
-oname:sfrtd_otype:lst_usecol:gage-1_time:4018.5                         -936.573            oname:sfrtd_otype:lst_usecol:gage-1                   1
+oname:sfrtd_otype:lst_usecol:gage-1_time:3683.5                         -127.861            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3712.5                         -194.117            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3743.5                         -126.441            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3773.5                          -50.925            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3804.5                          80.0091            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3834.5                          90.8791            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3865.5                          38.8887            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3896.5                         -32.3927            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3926.5                         -294.438            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3957.5                         -514.506            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:3987.5                         -739.055            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
+oname:sfrtd_otype:lst_usecol:gage-1_time:4018.5                         -936.573            oname:sfrtd_otype:lst_usecol:gage-1            0.628861
 oname:sfrtd_otype:lst_usecol:gage-1_time:4049.5                         -865.793            oname:sfrtd_otype:lst_usecol:gage-1                   0
 oname:sfrtd_otype:lst_usecol:gage-1_time:4077.5                         -806.903            oname:sfrtd_otype:lst_usecol:gage-1                   0
 oname:sfrtd_otype:lst_usecol:gage-1_time:4108.5                          -640.84            oname:sfrtd_otype:lst_usecol:gage-1                   0
@@ -4165,18 +4161,18 @@ oname:hdstd_otype:lst_usecol:trgw-0-24-4_time:4322.5                    -2.47638
 oname:hdstd_otype:lst_usecol:trgw-0-24-4_time:4352.5                    -2.64657       oname:hdstd_otype:lst_usecol:trgw-0-24-4                   0
 oname:hdstd_otype:lst_usecol:trgw-0-24-4_time:4383.5                     -2.6607       oname:hdstd_otype:lst_usecol:trgw-0-24-4                   0
 oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3652.5                           0       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   0
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3683.5                   -0.207377       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3712.5                   -0.259308       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3743.5                   -0.192907       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3773.5                  -0.0924715       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3804.5                   -0.101427       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3834.5                  -0.0507598       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3865.5                  -0.0753402       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3896.5                    -0.17606       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3926.5                   -0.415762       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3957.5                   -0.748066       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3987.5                   -0.990336       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
-oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:4018.5                     -1.2194       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   1
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3683.5                   -0.207377       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3712.5                   -0.259308       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3743.5                   -0.192907       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3773.5                  -0.0924715       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3804.5                   -0.101427       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3834.5                  -0.0507598       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3865.5                  -0.0753402       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3896.5                    -0.17606       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3926.5                   -0.415762       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3957.5                   -0.748066       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:3987.5                   -0.990336       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
+oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:4018.5                     -1.2194       oname:hdstd_otype:lst_usecol:trgw-0-26-6             1751.52
 oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:4049.5                    -1.32028       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   0
 oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:4077.5                     -1.3934       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   0
 oname:hdstd_otype:lst_usecol:trgw-0-26-6_time:4108.5                    -1.46946       oname:hdstd_otype:lst_usecol:trgw-0-26-6                   0
@@ -4215,18 +4211,18 @@ oname:hdstd_otype:lst_usecol:trgw-0-29-15_time:4322.5                   -0.48241
 oname:hdstd_otype:lst_usecol:trgw-0-29-15_time:4352.5                    -0.5254      oname:hdstd_otype:lst_usecol:trgw-0-29-15                   0
 oname:hdstd_otype:lst_usecol:trgw-0-29-15_time:4383.5                  -0.484177      oname:hdstd_otype:lst_usecol:trgw-0-29-15                   0
 oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3652.5                            0        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   0
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3683.5                   -0.0243524        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3712.5                    0.0124821        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3743.5                    0.0865125        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3773.5                     0.158942        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3804.5                     0.279427        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3834.5                     0.387818        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3865.5                     0.372453        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3896.5                     0.306259        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3926.5                     0.141001        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3957.5                   -0.0977844        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3987.5                    -0.266652        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
-oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:4018.5                    -0.422247        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   1
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3683.5                   -0.0243524        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3712.5                    0.0124821        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3743.5                    0.0865125        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3773.5                     0.158942        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3804.5                     0.279427        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3834.5                     0.387818        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3865.5                     0.372453        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3896.5                     0.306259        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3926.5                     0.141001        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3957.5                   -0.0977844        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:3987.5                    -0.266652        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
+oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:4018.5                    -0.422247        oname:hdstd_otype:lst_usecol:trgw-0-3-8             2067.07
 oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:4049.5                    -0.473879        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   0
 oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:4077.5                    -0.471448        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   0
 oname:hdstd_otype:lst_usecol:trgw-0-3-8_time:4108.5                    -0.364846        oname:hdstd_otype:lst_usecol:trgw-0-3-8                   0
@@ -4338,18 +4334,122 @@ PEST SVD Information
 ...resetting overdue_resched_fac to 1.15
 
   ---  initializing  ---  
-
-  ---  'noptmax'=0, running control file parameter values and quitting  ---  
-...saving control file parameter ensemble to  freyberg_mf6.base.par.csv
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  1
 ...initializing prior parameter covariance matrix
 ...parcov loaded  from parameter bounds, using par_sigma_range 4
-...running control file parameter values
-...saving results from control file parameter value run to  freyberg_mf6.base.obs.csv
+...initializing observation noise covariance matrix
+Note: the following observations have 'standard_deviation' defined - this will be used
+      instead of weight for the observation noise covariance matrix : 
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3683.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3712.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3743.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3773.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3804.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3834.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3865.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3896.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3926.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3957.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3987.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:4018.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3683.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3712.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3743.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3773.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3804.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3834.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3865.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3896.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3926.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3957.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3987.5 0.5
+ONAME:HDS_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:4018.5 0.5
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3683.5 281.538
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3712.5 274.912
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3743.5 281.68
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3773.5 289.231
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3804.5 302.325
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3834.5 303.412
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3865.5 298.213
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3896.5 291.085
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3926.5 264.88
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3957.5 242.873
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:3987.5 220.418
+ONAME:SFR_OTYPE:LST_USECOL:GAGE-1_TIME:4018.5 200.667
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3683.5 12.7861
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3712.5 19.4117
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3743.5 12.6441
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3773.5 5.0925
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3804.5 8.00091
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3834.5 9.08791
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3865.5 3.88887
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3896.5 3.23927
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3926.5 29.4438
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3957.5 51.4506
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:3987.5 73.9055
+ONAME:SFRTD_OTYPE:LST_USECOL:GAGE-1_TIME:4018.5 93.6573
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3683.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3712.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3743.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3773.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3804.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3834.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3865.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3896.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3926.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3957.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:3987.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-26-6_TIME:4018.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3683.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3712.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3743.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3773.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3804.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3834.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3865.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3896.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3926.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3957.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:3987.5 0.01
+ONAME:HDSTD_OTYPE:LST_USECOL:TRGW-0-3-8_TIME:4018.5 0.01
+WARNING: Cov::try_from(): 1980 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
 
-  ---  control file parameter phi report:  ---  
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  50
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  50
+...setting weights ensemble from control file weights
+...saved weight ensemble to  freyberg_mf6.weights.csv
+checking for denormal values in weights ensemble
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+...adding 'base' weight values to weight ensemble
+checking for denormal values in pe
+...saved initial parameter ensemble to  freyberg_mf6.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  freyberg_mf6.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  4
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 50
+...saved initial obs ensemble to freyberg_mf6.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
        phi type           mean            std            min            max
-       measured    9.51327e+06              0    9.51327e+06    9.51327e+06
-         actual    9.51327e+06              0    9.51327e+06    9.51327e+06
+       measured     8.6067e+07    1.16239e+08    9.51327e+06    5.30002e+08
+         actual     8.5651e+07     1.1623e+08    9.51327e+06    5.28967e+08
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -4357,19 +4457,46 @@ PEST SVD Information
        (computed using 'actual' phi)
            (sorted by mean phi)
 group                                          mean       std       min       max   percent       std
-oname:sfr_otype:lst_usecol:gage-1           5.5e+06         0   5.5e+06   5.5e+06      57.9         0
-oname:sfrtd_otype:lst_usecol:gage-1        4.01e+06         0  4.01e+06  4.01e+06      42.1         0
-oname:hds_otype:lst_usecol:trgw-0-3-8          67.1         0      67.1      67.1  0.000706         0
-oname:hds_otype:lst_usecol:trgw-0-26-6           55         0        55        55  0.000578         0
-oname:hdstd_otype:lst_usecol:trgw-0-26-6      0.517         0     0.517     0.517  5.43e-06         0
-oname:hdstd_otype:lst_usecol:trgw-0-3-8       0.371         0     0.371     0.371   3.9e-06         0
+oname:hdstd_otype:lst_usecol:trgw-0-26-6   3.76e+07  7.25e+07  1.14e+06  3.28e+08      33.9      21.2
+oname:hdstd_otype:lst_usecol:trgw-0-3-8    2.77e+07  7.49e+07  9.83e+05  4.17e+08      23.3      22.8
+oname:sfr_otype:lst_usecol:gage-1          7.75e+06  6.09e+06  6.89e+05  2.57e+07      17.2      11.9
+oname:sfrtd_otype:lst_usecol:gage-1        7.65e+06  1.14e+07  1.21e+05  5.93e+07      14.3      15.5
+oname:hds_otype:lst_usecol:trgw-0-26-6     3.08e+06  4.76e+06  6.99e+04  3.36e+07      6.37       4.4
+oname:hds_otype:lst_usecol:trgw-0-3-8       1.9e+06  2.14e+06  3.64e+04   1.4e+07      4.92      4.82
     Note: 'percent' is the percentage of the actual phi for each realization.
 
 
 
+...checking for prior-data conflict...
+...bad_phi_sigma 1e+300 and mean 8.6067e+07 yields bad phi threshold of 1.16239e+308
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured     8.6067e+07    1.16239e+08    9.51327e+06    5.30002e+08
+         actual     8.5651e+07     1.1623e+08    9.51327e+06    5.28967e+08
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group                                          mean       std       min       max   percent       std
+oname:hdstd_otype:lst_usecol:trgw-0-26-6   3.76e+07  7.25e+07  1.14e+06  3.28e+08      33.9      21.2
+oname:hdstd_otype:lst_usecol:trgw-0-3-8    2.77e+07  7.49e+07  9.83e+05  4.17e+08      23.3      22.8
+oname:sfr_otype:lst_usecol:gage-1          7.75e+06  6.09e+06  6.89e+05  2.57e+07      17.2      11.9
+oname:sfrtd_otype:lst_usecol:gage-1        7.65e+06  1.14e+07  1.21e+05  5.93e+07      14.3      15.5
+oname:hds_otype:lst_usecol:trgw-0-26-6     3.08e+06  4.76e+06  6.99e+04  3.36e+07      6.37       4.4
+oname:hds_otype:lst_usecol:trgw-0-3-8       1.9e+06  2.14e+06  3.64e+04   1.4e+07      4.92      4.82
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 100000
+
+  ---  initialization complete  ---  
 
 
 pestpp-ies analysis complete...
-started at 01/03/25 10:34:47
-finished at 01/03/25 10:34:53
-took 0.0833333 minutes
+started at 01/03/25 16:41:14
+finished at 01/03/25 16:44:59
+took 3.75 minutes
