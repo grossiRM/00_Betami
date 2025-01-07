@@ -357,9 +357,9 @@ The PRINT_INPUT option has been specified.
 
     BINARY GRID INFORMATION WILL BE WRITTEN TO:
       UNIT NUMBER: 1032
-      FILE NAME: E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part0_02_intro_to_freyberg__W_inprogress\freyberg_mf6\freyberg6.dis.grb
+      FILE NAME: E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part0_02_freyberg____________ok\freyberg_mf6\freyberg6.dis.grb
 
- OPENED E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part0_02_intro_to_freyberg__W_inprogress\freyberg_mf6\freyberg6.dis.grb
+ OPENED E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part0_02_freyberg____________ok\freyberg_mf6\freyberg6.dis.grb
  FILE TYPE:DATA(BINARY)   UNIT 1032   STATUS:REPLACE             
  FORMAT:UNFORMATTED            ACCESS:STREAM              
  ACTION:READWRITE           
