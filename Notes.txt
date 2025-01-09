@@ -2,6 +2,7 @@ conda activate gmdsitut
 conda activate pyclass
 conda activate flopy_example
 conda activate Flopy			pleasant-lake-flopy-example
+conda activate mbase
 jupyter notebook
 
 
@@ -18,6 +19,7 @@ EnvironmentS
 		conda env create -f environment_Flopy_Example.yml
 		conda env create -f environment_04_Flopy.yml
 		conda env create -f environment_api_demo.yml
+		conda env create -f environment_example-environment.yml
 
 ---------------------------------------------------------------------------------------
 OPEN GIT BASH HERE
