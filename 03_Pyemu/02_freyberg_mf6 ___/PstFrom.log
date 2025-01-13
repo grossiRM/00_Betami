@@ -1,0 +1,6 @@
+2025-01-10 16:16:44.574056 starting: opening PstFrom.log for logging
+2025-01-10 16:16:44.574056 starting PstFrom process
+2025-01-10 16:16:44.574056 starting: setting up dirs
+2025-01-10 16:16:44.574056 starting: copying original_d 'temp_pst_from' to new_d 'freyberg6_template'
+2025-01-10 16:16:45.044148 finished: copying original_d 'temp_pst_from' to new_d 'freyberg6_template' took: 0:00:00.470092
+2025-01-10 16:16:45.044148 finished: setting up dirs took: 0:00:00.470092

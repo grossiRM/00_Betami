@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import os, sys
@@ -10,7 +10,7 @@ import pandas as pd
 import flopy
 
 
-# In[2]:
+# In[4]:
 
 
 def forward_model():
@@ -33,7 +33,7 @@ def forward_model():
     
     basefolder = os.getcwd()
     os.chdir("Beta_02")
-    os.system("mfnwt.exe flow_1d.nam")
+    os.system("mfnwt.exe flow_1d.nam")                          # pending a little path directory ajustment
     os.chdir(basefolder)
 
     hds = flopy.utils.HeadFile(os.path.join('Beta_02/Beta_03', 'flow_1d.hds'))
@@ -43,13 +43,11 @@ def forward_model():
 
     out = pd.DataFrame()
     out['y'] = y
-    out.to_csv('heads_out.csv', index_label = 'id')             # write model output
+    out.to_csv('Beta_02/heads_out.csv', index_label = 'id')             # write model output
     
 if __name__ == "__main__":
     forward_model()
 
-
-# #### if working 
 
 # In[ ]:
 

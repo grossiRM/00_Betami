@@ -3,8 +3,9 @@ conda activate pyclass
 conda activate flopy_example
 conda activate Flopy			pleasant-lake-flopy-example
 conda activate mbase
+conda activate mfsetup
+conda activate modflow-setup_dev
 jupyter notebook
-
 
 ---------------------------------------------------------------------------------------
 git init

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### `Set up ____ MF5_1D `
+# ### `Set up ____ MF5_1D ` `           exporting __a_Beta_Script_01.py         `
 
 # In[1]:
 
@@ -13,7 +13,7 @@ import flopy
 import matplotlib.pyplot as plt
 
 
-# In[2]:
+# In[7]:
 
 
 def generate_1d_model():
@@ -23,33 +23,17 @@ def generate_1d_model():
         shutil.rmtree(os.path.join(os.getcwd(), model_ws))
     os.mkdir(model_ws)
     exe = r"..\bin\win\mfnwt.exe"                                                   # ______ *.exe
-    shutil.copy(
-        src=exe, 
-        dst=os.path.join(model_ws, os.path.basename(exe)))
+    shutil.copy(src=exe, dst=os.path.join(model_ws, os.path.basename(exe)))
     
-    mf = flopy.modflow.Modflow(
-        modelname, 
-        model_ws=model_ws,
-        exe_name = os.path.abspath(exe),
-        version='mfnwt')                                     
+    mf = flopy.modflow.Modflow(modelname, model_ws=model_ws, exe_name = os.path.abspath(exe), version='mfnwt')                                     
     
-    Lx = 100.0
-    Ly = 1.0
-    ztop = 0.0
-    zbot = -50.0
-    nlay = 1
-    nrow = 1
-    ncol = 100
-    delr = Lx / ncol
-    delc = Ly / nrow
-    delv = (ztop - zbot) / nlay
+    Lx,Ly,   ztop,zbot,   nlay,nrow,   ncol = 100.0,1.0,   0.0,-50.0,   1,1,   100
+    delr, delc,   delv = Lx/ncol, Ly/nrow,    (ztop-zbot)/nlay
     botm = np.linspace(ztop, zbot, nlay + 1)
 
-    dis = flopy.modflow.ModflowDis(mf, nlay, nrow, ncol, 
-                                   delr=delr, delc=delc, 
-                                   top=ztop, botm=botm[1:])           # DIS
+    dis = flopy.modflow.ModflowDis(mf, nlay, nrow, ncol, delr=delr, delc=delc, top=ztop, botm=botm[1:])           
 
-    ibound = np.ones((nlay, nrow, ncol), dtype=np.int32)              # iBound
+    ibound = np.ones((nlay, nrow, ncol), dtype=np.int32)              
     strt = np.ones((nlay, nrow, ncol), dtype=np.float32)               
     strt[:, :, :] = -10.0
     bas = flopy.modflow.ModflowBas(mf, ibound=ibound, strt=strt)                                                  
@@ -58,17 +42,16 @@ def generate_1d_model():
     laywet = np.zeros(nlay)
     hk = np.zeros_like(bas.strt.array) + 10.0
     
-    flopy.modflow.mfupw.ModflowUpw(mf, laytyp=laytyp, layavg=0, chani=1.0, layvka=0,laywet=laywet, hdry=-1e+30, 
-                                   iphdry=0, hk=hk, hani=1.0, vka=hk, vkcb=0.0, noparcheck=False, ipakcb = 55)
+    flopy.modflow.mfupw.ModflowUpw(mf, laytyp=laytyp, layavg=0,   chani=1.0,   layvka=0,   laywet=laywet, hdry=-1e+30, 
+                                   iphdry=0,          hk=hk,hani=1.0,vka=hk,   vkcb=0.0,   noparcheck=False, ipakcb = 55)
     
     ghb_data = []                          # [lay, row, col,head,cond]
     ghb_data.append([0,0,0,-10,15])
     ghb_data.append([0,0,ncol-1, -15,15])
     ghb_stress_per = {}
     ghb_stress_per[0] = ghb_data
-    ghbs = flopy.modflow.mfghb.ModflowGhb(mf, ipakcb=55, 
-                                          stress_period_data=ghb_stress_per,
-                                          dtype=None, no_print=False, options=None, extension='ghb')
+    ghbs = flopy.modflow.mfghb.ModflowGhb(mf, ipakcb=55, stress_period_data=ghb_stress_per, dtype=None, 
+                                          no_print=False, options=None, extension='ghb')
     
     spd = {(0, 0): ["print head", "print budget", "save head", "save budget"]}
     oc = flopy.modflow.ModflowOc(mf, stress_period_data=spd, compact=True)                     # Oc
@@ -78,7 +61,7 @@ def generate_1d_model():
     success, buff = mf.run_model()
     
     if not success:
-        raise Exception("MODFLOW did not terminate normally.")
+        raise Exception("D'oh.")
 
     hds = flopy.utils.HeadFile(os.path.join(model_ws,modelname+".hds"))                        # Post processing
     wl = hds.get_data(totim = 1.0)
@@ -88,8 +71,14 @@ if __name__ == "__main__":
     generate_1d_model()
 
 
-# In[4]:
+# In[8]:
 
 
 get_ipython().system('jupyter nbconvert --to script a_Beta_Script_01.ipynb')
+
+
+# In[ ]:
+
+
+
 
