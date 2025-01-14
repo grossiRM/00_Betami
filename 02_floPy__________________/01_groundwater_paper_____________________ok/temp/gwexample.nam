@@ -5,6 +5,7 @@ DIS               11  gwexample.dis
 BAS6              13  gwexample.bas
 LPF               15  gwexample.lpf
 RCH               19  gwexample.rch
+WEL               20  gwexample.wel
 PCG               27  gwexample.pcg
 OC                14  gwexample.oc
 DATA(BINARY)      51  gwexample.hds REPLACE

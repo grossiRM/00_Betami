@@ -73,7 +73,7 @@ import flopy
 # temporary directory
 temp_dir = TemporaryDirectory()
 sim_name = "example_sim"
-sim_path = Path(temp_dir.name) / "example_project"
+sim_path = Path(temp_dir.name) / "example_project"                      
 sim = flopy.mf6.MFSimulation(
     sim_name=sim_name, version="mf6", exe_name="mf6", sim_ws=sim_path
 )

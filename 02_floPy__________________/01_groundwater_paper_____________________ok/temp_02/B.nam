@@ -7,4 +7,6 @@ LPF               15  B.lpf
 RCH               19  B.rch
 WEL               20  B.wel
 PCG               27  B.pcg
+OC                14  B.oc
 DATA(BINARY)       1  B.cbc REPLACE
+DATA(BINARY)      51  B.hds REPLACE

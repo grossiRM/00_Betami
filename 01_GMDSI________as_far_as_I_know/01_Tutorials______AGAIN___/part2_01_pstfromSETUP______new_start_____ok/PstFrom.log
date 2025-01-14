@@ -1,0 +1,6 @@
+2025-01-13 16:44:23.229750 starting: opening PstFrom.log for logging
+2025-01-13 16:44:23.229750 starting PstFrom process
+2025-01-13 16:44:23.229750 starting: setting up dirs
+2025-01-13 16:44:23.229750 starting: copying original_d 'B_folder' to new_d 'C_folder'
+2025-01-13 16:44:23.931506 finished: copying original_d 'B_folder' to new_d 'C_folder' took: 0:00:00.701756
+2025-01-13 16:44:23.931506 finished: setting up dirs took: 0:00:00.701756
