@@ -9,9 +9,9 @@ binary compiled on Aug 15 2023 at 14:56:08
 
 using control file: "a1_Pstfrom_data_IN_Frey.pst"
 
-in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI_____advanced\01_Tutorials___AGAIN___\part2_01_pstfromSETUP______done\a1_Pstfrom_Katie_new_folder"
+in directory: "E:\15_REPOS\00_BETAMI\01_GMDSI________as_far_as_I_know\01_Tutorials______AGAIN___\part2_01_pstfromSETUP______new_start_____ok\a1_Pstfrom_Katie_new_folder"
 on host: "DESKTOP-AIRQM2M"
-started at 01/07/25 06:12:39
+started at 01/14/25 11:16:47
 
 ...reading external file 'a1_pstfrom_data_in_frey.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
@@ -13079,6 +13079,6 @@ Number of forward model runs performed during optimization: 1
 
 
 pestpp-glm analysis complete...
-started at 01/07/25 06:12:39
-finished at 01/07/25 06:12:45
+started at 01/14/25 11:16:47
+finished at 01/14/25 11:16:52
 took 0.0833333 minutes
