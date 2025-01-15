@@ -1,20 +1,24 @@
-2025-01-15 10:24:10.724471 starting: opening schur_example.log for logging
-2025-01-15 10:24:10.724471 starting: pre-loading base components
-2025-01-15 10:24:10.724471 starting: loading jco: freyberg.jcb
-2025-01-15 10:24:10.740096 finished: loading jco: freyberg.jcb took: 0:00:00.015625
-2025-01-15 10:24:10.740096 starting: loading parcov
-2025-01-15 10:24:10.834862 finished: loading parcov took: 0:00:00.094766
-2025-01-15 10:24:10.834862 starting: loading obscov
-2025-01-15 10:24:10.834862 finished: loading obscov took: 0:00:00
-2025-01-15 10:24:10.834862 starting: loading forecasts
-2025-01-15 10:24:10.834862 finished: loading forecasts took: 0:00:00
-2025-01-15 10:24:10.834862 forecast names: or28c05_0,or28c05_1,sw_gw_0,sw_gw_1
-2025-01-15 10:24:10.850489 finished: pre-loading base components took: 0:00:00.126018
-2025-01-15 10:24:10.850489 starting: dropping prior information
-2025-01-15 10:24:10.850489 starting: removing 0 prior info from jco, pst, and obs cov
-2025-01-15 10:24:10.850489 finished: removing 0 prior info from jco, pst, and obs cov took: 0:00:00
-2025-01-15 10:24:10.850489 finished: dropping prior information took: 0:00:00
-2025-01-15 10:24:10.856895 starting: Schur's complement
-2025-01-15 10:24:10.856895 starting: xtqx
-2025-01-15 10:24:10.872526 finished: xtqx took: 0:00:00.015631
-2025-01-15 10:24:10.888152 finished: Schur's complement took: 0:00:00.031257
+2025-01-15 15:00:29.188399 starting: opening schur_example.log for logging
+2025-01-15 15:00:29.188399 starting: pre-loading base components
+2025-01-15 15:00:29.188399 starting: loading jco: freyberg.jcb
+2025-01-15 15:00:29.188399 finished: loading jco: freyberg.jcb took: 0:00:00
+2025-01-15 15:00:29.188399 starting: loading parcov
+2025-01-15 15:00:29.295164 finished: loading parcov took: 0:00:00.106765
+2025-01-15 15:00:29.295164 starting: loading obscov
+2025-01-15 15:00:29.295164 finished: loading obscov took: 0:00:00
+2025-01-15 15:00:29.295164 starting: loading forecasts
+2025-01-15 15:00:29.301684 finished: loading forecasts took: 0:00:00.006520
+2025-01-15 15:00:29.301684 forecast names: or28c05_0,or28c05_1,sw_gw_0,sw_gw_1
+2025-01-15 15:00:29.301684 finished: pre-loading base components took: 0:00:00.113285
+2025-01-15 15:00:29.301684 starting: dropping prior information
+2025-01-15 15:00:29.301684 starting: removing 0 prior info from jco, pst, and obs cov
+2025-01-15 15:00:29.303697 finished: removing 0 prior info from jco, pst, and obs cov took: 0:00:00.002013
+2025-01-15 15:00:29.303697 finished: dropping prior information took: 0:00:00.002013
+2025-01-15 15:00:29.306757 starting: Schur's complement
+2025-01-15 15:00:29.306757 starting: xtqx
+2025-01-15 15:00:29.331824 finished: xtqx took: 0:00:00.025067
+2025-01-15 15:00:29.347465 finished: Schur's complement took: 0:00:00.040708
+2025-01-15 16:08:37.816182 starting: propagating prior to predictions
+2025-01-15 16:08:37.820183 finished: propagating prior to predictions took: 0:00:00.004001
+2025-01-15 16:08:37.820183 starting: propagating posterior to predictions
+2025-01-15 16:08:37.824184 finished: propagating posterior to predictions took: 0:00:00.004001
