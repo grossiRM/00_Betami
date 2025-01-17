@@ -1,0 +1,8 @@
+# ==Summary of Cell Types for MODFLOW Simulation==
+# "Dry" means cells assigned the value of HDRY or cells
+# where the head is below the bottom elevation assigned to the cell.
+# "Flooded" means (1) a cell where the head is above the top
+# elevation assigned to the cell, (2) the layer is not a confined
+# layer type, and (3) the cell is the highest active cell in the column.
+Time, SP, TS, Active, Inactive, Dry, Flooded
+1.0, 1, 10, 2118, 282, 510, 0

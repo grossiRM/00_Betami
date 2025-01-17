@@ -1,7 +1,0 @@
-no_video
-
-
-	tmp_d 		= 	os.path.join('a1_beta_F')			freyberg_mf6 = a1_beta_F
-
-
-	template_ws 	=	os.path.join("a1_Pstfrom_Katie_new_folder")

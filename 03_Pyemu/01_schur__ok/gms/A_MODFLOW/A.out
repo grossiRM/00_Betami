@@ -1,0 +1,604 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.19.01 03/25/2010
+
+
+ This model run produced both GLOBAL and LIST files.  This is the LIST file.
+
+ 
+ #GMS MODFLOW Simulation                                                         
+ #16 January 2025                                                                
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+    1 LAYERS        40 ROWS        20 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+
+ BAS6 -- BASIC PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   14
+          5 ELEMENTS IN IR ARRAY ARE USED BY BAS
+
+ WEL6 -- WELL PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   18
+ #GMS_HDF5_01
+ No named parameters
+ MAXIMUM OF      6 ACTIVE WELLS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ AUXILIARY WELL VARIABLE: IFACE           
+ AUXILIARY WELL VARIABLE: QFACT           
+ AUXILIARY WELL VARIABLE: CELLGRP         
+         42 ELEMENTS IN RX ARRAY ARE USED BY WEL
+
+ DRN6 -- DRAIN PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   19
+ #GMS_HDF5_01
+ No named parameters
+ MAXIMUM OF     78 ACTIVE DRAINS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ AUXILIARY DRAIN VARIABLE: IFACE           
+ AUXILIARY DRAIN VARIABLE: CONDFACT        
+ AUXILIARY DRAIN VARIABLE: CELLGRP         
+        624 ELEMENTS IN RX ARRAY ARE USED BY DRN
+
+ RCH6 -- RECHARGE PACKAGE, VERSION 6, 1/11/2000 INPUT READ FROM UNIT   17
+ #GMS_HDF5_01
+ No named parameters
+ OPTION 3 -- RECHARGE TO HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+        800 ELEMENTS IN RX ARRAY ARE USED BY RCH
+        800 ELEMENTS IN IR ARRAY ARE USED BY RCH
+
+ CHD6 -- TIME-VARIANT SPECIFIED-HEAD PACKAGE, VERSION 6, 1/11/2000
+ INPUT READ FROM UNIT   20
+ #GMS_HDF5_01
+ No named parameters
+ MAXIMUM OF     21 TIME-VARIANT SPECIFIED-HEAD CELLS AT ONE TIME
+ AUXILIARY CHD VARIABLE: SHEADFACT       
+ AUXILIARY CHD VARIABLE: EHEADFACT       
+ AUXILIARY CHD VARIABLE: CELLGRP         
+        168 ELEMENTS IN RX ARRAY ARE USED BY CHD
+
+       1634  ELEMENTS OF RX ARRAY USED OUT OF       1634
+          0  ELEMENTS OF RZ ARRAY USED OUT OF          1
+        805  ELEMENTS OF IR ARRAY USED OUT OF        805
+1
+ #GMS MODFLOW Simulation                                                         
+ #16 January 2025                                                                
+
+                1           2           3           4           5           6           7           8           9          10
+               11          12          13          14          15          16          17          18          19          20
+ ............................................................................................................................
+   1            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   2            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   3            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   4            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   5            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   6            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   7            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   8            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+   9            1           1           1           1           0           0           0           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  10            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  11            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  12            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  13            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  14            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  15            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  16            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  17            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  18            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  19            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  20            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  21            1           1           1           1           0           0           0           0           1           1
+                1           1           1           1           1           1           1           1           1           1
+  22            1           1           1           1           0           0           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  23            1           1           1           1           1           0           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  24            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  25            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  26            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  27            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  28            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  29            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  30            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  31            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  32            1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  33            0           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  34            0           0           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  35            0           0           0           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+  36            0           0           0           0           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           0
+  37            0           0           0           0           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           0
+  38            0           0           0           0           0           1           1           1           1           1
+                1           1           1           1           1           1           1           1           0           0
+  39            0           0           0           0           0           1           1           1           1           1
+                1           1           1           1           1           1           1           0           0           0
+  40            0           0           0           0           0           1           1           1           1           1
+                1           1           1           1           1           1           0           0           0           0
+
+ AQUIFER HEAD WILL BE SET TO -999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ AUXILIARY DATA WILL BE SAVED IN CELL-BY-CELL BUDGET FILES
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    4    DRAWDOWNS WILL BE SAVED ON UNIT    0
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+ WELL NO.  LAYER   ROW   COL   STRESS RATE         IFACE           QFACT           CELLGRP         
+ --------------------------------------------------------------------------------------------------
+      1      1      9     17      -708.5           0.000           1.000           1.000    
+      2      1     11     13      -354.2           0.000           1.000           2.000    
+      3      1     20     14      -337.0           0.000           1.000           3.000    
+      4      1     26     10      -71.71           0.000           1.000           4.000    
+      5      1     29      6      -62.21           0.000           1.000           5.000    
+      6      1     34     12      -371.5           0.000           1.000           6.000    
+
+      6 WELLS
+
+ DRAIN NO.  LAYER   ROW   COL     DRAIN EL.  CONDUCTANCE         IFACE           CONDFACT        CELLGRP         
+ ----------------------------------------------------------------------------------------------------------------
+      1      1      1     16       32.00           2640.           6.000           240.0           1.000    
+      2      1      1     16       32.00           180.0           6.000           10.00           2.000    
+      3      1      2     16       32.00           4320.           6.000           240.0           2.000    
+      4      1      2     16       32.00           120.0           6.000           10.00           3.000    
+      5      1      3     16       32.00           2880.           6.000           240.0           3.000    
+      6      1      3     16       32.00           110.0           6.000           10.00           4.000    
+      7      1      4     16       32.00           2640.           6.000           240.0           4.000    
+      8      1      4     16       32.00           180.0           6.000           10.00           5.000    
+      9      1      5     16       32.00           4320.           6.000           240.0           5.000    
+     10      1      5     16       32.00           160.0           6.000           10.00           6.000    
+     11      1      6     16       32.00           3840.           6.000           240.0           6.000    
+     12      1      6     16       32.00           170.0           6.000           10.00           7.000    
+     13      1      7     16       32.00           4080.           6.000           240.0           7.000    
+     14      1      7     16       32.00           160.0           6.000           10.00           8.000    
+     15      1      8     16       32.00           3840.           6.000           240.0           8.000    
+     16      1      8     16       31.98           140.0           6.000           10.00           9.000    
+     17      1      9     16       31.48           3360.           6.000           240.0           9.000    
+     18      1      9     16       31.00           100.0           6.000           10.00           10.00    
+     19      1     10     16       31.00           2400.           6.000           240.0           10.00    
+     20      1     10     16       31.00           140.0           6.000           10.00           11.00    
+     21      1     11     16       31.00           3360.           6.000           240.0           11.00    
+     22      1     11     16       31.00           180.0           6.000           10.00           12.00    
+     23      1     12     16       31.00           4320.           6.000           240.0           12.00    
+     24      1     12     16       31.00           150.0           6.000           10.00           13.00    
+     25      1     13     16       31.00           3600.           6.000           240.0           13.00    
+     26      1     13     16       31.00           200.0           6.000           10.00           14.00    
+     27      1     14     16       31.00           4800.           6.000           240.0           14.00    
+     28      1     14     16       31.00           180.0           6.000           10.00           15.00    
+     29      1     15     16       31.00           4320.           6.000           240.0           15.00    
+     30      1     15     16       31.00           140.0           6.000           10.00           16.00    
+     31      1     16     16       31.00           3360.           6.000           240.0           16.00    
+     32      1     16     16       31.00           140.0           6.000           10.00           17.00    
+     33      1     17     16       31.00           3360.           6.000           240.0           17.00    
+     34      1     17     16       31.00           200.0           6.000           10.00           18.00    
+     35      1     18     16       31.00           4800.           6.000           240.0           18.00    
+     36      1     18     16       31.00           130.0           6.000           10.00           19.00    
+     37      1     19     16       31.00           3120.           6.000           240.0           19.00    
+     38      1     19     16       31.00           100.0           6.000           10.00           20.00    
+     39      1     20     16       31.00           2400.           6.000           240.0           20.00    
+     40      1     20     16       31.00           110.0           6.000           10.00           21.00    
+     41      1     21     16       31.00           2640.           6.000           240.0           21.00    
+     42      1     21     16       31.00           130.0           6.000           10.00           22.00    
+     43      1     22     16       31.00           3120.           6.000           240.0           22.00    
+     44      1     22     16       31.00           180.0           6.000           10.00           23.00    
+     45      1     23     16       31.00           4320.           6.000           240.0           23.00    
+     46      1     23     16       31.00           140.0           6.000           10.00           24.00    
+     47      1     24     16       31.00           3360.           6.000           240.0           24.00    
+     48      1     24     16       31.00           170.0           6.000           10.00           25.00    
+     49      1     25     16       31.00           4080.           6.000           240.0           25.00    
+     50      1     25     16       31.00           120.0           6.000           10.00           26.00    
+     51      1     26     16       31.00           2880.           6.000           240.0           26.00    
+     52      1     26     16       31.00           180.0           6.000           10.00           27.00    
+     53      1     27     16       31.00           4320.           6.000           240.0           27.00    
+     54      1     27     16       31.00           180.0           6.000           10.00           28.00    
+     55      1     28     16       31.00           4320.           6.000           240.0           28.00    
+     56      1     28     16       31.00           150.0           6.000           10.00           29.00    
+     57      1     29     16       31.00           3600.           6.000           240.0           29.00    
+     58      1     29     16       31.00           190.0           6.000           10.00           30.00    
+     59      1     30     16       31.00           4560.           6.000           240.0           30.00    
+     60      1     30     16       31.00           190.0           6.000           10.00           31.00    
+     61      1     31     16       31.00           4560.           6.000           240.0           31.00    
+     62      1     31     16       31.00           130.0           6.000           10.00           32.00    
+     63      1     32     16       31.00           3120.           6.000           240.0           32.00    
+     64      1     32     16       31.00           100.0           6.000           10.00           33.00    
+     65      1     33     16       31.00           2400.           6.000           240.0           33.00    
+     66      1     33     16       31.00           110.0           6.000           10.00           34.00    
+     67      1     34     16       31.00           2640.           6.000           240.0           34.00    
+     68      1     34     16       31.00           180.0           6.000           10.00           35.00    
+     69      1     35     16       31.00           4320.           6.000           240.0           35.00    
+     70      1     35     16       31.00           120.0           6.000           10.00           36.00    
+     71      1     36     16       31.00           2880.           6.000           240.0           36.00    
+     72      1     36     16       31.00           150.0           6.000           10.00           37.00    
+     73      1     37     16       31.00           3600.           6.000           240.0           37.00    
+     74      1     37     16       31.00           180.0           6.000           10.00           38.00    
+     75      1     38     16       31.00           4320.           6.000           240.0           38.00    
+     76      1     38     16       30.96           190.0           6.000           10.00           39.00    
+     77      1     39     16       29.96           4560.           6.000           240.0           39.00    
+     78      1     39     16       29.00           190.0           6.000           10.00           40.00    
+
+     78 DRAINS
+
+ CHD NO.   LAYER   ROW   COL    START HEAD        END HEAD         SHEADFACT       EHEADFACT       CELLGRP         
+ ------------------------------------------------------------------------------------------------------------------
+      1      1     40      6       27.84           27.84           240.0           240.0           1.000    
+      2      1     40      7       27.84           27.84           240.0           240.0           2.000    
+      3      1     40      6       1.160           1.160           10.00           10.00           2.000    
+      4      1     40      8       27.84           27.84           240.0           240.0           3.000    
+      5      1     40      7       1.160           1.160           10.00           10.00           3.000    
+      6      1     40      9       27.84           27.84           240.0           240.0           4.000    
+      7      1     40      8       1.160           1.160           10.00           10.00           4.000    
+      8      1     40     10       27.84           27.84           240.0           240.0           5.000    
+      9      1     40      9       1.160           1.160           10.00           10.00           5.000    
+     10      1     40     11       27.84           27.84           240.0           240.0           6.000    
+     11      1     40     10       1.160           1.160           10.00           10.00           6.000    
+     12      1     40     12       27.84           27.84           240.0           240.0           7.000    
+     13      1     40     11       1.160           1.160           10.00           10.00           7.000    
+     14      1     40     13       27.84           27.84           240.0           240.0           8.000    
+     15      1     40     12       1.160           1.160           10.00           10.00           8.000    
+     16      1     40     14       27.84           27.84           240.0           240.0           9.000    
+     17      1     40     13       1.160           1.160           10.00           10.00           9.000    
+     18      1     40     15       27.84           27.84           240.0           240.0           10.00    
+     19      1     40     14       1.160           1.160           10.00           10.00           10.00    
+     20      1     40     16       29.00           29.00           240.0           240.0           11.00    
+     21      1     40     15       1.160           1.160           10.00           10.00           11.00    
+
+
+     21 TIME-VARIANT SPECIFIED-HEAD CELLS
+ 
+ SOLVING FOR HEAD 
+
+ OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP   1
+    PRINT BUDGET
+    SAVE HEAD FOR ALL LAYERS
+    SAVE BUDGET
+ UBDSV2 SAVING "   CONSTANT HEAD" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW RIGHT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW FRONT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV4 SAVING "           WELLS" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV4 SAVING "          DRAINS" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV3 SAVING "        RECHARGE" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+
+
+ ***Link-MT3DMS Package***
+ OPENING LINK-MT3DMS OUTPUT FILE: A.hff                                                                                                                                                                                                   
+ ON UNIT NUMBER:   333
+ FILE TYPE: UNFORMATTED
+ HEADER OPTION: STANDARD
+ ***Link-MT3DMS Package***
+
+
+ SAVING SATURATED THICKNESS AND FLOW TERMS ON UNIT  333 FOR MT3DMS
+ BY THE LINK-MT3DMS PACKAGE V6.3 AT TIME STEP    1, STRESS PERIOD    1
+
+
+ HEAD WILL BE SAVED ON UNIT    4 AT END OF TIME STEP   1, STRESS PERIOD    1
+1
+  VOLUMETRIC BUDGET FOR ENTIRE MODEL AT END OF TIME STEP  1 IN STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUMES      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =           0.0000         CONSTANT HEAD =           0.0000
+               WELLS =           0.0000                 WELLS =           0.0000
+              DRAINS =           0.0000                DRAINS =           0.0000
+            RECHARGE =        6004.7998              RECHARGE =        6004.7998
+
+            TOTAL IN =        6004.7998              TOTAL IN =        6004.7998
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =        1162.5699         CONSTANT HEAD =        1162.5699
+               WELLS =        1905.1200                 WELLS =        1905.1200
+              DRAINS =        2937.1301                DRAINS =        2937.1301
+            RECHARGE =           0.0000              RECHARGE =           0.0000
+
+           TOTAL OUT =        6004.8203             TOTAL OUT =        6004.8203
+
+            IN - OUT =      -2.0508E-02              IN - OUT =      -2.0508E-02
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+
+
+
+          TIME SUMMARY AT END OF TIME STEP   1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+1
+
+ HEADS AT DRAIN CELLS ARE BELOW THE BOTTOM OF THE DRAIN AT THE CELLS LISTED
+ BELOW.  THESE CONDITIONS DIMINISH THE IMPACT OF THE OBSERVATION ON ESTIMATES
+ OF ALL PARAMETERS.  (SEE TEXT FOR MORE INFORMATION).
+
+ OBS#     14, ID dr0         , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1      7     16
+      1 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     15, ID dr1         , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1      7     16
+      1      7     16
+      1      8     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     16, ID dr2         , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1      8     16
+      1      8     16
+      1      9     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     17, ID dr3         , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1      9     16
+      1 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     42, ID dr28        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     35     16
+      1 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     43, ID dr29        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     35     16
+      1     35     16
+      1     36     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     45, ID dr31        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     36     16
+      1     36     16
+      1     37     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     46, ID dr32        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     37     16
+      1     37     16
+      1     38     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     47, ID dr33        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     38     16
+      1     38     16
+      1     39     16
+      3 OF THE      3 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ OBS#     48, ID dr34        , TIME STEP     1
+    LAYER   ROW  COLUMN
+      1     39     16
+      1 OF THE      2 REACHES OR CELLS USED TO SIMULATE THE GAIN OR LOSS ARE
+                      AFFECTED.
+
+ DATA AT HEAD LOCATIONS
+
+        OBSERVATION     OBSER-     SIMUL.                          WEIGHTED
+   OBS#    NAME         VATION     EQUIV.    RESIDUAL  WEIGHT**.5  RESIDUAL
+                          *          *
+      1 hed1            29.0       35.1      -6.06       1.96      -11.9    
+      2 hed2            27.0       32.1      -5.13       1.96      -10.1    
+      3 hed3            29.0       35.4      -6.44       1.96      -12.6    
+      4 hed4            27.0       32.5      -5.50       1.96      -10.8    
+      5 hed5            27.0       31.4      -4.40       1.96      -8.62    
+      6 hed6            27.0       32.7      -5.70       1.96      -11.2    
+      7 hed7            27.0       31.4      -4.36       1.96      -8.55    
+      8 hed8            28.0       34.9      -6.90       1.96      -13.5    
+      9 hed9            27.0       34.0      -6.95       1.96      -13.6    
+     10 hed10           26.0       31.2      -5.21       1.96      -10.2    
+     11 hed11           26.0       31.6      -5.62       1.96      -11.0    
+     12 hed12           26.0       30.6      -4.62       1.96      -9.06    
+     13 hed13           28.0       34.8      -6.83       1.96      -13.4    
+
+ * THE OBSERVATION (AND CORRESPONDING SIMULATED EQUIVALENT) IS HEAD OR TEMPORAL
+   CHANGE IN HEAD, AS SPECIFIED IN THE "HOB" INPUT FILE.  NEGATIVE TEMPORAL
+   CHANGES INDICATE DRAWDOWN.
+
+ STATISTICS FOR HEAD RESIDUALS :
+ MAXIMUM WEIGHTED RESIDUAL  : -8.55     OBS#      7
+ MINIMUM WEIGHTED RESIDUAL  : -13.6     OBS#      9
+ AVERAGE WEIGHTED RESIDUAL  : -11.1    
+ # RESIDUALS >= 0. :      0
+ # RESIDUALS < 0.  :     13
+ NUMBER OF RUNS  :    1  IN   13 OBSERVATIONS
+
+ SUM OF SQUARED WEIGHTED RESIDUALS (HEADS ONLY)   1645.9    
+
+ DATA FOR FLOWS REPRESENTED USING THE DRAIN PACKAGE
+
+       OBSERVATION      MEAS.      CALC.                          WEIGHTED
+  OBS#    NAME          FLOW       FLOW     RESIDUAL  WEIGHT**.5  RESIDUAL
+
+    14 dr0             0.00      -2.53       2.53       1.96       4.96    
+    15 dr1             0.00       0.00       0.00       1.96       0.00    
+    16 dr2             0.00       0.00       0.00       1.96       0.00    
+    17 dr3             0.00      -35.6       35.6       1.96       69.8    
+    18 dr4             0.00      -62.8       62.8       1.96       123.    
+    19 dr5             0.00      -79.7       79.7       1.96       156.    
+    20 dr6             0.00      -83.5       83.5       1.96       164.    
+    21 dr7             0.00      -95.2       95.2       1.96       187.    
+    22 dr8             0.00      -98.8       98.8       1.96       194.    
+    23 dr9             0.00      -99.0       99.0       1.96       194.    
+    24 dr10            0.00      -97.4       97.4       1.96       191.    
+    25 dr11            0.00      -99.3       99.3       1.96       195.    
+    26 dr12            0.00      -77.7       77.7       1.96       152.    
+    27 dr13            0.00      -60.5       60.5       1.96       119.    
+    28 dr14            0.00      -80.0       80.0       1.96       157.    
+    29 dr15            0.00      -97.8       97.8       1.96       192.    
+    30 dr16            0.00      -116.       116.       1.96       228.    
+    31 dr17            0.00      -112.       112.       1.96       219.    
+    32 dr18            0.00      -120.       120.       1.96       236.    
+    33 dr19            0.00      -104.       104.       1.96       204.    
+    34 dr20            0.00      -111.       111.       1.96       218.    
+    35 dr21            0.00      -105.       105.       1.96       206.    
+    36 dr22            0.00      -95.1       95.1       1.96       186.    
+    37 dr23            0.00      -93.0       93.0       1.96       182.    
+    38 dr24            0.00      -82.5       82.5       1.96       162.    
+    39 dr25            0.00      -64.0       64.0       1.96       125.    
+    40 dr26            0.00      -42.9       42.9       1.96       84.1    
+    41 dr27            0.00      -5.73       5.73       1.96       11.2    
+    42 dr28            0.00     -0.263      0.263       1.96      0.516    
+    43 dr29            0.00       0.00       0.00       1.96       0.00    
+    44 dr30            0.00      -134.       134.       1.96       263.    
+    45 dr31            0.00       0.00       0.00       1.96       0.00    
+    46 dr32            0.00       0.00       0.00       1.96       0.00    
+    47 dr33            0.00       0.00       0.00       1.96       0.00    
+    48 dr34            0.00      -97.7       97.7       1.96       191.    
+    49 dr35            0.00      -155.       155.       1.96       304.    
+    50 dr36            0.00      -134.       134.       1.96       262.    
+    51 dr37            0.00      -120.       120.       1.96       234.    
+    52 dr38            0.00      -114.       114.       1.96       223.    
+    53 dr39            0.00      -61.1       61.1       1.96       120.    
+
+ STATISTICS FOR DRAIN FLOW RESIDUALS :
+ MAXIMUM WEIGHTED RESIDUAL  :  304.     OBS#     49
+ MINIMUM WEIGHTED RESIDUAL  :  0.00     OBS#     15
+ AVERAGE WEIGHTED RESIDUAL  :  144.    
+ # RESIDUALS >= 0. :     40
+ # RESIDUALS < 0.  :      0
+ NUMBER OF RUNS:      1  IN     40 OBSERVATIONS
+
+ SUM OF SQUARED WEIGHTED RESIDUALS (DRAIN FLOWS ONLY)  0.11440E+07
+
+ DATA FOR FLOW OBSERVATIONS AT BOUNDARIES REPRESENTED AS CONSTANT-HEAD
+
+       OBSERVATION      MEAS.      CALC.                          WEIGHTED
+  OBS#    NAME          FLOW       FLOW     RESIDUAL  WEIGHT**.5  RESIDUAL
+
+    54 ch0             0.00      -89.3       89.3       1.96       175.    
+    55 ch1             0.00      -89.0       89.0       1.96       174.    
+    56 ch2             0.00      -91.7       91.7       1.96       180.    
+    57 ch3             0.00      -99.8       99.8       1.96       196.    
+    58 ch4             0.00      -132.       132.       1.96       259.    
+    59 ch5             0.00      -132.       132.       1.96       259.    
+    60 ch6             0.00      -123.       123.       1.96       242.    
+    61 ch7             0.00      -113.       113.       1.96       222.    
+    62 ch8             0.00      -104.       104.       1.96       203.    
+    63 ch9             0.00      -96.4       96.4       1.96       189.    
+    64 ch10            0.00      -91.7       91.7       1.96       180.    
+
+ STATISTICS FOR CONSTANT-HEAD BOUNDARY FLOW RESIDUALS :
+ MAXIMUM WEIGHTED RESIDUAL  :  259.     OBS#     59
+ MINIMUM WEIGHTED RESIDUAL  :  174.     OBS#     55
+ AVERAGE WEIGHTED RESIDUAL  :  207.    
+ # RESIDUALS >= 0. :     11
+ # RESIDUALS < 0.  :      0
+ NUMBER OF RUNS  :    1  IN   11 OBSERVATIONS
+
+ SUM OF SQUARED WEIGHTED RESIDUALS
+   (CONSTANT-HEAD BOUNDARY FLOWS ONLY)  0.48287E+06
+
+ SUM OF SQUARED WEIGHTED RESIDUALS (ALL DEPENDENT VARIABLES)  0.16285E+07
+
+ STATISTICS FOR ALL RESIDUALS :
+ AVERAGE WEIGHTED RESIDUAL  : 0.123E+03
+ # RESIDUALS >= 0. :     51
+ # RESIDUALS < 0.  :     13
+ NUMBER OF RUNS  :    2  IN   64 OBSERVATIONS
+
+ INTERPRETING THE CALCULATED RUNS STATISTIC VALUE OF     -7.55    
+ NOTE: THE FOLLOWING APPLIES ONLY IF 
+        # RESIDUALS >= 0 . IS GREATER THAN 10 AND 
+        # RESIDUALS < 0.   IS GREATER THAN 10
+ THE NEGATIVE VALUE MAY INDICATE TOO FEW RUNS:
+    IF THE VALUE IS LESS THAN -1.28, THERE IS LESS THAN A 10 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.645, THERE IS LESS THAN A 5 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.96, THERE IS LESS THAN A 2.5 PERCENT
+       CHANCE THE VALUES ARE RANDOM.
+
+
+ ORDERED DEPENDENT-VARIABLE WEIGHTED RESIDUALS
+ NUMBER OF RESIDUALS INCLUDED:        64
+     -13.6      -13.5      -13.4      -12.6      -11.9      -11.2      -11.0    
+     -10.8      -10.2      -10.1      -9.06      -8.62      -8.55       0.00    
+      0.00       0.00       0.00       0.00       0.00      0.516       4.96    
+      11.2       69.8       84.1       119.       120.       123.       125.    
+      152.       156.       157.       162.       164.       174.       175.    
+      180.       180.       182.       186.       187.       189.       191.    
+      191.       192.       194.       194.       195.       196.       203.    
+      204.       206.       218.       219.       222.       223.       228.    
+      234.       236.       242.       259.       259.       262.       263.    
+      304.    
+
+ CORRELATION BETWEEN ORDERED WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS
+ FOR OBSERVATIONS =    0.860    
+
+ --------------------------------------------------------------------------
+ COMMENTS ON THE INTERPRETATION OF THE CORRELATION BETWEEN
+ WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS:
+
+ The critical value for correlation at the 5% significance level is 0.964
+
+ IF the reported CORRELATION is GREATER than the 5% critical value, ACCEPT
+ the hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.  The probability that this   
+ conclusion is wrong is less than 5%.
+
+ IF the reported correlation IS LESS THAN the 5% critical value REJECT the
+ hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.
+
+ The analysis can also be done using the 10% significance level.
+ The associated critical value is 0.970
+ --------------------------------------------------------------------------
+
