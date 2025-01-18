@@ -1,0 +1,178 @@
+                       PEST RUN MANAGEMENT RECORD: CASE a
+
+ AGENT DETAILS:-
+
+ Agent Name                  PAGENT Working Directory
+ ----------                  ------------------------
+ "slave0"                    .\
+ "slave1"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\
+ "slave2"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\
+ "slave3"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\
+ "slave4"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\
+ "slave5"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\
+ "slave6"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\
+ "slave7"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\
+ "slave8"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\
+ "slave9"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\
+ "slave10"                   c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\
+
+
+ Attempting to communicate with agents ....
+
+ - agent "slave0" has been detected.
+ - agent "slave1" has been detected.
+ - agent "slave2" has been detected.
+ - agent "slave3" has been detected.
+ - agent "slave4" has been detected.
+ - agent "slave5" has been detected.
+ - agent "slave6" has been detected.
+ - agent "slave7" has been detected.
+ - agent "slave8" has been detected.
+ - agent "slave9" has been detected.
+ - agent "slave10" has been detected.
+
+
+ AGENT MODEL INPUT AND OUTPUT FILES:-
+
+ Agent "slave0" ----->
+
+     Model input files on agent "slave0":-
+         .\A.snn_1
+
+     Model output files on agent "slave0":-
+         .\A._os
+
+     Model command line for agent "slave0":-
+         A_bat1.bat
+
+
+ Agent "slave1" ----->
+
+     Model input files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\A.snn_1
+
+     Model output files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\A._os
+
+     Model command line for agent "slave1":-
+         A_bat1.bat
+
+
+ Agent "slave2" ----->
+
+     Model input files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\A.snn_1
+
+     Model output files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\A._os
+
+     Model command line for agent "slave2":-
+         A_bat1.bat
+
+
+ Agent "slave3" ----->
+
+     Model input files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\A.snn_1
+
+     Model output files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\A._os
+
+     Model command line for agent "slave3":-
+         A_bat1.bat
+
+
+ Agent "slave4" ----->
+
+     Model input files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\A.snn_1
+
+     Model output files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\A._os
+
+     Model command line for agent "slave4":-
+         A_bat1.bat
+
+
+ Agent "slave5" ----->
+
+     Model input files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\A.snn_1
+
+     Model output files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\A._os
+
+     Model command line for agent "slave5":-
+         A_bat1.bat
+
+
+ Agent "slave6" ----->
+
+     Model input files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\A.snn_1
+
+     Model output files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\A._os
+
+     Model command line for agent "slave6":-
+         A_bat1.bat
+
+
+ Agent "slave7" ----->
+
+     Model input files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\A.snn_1
+
+     Model output files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\A._os
+
+     Model command line for agent "slave7":-
+         A_bat1.bat
+
+
+ Agent "slave8" ----->
+
+     Model input files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\A.snn_1
+
+     Model output files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\A._os
+
+     Model command line for agent "slave8":-
+         A_bat1.bat
+
+
+ Agent "slave9" ----->
+
+     Model input files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\A.snn_1
+
+     Model output files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\A._os
+
+     Model command line for agent "slave9":-
+         A_bat1.bat
+
+
+ Agent "slave10" ----->
+
+     Model input files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\A.snn_1
+
+     Model output files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\A._os
+
+     Model command line for agent "slave10":-
+         A_bat1.bat
+
+
+ AVERAGE WAIT INTERVAL         : 1 hundredths of a second.
+ PARALLELISE LAMBDA SEARCH     : yes
+ REPEAT TROUBLESOME MODEL RUNS : yes
+ SLOW RUN DECLARATION FACTOR   : 1.5000
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   14:45:49.93:- agent "slave0" commencing model run.
+   14:45:50.44:- agent "slave0" finished execution; reading results.

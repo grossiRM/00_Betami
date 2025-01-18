@@ -1,0 +1,425 @@
+                    PEST RUN MANAGEMENT RECORD: CASE aassist
+
+ AGENT DETAILS:-
+
+ Agent Name                  PAGENT Working Directory
+ ----------                  ------------------------
+ "slave0"                    .\
+ "slave1"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\
+ "slave2"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\
+ "slave3"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\
+ "slave4"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\
+ "slave5"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\
+ "slave6"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\
+ "slave7"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\
+ "slave8"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\
+ "slave9"                    c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\
+ "slave10"                   c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\
+
+
+ Attempting to communicate with agents ....
+
+ - agent "slave0" has been detected.
+ - agent "slave1" has been detected.
+ - agent "slave2" has been detected.
+ - agent "slave3" has been detected.
+ - agent "slave4" has been detected.
+ - agent "slave5" has been detected.
+ - agent "slave6" has been detected.
+ - agent "slave7" has been detected.
+ - agent "slave9" has been detected.
+ - agent "slave8" has been detected.
+ - agent "slave10" has been detected.
+
+
+ AGENT MODEL INPUT AND OUTPUT FILES:-
+
+ Agent "slave0" ----->
+
+     Model input files on agent "slave0":-
+         .\parcalc.in
+
+     Model output files on agent "slave0":-
+         .\A._os
+         .\picalc.out
+
+     Model command line for agent "slave0":-
+         svdabatch.bat
+
+
+ Agent "slave1" ----->
+
+     Model input files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\parcalc.in
+
+     Model output files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave1\picalc.out
+
+     Model command line for agent "slave1":-
+         svdabatch.bat
+
+
+ Agent "slave2" ----->
+
+     Model input files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\parcalc.in
+
+     Model output files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave2\picalc.out
+
+     Model command line for agent "slave2":-
+         svdabatch.bat
+
+
+ Agent "slave3" ----->
+
+     Model input files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\parcalc.in
+
+     Model output files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave3\picalc.out
+
+     Model command line for agent "slave3":-
+         svdabatch.bat
+
+
+ Agent "slave4" ----->
+
+     Model input files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\parcalc.in
+
+     Model output files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave4\picalc.out
+
+     Model command line for agent "slave4":-
+         svdabatch.bat
+
+
+ Agent "slave5" ----->
+
+     Model input files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\parcalc.in
+
+     Model output files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave5\picalc.out
+
+     Model command line for agent "slave5":-
+         svdabatch.bat
+
+
+ Agent "slave6" ----->
+
+     Model input files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\parcalc.in
+
+     Model output files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave6\picalc.out
+
+     Model command line for agent "slave6":-
+         svdabatch.bat
+
+
+ Agent "slave7" ----->
+
+     Model input files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\parcalc.in
+
+     Model output files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave7\picalc.out
+
+     Model command line for agent "slave7":-
+         svdabatch.bat
+
+
+ Agent "slave8" ----->
+
+     Model input files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\parcalc.in
+
+     Model output files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave8\picalc.out
+
+     Model command line for agent "slave8":-
+         svdabatch.bat
+
+
+ Agent "slave9" ----->
+
+     Model input files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\parcalc.in
+
+     Model output files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave9\picalc.out
+
+     Model command line for agent "slave9":-
+         svdabatch.bat
+
+
+ Agent "slave10" ----->
+
+     Model input files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\parcalc.in
+
+     Model output files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\A._os
+         c:\users\gross~1.des\appdata\local\temp\gms_18332\ppest\slave10\picalc.out
+
+     Model command line for agent "slave10":-
+         svdabatch.bat
+
+
+ AVERAGE WAIT INTERVAL         : 1 hundredths of a second.
+ PARALLELISE LAMBDA SEARCH     : yes
+ REPEAT TROUBLESOME MODEL RUNS : yes
+ SLOW RUN DECLARATION FACTOR   : 1.5000
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   14:40:56.76:- agent "slave0" commencing model run.
+   14:40:57.58:- agent "slave0" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+
+ Calculating Jacobian matrix: running model 8 times .....
+   14:40:57.80:- agent "slave0" commencing model run.
+   14:40:57.82:- agent "slave1" commencing model run.
+   14:40:57.87:- agent "slave2" commencing model run.
+   14:40:57.89:- agent "slave3" commencing model run.
+   14:40:57.92:- agent "slave4" commencing model run.
+   14:40:57.96:- agent "slave5" commencing model run.
+   14:40:57.99:- agent "slave6" commencing model run.
+   14:40:58.01:- agent "slave7" commencing model run.
+   14:40:58.39:- agent "slave0" finished execution; reading results.
+   14:40:59.10:- agent "slave5" finished execution; reading results.
+   14:40:59.33:- agent "slave6" finished execution; reading results.
+   14:40:59.50:- agent "slave7" finished execution; reading results.
+   14:40:59.67:- agent "slave1" finished execution; reading results.
+   14:40:59.86:- agent "slave2" finished execution; reading results.
+   14:40:59.99:- agent "slave3" finished execution; reading results.
+   14:41: 0.22:- agent "slave4" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41: 0.31:- agent "slave0" commencing model run.
+   14:41: 0.33:- agent "slave5" commencing model run.
+   14:41: 0.36:- agent "slave8" commencing model run.
+   14:41: 0.40:- agent "slave9" commencing model run.
+   14:41: 0.42:- agent "slave10" commencing model run.
+   14:41: 0.95:- agent "slave5" finished execution; reading results.
+   14:41: 1.12:- agent "slave0" finished execution; reading results.
+   14:41: 1.37:- agent "slave8" finished execution; reading results.
+   14:41: 1.56:- agent "slave9" finished execution; reading results.
+   14:41: 1.75:- agent "slave10" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+
+ Calculating Jacobian matrix: running model 8 times .....
+   14:41: 1.95:- agent "slave0" commencing model run.
+   14:41: 1.98:- agent "slave5" commencing model run.
+   14:41: 1.99:- agent "slave8" commencing model run.
+   14:41: 2.01:- agent "slave9" commencing model run.
+   14:41: 2.03:- agent "slave10" commencing model run.
+   14:41: 2.03:- agent "slave1" commencing model run.
+   14:41: 2.04:- agent "slave2" commencing model run.
+   14:41: 2.05:- agent "slave3" commencing model run.
+   14:41: 2.67:- agent "slave2" finished execution; reading results.
+   14:41: 2.94:- agent "slave5" finished execution; reading results.
+   14:41: 3.15:- agent "slave8" finished execution; reading results.
+   14:41: 3.28:- agent "slave9" finished execution; reading results.
+   14:41: 3.44:- agent "slave10" finished execution; reading results.
+   14:41: 3.59:- agent "slave0" finished execution; reading results.
+   14:41: 3.73:- agent "slave1" finished execution; reading results.
+   14:41: 3.94:- agent "slave3" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41: 4.15:- agent "slave2" commencing model run.
+   14:41: 4.20:- agent "slave5" commencing model run.
+   14:41: 4.21:- agent "slave8" commencing model run.
+   14:41: 4.76:- agent "slave8" finished execution; reading results.
+   14:41: 5.05:- agent "slave5" finished execution; reading results.
+   14:41: 5.27:- agent "slave2" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+
+ Calculating Jacobian matrix: running model 8 times .....
+   14:41: 5.54:- agent "slave5" commencing model run.
+   14:41: 5.58:- agent "slave8" commencing model run.
+   14:41: 5.62:- agent "slave0" commencing model run.
+   14:41: 5.63:- agent "slave1" commencing model run.
+   14:41: 5.65:- agent "slave2" commencing model run.
+   14:41: 5.66:- agent "slave3" commencing model run.
+   14:41: 5.68:- agent "slave4" commencing model run.
+   14:41: 5.68:- agent "slave6" commencing model run.
+   14:41: 6.17:- agent "slave0" finished execution; reading results.
+   14:41: 6.38:- agent "slave4" finished execution; reading results.
+   14:41: 6.66:- agent "slave5" finished execution; reading results.
+   14:41: 7.06:- agent "slave6" finished execution; reading results.
+   14:41: 7.37:- agent "slave8" finished execution; reading results.
+   14:41: 7.72:- agent "slave1" finished execution; reading results.
+   14:41: 7.90:- agent "slave2" finished execution; reading results.
+   14:41: 8.05:- agent "slave3" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41: 8.15:- agent "slave0" commencing model run.
+   14:41: 8.16:- agent "slave4" commencing model run.
+   14:41: 8.18:- agent "slave5" commencing model run.
+   14:41: 8.22:- agent "slave6" commencing model run.
+   14:41: 8.77:- agent "slave0" finished execution; reading results.
+   14:41: 8.91:- agent "slave4" finished execution; reading results.
+   14:41: 9.10:- agent "slave5" finished execution; reading results.
+   14:41: 9.27:- agent "slave6" finished execution; reading results.
+   14:41: 9.39:- agent "slave0" commencing model run.
+   14:41: 9.41:- agent "slave4" commencing model run.
+   14:41: 9.43:- agent "slave5" commencing model run.
+   14:41:10.05:- agent "slave5" finished execution; reading results.
+   14:41:10.23:- agent "slave0" finished execution; reading results.
+   14:41:10.47:- agent "slave4" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+
+ Calculating Jacobian matrix: running model 16 times .....
+   14:41:10.68:- agent "slave0" commencing model run.
+   14:41:10.72:- agent "slave4" commencing model run.
+   14:41:10.73:- agent "slave5" commencing model run.
+   14:41:10.74:- agent "slave1" commencing model run.
+   14:41:10.77:- agent "slave2" commencing model run.
+   14:41:10.78:- agent "slave3" commencing model run.
+   14:41:10.79:- agent "slave6" commencing model run.
+   14:41:10.80:- agent "slave7" commencing model run.
+   14:41:10.81:- agent "slave8" commencing model run.
+   14:41:10.82:- agent "slave9" commencing model run.
+   14:41:10.83:- agent "slave10" commencing model run.
+   14:41:11.35:- agent "slave4" finished execution; reading results.
+   14:41:11.46:- agent "slave4" commencing model run.
+   14:41:11.55:- agent "slave0" finished execution; reading results.
+   14:41:11.73:- agent "slave0" commencing model run.
+   14:41:11.78:- agent "slave2" finished execution; reading results.
+   14:41:11.88:- agent "slave2" commencing model run.
+   14:41:11.95:- agent "slave1" finished execution; reading results.
+   14:41:12.03:- agent "slave1" commencing model run.
+   14:41:12.10:- agent "slave3" finished execution; reading results.
+   14:41:12.19:- agent "slave3" commencing model run.
+   14:41:12.30:- agent "slave5" finished execution; reading results.
+   14:41:12.39:- agent "slave6" finished execution; reading results.
+   14:41:12.54:- agent "slave7" finished execution; reading results.
+   14:41:12.71:- agent "slave8" finished execution; reading results.
+   14:41:12.90:- agent "slave9" finished execution; reading results.
+   14:41:13.01:- agent "slave10" finished execution; reading results.
+   14:41:13.22:- agent "slave0" finished execution; reading results.
+   14:41:13.34:- agent "slave1" finished execution; reading results.
+   14:41:13.50:- agent "slave2" finished execution; reading results.
+   14:41:13.67:- agent "slave3" finished execution; reading results.
+   14:41:13.87:- agent "slave4" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41:14.03:- agent "slave0" commencing model run.
+   14:41:14.73:- agent "slave0" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+
+ Calculating Jacobian matrix: running model 16 times .....
+   14:41:14.86:- agent "slave0" commencing model run.
+   14:41:14.90:- agent "slave1" commencing model run.
+   14:41:14.92:- agent "slave2" commencing model run.
+   14:41:14.93:- agent "slave3" commencing model run.
+   14:41:14.95:- agent "slave4" commencing model run.
+   14:41:14.96:- agent "slave5" commencing model run.
+   14:41:14.97:- agent "slave6" commencing model run.
+   14:41:14.98:- agent "slave7" commencing model run.
+   14:41:14.99:- agent "slave8" commencing model run.
+   14:41:15.00:- agent "slave9" commencing model run.
+   14:41:15.01:- agent "slave10" commencing model run.
+   14:41:15.69:- agent "slave2" finished execution; reading results.
+   14:41:15.81:- agent "slave2" commencing model run.
+   14:41:15.91:- agent "slave0" finished execution; reading results.
+   14:41:16.00:- agent "slave0" commencing model run.
+   14:41:16.06:- agent "slave1" finished execution; reading results.
+   14:41:16.18:- agent "slave1" commencing model run.
+   14:41:16.23:- agent "slave3" finished execution; reading results.
+   14:41:16.34:- agent "slave3" commencing model run.
+   14:41:16.38:- agent "slave4" finished execution; reading results.
+   14:41:16.52:- agent "slave4" commencing model run.
+   14:41:16.58:- agent "slave2" finished execution; reading results.
+   14:41:16.79:- agent "slave5" finished execution; reading results.
+   14:41:16.91:- agent "slave6" finished execution; reading results.
+   14:41:17.13:- agent "slave7" finished execution; reading results.
+   14:41:17.22:- agent "slave8" finished execution; reading results.
+   14:41:17.39:- agent "slave9" finished execution; reading results.
+   14:41:17.54:- agent "slave10" finished execution; reading results.
+   14:41:17.72:- agent "slave0" finished execution; reading results.
+   14:41:17.85:- agent "slave1" finished execution; reading results.
+   14:41:17.96:- agent "slave3" finished execution; reading results.
+   14:41:18.12:- agent "slave4" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41:18.30:- agent "slave2" commencing model run.
+   14:41:18.33:- agent "slave3" commencing model run.
+   14:41:18.36:- agent "slave4" commencing model run.
+   14:41:18.85:- agent "slave4" finished execution; reading results.
+   14:41:19.02:- agent "slave2" finished execution; reading results.
+   14:41:19.21:- agent "slave3" finished execution; reading results.
+   14:41:19.34:- agent "slave2" commencing model run.
+   14:41:19.39:- agent "slave3" commencing model run.
+   14:41:19.43:- agent "slave4" commencing model run.
+   14:41:20.00:- agent "slave4" finished execution; reading results.
+   14:41:20.16:- agent "slave2" finished execution; reading results.
+   14:41:20.43:- agent "slave3" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+
+ Calculating Jacobian matrix: running model 16 times .....
+   14:41:20.58:- agent "slave2" commencing model run.
+   14:41:20.60:- agent "slave3" commencing model run.
+   14:41:20.64:- agent "slave4" commencing model run.
+   14:41:20.65:- agent "slave0" commencing model run.
+   14:41:20.67:- agent "slave1" commencing model run.
+   14:41:20.67:- agent "slave5" commencing model run.
+   14:41:20.68:- agent "slave6" commencing model run.
+   14:41:20.69:- agent "slave7" commencing model run.
+   14:41:20.70:- agent "slave8" commencing model run.
+   14:41:20.71:- agent "slave9" commencing model run.
+   14:41:20.72:- agent "slave10" commencing model run.
+   14:41:21.19:- agent "slave2" finished execution; reading results.
+   14:41:21.36:- agent "slave2" commencing model run.
+   14:41:21.44:- agent "slave0" finished execution; reading results.
+   14:41:21.62:- agent "slave0" commencing model run.
+   14:41:21.69:- agent "slave1" finished execution; reading results.
+   14:41:21.78:- agent "slave1" commencing model run.
+   14:41:21.86:- agent "slave3" finished execution; reading results.
+   14:41:22.02:- agent "slave3" commencing model run.
+   14:41:22.07:- agent "slave4" finished execution; reading results.
+   14:41:22.18:- agent "slave4" commencing model run.
+   14:41:22.23:- agent "slave0" finished execution; reading results.
+   14:41:22.37:- agent "slave5" finished execution; reading results.
+   14:41:22.56:- agent "slave6" finished execution; reading results.
+   14:41:22.71:- agent "slave7" finished execution; reading results.
+   14:41:22.88:- agent "slave8" finished execution; reading results.
+   14:41:23.02:- agent "slave9" finished execution; reading results.
+   14:41:23.25:- agent "slave10" finished execution; reading results.
+   14:41:23.45:- agent "slave1" finished execution; reading results.
+   14:41:23.69:- agent "slave2" finished execution; reading results.
+   14:41:23.94:- agent "slave3" finished execution; reading results.
+   14:41:24.10:- agent "slave4" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   14:41:24.24:- agent "slave0" commencing model run.
+   14:41:24.81:- agent "slave0" finished execution; reading results.
+   14:41:24.97:- agent "slave0" commencing model run.
+   14:41:25.56:- agent "slave0" finished execution; reading results.
+   14:41:25.63:- agent "slave0" commencing model run.
+   14:41:26.26:- agent "slave0" finished execution; reading results.

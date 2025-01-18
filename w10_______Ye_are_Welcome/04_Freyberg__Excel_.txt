@@ -1,0 +1,8 @@
+
+01	0a_Freyberg__pstfrom___.xlsx	E:\15_REPOS\00_BETAMI\01_GMDSI________as_far_as_I_know\01_Tutorials______AGAIN___\part2_01_pstfromSETUP______new_start_____ok
+02	0a_Freyberg__time_s____.xlsx	E:\15_REPOS\00_BETAMI\01_GMDSI________as_far_as_I_know\01_Tutorials______AGAIN___\part2_02_OW__Time_Series_____________________
+
+03_	0a_Freyberg__mfusg_____.xlsx	E:\15_REPOS\00_BETAMI\02_floPy__________________\07_mfusg___________________________________________\b_01_mfusg_FREYBERG_example____________
+
+04_	0a_Freyberg__struct____.xlsx	E:\15_REPOS\00_BETAMI\05_Others\04_Flopy_Freyberg_Beta_____\data_Frey
+05	0a_Freyberg__schur_____.xlsx	E:\15_REPOS\00_BETAMI\03_pyEMU
