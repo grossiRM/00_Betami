@@ -1,0 +1,487 @@
+                       PEST RUN MANAGEMENT RECORD: CASE b
+
+ AGENT DETAILS:-
+
+ Agent Name                  PAGENT Working Directory
+ ----------                  ------------------------
+ "slave0"                    .\
+ "slave1"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave1\
+ "slave2"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave2\
+ "slave3"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave3\
+ "slave4"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave4\
+ "slave5"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave5\
+ "slave6"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave6\
+ "slave7"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave7\
+ "slave8"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave8\
+ "slave9"                    c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave9\
+ "slave10"                   c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave10\
+
+
+ Attempting to communicate with agents ....
+
+ - agent "slave0" has been detected.
+ - agent "slave1" has been detected.
+ - agent "slave2" has been detected.
+ - agent "slave3" has been detected.
+ - agent "slave4" has been detected.
+ - agent "slave5" has been detected.
+ - agent "slave6" has been detected.
+ - agent "slave7" has been detected.
+ - agent "slave8" has been detected.
+ - agent "slave9" has been detected.
+ - agent "slave10" has been detected.
+
+
+ AGENT MODEL INPUT AND OUTPUT FILES:-
+
+ Agent "slave0" ----->
+
+     Model input files on agent "slave0":-
+         .\B.snn_1
+
+     Model output files on agent "slave0":-
+         .\B._os
+
+     Model command line for agent "slave0":-
+         B_bat1.bat
+
+
+ Agent "slave1" ----->
+
+     Model input files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave1\B.snn_1
+
+     Model output files on agent "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave1\B._os
+
+     Model command line for agent "slave1":-
+         B_bat1.bat
+
+
+ Agent "slave2" ----->
+
+     Model input files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave2\B.snn_1
+
+     Model output files on agent "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave2\B._os
+
+     Model command line for agent "slave2":-
+         B_bat1.bat
+
+
+ Agent "slave3" ----->
+
+     Model input files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave3\B.snn_1
+
+     Model output files on agent "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave3\B._os
+
+     Model command line for agent "slave3":-
+         B_bat1.bat
+
+
+ Agent "slave4" ----->
+
+     Model input files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave4\B.snn_1
+
+     Model output files on agent "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave4\B._os
+
+     Model command line for agent "slave4":-
+         B_bat1.bat
+
+
+ Agent "slave5" ----->
+
+     Model input files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave5\B.snn_1
+
+     Model output files on agent "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave5\B._os
+
+     Model command line for agent "slave5":-
+         B_bat1.bat
+
+
+ Agent "slave6" ----->
+
+     Model input files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave6\B.snn_1
+
+     Model output files on agent "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave6\B._os
+
+     Model command line for agent "slave6":-
+         B_bat1.bat
+
+
+ Agent "slave7" ----->
+
+     Model input files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave7\B.snn_1
+
+     Model output files on agent "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave7\B._os
+
+     Model command line for agent "slave7":-
+         B_bat1.bat
+
+
+ Agent "slave8" ----->
+
+     Model input files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave8\B.snn_1
+
+     Model output files on agent "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave8\B._os
+
+     Model command line for agent "slave8":-
+         B_bat1.bat
+
+
+ Agent "slave9" ----->
+
+     Model input files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave9\B.snn_1
+
+     Model output files on agent "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave9\B._os
+
+     Model command line for agent "slave9":-
+         B_bat1.bat
+
+
+ Agent "slave10" ----->
+
+     Model input files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave10\B.snn_1
+
+     Model output files on agent "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_6680\ppest\slave10\B._os
+
+     Model command line for agent "slave10":-
+         B_bat1.bat
+
+
+ AVERAGE WAIT INTERVAL         : 1 hundredths of a second.
+ PARALLELISE LAMBDA SEARCH     : yes
+ REPEAT TROUBLESOME MODEL RUNS : yes
+ SLOW RUN DECLARATION FACTOR   : 1.5000
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   12:09:25.27:- agent "slave0" commencing model run.
+   12:09:25.97:- agent "slave0" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+
+ Calculating Jacobian matrix: running model 149 times .....
+   12:09:26.18:- agent "slave0" commencing model run.
+   12:09:26.19:- agent "slave1" commencing model run.
+   12:09:26.20:- agent "slave2" commencing model run.
+   12:09:26.21:- agent "slave3" commencing model run.
+   12:09:26.23:- agent "slave4" commencing model run.
+   12:09:26.24:- agent "slave5" commencing model run.
+   12:09:26.25:- agent "slave6" commencing model run.
+   12:09:26.26:- agent "slave7" commencing model run.
+   12:09:26.27:- agent "slave8" commencing model run.
+   12:09:26.28:- agent "slave9" commencing model run.
+   12:09:26.29:- agent "slave10" commencing model run.
+   12:09:26.66:- agent "slave0" finished execution; reading results.
+   12:09:26.71:- agent "slave0" commencing model run.
+   12:09:26.83:- agent "slave7" finished execution; reading results.
+   12:09:26.92:- agent "slave7" commencing model run.
+   12:09:26.99:- agent "slave1" finished execution; reading results.
+   12:09:27.05:- agent "slave1" commencing model run.
+   12:09:27.13:- agent "slave2" finished execution; reading results.
+   12:09:27.21:- agent "slave2" commencing model run.
+   12:09:27.31:- agent "slave3" finished execution; reading results.
+   12:09:27.37:- agent "slave3" commencing model run.
+   12:09:27.46:- agent "slave0" finished execution; reading results.
+   12:09:27.53:- agent "slave0" commencing model run.
+   12:09:27.61:- agent "slave1" finished execution; reading results.
+   12:09:27.72:- agent "slave1" commencing model run.
+   12:09:27.83:- agent "slave4" finished execution; reading results.
+   12:09:27.94:- agent "slave4" commencing model run.
+   12:09:28.06:- agent "slave2" finished execution; reading results.
+   12:09:28.17:- agent "slave2" commencing model run.
+   12:09:28.26:- agent "slave0" finished execution; reading results.
+   12:09:28.34:- agent "slave0" commencing model run.
+   12:09:28.39:- agent "slave1" finished execution; reading results.
+   12:09:28.45:- agent "slave1" commencing model run.
+   12:09:28.51:- agent "slave3" finished execution; reading results.
+   12:09:28.56:- agent "slave3" commencing model run.
+   12:09:28.60:- agent "slave4" finished execution; reading results.
+   12:09:28.64:- agent "slave4" commencing model run.
+   12:09:28.74:- agent "slave5" finished execution; reading results.
+   12:09:28.84:- agent "slave5" commencing model run.
+   12:09:28.88:- agent "slave0" finished execution; reading results.
+   12:09:28.99:- agent "slave0" commencing model run.
+   12:09:29.05:- agent "slave1" finished execution; reading results.
+   12:09:29.10:- agent "slave1" commencing model run.
+   12:09:29.17:- agent "slave2" finished execution; reading results.
+   12:09:29.26:- agent "slave2" commencing model run.
+   12:09:29.35:- agent "slave3" finished execution; reading results.
+   12:09:29.40:- agent "slave3" commencing model run.
+   12:09:29.45:- agent "slave0" finished execution; reading results.
+   12:09:29.52:- agent "slave0" commencing model run.
+   12:09:29.58:- agent "slave1" finished execution; reading results.
+   12:09:29.62:- agent "slave1" commencing model run.
+   12:09:29.68:- agent "slave4" finished execution; reading results.
+   12:09:29.81:- agent "slave4" commencing model run.
+   12:09:29.89:- agent "slave5" finished execution; reading results.
+   12:09:29.99:- agent "slave5" commencing model run.
+   12:09:30.05:- agent "slave2" finished execution; reading results.
+   12:09:30.14:- agent "slave2" commencing model run.
+   12:09:30.20:- agent "slave0" finished execution; reading results.
+   12:09:30.28:- agent "slave0" commencing model run.
+   12:09:30.33:- agent "slave1" finished execution; reading results.
+   12:09:30.40:- agent "slave1" commencing model run.
+   12:09:30.47:- agent "slave3" finished execution; reading results.
+   12:09:30.54:- agent "slave3" commencing model run.
+   12:09:30.63:- agent "slave4" finished execution; reading results.
+   12:09:30.71:- agent "slave4" commencing model run.
+   12:09:30.80:- agent "slave2" finished execution; reading results.
+   12:09:30.85:- agent "slave2" commencing model run.
+   12:09:30.89:- agent "slave0" finished execution; reading results.
+   12:09:30.93:- agent "slave0" commencing model run.
+   12:09:31.01:- agent "slave1" finished execution; reading results.
+   12:09:31.05:- agent "slave1" commencing model run.
+   12:09:31.09:- agent "slave3" finished execution; reading results.
+   12:09:31.16:- agent "slave3" commencing model run.
+   12:09:31.21:- agent "slave5" finished execution; reading results.
+   12:09:31.26:- agent "slave5" commencing model run.
+   12:09:31.33:- agent "slave4" finished execution; reading results.
+   12:09:31.39:- agent "slave4" commencing model run.
+   12:09:31.45:- agent "slave2" finished execution; reading results.
+   12:09:31.53:- agent "slave2" commencing model run.
+   12:09:31.57:- agent "slave0" finished execution; reading results.
+   12:09:31.64:- agent "slave0" commencing model run.
+   12:09:31.71:- agent "slave1" finished execution; reading results.
+   12:09:31.77:- agent "slave1" commencing model run.
+   12:09:31.83:- agent "slave3" finished execution; reading results.
+   12:09:31.91:- agent "slave3" commencing model run.
+   12:09:32.02:- agent "slave4" finished execution; reading results.
+   12:09:32.07:- agent "slave4" commencing model run.
+   12:09:32.12:- agent "slave0" finished execution; reading results.
+   12:09:32.21:- agent "slave0" commencing model run.
+   12:09:32.27:- agent "slave2" finished execution; reading results.
+   12:09:32.32:- agent "slave2" commencing model run.
+   12:09:32.40:- agent "slave1" finished execution; reading results.
+   12:09:32.49:- agent "slave1" commencing model run.
+   12:09:32.55:- agent "slave3" finished execution; reading results.
+   12:09:32.69:- agent "slave3" commencing model run.
+   12:09:32.74:- agent "slave0" finished execution; reading results.
+   12:09:32.80:- agent "slave0" commencing model run.
+   12:09:32.90:- agent "slave4" finished execution; reading results.
+   12:09:33.00:- agent "slave4" commencing model run.
+   12:09:33.09:- agent "slave2" finished execution; reading results.
+   12:09:33.14:- agent "slave2" commencing model run.
+   12:09:33.23:- agent "slave1" finished execution; reading results.
+   12:09:33.29:- agent "slave1" commencing model run.
+   12:09:33.36:- agent "slave0" finished execution; reading results.
+   12:09:33.46:- agent "slave0" commencing model run.
+   12:09:33.51:- agent "slave3" finished execution; reading results.
+   12:09:33.55:- agent "slave3" commencing model run.
+   12:09:33.65:- agent "slave4" finished execution; reading results.
+   12:09:33.70:- agent "slave4" commencing model run.
+   12:09:33.75:- agent "slave1" finished execution; reading results.
+   12:09:33.80:- agent "slave1" commencing model run.
+   12:09:33.86:- agent "slave2" finished execution; reading results.
+   12:09:33.91:- agent "slave2" commencing model run.
+   12:09:34.00:- agent "slave5" finished execution; reading results.
+   12:09:34.05:- agent "slave5" commencing model run.
+   12:09:34.11:- agent "slave0" finished execution; reading results.
+   12:09:34.15:- agent "slave0" commencing model run.
+   12:09:34.22:- agent "slave3" finished execution; reading results.
+   12:09:34.28:- agent "slave3" commencing model run.
+   12:09:34.35:- agent "slave1" finished execution; reading results.
+   12:09:34.43:- agent "slave1" commencing model run.
+   12:09:34.47:- agent "slave2" finished execution; reading results.
+   12:09:34.52:- agent "slave2" commencing model run.
+   12:09:34.64:- agent "slave4" finished execution; reading results.
+   12:09:34.70:- agent "slave4" commencing model run.
+   12:09:34.75:- agent "slave0" finished execution; reading results.
+   12:09:34.80:- agent "slave0" commencing model run.
+   12:09:34.87:- agent "slave3" finished execution; reading results.
+   12:09:34.96:- agent "slave3" commencing model run.
+   12:09:35.01:- agent "slave1" finished execution; reading results.
+   12:09:35.08:- agent "slave1" commencing model run.
+   12:09:35.13:- agent "slave5" finished execution; reading results.
+   12:09:35.17:- agent "slave5" commencing model run.
+   12:09:35.22:- agent "slave2" finished execution; reading results.
+   12:09:35.31:- agent "slave2" commencing model run.
+   12:09:35.37:- agent "slave0" finished execution; reading results.
+   12:09:35.41:- agent "slave0" commencing model run.
+   12:09:35.48:- agent "slave3" finished execution; reading results.
+   12:09:35.56:- agent "slave3" commencing model run.
+   12:09:35.61:- agent "slave1" finished execution; reading results.
+   12:09:35.67:- agent "slave1" commencing model run.
+   12:09:35.74:- agent "slave4" finished execution; reading results.
+   12:09:35.81:- agent "slave4" commencing model run.
+   12:09:35.93:- agent "slave5" finished execution; reading results.
+   12:09:35.99:- agent "slave5" commencing model run.
+   12:09:36.07:- agent "slave0" finished execution; reading results.
+   12:09:36.13:- agent "slave0" commencing model run.
+   12:09:36.19:- agent "slave1" finished execution; reading results.
+   12:09:36.25:- agent "slave1" commencing model run.
+   12:09:36.31:- agent "slave2" finished execution; reading results.
+   12:09:36.37:- agent "slave2" commencing model run.
+   12:09:36.41:- agent "slave3" finished execution; reading results.
+   12:09:36.45:- agent "slave3" commencing model run.
+   12:09:36.52:- agent "slave4" finished execution; reading results.
+   12:09:36.57:- agent "slave4" commencing model run.
+   12:09:36.64:- agent "slave5" finished execution; reading results.
+   12:09:36.76:- agent "slave5" commencing model run.
+   12:09:36.81:- agent "slave0" finished execution; reading results.
+   12:09:36.90:- agent "slave0" commencing model run.
+   12:09:36.99:- agent "slave1" finished execution; reading results.
+   12:09:37.04:- agent "slave1" commencing model run.
+   12:09:37.10:- agent "slave2" finished execution; reading results.
+   12:09:37.20:- agent "slave2" commencing model run.
+   12:09:37.24:- agent "slave3" finished execution; reading results.
+   12:09:37.28:- agent "slave3" commencing model run.
+   12:09:37.35:- agent "slave4" finished execution; reading results.
+   12:09:37.40:- agent "slave4" commencing model run.
+   12:09:37.47:- agent "slave5" finished execution; reading results.
+   12:09:37.55:- agent "slave5" commencing model run.
+   12:09:37.62:- agent "slave0" finished execution; reading results.
+   12:09:37.70:- agent "slave0" commencing model run.
+   12:09:37.75:- agent "slave1" finished execution; reading results.
+   12:09:37.83:- agent "slave1" commencing model run.
+   12:09:37.91:- agent "slave2" finished execution; reading results.
+   12:09:37.98:- agent "slave2" commencing model run.
+   12:09:38.03:- agent "slave3" finished execution; reading results.
+   12:09:38.08:- agent "slave3" commencing model run.
+   12:09:38.17:- agent "slave4" finished execution; reading results.
+   12:09:38.34:- agent "slave4" commencing model run.
+   12:09:38.40:- agent "slave0" finished execution; reading results.
+   12:09:38.44:- agent "slave0" commencing model run.
+   12:09:38.50:- agent "slave1" finished execution; reading results.
+   12:09:38.59:- agent "slave1" commencing model run.
+   12:09:38.64:- agent "slave5" finished execution; reading results.
+   12:09:38.72:- agent "slave5" commencing model run.
+   12:09:38.79:- agent "slave2" finished execution; reading results.
+   12:09:38.85:- agent "slave2" commencing model run.
+   12:09:38.92:- agent "slave3" finished execution; reading results.
+   12:09:39.02:- agent "slave3" commencing model run.
+   12:09:39.08:- agent "slave0" finished execution; reading results.
+   12:09:39.14:- agent "slave0" commencing model run.
+   12:09:39.21:- agent "slave1" finished execution; reading results.
+   12:09:39.26:- agent "slave1" commencing model run.
+   12:09:39.38:- agent "slave4" finished execution; reading results.
+   12:09:39.49:- agent "slave4" commencing model run.
+   12:09:39.54:- agent "slave2" finished execution; reading results.
+   12:09:39.61:- agent "slave2" commencing model run.
+   12:09:39.74:- agent "slave3" finished execution; reading results.
+   12:09:39.81:- agent "slave3" commencing model run.
+   12:09:39.89:- agent "slave0" finished execution; reading results.
+   12:09:39.99:- agent "slave0" commencing model run.
+   12:09:40.03:- agent "slave1" finished execution; reading results.
+   12:09:40.16:- agent "slave1" commencing model run.
+   12:09:40.23:- agent "slave3" finished execution; reading results.
+   12:09:40.30:- agent "slave3" commencing model run.
+   12:09:40.38:- agent "slave2" finished execution; reading results.
+   12:09:40.43:- agent "slave2" commencing model run.
+   12:09:40.48:- agent "slave0" finished execution; reading results.
+   12:09:40.58:- agent "slave0" commencing model run.
+   12:09:40.66:- agent "slave1" finished execution; reading results.
+   12:09:40.71:- agent "slave1" commencing model run.
+   12:09:40.77:- agent "slave3" finished execution; reading results.
+   12:09:40.83:- agent "slave3" commencing model run.
+   12:09:40.90:- agent "slave4" finished execution; reading results.
+   12:09:41.05:- agent "slave4" commencing model run.
+   12:09:41.13:- agent "slave2" finished execution; reading results.
+   12:09:41.20:- agent "slave2" commencing model run.
+   12:09:41.29:- agent "slave0" finished execution; reading results.
+   12:09:41.35:- agent "slave0" commencing model run.
+   12:09:41.43:- agent "slave1" finished execution; reading results.
+   12:09:41.50:- agent "slave1" commencing model run.
+   12:09:41.57:- agent "slave3" finished execution; reading results.
+   12:09:41.63:- agent "slave3" commencing model run.
+   12:09:41.71:- agent "slave2" finished execution; reading results.
+   12:09:41.79:- agent "slave2" commencing model run.
+   12:09:41.90:- agent "slave4" finished execution; reading results.
+   12:09:41.95:- agent "slave4" commencing model run.
+   12:09:42.04:- agent "slave0" finished execution; reading results.
+   12:09:42.10:- agent "slave0" commencing model run.
+   12:09:42.17:- agent "slave1" finished execution; reading results.
+   12:09:42.24:- agent "slave1" commencing model run.
+   12:09:42.35:- agent "slave3" finished execution; reading results.
+   12:09:42.40:- agent "slave3" commencing model run.
+   12:09:42.49:- agent "slave2" finished execution; reading results.
+   12:09:42.56:- agent "slave2" commencing model run.
+   12:09:42.64:- agent "slave4" finished execution; reading results.
+   12:09:42.71:- agent "slave4" commencing model run.
+   12:09:42.81:- agent "slave0" finished execution; reading results.
+   12:09:42.89:- agent "slave0" commencing model run.
+   12:09:42.95:- agent "slave1" finished execution; reading results.
+   12:09:42.99:- agent "slave1" commencing model run.
+   12:09:43.09:- agent "slave3" finished execution; reading results.
+   12:09:43.16:- agent "slave3" commencing model run.
+   12:09:43.21:- agent "slave2" finished execution; reading results.
+   12:09:43.28:- agent "slave2" commencing model run.
+   12:09:43.38:- agent "slave4" finished execution; reading results.
+   12:09:43.44:- agent "slave4" commencing model run.
+   12:09:43.49:- agent "slave0" finished execution; reading results.
+   12:09:43.58:- agent "slave0" commencing model run.
+   12:09:43.67:- agent "slave1" finished execution; reading results.
+   12:09:43.74:- agent "slave1" commencing model run.
+   12:09:43.82:- agent "slave2" finished execution; reading results.
+   12:09:43.89:- agent "slave2" commencing model run.
+   12:09:43.95:- agent "slave3" finished execution; reading results.
+   12:09:44.00:- agent "slave3" commencing model run.
+   12:09:44.07:- agent "slave4" finished execution; reading results.
+   12:09:44.14:- agent "slave4" commencing model run.
+   12:09:44.22:- agent "slave0" finished execution; reading results.
+   12:09:44.28:- agent "slave0" commencing model run.
+   12:09:44.36:- agent "slave1" finished execution; reading results.
+   12:09:44.43:- agent "slave1" commencing model run.
+   12:09:44.48:- agent "slave2" finished execution; reading results.
+   12:09:44.59:- agent "slave2" commencing model run.
+   12:09:44.64:- agent "slave3" finished execution; reading results.
+   12:09:44.74:- agent "slave3" commencing model run.
+   12:09:44.79:- agent "slave4" finished execution; reading results.
+   12:09:44.88:- agent "slave4" commencing model run.
+   12:09:44.98:- agent "slave0" finished execution; reading results.
+   12:09:45.02:- agent "slave0" commencing model run.
+   12:09:45.08:- agent "slave1" finished execution; reading results.
+   12:09:45.18:- agent "slave1" commencing model run.
+   12:09:45.28:- agent "slave2" finished execution; reading results.
+   12:09:45.35:- agent "slave2" commencing model run.
+   12:09:45.40:- agent "slave3" finished execution; reading results.
+   12:09:45.52:- agent "slave3" commencing model run.
+   12:09:45.58:- agent "slave4" finished execution; reading results.
+   12:09:45.63:- agent "slave4" commencing model run.
+   12:09:45.73:- agent "slave0" finished execution; reading results.
+   12:09:45.78:- agent "slave0" commencing model run.
+   12:09:45.85:- agent "slave1" finished execution; reading results.
+   12:09:45.93:- agent "slave1" commencing model run.
+   12:09:45.98:- agent "slave2" finished execution; reading results.
+   12:09:46.07:- agent "slave2" commencing model run.
+   12:09:46.13:- agent "slave3" finished execution; reading results.
+   12:09:46.22:- agent "slave3" commencing model run.
+   12:09:46.28:- agent "slave4" finished execution; reading results.
+   12:09:46.38:- agent "slave4" commencing model run.
+   12:09:46.42:- agent "slave0" finished execution; reading results.
+   12:09:46.55:- agent "slave1" finished execution; reading results.
+   12:09:46.71:- agent "slave2" finished execution; reading results.
+   12:09:46.81:- agent "slave3" finished execution; reading results.
+   12:09:46.95:- agent "slave4" finished execution; reading results.
+   12:09:47.08:- agent "slave5" finished execution; reading results.
+   12:09:47.23:- agent "slave6" finished execution; reading results.
+   12:09:47.33:- agent "slave7" finished execution; reading results.
+   12:09:47.45:- agent "slave8" finished execution; reading results.
+   12:09:47.61:- agent "slave9" finished execution; reading results.
+   12:09:47.72:- agent "slave10" finished execution; reading results.
+
+ Testing parameter upgrades .....
+
+ RUNNING MODEL ONE LAST TIME WITH BEST PARAMETERS  -----> 
+   12:09:47.97:- agent "slave0" commencing model run.
+   12:09:48.51:- agent "slave0" finished execution; reading results.

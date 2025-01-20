@@ -1,0 +1,30 @@
+# MF2K NAME file
+#
+# Output Files
+GLOBAL          2 "B.glo"
+LIST            3 "B.out"
+DATA(BINARY)    4 "B.hed"
+DATA(BINARY)   40 "B.ccf"
+LMT6            7 "B.lmt"
+#
+# Obs-Sen-Pes Process Input Files
+OBS             8 "B.obs"
+HOB             9 "B.hob"
+DROB           15 "B.drob"
+CHOB           16 "B.chob"
+SEN            22 "B.snn"
+PES            23 "B.pes"
+ASP            17 "B.asp"
+#
+# Global Input Files
+DIS            10 "B.dis"
+#
+# Flow Process Input Files
+BAS6           11 "B.ba6"
+LPF            12 "B.lpf"
+OC             13 "B.oc"
+RCH            18 "B.rch"
+WEL            19 "B.wel"
+DRN            20 "B.drn"
+CHD            21 "B.chd"
+PCG            14 "B.pcg"
