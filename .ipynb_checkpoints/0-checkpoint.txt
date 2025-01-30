@@ -1,0 +1,3 @@
+https://doi-usgs.github.io/modflow-setup/installation.html
+conda activate gis
+---------------------------------------------------------------------------------------
