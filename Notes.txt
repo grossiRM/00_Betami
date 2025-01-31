@@ -11,9 +11,11 @@ Anaconda Prompt
 conda env create -f environment_gmdsitut.yml 
 conda info --envs
 	conda activate gmdsitut
+	conda activate gis
 	jupyter notebook
 ---------------------------------------------------------------------------------------
 https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
+https://www.youtube.com/@regenerativetoday4244/playlists
 ---------------------------------------------------------------------------------------
 conda info --envs
 conda list -n mfsetup
