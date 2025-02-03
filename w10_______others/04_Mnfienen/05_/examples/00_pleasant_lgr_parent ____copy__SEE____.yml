@@ -1,7 +1,7 @@
 This creates a new environment .... as GMDSItut or GIS, .... in ||mfsetup || ""python version"" ... to .. 
 .. to .. load everthing we don' know from here tha rec it commes from, ...                                       *.yml 
 
-config_data['model'] = dict()                                            
+	['model'] = dict()                                            
 config_data['model']['external_path'] = './' 
 config_data['model']['modelname'] = f'sgn_{dxdy}'
 config_data
