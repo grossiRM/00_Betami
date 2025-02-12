@@ -1,0 +1,2 @@
+conda activate example-environment
+jupyter notebook
