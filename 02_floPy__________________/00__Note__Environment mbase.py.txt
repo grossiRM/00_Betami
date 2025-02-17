@@ -1,3 +1,0 @@
-Environment mbase.py
-
-name: flopy

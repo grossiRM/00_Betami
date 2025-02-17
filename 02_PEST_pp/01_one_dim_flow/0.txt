@@ -1,0 +1,11 @@
+    Lx = 100.0
+    Ly = 1.0
+    ztop = 0.0
+    zbot = -50.0
+    nlay = 1
+    nrow = 1
+    ncol = 100
+    delr = Lx / ncol
+    delc = Ly / nrow
+    delv = (ztop - zbot) / nlay
+    botm = np.linspace(ztop, zbot, nlay + 1)
