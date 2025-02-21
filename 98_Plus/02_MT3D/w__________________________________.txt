@@ -16,4 +16,12 @@ then   pyPCGA
 
 MT3DMS: A Modular Three-Dimensional Multispecies Transport Model for Simulation of Advection, Dispersion, and Chemical Reactions of Contaminants in Groundwater Systems; Documentation and User's Guide
 
- 
+
+def aa(a1, a2):
+    a1 = 1
+    a2 = 2
+    return a2
+result = aa('a1','a2')
+print(result)    
+
+key  saverecord=[("CONCENTRATION", "all"
