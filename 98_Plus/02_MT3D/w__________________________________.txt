@@ -1,4 +1,11 @@
 https://modflow6-examples.readthedocs.io/en/master/_examples/ex-gwt-mt3dms-p01.html
+
+
+https://flopy.readthedocs.io/en/3.4.1/tutorials.html#mt3dms
+
+
+
+
 https://www2.hawaii.edu/~jonghyun/classes/S18/CEE696/files/
 my_first_flopy_mt3dms_example.py
 https://sites.google.com/a/hawaii.edu/gw-modeling/home?authuser=0 ....  Video ...GMS
