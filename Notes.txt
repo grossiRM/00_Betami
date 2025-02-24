@@ -29,3 +29,6 @@ conda env remove --name gmdsitut2
 ---------------------------------------------------------------------------------------
 https://doi-usgs.github.io/modflow-setup/installation.html
 python -m ipykernel install --user --name mfsetup --display-name "mfsetup"
+
+
+https://modflow-usgs.github.io/modflow6/namespacemembers.html
