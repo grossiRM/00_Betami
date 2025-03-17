@@ -1,0 +1,10 @@
+#GMS MODFLOW Simulation
+#17 January 2025
+FREE
+HDF5 1.0 -1 "A.h5" "Arrays/ibound1" 1 0 800
+HDF5 1.0 -1 "A.h5" "Arrays/ibound2" 1 0 800
+HDF5 1.0 -1 "A.h5" "Arrays/ibound3" 1 0 800
+-999.0
+HDF5 1.0 -1 "A.h5" "Arrays/StartHead1" 1 0 800
+HDF5 1.0 -1 "A.h5" "Arrays/StartHead2" 1 0 800
+HDF5 1.0 -1 "A.h5" "Arrays/StartHead3" 1 0 800

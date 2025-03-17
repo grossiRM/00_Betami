@@ -1,0 +1,32 @@
+'''
+groundwater supply optimization example using scipy.optimize.differential_evolution
+'''
+from mymf_v3 import mymf
+import numpy as np
+from scipy.optimize import differential_evolution
+
+def f(Q):
+    ''' objective function of groundwater supply
+
+    :param Q: pumping rate
+    :return objval: cost (pumping rate + drawdown penalty if head < 0)
+    '''
+    init_head = 1.  # initial head
+    model = mymf(init_head=init_head)
+    well_rcs = [[4, 4]]  # center
+    model.run(well_rcs, Q)
+    head = model.head() # note this array is 3D!
+    minhead = model.minhead()
+
+    objval = Q
+    if minhead < 0.0:
+        objval = objval + 10000000.*(minhead)**2
+    if Q > 0.0: # don't allow injection
+        objval = 1000000.0
+
+    print("Q: %f, objval: %f" % (Q, objval))
+    return objval
+
+ret = differential_evolution(f, bounds=[(-10000,0)], popsize= 20, maxiter = 30, disp=True)
+
+print(ret)

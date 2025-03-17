@@ -1,0 +1,274 @@
+"""
+mymf version 4:
+- now it supports mt3dms simulation (on top of modflow simulation)
+"""
+import numpy as np
+import flopy
+import flopy.utils.binaryfile as bf
+import matplotlib.pyplot as plt
+
+class mymf:
+    """
+    modflow model for multiple well pumping
+    every values are represented as 2D np array
+    """
+    def __init__(self,init_head):
+        """
+        initialize parameters
+        :param init_head: integer
+        """
+
+        # Assign name for modflow model object
+        modelname = 'modflow'
+
+        # Model domain and grid definition - we consider those values as given
+        Lx = 1000.
+        Ly = 1000.
+        ztop = 0.
+        zbot = -50.
+        nlay = 1
+        nrow = 50
+        ncol = 50
+        delr = Lx / ncol  # spacings along a row, can be an array
+        delc = Ly / nrow  # spacings along a column, can be an array
+        delv = (ztop - zbot) / nlay
+        botm = np.linspace(ztop, zbot, nlay + 1)
+
+        # Variables for the BAS package
+        # active > 0, inactive = 0, or constant head < 0
+        ibound = np.ones((nlay, nrow, ncol), dtype=np.int32)
+        ibound[:, :, 0] = -1
+        ibound[:, :, -1] = -1
+
+        # initial head value also serves as boundary conditions
+        strt = np.ones((nlay, nrow, ncol), dtype=np.float32)
+        strt[:, :, 0] = init_head
+        strt[:, :, -1] = init_head
+
+        # to access variables within the class
+        self.nrow = nrow
+        self.ncol = ncol
+        self.modelname = modelname
+
+        # Create modflow model object
+        self.mf = flopy.modflow.Modflow(modelname, exe_name='mf2005')
+
+        # Create the discretization object
+        self.dis = flopy.modflow.ModflowDis(self.mf, nlay, nrow, ncol, delr=delr, delc=delc,
+                                       top=ztop, botm=botm[1:])
+
+        # Add BAS package
+        bas = flopy.modflow.ModflowBas(self.mf, ibound=ibound, strt=strt)
+
+        # Add LPF package to the MODFLOW model
+        # hk array of horizontal hydraulic conductivity, vka vertical hydraulic conductivity
+        lpf = flopy.modflow.ModflowLpf(self.mf, hk=10., vka=10., ipakcb=53)
+
+        # Add OC package to the MODFLOW model
+        spd = {(0, 0): ['print head', 'print budget', 'save head', 'save budget']}
+        oc = flopy.modflow.ModflowOc(self.mf, stress_period_data=spd, compact=True)
+
+        # Add PCG package to the MODFLOW model
+        pcg = flopy.modflow.ModflowPcg(self.mf)
+
+        # linkage to mt3dms LMT package
+        lmt = flopy.modflow.ModflowLmt(self.mf, output_file_name='mt3d_link.ftl')
+
+    def run_mf(self, well_rcs, Qs):
+        """
+        run modflow simulation
+        :param well_rcs: well locations
+        :param Qs: corrsponding pumpting rates
+        :return: boolean success
+        """
+        # save well for the transport model
+        self.well_rcs = well_rcs
+        self.Qs = Qs
+
+        wel_sp = []
+        for items in zip(well_rcs,Qs):
+            wel_sp.append([0, items[0][0], items[0][1], items[1]])  # lay, row, col index, pumping rate
+            stress_period_data = {0: wel_sp}  # define well stress period {period, well info dictionary}
+
+        wel = flopy.modflow.ModflowWel(self.mf, stress_period_data=stress_period_data)
+
+        # MODFLOW input
+        # Write the MODFLOW model input files
+        # If we cannot (over)write input files, try to write until it succeeds
+        while True:
+            try:
+                self.mf.write_input()
+            except OSError as err:
+                print("File writing error: %s" % (err))
+            else:  # if we succeed, get out of the loop
+                break
+
+        # Run the MODFLOW model
+        success, buff = self.mf.run_model(silent=True)
+
+        return success
+
+    def run_mt3dms(self, well_rc, C):
+        '''
+        run mt3dms transport model. It should need modflow simulation result (run_mf())
+        :param well_rc: injection well location (one well is allowed for now)
+        :param C: tracer concentration
+        :return: Success
+        '''
+
+        # check whether your well_rc is injection well
+        inj_check = False
+        for items in zip(self.well_rcs, self.Qs):
+            if items[0][0] == well_rc[0] and items[0][1] == well_rc[1] and items[1] > 0:
+                inj_check = True
+                break
+
+        if inj_check:
+            pass # tracer injection at the injection well
+        else:
+            raise ValueError("you should choose injection well to perform tracer transport")
+
+        # create mt3dms model object
+        mt = flopy.mt3d.Mt3dms(modflowmodel=self.mf, modelname=self.modelname, exe_name='./mt3dms5b.exe',
+                               ftlfilename='mt3d_link.ftl')
+
+        # basic transport package
+        btn = flopy.mt3d.Mt3dBtn(mt, prsity=0.3, icbund=1, sconc=0.0, ncomp=1, perlen=5000,
+                                 nper=1, nstp=50, tsmult=1.0, nprs=-1, nprobs=10, cinact=-1, chkmas=True)
+
+        # advaction package
+        adv = flopy.mt3d.Mt3dAdv(mt, mixelm=-1, percel=0.75)
+        # dispersion package
+        dsp = flopy.mt3d.Mt3dDsp(mt, al=10.0, trpt=0.1, trpv=0.1, dmcoef=1.e-5)
+
+        # source/sink package
+        ssm_data = {}
+        itype = flopy.mt3d.Mt3dSsm.itype_dict()
+
+
+        ssm_data[0] = [(0, well_rc[0], well_rc[1], C, itype['WEL'])]
+
+        ssm = flopy.mt3d.Mt3dSsm(mt, stress_period_data=ssm_data)
+
+        # matrix solver package
+        gcg = flopy.mt3d.Mt3dGcg(mt, cclose=1e-6)
+
+        # write mt3dms input
+        mt.write_input()
+        # run mt3dms
+
+        # Run the MODFLOW model
+        success, buff = mt.run_model(silent=True)
+
+        return success
+
+    def times_mf(self):
+        """
+
+        :return: simulation time array of modflow
+        """
+
+        hds = bf.HeadFile(self.modelname + '.hds')
+        times = hds.get_times()  # simulation time, steady state
+        hds.close()  # close the file object for the next run
+
+        return times
+
+    def head(self):
+        """
+        minimum head value
+        """
+
+        hds = bf.HeadFile(self.modelname + '.hds')
+        times = hds.get_times()  # simulation time, steady state
+        heads = hds.get_data(totim=times[-1])
+        hds.close()  # close the file object for the next run
+
+        return heads
+
+    def minhead(self):
+        """
+        minimum head value
+        """
+
+        return self.head().min()
+
+    def plot_mf(self,title="head"):
+        """
+        plot modflow simulation results
+        :param title: title in plot
+        :return: None
+        """
+
+        cbb = bf.CellBudgetFile(self.modelname + '.cbc')
+        frf = cbb.get_data(text='FLOW RIGHT FACE', totim=self.times_mf()[-1])[0]
+        fff = cbb.get_data(text='FLOW FRONT FACE', totim=self.times_mf()[-1])[0]
+
+
+        fig = plt.figure(figsize=(10, 10))
+        ax = fig.add_subplot(1, 1, 1, aspect='equal')
+
+        modelmap = flopy.plot.ModelMap(model=self.mf, layer=0)
+        qm = modelmap.plot_ibound()
+        lc = modelmap.plot_grid()
+
+        levels = np.linspace(self.head().min(), self.head().max(), 11)
+        quiver = modelmap.plot_discharge(frf, fff, head=self.head())
+        cs = modelmap.contour_array(self.head(), levels=levels)
+        fig.colorbar(cs)
+        plt.title(title)
+        plt.show()
+        return # return nothing, but function should end with return
+
+    def plot_mt3dms(self,title="concentration"):
+        """
+        plot tracer plume concentration at the end of simulation
+        """
+        import flopy.utils.binaryfile as bf
+
+        # plot conc
+        ucnobj = bf.UcnFile('MT3D001.UCN')
+        # print(ucnobj.list_records()) # get values
+
+        times = ucnobj.get_times()  # simulation time
+
+        conc = ucnobj.get_data(totim=times[-1]) # last time
+
+        fig = plt.figure(figsize=(10, 10))
+        ax = fig.add_subplot(1, 1, 1, aspect='equal')
+        modelmap = flopy.plot.ModelMap(model=self.mf, layer=0)
+        lc = modelmap.plot_grid()  # grid
+        cs = modelmap.plot_array(conc)  # head contour
+
+        for items in self.well_rcs:
+            plt.plot(self.dis.get_node_coordinates()[1][items[1]], self.dis.get_node_coordinates()[0][items[0]], 'ro')  # well location
+
+        plt.colorbar(cs)  # colorbar
+        plt.title('C  %g day' % times[-1])
+        plt.show()
+
+        return # return nothing, but function should end with return
+
+
+if __name__ == '__main__': # run below if you directly call mymf_v4.py
+
+    import numpy as np
+
+    mymodel = mymf(0.)
+
+    pumping_rate = 1000.
+    wcol1 = round(mymodel.dis.nrow / 10)  # x index for the injection well
+    wrow1 = round(mymodel.dis.ncol / 2)  # y index for the injection well
+    wcol2 = round(mymodel.dis.nrow / 2)  # x index for the extraction well
+    wrow2 = round(mymodel.dis.ncol / 2)  # y index for the extraction well
+    well_rcs = [(wrow1,wcol1),(wrow2,wcol2)]
+
+    Qs = [1000,-1000]
+
+    # run modflow
+    mymodel.run_mf(well_rcs,Qs)
+    mymodel.plot_mf()
+
+    # run mt3dms
+    mymodel.run_mt3dms(well_rcs[0],10.0)
+    mymodel.plot_mt3dms()

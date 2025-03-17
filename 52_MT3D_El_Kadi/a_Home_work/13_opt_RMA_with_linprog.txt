@@ -1,0 +1,46 @@
+"""
+linear programming
+ min  Q
+s.t.  head_change*Q < max_head_change
+      Q <= 0
+"""
+import scipy.optimize as opt
+from mymf_v3 import mymf
+import numpy as np
+
+# we will start with initial head = 1 m
+# construct RMA
+init_head = 1. # initial head
+model = mymf(init_head=init_head)
+well_rcs = [[4,4]]      # center
+Qs = [-1.]              # unit pumping rate
+model.run(well_rcs,Qs)
+model.plot()
+
+head = model.head() # note this array is 3D!
+head_change = init_head - head
+
+# minimum head should take place at the pumping well [4,4]
+
+c = np.array([1.]) # minimize Q (maximize extraction); actually x0_bounds is defined for Q to be negative
+# you can interpret this as head change should be smaller than allowable head change
+A = np.array([[-head_change[0,4,4]]]) # head change at (4,4) due to pumping rate Q;
+                                      # make sure this is negative due to Q < 0
+                                      # this should be two dimensional array!
+b = np.array([1.])                    # maximum allowable head change at (4,4)
+x0_bounds = (None, 0)                 # Q <= 0
+res = opt.linprog(c, A_ub=A, b_ub=b,
+                  bounds=(x0_bounds),
+                  options={"disp": True})
+
+print('### result with minimal head constraint ###')
+print(res)
+print('the maximum pumping rate is %f' % (res.x))
+
+# result plotting
+init_head = 1. # initial head distribution = 1 m
+model = mymf(init_head)
+well_rcs = [[4,4]] # nrow = 10, ncol = 10
+Qs = res.x # optimization solution
+model.run(well_rcs,Qs)
+model.plot('head at the center')

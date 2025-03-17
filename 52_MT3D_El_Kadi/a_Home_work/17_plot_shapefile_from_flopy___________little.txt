@@ -1,0 +1,18 @@
+'''
+you need install 1) pyshp to read shapefile and 2) descartes to plot
+'''
+
+import shapefile as sf
+from flopy.utils.geometry import shape
+import flopy
+fname = './Unit_boundaries.shp'
+sfobj = sf.Reader(fname)
+
+flopy_geom = shape(list(sfobj.iterShapes())[0])
+
+# plot geometry
+flopy_geom.plot()
+
+# look into values in it
+ret = flopy.export.shapefile_utils.shp2recarray(fname)
+print(ret[0][3].bounds)

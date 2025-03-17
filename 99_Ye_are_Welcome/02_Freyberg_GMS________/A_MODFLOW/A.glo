@@ -1,0 +1,1264 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.19.01 03/25/2010
+
+
+ This model run produced both GLOBAL and LIST files.  This is the GLOBAL file.
+
+ GLOBAL LISTING FILE: "A.glo"
+                         UNIT    2
+
+ OPENING "A.out"
+ FILE TYPE:LIST   UNIT    3   STATUS:REPLACE
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.hed"
+ FILE TYPE:DATA(BINARY)   UNIT    4   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "A.ccf"
+ FILE TYPE:DATA(BINARY)   UNIT   40   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "A.lmt"
+ FILE TYPE:LMT6   UNIT    7   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Obs-Sen-Pes Process Input Files                                                                                                                                                                       
+
+ OPENING "A.obs"
+ FILE TYPE:OBS   UNIT    8   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.hob"
+ FILE TYPE:HOB   UNIT    9   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.drob"
+ FILE TYPE:DROB   UNIT   15   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.chob"
+ FILE TYPE:CHOB   UNIT   16   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING A.snn_1
+ FILE TYPE:SEN   UNIT   22   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#PES            23 "A.pes"                                                                                                                                                                              
+#ASP            17 "A.asp"                                                                                                                                                                              
+#                                                                                                                                                                                                       
+# Global Input Files                                                                                                                                                                                    
+
+ OPENING "A.dis"
+ FILE TYPE:DIS   UNIT   10   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Flow Process Input Files                                                                                                                                                                              
+
+ OPENING "A.ba6"
+ FILE TYPE:BAS6   UNIT   11   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.lpf"
+ FILE TYPE:LPF   UNIT   12   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.oc"
+ FILE TYPE:OC   UNIT   13   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.rch"
+ FILE TYPE:RCH   UNIT   18   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.wel"
+ FILE TYPE:WEL   UNIT   19   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.drn"
+ FILE TYPE:DRN   UNIT   20   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.chd"
+ FILE TYPE:CHD   UNIT   21   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A.pcg"
+ FILE TYPE:PCG   UNIT   14   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+# ASP data                                                                                                                                                                                              
+
+ FILE TYPE:ASP: FILE = A.asp_1
+
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT   10
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+    3 LAYERS        40 ROWS        20 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+ THE GROUND-WATER TRANSPORT PROCESS IS INACTIVE
+
+ THE OBSERVATION PROCESS IS ACTIVE
+ THE SENSITIVITY PROCESS IS ACTIVE
+ THE PARAMETER-ESTIMATION PROCESS IS INACTIVE
+
+ MODE: FORWARD WITH OBSERVATIONS AND PARAMETER-VALUE SUBSTITUTION
+
+  Confining bed flag for each layer:
+   0   0   0
+
+      21660  ELEMENTS OF GX ARRAY USED OUT OF      21660
+       2400  ELEMENTS OF GZ ARRAY USED OUT OF       2400
+       2400  ELEMENTS OF IG ARRAY USED OUT OF       2400
+
+ -------------------------------------------------------------------------------
+
+ VARIABLES READ FROM ASP INPUT FILE:-
+
+ NOSTOP = 1          : DO NOT CEASE EXECUTION IF MODFLOW FAILS TO CONVERGE.
+ HYDRYBOT = 1        : ASSIGN CELL BOTTOM ELEVATION TO HEAD IN DRY CELLS.
+ MINTHICK =     0.000: DO NOT PREVENT BASAL CELLS DRYING OUT.
+ LIMOP = 0           : NO LIMITATIONS ON OBSERVATION OR SENSITIVITY OUTPUT.
+
+ -------------------------------------------------------------------------------
+
+
+
+
+                               DELR
+ READING ON UNIT   10 WITH FORMAT: (FREE)              
+
+
+
+                               DELC
+ READING ON UNIT   10 WITH FORMAT: (FREE)              
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+
+ LPF1 -- LAYER PROPERTY FLOW PACKAGE, VERSION 1, 1/11/2000
+         INPUT READ FROM UNIT   12
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ HEAD AT CELLS THAT CONVERT TO DRY= layer bottom elevation.
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP        LAYAVG         CHANI        LAYVKA        LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0    -1.000E+00             1             0
+    2             1             0    -1.000E+00             1             0
+    3             1             0    -1.000E+00             1             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER      (LAYTYP)      (LAYAVG)       (CHANI)      (LAYVKA)      (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+    2   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+    3   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+
+       8800 ELEMENTS IN X ARRAY ARE USED BY LPF
+         18 ELEMENTS IN IX ARRAY ARE USED BY LPF
+
+ PCG2 -- CONJUGATE GRADIENT SOLUTION PACKAGE, VERSION 2.4, 12/29/98
+ MAXIMUM OF     25 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+       7300 ELEMENTS IN X ARRAY ARE USED BY PCG
+       8750 ELEMENTS IN IX ARRAY ARE USED BY PCG
+       9600 ELEMENTS IN Z ARRAY ARE USED BY PCG
+
+ SEN1BAS6 -- SENSITIVITY PROCESS, VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT   22
+
+ NUMBER OF PARAMETER VALUES TO BE READ FROM SEN FILE:  149
+ ISENALL............................................:   -1
+ SENSITIVITY PROCESS HAS BEEN DEACTIVATED BECAUSE ISENALL<0
+
+       3444 ELEMENTS IN X ARRAY ARE USED FOR SENSITIVITIES
+       2400 ELEMENTS IN Z ARRAY ARE USED FOR SENSITIVITIES
+        298 ELEMENTS IN IX ARRAY ARE USED FOR SENSITIVITIES
+
+ OBS1BAS6 -- OBSERVATION PROCESS, VERSION 1.0, 4/27/99
+ INPUT READ FROM UNIT   8
+ OBSERVATION GRAPH-DATA OUTPUT FILES
+ WILL BE PRINTED AND NAMED USING THE BASE: A
+
+ HEAD OBSERVATIONS -- INPUT READ FROM UNIT   9
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 1, 2625.0, 9125.0 ts_0 hed1
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 2, 4125.0, 9125.0 ts_0 hed2
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 3, 2375.0, 8875.0 ts_0 hed3
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 4, 2875.0, 6375.0 ts_0 hed4
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 5, 4375.0, 5875.0 ts_0 hed5
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 16, 2875.0, 4375.0 ts_0 hed6
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 17, 4375.0, 4125.0 ts_0 hed7
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 18, 1375.0, 3625.0 ts_0 hed8
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 19, 1875.0, 3125.0 ts_0 hed9
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 20, 4125.0, 2375.0 ts_0 hed10
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 21, 2125.0, 1375.0 ts_0 hed11
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 22, 2875.0, 1125.0 ts_0 hed12
+ #GMSCOMMENT 25bf39fd-0d63-4aa7-8459-407250af2f33 POINT 35, 1125.0, 3125.0 ts_0 hed13
+
+ NUMBER OF HEADS....................................:   13
+   NUMBER OF MULTILAYER HEADS.......................:    0
+   MAXIMUM NUMBER OF LAYERS FOR MULTILAYER HEADS....:    3
+
+ OBS1DRN6 -- OBSERVATION PROCESS (DRAIN FLOW OBSERVATIONS)
+ VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT   15
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 10 3875.0 8385.0 1.0 dr0
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 11 3875.0 8135.0 1.0 dr1
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 12 3875.0 7885.0 1.0 dr2
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 13 3875.0 7635.0 1.0 dr3
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 14 3875.0 7385.0 1.0 dr4
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 15 3875.0 7135.0 1.0 dr5
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 16 3875.0 6885.0 1.0 dr6
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 17 3875.0 6635.0 1.0 dr7
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 18 3875.0 6385.0 1.0 dr8
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 19 3875.0 6135.0 1.0 dr9
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 20 3875.0 5885.0 1.0 dr10
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 21 3875.0 5635.0 1.0 dr11
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 22 3875.0 5385.0 1.0 dr12
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 23 3875.0 5135.0 1.0 dr13
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 24 3875.0 4885.0 1.0 dr14
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 25 3875.0 4635.0 1.0 dr15
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 26 3875.0 4385.0 1.0 dr16
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 27 3875.0 4135.0 1.0 dr17
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 28 3875.0 3885.0 1.0 dr18
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 29 3875.0 3635.0 1.0 dr19
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 30 3875.0 3385.0 1.0 dr20
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 31 3875.0 3135.0 1.0 dr21
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 32 3875.0 2885.0 1.0 dr22
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 33 3875.0 2635.0 1.0 dr23
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 34 3875.0 2385.0 1.0 dr24
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 35 3875.0 2135.0 1.0 dr25
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 36 3875.0 1885.0 1.0 dr26
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 37 3875.0 1635.0 1.0 dr27
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 38 3875.0 1385.0 1.0 dr28
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 39 3875.0 1135.0 1.0 dr29
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 4 3875.0 9885.0 1.0 dr30
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 40 3875.0 885.0 1.0 dr31
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 41 3875.0 635.0 1.0 dr32
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 42 3875.0 385.0 1.0 dr33
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 43 3876.0 99.75 1.0 dr34
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 5 3875.0 9635.0 1.0 dr35
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 6 3875.0 9385.0 1.0 dr36
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 7 3875.0 9135.0 1.0 dr37
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 8 3875.0 8885.0 1.0 dr38
+ #GMSCOMMENT 9e52666d-7a68-4b7b-890f-b83c714009d2 ARC 9 3875.0 8635.0 1.0 dr39
+
+ NUMBER OF FLOW-OBSERVATION DRAIN-CELL GROUPS.....:     40
+   NUMBER OF CELLS IN DRAIN-CELL GROUPS...........:    117
+   NUMBER OF DRAIN-CELL FLOWS.....................:     40
+
+ OBS1BAS6F -- OBSERVATION PROCESS (CONSTANT-HEAD BOUNDARY FLOW OBSERVATIONS)
+ VERSION 1.0, 12/03/99
+ INPUT READ FROM UNIT  16
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 10 3115.0 125.0 1.0 ch0
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 11 3365.0 125.0 1.0 ch1
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 12 3615.0 125.0 1.0 ch2
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 13 3865.0 125.0 1.0 ch3
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 3 1365.0 125.0 1.0 ch4
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 4 1615.0 125.0 1.0 ch5
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 5 1865.0 125.0 1.0 ch6
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 6 2115.0 125.0 1.0 ch7
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 7 2365.0 125.0 1.0 ch8
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 8 2615.0 125.0 1.0 ch9
+ #GMSCOMMENT dd1fa4e0-b923-4472-83fd-b70b917a3cac ARC 9 2865.0 125.0 1.0 ch10
+
+ NUMBER OF FLOW-OBSERVATION CONSTANT-HEAD-CELL GROUPS:   11
+   NUMBER OF CELLS IN CONSTANT-HEAD-CELL GROUPS......:   31
+   NUMBER OF CONSTANT-HEAD-CELL FLOWS................:   11
+
+      36047 ELEMENTS IN X ARRAY ARE USED FOR OBSERVATIONS
+       2756 ELEMENTS IN Z ARRAY ARE USED FOR OBSERVATIONS
+        541 ELEMENTS IN IX ARRAY ARE USED FOR OBSERVATIONS
+
+ COMMON ERROR VARIANCE FOR ALL OBSERVATIONS SET TO:       1.000    
+
+      55591  ELEMENTS OF X ARRAY USED OUT OF      55591
+      14756  ELEMENTS OF Z ARRAY USED OUT OF      14756
+       9607  ELEMENTS OF IX ARRAY USED OUT OF       9607
+          0  ELEMENTS OF XHS ARRAY USED OUT OF          1
+
+ INFORMATION ON PARAMETERS LISTED IN SEN FILE
+                                         LOWER         UPPER       ALTERNATE
+                        VALUE IN SEN   REASONABLE    REASONABLE     SCALING
+    NAME     ISENS  LN   INPUT FILE      LIMIT         LIMIT         FACTOR
+ ----------  -----  --  ------------  ------------  ------------  ------------
+ HANI_5011     1     0    1.0000       0.30000        2.5000        1.0000    
+ HANI_5012     1     0    1.0591       0.31772        2.6477        1.0000    
+ HANI_5013     1     0    3.6668        2.2001        5.5002        1.0000    
+ VANI_5021     1     0    1.0000       0.50000        3.0000        1.0000    
+ VANI_5022     1     0    1.0649       0.53243        3.1946        1.0000    
+ VANI_5023     1     0    1.1628       0.58142        3.4885        1.0000    
+ SS_6011       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ SS_6012       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ SS_6013       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ SY_6021       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ SY_6022       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ SY_6023       1     0   0.10000       0.10000E-01    1.0000        1.0000    
+ DRN_1         1     0    4.4252        3.8581        4.9943        1.0000    
+ DRN_2         1     0    4.4422        3.8624        5.0113        1.0000    
+ DRN_3         1     0    4.3771        3.8461        4.9462        1.0000    
+ DRN_4         1     0    4.5196        3.8817        5.0887        1.0000    
+ DRN_5         1     0    4.5169        3.8810        5.0860        1.0000    
+ DRN_6         1     0    4.3556        3.8407        4.9247        1.0000    
+ DRN_7         1     0    4.3612        3.8421        4.9303        1.0000    
+ DRN_8         1     0    4.4334        3.8602        5.0025        1.0000    
+ DRN_9         1     0    4.4285        3.8590        4.9976        1.0000    
+ DRN_10        1     0    4.3586        3.8415        4.9277        1.0000    
+ DRN_11        1     0    4.4545        3.8654        5.0236        1.0000    
+ DRN_12        1     0    4.4545        3.8654        5.0236        1.0000    
+ DRN_13        1     0    4.5110        3.8796        5.0801        1.0000    
+ DRN_14        1     0    4.3495        3.8392        4.9186        1.0000    
+ DRN_15        1     0    4.3661        3.8433        4.9352        1.0000    
+ DRN_16        1     0    4.4628        3.8675        5.0319        1.0000    
+ DRN_17        1     0    4.3532        3.8401        4.9223        1.0000    
+ DRN_18        1     0    4.3640        3.8428        4.9331        1.0000    
+ DRN_19        1     0    4.4828        3.8725        5.0519        1.0000    
+ DRN_20        1     0    4.3574        3.8412        4.9265        1.0000    
+ DRN_21        1     0    4.3841        3.8479        4.9532        1.0000    
+ DRN_22        1     0    4.4258        3.8583        4.9949        1.0000    
+ DRN_23        1     0    4.4191        3.8566        4.9882        1.0000    
+ DRN_24        1     0    4.4099        3.8543        4.9790        1.0000    
+ DRN_25        1     0    4.4366        3.8610        5.0057        1.0000    
+ DRN_26        1     0    4.4407        3.8620        5.0098        1.0000    
+ DRN_27        1     0    4.5215        3.8822        5.0906        1.0000    
+ DRN_28        1     0    4.4719        3.8698        5.0410        1.0000    
+ DRN_29        1     0    4.5471        3.8886        5.1162        1.0000    
+ DRN_30        1     0    4.5323        3.8849        5.1014        1.0000    
+ DRN_31        1     0    4.4005        3.8520        4.9696        1.0000    
+ DRN_32        1     0    4.4059        3.8533        4.9749        1.0000    
+ DRN_33        1     0    4.5055        3.8782        5.0746        1.0000    
+ DRN_34        1     0    4.3995        3.8517        4.9686        1.0000    
+ DRN_35        1     0    4.3526        3.8400        4.9217        1.0000    
+ DRN_36        1     0    4.3983        3.8514        4.9674        1.0000    
+ DRN_37        1     0    4.4670        3.8686        5.0361        1.0000    
+ DRN_38        1     0    4.4291        3.8591        4.9982        1.0000    
+ DRN_39        1     0    4.4317        3.8598        5.0008        1.0000    
+ DRN_40        1     0    4.3627        3.8425        4.9318        1.0000    
+ sc1v1         1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v2         1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v3         1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v4         1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v5         1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v6         1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v7         1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v8         1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v9         1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v10        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v11        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v12        1     0    7.3182        3.8602        9.8280        1.0000    
+ sc1v13        1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v14        1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v15        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v16        1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v17        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v18        1     0    7.3182        3.8602        9.8280        1.0000    
+ sc1v19        1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v20        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v21        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v22        1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v23        1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v24        1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v25        1     0    6.8182        3.8602        9.8280        1.0000    
+ sc1v26        1     0    6.5682        3.8602        9.8280        1.0000    
+ sc1v27        1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v28        1     0    7.0682        3.8602        9.8280        1.0000    
+ sc1v29        1     0    7.3182        3.8602        9.8280        1.0000    
+ sc2v1         1     0    7.6888        5.1188        10.783        1.0000    
+ sc2v2         1     0    7.8908        5.1188        10.783        1.0000    
+ sc2v3         1     0    7.6852        5.1188        10.783        1.0000    
+ sc2v4         1     0    7.4241        5.1188        10.783        1.0000    
+ sc2v5         1     0    7.6648        5.1188        10.783        1.0000    
+ sc2v6         1     0    7.3974        5.1188        10.783        1.0000    
+ sc2v7         1     0    7.4262        5.1188        10.783        1.0000    
+ sc2v8         1     0    7.6660        5.1188        10.783        1.0000    
+ sc2v9         1     0    7.9033        5.1188        10.783        1.0000    
+ sc2v10        1     0    7.4365        5.1188        10.783        1.0000    
+ sc2v11        1     0    7.4310        5.1188        10.783        1.0000    
+ sc2v12        1     0    8.2317        5.1188        10.783        1.0000    
+ sc2v13        1     0    7.7290        5.1188        10.783        1.0000    
+ sc2v14        1     0    7.6635        5.1188        10.783        1.0000    
+ sc2v15        1     0    7.4429        5.1188        10.783        1.0000    
+ sc2v16        1     0    7.8285        5.1188        10.783        1.0000    
+ sc2v17        1     0    7.5171        5.1188        10.783        1.0000    
+ sc2v18        1     0    8.1699        5.1188        10.783        1.0000    
+ sc2v19        1     0    7.8841        5.1188        10.783        1.0000    
+ sc2v20        1     0    7.1593        5.1188        10.783        1.0000    
+ sc2v21        1     0    7.4821        5.1188        10.783        1.0000    
+ sc2v22        1     0    7.6608        5.1188        10.783        1.0000    
+ sc2v23        1     0    7.9192        5.1188        10.783        1.0000    
+ sc2v24        1     0    7.6577        5.1188        10.783        1.0000    
+ sc2v25        1     0    7.7021        5.1188        10.783        1.0000    
+ sc2v26        1     0    7.4167        5.1188        10.783        1.0000    
+ sc2v27        1     0    7.9299        5.1188        10.783        1.0000    
+ sc2v28        1     0    7.9259        5.1188        10.783        1.0000    
+ sc2v29        1     0    8.1771        5.1188        10.783        1.0000    
+ sc3v1         1     0    7.7168        4.6925        17.307        1.0000    
+ sc3v2         1     0    8.2864        4.6925        17.307        1.0000    
+ sc3v3         1     0    8.1199        4.6925        17.307        1.0000    
+ sc3v4         1     0    7.4398        4.6925        17.307        1.0000    
+ sc3v5         1     0    7.5407        4.6925        17.307        1.0000    
+ sc3v6         1     0    6.5575        4.6925        17.307        1.0000    
+ sc3v7         1     0    7.7963        4.6925        17.307        1.0000    
+ sc3v8         1     0    8.4311        4.6925        17.307        1.0000    
+ sc3v9         1     0    8.4521        4.6925        17.307        1.0000    
+ sc3v10        1     0    7.9370        4.6925        17.307        1.0000    
+ sc3v11        1     0    7.5111        4.6925        17.307        1.0000    
+ sc3v12        1     0    9.2955        4.6925        17.307        1.0000    
+ sc3v13        1     0    10.005        4.6925        17.307        1.0000    
+ sc3v14        1     0    8.5243        4.6925        17.307        1.0000    
+ sc3v15        1     0    7.5591        4.6925        17.307        1.0000    
+ sc3v16        1     0    5.6374        4.6925        17.307        1.0000    
+ sc3v17        1     0    11.587        4.6925        17.307        1.0000    
+ sc3v18        1     0    10.143        4.6925        17.307        1.0000    
+ sc3v19        1     0    7.1865        4.6925        17.307        1.0000    
+ sc3v20        1     0    5.5367        4.6925        17.307        1.0000    
+ sc3v21        1     0    9.6131        4.6925        17.307        1.0000    
+ sc3v22        1     0    8.6223        4.6925        17.307        1.0000    
+ sc3v23        1     0    8.1712        4.6925        17.307        1.0000    
+ sc3v24        1     0    8.0651        4.6925        17.307        1.0000    
+ sc3v25        1     0    8.9203        4.6925        17.307        1.0000    
+ sc3v26        1     0    7.6032        4.6925        17.307        1.0000    
+ sc3v27        1     0    12.602        4.6925        17.307        1.0000    
+ sc3v28        1     0    9.3380        4.6925        17.307        1.0000    
+ sc3v29        1     0    9.4782        4.6925        17.307        1.0000    
+ sc4v1         1     1   0.32181E-03   0.24894E-05   0.18374E-02    1.0000    
+ sc4v2         1     1   0.37490E-03   0.24894E-05   0.18374E-02    1.0000    
+ sc4v3         1     1   0.29570E-03   0.24894E-05   0.18374E-02    1.0000    
+ sc4v4         1     1   0.12797E-04   0.24894E-05   0.18374E-02    1.0000    
+ sc4v5         1     1   0.21827E-04   0.24894E-05   0.18374E-02    1.0000    
+ sc4v6         1     1   0.11713E-04   0.24894E-05   0.18374E-02    1.0000    
+ sc4v7         1     1   0.15276E-03   0.24894E-05   0.18374E-02    1.0000    
+ sc4v8         1     1   0.12299E-04   0.24894E-05   0.18374E-02    1.0000    
+ sc4v9         1     1   0.85040E-03   0.24894E-05   0.18374E-02    1.0000    
+ sc4v10        1     1   0.28796E-04   0.24894E-05   0.18374E-02    1.0000    
+ -----------------------------------------------------------------------------
+ FOR THE PARAMETERS LISTED IN THE TABLE ABOVE, PARAMETER VALUES IN INDIVIDUAL
+ PACKAGE INPUT FILES ARE REPLACED BY THE VALUES FROM THE SEN INPUT FILE.  THE
+ ALTERNATE SCALING FACTOR IS USED TO SCALE SENSITIVITIES IF IT IS LARGER THAN
+ THE PARAMETER VALUE IN ABSOLUTE VALUE AND THE PARAMETER IS NOT LOG-TRANSFORMED.
+
+ BECAUSE ISENALL < 0, ALL ISENS ARE SET TO 0
+
+ HEAD OBSERVATION VARIANCES ARE MULTIPLIED BY:       1.000    
+
+ OBSERVED HEAD DATA -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+                    REFER.
+       OBSERVATION  STRESS    TIME                              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET    OBSERVATION  STATISTIC     TYPE      SYM.
+     1 hed1             1    0.000       23.00      0.7684      STD. DEV.      1
+     2 hed2             1    0.000       19.90      0.7900      STD. DEV.      1
+     3 hed3             1    0.000       23.60      0.7684      STD. DEV.      1
+     4 hed4             1    0.000       18.40      0.8616      STD. DEV.      1
+     5 hed5             1    0.000       17.60      0.7900      STD. DEV.      1
+     6 hed6             1    0.000       17.50      0.7900      STD. DEV.      1
+     7 hed7             1    0.000       16.10      0.7684      STD. DEV.      1
+     8 hed8             1    0.000       22.40      0.9769      STD. DEV.      1
+     9 hed9             1    0.000       20.20      0.9769      STD. DEV.      1
+    10 hed10            1    0.000       14.30       2.285      STD. DEV.      1
+    11 hed11            1    0.000       17.20      0.7900      STD. DEV.      1
+    12 hed12            1    0.000       14.50       2.285      STD. DEV.      1
+    13 hed13            1    0.000       22.40       32.15      STD. DEV.      1
+
+                                                     HEAD CHANGE
+                                                      REFERENCE
+        OBSERVATION                   ROW     COL    OBSERVATION
+  OBS#     NAME       LAY  ROW  COL  OFFSET  OFFSET   (IF > 0)
+     1  hed1            2    4   11   0.000   0.000        0
+     2  hed2            2    4   17   0.000   0.000        0
+     3  hed3            2    5   10   0.000   0.000        0
+     4  hed4            2   15   12   0.000   0.000        0
+     5  hed5            2   17   18   0.000   0.000        0
+     6  hed6            2   23   12   0.000   0.000        0
+     7  hed7            2   24   18   0.000   0.000        0
+     8  hed8            2   26    6   0.000   0.000        0
+     9  hed9            2   28    8   0.000   0.000        0
+    10  hed10           2   31   17   0.000   0.000        0
+    11  hed11           2   35    9   0.000   0.000        0
+    12  hed12           2   36   12   0.000   0.000        0
+    13  hed13           2   28    5   0.000   0.000        0
+
+ DRAIN-CELL FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       1.000    
+
+ OBSERVED DRAIN-CELL FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+ GROUP NUMBER:      1    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    14 dr0              1    0.000      -84.47       654.2      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    6.    16.     0.00
+          2.    6.    16.     1.00
+          2.    7.    16.     1.00
+
+ GROUP NUMBER:      2    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    15 dr1              1    0.000      -56.33       673.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    7.    16.     0.00
+          2.    7.    16.     1.00
+          2.    8.    16.     1.00
+
+ GROUP NUMBER:      3    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    16 dr2              1    0.000      -53.11       692.7      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    8.    16.     0.00
+          2.    8.    16.     1.00
+          2.    9.    16.     1.00
+
+ GROUP NUMBER:      4    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    17 dr3              1    0.000      -80.55       654.2      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    9.    16.     0.00
+          2.    9.    16.     1.00
+          2.   10.    16.     1.00
+
+ GROUP NUMBER:      5    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    18 dr4              1    0.000      -6.534       1467.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   10.    16.     0.00
+          2.   10.    16.     1.00
+          2.   11.    16.     1.00
+
+ GROUP NUMBER:      6    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    19 dr5              1    0.000      -27.79       930.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   11.    16.     0.00
+          2.   11.    16.     1.00
+          2.   12.    16.     1.00
+
+ GROUP NUMBER:      7    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    20 dr6              1    0.000      -108.6       809.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   12.    16.     0.00
+          2.   12.    16.     1.00
+          2.   13.    16.     1.00
+
+ GROUP NUMBER:      8    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    21 dr7              1    0.000      -75.53       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   13.    16.     0.00
+          2.   13.    16.     1.00
+          2.   14.    16.     1.00
+
+ GROUP NUMBER:      9    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    22 dr8              1    0.000      -74.21       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   14.    16.     0.00
+          2.   14.    16.     1.00
+          2.   15.    16.     1.00
+
+ GROUP NUMBER:     10    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    23 dr9              1    0.000      -92.25       692.7      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   15.    16.     0.00
+          2.   15.    16.     1.00
+          2.   16.    16.     1.00
+
+ GROUP NUMBER:     11    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    24 dr10             1    0.000      -73.46       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   16.    16.     0.00
+          2.   16.    16.     1.00
+          2.   17.    16.     1.00
+
+ GROUP NUMBER:     12    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    25 dr11             1    0.000      -49.74       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   17.    16.     0.00
+          2.   17.    16.     1.00
+          2.   18.    16.     1.00
+
+ GROUP NUMBER:     13    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    26 dr12             1    0.000      -50.32       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   18.    16.     0.00
+          2.   18.    16.     1.00
+          2.   19.    16.     1.00
+
+ GROUP NUMBER:     14    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    27 dr13             1    0.000      -54.88       673.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   19.    16.     0.00
+          2.   19.    16.     1.00
+          2.   20.    16.     1.00
+
+ GROUP NUMBER:     15    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    28 dr14             1    0.000      -26.07       966.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   20.    16.     0.00
+          2.   20.    16.     1.00
+          2.   21.    16.     1.00
+
+ GROUP NUMBER:     16    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    29 dr15             1    0.000      -39.45       783.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   21.    16.     0.00
+          2.   21.    16.     1.00
+          2.   22.    16.     1.00
+
+ GROUP NUMBER:     17    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    30 dr16             1    0.000      -26.37       966.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   22.    16.     0.00
+          2.   22.    16.     1.00
+          2.   23.    16.     1.00
+
+ GROUP NUMBER:     18    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    31 dr17             1    0.000      -33.08       866.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   23.    16.     0.00
+          2.   23.    16.     1.00
+          3.   24.    16.     1.00
+
+ GROUP NUMBER:     19    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    32 dr18             1    0.000      -117.9       930.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   24.    16.     0.00
+          3.   24.    16.     1.00
+          2.   25.    16.     1.00
+
+ GROUP NUMBER:     20    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    33 dr19             1    0.000      -109.0       836.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   25.    16.     0.00
+          2.   25.    16.     1.00
+          2.   26.    16.     1.00
+
+ GROUP NUMBER:     21    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    34 dr20             1    0.000      -89.50       673.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   26.    16.     0.00
+          2.   26.    16.     1.00
+          2.   27.    16.     1.00
+
+ GROUP NUMBER:     22    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    35 dr21             1    0.000      -66.73       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   27.    16.     0.00
+          2.   27.    16.     1.00
+          2.   28.    16.     1.00
+
+ GROUP NUMBER:     23    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    36 dr22             1    0.000      -44.90       735.4      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   28.    16.     0.00
+          2.   28.    16.     1.00
+          3.   29.    16.     1.00
+
+ GROUP NUMBER:     24    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    37 dr23             1    0.000      -72.47       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   29.    16.     0.00
+          3.   29.    16.     1.00
+          3.   30.    16.     1.00
+
+ GROUP NUMBER:     25    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    38 dr24             1    0.000      -55.56       673.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   30.    16.     0.00
+          3.   30.    16.     1.00
+          2.   31.    16.     1.00
+
+ GROUP NUMBER:     26    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    39 dr25             1    0.000      -57.19       673.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   31.    16.     0.00
+          2.   31.    16.     1.00
+          3.   32.    16.     1.00
+
+ GROUP NUMBER:     27    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    40 dr26             1    0.000      -78.91       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   32.    16.     0.00
+          3.   32.    16.     1.00
+          2.   33.    16.     1.00
+
+ GROUP NUMBER:     28    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    41 dr27             1    0.000      -48.40       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   33.    16.     0.00
+          2.   33.    16.     1.00
+          2.   34.    16.     1.00
+
+ GROUP NUMBER:     29    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    42 dr28             1    0.000      -36.01       836.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   34.    16.     0.00
+          2.   34.    16.     1.00
+          3.   35.    16.     1.00
+
+ GROUP NUMBER:     30    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    43 dr29             1    0.000      -54.17       692.7      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   35.    16.     0.00
+          3.   35.    16.     1.00
+          3.   36.    16.     1.00
+
+ GROUP NUMBER:     31    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      1
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    44 dr30             1    0.000      -50.44       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.    1.    16.     1.00
+
+ GROUP NUMBER:     32    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    45 dr31             1    0.000      -75.96       636.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   36.    16.     0.00
+          3.   36.    16.     1.00
+          3.   37.    16.     1.00
+
+ GROUP NUMBER:     33    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    46 dr32             1    0.000      -59.86       654.2      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   37.    16.     0.00
+          3.   37.    16.     1.00
+          3.   38.    16.     1.00
+
+ GROUP NUMBER:     34    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    47 dr33             1    0.000      -168.7       3799.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   38.    16.     0.00
+          3.   38.    16.     1.00
+          3.   39.    16.     1.00
+
+ GROUP NUMBER:     35    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      2
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    48 dr34             1    0.000      -17.02       1141.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   39.    16.     0.00
+          3.   39.    16.     1.00
+
+ GROUP NUMBER:     36    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    49 dr35             1    0.000      -22.56       1047.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.    1.    16.     0.00
+          3.    1.    16.     1.00
+          2.    2.    16.     1.00
+
+ GROUP NUMBER:     37    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    50 dr36             1    0.000      -50.21       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    2.    16.     0.00
+          2.    2.    16.     1.00
+          3.    3.    16.     1.00
+
+ GROUP NUMBER:     38    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    51 dr37             1    0.000      -297.8      0.2662E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.    3.    16.     0.00
+          3.    3.    16.     1.00
+          2.    4.    16.     1.00
+
+ GROUP NUMBER:     39    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    52 dr38             1    0.000      -190.7       8873.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    4.    16.     0.00
+          2.    4.    16.     1.00
+          2.    5.    16.     1.00
+
+ GROUP NUMBER:     40    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      3
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    53 dr39             1    0.000      -137.5       1388.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.    5.    16.     0.00
+          2.    5.    16.     1.00
+          2.    6.    16.     1.00
+
+ CONSTANT-HEAD-CELL FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       2.000    
+
+ OBSERVED CONSTANT-HEAD-CELL FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+   GROUP NUMBER:  41   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     4
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    54 ch0              1    0.000      -50.44       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    13.     0.96
+          3.   40.    13.     0.96
+          2.   40.    12.     0.04
+          3.   40.    12.     0.04
+
+   GROUP NUMBER:  42   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     3
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    55 ch1              1    0.000      -22.56       1047.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   40.    14.     0.96
+          2.   40.    13.     0.04
+          3.   40.    13.     0.04
+
+   GROUP NUMBER:  43   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     3
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    56 ch2              1    0.000      -50.21       713.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    15.     0.96
+          3.   40.    15.     0.96
+          3.   40.    14.     0.04
+
+   GROUP NUMBER:  44   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     4
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    57 ch3              1    0.000      -297.8      0.2662E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    16.     1.00
+          3.   40.    16.     1.00
+          2.   40.    15.     0.04
+          3.   40.    15.     0.04
+
+   GROUP NUMBER:  45   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     1
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    58 ch4              1    0.000      -912.8       422.2      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   40.     6.     0.96
+
+   GROUP NUMBER:  46   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     2
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    59 ch5              1    0.000      -882.5       408.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   40.     7.     0.96
+          3.   40.     6.     0.04
+
+   GROUP NUMBER:  47   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     2
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    60 ch6              1    0.000      -1018.       576.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   40.     8.     0.96
+          3.   40.     7.     0.04
+
+   GROUP NUMBER:  48   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     2
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    61 ch7              1    0.000      -728.7       349.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          3.   40.     9.     0.96
+          3.   40.     8.     0.04
+
+   GROUP NUMBER:  49   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     3
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    62 ch8              1    0.000      -685.2       339.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    10.     1.00
+          3.   40.    10.     0.96
+          3.   40.     9.     0.04
+
+   GROUP NUMBER:  50   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     3
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    63 ch9              1    0.000      -50.44       1029.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    11.     0.96
+          3.   40.    11.     0.96
+          3.   40.    10.     0.04
+
+   GROUP NUMBER:  51   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:     4
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    64 ch10             1    0.000      -22.56       1218.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          2.   40.    12.     0.96
+          3.   40.    12.     0.96
+          2.   40.    11.     0.04
+          3.   40.    11.     0.04
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =       25
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       50
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        0
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =      999
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        2
+                                         DAMPING PARAMETER =    0.10000E+01
+
+ WETTING CAPABILITY IS NOT ACTIVE IN ANY LAYER
+
+
+     0 Well parameters
+
+
+     0 Drain parameters
+
+
+     0 Recharge parameters
+
+
+     0 TIME-VARIANT SPECIFIED-HEAD PARAMETERS
+
+  149 PARAMETERS HAVE BEEN DEFINED IN ALL PACKAGES.
+ (SPACE IS ALLOCATED FOR 3000 PARAMETERS.)
+
+ SMALLEST AND LARGEST WEIGHTED RESIDUALS
+
+      SMALLEST WEIGHTED RESIDUALS      |       LARGEST WEIGHTED RESIDUALS
+                WEIGHTED   PERCENT OF  |                 WEIGHTED   PERCENT OF
+ NAME           RESIDUAL    OBJ FUNC   |  NAME           RESIDUAL    OBJ FUNC
+ hed4          -0.794        11.45     |  ch9            0.118         0.25
+ ch8           -0.760        10.49     |  ch10           0.691E-01     0.09
+ ch7           -0.757        10.40     |  ch1            0.618E-01     0.07
+ hed3          -0.684         8.48     |  ch0            0.607E-01     0.07
+ hed12         -0.644         7.53     |  dr3            0.578E-01     0.06
+
+ STATISTICS FOR ALL RESIDUALS :
+ AVERAGE WEIGHTED RESIDUAL  :-0.101E+00
+ # RESIDUALS >= 0. :     38
+ # RESIDUALS < 0.  :     26
+ NUMBER OF RUNS  :   14  IN   64 OBSERVATIONS
+
+ INTERPRETING THE CALCULATED RUNS STATISTIC VALUE OF     -4.54    
+ NOTE: THE FOLLOWING APPLIES ONLY IF 
+        # RESIDUALS >= 0 . IS GREATER THAN 10 AND 
+        # RESIDUALS < 0.   IS GREATER THAN 10
+ THE NEGATIVE VALUE MAY INDICATE TOO FEW RUNS:
+    IF THE VALUE IS LESS THAN -1.28, THERE IS LESS THAN A 10 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.645, THERE IS LESS THAN A 5 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.96, THERE IS LESS THAN A 2.5 PERCENT
+       CHANCE THE VALUES ARE RANDOM.
+
+
+ CORRELATION BETWEEN ORDERED WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS
+ FOR OBSERVATIONS =    0.614    
+
+ --------------------------------------------------------------------------
+ COMMENTS ON THE INTERPRETATION OF THE CORRELATION BETWEEN
+ WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS:
+
+ The critical value for correlation at the 5% significance level is 0.964
+
+ IF the reported CORRELATION is GREATER than the 5% critical value, ACCEPT
+ the hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.  The probability that this   
+ conclusion is wrong is less than 5%.
+
+ IF the reported correlation IS LESS THAN the 5% critical value REJECT the
+ hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.
+
+ The analysis can also be done using the 10% significance level.
+ The associated critical value is 0.970
+ --------------------------------------------------------------------------
+
