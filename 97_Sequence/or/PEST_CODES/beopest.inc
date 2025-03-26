@@ -1,2 +1,0 @@
-      USE      BEOPRIV
-      IMPLICIT NONE

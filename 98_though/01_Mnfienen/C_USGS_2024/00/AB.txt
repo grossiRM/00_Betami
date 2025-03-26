@@ -1,0 +1,5 @@
+https://cscircles.cemc.uwaterloo.ca/
+
+https://code.usgs.gov/wma/hytest/training/python-for-hydrology/-/releases/v1.0
+
+https://doi-usgs.github.io/python-for-hydrology/latest/

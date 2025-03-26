@@ -1,0 +1,6 @@
+simulation:
+  options:
+    continue: true
+  sim_name: sgn_50_sim
+  sim_ws: ../../models/sgn_mfsetup
+  version: mf6
