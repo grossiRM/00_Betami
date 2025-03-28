@@ -1,5 +1,0 @@
-conda activate pyclass
-
-
-
-plot_map_view_example.py
