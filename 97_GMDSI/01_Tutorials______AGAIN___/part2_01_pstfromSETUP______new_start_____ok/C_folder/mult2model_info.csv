@@ -1,2 +1,0 @@
-,org_file,model_file,use_cols,index_cols,fmt,sep,head_rows,upper_bound,lower_bound,operator,mlt_file,fac_file,pp_file,pp_fill_value,pp_lower_limit,pp_upper_limit,zone_file,apply_order,zero_based
-0,org\freyberg6.npf_k_layer1.txt,freyberg6.npf_k_layer1.txt,,,%17.1F,,0,100,0.01,m,mult\npfklayer1pp_inst0_pilotpoints.csv,npfklayer1pp_inst0pp.fac,npfklayer1pp_inst0pp.dat,1.0,1e-30,1e+30,npfklayer1pp_inst0pp.dat.zone,999,False

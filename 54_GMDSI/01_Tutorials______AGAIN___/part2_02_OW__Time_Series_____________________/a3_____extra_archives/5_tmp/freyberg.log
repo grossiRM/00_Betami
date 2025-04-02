@@ -1,0 +1,18 @@
+time,elapsed_seconds,message
+14:41:38,7.11e-05,PEST++ performance logger started
+14:41:38,0.0009612,starting to process control file
+14:41:38,0.0485001,finished processing control file
+14:41:38,0.0136593,starting basic model IO error checking
+14:41:38,0.0128559,finished basic model IO error checking
+14:41:38,0.0031307,initializing
+14:41:38,0.0003694,'noptmax'=0, running control file parameter values and quitting
+14:41:38,0.0008184,saving control file parameter ensemble to  freyberg.base.par.csv
+14:41:38,0.0008749,initializing prior parameter covariance matrix
+14:41:38,2.77e-05,initializing parcov
+14:41:38,0.0014914,parcov loaded  from parameter bounds, using par_sigma_range 4
+14:41:38,0.0031904,running control file parameter values
+14:41:38,0.0001802,queuing 1 runs
+14:41:38,0.0028436,making runs
+14:41:41,2.75004,processing runs
+14:41:41,0.00155,saving results from control file parameter value run to  freyberg.base.obs.csv
+14:41:41,0.0027627,control file parameter phi report:

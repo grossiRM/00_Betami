@@ -1,0 +1,20 @@
+2025-01-10 15:06:12.230112 starting: opening errvar_freyberg.log for logging
+2025-01-10 15:06:12.230112 starting: pre-loading base components
+2025-01-10 15:06:12.230112 starting: loading jco: Freyberg\freyberg.jcb
+2025-01-10 15:06:12.245738 finished: loading jco: Freyberg\freyberg.jcb took: 0:00:00.015626
+2025-01-10 15:06:12.245738 starting: loading pst: Freyberg\freyberg.pst
+2025-01-10 15:06:12.299125 finished: loading pst: Freyberg\freyberg.pst took: 0:00:00.053387
+2025-01-10 15:06:12.299125 starting: loading parcov
+2025-01-10 15:06:12.430679 finished: loading parcov took: 0:00:00.131554
+2025-01-10 15:06:12.430679 starting: loading obscov
+2025-01-10 15:06:12.490607 finished: loading obscov took: 0:00:00.059928
+2025-01-10 15:06:12.490607 starting: loading forecasts
+2025-01-10 15:06:12.498655 finished: loading forecasts took: 0:00:00.008048
+2025-01-10 15:06:12.498655 forecast names: or28c05_0,or28c05_1,sw_gw_0,sw_gw_1
+2025-01-10 15:06:12.498655 finished: pre-loading base components took: 0:00:00.268543
+2025-01-10 15:06:12.498655 starting: dropping prior information
+2025-01-10 15:06:12.498655 starting: removing 0 prior info from jco, pst, and obs cov
+2025-01-10 15:06:12.498655 finished: removing 0 prior info from jco, pst, and obs cov took: 0:00:00
+2025-01-10 15:06:12.498655 finished: dropping prior information took: 0:00:00
+2025-01-10 15:06:12.498655 starting: pre-loading omitted components
+2025-01-10 15:06:12.518760 finished: pre-loading omitted components took: 0:00:00.020105

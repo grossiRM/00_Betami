@@ -1,0 +1,3 @@
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\envs\modflow-setup_dev\Lib\site-packages\flopy\discretization    \   grid.py
+
+	AttributeError: property 'epsg' of 'MFsetupGrid' object has no setter
