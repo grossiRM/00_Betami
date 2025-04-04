@@ -1,0 +1,1464 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.6.1 02/10/2025
+
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
+                             Build 20220726_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
+/c /module:win64\mod_mf6\ /object:win64\obj_mf6\
+
+System command used to initiate simulation:
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/GWF-P06-MF6L/DIS                        
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/GWF-P06-MF6L/NPF                        
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/GWF-P06-MF6L/IC                         
+
+
+ Setting Discretization Options
+    Model length unit [0=UND, 1=FEET, 2=METERS, 3=CENTIMETERS] set as 1
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 1
+    NROW = 31
+    NCOL = 31
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+    IDOMAIN set from input file
+ End Setting Discretization Griddata
+
+ Setting NPF Options
+    Specific discharge will be calculated at cell centers and written to DATA-SPDIS in budget file when requested.
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 set from input file
+    K22 not provided.  Setting K22 = K.
+ End Setting NPF Griddata
+
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/GWF-P06-MF6L/WEL-1                      
+
+ PROCESSING WEL BASE OPTIONS
+    LISTS OF WEL CELLS WILL BE PRINTED.
+    WEL FLOWS WILL BE PRINTED TO LISTING FILE.
+ END OF WEL BASE OPTIONS
+
+ PROCESSING WEL OPTIONS
+ END OF WEL OPTIONS
+
+ PROCESSING WEL BASE DIMENSIONS
+    MAXBOUND =       1
+ END OF WEL BASE DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/GWF-P06-MF6L/CHD-1                      
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =     120
+ END OF CHD BASE DIMENSIONS
+    STRT set from input file
+
+ STO -- STORAGE PACKAGE, VERSION 1, 5/19/2014 INPUT READ FROM MEMPATH: __INPUT__/GWF-P06-MF6L/STO                        
+
+
+ PROCESSING STORAGE OPTIONS
+ END OF STORAGE OPTIONS
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1025
+      FILE NAME: gwf-p06-mf6L.dis.grb
+
+ OPENED gwf-p06-mf6L.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1025   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ # File generated by Flopy version 3.9.1 on 04/04/2025 at 16:12:59.
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1026
+      FILE NAME: gwf-p06-mf6L.bud
+
+ OPENED gwf-p06-mf6L.bud
+ FILE TYPE:DATA(BINARY)   UNIT 1026   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1027
+      FILE NAME: gwf-p06-mf6L.hds
+
+ OPENED gwf-p06-mf6L.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1027   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ ---------------------------------------------------
+  WEL NO.    LAYER    ROW     COL    CONCENTRATION  
+ ---------------------------------------------------
+     1         1      16      16     100.000000     
+ ---------------------------------------------------
+
+
+
+end timestep
+
+
+start timestep kper="1" kstp="2" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="3" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="4" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="5" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="6" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="7" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="8" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="9" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="10" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="11" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="12" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="13" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="14" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="15" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="16" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="17" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="18" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="19" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="20" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="21" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="22" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="23" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="24" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="25" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="26" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="27" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="28" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="29" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="30" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="31" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="32" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="33" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="34" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="35" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="1" kstp="36" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1026 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1026 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL GWF-P06-MF6L     PACKAGE NPF             CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE NPF              ON UNIT   1026 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL GWF-P06-MF6L     PACKAGE GWF-P06-MF6L    CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE WEL-1            ON UNIT   1026 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL GWF-P06-MF6L     PACKAGE GWF-P06-MF6L    CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE CHD-1            ON UNIT   1026 AT TIME STEP     36, STRESS PERIOD      1
+
+ WEL PACKAGE (WEL-1) FLOW RATES   PERIOD      1   STEP       36
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,16,16)             86400.000     
+ -----------------------------------------------
+
+
+
+1
+  HEAD IN LAYER   1 AT END OF TIME STEP  36 IN STRESS PERIOD    1
+  ---------------------------------------------------------------------------
+
+                1               2               3               4               5               6               7               8               9              10
+               11              12              13              14              15              16              17              18              19              20
+               21              22              23              24              25              26              27              28              29              30
+               31
+ ................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+   1      0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000    
+   2      0.00000        1.212466E-02    2.424931E-02    3.636570E-02    4.844901E-02    6.044973E-02    7.228597E-02    8.383680E-02    9.493791E-02    0.105381    
+         0.114917        0.123271        0.130155        0.135303        0.138490        0.139569        0.138490        0.135303        0.130155        0.123271    
+         0.114917        0.105381        9.493791E-02    8.383680E-02    7.228597E-02    6.044973E-02    4.844901E-02    3.636570E-02    2.424931E-02    1.212466E-02
+          0.00000    
+   3      0.00000        2.424931E-02    4.850689E-02    7.276447E-02    9.698059E-02    0.121064        0.144857        0.168123        0.190534        0.211668    
+         0.231017        0.248010        0.262048        0.272565        0.279087        0.281298        0.279087        0.272565        0.262048        0.248010    
+         0.231017        0.211668        0.190534        0.168123        0.144857        0.121064        9.698059E-02    7.276447E-02    4.850689E-02    2.424931E-02
+          0.00000    
+   4      0.00000        3.636570E-02    7.276447E-02    0.109205        0.145645        0.181968        0.217956        0.253265        0.287407        0.319740    
+         0.349474        0.375703        0.397463        0.413823        0.423995        0.427449        0.423995        0.413823        0.397463        0.375703    
+         0.349474        0.319740        0.287407        0.253265        0.217956        0.181968        0.145645        0.109205        7.276447E-02    3.636570E-02
+          0.00000    
+   5      0.00000        4.844901E-02    9.698059E-02    0.145645        0.194426        0.243208        0.291734        0.339574        0.386089        0.430410    
+         0.471436        0.507865        0.538278        0.561269        0.575622        0.580506        0.575622        0.561269        0.538278        0.507865    
+         0.471436        0.430410        0.386089        0.339574        0.291734        0.243208        0.194426        0.145645        9.698059E-02    4.844901E-02
+          0.00000    
+   6      0.00000        6.044973E-02    0.121064        0.181968        0.243208        0.304702        0.366197        0.427208        0.486966        0.544377    
+         0.597994        0.646043        0.686515        0.717352        0.736719        0.743331        0.736719        0.717352        0.686515        0.646043    
+         0.597994        0.544377        0.486966        0.427208        0.366197        0.304702        0.243208        0.181968        0.121064        6.044973E-02
+          0.00000    
+   7      0.00000        7.228597E-02    0.144857        0.217956        0.291734        0.366197        0.441145        0.516093        0.590190        0.662137    
+         0.730120        0.791797        0.844387        0.884904        0.910573        0.919377        0.910573        0.884904        0.844387        0.791797    
+         0.730120        0.662137        0.590190        0.516093        0.441145        0.366197        0.291734        0.217956        0.144857        7.228597E-02
+          0.00000    
+   8      0.00000        8.383680E-02    0.168123        0.253265        0.339574        0.427208        0.516093        0.605829        0.695565        0.783862    
+         0.868551        0.946638         1.01433         1.06730         1.10129         1.11303         1.10129         1.06730         1.01433        0.946638    
+         0.868551        0.783862        0.695565        0.605829        0.516093        0.427208        0.339574        0.253265        0.168123        8.383680E-02
+          0.00000    
+   9      0.00000        9.493791E-02    0.190534        0.287407        0.386089        0.486966        0.590190        0.695565        0.802380        0.909194    
+          1.01358         1.11187         1.19900         1.26869         1.31425         1.33018         1.31425         1.26869         1.19900         1.11187    
+          1.01358        0.909194        0.802380        0.695565        0.590190        0.486966        0.386089        0.287407        0.190534        9.493791E-02
+          0.00000    
+  10      0.00000        0.105381        0.211668        0.319740        0.430410        0.544377        0.662137        0.783862        0.909194         1.03695    
+          1.16471         1.28827         1.40111         1.49421         1.55684         1.57917         1.55684         1.49421         1.40111         1.28827    
+          1.16471         1.03695        0.909194        0.783862        0.662137        0.544377        0.430410        0.319740        0.211668        0.105381    
+          0.00000    
+  11      0.00000        0.114917        0.231017        0.349474        0.471436        0.597994        0.730120        0.868551         1.01358         1.16471    
+          1.32005         1.47538         1.62295         1.75021         1.83972         1.87285         1.83972         1.75021         1.62295         1.47538    
+          1.32005         1.16471         1.01358        0.868551        0.730120        0.597994        0.471436        0.349474        0.231017        0.114917    
+          0.00000    
+  12      0.00000        0.123271        0.248010        0.375703        0.507865        0.646043        0.791797        0.946638         1.11187         1.28827    
+          1.47538         1.67025         1.86512         2.04395         2.17898         2.23277         2.17898         2.04395         1.86512         1.67025    
+          1.47538         1.28827         1.11187        0.946638        0.791797        0.646043        0.507865        0.375703        0.248010        0.123271    
+          0.00000    
+  13      0.00000        0.130155        0.262048        0.397463        0.538278        0.686515        0.844387         1.01433         1.19900         1.40111    
+          1.62295         1.86512         2.12331         2.38151         2.59947         2.70029         2.59947         2.38151         2.12331         1.86512    
+          1.62295         1.40111         1.19900         1.01433        0.844387        0.686515        0.538278        0.397463        0.262048        0.130155    
+          0.00000    
+  14      0.00000        0.135303        0.272565        0.413823        0.561269        0.717352        0.884904         1.06730         1.26869         1.49421    
+          1.75021         2.04395         2.38151         2.75930         3.13710         3.36944         3.13710         2.75930         2.38151         2.04395    
+          1.75021         1.49421         1.26869         1.06730        0.884904        0.717352        0.561269        0.413823        0.272565        0.135303    
+          0.00000    
+  15      0.00000        0.138490        0.279087        0.423995        0.575622        0.736719        0.910573         1.10129         1.31425         1.55684    
+          1.83972         2.17898         2.59947         3.13710         3.82018         4.50327         3.82018         3.13710         2.59947         2.17898    
+          1.83972         1.55684         1.31425         1.10129        0.910573        0.736719        0.575622        0.423995        0.279087        0.138490    
+          0.00000    
+  16      0.00000        0.139569        0.281298        0.427449        0.580506        0.743331        0.919377         1.11303         1.33018         1.57917    
+          1.87285         2.23277         2.70029         3.36944         4.50327         7.00327         4.50327         3.36944         2.70029         2.23277    
+          1.87285         1.57917         1.33018         1.11303        0.919377        0.743331        0.580506        0.427449        0.281298        0.139569    
+          0.00000    
+  17      0.00000        0.138490        0.279087        0.423995        0.575622        0.736719        0.910573         1.10129         1.31425         1.55684    
+          1.83972         2.17898         2.59947         3.13710         3.82018         4.50327         3.82018         3.13710         2.59947         2.17898    
+          1.83972         1.55684         1.31425         1.10129        0.910573        0.736719        0.575622        0.423995        0.279087        0.138490    
+          0.00000    
+  18      0.00000        0.135303        0.272565        0.413823        0.561269        0.717352        0.884904         1.06730         1.26869         1.49421    
+          1.75021         2.04395         2.38151         2.75930         3.13710         3.36944         3.13710         2.75930         2.38151         2.04395    
+          1.75021         1.49421         1.26869         1.06730        0.884904        0.717352        0.561269        0.413823        0.272565        0.135303    
+          0.00000    
+  19      0.00000        0.130155        0.262048        0.397463        0.538278        0.686515        0.844387         1.01433         1.19900         1.40111    
+          1.62295         1.86512         2.12331         2.38151         2.59947         2.70029         2.59947         2.38151         2.12331         1.86512    
+          1.62295         1.40111         1.19900         1.01433        0.844387        0.686515        0.538278        0.397463        0.262048        0.130155    
+          0.00000    
+  20      0.00000        0.123271        0.248010        0.375703        0.507865        0.646043        0.791797        0.946638         1.11187         1.28827    
+          1.47538         1.67025         1.86512         2.04395         2.17898         2.23277         2.17898         2.04395         1.86512         1.67025    
+          1.47538         1.28827         1.11187        0.946638        0.791797        0.646043        0.507865        0.375703        0.248010        0.123271    
+          0.00000    
+  21      0.00000        0.114917        0.231017        0.349474        0.471436        0.597994        0.730120        0.868551         1.01358         1.16471    
+          1.32005         1.47538         1.62295         1.75021         1.83972         1.87285         1.83972         1.75021         1.62295         1.47538    
+          1.32005         1.16471         1.01358        0.868551        0.730120        0.597994        0.471436        0.349474        0.231017        0.114917    
+          0.00000    
+  22      0.00000        0.105381        0.211668        0.319740        0.430410        0.544377        0.662137        0.783862        0.909194         1.03695    
+          1.16471         1.28827         1.40111         1.49421         1.55684         1.57917         1.55684         1.49421         1.40111         1.28827    
+          1.16471         1.03695        0.909194        0.783862        0.662137        0.544377        0.430410        0.319740        0.211668        0.105381    
+          0.00000    
+  23      0.00000        9.493791E-02    0.190534        0.287407        0.386089        0.486966        0.590190        0.695565        0.802380        0.909194    
+          1.01358         1.11187         1.19900         1.26869         1.31425         1.33018         1.31425         1.26869         1.19900         1.11187    
+          1.01358        0.909194        0.802380        0.695565        0.590190        0.486966        0.386089        0.287407        0.190534        9.493791E-02
+          0.00000    
+  24      0.00000        8.383680E-02    0.168123        0.253265        0.339574        0.427208        0.516093        0.605829        0.695565        0.783862    
+         0.868551        0.946638         1.01433         1.06730         1.10129         1.11303         1.10129         1.06730         1.01433        0.946638    
+         0.868551        0.783862        0.695565        0.605829        0.516093        0.427208        0.339574        0.253265        0.168123        8.383680E-02
+          0.00000    
+  25      0.00000        7.228597E-02    0.144857        0.217956        0.291734        0.366197        0.441145        0.516093        0.590190        0.662137    
+         0.730120        0.791797        0.844387        0.884904        0.910573        0.919377        0.910573        0.884904        0.844387        0.791797    
+         0.730120        0.662137        0.590190        0.516093        0.441145        0.366197        0.291734        0.217956        0.144857        7.228597E-02
+          0.00000    
+  26      0.00000        6.044973E-02    0.121064        0.181968        0.243208        0.304702        0.366197        0.427208        0.486966        0.544377    
+         0.597994        0.646043        0.686515        0.717352        0.736719        0.743331        0.736719        0.717352        0.686515        0.646043    
+         0.597994        0.544377        0.486966        0.427208        0.366197        0.304702        0.243208        0.181968        0.121064        6.044973E-02
+          0.00000    
+  27      0.00000        4.844901E-02    9.698059E-02    0.145645        0.194426        0.243208        0.291734        0.339574        0.386089        0.430410    
+         0.471436        0.507865        0.538278        0.561269        0.575622        0.580506        0.575622        0.561269        0.538278        0.507865    
+         0.471436        0.430410        0.386089        0.339574        0.291734        0.243208        0.194426        0.145645        9.698059E-02    4.844901E-02
+          0.00000    
+  28      0.00000        3.636570E-02    7.276447E-02    0.109205        0.145645        0.181968        0.217956        0.253265        0.287407        0.319740    
+         0.349474        0.375703        0.397463        0.413823        0.423995        0.427449        0.423995        0.413823        0.397463        0.375703    
+         0.349474        0.319740        0.287407        0.253265        0.217956        0.181968        0.145645        0.109205        7.276447E-02    3.636570E-02
+          0.00000    
+  29      0.00000        2.424931E-02    4.850689E-02    7.276447E-02    9.698059E-02    0.121064        0.144857        0.168123        0.190534        0.211668    
+         0.231017        0.248010        0.262048        0.272565        0.279087        0.281298        0.279087        0.272565        0.262048        0.248010    
+         0.231017        0.211668        0.190534        0.168123        0.144857        0.121064        9.698059E-02    7.276447E-02    4.850689E-02    2.424931E-02
+          0.00000    
+  30      0.00000        1.212466E-02    2.424931E-02    3.636570E-02    4.844901E-02    6.044973E-02    7.228597E-02    8.383680E-02    9.493791E-02    0.105381    
+         0.114917        0.123271        0.130155        0.135303        0.138490        0.139569        0.138490        0.135303        0.130155        0.123271    
+         0.114917        0.105381        9.493791E-02    8.383680E-02    7.228597E-02    6.044973E-02    4.844901E-02    3.636570E-02    2.424931E-02    1.212466E-02
+          0.00000    
+  31      0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000    
+
+ HEAD WILL BE SAVED ON UNIT 1027 AT END OF TIME STEP   36, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP   36, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+                 WEL =    78840000.0000                   WEL =       86400.0000     WEL-1                            
+                 CHD =           0.0000                   CHD =           0.0000     CHD-1                            
+
+            TOTAL IN =    78840000.0000              TOTAL IN =       86400.0000
+
+          OUT:                                     OUT:
+          ----                                     ----
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+                 WEL =           0.0000                   WEL =           0.0000     WEL-1                            
+                 CHD =    78839999.9996                   CHD =       86400.0000     CHD-1                            
+
+           TOTAL OUT =    78839999.9996             TOTAL OUT =       86400.0000
+
+            IN - OUT =       3.6275E-04              IN - OUT =       2.0716E-07
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP   36 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH 2.19000E+06  36500.      608.33      25.347     6.93969E-02
+ STRESS PERIOD TIME 7.88400E+07 1.31400E+06  21900.      912.50      2.4983    
+         TOTAL TIME 7.88400E+07 1.31400E+06  21900.      912.50      2.4983    
+
+
+end timestep
+
+
+start timestep kper="2" kstp="1" mode="normal"
+
+
+ END OF FILE DETECTED IN OUTPUT CONTROL.
+ CURRENT OUTPUT CONTROL SETTINGS WILL BE 
+ REPEATED UNTIL THE END OF THE SIMULATION.
+
+ OUTPUT CONTROL FOR STRESS PERIOD 2 IS REPEATED USING SETTINGS FROM A PREVIOUS STRESS PERIOD.
+ ---------------------------------------------------
+  WEL NO.    LAYER    ROW     COL    CONCENTRATION  
+ ---------------------------------------------------
+     1         1      16      16     0.00000000     
+ ---------------------------------------------------
+
+
+
+end timestep
+
+
+start timestep kper="2" kstp="2" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="3" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="4" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="5" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="6" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="7" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="8" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="9" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="10" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="11" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="12" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="13" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="14" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="15" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="16" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="17" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="18" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="19" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="20" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="21" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="22" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="23" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="24" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="25" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="26" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="27" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="28" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="29" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="30" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="31" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="32" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="33" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="34" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="35" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="36" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="37" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="38" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="39" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="40" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="41" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="42" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="43" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="44" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="45" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="46" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="47" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="48" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="49" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="50" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="51" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="52" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="53" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="54" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="55" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="56" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="57" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="58" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="59" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="60" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="61" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="62" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="63" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="64" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="65" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="66" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="67" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="68" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="69" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="70" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="71" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="72" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="73" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="74" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="75" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="76" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="77" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="78" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="79" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="80" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="81" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="82" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="83" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="84" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="85" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="86" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="87" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="88" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="89" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="90" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="91" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="92" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="93" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="94" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="95" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="96" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="97" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="98" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="99" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="100" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="101" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="102" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="103" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="104" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="105" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="106" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="107" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="108" mode="normal"
+
+
+end timestep
+
+
+start timestep kper="2" kstp="109" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1026 AT TIME STEP    109, STRESS PERIOD      2
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1026 AT TIME STEP    109, STRESS PERIOD      2
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL GWF-P06-MF6L     PACKAGE NPF             CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE NPF              ON UNIT   1026 AT TIME STEP    109, STRESS PERIOD      2
+ UBDSV06 SAVING              WEL IN MODEL GWF-P06-MF6L     PACKAGE GWF-P06-MF6L    CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE WEL-1            ON UNIT   1026 AT TIME STEP    109, STRESS PERIOD      2
+ UBDSV06 SAVING              CHD IN MODEL GWF-P06-MF6L     PACKAGE GWF-P06-MF6L    CONNECTED TO MODEL GWF-P06-MF6L     PACKAGE CHD-1            ON UNIT   1026 AT TIME STEP    109, STRESS PERIOD      2
+
+ WEL PACKAGE (WEL-1) FLOW RATES   PERIOD      2   STEP      109
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,16,16)            -86400.000     
+ -----------------------------------------------
+
+
+
+1
+  HEAD IN LAYER   1 AT END OF TIME STEP 109 IN STRESS PERIOD    2
+  ---------------------------------------------------------------------------
+
+                1               2               3               4               5               6               7               8               9              10
+               11              12              13              14              15              16              17              18              19              20
+               21              22              23              24              25              26              27              28              29              30
+               31
+ ................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+   1      0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000    
+   2      0.00000       -1.212466E-02   -2.424931E-02   -3.636570E-02   -4.844901E-02   -6.044973E-02   -7.228597E-02   -8.383680E-02   -9.493791E-02   -0.105381    
+        -0.114917       -0.123271       -0.130155       -0.135303       -0.138490       -0.139569       -0.138490       -0.135303       -0.130155       -0.123271    
+        -0.114917       -0.105381       -9.493791E-02   -8.383680E-02   -7.228597E-02   -6.044973E-02   -4.844901E-02   -3.636570E-02   -2.424931E-02   -1.212466E-02
+          0.00000    
+   3      0.00000       -2.424931E-02   -4.850689E-02   -7.276447E-02   -9.698059E-02   -0.121064       -0.144857       -0.168123       -0.190534       -0.211668    
+        -0.231017       -0.248010       -0.262048       -0.272565       -0.279087       -0.281298       -0.279087       -0.272565       -0.262048       -0.248010    
+        -0.231017       -0.211668       -0.190534       -0.168123       -0.144857       -0.121064       -9.698059E-02   -7.276447E-02   -4.850689E-02   -2.424931E-02
+          0.00000    
+   4      0.00000       -3.636570E-02   -7.276447E-02   -0.109205       -0.145645       -0.181968       -0.217956       -0.253265       -0.287407       -0.319740    
+        -0.349474       -0.375703       -0.397463       -0.413823       -0.423995       -0.427449       -0.423995       -0.413823       -0.397463       -0.375703    
+        -0.349474       -0.319740       -0.287407       -0.253265       -0.217956       -0.181968       -0.145645       -0.109205       -7.276447E-02   -3.636570E-02
+          0.00000    
+   5      0.00000       -4.844901E-02   -9.698059E-02   -0.145645       -0.194426       -0.243208       -0.291734       -0.339574       -0.386089       -0.430410    
+        -0.471436       -0.507865       -0.538278       -0.561269       -0.575622       -0.580506       -0.575622       -0.561269       -0.538278       -0.507865    
+        -0.471436       -0.430410       -0.386089       -0.339574       -0.291734       -0.243208       -0.194426       -0.145645       -9.698059E-02   -4.844901E-02
+          0.00000    
+   6      0.00000       -6.044973E-02   -0.121064       -0.181968       -0.243208       -0.304702       -0.366197       -0.427208       -0.486966       -0.544377    
+        -0.597994       -0.646043       -0.686515       -0.717352       -0.736719       -0.743331       -0.736719       -0.717352       -0.686515       -0.646043    
+        -0.597994       -0.544377       -0.486966       -0.427208       -0.366197       -0.304702       -0.243208       -0.181968       -0.121064       -6.044973E-02
+          0.00000    
+   7      0.00000       -7.228597E-02   -0.144857       -0.217956       -0.291734       -0.366197       -0.441145       -0.516093       -0.590190       -0.662137    
+        -0.730120       -0.791797       -0.844387       -0.884904       -0.910573       -0.919377       -0.910573       -0.884904       -0.844387       -0.791797    
+        -0.730120       -0.662137       -0.590190       -0.516093       -0.441145       -0.366197       -0.291734       -0.217956       -0.144857       -7.228597E-02
+          0.00000    
+   8      0.00000       -8.383680E-02   -0.168123       -0.253265       -0.339574       -0.427208       -0.516093       -0.605829       -0.695565       -0.783862    
+        -0.868551       -0.946638        -1.01433        -1.06730        -1.10129        -1.11303        -1.10129        -1.06730        -1.01433       -0.946638    
+        -0.868551       -0.783862       -0.695565       -0.605829       -0.516093       -0.427208       -0.339574       -0.253265       -0.168123       -8.383680E-02
+          0.00000    
+   9      0.00000       -9.493791E-02   -0.190534       -0.287407       -0.386089       -0.486966       -0.590190       -0.695565       -0.802380       -0.909194    
+         -1.01358        -1.11187        -1.19900        -1.26869        -1.31425        -1.33018        -1.31425        -1.26869        -1.19900        -1.11187    
+         -1.01358       -0.909194       -0.802380       -0.695565       -0.590190       -0.486966       -0.386089       -0.287407       -0.190534       -9.493791E-02
+          0.00000    
+  10      0.00000       -0.105381       -0.211668       -0.319740       -0.430410       -0.544377       -0.662137       -0.783862       -0.909194        -1.03695    
+         -1.16471        -1.28827        -1.40111        -1.49421        -1.55684        -1.57917        -1.55684        -1.49421        -1.40111        -1.28827    
+         -1.16471        -1.03695       -0.909194       -0.783862       -0.662137       -0.544377       -0.430410       -0.319740       -0.211668       -0.105381    
+          0.00000    
+  11      0.00000       -0.114917       -0.231017       -0.349474       -0.471436       -0.597994       -0.730120       -0.868551        -1.01358        -1.16471    
+         -1.32005        -1.47538        -1.62295        -1.75021        -1.83972        -1.87285        -1.83972        -1.75021        -1.62295        -1.47538    
+         -1.32005        -1.16471        -1.01358       -0.868551       -0.730120       -0.597994       -0.471436       -0.349474       -0.231017       -0.114917    
+          0.00000    
+  12      0.00000       -0.123271       -0.248010       -0.375703       -0.507865       -0.646043       -0.791797       -0.946638        -1.11187        -1.28827    
+         -1.47538        -1.67025        -1.86512        -2.04395        -2.17898        -2.23277        -2.17898        -2.04395        -1.86512        -1.67025    
+         -1.47538        -1.28827        -1.11187       -0.946638       -0.791797       -0.646043       -0.507865       -0.375703       -0.248010       -0.123271    
+          0.00000    
+  13      0.00000       -0.130155       -0.262048       -0.397463       -0.538278       -0.686515       -0.844387        -1.01433        -1.19900        -1.40111    
+         -1.62295        -1.86512        -2.12331        -2.38151        -2.59947        -2.70029        -2.59947        -2.38151        -2.12331        -1.86512    
+         -1.62295        -1.40111        -1.19900        -1.01433       -0.844387       -0.686515       -0.538278       -0.397463       -0.262048       -0.130155    
+          0.00000    
+  14      0.00000       -0.135303       -0.272565       -0.413823       -0.561269       -0.717352       -0.884904        -1.06730        -1.26869        -1.49421    
+         -1.75021        -2.04395        -2.38151        -2.75930        -3.13710        -3.36944        -3.13710        -2.75930        -2.38151        -2.04395    
+         -1.75021        -1.49421        -1.26869        -1.06730       -0.884904       -0.717352       -0.561269       -0.413823       -0.272565       -0.135303    
+          0.00000    
+  15      0.00000       -0.138490       -0.279087       -0.423995       -0.575622       -0.736719       -0.910573        -1.10129        -1.31425        -1.55684    
+         -1.83972        -2.17898        -2.59947        -3.13710        -3.82018        -4.50327        -3.82018        -3.13710        -2.59947        -2.17898    
+         -1.83972        -1.55684        -1.31425        -1.10129       -0.910573       -0.736719       -0.575622       -0.423995       -0.279087       -0.138490    
+          0.00000    
+  16      0.00000       -0.139569       -0.281298       -0.427449       -0.580506       -0.743331       -0.919377        -1.11303        -1.33018        -1.57917    
+         -1.87285        -2.23277        -2.70029        -3.36944        -4.50327        -7.00327        -4.50327        -3.36944        -2.70029        -2.23277    
+         -1.87285        -1.57917        -1.33018        -1.11303       -0.919377       -0.743331       -0.580506       -0.427449       -0.281298       -0.139569    
+          0.00000    
+  17      0.00000       -0.138490       -0.279087       -0.423995       -0.575622       -0.736719       -0.910573        -1.10129        -1.31425        -1.55684    
+         -1.83972        -2.17898        -2.59947        -3.13710        -3.82018        -4.50327        -3.82018        -3.13710        -2.59947        -2.17898    
+         -1.83972        -1.55684        -1.31425        -1.10129       -0.910573       -0.736719       -0.575622       -0.423995       -0.279087       -0.138490    
+          0.00000    
+  18      0.00000       -0.135303       -0.272565       -0.413823       -0.561269       -0.717352       -0.884904        -1.06730        -1.26869        -1.49421    
+         -1.75021        -2.04395        -2.38151        -2.75930        -3.13710        -3.36944        -3.13710        -2.75930        -2.38151        -2.04395    
+         -1.75021        -1.49421        -1.26869        -1.06730       -0.884904       -0.717352       -0.561269       -0.413823       -0.272565       -0.135303    
+          0.00000    
+  19      0.00000       -0.130155       -0.262048       -0.397463       -0.538278       -0.686515       -0.844387        -1.01433        -1.19900        -1.40111    
+         -1.62295        -1.86512        -2.12331        -2.38151        -2.59947        -2.70029        -2.59947        -2.38151        -2.12331        -1.86512    
+         -1.62295        -1.40111        -1.19900        -1.01433       -0.844387       -0.686515       -0.538278       -0.397463       -0.262048       -0.130155    
+          0.00000    
+  20      0.00000       -0.123271       -0.248010       -0.375703       -0.507865       -0.646043       -0.791797       -0.946638        -1.11187        -1.28827    
+         -1.47538        -1.67025        -1.86512        -2.04395        -2.17898        -2.23277        -2.17898        -2.04395        -1.86512        -1.67025    
+         -1.47538        -1.28827        -1.11187       -0.946638       -0.791797       -0.646043       -0.507865       -0.375703       -0.248010       -0.123271    
+          0.00000    
+  21      0.00000       -0.114917       -0.231017       -0.349474       -0.471436       -0.597994       -0.730120       -0.868551        -1.01358        -1.16471    
+         -1.32005        -1.47538        -1.62295        -1.75021        -1.83972        -1.87285        -1.83972        -1.75021        -1.62295        -1.47538    
+         -1.32005        -1.16471        -1.01358       -0.868551       -0.730120       -0.597994       -0.471436       -0.349474       -0.231017       -0.114917    
+          0.00000    
+  22      0.00000       -0.105381       -0.211668       -0.319740       -0.430410       -0.544377       -0.662137       -0.783862       -0.909194        -1.03695    
+         -1.16471        -1.28827        -1.40111        -1.49421        -1.55684        -1.57917        -1.55684        -1.49421        -1.40111        -1.28827    
+         -1.16471        -1.03695       -0.909194       -0.783862       -0.662137       -0.544377       -0.430410       -0.319740       -0.211668       -0.105381    
+          0.00000    
+  23      0.00000       -9.493791E-02   -0.190534       -0.287407       -0.386089       -0.486966       -0.590190       -0.695565       -0.802380       -0.909194    
+         -1.01358        -1.11187        -1.19900        -1.26869        -1.31425        -1.33018        -1.31425        -1.26869        -1.19900        -1.11187    
+         -1.01358       -0.909194       -0.802380       -0.695565       -0.590190       -0.486966       -0.386089       -0.287407       -0.190534       -9.493791E-02
+          0.00000    
+  24      0.00000       -8.383680E-02   -0.168123       -0.253265       -0.339574       -0.427208       -0.516093       -0.605829       -0.695565       -0.783862    
+        -0.868551       -0.946638        -1.01433        -1.06730        -1.10129        -1.11303        -1.10129        -1.06730        -1.01433       -0.946638    
+        -0.868551       -0.783862       -0.695565       -0.605829       -0.516093       -0.427208       -0.339574       -0.253265       -0.168123       -8.383680E-02
+          0.00000    
+  25      0.00000       -7.228597E-02   -0.144857       -0.217956       -0.291734       -0.366197       -0.441145       -0.516093       -0.590190       -0.662137    
+        -0.730120       -0.791797       -0.844387       -0.884904       -0.910573       -0.919377       -0.910573       -0.884904       -0.844387       -0.791797    
+        -0.730120       -0.662137       -0.590190       -0.516093       -0.441145       -0.366197       -0.291734       -0.217956       -0.144857       -7.228597E-02
+          0.00000    
+  26      0.00000       -6.044973E-02   -0.121064       -0.181968       -0.243208       -0.304702       -0.366197       -0.427208       -0.486966       -0.544377    
+        -0.597994       -0.646043       -0.686515       -0.717352       -0.736719       -0.743331       -0.736719       -0.717352       -0.686515       -0.646043    
+        -0.597994       -0.544377       -0.486966       -0.427208       -0.366197       -0.304702       -0.243208       -0.181968       -0.121064       -6.044973E-02
+          0.00000    
+  27      0.00000       -4.844901E-02   -9.698059E-02   -0.145645       -0.194426       -0.243208       -0.291734       -0.339574       -0.386089       -0.430410    
+        -0.471436       -0.507865       -0.538278       -0.561269       -0.575622       -0.580506       -0.575622       -0.561269       -0.538278       -0.507865    
+        -0.471436       -0.430410       -0.386089       -0.339574       -0.291734       -0.243208       -0.194426       -0.145645       -9.698059E-02   -4.844901E-02
+          0.00000    
+  28      0.00000       -3.636570E-02   -7.276447E-02   -0.109205       -0.145645       -0.181968       -0.217956       -0.253265       -0.287407       -0.319740    
+        -0.349474       -0.375703       -0.397463       -0.413823       -0.423995       -0.427449       -0.423995       -0.413823       -0.397463       -0.375703    
+        -0.349474       -0.319740       -0.287407       -0.253265       -0.217956       -0.181968       -0.145645       -0.109205       -7.276447E-02   -3.636570E-02
+          0.00000    
+  29      0.00000       -2.424931E-02   -4.850689E-02   -7.276447E-02   -9.698059E-02   -0.121064       -0.144857       -0.168123       -0.190534       -0.211668    
+        -0.231017       -0.248010       -0.262048       -0.272565       -0.279087       -0.281298       -0.279087       -0.272565       -0.262048       -0.248010    
+        -0.231017       -0.211668       -0.190534       -0.168123       -0.144857       -0.121064       -9.698059E-02   -7.276447E-02   -4.850689E-02   -2.424931E-02
+          0.00000    
+  30      0.00000       -1.212466E-02   -2.424931E-02   -3.636570E-02   -4.844901E-02   -6.044973E-02   -7.228597E-02   -8.383680E-02   -9.493791E-02   -0.105381    
+        -0.114917       -0.123271       -0.130155       -0.135303       -0.138490       -0.139569       -0.138490       -0.135303       -0.130155       -0.123271    
+        -0.114917       -0.105381       -9.493791E-02   -8.383680E-02   -7.228597E-02   -6.044973E-02   -4.844901E-02   -3.636570E-02   -2.424931E-02   -1.212466E-02
+          0.00000    
+  31      0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000         0.00000    
+          0.00000    
+
+ HEAD WILL BE SAVED ON UNIT 1027 AT END OF TIME STEP  109, STRESS PERIOD    2
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP  109, STRESS PERIOD   2
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+                 WEL =    78840000.0000                   WEL =           0.0000     WEL-1                            
+                 CHD =   236519999.9994                   CHD =       86400.0000     CHD-1                            
+
+            TOTAL IN =   315359999.9994              TOTAL IN =       86400.0000
+
+          OUT:                                     OUT:
+          ----                                     ----
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+                 WEL =   236520000.0000                   WEL =       86400.0000     WEL-1                            
+                 CHD =    78839999.9996                   CHD =           0.0000     CHD-1                            
+
+           TOTAL OUT =   315359999.9996             TOTAL OUT =       86400.0000
+
+            IN - OUT =      -2.3842E-04              IN - OUT =      -1.1476E-07
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP  109 IN STRESS PERIOD    2
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH 2.16991E+06  36165.      602.75      25.115     6.87602E-02
+ STRESS PERIOD TIME 2.36520E+08 3.94200E+06  65700.      2737.5      7.4949    
+         TOTAL TIME 3.15360E+08 5.25600E+06  87600.      3650.0      9.9932    
+
+
+end timestep
+
