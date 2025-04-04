@@ -1,0 +1,8 @@
+list 97 "particle set.sum"
+main 10 "particle set.mdf"
+dis 19 "E:\02_RMG Serviços\30_Terra_AMB\02_Jardim_America\gms\B_MODFLOW\B.dis"
+locations 71 "particle set.loc"
+endpoint 75 "particle set.ept"
+pathline 76 "particle set.pth"
+head(binary) 730 "C:\pest\A\B_MODFLOW\B.hed"
+budget 40 "C:\pest\A\B_MODFLOW\B.ccf"

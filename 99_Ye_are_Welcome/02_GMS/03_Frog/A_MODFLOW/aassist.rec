@@ -1,0 +1,1856 @@
+
+                      PEST RUN RECORD: CASE aassist
+
+
+PEST Version: 13.0
+
+   Offset for super parameter "par1" increased by 10.
+   Offset for super parameter "par2" increased by 10.
+   Offset for super parameter "par3" increased by 10.
+   Offset for super parameter "par4" increased by 10.
+   Offset for super parameter "par5" increased by 10.
+   Offset for super parameter "par6" increased by 10.
+   Offset for super parameter "par7" increased by 10.
+   Offset for super parameter "par8" increased by 10.
+   Offset for super parameter "par9" increased by 10.
+   Offset for super parameter "par10" increased by 10.
+   Offset for super parameter "par11" increased by 10.
+   Offset for super parameter "par12" increased by 10.
+
+
+PEST run mode:-
+
+   Regularisation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    12
+   Number of adjustable parameters                :    12
+   Number of parameter groups                     :     1
+   Number of observations                         :   577
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   svdabatch.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      parcalc.tpl
+   for model input files:
+      parcalc.in
+
+   (Parameter values written using double precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      A.ins
+      picalc.ins
+   for reading model output files:
+      A._os
+      picalc.out
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 12
+   Ratio of lowest/highest singular value        :  1.000000E-07
+   Record eigenvectors in SVD file               : no
+
+
+SVD Assist data:-
+
+   PEST control file holding base parameters              : A.pst
+   Use external super parameter definition                : no
+   Jacobian matrix file                                   : A.jco
+   Base parameter definition method                       : SVD on Q^(1/2)X
+   Calculate initial Jacobian from base sensitivities     : no
+   Record multiple bpa files                              : no
+   Perform base parameter scale adjustment                : yes
+   SVDA_SCALADJ adjustment control variable               : 3
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+pargp        absolute    1.5000E-02    na          switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+par1         none              relative    11.0000        0.00000       1.000000E+20
+par2         none              relative    11.0000        0.00000       1.000000E+20
+par3         none              relative    11.0000        0.00000       1.000000E+20
+par4         none              relative    11.0000        0.00000       1.000000E+20
+par5         none              relative    11.0000        0.00000       1.000000E+20
+par6         none              relative    11.0000        0.00000       1.000000E+20
+par7         none              relative    11.0000        0.00000       1.000000E+20
+par8         none              relative    11.0000        0.00000       1.000000E+20
+par9         none              relative    11.0000        0.00000       1.000000E+20
+par10        none              relative    11.0000        0.00000       1.000000E+20
+par11        none              relative    11.0000        0.00000       1.000000E+20
+par12        none              relative    11.0000        0.00000       1.000000E+20
+
+Name         Group          Scale         Offset        Model command number
+par1         pargp         1.00000       -11.0000            1
+par2         pargp         1.00000       -11.0000            1
+par3         pargp         1.00000       -11.0000            1
+par4         pargp         1.00000       -11.0000            1
+par5         pargp         1.00000       -11.0000            1
+par6         pargp         1.00000       -11.0000            1
+par7         pargp         1.00000       -11.0000            1
+par8         pargp         1.00000       -11.0000            1
+par9         pargp         1.00000       -11.0000            1
+par10        pargp         1.00000       -11.0000            1
+par11        pargp         1.00000       -11.0000            1
+par12        pargp         1.00000       -11.0000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ hed1                    93.2700         2.7405E-03   head        
+ hed2                    92.6500         0.1920       head        
+ hed3                    92.2800         0.3330       head        
+ hed4                    90.8000         0.1823       head        
+ hed5                    89.1600         0.1582       head        
+ hed6                    88.8500         0.2747       head        
+ hed7                    88.3200         0.2150       head        
+ hed8                    88.1700         0.1665       head        
+ hed9                    88.0500         0.3325       head        
+ hed10                   87.8000         0.2195       head        
+ hed11                   87.7900         8.0768E-02   head        
+ hed12                   85.5200         0.2190       head        
+ hed13                   84.8800         3.7562E-02   head        
+ hed14                   84.6200         0.3245       head        
+ hed15                   84.5100         7.6642E-02   head        
+ hed16                   84.4000         0.1862       head        
+ hed17                   84.0000         7.3590E-02   head        
+ hed18                   83.9000         2.8946E-03   head        
+ drnf0                  -1108.77         1.4618E-03   drain       
+ drnf1                  -1020.19         8.8288E-04   drain       
+ drnf2                  -1750.54         1.1890E-03   drain       
+ drnf3                  -1683.26         9.3755E-04   drain       
+ drnf4                  -1362.10         1.7007E-03   drain       
+ drnf5                  -1869.00         1.7860E-03   drain       
+ drnf6                  -1615.70         7.2020E-04   drain       
+ drnf7                  -821.080         1.2846E-05   drain       
+ drnf8                  -1042.72         1.0134E-03   drain       
+ drnf9                  -1653.63         8.2735E-04   drain       
+ drnf10                 -1273.35         2.2937E-03   drain       
+ drnf11                 -1248.25         2.3502E-03   drain       
+ drnf12                 -1035.36         9.6841E-04   drain       
+ drnf13                 -1308.27         2.0605E-03   drain       
+ drnf14                 -933.860         4.8827E-04   drain       
+ drnf15                 -2260.82         3.2593E-05   drain       
+ drnf16                 -917.670         4.4067E-04   drain       
+ drnf17                 -1300.08         2.1764E-03   drain       
+ drnf18                 -972.270         6.3799E-04   drain       
+ drnf19                 -1220.00         2.3167E-03   drain       
+ drnf20                 -1667.11         8.8077E-04   drain       
+ drnf21                 -1734.78         1.1232E-03   drain       
+ drnf22                 -1234.42         2.3337E-03   drain       
+ ghbf0                  -87.6600         3.0180E-03   ghb         
+ ghbf1                  -96.2700         3.5641E-03   ghb         
+ ghbf2                  -104.560         4.1588E-03   ghb         
+ ghbf3                  -115.810         3.9713E-03   ghb         
+ ghbf4                  -120.450         3.5871E-03   ghb         
+ ghbf5                  -96.9800         3.6302E-03   ghb         
+ ghbf6                  -25.8300         8.1592E-05   ghb         
+ ghbf7                  -48.4000         5.3299E-03   ghb         
+ ghbf8                  -67.7400         4.1574E-03   ghb         
+ ghbf9                  -72.8100         3.8829E-03   ghb         
+ ghbf10                 -80.4600         3.4248E-03   ghb         
+ ghbf11                 -88.6300         3.0049E-03   ghb         
+ ghbf12                 -126.070         3.0200E-03   ghb         
+ ghbf13                 -176.250         8.4003E-05   ghb         
+ ghbf14                 -177.760         4.1793E-05   ghb         
+ ghbf15                 -122.500         3.4115E-03   ghb         
+ ghbf16                 -34.2700         6.0219E-03   ghb         
+ ghbf17                 -44.3900         5.5641E-03   ghb         
+ ghbf18                 -58.8500         4.6358E-03   ghb         
+ ghbf19                 -70.1300         4.0211E-03   ghb         
+ ghbf20                 -72.6900         3.8857E-03   ghb         
+ strf0                  -348.440         8.4853E-04   stream      
+ strf1                  -395.360         9.9321E-04   stream      
+ strf2                  -208.800         3.2381E-04   stream      
+ strf3                  -218.840         3.5058E-04   stream      
+ strf4                  -355.150         8.8652E-04   stream      
+ strf5                  -370.240         9.2769E-04   stream      
+ strf6                  -391.460         9.9228E-04   stream      
+ strf7                  -387.920         9.7113E-04   stream      
+ strf8                  -371.130         9.2789E-04   stream      
+ strf9                  -356.500         8.8681E-04   stream      
+ strf10                 -335.470         8.1054E-04   stream      
+ strf11                 -330.130         7.7515E-04   stream      
+ strf12                 -304.190         6.7294E-04   stream      
+ strf13                 -281.360         5.7839E-04   stream      
+ strf14                  5.87000         1.1653E-05   stream      
+ strf15                 -985.700         1.4897E-05   stream      
+ strf16                 -721.780         1.8110E-04   stream      
+ strf17                 -745.620         2.2482E-04   stream      
+ strf18                 -511.790         8.6428E-04   stream      
+ strf19                 -438.290         1.0245E-03   stream      
+ strf20                 -477.250         9.7208E-04   stream      
+ strf21                 -461.860         1.0094E-03   stream      
+ strf22                 -393.300         9.9272E-04   stream      
+ strf23                 -471.690         9.9109E-04   stream      
+ strf24                 -776.780         2.6994E-04   stream      
+ strf25                 -580.830         5.9062E-04   stream      
+ strf26                 -655.430         3.1803E-04   stream      
+ strf27                 -607.120         4.8752E-04   stream      
+ strf28                 -536.890         7.6264E-04   stream      
+ strf29                 -402.570         1.0157E-03   stream      
+ chdf0                   573.290         1.5219E-03   const_head  
+ chdf1                   634.810         1.8975E-03   const_head  
+ chdf2                   786.440         2.1374E-05   const_head  
+ chdf3                   714.110         6.3197E-04   const_head  
+ chdf4                   717.260         6.0757E-04   const_head  
+ chdf5                   767.710         1.7274E-04   const_head  
+ chdf6                   558.950         1.2821E-03   const_head  
+ chdf7                   521.550         9.6065E-04   const_head  
+ chdf8                   548.100         1.0857E-03   const_head  
+ chdf9                   435.340         2.1009E-03   const_head  
+ chdf10                  441.260         2.0514E-03   const_head  
+ chdf11                  473.760         1.6363E-03   const_head  
+ chdf12                  431.360         2.1495E-03   const_head  
+ chdf13                  504.690         1.1976E-03   const_head  
+ chdf14                  394.190         2.5980E-05   const_head  
+ chdf15                  412.150         2.2175E-03   const_head  
+ chdf16                  429.830         2.1513E-03   const_head  
+ chdf17                  397.640         2.1893E-03   const_head  
+ chdf18                  454.640         1.9143E-03   const_head  
+ chdf19                  467.010         1.7498E-03   const_head  
+ chdf20                  513.400         1.0766E-03   const_head  
+ pi0                     0.00000         3.3377E-02   regul_1     
+ pi1                     0.00000         1.6976E-03   regul_1     
+ pi2                     0.00000         3.3878E-02   regul_1     
+ pi3                     0.00000         1.0058E-02   regul_1     
+ pi4                     0.00000         6.9619E-04   regul_1     
+ pi5                     0.00000         1.7543E-03   regul_1     
+ pi6                     0.00000         7.1565E-04   regul_1     
+ pi7                     0.00000         4.0510E-24   regul_1     
+ pi8                     0.00000         3.3377E-02   regul_1     
+ pi9                     0.00000         1.0058E-02   regul_1     
+ pi10                    0.00000         3.3878E-02   regul_1     
+ pi11                    0.00000         1.0058E-02   regul_1     
+ pi12                    0.00000         7.1565E-04   regul_1     
+ pi13                    0.00000         1.7543E-03   regul_1     
+ pi14                    0.00000         7.1565E-04   regul_1     
+ pi15                    0.00000         6.9619E-04   regul_1     
+ pi16                    0.00000         1.0058E-02   regul_1     
+ pi17                    0.00000         3.3878E-02   regul_1     
+ pi18                    0.00000          0.000       regul_1     
+ pi19                    0.00000         7.1565E-04   regul_1     
+ pi20                    0.00000         1.7543E-03   regul_1     
+ pi21                    0.00000         3.3377E-02   regul_1     
+ pi22                    0.00000         1.6976E-03   regul_1     
+ pi23                    0.00000         3.3878E-02   regul_1     
+ pi24                    0.00000         1.0058E-02   regul_1     
+ pi25                    0.00000         6.9619E-04   regul_1     
+ pi26                    0.00000         3.3377E-02   regul_1     
+ pi27                    0.00000         1.0058E-02   regul_1     
+ pi28                    0.00000         3.3878E-02   regul_1     
+ pi29                    0.00000         1.0058E-02   regul_1     
+ pi30                    0.00000         6.9619E-04   regul_1     
+ pi31                    0.00000         1.0058E-02   regul_1     
+ pi32                    0.00000         3.3878E-02   regul_1     
+ pi33                    0.00000         3.3377E-02   regul_1     
+ pi34                    0.00000         1.6976E-03   regul_1     
+ pi35                    0.00000         3.3377E-02   regul_1     
+ pi36                    0.00000         3.3377E-02   regul_1     
+ pi37                    0.00000         1.6976E-03   regul_1     
+ pi38                    0.00000         3.3878E-02   regul_1     
+ pi39                    0.00000         1.0058E-02   regul_1     
+ pi40                    0.00000         6.9619E-04   regul_1     
+ pi41                    0.00000         1.7543E-03   regul_1     
+ pi42                    0.00000         7.1565E-04   regul_1     
+ pi43                    0.00000         2.2789E-21   regul_1     
+ pi44                    0.00000         3.3377E-02   regul_1     
+ pi45                    0.00000         1.0058E-02   regul_1     
+ pi46                    0.00000         3.3878E-02   regul_1     
+ pi47                    0.00000         1.0058E-02   regul_1     
+ pi48                    0.00000         7.1565E-04   regul_1     
+ pi49                    0.00000         1.7543E-03   regul_1     
+ pi50                    0.00000         7.1565E-04   regul_1     
+ pi51                    0.00000         6.9619E-04   regul_1     
+ pi52                    0.00000         1.0058E-02   regul_1     
+ pi53                    0.00000         3.3878E-02   regul_1     
+ pi54                    0.00000          0.000       regul_1     
+ pi55                    0.00000         7.1565E-04   regul_1     
+ pi56                    0.00000         1.7543E-03   regul_1     
+ pi57                    0.00000         3.3377E-02   regul_1     
+ pi58                    0.00000         1.6976E-03   regul_1     
+ pi59                    0.00000         3.3878E-02   regul_1     
+ pi60                    0.00000         1.0058E-02   regul_1     
+ pi61                    0.00000         6.9619E-04   regul_1     
+ pi62                    0.00000         3.3377E-02   regul_1     
+ pi63                    0.00000         1.0058E-02   regul_1     
+ pi64                    0.00000         3.3878E-02   regul_1     
+ pi65                    0.00000         1.0058E-02   regul_1     
+ pi66                    0.00000         6.9619E-04   regul_1     
+ pi67                    0.00000         1.0058E-02   regul_1     
+ pi68                    0.00000         3.3878E-02   regul_1     
+ pi69                    0.00000         3.3377E-02   regul_1     
+ pi70                    0.00000         1.6976E-03   regul_1     
+ pi71                    0.00000         3.3377E-02   regul_1     
+ pi72                    0.00000         3.3377E-02   regul_1     
+ pi73                    0.00000         1.6976E-03   regul_1     
+ pi74                    0.00000         3.3878E-02   regul_1     
+ pi75                    0.00000         1.0058E-02   regul_1     
+ pi76                    0.00000         6.9619E-04   regul_1     
+ pi77                    0.00000         1.7543E-03   regul_1     
+ pi78                    0.00000         7.1565E-04   regul_1     
+ pi79                    0.00000         2.0898E-25   regul_1     
+ pi80                    0.00000         3.3377E-02   regul_1     
+ pi81                    0.00000         1.0058E-02   regul_1     
+ pi82                    0.00000         3.3878E-02   regul_1     
+ pi83                    0.00000         1.0058E-02   regul_1     
+ pi84                    0.00000         7.1565E-04   regul_1     
+ pi85                    0.00000         1.7543E-03   regul_1     
+ pi86                    0.00000         7.1565E-04   regul_1     
+ pi87                    0.00000         6.9619E-04   regul_1     
+ pi88                    0.00000         1.0058E-02   regul_1     
+ pi89                    0.00000         3.3878E-02   regul_1     
+ pi90                    0.00000          0.000       regul_1     
+ pi91                    0.00000         7.1565E-04   regul_1     
+ pi92                    0.00000         1.7543E-03   regul_1     
+ pi93                    0.00000         3.3377E-02   regul_1     
+ pi94                    0.00000         1.6976E-03   regul_1     
+ pi95                    0.00000         3.3878E-02   regul_1     
+ pi96                    0.00000         1.0058E-02   regul_1     
+ pi97                    0.00000         6.9619E-04   regul_1     
+ pi98                    0.00000         3.3377E-02   regul_1     
+ pi99                    0.00000         1.0058E-02   regul_1     
+ pi100                   0.00000         3.3878E-02   regul_1     
+ pi101                   0.00000         1.0058E-02   regul_1     
+ pi102                   0.00000         6.9619E-04   regul_1     
+ pi103                   0.00000         1.0058E-02   regul_1     
+ pi104                   0.00000         3.3878E-02   regul_1     
+ pi105                   0.00000         3.3377E-02   regul_1     
+ pi106                   0.00000         1.6976E-03   regul_1     
+ pi107                   0.00000         3.3377E-02   regul_1     
+ pi108                   0.00000         3.3377E-02   regul_1     
+ pi109                   0.00000         1.6976E-03   regul_1     
+ pi110                   0.00000         3.3878E-02   regul_1     
+ pi111                   0.00000         1.0058E-02   regul_1     
+ pi112                   0.00000         6.9619E-04   regul_1     
+ pi113                   0.00000         1.7543E-03   regul_1     
+ pi114                   0.00000         7.1565E-04   regul_1     
+ pi115                   0.00000         2.5406E-18   regul_1     
+ pi116                   0.00000         3.3377E-02   regul_1     
+ pi117                   0.00000         1.0058E-02   regul_1     
+ pi118                   0.00000         3.3878E-02   regul_1     
+ pi119                   0.00000         1.0058E-02   regul_1     
+ pi120                   0.00000         7.1565E-04   regul_1     
+ pi121                   0.00000         1.7543E-03   regul_1     
+ pi122                   0.00000         7.1565E-04   regul_1     
+ pi123                   0.00000         6.9619E-04   regul_1     
+ pi124                   0.00000         1.0058E-02   regul_1     
+ pi125                   0.00000         3.3878E-02   regul_1     
+ pi126                   0.00000          0.000       regul_1     
+ pi127                   0.00000         7.1565E-04   regul_1     
+ pi128                   0.00000         1.7543E-03   regul_1     
+ pi129                   0.00000         3.3377E-02   regul_1     
+ pi130                   0.00000         1.6976E-03   regul_1     
+ pi131                   0.00000         3.3878E-02   regul_1     
+ pi132                   0.00000         1.0058E-02   regul_1     
+ pi133                   0.00000         6.9619E-04   regul_1     
+ pi134                   0.00000         3.3377E-02   regul_1     
+ pi135                   0.00000         1.0058E-02   regul_1     
+ pi136                   0.00000         3.3878E-02   regul_1     
+ pi137                   0.00000         1.0058E-02   regul_1     
+ pi138                   0.00000         6.9619E-04   regul_1     
+ pi139                   0.00000         1.0058E-02   regul_1     
+ pi140                   0.00000         3.3878E-02   regul_1     
+ pi141                   0.00000         3.3377E-02   regul_1     
+ pi142                   0.00000         1.6976E-03   regul_1     
+ pi143                   0.00000         3.3377E-02   regul_1     
+ pi144                   0.00000         1.4165E-02   regul_2     
+ pi145                   0.00000         1.6891E-03   regul_2     
+ pi146                   0.00000         2.2880E-04   regul_2     
+ pi147                   0.00000         1.4344E-02   regul_2     
+ pi148                   0.00000         5.4225E-03   regul_2     
+ pi149                   0.00000         1.0850E-03   regul_2     
+ pi150                   0.00000         1.5585E-04   regul_2     
+ pi151                   0.00000         1.7201E-03   regul_2     
+ pi152                   0.00000         1.0983E-03   regul_2     
+ pi153                   0.00000         3.3891E-04   regul_2     
+ pi154                   0.00000         4.1806E-05   regul_2     
+ pi155                   0.00000         2.3644E-04   regul_2     
+ pi156                   0.00000         1.6064E-04   regul_2     
+ pi157                   0.00000         4.2849E-05   regul_2     
+ pi158                   0.00000          0.000       regul_2     
+ pi159                   0.00000         1.4165E-02   regul_2     
+ pi160                   0.00000         1.6891E-03   regul_2     
+ pi161                   0.00000         5.4225E-03   regul_2     
+ pi162                   0.00000         1.4344E-02   regul_2     
+ pi163                   0.00000         5.4225E-03   regul_2     
+ pi164                   0.00000         1.0850E-03   regul_2     
+ pi165                   0.00000         1.0983E-03   regul_2     
+ pi166                   0.00000         1.7201E-03   regul_2     
+ pi167                   0.00000         1.0983E-03   regul_2     
+ pi168                   0.00000         3.3891E-04   regul_2     
+ pi169                   0.00000         1.6064E-04   regul_2     
+ pi170                   0.00000         2.3644E-04   regul_2     
+ pi171                   0.00000         1.6064E-04   regul_2     
+ pi172                   0.00000         4.2849E-05   regul_2     
+ pi173                   0.00000         1.4165E-02   regul_2     
+ pi174                   0.00000         1.0850E-03   regul_2     
+ pi175                   0.00000         5.4225E-03   regul_2     
+ pi176                   0.00000         1.4344E-02   regul_2     
+ pi177                   0.00000         5.4225E-03   regul_2     
+ pi178                   0.00000         3.3891E-04   regul_2     
+ pi179                   0.00000         1.0983E-03   regul_2     
+ pi180                   0.00000         1.7201E-03   regul_2     
+ pi181                   0.00000         1.0983E-03   regul_2     
+ pi182                   0.00000         4.2849E-05   regul_2     
+ pi183                   0.00000         1.6064E-04   regul_2     
+ pi184                   0.00000         2.3644E-04   regul_2     
+ pi185                   0.00000         1.6064E-04   regul_2     
+ pi186                   0.00000         1.5585E-04   regul_2     
+ pi187                   0.00000         1.0850E-03   regul_2     
+ pi188                   0.00000         5.4225E-03   regul_2     
+ pi189                   0.00000         1.4344E-02   regul_2     
+ pi190                   0.00000         4.1806E-05   regul_2     
+ pi191                   0.00000         3.3891E-04   regul_2     
+ pi192                   0.00000         1.0983E-03   regul_2     
+ pi193                   0.00000         1.7201E-03   regul_2     
+ pi194                   0.00000         6.3563E-31   regul_2     
+ pi195                   0.00000         4.2849E-05   regul_2     
+ pi196                   0.00000         1.6064E-04   regul_2     
+ pi197                   0.00000         2.3644E-04   regul_2     
+ pi198                   0.00000         1.4165E-02   regul_2     
+ pi199                   0.00000         1.6891E-03   regul_2     
+ pi200                   0.00000         2.2880E-04   regul_2     
+ pi201                   0.00000         1.4344E-02   regul_2     
+ pi202                   0.00000         5.4225E-03   regul_2     
+ pi203                   0.00000         1.0850E-03   regul_2     
+ pi204                   0.00000         1.5585E-04   regul_2     
+ pi205                   0.00000         1.7201E-03   regul_2     
+ pi206                   0.00000         1.0983E-03   regul_2     
+ pi207                   0.00000         3.3891E-04   regul_2     
+ pi208                   0.00000         4.1806E-05   regul_2     
+ pi209                   0.00000         1.4165E-02   regul_2     
+ pi210                   0.00000         1.6891E-03   regul_2     
+ pi211                   0.00000         5.4225E-03   regul_2     
+ pi212                   0.00000         1.4344E-02   regul_2     
+ pi213                   0.00000         5.4225E-03   regul_2     
+ pi214                   0.00000         1.0850E-03   regul_2     
+ pi215                   0.00000         1.0983E-03   regul_2     
+ pi216                   0.00000         1.7201E-03   regul_2     
+ pi217                   0.00000         1.0983E-03   regul_2     
+ pi218                   0.00000         3.3891E-04   regul_2     
+ pi219                   0.00000         1.4165E-02   regul_2     
+ pi220                   0.00000         1.0850E-03   regul_2     
+ pi221                   0.00000         5.4225E-03   regul_2     
+ pi222                   0.00000         1.4344E-02   regul_2     
+ pi223                   0.00000         5.4225E-03   regul_2     
+ pi224                   0.00000         3.3891E-04   regul_2     
+ pi225                   0.00000         1.0983E-03   regul_2     
+ pi226                   0.00000         1.7201E-03   regul_2     
+ pi227                   0.00000         1.0983E-03   regul_2     
+ pi228                   0.00000         1.5585E-04   regul_2     
+ pi229                   0.00000         1.0850E-03   regul_2     
+ pi230                   0.00000         5.4225E-03   regul_2     
+ pi231                   0.00000         1.4344E-02   regul_2     
+ pi232                   0.00000         4.1806E-05   regul_2     
+ pi233                   0.00000         3.3891E-04   regul_2     
+ pi234                   0.00000         1.0983E-03   regul_2     
+ pi235                   0.00000         1.7201E-03   regul_2     
+ pi236                   0.00000         1.4165E-02   regul_2     
+ pi237                   0.00000         1.6891E-03   regul_2     
+ pi238                   0.00000         2.2880E-04   regul_2     
+ pi239                   0.00000         1.4344E-02   regul_2     
+ pi240                   0.00000         5.4225E-03   regul_2     
+ pi241                   0.00000         1.0850E-03   regul_2     
+ pi242                   0.00000         1.5585E-04   regul_2     
+ pi243                   0.00000         1.4165E-02   regul_2     
+ pi244                   0.00000         1.6891E-03   regul_2     
+ pi245                   0.00000         5.4225E-03   regul_2     
+ pi246                   0.00000         1.4344E-02   regul_2     
+ pi247                   0.00000         5.4225E-03   regul_2     
+ pi248                   0.00000         1.0850E-03   regul_2     
+ pi249                   0.00000         1.4165E-02   regul_2     
+ pi250                   0.00000         1.0850E-03   regul_2     
+ pi251                   0.00000         5.4225E-03   regul_2     
+ pi252                   0.00000         1.4344E-02   regul_2     
+ pi253                   0.00000         5.4225E-03   regul_2     
+ pi254                   0.00000         1.5585E-04   regul_2     
+ pi255                   0.00000         1.0850E-03   regul_2     
+ pi256                   0.00000         5.4225E-03   regul_2     
+ pi257                   0.00000         1.4344E-02   regul_2     
+ pi258                   0.00000         1.4165E-02   regul_2     
+ pi259                   0.00000         1.6891E-03   regul_2     
+ pi260                   0.00000         2.2880E-04   regul_2     
+ pi261                   0.00000         1.4165E-02   regul_2     
+ pi262                   0.00000         1.6891E-03   regul_2     
+ pi263                   0.00000         1.4165E-02   regul_2     
+ pi264                   0.00000         0.4514       regul_2     
+ pi265                   0.00000          0.000       regul_2     
+ pi266                   0.00000         4.8617E-02   regul_2     
+ pi267                   0.00000          0.000       regul_2     
+ pi268                   0.00000         2.2155E-02   regul_2     
+ pi269                   0.00000         0.4778       regul_2     
+ pi270                   0.00000         1.4165E-02   regul_2     
+ pi271                   0.00000         1.6891E-03   regul_2     
+ pi272                   0.00000         2.2880E-04   regul_2     
+ pi273                   0.00000         1.4344E-02   regul_2     
+ pi274                   0.00000         5.4225E-03   regul_2     
+ pi275                   0.00000         1.0850E-03   regul_2     
+ pi276                   0.00000         1.5585E-04   regul_2     
+ pi277                   0.00000         1.7201E-03   regul_2     
+ pi278                   0.00000         1.0983E-03   regul_2     
+ pi279                   0.00000         3.3891E-04   regul_2     
+ pi280                   0.00000         4.1806E-05   regul_2     
+ pi281                   0.00000         2.3644E-04   regul_2     
+ pi282                   0.00000         1.6064E-04   regul_2     
+ pi283                   0.00000         4.2849E-05   regul_2     
+ pi284                   0.00000          0.000       regul_2     
+ pi285                   0.00000         1.4165E-02   regul_2     
+ pi286                   0.00000         1.6891E-03   regul_2     
+ pi287                   0.00000         5.4225E-03   regul_2     
+ pi288                   0.00000         1.4344E-02   regul_2     
+ pi289                   0.00000         5.4225E-03   regul_2     
+ pi290                   0.00000         1.0850E-03   regul_2     
+ pi291                   0.00000         1.0983E-03   regul_2     
+ pi292                   0.00000         1.7201E-03   regul_2     
+ pi293                   0.00000         1.0983E-03   regul_2     
+ pi294                   0.00000         3.3891E-04   regul_2     
+ pi295                   0.00000         1.6064E-04   regul_2     
+ pi296                   0.00000         2.3644E-04   regul_2     
+ pi297                   0.00000         1.6064E-04   regul_2     
+ pi298                   0.00000         4.2849E-05   regul_2     
+ pi299                   0.00000         1.4165E-02   regul_2     
+ pi300                   0.00000         1.0850E-03   regul_2     
+ pi301                   0.00000         5.4225E-03   regul_2     
+ pi302                   0.00000         1.4344E-02   regul_2     
+ pi303                   0.00000         5.4225E-03   regul_2     
+ pi304                   0.00000         3.3891E-04   regul_2     
+ pi305                   0.00000         1.0983E-03   regul_2     
+ pi306                   0.00000         1.7201E-03   regul_2     
+ pi307                   0.00000         1.0983E-03   regul_2     
+ pi308                   0.00000         4.2849E-05   regul_2     
+ pi309                   0.00000         1.6064E-04   regul_2     
+ pi310                   0.00000         2.3644E-04   regul_2     
+ pi311                   0.00000         1.6064E-04   regul_2     
+ pi312                   0.00000         1.5585E-04   regul_2     
+ pi313                   0.00000         1.0850E-03   regul_2     
+ pi314                   0.00000         5.4225E-03   regul_2     
+ pi315                   0.00000         1.4344E-02   regul_2     
+ pi316                   0.00000         4.1806E-05   regul_2     
+ pi317                   0.00000         3.3891E-04   regul_2     
+ pi318                   0.00000         1.0983E-03   regul_2     
+ pi319                   0.00000         1.7201E-03   regul_2     
+ pi320                   0.00000          0.000       regul_2     
+ pi321                   0.00000         4.2849E-05   regul_2     
+ pi322                   0.00000         1.6064E-04   regul_2     
+ pi323                   0.00000         2.3644E-04   regul_2     
+ pi324                   0.00000         1.4165E-02   regul_2     
+ pi325                   0.00000         1.6891E-03   regul_2     
+ pi326                   0.00000         2.2880E-04   regul_2     
+ pi327                   0.00000         1.4344E-02   regul_2     
+ pi328                   0.00000         5.4225E-03   regul_2     
+ pi329                   0.00000         1.0850E-03   regul_2     
+ pi330                   0.00000         1.5585E-04   regul_2     
+ pi331                   0.00000         1.7201E-03   regul_2     
+ pi332                   0.00000         1.0983E-03   regul_2     
+ pi333                   0.00000         3.3891E-04   regul_2     
+ pi334                   0.00000         4.1806E-05   regul_2     
+ pi335                   0.00000         1.4165E-02   regul_2     
+ pi336                   0.00000         1.6891E-03   regul_2     
+ pi337                   0.00000         5.4225E-03   regul_2     
+ pi338                   0.00000         1.4344E-02   regul_2     
+ pi339                   0.00000         5.4225E-03   regul_2     
+ pi340                   0.00000         1.0850E-03   regul_2     
+ pi341                   0.00000         1.0983E-03   regul_2     
+ pi342                   0.00000         1.7201E-03   regul_2     
+ pi343                   0.00000         1.0983E-03   regul_2     
+ pi344                   0.00000         3.3891E-04   regul_2     
+ pi345                   0.00000         1.4165E-02   regul_2     
+ pi346                   0.00000         1.0850E-03   regul_2     
+ pi347                   0.00000         5.4225E-03   regul_2     
+ pi348                   0.00000         1.4344E-02   regul_2     
+ pi349                   0.00000         5.4225E-03   regul_2     
+ pi350                   0.00000         3.3891E-04   regul_2     
+ pi351                   0.00000         1.0983E-03   regul_2     
+ pi352                   0.00000         1.7201E-03   regul_2     
+ pi353                   0.00000         1.0983E-03   regul_2     
+ pi354                   0.00000         1.5585E-04   regul_2     
+ pi355                   0.00000         1.0850E-03   regul_2     
+ pi356                   0.00000         5.4225E-03   regul_2     
+ pi357                   0.00000         1.4344E-02   regul_2     
+ pi358                   0.00000         4.1806E-05   regul_2     
+ pi359                   0.00000         3.3891E-04   regul_2     
+ pi360                   0.00000         1.0983E-03   regul_2     
+ pi361                   0.00000         1.7201E-03   regul_2     
+ pi362                   0.00000         1.4165E-02   regul_2     
+ pi363                   0.00000         1.6891E-03   regul_2     
+ pi364                   0.00000         2.2880E-04   regul_2     
+ pi365                   0.00000         1.4344E-02   regul_2     
+ pi366                   0.00000         5.4225E-03   regul_2     
+ pi367                   0.00000         1.0850E-03   regul_2     
+ pi368                   0.00000         1.5585E-04   regul_2     
+ pi369                   0.00000         1.4165E-02   regul_2     
+ pi370                   0.00000         1.6891E-03   regul_2     
+ pi371                   0.00000         5.4225E-03   regul_2     
+ pi372                   0.00000         1.4344E-02   regul_2     
+ pi373                   0.00000         5.4225E-03   regul_2     
+ pi374                   0.00000         1.0850E-03   regul_2     
+ pi375                   0.00000         1.4165E-02   regul_2     
+ pi376                   0.00000         1.0850E-03   regul_2     
+ pi377                   0.00000         5.4225E-03   regul_2     
+ pi378                   0.00000         1.4344E-02   regul_2     
+ pi379                   0.00000         5.4225E-03   regul_2     
+ pi380                   0.00000         1.5585E-04   regul_2     
+ pi381                   0.00000         1.0850E-03   regul_2     
+ pi382                   0.00000         5.4225E-03   regul_2     
+ pi383                   0.00000         1.4344E-02   regul_2     
+ pi384                   0.00000         1.4165E-02   regul_2     
+ pi385                   0.00000         1.6891E-03   regul_2     
+ pi386                   0.00000         2.2880E-04   regul_2     
+ pi387                   0.00000         1.4165E-02   regul_2     
+ pi388                   0.00000         1.6891E-03   regul_2     
+ pi389                   0.00000         1.4165E-02   regul_2     
+ pi390                  -2.31224          1.000       regul_1     
+ pi391                  -2.30423          1.000       regul_1     
+ pi392                  -2.18952          1.000       regul_1     
+ pi393                  -2.35304          1.000       regul_1     
+ pi394                  -2.29979          1.000       regul_1     
+ pi395                  -2.42467          1.000       regul_1     
+ pi396                  -2.90645          1.000       regul_1     
+ pi397                  -2.25475          1.000       regul_1     
+ pi398                  -2.28553          1.000       regul_1     
+ pi399                  -1.03266          1.000       regul_1     
+ pi400                 -0.770936          1.000       regul_1     
+ pi401                 -0.340703          1.000       regul_1     
+ pi402                 -0.316246          1.000       regul_1     
+ pi403                 -0.355875          1.000       regul_1     
+ pi404                 -0.596347          1.000       regul_1     
+ pi405                  -1.07652          1.000       regul_1     
+ pi406                 -0.272268          1.000       regul_1     
+ pi407                 -0.510692          1.000       regul_1     
+ pi408                  -1.68411          1.000       regul_1     
+ pi409                  -1.54731          1.000       regul_1     
+ pi410                  -1.43460          1.000       regul_1     
+ pi411                  -1.57988          1.000       regul_1     
+ pi412                  -1.55103          1.000       regul_1     
+ pi413                  -1.56279          1.000       regul_1     
+ pi414                  -1.62516          1.000       regul_1     
+ pi415                  -1.48815          1.000       regul_1     
+ pi416                  -1.52943          1.000       regul_1     
+ pi417                   9.69287          1.000       regul_1     
+ pi418                   9.80907          1.000       regul_1     
+ pi419                   10.4947          1.000       regul_1     
+ pi420                   7.89275          1.000       regul_1     
+ pi421                   10.4947          1.000       regul_1     
+ pi422                   7.80227          1.000       regul_1     
+ pi423                   8.69527          1.000       regul_1     
+ pi424                   10.4947          1.000       regul_1     
+ pi425                   10.4947          1.000       regul_1     
+ pi426                  -8.32288          1.000       regul_2     
+ pi427                  -8.35186          1.000       regul_2     
+ pi428                  -8.44602          1.000       regul_2     
+ pi429                  -7.31140          1.000       regul_2     
+ pi430                  -7.93603          1.000       regul_2     
+ pi431                  -7.92522          1.000       regul_2     
+ pi432                  -7.95321          1.000       regul_2     
+ pi433                  -6.84668          1.000       regul_2     
+ pi434                  -8.36094          1.000       regul_2     
+ pi435                  -8.33856          1.000       regul_2     
+ pi436                  -7.51391          1.000       regul_2     
+ pi437                  -6.84668          1.000       regul_2     
+ pi438                  -8.30210          1.000       regul_2     
+ pi439                  -8.30416          1.000       regul_2     
+ pi440                  -8.00138          1.000       regul_2     
+ pi441                  -6.84668          1.000       regul_2     
+ pi442                  -6.93267          1.000       regul_2     
+ pi443                  -7.40025          1.000       regul_2     
+ pi444                  -6.67782          1.000       regul_2     
+ pi445                  -7.48192          1.000       regul_2     
+ pi446                  -9.43646          1.000       regul_2     
+ pi447                  -9.21184          1.000       regul_2     
+ pi448                  -8.49450          1.000       regul_2     
+ pi449                  -8.26532          1.000       regul_2     
+ pi450                  -8.26543          1.000       regul_2     
+ pi451                  -9.12430          1.000       regul_2     
+ pi452                  -9.15353          1.000       regul_2     
+ pi453                  -9.38831          1.000       regul_2     
+ pi454                  -8.64167          1.000       regul_2     
+ pi455                  -9.16945          1.000       regul_2     
+ pi456                  -8.27803          1.000       regul_2     
+ pi457                  -9.09658          1.000       regul_2     
+ pi458                  -8.46777          1.000       regul_2     
+ pi459                  -9.09505          1.000       regul_2     
+ pi460                  -8.47455          1.000       regul_2     
+ pi461                  -8.31920          1.000       regul_2     
+ pi462                  -8.86287          1.000       regul_2     
+ pi463                  -9.08817          1.000       regul_2     
+
+
+Control settings:-
+
+   Initial lambda                                               :  1.0000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   : na
+   Maximum relative parameter change (relative-limited changes) :  200.00
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :   5
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+Extra settings for regularisation mode:-
+
+   Target/current measurement objective function ratio          : 0.10000    
+   Acceptable/target measurement objective function ratio       :  1.1000    
+   Minimum target measurement objective function value          :  1.0000    
+   Terminate inversion when measurement obj. fn. below target   : yes
+
+   Initial regularisation weight factor                         : 0.10000    
+   Minimum regularisation weight factor                         : 1.00000E-06
+   Maximum regularisation weight factor                         : 1.00000E+06
+
+   Weight factor solution adjustment ratio                      :  1.3000    
+   Weight factor solution tolerance                             : 1.00000E-02
+   Automatic inter-regularisation group weights adjustment      : no
+
+   Implement memory conservation                                : no
+   Declare all regularisation information as linear             : no
+   Use conjugate gradient solver                                : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Current regularisation weight factor                     =  0.10000    
+   Current value of measurement objective function          =   7.8762    
+   Current value of regularisation objective function       =   856.37    
+
+   Sum of squared weighted residuals (ie phi)               =   16.440    
+   Contribution to phi from observation group "head"        =  0.49012    
+   Contribution to phi from observation group "drain"       =   5.0716    
+   Contribution to phi from observation group "ghb"         =  8.56161E-02
+   Contribution to phi from observation group "stream"      =   1.7644    
+   Contribution to phi from observation group "const_head"  =  0.46443    
+   Contribution to phi from observation group "regul_1"     =  0.24555    
+   Contribution to phi from observation group "regul_2"     =   8.3181    
+   Contribution to phi from observation group "regul_3"     =   0.0000    
+
+      Current parameter values
+      par1             11.0000    
+      par2             11.0000    
+      par3             11.0000    
+      par4             11.0000    
+      par5             11.0000    
+      par6             11.0000    
+      par7             11.0000    
+      par8             11.0000    
+      par9             11.0000    
+      par10            11.0000    
+      par11            11.0000    
+      par12            11.0000    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Current regularisation weight factor                     :  0.10000    
+   Current value of measurement objective function          :   7.8762    
+   Current value of regularisation objective function       :   856.37    
+
+   Starting phi for this iteration                          :   16.440    
+   Contribution to phi from observation group "head"        :  0.49012    
+   Contribution to phi from observation group "drain"       :   5.0716    
+   Contribution to phi from observation group "ghb"         :  8.56161E-02
+   Contribution to phi from observation group "stream"      :   1.7644    
+   Contribution to phi from observation group "const_head"  :  0.46443    
+   Contribution to phi from observation group "regul_1"     :  0.24555    
+   Contribution to phi from observation group "regul_2"     :   8.3181    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+   FRACPHIM-adjusted target measurement objective function  :   1.0000    
+
+   Re-calculated regularisation weight factor               :  7.69231E-02
+   New starting objective function for this itn. (ie. phi)  :   12.943    
+   Contribution to phi from observation group "head"        :  0.49012    
+   Contribution to phi from observation group "drain"       :   5.0716    
+   Contribution to phi from observation group "ghb"         :  8.56161E-02
+   Contribution to phi from observation group "stream"      :   1.7644    
+   Contribution to phi from observation group "const_head"  :  0.46443    
+   Contribution to phi from observation group "regul_1"     :  0.14530    
+   Contribution to phi from observation group "regul_2"     :   4.9220    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+
+       Lambda =   1.0000     ----->
+          Phi =   9.2299      (  0.713 of starting phi)
+    Meas. fn. =   4.1212    
+   Regul. fn. =   863.37    
+
+       Lambda =  0.50000     ----->
+          Phi =   9.1444      (  0.706 of starting phi)
+    Meas. fn. =   4.0355    
+   Regul. fn. =   863.40    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+
+      Current parameter values                 Previous parameter values
+      par1             10.6500                 par1              11.0000    
+      par2             11.0265                 par2              11.0000    
+      par3             11.2585                 par3              11.0000    
+      par4             10.6378                 par4              11.0000    
+      par5             11.3072                 par5              11.0000    
+      par6             10.9589                 par6              11.0000    
+      par7             11.0120                 par7              11.0000    
+      par8             10.8911                 par8              11.0000    
+      par9             10.7556                 par9              11.0000    
+      par10            10.8122                 par10             11.0000    
+      par11            10.5613                 par11             11.0000    
+      par12            11.1440                 par12             11.0000    
+   Maximum relative change: 3.9881E-02 ["par11"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 24
+   Current regularisation weight factor                     :  7.69231E-02
+   Current value of measurement objective function          :   4.0355    
+   Current value of regularisation objective function       :   863.40    
+
+   Starting phi for this iteration                          :   9.1444    
+   Contribution to phi from observation group "head"        :  0.42854    
+   Contribution to phi from observation group "drain"       :   2.4450    
+   Contribution to phi from observation group "ghb"         :  0.10969    
+   Contribution to phi from observation group "stream"      :  0.49868    
+   Contribution to phi from observation group "const_head"  :  0.55358    
+   Contribution to phi from observation group "regul_1"     :  0.15980    
+   Contribution to phi from observation group "regul_2"     :   4.9491    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+   FRACPHIM-adjusted target measurement objective function  :   1.0000    
+
+   Re-calculated regularisation weight factor               :  5.91716E-02
+   New starting objective function for this itn. (ie. phi)  :   7.0585    
+   Contribution to phi from observation group "head"        :  0.42854    
+   Contribution to phi from observation group "drain"       :   2.4450    
+   Contribution to phi from observation group "ghb"         :  0.10969    
+   Contribution to phi from observation group "stream"      :  0.49868    
+   Contribution to phi from observation group "const_head"  :  0.55358    
+   Contribution to phi from observation group "regul_1"     :  9.45586E-02
+   Contribution to phi from observation group "regul_2"     :   2.9285    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+
+       Lambda =  0.25000     ----->
+          Phi =   6.0020      (  0.850 of starting phi)
+    Meas. fn. =   2.9826    
+   Regul. fn. =   862.40    
+
+       Lambda =  0.12500     ----->
+          Phi =   6.0385      (  0.855 of starting phi)
+    Meas. fn. =   3.0176    
+   Regul. fn. =   862.78    
+
+       Lambda =  0.50000     ----->
+          Phi =   5.9660      (  0.845 of starting phi)
+    Meas. fn. =   2.9486    
+   Regul. fn. =   861.79    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+
+      Current parameter values                 Previous parameter values
+      par1             10.7548                 par1              10.6500    
+      par2             10.9213                 par2              11.0265    
+      par3             11.1645                 par3              11.2585    
+      par4             10.7126                 par4              10.6378    
+      par5             11.3693                 par5              11.3072    
+      par6             10.9312                 par6              10.9589    
+      par7             11.0577                 par7              11.0120    
+      par8             10.7874                 par8              10.8911    
+      par9             10.8518                 par9              10.7556    
+      par10            11.5706                 par10             10.8122    
+      par11            10.2834                 par11             10.5613    
+      par12            11.4235                 par12             11.1440    
+   Maximum relative change: 7.0134E-02 ["par10"]
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 47
+   Current regularisation weight factor                     :  5.91716E-02
+   Current value of measurement objective function          :   2.9486    
+   Current value of regularisation objective function       :   861.79    
+
+   Starting phi for this iteration                          :   5.9660    
+   Contribution to phi from observation group "head"        :  0.40004    
+   Contribution to phi from observation group "drain"       :   1.9800    
+   Contribution to phi from observation group "ghb"         :  0.11088    
+   Contribution to phi from observation group "stream"      :  0.30305    
+   Contribution to phi from observation group "const_head"  :  0.15467    
+   Contribution to phi from observation group "regul_1"     :  0.10711    
+   Contribution to phi from observation group "regul_2"     :   2.9103    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+   FRACPHIM-adjusted target measurement objective function  :   1.0000    
+
+   Re-calculated regularisation weight factor               :  4.55166E-02
+   New starting objective function for this itn. (ie. phi)  :   4.7340    
+   Contribution to phi from observation group "head"        :  0.40004    
+   Contribution to phi from observation group "drain"       :   1.9800    
+   Contribution to phi from observation group "ghb"         :  0.11088    
+   Contribution to phi from observation group "stream"      :  0.30305    
+   Contribution to phi from observation group "const_head"  :  0.15467    
+   Contribution to phi from observation group "regul_1"     :  6.33764E-02
+   Contribution to phi from observation group "regul_2"     :   1.7220    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+
+       Lambda =  0.50000     ----->
+          Phi =   4.6193      (  0.976 of starting phi)
+    Meas. fn. =   2.8370    
+   Regul. fn. =   860.29    
+
+       Lambda =  0.25000     ----->
+          Phi =   4.6183      (  0.976 of starting phi)
+    Meas. fn. =   2.8357    
+   Regul. fn. =   860.42    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to central derivatives calculation
+
+      Current parameter values                 Previous parameter values
+      par1             10.7830                 par1              10.7548    
+      par2             10.8793                 par2              10.9213    
+      par3             11.1195                 par3              11.1645    
+      par4             10.8701                 par4              10.7126    
+      par5             11.5661                 par5              11.3693    
+      par6             10.9705                 par6              10.9312    
+      par7             11.1159                 par7              11.0577    
+      par8             10.8467                 par8              10.7874    
+      par9             11.2002                 par9              10.8518    
+      par10            11.4931                 par10             11.5706    
+      par11            10.3967                 par11             10.2834    
+      par12            11.4926                 par12             11.4235    
+   Maximum relative change: 3.2107E-02 ["par9"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 70
+   Current regularisation weight factor                     :  4.55166E-02
+   Current value of measurement objective function          :   2.8357    
+   Current value of regularisation objective function       :   860.42    
+
+   Starting phi for this iteration                          :   4.6183    
+   Contribution to phi from observation group "head"        :  0.35560    
+   Contribution to phi from observation group "drain"       :   1.9633    
+   Contribution to phi from observation group "ghb"         :  0.13533    
+   Contribution to phi from observation group "stream"      :  0.31770    
+   Contribution to phi from observation group "const_head"  :  6.37727E-02
+   Contribution to phi from observation group "regul_1"     :  6.89054E-02
+   Contribution to phi from observation group "regul_2"     :   1.7137    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+   FRACPHIM-adjusted target measurement objective function  :   1.0000    
+
+   Re-calculated regularisation weight factor               :  3.50128E-02
+   New starting objective function for this itn. (ie. phi)  :   3.8905    
+   Contribution to phi from observation group "head"        :  0.35560    
+   Contribution to phi from observation group "drain"       :   1.9633    
+   Contribution to phi from observation group "ghb"         :  0.13533    
+   Contribution to phi from observation group "stream"      :  0.31770    
+   Contribution to phi from observation group "const_head"  :  6.37727E-02
+   Contribution to phi from observation group "regul_1"     :  4.07724E-02
+   Contribution to phi from observation group "regul_2"     :   1.0140    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+
+       Lambda =  0.12500     ----->
+          Phi =   3.8858      (  0.999 of starting phi)
+    Meas. fn. =   2.8306    
+   Regul. fn. =   860.80    
+
+       Lambda =  4.41942E-02 ----->
+          Phi =   3.8859      (  0.999 of starting phi)
+    Meas. fn. =   2.8306    
+   Regul. fn. =   860.80    
+
+       Lambda =  0.35355     ----->
+          Phi =   3.8863      (  0.999 of starting phi)
+    Meas. fn. =   2.8311    
+   Regul. fn. =   860.80    
+
+   No more lambdas: phi rising
+
+      Current parameter values                 Previous parameter values
+      par1             10.7837                 par1              10.7830    
+      par2             10.8782                 par2              10.8793    
+      par3             11.1148                 par3              11.1195    
+      par4             10.8600                 par4              10.8701    
+      par5             11.5600                 par5              11.5661    
+      par6             10.9740                 par6              10.9705    
+      par7             11.1000                 par7              11.1159    
+      par8             10.8263                 par8              10.8467    
+      par9             11.1914                 par9              11.2002    
+      par10            11.4417                 par10             11.4931    
+      par11            10.3714                 par11             10.3967    
+      par12            11.4565                 par12             11.4926    
+   Maximum relative change: 4.4701E-03 ["par10"]
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 105
+   Current regularisation weight factor                     :  3.50128E-02
+   Current value of measurement objective function          :   2.8306    
+   Current value of regularisation objective function       :   860.80    
+
+   Starting phi for this iteration                          :   3.8858    
+   Contribution to phi from observation group "head"        :  0.35079    
+   Contribution to phi from observation group "drain"       :   1.9696    
+   Contribution to phi from observation group "ghb"         :  0.13488    
+   Contribution to phi from observation group "stream"      :  0.31119    
+   Contribution to phi from observation group "const_head"  :  6.40841E-02
+   Contribution to phi from observation group "regul_1"     :  4.08999E-02
+   Contribution to phi from observation group "regul_2"     :   1.0144    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+   FRACPHIM-adjusted target measurement objective function  :   1.0000    
+
+   Re-calculated regularisation weight factor               :  2.69329E-02
+   New starting objective function for this itn. (ie. phi)  :   3.4550    
+   Contribution to phi from observation group "head"        :  0.35079    
+   Contribution to phi from observation group "drain"       :   1.9696    
+   Contribution to phi from observation group "ghb"         :  0.13488    
+   Contribution to phi from observation group "stream"      :  0.31119    
+   Contribution to phi from observation group "const_head"  :  6.40841E-02
+   Contribution to phi from observation group "regul_1"     :  2.42011E-02
+   Contribution to phi from observation group "regul_2"     :  0.60021    
+   Contribution to phi from observation group "regul_3"     :   0.0000    
+
+       Lambda =  0.12500     ----->
+          Phi =   3.4545      (  1.000 of starting phi)
+    Meas. fn. =   2.8301    
+   Regul. fn. =   860.86    
+
+       Lambda =  4.41942E-02 ----->
+          Phi =   3.4545      (  1.000 of starting phi)
+    Meas. fn. =   2.8300    
+   Regul. fn. =   860.86    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+
+      Current parameter values                 Previous parameter values
+      par1             10.7844                 par1              10.7837    
+      par2             10.8794                 par2              10.8782    
+      par3             11.1150                 par3              11.1148    
+      par4             10.8659                 par4              10.8600    
+      par5             11.5725                 par5              11.5600    
+      par6             10.9830                 par6              10.9740    
+      par7             11.1083                 par7              11.1000    
+      par8             10.8274                 par8              10.8263    
+      par9             11.2103                 par9              11.1914    
+      par10            11.4241                 par10             11.4417    
+      par11            10.3408                 par11             10.3714    
+      par12            11.4752                 par12             11.4565    
+   Maximum relative change: 2.9492E-03 ["par11"]
+
+   Optimisation complete: optimisation iteration limit of   5 realized.
+   Total model calls:    140
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ par1            10.7844    
+ par2            10.8794    
+ par3            11.1150    
+ par4            10.8659    
+ par5            11.5725    
+ par6            10.9830    
+ par7            11.1083    
+ par8            10.8274    
+ par9            11.2103    
+ par10           11.4241    
+ par11           10.3408    
+ par12           11.4752    
+
+See file aassist.sen for parameter sensitivities.
+Note that these sensitivities include effects of regularisation observations.
+
+
+Regularisation Weight Factor ----->
+
+Optimised regularisation weight factor = 2.69329E-02
+
+Pertinent observation and prior information weights shown below are 
+calculated using  this weight factor.
+
+Note that the target measurement objective function was not achieved.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+hed1                   93.2700        92.8072       0.462770       2.7405E-03  head        
+hed2                   92.6500        92.3060       0.343980       0.1920      head        
+hed3                   92.2800        93.1369      -0.856890       0.3330      head        
+hed4                   90.8000        91.2131      -0.413110       0.1823      head        
+hed5                   89.1600        89.6840      -0.524000       0.1582      head        
+hed6                   88.8500        88.8938      -4.384000E-02   0.2747      head        
+hed7                   88.3200        88.2934       2.656000E-02   0.2150      head        
+hed8                   88.1700        88.2925      -0.122500       0.1665      head        
+hed9                   88.0500        89.2228       -1.17276       0.3325      head        
+hed10                  87.8000        88.3488      -0.548790       0.2195      head        
+hed11                  87.7900        87.1584       0.631580       8.0768E-02  head        
+hed12                  85.5200        86.3078      -0.787820       0.2190      head        
+hed13                  84.8800        83.1234        1.75657       3.7562E-02  head        
+hed14                  84.6200        84.4115       0.208460       0.3245      head        
+hed15                  84.5100        83.2549        1.25513       7.6642E-02  head        
+hed16                  84.4000        83.6293       0.770720       0.1862      head        
+hed17                  84.0000        82.4374        1.56263       7.3590E-02  head        
+hed18                  83.9000        85.3866       -1.48660       2.8946E-03  head        
+drnf0                 -1108.77       -930.303       -178.467       1.4618E-03  drain       
+drnf1                 -1020.19       -504.215       -515.975       8.8288E-04  drain       
+drnf2                 -1750.54       -2097.30        346.757       1.1890E-03  drain       
+drnf3                 -1683.26       -1699.26        16.0000       9.3755E-04  drain       
+drnf4                 -1362.10       -995.577       -366.523       1.7007E-03  drain       
+drnf5                 -1869.00       -1955.99        86.9880       1.7860E-03  drain       
+drnf6                 -1615.70       -1687.79        72.0860       7.2020E-04  drain       
+drnf7                 -821.080       -119.026       -702.054       1.2846E-05  drain       
+drnf8                 -1042.72       -656.614       -386.106       1.0134E-03  drain       
+drnf9                 -1653.63       -2178.66        525.026       8.2735E-04  drain       
+drnf10                -1273.35       -1335.92        62.5680       2.2937E-03  drain       
+drnf11                -1248.25       -1148.63       -99.6230       2.3502E-03  drain       
+drnf12                -1035.36       -694.867       -340.493       9.6841E-04  drain       
+drnf13                -1308.27       -1241.03       -67.2360       2.0605E-03  drain       
+drnf14                -933.860       -398.737       -535.123       4.8827E-04  drain       
+drnf15                -2260.82       -3384.02        1123.19       3.2593E-05  drain       
+drnf16                -917.670       -424.204       -493.466       4.4067E-04  drain       
+drnf17                -1300.08       -1353.97        53.8920       2.1764E-03  drain       
+drnf18                -972.270       -471.137       -501.133       6.3799E-04  drain       
+drnf19                -1220.00       -1219.85      -0.149000       2.3167E-03  drain       
+drnf20                -1667.11       -2029.37        362.263       8.8077E-04  drain       
+drnf21                -1734.78       -2098.02        363.243       1.1232E-03  drain       
+drnf22                -1234.42       -1128.86       -105.557       2.3337E-03  drain       
+ghbf0                 -87.6600       -112.136        24.4764       3.0180E-03  ghb         
+ghbf1                 -96.2700       -130.419        34.1485       3.5641E-03  ghb         
+ghbf2                 -104.560       -122.989        18.4287       4.1588E-03  ghb         
+ghbf3                 -115.810       -135.245        19.4354       3.9713E-03  ghb         
+ghbf4                 -120.450       -134.291        13.8410       3.5871E-03  ghb         
+ghbf5                 -96.9800       -101.034        4.05400       3.6302E-03  ghb         
+ghbf6                 -25.8300        10.7631       -36.5931       8.1592E-05  ghb         
+ghbf7                 -48.4000       -21.8736       -26.5264       5.3299E-03  ghb         
+ghbf8                 -67.7400       -49.0251       -18.7149       4.1574E-03  ghb         
+ghbf9                 -72.8100       -59.1344       -13.6756       3.8829E-03  ghb         
+ghbf10                -80.4600       -73.1096       -7.35043       3.4248E-03  ghb         
+ghbf11                -88.6300       -82.9113       -5.71872       3.0049E-03  ghb         
+ghbf12                -126.070       -136.629        10.5591       3.0200E-03  ghb         
+ghbf13                -176.250       -242.461        66.2108       8.4003E-05  ghb         
+ghbf14                -177.760       -244.294        66.5343       4.1793E-05  ghb         
+ghbf15                -122.500       -127.767        5.26710       3.4115E-03  ghb         
+ghbf16                -34.2700       -1.14882       -33.1212       6.0219E-03  ghb         
+ghbf17                -44.3900       -16.3615       -28.0285       5.5641E-03  ghb         
+ghbf18                -58.8500       -43.8908       -14.9592       4.6358E-03  ghb         
+ghbf19                -70.1300       -75.5134        5.38335       4.0211E-03  ghb         
+ghbf20                -72.6900       -87.1673        14.4773       3.8857E-03  ghb         
+strf0                 -348.440       -316.077       -32.3635       8.4853E-04  stream      
+strf1                 -395.360       -298.678       -96.6825       9.9321E-04  stream      
+strf2                 -208.800       -587.598        378.798       3.2381E-04  stream      
+strf3                 -218.840       -249.036        30.1959       3.5058E-04  stream      
+strf4                 -355.150       -70.6869       -284.463       8.8652E-04  stream      
+strf5                 -370.240       -267.671       -102.569       9.2769E-04  stream      
+strf6                 -391.460       -321.025       -70.4350       9.9228E-04  stream      
+strf7                 -387.920       -253.972       -133.948       9.7113E-04  stream      
+strf8                 -371.130       -271.444       -99.6862       9.2789E-04  stream      
+strf9                 -356.500       -163.712       -192.788       8.8681E-04  stream      
+strf10                -335.470       -164.889       -170.581       8.1054E-04  stream      
+strf11                -330.130       -116.613       -213.517       7.7515E-04  stream      
+strf12                -304.190       -54.2388       -249.951       6.7294E-04  stream      
+strf13                -281.360        76.9008       -358.261       5.7839E-04  stream      
+strf14                 5.87000        624.753       -618.883       1.1653E-05  stream      
+strf15                -985.700       -1266.56        280.864       1.4897E-05  stream      
+strf16                -721.780       -741.276        19.4956       1.8110E-04  stream      
+strf17                -745.620       -811.934        66.3144       2.2482E-04  stream      
+strf18                -511.790       -372.342       -139.448       8.6428E-04  stream      
+strf19                -438.290       -335.310       -102.980       1.0245E-03  stream      
+strf20                -477.250       -453.092       -24.1577       9.7208E-04  stream      
+strf21                -461.860       -472.680        10.8197       1.0094E-03  stream      
+strf22                -393.300       -414.900        21.5995       9.9272E-04  stream      
+strf23                -471.690       -506.130        34.4400       9.9109E-04  stream      
+strf24                -776.780       -869.908        93.1283       2.6994E-04  stream      
+strf25                -580.830       -469.983       -110.847       5.9062E-04  stream      
+strf26                -655.430       -641.276       -14.1542       3.1803E-04  stream      
+strf27                -607.120       -562.034       -45.0863       4.8752E-04  stream      
+strf28                -536.890       -491.906       -44.9839       7.6264E-04  stream      
+strf29                -402.570       -433.378        30.8078       1.0157E-03  stream      
+chdf0                  573.290        567.631        5.65910       1.5219E-03  const_head  
+chdf1                  634.810        655.259       -20.4491       1.8975E-03  const_head  
+chdf2                  786.440        916.599       -130.159       2.1374E-05  const_head  
+chdf3                  714.110        796.811       -82.7011       6.3197E-04  const_head  
+chdf4                  717.260        814.781       -97.5208       6.0757E-04  const_head  
+chdf5                  767.710        935.412       -167.702       1.7274E-04  const_head  
+chdf6                  558.950        571.576       -12.6260       1.2821E-03  const_head  
+chdf7                  521.550        527.041       -5.49130       9.6065E-04  const_head  
+chdf8                  548.100        613.669       -65.5686       1.0857E-03  const_head  
+chdf9                  435.340        386.038        49.3025       2.1009E-03  const_head  
+chdf10                 441.260        416.505        24.7547       2.0514E-03  const_head  
+chdf11                 473.760        506.278       -32.5175       1.6363E-03  const_head  
+chdf12                 431.360        405.129        26.2308       2.1495E-03  const_head  
+chdf13                 504.690        586.328       -81.6381       1.1976E-03  const_head  
+chdf14                 394.190        364.111        30.0786       2.5980E-05  const_head  
+chdf15                 412.150        411.364       0.785900       2.2175E-03  const_head  
+chdf16                 429.830        444.843       -15.0129       2.1513E-03  const_head  
+chdf17                 397.640        341.304        56.3358       2.1893E-03  const_head  
+chdf18                 454.640        459.635       -4.99500       1.9143E-03  const_head  
+chdf19                 467.010        437.678        29.3319       1.7498E-03  const_head  
+chdf20                 513.400        491.934        21.4663       1.0766E-03  const_head  
+pi0                    0.00000       1.326049E-02  -1.326049E-02   8.9895E-04  regul_1     
+pi1                    0.00000      -3.018484E-02   3.018484E-02   4.5721E-05  regul_1     
+pi2                    0.00000       3.734913E-02  -3.734913E-02   9.1243E-04  regul_1     
+pi3                    0.00000       1.335408E-02  -1.335408E-02   2.7090E-04  regul_1     
+pi4                    0.00000       0.107220      -0.107220       1.8751E-05  regul_1     
+pi5                    0.00000       0.270122      -0.270122       4.7248E-05  regul_1     
+pi6                    0.00000      -7.106770E-03   7.106770E-03   1.9275E-05  regul_1     
+pi7                    0.00000       1.777642E-02  -1.777642E-02   1.0910E-25  regul_1     
+pi8                    0.00000      -4.344533E-02   4.344533E-02   8.9895E-04  regul_1     
+pi9                    0.00000       2.408864E-02  -2.408864E-02   2.7090E-04  regul_1     
+pi10                   0.00000       9.358325E-05  -9.358325E-05   9.1243E-04  regul_1     
+pi11                   0.00000       9.395903E-02  -9.395903E-02   2.7090E-04  regul_1     
+pi12                   0.00000       0.256861      -0.256861       1.9275E-05  regul_1     
+pi13                   0.00000      -2.036726E-02   2.036726E-02   4.7248E-05  regul_1     
+pi14                   0.00000       4.515922E-03  -4.515922E-03   1.9275E-05  regul_1     
+pi15                   0.00000       6.753397E-02  -6.753397E-02   1.8751E-05  regul_1     
+pi16                   0.00000       4.353891E-02  -4.353891E-02   2.7090E-04  regul_1     
+pi17                   0.00000       0.137404      -0.137404       9.1243E-04  regul_1     
+pi18                   0.00000       0.300307      -0.300307        0.000      regul_1     
+pi19                   0.00000       2.307807E-02  -2.307807E-02   1.9275E-05  regul_1     
+pi20                   0.00000       4.796125E-02  -4.796125E-02   4.7248E-05  regul_1     
+pi21                   0.00000      -2.399505E-02   2.399505E-02   8.9895E-04  regul_1     
+pi22                   0.00000       6.987039E-02  -6.987039E-02   4.5721E-05  regul_1     
+pi23                   0.00000       0.232773      -0.232773       9.1243E-04  regul_1     
+pi24                   0.00000      -4.445590E-02   4.445590E-02   2.7090E-04  regul_1     
+pi25                   0.00000      -1.957272E-02   1.957272E-02   1.8751E-05  regul_1     
+pi26                   0.00000       9.386545E-02  -9.386545E-02   8.9895E-04  regul_1     
+pi27                   0.00000       0.256768      -0.256768       2.7090E-04  regul_1     
+pi28                   0.00000      -2.046085E-02   2.046085E-02   9.1243E-04  regul_1     
+pi29                   0.00000       4.422339E-03  -4.422339E-03   2.7090E-04  regul_1     
+pi30                   0.00000       0.162902      -0.162902       1.8751E-05  regul_1     
+pi31                   0.00000      -0.114326       0.114326       2.7090E-04  regul_1     
+pi32                   0.00000      -8.944311E-02   8.944311E-02   9.1243E-04  regul_1     
+pi33                   0.00000      -0.277229       0.277229       8.9895E-04  regul_1     
+pi34                   0.00000      -0.252345       0.252345       4.5721E-05  regul_1     
+pi35                   0.00000       2.488319E-02  -2.488319E-02   8.9895E-04  regul_1     
+pi36                   0.00000      -4.047943E-02   4.047943E-02   8.9895E-04  regul_1     
+pi37                   0.00000      -0.169024       0.169024       4.5721E-05  regul_1     
+pi38                   0.00000      -0.196175       0.196175       9.1243E-04  regul_1     
+pi39                   0.00000      -0.204183       0.204183       2.7090E-04  regul_1     
+pi40                   0.00000       4.288676E-02  -4.288676E-02   1.8751E-05  regul_1     
+pi41                   0.00000       5.409377E-02  -5.409377E-02   4.7248E-05  regul_1     
+pi42                   0.00000      -0.253603       0.253603       1.9275E-05  regul_1     
+pi43                   0.00000      -0.144124       0.144124       6.1379E-23  regul_1     
+pi44                   0.00000      -0.128545       0.128545       8.9895E-04  regul_1     
+pi45                   0.00000      -0.155696       0.155696       2.7090E-04  regul_1     
+pi46                   0.00000      -0.163703       0.163703       9.1243E-04  regul_1     
+pi47                   0.00000       8.336619E-02  -8.336619E-02   2.7090E-04  regul_1     
+pi48                   0.00000       9.457320E-02  -9.457320E-02   1.9275E-05  regul_1     
+pi49                   0.00000      -0.213124       0.213124       4.7248E-05  regul_1     
+pi50                   0.00000      -0.103645       0.103645       1.9275E-05  regul_1     
+pi51                   0.00000      -2.715132E-02   2.715132E-02   1.8751E-05  regul_1     
+pi52                   0.00000      -3.515863E-02   3.515863E-02   2.7090E-04  regul_1     
+pi53                   0.00000       0.211911      -0.211911       9.1243E-04  regul_1     
+pi54                   0.00000       0.223118      -0.223118        0.000      regul_1     
+pi55                   0.00000      -8.457941E-02   8.457941E-02   1.9275E-05  regul_1     
+pi56                   0.00000       2.489982E-02  -2.489982E-02   4.7248E-05  regul_1     
+pi57                   0.00000      -8.007316E-03   8.007316E-03   8.9895E-04  regul_1     
+pi58                   0.00000       0.239062      -0.239062       4.5721E-05  regul_1     
+pi59                   0.00000       0.250269      -0.250269       9.1243E-04  regul_1     
+pi60                   0.00000      -5.742809E-02   5.742809E-02   2.7090E-04  regul_1     
+pi61                   0.00000       5.205114E-02  -5.205114E-02   1.8751E-05  regul_1     
+pi62                   0.00000       0.247069      -0.247069       8.9895E-04  regul_1     
+pi63                   0.00000       0.258276      -0.258276       2.7090E-04  regul_1     
+pi64                   0.00000      -4.942077E-02   4.942077E-02   9.1243E-04  regul_1     
+pi65                   0.00000       6.005846E-02  -6.005846E-02   2.7090E-04  regul_1     
+pi66                   0.00000       1.120701E-02  -1.120701E-02   1.8751E-05  regul_1     
+pi67                   0.00000      -0.296490       0.296490       2.7090E-04  regul_1     
+pi68                   0.00000      -0.187011       0.187011       9.1243E-04  regul_1     
+pi69                   0.00000      -0.307697       0.307697       8.9895E-04  regul_1     
+pi70                   0.00000      -0.198218       0.198218       4.5721E-05  regul_1     
+pi71                   0.00000       0.109479      -0.109479       8.9895E-04  regul_1     
+pi72                   0.00000       3.902642E-03  -3.902642E-03   8.9895E-04  regul_1     
+pi73                   0.00000      -2.136722E-02   2.136722E-02   4.5721E-05  regul_1     
+pi74                   0.00000       3.161447E-02  -3.161447E-02   9.1243E-04  regul_1     
+pi75                   0.00000       1.575881E-02  -1.575881E-02   2.7090E-04  regul_1     
+pi76                   0.00000       6.031086E-02  -6.031086E-02   1.8751E-05  regul_1     
+pi77                   0.00000      -1.020659E-02   1.020659E-02   4.7248E-05  regul_1     
+pi78                   0.00000      -1.348537E-02   1.348537E-02   1.9275E-05  regul_1     
+pi79                   0.00000       2.716367E-02  -2.716367E-02   5.6285E-27  regul_1     
+pi80                   0.00000      -2.526986E-02   2.526986E-02   8.9895E-04  regul_1     
+pi81                   0.00000       2.771183E-02  -2.771183E-02   2.7090E-04  regul_1     
+pi82                   0.00000       1.185617E-02  -1.185617E-02   9.1243E-04  regul_1     
+pi83                   0.00000       5.640822E-02  -5.640822E-02   2.7090E-04  regul_1     
+pi84                   0.00000      -1.410923E-02   1.410923E-02   1.9275E-05  regul_1     
+pi85                   0.00000      -1.738801E-02   1.738801E-02   4.7248E-05  regul_1     
+pi86                   0.00000       2.326103E-02  -2.326103E-02   1.9275E-05  regul_1     
+pi87                   0.00000       5.298170E-02  -5.298170E-02   1.8751E-05  regul_1     
+pi88                   0.00000       3.712603E-02  -3.712603E-02   2.7090E-04  regul_1     
+pi89                   0.00000       8.167808E-02  -8.167808E-02   9.1243E-04  regul_1     
+pi90                   0.00000       1.116063E-02  -1.116063E-02    0.000      regul_1     
+pi91                   0.00000       7.881850E-03  -7.881850E-03   1.9275E-05  regul_1     
+pi92                   0.00000       4.853089E-02  -4.853089E-02   4.7248E-05  regul_1     
+pi93                   0.00000      -1.585566E-02   1.585566E-02   8.9895E-04  regul_1     
+pi94                   0.00000       2.869639E-02  -2.869639E-02   4.5721E-05  regul_1     
+pi95                   0.00000      -4.182107E-02   4.182107E-02   9.1243E-04  regul_1     
+pi96                   0.00000      -4.509985E-02   4.509985E-02   2.7090E-04  regul_1     
+pi97                   0.00000      -4.450807E-03   4.450807E-03   1.8751E-05  regul_1     
+pi98                   0.00000       4.455205E-02  -4.455205E-02   8.9895E-04  regul_1     
+pi99                   0.00000      -2.596540E-02   2.596540E-02   2.7090E-04  regul_1     
+pi100                  0.00000      -2.924418E-02   2.924418E-02   9.1243E-04  regul_1     
+pi101                  0.00000       1.140486E-02  -1.140486E-02   2.7090E-04  regul_1     
+pi102                  0.00000      -7.051746E-02   7.051746E-02   1.8751E-05  regul_1     
+pi103                  0.00000      -7.379623E-02   7.379623E-02   2.7090E-04  regul_1     
+pi104                  0.00000      -3.314720E-02   3.314720E-02   9.1243E-04  regul_1     
+pi105                  0.00000      -3.278779E-03   3.278779E-03   8.9895E-04  regul_1     
+pi106                  0.00000       3.737026E-02  -3.737026E-02   4.5721E-05  regul_1     
+pi107                  0.00000       4.064904E-02  -4.064904E-02   8.9895E-04  regul_1     
+pi108                  0.00000        1.06686       -1.06686       8.9895E-04  regul_1     
+pi109                  0.00000        1.10181       -1.10181       4.5721E-05  regul_1     
+pi110                  0.00000        4.24984       -4.24984       9.1243E-04  regul_1     
+pi111                  0.00000       0.609397      -0.609397       2.7090E-04  regul_1     
+pi112                  0.00000        5.49745       -5.49745       1.8751E-05  regul_1     
+pi113                  0.00000        1.59825       -1.59825       4.7248E-05  regul_1     
+pi114                  0.00000       0.619062      -0.619062       1.9275E-05  regul_1     
+pi115                  0.00000       0.496607      -0.496607       6.8425E-20  regul_1     
+pi116                  0.00000       3.495000E-02  -3.495000E-02   8.9895E-04  regul_1     
+pi117                  0.00000        3.18298       -3.18298       2.7090E-04  regul_1     
+pi118                  0.00000      -0.457464       0.457464       9.1243E-04  regul_1     
+pi119                  0.00000        4.43059       -4.43059       2.7090E-04  regul_1     
+pi120                  0.00000       0.531387      -0.531387       1.9275E-05  regul_1     
+pi121                  0.00000      -0.447799       0.447799       4.7248E-05  regul_1     
+pi122                  0.00000      -0.570254       0.570254       1.9275E-05  regul_1     
+pi123                  0.00000        3.14803       -3.14803       1.8751E-05  regul_1     
+pi124                  0.00000      -0.492414       0.492414       2.7090E-04  regul_1     
+pi125                  0.00000        4.39564       -4.39564       9.1243E-04  regul_1     
+pi126                  0.00000       0.496437      -0.496437        0.000      regul_1     
+pi127                  0.00000      -0.482749       0.482749       1.9275E-05  regul_1     
+pi128                  0.00000      -0.605204       0.605204       4.7248E-05  regul_1     
+pi129                  0.00000       -3.64044        3.64044       8.9895E-04  regul_1     
+pi130                  0.00000        1.24761       -1.24761       4.5721E-05  regul_1     
+pi131                  0.00000       -2.65159        2.65159       9.1243E-04  regul_1     
+pi132                  0.00000       -3.63078        3.63078       2.7090E-04  regul_1     
+pi133                  0.00000       -3.75323        3.75323       1.8751E-05  regul_1     
+pi134                  0.00000        4.88805       -4.88805       8.9895E-04  regul_1     
+pi135                  0.00000       0.988851      -0.988851       2.7090E-04  regul_1     
+pi136                  0.00000       9.665000E-03  -9.665000E-03   9.1243E-04  regul_1     
+pi137                  0.00000      -0.112790       0.112790       2.7090E-04  regul_1     
+pi138                  0.00000       -3.89920        3.89920       1.8751E-05  regul_1     
+pi139                  0.00000       -4.87838        4.87838       2.7090E-04  regul_1     
+pi140                  0.00000       -5.00084        5.00084       9.1243E-04  regul_1     
+pi141                  0.00000      -0.979186       0.979186       8.9895E-04  regul_1     
+pi142                  0.00000       -1.10164        1.10164       4.5721E-05  regul_1     
+pi143                  0.00000      -0.122455       0.122455       8.9895E-04  regul_1     
+pi144                  0.00000      -0.746047       0.746047       3.8150E-04  regul_2     
+pi145                  0.00000      -0.908124       0.908124       4.5492E-05  regul_2     
+pi146                  0.00000       -1.40434        1.40434       6.1622E-06  regul_2     
+pi147                  0.00000       -1.12081        1.12081       3.8633E-04  regul_2     
+pi148                  0.00000       -1.22492        1.22492       1.4604E-04  regul_2     
+pi149                  0.00000       -1.30298        1.30298       2.9223E-05  regul_2     
+pi150                  0.00000       -1.56659        1.56659       4.1976E-06  regul_2     
+pi151                  0.00000      -0.838668       0.838668       4.6328E-05  regul_2     
+pi152                  0.00000      -0.979881       0.979881       2.9581E-05  regul_2     
+pi153                  0.00000       -1.72760        1.72760       9.1278E-06  regul_2     
+pi154                  0.00000       -1.35193        1.35193       1.1260E-06  regul_2     
+pi155                  0.00000      -0.447688       0.447688       6.3680E-06  regul_2     
+pi156                  0.00000      -0.774907       0.774907       4.3264E-06  regul_2     
+pi157                  0.00000      -0.931150       0.931150       1.1541E-06  regul_2     
+pi158                  0.00000       -1.67046        1.67046        0.000      regul_2     
+pi159                  0.00000      -0.162077       0.162077       3.8150E-04  regul_2     
+pi160                  0.00000      -0.658290       0.658290       4.5492E-05  regul_2     
+pi161                  0.00000      -0.374759       0.374759       1.4604E-04  regul_2     
+pi162                  0.00000      -0.478873       0.478873       3.8633E-04  regul_2     
+pi163                  0.00000      -0.556936       0.556936       1.4604E-04  regul_2     
+pi164                  0.00000      -0.820543       0.820543       2.9223E-05  regul_2     
+pi165                  0.00000      -9.262042E-02   9.262042E-02   2.9581E-05  regul_2     
+pi166                  0.00000      -0.233834       0.233834       4.6328E-05  regul_2     
+pi167                  0.00000      -0.981550       0.981550       2.9581E-05  regul_2     
+pi168                  0.00000      -0.605882       0.605882       9.1278E-06  regul_2     
+pi169                  0.00000       0.298360      -0.298360       4.3264E-06  regul_2     
+pi170                  0.00000      -2.885957E-02   2.885957E-02   6.3680E-06  regul_2     
+pi171                  0.00000      -0.185102       0.185102       4.3264E-06  regul_2     
+pi172                  0.00000      -0.924409       0.924409       1.1541E-06  regul_2     
+pi173                  0.00000      -0.496213       0.496213       3.8150E-04  regul_2     
+pi174                  0.00000      -0.212683       0.212683       2.9223E-05  regul_2     
+pi175                  0.00000      -0.316796       0.316796       1.4604E-04  regul_2     
+pi176                  0.00000      -0.394860       0.394860       3.8633E-04  regul_2     
+pi177                  0.00000      -0.658467       0.658467       1.4604E-04  regul_2     
+pi178                  0.00000       6.945613E-02  -6.945613E-02   9.1278E-06  regul_2     
+pi179                  0.00000      -7.175709E-02   7.175709E-02   2.9581E-05  regul_2     
+pi180                  0.00000      -0.819473       0.819473       4.6328E-05  regul_2     
+pi181                  0.00000      -0.443805       0.443805       2.9581E-05  regul_2     
+pi182                  0.00000       0.460436      -0.460436       1.1541E-06  regul_2     
+pi183                  0.00000       0.133217      -0.133217       4.3264E-06  regul_2     
+pi184                  0.00000      -2.302565E-02   2.302565E-02   6.3680E-06  regul_2     
+pi185                  0.00000      -0.762332       0.762332       4.3264E-06  regul_2     
+pi186                  0.00000       0.283531      -0.283531       4.1976E-06  regul_2     
+pi187                  0.00000       0.179417      -0.179417       2.9223E-05  regul_2     
+pi188                  0.00000       0.101354      -0.101354       1.4604E-04  regul_2     
+pi189                  0.00000      -0.162253       0.162253       3.8633E-04  regul_2     
+pi190                  0.00000       0.565670      -0.565670       1.1260E-06  regul_2     
+pi191                  0.00000       0.424456      -0.424456       9.1278E-06  regul_2     
+pi192                  0.00000      -0.323260       0.323260       2.9581E-05  regul_2     
+pi193                  0.00000       5.240826E-02  -5.240826E-02   4.6328E-05  regul_2     
+pi194                  0.00000       0.956650      -0.956650       1.7119E-32  regul_2     
+pi195                  0.00000       0.629430      -0.629430       1.1541E-06  regul_2     
+pi196                  0.00000       0.473188      -0.473188       4.3264E-06  regul_2     
+pi197                  0.00000      -0.266119       0.266119       6.3680E-06  regul_2     
+pi198                  0.00000      -0.104113       0.104113       3.8150E-04  regul_2     
+pi199                  0.00000      -0.182177       0.182177       4.5492E-05  regul_2     
+pi200                  0.00000      -0.445784       0.445784       6.1622E-06  regul_2     
+pi201                  0.00000       0.282139      -0.282139       3.8633E-04  regul_2     
+pi202                  0.00000       0.140926      -0.140926       1.4604E-04  regul_2     
+pi203                  0.00000      -0.606790       0.606790       2.9223E-05  regul_2     
+pi204                  0.00000      -0.231122       0.231122       4.1976E-06  regul_2     
+pi205                  0.00000       0.673119      -0.673119       4.6328E-05  regul_2     
+pi206                  0.00000       0.345900      -0.345900       2.9581E-05  regul_2     
+pi207                  0.00000       0.189657      -0.189657       9.1278E-06  regul_2     
+pi208                  0.00000      -0.549650       0.549650       1.1260E-06  regul_2     
+pi209                  0.00000      -7.806325E-02   7.806325E-02   3.8150E-04  regul_2     
+pi210                  0.00000      -0.341670       0.341670       4.5492E-05  regul_2     
+pi211                  0.00000       0.386252      -0.386252       1.4604E-04  regul_2     
+pi212                  0.00000       0.245039      -0.245039       3.8633E-04  regul_2     
+pi213                  0.00000      -0.502677       0.502677       1.4604E-04  regul_2     
+pi214                  0.00000      -0.127009       0.127009       2.9223E-05  regul_2     
+pi215                  0.00000       0.777233      -0.777233       2.9581E-05  regul_2     
+pi216                  0.00000       0.450013      -0.450013       4.6328E-05  regul_2     
+pi217                  0.00000       0.293771      -0.293771       2.9581E-05  regul_2     
+pi218                  0.00000      -0.445536       0.445536       9.1278E-06  regul_2     
+pi219                  0.00000      -0.263607       0.263607       3.8150E-04  regul_2     
+pi220                  0.00000       0.464316      -0.464316       2.9223E-05  regul_2     
+pi221                  0.00000       0.323103      -0.323103       1.4604E-04  regul_2     
+pi222                  0.00000      -0.424614       0.424614       3.8633E-04  regul_2     
+pi223                  0.00000      -4.894556E-02   4.894556E-02   1.4604E-04  regul_2     
+pi224                  0.00000       0.855296      -0.855296       9.1278E-06  regul_2     
+pi225                  0.00000       0.528077      -0.528077       2.9581E-05  regul_2     
+pi226                  0.00000       0.371834      -0.371834       4.6328E-05  regul_2     
+pi227                  0.00000      -0.367473       0.367473       2.9581E-05  regul_2     
+pi228                  0.00000       0.727923      -0.727923       4.1976E-06  regul_2     
+pi229                  0.00000       0.586709      -0.586709       2.9223E-05  regul_2     
+pi230                  0.00000      -0.161007       0.161007       1.4604E-04  regul_2     
+pi231                  0.00000       0.214661      -0.214661       3.8633E-04  regul_2     
+pi232                  0.00000        1.11890       -1.11890       1.1260E-06  regul_2     
+pi233                  0.00000       0.791684      -0.791684       9.1278E-06  regul_2     
+pi234                  0.00000       0.635441      -0.635441       2.9581E-05  regul_2     
+pi235                  0.00000      -0.103866       0.103866       4.6328E-05  regul_2     
+pi236                  0.00000      -0.141213       0.141213       3.8150E-04  regul_2     
+pi237                  0.00000      -0.888929       0.888929       4.5492E-05  regul_2     
+pi238                  0.00000      -0.513261       0.513261       6.1622E-06  regul_2     
+pi239                  0.00000       0.390980      -0.390980       3.8633E-04  regul_2     
+pi240                  0.00000       6.376085E-02  -6.376085E-02   1.4604E-04  regul_2     
+pi241                  0.00000      -9.248179E-02   9.248179E-02   2.9223E-05  regul_2     
+pi242                  0.00000      -0.831789       0.831789       4.1976E-06  regul_2     
+pi243                  0.00000      -0.747716       0.747716       3.8150E-04  regul_2     
+pi244                  0.00000      -0.372048       0.372048       4.5492E-05  regul_2     
+pi245                  0.00000       0.532193      -0.532193       1.4604E-04  regul_2     
+pi246                  0.00000       0.204974      -0.204974       3.8633E-04  regul_2     
+pi247                  0.00000       4.873144E-02  -4.873144E-02   1.4604E-04  regul_2     
+pi248                  0.00000      -0.690575       0.690575       2.9223E-05  regul_2     
+pi249                  0.00000       0.375668      -0.375668       3.8150E-04  regul_2     
+pi250                  0.00000        1.27991       -1.27991       2.9223E-05  regul_2     
+pi251                  0.00000       0.952690      -0.952690       1.4604E-04  regul_2     
+pi252                  0.00000       0.796448      -0.796448       3.8633E-04  regul_2     
+pi253                  0.00000       5.714083E-02  -5.714083E-02   1.4604E-04  regul_2     
+pi254                  0.00000       0.904241      -0.904241       4.1976E-06  regul_2     
+pi255                  0.00000       0.577022      -0.577022       2.9223E-05  regul_2     
+pi256                  0.00000       0.420780      -0.420780       1.4604E-04  regul_2     
+pi257                  0.00000      -0.318527       0.318527       3.8633E-04  regul_2     
+pi258                  0.00000      -0.327219       0.327219       3.8150E-04  regul_2     
+pi259                  0.00000      -0.483462       0.483462       4.5492E-05  regul_2     
+pi260                  0.00000       -1.22277        1.22277       6.1622E-06  regul_2     
+pi261                  0.00000      -0.156243       0.156243       3.8150E-04  regul_2     
+pi262                  0.00000      -0.895549       0.895549       4.5492E-05  regul_2     
+pi263                  0.00000      -0.739307       0.739307       3.8150E-04  regul_2     
+pi264                  0.00000       1.600538E-02  -1.600538E-02   1.2157E-02  regul_2     
+pi265                  0.00000      -0.269024       0.269024        0.000      regul_2     
+pi266                  0.00000      -0.285030       0.285030       1.3094E-03  regul_2     
+pi267                  0.00000       0.899429      -0.899429        0.000      regul_2     
+pi268                  0.00000       0.756804      -0.756804       5.9669E-04  regul_2     
+pi269                  0.00000      -0.142625       0.142625       1.2870E-02  regul_2     
+pi270                  0.00000      -0.105366       0.105366       3.8150E-04  regul_2     
+pi271                  0.00000       0.118915      -0.118915       4.5492E-05  regul_2     
+pi272                  0.00000       0.386810      -0.386810       6.1622E-06  regul_2     
+pi273                  0.00000       0.427950      -0.427950       3.8633E-04  regul_2     
+pi274                  0.00000       0.519046      -0.519046       1.4604E-04  regul_2     
+pi275                  0.00000       0.298495      -0.298495       2.9223E-05  regul_2     
+pi276                  0.00000       0.396849      -0.396849       4.1976E-06  regul_2     
+pi277                  0.00000       1.898971E-02  -1.898971E-02   4.6328E-05  regul_2     
+pi278                  0.00000       0.395810      -0.395810       2.9581E-05  regul_2     
+pi279                  0.00000       0.287266      -0.287266       9.1278E-06  regul_2     
+pi280                  0.00000       0.319198      -0.319198       1.1260E-06  regul_2     
+pi281                  0.00000       3.395092E-02  -3.395092E-02   6.3680E-06  regul_2     
+pi282                  0.00000      -0.153916       0.153916       4.3264E-06  regul_2     
+pi283                  0.00000       0.231188      -0.231188       1.1541E-06  regul_2     
+pi284                  0.00000       0.350499      -0.350499        0.000      regul_2     
+pi285                  0.00000       0.224280      -0.224280       3.8150E-04  regul_2     
+pi286                  0.00000       0.492175      -0.492175       4.5492E-05  regul_2     
+pi287                  0.00000       0.533315      -0.533315       1.4604E-04  regul_2     
+pi288                  0.00000       0.624411      -0.624411       3.8633E-04  regul_2     
+pi289                  0.00000       0.403861      -0.403861       1.4604E-04  regul_2     
+pi290                  0.00000       0.502214      -0.502214       2.9223E-05  regul_2     
+pi291                  0.00000       0.124355      -0.124355       2.9581E-05  regul_2     
+pi292                  0.00000       0.501176      -0.501176       4.6328E-05  regul_2     
+pi293                  0.00000       0.392632      -0.392632       2.9581E-05  regul_2     
+pi294                  0.00000       0.424563      -0.424563       9.1278E-06  regul_2     
+pi295                  0.00000       0.139317      -0.139317       4.3264E-06  regul_2     
+pi296                  0.00000      -4.855083E-02   4.855083E-02   6.3680E-06  regul_2     
+pi297                  0.00000       0.336553      -0.336553       4.3264E-06  regul_2     
+pi298                  0.00000       0.455865      -0.455865       1.1541E-06  regul_2     
+pi299                  0.00000       0.267895      -0.267895       3.8150E-04  regul_2     
+pi300                  0.00000       0.309035      -0.309035       2.9223E-05  regul_2     
+pi301                  0.00000       0.400131      -0.400131       1.4604E-04  regul_2     
+pi302                  0.00000       0.179580      -0.179580       3.8633E-04  regul_2     
+pi303                  0.00000       0.277934      -0.277934       1.4604E-04  regul_2     
+pi304                  0.00000      -9.992511E-02   9.992511E-02   9.1278E-06  regul_2     
+pi305                  0.00000       0.276896      -0.276896       2.9581E-05  regul_2     
+pi306                  0.00000       0.168351      -0.168351       4.6328E-05  regul_2     
+pi307                  0.00000       0.200283      -0.200283       2.9581E-05  regul_2     
+pi308                  0.00000      -8.496391E-02   8.496391E-02   1.1541E-06  regul_2     
+pi309                  0.00000      -0.272831       0.272831       4.3264E-06  regul_2     
+pi310                  0.00000       0.112273      -0.112273       6.3680E-06  regul_2     
+pi311                  0.00000       0.231584      -0.231584       4.3264E-06  regul_2     
+pi312                  0.00000       4.113984E-02  -4.113984E-02   4.1976E-06  regul_2     
+pi313                  0.00000       0.132236      -0.132236       2.9223E-05  regul_2     
+pi314                  0.00000      -8.831483E-02   8.831483E-02   1.4604E-04  regul_2     
+pi315                  0.00000       1.003887E-02  -1.003887E-02   3.8633E-04  regul_2     
+pi316                  0.00000      -0.367820       0.367820       1.1260E-06  regul_2     
+pi317                  0.00000       9.000542E-03  -9.000542E-03   9.1278E-06  regul_2     
+pi318                  0.00000      -9.954358E-02   9.954358E-02   2.9581E-05  regul_2     
+pi319                  0.00000      -6.761206E-02   6.761206E-02   4.6328E-05  regul_2     
+pi320                  0.00000      -0.352859       0.352859        0.000      regul_2     
+pi321                  0.00000      -0.540726       0.540726       1.1541E-06  regul_2     
+pi322                  0.00000      -0.155622       0.155622       4.3264E-06  regul_2     
+pi323                  0.00000      -3.631077E-02   3.631077E-02   6.3680E-06  regul_2     
+pi324                  0.00000       9.109621E-02  -9.109621E-02   3.8150E-04  regul_2     
+pi325                  0.00000      -0.129455       0.129455       4.5492E-05  regul_2     
+pi326                  0.00000      -3.110096E-02   3.110096E-02   6.1622E-06  regul_2     
+pi327                  0.00000      -0.408960       0.408960       3.8633E-04  regul_2     
+pi328                  0.00000      -3.213929E-02   3.213929E-02   1.4604E-04  regul_2     
+pi329                  0.00000      -0.140683       0.140683       2.9223E-05  regul_2     
+pi330                  0.00000      -0.108752       0.108752       4.1976E-06  regul_2     
+pi331                  0.00000      -0.393999       0.393999       4.6328E-05  regul_2     
+pi332                  0.00000      -0.581866       0.581866       2.9581E-05  regul_2     
+pi333                  0.00000      -0.196762       0.196762       9.1278E-06  regul_2     
+pi334                  0.00000      -7.745061E-02   7.745061E-02   1.1260E-06  regul_2     
+pi335                  0.00000      -0.220551       0.220551       3.8150E-04  regul_2     
+pi336                  0.00000      -0.122197       0.122197       4.5492E-05  regul_2     
+pi337                  0.00000      -0.500056       0.500056       1.4604E-04  regul_2     
+pi338                  0.00000      -0.123235       0.123235       3.8633E-04  regul_2     
+pi339                  0.00000      -0.231780       0.231780       1.4604E-04  regul_2     
+pi340                  0.00000      -0.199848       0.199848       2.9223E-05  regul_2     
+pi341                  0.00000      -0.485095       0.485095       2.9581E-05  regul_2     
+pi342                  0.00000      -0.672962       0.672962       4.6328E-05  regul_2     
+pi343                  0.00000      -0.287858       0.287858       2.9581E-05  regul_2     
+pi344                  0.00000      -0.168547       0.168547       9.1278E-06  regul_2     
+pi345                  0.00000       9.835371E-02  -9.835371E-02   3.8150E-04  regul_2     
+pi346                  0.00000      -0.279505       0.279505       2.9223E-05  regul_2     
+pi347                  0.00000       9.731537E-02  -9.731537E-02   1.4604E-04  regul_2     
+pi348                  0.00000      -1.122874E-02   1.122874E-02   3.8633E-04  regul_2     
+pi349                  0.00000       2.070278E-02  -2.070278E-02   1.4604E-04  regul_2     
+pi350                  0.00000      -0.264544       0.264544       9.1278E-06  regul_2     
+pi351                  0.00000      -0.452411       0.452411       2.9581E-05  regul_2     
+pi352                  0.00000      -6.730739E-02   6.730739E-02   4.6328E-05  regul_2     
+pi353                  0.00000       5.200406E-02  -5.200406E-02   2.9581E-05  regul_2     
+pi354                  0.00000      -0.377859       0.377859       4.1976E-06  regul_2     
+pi355                  0.00000      -1.038331E-03   1.038331E-03   2.9223E-05  regul_2     
+pi356                  0.00000      -0.109582       0.109582       1.4604E-04  regul_2     
+pi357                  0.00000      -7.765093E-02   7.765093E-02   3.8633E-04  regul_2     
+pi358                  0.00000      -0.362898       0.362898       1.1260E-06  regul_2     
+pi359                  0.00000      -0.550765       0.550765       9.1278E-06  regul_2     
+pi360                  0.00000      -0.165661       0.165661       2.9581E-05  regul_2     
+pi361                  0.00000      -4.634964E-02   4.634964E-02   4.6328E-05  regul_2     
+pi362                  0.00000       0.376821      -0.376821       3.8150E-04  regul_2     
+pi363                  0.00000       0.268277      -0.268277       4.5492E-05  regul_2     
+pi364                  0.00000       0.300208      -0.300208       6.1622E-06  regul_2     
+pi365                  0.00000       1.496121E-02  -1.496121E-02   3.8633E-04  regul_2     
+pi366                  0.00000      -0.172906       0.172906       1.4604E-04  regul_2     
+pi367                  0.00000       0.212198      -0.212198       2.9223E-05  regul_2     
+pi368                  0.00000       0.331509      -0.331509       4.1976E-06  regul_2     
+pi369                  0.00000      -0.108544       0.108544       3.8150E-04  regul_2     
+pi370                  0.00000      -7.661260E-02   7.661260E-02   4.5492E-05  regul_2     
+pi371                  0.00000      -0.361859       0.361859       1.4604E-04  regul_2     
+pi372                  0.00000      -0.549727       0.549727       3.8633E-04  regul_2     
+pi373                  0.00000      -0.164623       0.164623       1.4604E-04  regul_2     
+pi374                  0.00000      -4.531131E-02   4.531131E-02   2.9223E-05  regul_2     
+pi375                  0.00000       3.193152E-02  -3.193152E-02   3.8150E-04  regul_2     
+pi376                  0.00000      -0.253315       0.253315       2.9223E-05  regul_2     
+pi377                  0.00000      -0.441183       0.441183       1.4604E-04  regul_2     
+pi378                  0.00000      -5.607865E-02   5.607865E-02   3.8633E-04  regul_2     
+pi379                  0.00000       6.323281E-02  -6.323281E-02   1.4604E-04  regul_2     
+pi380                  0.00000      -0.285247       0.285247       4.1976E-06  regul_2     
+pi381                  0.00000      -0.473114       0.473114       2.9223E-05  regul_2     
+pi382                  0.00000      -8.801017E-02   8.801017E-02   1.4604E-04  regul_2     
+pi383                  0.00000       3.130129E-02  -3.130129E-02   3.8633E-04  regul_2     
+pi384                  0.00000      -0.187867       0.187867       3.8150E-04  regul_2     
+pi385                  0.00000       0.197237      -0.197237       4.5492E-05  regul_2     
+pi386                  0.00000       0.316548      -0.316548       6.1622E-06  regul_2     
+pi387                  0.00000       0.385104      -0.385104       3.8150E-04  regul_2     
+pi388                  0.00000       0.504416      -0.504416       4.5492E-05  regul_2     
+pi389                  0.00000       0.119311      -0.119311       3.8150E-04  regul_2     
+pi390                 -2.31224      -0.985251       -1.32699       2.6933E-02  regul_1     
+pi391                 -2.30423      -0.998511       -1.30572       2.6933E-02  regul_1     
+pi392                 -2.18952      -0.955066       -1.23446       2.6933E-02  regul_1     
+pi393                 -2.35304       -1.02260       -1.33044       2.6933E-02  regul_1     
+pi394                 -2.29979      -0.998605       -1.30118       2.6933E-02  regul_1     
+pi395                 -2.42467       -1.09247       -1.33219       2.6933E-02  regul_1     
+pi396                 -2.90645       -1.25537       -1.65108       2.6933E-02  regul_1     
+pi397                 -2.25475      -0.978144       -1.27660       2.6933E-02  regul_1     
+pi398                 -2.28553       -1.00303       -1.28250       2.6933E-02  regul_1     
+pi399                 -1.03266      -0.352289      -0.680367       2.6933E-02  regul_1     
+pi400                -0.770936      -0.311810      -0.459126       2.6933E-02  regul_1     
+pi401                -0.340703      -0.183265      -0.157438       2.6933E-02  regul_1     
+pi402                -0.316246      -0.156114      -0.160132       2.6933E-02  regul_1     
+pi403                -0.355875      -0.148106      -0.207769       2.6933E-02  regul_1     
+pi404                -0.596347      -0.395176      -0.201171       2.6933E-02  regul_1     
+pi405                 -1.07652      -0.406383      -0.670135       2.6933E-02  regul_1     
+pi406                -0.272268      -9.868559E-02  -0.173582       2.6933E-02  regul_1     
+pi407                -0.510692      -0.208165      -0.302527       2.6933E-02  regul_1     
+pi408                 -1.68411      -0.654103       -1.03000       2.6933E-02  regul_1     
+pi409                 -1.54731      -0.658005      -0.889303       2.6933E-02  regul_1     
+pi410                 -1.43460      -0.632735      -0.801867       2.6933E-02  regul_1     
+pi411                 -1.57988      -0.685717      -0.894162       2.6933E-02  regul_1     
+pi412                 -1.55103      -0.669861      -0.881166       2.6933E-02  regul_1     
+pi413                 -1.56279      -0.714413      -0.848379       2.6933E-02  regul_1     
+pi414                 -1.62516      -0.643896      -0.981264       2.6933E-02  regul_1     
+pi415                 -1.48815      -0.640617      -0.847533       2.6933E-02  regul_1     
+pi416                 -1.52943      -0.681266      -0.848160       2.6933E-02  regul_1     
+pi417                  9.69287        11.2244       -1.53155       2.6933E-02  regul_1     
+pi418                  9.80907        10.1576      -0.348486       2.6933E-02  regul_1     
+pi419                  10.4947        10.1226       0.372068       2.6933E-02  regul_1     
+pi420                  7.89275        6.97457       0.918171       2.6933E-02  regul_1     
+pi421                  10.4947        10.6150      -0.120346       2.6933E-02  regul_1     
+pi422                  7.80227        5.72697        2.07530       2.6933E-02  regul_1     
+pi423                  8.69527        9.62617      -0.930899       2.6933E-02  regul_1     
+pi424                  10.4947        10.6054      -0.110681       2.6933E-02  regul_1     
+pi425                  10.4947        10.7278      -0.233136       2.6933E-02  regul_1     
+pi426                 -8.32288       -4.50243       -3.82045       2.6933E-02  regul_2     
+pi427                 -8.35186       -3.75638       -4.59548       2.6933E-02  regul_2     
+pi428                 -8.44602       -3.59431       -4.85172       2.6933E-02  regul_2     
+pi429                 -7.31140       -3.09809       -4.21330       2.6933E-02  regul_2     
+pi430                 -7.93603       -3.38162       -4.55440       2.6933E-02  regul_2     
+pi431                 -7.92522       -3.27751       -4.64771       2.6933E-02  regul_2     
+pi432                 -7.95321       -3.19945       -4.75376       2.6933E-02  regul_2     
+pi433                 -6.84668       -2.93584       -3.91084       2.6933E-02  regul_2     
+pi434                 -8.36094       -3.66376       -4.69718       2.6933E-02  regul_2     
+pi435                 -8.33856       -3.52255       -4.81601       2.6933E-02  regul_2     
+pi436                 -7.51391       -2.77483       -4.73908       2.6933E-02  regul_2     
+pi437                 -6.84668       -3.15050       -3.69618       2.6933E-02  regul_2     
+pi438                 -8.30210       -4.05474       -4.24736       2.6933E-02  regul_2     
+pi439                 -8.30416       -3.72752       -4.57664       2.6933E-02  regul_2     
+pi440                 -8.00138       -3.57128       -4.43010       2.6933E-02  regul_2     
+pi441                 -6.84668       -2.83197       -4.01471       2.6933E-02  regul_2     
+pi442                 -6.93267       -3.01082       -3.92185       2.6933E-02  regul_2     
+pi443                 -7.40025       -3.02683       -4.37343       2.6933E-02  regul_2     
+pi444                 -6.67782       -2.74180       -3.93602       2.6933E-02  regul_2     
+pi445                 -7.48192       -3.24936       -4.23256       2.6933E-02  regul_2     
+pi446                 -9.43646       -4.14879       -5.28767       2.6933E-02  regul_2     
+pi447                 -9.21184       -4.00616       -5.20568       2.6933E-02  regul_2     
+pi448                 -8.49450       -3.60355       -4.89096       2.6933E-02  regul_2     
+pi449                 -8.26532       -3.49818       -4.76714       2.6933E-02  regul_2     
+pi450                 -8.26543       -3.72246       -4.54296       2.6933E-02  regul_2     
+pi451                 -9.12430       -3.99036       -5.13394       2.6933E-02  regul_2     
+pi452                 -9.15353       -4.03150       -5.12203       2.6933E-02  regul_2     
+pi453                 -9.38831       -4.12259       -5.26572       2.6933E-02  regul_2     
+pi454                 -8.64167       -3.90204       -4.73963       2.6933E-02  regul_2     
+pi455                 -9.16945       -4.00040       -5.16905       2.6933E-02  regul_2     
+pi456                 -8.27803       -3.62254       -4.65549       2.6933E-02  regul_2     
+pi457                 -9.09658       -3.99936       -5.09722       2.6933E-02  regul_2     
+pi458                 -8.46777       -3.89081       -4.57696       2.6933E-02  regul_2     
+pi459                 -9.09505       -3.92274       -5.17231       2.6933E-02  regul_2     
+pi460                 -8.47455       -3.63750       -4.83705       2.6933E-02  regul_2     
+pi461                 -8.31920       -3.44963       -4.86957       2.6933E-02  regul_2     
+pi462                 -8.86287       -3.83473       -5.02814       2.6933E-02  regul_2     
+pi463                 -9.08817       -3.95405       -5.13413       2.6933E-02  regul_2     
+
+See file aassist.res for more details of residuals in graph-ready format.
+
+See file aassist.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   3.4545    
+  Contribution to phi from observation group "head"         =  0.34992    
+  Contribution to phi from observation group "drain"        =   1.9682    
+  Contribution to phi from observation group "ghb"          =  0.13851    
+  Contribution to phi from observation group "stream"       =  0.31095    
+  Contribution to phi from observation group "const_head"   =  6.24221E-02
+  Contribution to phi from observation group "regul_1"      =  2.43961E-02
+  Contribution to phi from observation group "regul_2"      =  0.60005    
+  Contribution to phi from observation group "regul_3"      =   0.0000    
+
+  Optimised measurement objective function                  =   2.8300    
+  Optimised regularisation weight factor                    =  2.69329E-02
+  Optimised regularisation objective function               =   860.86    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99975    
+  (Includes measurement observations only.)
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =   568
+     Mean value of non-zero weighted residuals                      = -1.6329E-02
+     Maximum weighted residual [observation "drnf9"]                =  0.4344    
+     Minimum weighted residual [observation "drnf4"]                = -0.6234    
+     Standard variance of weighted residuals                        =  6.2130E-03
+     Standard error of weighted residuals                           =  7.8823E-02
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "head":-
+     Number of residuals with non-zero weight                       =    18
+     Mean value of non-zero weighted residuals                      = -3.0605E-02
+     Maximum weighted residual [observation "hed16"]                =  0.1435    
+     Minimum weighted residual [observation "hed9"]                 = -0.3900    
+     "Variance" of weighted residuals                               =  1.9440E-02
+     "Standard error" of weighted residuals                         =  0.1394    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "drain":-
+     Number of residuals with non-zero weight                       =    23
+     Mean value of non-zero weighted residuals                      = -6.0618E-02
+     Maximum weighted residual [observation "drnf9"]                =  0.4344    
+     Minimum weighted residual [observation "drnf4"]                = -0.6234    
+     "Variance" of weighted residuals                               =  8.5574E-02
+     "Standard error" of weighted residuals                         =  0.2925    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "ghb":-
+     Number of residuals with non-zero weight                       =    21
+     Mean value of non-zero weighted residuals                      = -9.1674E-03
+     Maximum weighted residual [observation "ghbf1"]                =  0.1217    
+     Minimum weighted residual [observation "ghbf16"]               = -0.1995    
+     "Variance" of weighted residuals                               =  6.5955E-03
+     "Standard error" of weighted residuals                         =  8.1213E-02
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "stream":-
+     Number of residuals with non-zero weight                       =    30
+     Mean value of non-zero weighted residuals                      = -5.7254E-02
+     Maximum weighted residual [observation "strf2"]                =  0.1227    
+     Minimum weighted residual [observation "strf4"]                = -0.2522    
+     "Variance" of weighted residuals                               =  1.0365E-02
+     "Standard error" of weighted residuals                         =  0.1018    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "const_head":-
+     Number of residuals with non-zero weight                       =    21
+     Mean value of non-zero weighted residuals                      = -2.2814E-03
+     Maximum weighted residual [observation "chdf17"]               =  0.1233    
+     Minimum weighted residual [observation "chdf13"]               = -9.7771E-02
+     "Variance" of weighted residuals                               =  2.9725E-03
+     "Standard error" of weighted residuals                         =  5.4520E-02
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "regul_1":-
+     Number of residuals with non-zero weight                       =   176
+     Mean value of non-zero weighted residuals                      = -3.5266E-03
+     Maximum weighted residual [observation "pi422"]                =  5.5894E-02
+     Minimum weighted residual [observation "pi396"]                = -4.4468E-02
+     "Variance" of weighted residuals                               =  1.3861E-04
+     "Standard error" of weighted residuals                         =  1.1773E-02
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "regul_2":-
+     Number of residuals with non-zero weight                       =   279
+     Mean value of non-zero weighted residuals                      = -1.7029E-02
+     Maximum weighted residual [observation "pi269"]                =  1.8356E-03
+     Minimum weighted residual [observation "pi446"]                = -0.1424    
+     "Variance" of weighted residuals                               =  2.1507E-03
+     "Standard error" of weighted residuals                         =  4.6376E-02
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "regul_3":-
+     Number of residuals with non-zero weight                       =     0
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+

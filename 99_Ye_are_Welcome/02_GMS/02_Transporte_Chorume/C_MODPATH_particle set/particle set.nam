@@ -1,0 +1,8 @@
+list 97 "particle set.sum"
+main 10 "particle set.mdf"
+dis 19 "E:\13_2024\a06_Transporte_Chorume_\D_MODFLOW\D.dis"
+locations 71 "particle set.loc"
+endpoint 75 "particle set.ept"
+pathline 76 "particle set.pth"
+head(binary) 730 "E:\13_2024\a06_Transporte_Chorume_\D_MODFLOW\D.hed"
+budget 40 "E:\13_2024\a06_Transporte_Chorume_\D_MODFLOW\D.ccf"

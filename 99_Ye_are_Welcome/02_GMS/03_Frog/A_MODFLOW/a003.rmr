@@ -1,0 +1,182 @@
+                     PEST RUN MANAGEMENT RECORD: CASE a003
+
+ SLAVE DETAILS:-
+
+ Slave Name                  PSLAVE Working Directory
+ ----------                  ------------------------
+ "slave0"                    .\
+ "slave1"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\
+ "slave2"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\
+ "slave3"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\
+ "slave4"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\
+ "slave5"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\
+ "slave6"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\
+ "slave7"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\
+ "slave8"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\
+ "slave9"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\
+ "slave10"                   c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\
+
+
+ Attempting to communicate with slaves ....
+
+ - slave "slave0" has been detected.
+ - slave "slave1" has been detected.
+ - slave "slave2" has been detected.
+ - slave "slave3" has been detected.
+ - slave "slave4" has been detected.
+ - slave "slave5" has been detected.
+ - slave "slave6" has been detected.
+ - slave "slave7" has been detected.
+ - slave "slave8" has been detected.
+ - slave "slave9" has been detected.
+ - slave "slave10" has been detected.
+
+
+ SLAVE MODEL INPUT AND OUTPUT FILES:-
+
+ Slave "slave0" ----->
+
+     Model input files on slave "slave0":-
+         .\A003.snn_1
+
+     Model output files on slave "slave0":-
+         .\A003._os
+
+     Model command line for slave "slave0":-
+         A003_bat1.bat
+
+
+ Slave "slave1" ----->
+
+     Model input files on slave "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\A003.snn_1
+
+     Model output files on slave "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\A003._os
+
+     Model command line for slave "slave1":-
+         A003_bat1.bat
+
+
+ Slave "slave2" ----->
+
+     Model input files on slave "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\A003.snn_1
+
+     Model output files on slave "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\A003._os
+
+     Model command line for slave "slave2":-
+         A003_bat1.bat
+
+
+ Slave "slave3" ----->
+
+     Model input files on slave "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\A003.snn_1
+
+     Model output files on slave "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\A003._os
+
+     Model command line for slave "slave3":-
+         A003_bat1.bat
+
+
+ Slave "slave4" ----->
+
+     Model input files on slave "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\A003.snn_1
+
+     Model output files on slave "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\A003._os
+
+     Model command line for slave "slave4":-
+         A003_bat1.bat
+
+
+ Slave "slave5" ----->
+
+     Model input files on slave "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\A003.snn_1
+
+     Model output files on slave "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\A003._os
+
+     Model command line for slave "slave5":-
+         A003_bat1.bat
+
+
+ Slave "slave6" ----->
+
+     Model input files on slave "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\A003.snn_1
+
+     Model output files on slave "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\A003._os
+
+     Model command line for slave "slave6":-
+         A003_bat1.bat
+
+
+ Slave "slave7" ----->
+
+     Model input files on slave "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\A003.snn_1
+
+     Model output files on slave "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\A003._os
+
+     Model command line for slave "slave7":-
+         A003_bat1.bat
+
+
+ Slave "slave8" ----->
+
+     Model input files on slave "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\A003.snn_1
+
+     Model output files on slave "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\A003._os
+
+     Model command line for slave "slave8":-
+         A003_bat1.bat
+
+
+ Slave "slave9" ----->
+
+     Model input files on slave "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\A003.snn_1
+
+     Model output files on slave "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\A003._os
+
+     Model command line for slave "slave9":-
+         A003_bat1.bat
+
+
+ Slave "slave10" ----->
+
+     Model input files on slave "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\A003.snn_1
+
+     Model output files on slave "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\A003._os
+
+     Model command line for slave "slave10":-
+         A003_bat1.bat
+
+
+ AVERAGE WAIT INTERVAL         : 1 hundredths of a second.
+ PARALLELISE LAMBDA SEARCH     : yes
+ REPEAT TROUBLESOME MODEL RUNS : yes
+
+
+                            RUN MANAGEMENT RECORD
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   16:22:40.33:- slave "slave0" commencing model run.
+   16:22:42.46:- slave "slave1" commencing model run because slave "slave0" is overdue.
+   16:22:45.46:- slave "slave2" commencing model run because slave "slave1" is overdue.
+   16:22:48.27:- slave "slave0" finished execution; reading results.

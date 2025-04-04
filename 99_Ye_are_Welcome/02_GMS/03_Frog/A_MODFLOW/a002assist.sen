@@ -1,0 +1,210 @@
+                     PARAMETER SENSITIVITIES: CASE a002assist
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            11.0000         1.841478E-02
+   par2            pargp            11.0000         1.353382E-02
+   par3            pargp            11.0000         1.257082E-02
+   par4            pargp            11.0000         9.099803E-03
+   par5            pargp            11.0000         8.791378E-03
+   par6            pargp            11.0000         7.629959E-03
+   par7            pargp            11.0000         6.944650E-03
+   par8            pargp            11.0000         5.870792E-03
+   par9            pargp            11.0000         5.073097E-03
+   par10           pargp            11.0000         4.786372E-03
+   par11           pargp            11.0000         4.213791E-03
+   par12           pargp            11.0000         3.496358E-03
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8509         1.361575E-02
+   par2            pargp            11.0789         7.495711E-03
+   par3            pargp            11.1728         1.057881E-02
+   par4            pargp            10.8824         7.176505E-03
+   par5            pargp            10.4143         7.336088E-03
+   par6            pargp            11.3999         5.957782E-03
+   par7            pargp            10.9725         5.862462E-03
+   par8            pargp            11.2295         3.082540E-03
+   par9            pargp            10.7065         3.858504E-03
+   par10           pargp            11.3985         2.820623E-03
+   par11           pargp            11.0564         2.960969E-03
+   par12           pargp            11.0708         2.660971E-03
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8756         1.294072E-02
+   par2            pargp            10.9787         8.236948E-03
+   par3            pargp            11.1465         9.610937E-03
+   par4            pargp            10.9595         7.122719E-03
+   par5            pargp            10.4002         6.135574E-03
+   par6            pargp            11.4018         5.642323E-03
+   par7            pargp            10.9079         2.111591E-03
+   par8            pargp            11.1697         3.929882E-03
+   par9            pargp            10.7869         3.402124E-03
+   par10           pargp            11.6518         2.280913E-03
+   par11           pargp            11.1850         2.623744E-03
+   par12           pargp            11.0667         2.574934E-03
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "head" ----->
+
+ Number of observations with non-zero weight =    18
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         0.186438    
+   par2            pargp            10.9878         0.126125    
+   par3            pargp            11.1612         0.114593    
+   par4            pargp            10.9398         3.346713E-02
+   par5            pargp            10.3360         4.794644E-02
+   par6            pargp            11.4187         7.877676E-02
+   par7            pargp            10.9222         1.708104E-02
+   par8            pargp            11.1265         6.146260E-02
+   par9            pargp            10.8381         3.657600E-02
+   par10           pargp            11.5960         5.903559E-03
+   par11           pargp            11.1950         3.187117E-03
+   par12           pargp            11.3422         1.122811E-02
+
+
+
+ Composite sensitivities for observation group "drain" ----->
+
+ Number of observations with non-zero weight =    23
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         0.113931    
+   par2            pargp            10.9878         0.157645    
+   par3            pargp            11.1612         0.199773    
+   par4            pargp            10.9398         7.076445E-02
+   par5            pargp            10.3360         7.295105E-02
+   par6            pargp            11.4187         6.127742E-02
+   par7            pargp            10.9222         6.499475E-03
+   par8            pargp            11.1265         3.758667E-02
+   par9            pargp            10.8381         1.573552E-02
+   par10           pargp            11.5960         4.614831E-03
+   par11           pargp            11.1950         1.774884E-03
+   par12           pargp            11.3422         1.058950E-02
+
+
+
+ Composite sensitivities for observation group "ghb" ----->
+
+ Number of observations with non-zero weight =    21
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         5.358851E-02
+   par2            pargp            10.9878         4.505479E-02
+   par3            pargp            11.1612         5.387234E-02
+   par4            pargp            10.9398         2.122619E-02
+   par5            pargp            10.3360         2.507121E-02
+   par6            pargp            11.4187         4.684480E-02
+   par7            pargp            10.9222         4.951160E-02
+   par8            pargp            11.1265         3.449628E-02
+   par9            pargp            10.8381         2.891905E-02
+   par10           pargp            11.5960         6.041055E-02
+   par11           pargp            11.1950         7.082415E-02
+   par12           pargp            11.3422         6.196564E-02
+
+
+
+ Composite sensitivities for observation group "stream" ----->
+
+ Number of observations with non-zero weight =    30
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         0.194762    
+   par2            pargp            10.9878         5.273902E-02
+   par3            pargp            11.1612         5.766449E-02
+   par4            pargp            10.9398         0.118959    
+   par5            pargp            10.3360         9.456886E-02
+   par6            pargp            11.4187         6.162477E-02
+   par7            pargp            10.9222         8.431500E-03
+   par8            pargp            11.1265         3.135891E-02
+   par9            pargp            10.8381         3.575337E-02
+   par10           pargp            11.5960         4.767711E-03
+   par11           pargp            11.1950         1.938143E-03
+   par12           pargp            11.3422         1.719274E-02
+
+
+
+ Composite sensitivities for observation group "const_head" ----->
+
+ Number of observations with non-zero weight =    21
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         3.338345E-02
+   par2            pargp            10.9878         2.064375E-02
+   par3            pargp            11.1612         1.902109E-02
+   par4            pargp            10.9398         3.082177E-02
+   par5            pargp            10.3360         2.413892E-02
+   par6            pargp            11.4187         6.540201E-02
+   par7            pargp            10.9222         2.000143E-02
+   par8            pargp            11.1265         6.022365E-02
+   par9            pargp            10.8381         6.114039E-02
+   par10           pargp            11.5960         7.681087E-03
+   par11           pargp            11.1950         1.095215E-03
+   par12           pargp            11.3422         1.339746E-02
+
+
+
+ Composite sensitivities for observation group "regul_1" ----->
+
+ Number of observations with non-zero weight =   176
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         9.300628E-05
+   par2            pargp            10.9878         1.881988E-04
+   par3            pargp            11.1612         1.515663E-04
+   par4            pargp            10.9398         1.869430E-04
+   par5            pargp            10.3360         1.017803E-04
+   par6            pargp            11.4187         1.460661E-04
+   par7            pargp            10.9222         2.916960E-05
+   par8            pargp            11.1265         7.456627E-05
+   par9            pargp            10.8381         7.866669E-05
+   par10           pargp            11.5960         1.217746E-05
+   par11           pargp            11.1950         5.021206E-06
+   par12           pargp            11.3422         3.743271E-05
+
+
+
+ Composite sensitivities for observation group "regul_2" ----->
+
+ Number of observations with non-zero weight =   279
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         1.523458E-04
+   par2            pargp            10.9878         1.122787E-04
+   par3            pargp            11.1612         1.325562E-04
+   par4            pargp            10.9398         1.120085E-04
+   par5            pargp            10.3360         1.498409E-04
+   par6            pargp            11.4187         1.325992E-04
+   par7            pargp            10.9222         4.301534E-05
+   par8            pargp            11.1265         1.532499E-04
+   par9            pargp            10.8381         1.504094E-04
+   par10           pargp            11.5960         2.041181E-05
+   par11           pargp            11.1950         7.145100E-06
+   par12           pargp            11.3422         6.843952E-05
+
+
+
+ Composite sensitivities for observation group "regul_3" ----->
+
+
+ No observations/prior_info with non-zero weight belong to this group.
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =   568
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.8616         1.294072E-02
+   par2            pargp            10.9878         8.236948E-03
+   par3            pargp            11.1612         9.610937E-03
+   par4            pargp            10.9398         7.122719E-03
+   par5            pargp            10.3360         6.135574E-03
+   par6            pargp            11.4187         5.642323E-03
+   par7            pargp            10.9222         2.111591E-03
+   par8            pargp            11.1265         3.929882E-03
+   par9            pargp            10.8381         3.402124E-03
+   par10           pargp            11.5960         2.280913E-03
+   par11           pargp            11.1950         2.623744E-03
+   par12           pargp            11.3422         2.574934E-03

@@ -1,0 +1,376 @@
+                  PEST RUN MANAGEMENT RECORD: CASE a003assist
+
+ SLAVE DETAILS:-
+
+ Slave Name                  PSLAVE Working Directory
+ ----------                  ------------------------
+ "slave0"                    .\
+ "slave1"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\
+ "slave2"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\
+ "slave3"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\
+ "slave4"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\
+ "slave5"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\
+ "slave6"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\
+ "slave7"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\
+ "slave8"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\
+ "slave9"                    c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\
+ "slave10"                   c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\
+
+
+ Attempting to communicate with slaves ....
+
+ - slave "slave0" has been detected.
+ - slave "slave1" has been detected.
+ - slave "slave2" has been detected.
+ - slave "slave3" has been detected.
+ - slave "slave4" has been detected.
+ - slave "slave5" has been detected.
+ - slave "slave6" has been detected.
+ - slave "slave7" has been detected.
+ - slave "slave8" has been detected.
+ - slave "slave9" has been detected.
+ - slave "slave10" has been detected.
+
+
+ SLAVE MODEL INPUT AND OUTPUT FILES:-
+
+ Slave "slave0" ----->
+
+     Model input files on slave "slave0":-
+         .\parcalc.in
+
+     Model output files on slave "slave0":-
+         .\A003._os
+         .\picalc.out
+
+     Model command line for slave "slave0":-
+         svdabatch.bat
+
+
+ Slave "slave1" ----->
+
+     Model input files on slave "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\parcalc.in
+
+     Model output files on slave "slave1":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave1\picalc.out
+
+     Model command line for slave "slave1":-
+         svdabatch.bat
+
+
+ Slave "slave2" ----->
+
+     Model input files on slave "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\parcalc.in
+
+     Model output files on slave "slave2":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave2\picalc.out
+
+     Model command line for slave "slave2":-
+         svdabatch.bat
+
+
+ Slave "slave3" ----->
+
+     Model input files on slave "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\parcalc.in
+
+     Model output files on slave "slave3":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave3\picalc.out
+
+     Model command line for slave "slave3":-
+         svdabatch.bat
+
+
+ Slave "slave4" ----->
+
+     Model input files on slave "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\parcalc.in
+
+     Model output files on slave "slave4":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave4\picalc.out
+
+     Model command line for slave "slave4":-
+         svdabatch.bat
+
+
+ Slave "slave5" ----->
+
+     Model input files on slave "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\parcalc.in
+
+     Model output files on slave "slave5":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave5\picalc.out
+
+     Model command line for slave "slave5":-
+         svdabatch.bat
+
+
+ Slave "slave6" ----->
+
+     Model input files on slave "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\parcalc.in
+
+     Model output files on slave "slave6":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave6\picalc.out
+
+     Model command line for slave "slave6":-
+         svdabatch.bat
+
+
+ Slave "slave7" ----->
+
+     Model input files on slave "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\parcalc.in
+
+     Model output files on slave "slave7":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave7\picalc.out
+
+     Model command line for slave "slave7":-
+         svdabatch.bat
+
+
+ Slave "slave8" ----->
+
+     Model input files on slave "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\parcalc.in
+
+     Model output files on slave "slave8":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave8\picalc.out
+
+     Model command line for slave "slave8":-
+         svdabatch.bat
+
+
+ Slave "slave9" ----->
+
+     Model input files on slave "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\parcalc.in
+
+     Model output files on slave "slave9":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave9\picalc.out
+
+     Model command line for slave "slave9":-
+         svdabatch.bat
+
+
+ Slave "slave10" ----->
+
+     Model input files on slave "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\parcalc.in
+
+     Model output files on slave "slave10":-
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\A003._os
+         c:\users\gross~1.des\appdata\local\temp\gms_2920\ppest\slave10\picalc.out
+
+     Model command line for slave "slave10":-
+         svdabatch.bat
+
+
+ AVERAGE WAIT INTERVAL         : 1 hundredths of a second.
+ PARALLELISE LAMBDA SEARCH     : yes
+ REPEAT TROUBLESOME MODEL RUNS : yes
+
+
+                            RUN MANAGEMENT RECORD
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   15:50:22.40:- slave "slave0" commencing model run.
+   15:50:24.51:- slave "slave1" commencing model run because slave "slave0" is overdue.
+   15:50:26.23:- slave "slave0" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+
+ Calculating Jacobian matrix: running model 12 times .....
+   15:50:26.47:- slave "slave0" commencing model run.
+   15:50:26.48:- slave "slave2" commencing model run.
+   15:50:26.49:- slave "slave3" commencing model run.
+   15:50:26.50:- slave "slave4" commencing model run.
+   15:50:26.51:- slave "slave5" commencing model run.
+   15:50:26.52:- slave "slave6" commencing model run.
+   15:50:26.53:- slave "slave7" commencing model run.
+   15:50:26.55:- slave "slave8" commencing model run.
+   15:50:26.56:- slave "slave9" commencing model run.
+   15:50:26.57:- slave "slave10" commencing model run.
+   15:50:28.99:- slave "slave1" finished execution; old run so results not needed.
+   15:50:28.99:- slave "slave1" commencing model run.
+   15:50:30.53:- slave "slave7" finished execution; reading results.
+   15:50:30.65:- slave "slave7" commencing model run.
+   15:50:30.70:- slave "slave0" finished execution; reading results.
+   15:50:30.88:- slave "slave8" finished execution; reading results.
+   15:50:31.04:- slave "slave9" finished execution; reading results.
+   15:50:31.18:- slave "slave10" finished execution; reading results.
+   15:50:31.37:- slave "slave2" finished execution; reading results.
+   15:50:31.57:- slave "slave3" finished execution; reading results.
+   15:50:31.74:- slave "slave4" finished execution; reading results.
+   15:50:31.95:- slave "slave5" finished execution; reading results.
+   15:50:32.08:- slave "slave6" finished execution; reading results.
+   15:50:33.55:- slave "slave1" finished execution; reading results.
+   15:50:34.58:- slave "slave7" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   15:50:34.73:- slave "slave7" commencing model run.
+   15:50:34.75:- slave "slave8" commencing model run.
+   15:50:34.76:- slave "slave9" commencing model run.
+   15:50:34.78:- slave "slave10" commencing model run.
+   15:50:34.80:- slave "slave0" commencing model run.
+   15:50:34.81:- slave "slave1" commencing model run.
+   15:50:34.82:- slave "slave2" commencing model run.
+   15:50:34.83:- slave "slave5" commencing model run.
+   15:50:34.84:- slave "slave6" commencing model run.
+   15:50:34.85:- slave "slave3" commencing model run.
+   15:50:34.86:- slave "slave4" commencing model run.
+   15:50:38.47:- slave "slave7" finished execution; reading results.
+   15:50:38.67:- slave "slave6" finished execution; reading results.
+   15:50:38.90:- slave "slave9" finished execution; reading results.
+   15:50:39.04:- slave "slave10" finished execution; reading results.
+   15:50:39.25:- slave "slave0" finished execution; reading results.
+   15:50:39.47:- slave "slave1" finished execution; reading results.
+   15:50:39.69:- slave "slave2" finished execution; reading results.
+   15:50:39.88:- slave "slave3" finished execution; reading results.
+   15:50:40.06:- slave "slave4" finished execution; reading results.
+   15:50:40.28:- slave "slave5" finished execution; reading results.
+   15:50:40.47:- slave "slave8" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+
+ Calculating Jacobian matrix: running model 12 times .....
+   15:50:40.70:- slave "slave7" commencing model run.
+   15:50:40.72:- slave "slave0" commencing model run.
+   15:50:40.73:- slave "slave1" commencing model run.
+   15:50:40.74:- slave "slave6" commencing model run.
+   15:50:40.76:- slave "slave9" commencing model run.
+   15:50:40.77:- slave "slave10" commencing model run.
+   15:50:40.78:- slave "slave2" commencing model run.
+   15:50:40.79:- slave "slave3" commencing model run.
+   15:50:40.80:- slave "slave4" commencing model run.
+   15:50:40.82:- slave "slave5" commencing model run.
+   15:50:40.83:- slave "slave8" commencing model run.
+   15:50:44.71:- slave "slave7" finished execution; reading results.
+   15:50:44.87:- slave "slave7" commencing model run.
+   15:50:44.95:- slave "slave0" finished execution; reading results.
+   15:50:45.19:- slave "slave1" finished execution; reading results.
+   15:50:45.36:- slave "slave2" finished execution; reading results.
+   15:50:45.50:- slave "slave3" finished execution; reading results.
+   15:50:45.71:- slave "slave4" finished execution; reading results.
+   15:50:45.89:- slave "slave5" finished execution; reading results.
+   15:50:46.09:- slave "slave6" finished execution; reading results.
+   15:50:46.36:- slave "slave8" finished execution; reading results.
+   15:50:46.54:- slave "slave9" finished execution; reading results.
+   15:50:46.74:- slave "slave10" finished execution; reading results.
+   15:50:48.61:- slave "slave7" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   15:50:48.77:- slave "slave0" commencing model run.
+   15:50:48.78:- slave "slave1" commencing model run.
+   15:50:48.80:- slave "slave2" commencing model run.
+   15:50:48.81:- slave "slave3" commencing model run.
+   15:50:48.82:- slave "slave7" commencing model run.
+   15:50:48.83:- slave "slave4" commencing model run.
+   15:50:48.85:- slave "slave5" commencing model run.
+   15:50:48.86:- slave "slave6" commencing model run.
+   15:50:48.87:- slave "slave8" commencing model run.
+   15:50:48.88:- slave "slave9" commencing model run.
+   15:50:48.89:- slave "slave10" commencing model run.
+   15:50:52.67:- slave "slave10" finished execution; reading results.
+   15:50:52.97:- slave "slave0" finished execution; reading results.
+   15:50:53.15:- slave "slave1" finished execution; reading results.
+   15:50:53.33:- slave "slave2" finished execution; reading results.
+   15:50:53.53:- slave "slave3" finished execution; reading results.
+   15:50:53.72:- slave "slave4" finished execution; reading results.
+   15:50:53.96:- slave "slave5" finished execution; reading results.
+   15:50:54.11:- slave "slave6" finished execution; reading results.
+   15:50:54.28:- slave "slave7" finished execution; reading results.
+   15:50:54.46:- slave "slave8" finished execution; reading results.
+   15:50:54.64:- slave "slave9" finished execution; reading results.
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+
+ Calculating Jacobian matrix: running model 24 times .....
+   15:50:54.84:- slave "slave0" commencing model run.
+   15:50:54.87:- slave "slave1" commencing model run.
+   15:50:54.88:- slave "slave2" commencing model run.
+   15:50:54.89:- slave "slave10" commencing model run.
+   15:50:54.90:- slave "slave3" commencing model run.
+   15:50:54.91:- slave "slave4" commencing model run.
+   15:50:54.92:- slave "slave5" commencing model run.
+   15:50:54.93:- slave "slave6" commencing model run.
+   15:50:54.94:- slave "slave7" commencing model run.
+   15:50:54.95:- slave "slave8" commencing model run.
+   15:50:54.96:- slave "slave9" commencing model run.
+   15:50:58.71:- slave "slave6" finished execution; reading results.
+   15:50:58.78:- slave "slave6" commencing model run.
+   15:50:58.97:- slave "slave5" finished execution; reading results.
+   15:50:59.07:- slave "slave5" commencing model run.
+   15:50:59.11:- slave "slave1" finished execution; reading results.
+   15:50:59.19:- slave "slave1" commencing model run.
+   15:50:59.25:- slave "slave3" finished execution; reading results.
+   15:50:59.33:- slave "slave3" commencing model run.
+   15:50:59.40:- slave "slave0" finished execution; reading results.
+   15:50:59.47:- slave "slave0" commencing model run.
+   15:50:59.53:- slave "slave2" finished execution; reading results.
+   15:50:59.61:- slave "slave2" commencing model run.
+   15:50:59.67:- slave "slave4" finished execution; reading results.
+   15:50:59.75:- slave "slave4" commencing model run.
+   15:50:59.80:- slave "slave7" finished execution; reading results.
+   15:50:59.88:- slave "slave7" commencing model run.
+   15:50:59.94:- slave "slave8" finished execution; reading results.
+   15:51: 0.03:- slave "slave8" commencing model run.
+   15:51: 0.07:- slave "slave9" finished execution; reading results.
+   15:51: 0.14:- slave "slave9" commencing model run.
+   15:51: 0.18:- slave "slave10" finished execution; reading results.
+   15:51: 0.26:- slave "slave10" commencing model run.
+   15:51: 2.51:- slave "slave6" finished execution; reading results.
+   15:51: 2.58:- slave "slave6" commencing model run.
+   15:51: 2.75:- slave "slave5" finished execution; reading results.
+   15:51: 2.84:- slave "slave5" commencing model run.
+   15:51: 2.89:- slave "slave1" finished execution; reading results.
+   15:51: 3.05:- slave "slave3" finished execution; reading results.
+   15:51: 3.20:- slave "slave0" finished execution; reading results.
+   15:51: 3.33:- slave "slave2" finished execution; reading results.
+   15:51: 3.47:- slave "slave7" finished execution; reading results.
+   15:51: 3.57:- slave "slave4" finished execution; reading results.
+   15:51: 3.80:- slave "slave9" finished execution; reading results.
+   15:51: 3.92:- slave "slave10" finished execution; reading results.
+   15:51: 4.09:- slave "slave8" finished execution; reading results.
+   15:51: 6.26:- slave "slave6" finished execution; reading results.
+   15:51: 6.45:- slave "slave5" finished execution; reading results.
+
+ Testing parameter upgrades .....
+   15:51: 6.55:- slave "slave2" commencing model run.
+   15:51: 6.57:- slave "slave5" commencing model run.
+   15:51: 6.58:- slave "slave6" commencing model run.
+   15:51: 6.60:- slave "slave7" commencing model run.
+   15:51: 6.61:- slave "slave0" commencing model run.
+   15:51: 6.62:- slave "slave1" commencing model run.
+   15:51: 6.63:- slave "slave3" commencing model run.
+   15:51: 6.64:- slave "slave4" commencing model run.
+   15:51: 6.65:- slave "slave8" commencing model run.
+   15:51: 6.66:- slave "slave9" commencing model run.
+   15:51: 6.67:- slave "slave10" commencing model run.
+   15:51:10.27:- slave "slave6" finished execution; reading results.
+   15:51:10.41:- slave "slave7" finished execution; reading results.
+   15:51:10.55:- slave "slave8" finished execution; reading results.
+   15:51:10.66:- slave "slave9" finished execution; reading results.
+   15:51:10.81:- slave "slave10" finished execution; reading results.
+   15:51:10.94:- slave "slave0" finished execution; reading results.
+   15:51:11.08:- slave "slave1" finished execution; reading results.
+   15:51:11.19:- slave "slave2" finished execution; reading results.
+   15:51:11.29:- slave "slave3" finished execution; reading results.
+   15:51:11.40:- slave "slave4" finished execution; reading results.
+   15:51:11.50:- slave "slave5" finished execution; reading results.

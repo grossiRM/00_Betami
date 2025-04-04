@@ -1,0 +1,516 @@
+ RECORD OF SVD CALCULATIONS: CASE aassist
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    1
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.00     ----->
+
+ SINGULAR VALUES:-
+   22.89505       11.54488       6.824313       5.304788       4.257610       2.515072       2.337539    
+   2.148852       2.134386       2.069907       1.989082       1.874480    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.500     ----->
+
+ SINGULAR VALUES:-
+   22.42632       11.07615       6.355588       4.836062       3.788885       2.046347       1.868814    
+   1.680127       1.665660       1.601182       1.520357       1.405755    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.00     ----->
+
+ SINGULAR VALUES:-
+   23.83250       12.48233       7.761764       6.242238       5.195060       3.452522       3.274989    
+   3.086303       3.071836       3.007358       2.926533       2.811931    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.250     ----->
+
+ SINGULAR VALUES:-
+   22.19196       10.84179       6.121226       4.601700       3.554522       1.811984       1.634451    
+   1.445765       1.431298       1.366820       1.285994       1.171392    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.125     ----->
+
+ SINGULAR VALUES:-
+   22.07478       10.72461       6.004044       4.484518       3.437341       1.694803       1.517270    
+   1.328583       1.314116       1.249638       1.168813       1.054211    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     4.00     ----->
+
+ SINGULAR VALUES:-
+   25.70740       14.35723       9.636665       8.117139       7.069961       5.327423       5.149890    
+   4.961204       4.946737       4.882259       4.801434       4.686832    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    6.250E-02 ----->
+
+ SINGULAR VALUES:-
+   22.01619       10.66602       5.945454       4.425928       3.378750       1.636212       1.458679    
+   1.269993       1.255526       1.191048       1.110223      0.9956204    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.125E-02 ----->
+
+ SINGULAR VALUES:-
+   21.98689       10.63672       5.916158       4.396632       3.349455       1.606917       1.429384    
+   1.240697       1.226230       1.161752       1.080927      0.9663251    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     8.00     ----->
+
+ SINGULAR VALUES:-
+   29.45720       18.10703       13.38647       11.86694       10.81976       9.077225       8.899692    
+   8.711006       8.696539       8.632061       8.551235       8.436633    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.563E-02 ----->
+
+ SINGULAR VALUES:-
+   21.97225       10.62208       5.901511       4.381985       3.334807       1.592269       1.414736    
+   1.226050       1.211583       1.147105       1.066280      0.9516774    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    7.813E-03 ----->
+
+ SINGULAR VALUES:-
+   21.96492       10.61475       5.894187       4.374661       3.327483       1.584945       1.407412    
+   1.218726       1.204259       1.139781       1.058956      0.9443536    
+
+ Number of singular values used in solution = 12
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    2
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.250     ----->
+
+ SINGULAR VALUES:-
+   42.71795       20.09394       10.54495       4.065022       3.701204       1.708193       1.455801    
+   1.210534      0.9774280      0.8066899      0.7076605      0.6176540    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.125     ----->
+
+ SINGULAR VALUES:-
+   42.64603       20.02202       10.47303       3.993106       3.629289       1.636277       1.383885    
+   1.138618      0.9055123      0.7347742      0.6357448      0.5457383    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.500     ----->
+
+ SINGULAR VALUES:-
+   42.86178       20.23777       10.68878       4.208853       3.845036       1.852024       1.599632    
+   1.354365       1.121259      0.9505214      0.8514920      0.7614854    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    6.250E-02 ----->
+
+ SINGULAR VALUES:-
+   42.61007       19.98606       10.43707       3.957148       3.593331       1.600319       1.347927    
+   1.102660      0.8695545      0.6988163      0.5997870      0.5097804    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.125E-02 ----->
+
+ SINGULAR VALUES:-
+   42.59210       19.96808       10.41909       3.939169       3.575352       1.582340       1.329948    
+   1.084681      0.8515755      0.6808374      0.5818080      0.4918015    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.00     ----->
+
+ SINGULAR VALUES:-
+   43.14944       20.52543       10.97644       4.496516       4.132699       2.139687       1.887295    
+   1.642028       1.408922       1.238184       1.139155       1.049148    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.563E-02 ----->
+
+ SINGULAR VALUES:-
+   42.58311       19.95909       10.41010       3.930180       3.566362       1.573351       1.320959    
+   1.075692      0.8425861      0.6718479      0.5728186      0.4828120    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    7.813E-03 ----->
+
+ SINGULAR VALUES:-
+   42.57861       19.95460       10.40561       3.925685       3.561868       1.568856       1.316464    
+   1.071197      0.8380913      0.6673532      0.5683238      0.4783173    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.00     ----->
+
+ SINGULAR VALUES:-
+   43.72477       21.10076       11.55177       5.071842       4.708025       2.715013       2.462621    
+   2.217354       1.984248       1.813510       1.714481       1.624474    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.906E-03 ----->
+
+ SINGULAR VALUES:-
+   42.57636       19.95235       10.40336       3.923438       3.559620       1.566609       1.314217    
+   1.068949      0.8358440      0.6651058      0.5660765      0.4760699    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-03 ----->
+
+ SINGULAR VALUES:-
+   42.57524       19.95123       10.40224       3.922314       3.558497       1.565485       1.313093    
+   1.067826      0.8347203      0.6639821      0.5649528      0.4749462    
+
+ Number of singular values used in solution = 12
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    3
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.500     ----->
+
+ SINGULAR VALUES:-
+   33.71508       18.82546       8.399100       4.392657       3.387301       1.871196       1.161701    
+  0.9932381      0.9671176      0.6327435      0.5715847      0.4551177    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.250     ----->
+
+ SINGULAR VALUES:-
+   33.61950       18.72987       8.303513       4.297070       3.291713       1.775609       1.066113    
+  0.8976510      0.8715305      0.5371564      0.4759976      0.3595307    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.00     ----->
+
+ SINGULAR VALUES:-
+   33.90626       19.01663       8.590274       4.583831       3.578475       2.062370       1.352875    
+   1.184412       1.158292      0.8239176      0.7627588      0.6462919    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.125     ----->
+
+ SINGULAR VALUES:-
+   33.57170       18.68208       8.255719       4.249277       3.243920       1.727815       1.018320    
+  0.8498575      0.8237370      0.4893629      0.4282041      0.3117371    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    6.250E-02 ----->
+
+ SINGULAR VALUES:-
+   33.54781       18.65818       8.231822       4.225380       3.220023       1.703919      0.9944232    
+  0.8259607      0.7998402      0.4654661      0.4043073      0.2878404    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.00     ----->
+
+ SINGULAR VALUES:-
+   34.28861       19.39898       8.972622       4.966180       3.960823       2.444718       1.735223    
+   1.566761       1.540640       1.206266       1.145107       1.028640    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.125E-02 ----->
+
+ SINGULAR VALUES:-
+   33.53586       18.64623       8.219874       4.213431       3.208075       1.691970      0.9824748    
+  0.8140123      0.7878918      0.4535177      0.3923590      0.2758920    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.563E-02 ----->
+
+ SINGULAR VALUES:-
+   33.52988       18.64026       8.213900       4.207457       3.202101       1.685996      0.9765006    
+  0.8080382      0.7819176      0.4475435      0.3863848      0.2699178    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     4.00     ----->
+
+ SINGULAR VALUES:-
+   35.05330       20.16368       9.737319       5.730876       4.725519       3.209415       2.499920    
+   2.331457       2.305337       1.970962       1.909804       1.793337    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    7.813E-03 ----->
+
+ SINGULAR VALUES:-
+   33.52690       18.63727       8.210913       4.204470       3.199113       1.683009      0.9735135    
+  0.8050511      0.7789305      0.4445564      0.3833977      0.2669307    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.906E-03 ----->
+
+ SINGULAR VALUES:-
+   33.52540       18.63578       8.209419       4.202977       3.197620       1.681515      0.9720199    
+  0.8035575      0.7774370      0.4430629      0.3819041      0.2654371    
+
+ Number of singular values used in solution = 12
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    4
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.125     ----->
+
+ SINGULAR VALUES:-
+   34.04053       17.29216       8.014003       4.107795       3.180512       1.703399      0.9881611    
+  0.7994081      0.7292973      0.4361103      0.3231348      0.1994678    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    4.419E-02 ----->
+
+ SINGULAR VALUES:-
+   34.01680       17.26843       7.990266       4.084058       3.156775       1.679662      0.9644246    
+  0.7756716      0.7055607      0.4123738      0.2993983      0.1757313    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.354     ----->
+
+ SINGULAR VALUES:-
+   34.10767       17.35930       8.081140       4.174932       3.247649       1.770536       1.055298    
+  0.8665451      0.7964342      0.5032473      0.3902718      0.2666048    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.562E-02 ----->
+
+ SINGULAR VALUES:-
+   34.00840       17.26003       7.981874       4.075666       3.148383       1.671270      0.9560325    
+  0.7672795      0.6971686      0.4039817      0.2910061      0.1673392    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    5.524E-03 ----->
+
+ SINGULAR VALUES:-
+   34.00544       17.25707       7.978907       4.072699       3.145416       1.668303      0.9530654    
+  0.7643124      0.6942016      0.4010146      0.2880391      0.1643721    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.00     ----->
+
+ SINGULAR VALUES:-
+   34.29756       17.54919       8.271032       4.364824       3.437541       1.960428       1.245190    
+   1.056437      0.9863263      0.6931394      0.5801639      0.4564969    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-03 ----->
+
+ SINGULAR VALUES:-
+   34.00439       17.25602       7.977858       4.071650       3.144367       1.667254      0.9520164    
+  0.7632634      0.6931525      0.3999656      0.2869901      0.1633231    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    6.905E-04 ----->
+
+ SINGULAR VALUES:-
+   34.00402       17.25565       7.977487       4.071279       3.143996       1.666883      0.9516455    
+  0.7628925      0.6927817      0.3995947      0.2866192      0.1629522    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.83     ----->
+
+ SINGULAR VALUES:-
+   34.83466       18.08629       8.808128       4.901920       3.974637       2.497524       1.782286    
+   1.593533       1.523422       1.230235       1.117260      0.9935928    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    2.441E-04 ----->
+
+ SINGULAR VALUES:-
+   34.00389       17.25552       7.977356       4.071148       3.143865       1.666752      0.9515144    
+  0.7627614      0.6926505      0.3994636      0.2864881      0.1628211    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    8.632E-05 ----->
+
+ SINGULAR VALUES:-
+   34.00384       17.25547       7.977309       4.071102       3.143819       1.666705      0.9514680    
+  0.7627151      0.6926042      0.3994172      0.2864417      0.1627747    
+
+ Number of singular values used in solution = 12
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    5
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.125     ----->
+
+ SINGULAR VALUES:-
+   33.73066       17.59011       8.078990       4.110865       3.227006       1.723412      0.9886501    
+  0.8059591      0.7509104      0.4505939      0.2797055      0.1776578    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    4.419E-02 ----->
+
+ SINGULAR VALUES:-
+   33.70836       17.56780       8.056687       4.088562       3.204703       1.701109      0.9663467    
+  0.7836556      0.7286069      0.4282905      0.2574021      0.1553544    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.354     ----->
+
+ SINGULAR VALUES:-
+   33.79375       17.65319       8.142074       4.173949       3.290090       1.786496       1.051734    
+  0.8690428      0.8139941      0.5136776      0.3427893      0.2407416    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.562E-02 ----->
+
+ SINGULAR VALUES:-
+   33.70047       17.55992       8.048801       4.080676       3.196817       1.693223      0.9584612    
+  0.7757701      0.7207214      0.4204050      0.2495166      0.1474689    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    5.524E-03 ----->
+
+ SINGULAR VALUES:-
+   33.69769       17.55713       8.046013       4.077889       3.194029       1.690435      0.9556733    
+  0.7729822      0.7179335      0.4176171      0.2467287      0.1446810    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.00     ----->
+
+ SINGULAR VALUES:-
+   33.97217       17.83162       8.320502       4.352377       3.468517       1.964924       1.230162    
+   1.047470      0.9924218      0.6921053      0.5212170      0.4191693    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-03 ----->
+
+ SINGULAR VALUES:-
+   33.69670       17.55614       8.045028       4.076903       3.193043       1.689450      0.9546876    
+  0.7719965      0.7169478      0.4166314      0.2457430      0.1436953    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    6.905E-04 ----->
+
+ SINGULAR VALUES:-
+   33.69635       17.55580       8.044679       4.076554       3.192695       1.689101      0.9543391    
+  0.7716480      0.7165993      0.4162829      0.2453945      0.1433468    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.83     ----->
+
+ SINGULAR VALUES:-
+   34.47684       18.33629       8.825171       4.857047       3.973187       2.469593       1.734831    
+   1.552140       1.497092       1.196775       1.025887      0.9238390    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    2.441E-04 ----->
+
+ SINGULAR VALUES:-
+   33.69623       17.55567       8.044556       4.076431       3.192572       1.688978      0.9542159    
+  0.7715248      0.7164761      0.4161597      0.2452713      0.1432236    
+
+ Number of singular values used in solution = 12
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    8.632E-05 ----->
+
+ SINGULAR VALUES:-
+   33.69618       17.55563       8.044512       4.076388       3.192528       1.688934      0.9541723    
+  0.7714812      0.7164326      0.4161161      0.2452277      0.1431800    
+
+ Number of singular values used in solution = 12

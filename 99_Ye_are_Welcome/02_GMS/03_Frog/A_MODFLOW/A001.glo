@@ -1,0 +1,3088 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.19.01 03/25/2010
+
+
+ This model run produced both GLOBAL and LIST files.  This is the GLOBAL file.
+
+ GLOBAL LISTING FILE: "A001.glo"
+                         UNIT  701
+
+ OPENING "A001.out"
+ FILE TYPE:LIST   UNIT  702   STATUS:REPLACE
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.hed"
+ FILE TYPE:DATA(BINARY)   UNIT  730   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "A001.ccf"
+ FILE TYPE:DATA(BINARY)   UNIT  740   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING "A001.lmt"
+ FILE TYPE:LMT6   UNIT  718   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Obs-Sen-Pes Process Input Files                                                                                                                                                                       
+
+ OPENING "A001.obs"
+ FILE TYPE:OBS   UNIT  750   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.hob"
+ FILE TYPE:HOB   UNIT  751   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.gbob"
+ FILE TYPE:GBOB   UNIT  753   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.drob"
+ FILE TYPE:DROB   UNIT  754   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.chob"
+ FILE TYPE:CHOB   UNIT  755   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.stob"
+ FILE TYPE:STOB   UNIT  756   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING A001.snn_1
+ FILE TYPE:SEN   UNIT  757   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#PES          758 "A001.pes"                                                                                                                                                                            
+#ASP          771 "A001.asp"                                                                                                                                                                            
+#                                                                                                                                                                                                       
+# Global Input Files                                                                                                                                                                                    
+
+ OPENING "A001.dis"
+ FILE TYPE:DIS   UNIT  719   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.mlt"
+ FILE TYPE:MULT   UNIT  721   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+#                                                                                                                                                                                                       
+# Flow Process Input Files                                                                                                                                                                              
+
+ OPENING "A001.ba6"
+ FILE TYPE:BAS6   UNIT  703   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.huf"
+ FILE TYPE:HUF2   UNIT  704   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.oc"
+ FILE TYPE:OC   UNIT  715   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.rch"
+ FILE TYPE:RCH   UNIT  716   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.drn"
+ FILE TYPE:DRN   UNIT  710   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.ghb"
+ FILE TYPE:GHB   UNIT  711   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.evt"
+ FILE TYPE:EVT   UNIT  712   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.str"
+ FILE TYPE:STR   UNIT  717   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.chd"
+ FILE TYPE:CHD   UNIT  713   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING "A001.pcg"
+ FILE TYPE:PCG   UNIT  714   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+# ASP data                                                                                                                                                                                              
+
+ FILE TYPE:ASP: FILE = A001.asp_1
+
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT  719
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+    5 LAYERS        50 ROWS        50 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+ THE GROUND-WATER TRANSPORT PROCESS IS INACTIVE
+
+ THE OBSERVATION PROCESS IS ACTIVE
+ THE SENSITIVITY PROCESS IS ACTIVE
+ THE PARAMETER-ESTIMATION PROCESS IS INACTIVE
+
+ MODE: FORWARD WITH OBSERVATIONS AND PARAMETER-VALUE SUBSTITUTION
+
+
+ MULTIPLIER OPTION, INPUT READ FROM UNIT  721
+  12 MULTIPLIER ARRAYS
+  Confining bed flag for each layer:
+   0   0   0   0   0
+
+     142600  ELEMENTS OF GX ARRAY USED OUT OF     142600
+      12500  ELEMENTS OF GZ ARRAY USED OUT OF      12500
+      12500  ELEMENTS OF IG ARRAY USED OUT OF      12500
+
+ -------------------------------------------------------------------------------
+
+ VARIABLES READ FROM ASP INPUT FILE:-
+
+ NOSTOP = 1          : DO NOT CEASE EXECUTION IF MODFLOW FAILS TO CONVERGE.
+ HYDRYBOT = 1        : ASSIGN CELL BOTTOM ELEVATION TO HEAD IN DRY CELLS.
+ MINTHICK =     0.000: DO NOT PREVENT BASAL CELLS DRYING OUT.
+ LIMOP = 0           : NO LIMITATIONS ON OBSERVATION OR SENSITIVITY OUTPUT.
+
+ -------------------------------------------------------------------------------
+
+
+
+
+                               DELR
+ READING ON UNIT  719 WITH FORMAT: (FREE)              
+
+
+
+                               DELC
+ READING ON UNIT  719 WITH FORMAT: (FREE)              
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+
+ HUF2 -- HYDROGEOLOGIC-UNIT FLOW PACKAGE, VERSION 2.0, 07/02/2003
+ INPUT READ FROM UNIT704
+
+ # Generated by GMS 10.0.11 (64-bit)
+ # GMS_HGU_MAT_NUMUNITS 15
+ # GMS_HGU_MAT unit_1 8
+ # GMS_HGU_MAT unit_2 6
+ # GMS_HGU_MAT unit_11 2
+ # GMS_HGU_MAT unit_12 8
+ # GMS_HGU_MAT unit_13 7
+ # GMS_HGU_MAT unit_14 6
+ # GMS_HGU_MAT unit_15 2
+ # GMS_HGU_MAT unit_3 7
+ # GMS_HGU_MAT unit_4 8
+ # GMS_HGU_MAT unit_5 2
+ # GMS_HGU_MAT unit_6 2
+ # GMS_HGU_MAT unit_7 6
+ # GMS_HGU_MAT unit_8 7
+ # GMS_HGU_MAT unit_9 7
+ # GMS_HGU_MAT unit_10 2
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT740
+ HEAD AT CELLS THAT CONVERT TO DRY=  -888.00    
+ Hydrogeologic-Unit Flow Package Active with  15 units and  12 parameters
+
+ IOHUFFLWS NOT FOUND AND WILL BE SET TO BE ZERO
+
+    12 Named Parameters     
+ STEADY-STATE SIMULATION
+
+   INTERPRETATION OF LAYER FLAGS:
+ LAYER     LTHUF    LAYER TYPE     LAYWT WETTABILITY
+ ---------------------------------------------------------------------------
+    1         1   CONVERTIBLE         1      WETTABLE
+    2         2   CONVERTIBLE         2      WETTABLE
+    3         3   CONVERTIBLE         3      WETTABLE
+    4         4   CONVERTIBLE         4      WETTABLE
+    5         5   CONVERTIBLE         5      WETTABLE
+
+     162500 ELEMENTS IN X ARRAY ARE USED BY HUF
+         75 ELEMENTS IN IX ARRAY ARE USED BY HUF
+
+ PCG2 -- CONJUGATE GRADIENT SOLUTION PACKAGE, VERSION 2.4, 12/29/98
+ MAXIMUM OF     15 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+      26500 ELEMENTS IN X ARRAY ARE USED BY PCG
+       5250 ELEMENTS IN IX ARRAY ARE USED BY PCG
+      50000 ELEMENTS IN Z ARRAY ARE USED BY PCG
+
+ SEN1BAS6 -- SENSITIVITY PROCESS, VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT  757
+
+ NUMBER OF PARAMETER VALUES TO BE READ FROM SEN FILE:  156
+ ISENALL............................................:   -1
+ SENSITIVITY PROCESS HAS BEEN DEACTIVATED BECAUSE ISENALL<0
+
+      13593 ELEMENTS IN X ARRAY ARE USED FOR SENSITIVITIES
+      12500 ELEMENTS IN Z ARRAY ARE USED FOR SENSITIVITIES
+        312 ELEMENTS IN IX ARRAY ARE USED FOR SENSITIVITIES
+
+ OBS1BAS6 -- OBSERVATION PROCESS, VERSION 1.0, 4/27/99
+ INPUT READ FROM UNIT 750
+ OBSERVATION GRAPH-DATA OUTPUT FILES
+ WILL BE PRINTED AND NAMED USING THE BASE: A001
+
+ HEAD OBSERVATIONS -- INPUT READ FROM UNIT 751
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 1, 1573.28, 1465.81 ts_0 hed1
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 2, 2053.93, 8794.06 ts_0 hed2
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 3, 1320.75, 3418.55 ts_0 hed3
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 4, 2439.64, 3853.6 ts_0 hed4
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 5, 3502.49, 2209.4 ts_0 hed5
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 6, 4522.67, 3089.93 ts_0 hed6
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 7, 4463.68, 1768.35 ts_0 hed7
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 8, 4463.68, 1768.35 ts_0 hed8
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 9, 4072.36, 4092.39 ts_0 hed9
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 10, 5632.58, 9235.53 ts_0 hed10
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 11, 6422.39, 8616.94 ts_0 hed11
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 12, 7049.01, 7062.76 ts_0 hed12
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 13, 6793.1, 1729.74 ts_0 hed13
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 14, 7816.25, 5899.05 ts_0 hed14
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 15, 8300.41, 7956.62 ts_0 hed15
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 16, 8128.9355084217, 8858.6957179473 ts_0 hed16
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 17, 8065.3, 5172.5 ts_0 hed17
+ #GMSCOMMENT e7dafabf-cf9f-4334-a15a-80334dd15c71 POINT 18, 7365.3, 4972.5 ts_0 hed18
+
+ NUMBER OF HEADS....................................:   18
+   NUMBER OF MULTILAYER HEADS.......................:    0
+   MAXIMUM NUMBER OF LAYERS FOR MULTILAYER HEADS....:    5
+
+ OBS1DRN6 -- OBSERVATION PROCESS (DRAIN FLOW OBSERVATIONS)
+ VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT  754
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 1 9441.8786421512 7850.9653663971 1.0 drnf0
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 10 8665.5609122369 5449.3078169354 1.0 drnf1
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 11 8754.1999284166 5845.594555227 1.0 drnf2
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 12 8661.6041076626 5013.7330488935 1.0 drnf3
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 13 8648.2766465478 4517.3071967267 1.0 drnf4
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 14 8592.6140889122 4135.4262596689 1.0 drnf5
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 15 8463.5516739563 3382.0377782426 1.0 drnf6
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 16 8505.5058253673 3799.3227308487 1.0 drnf7
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 17 8378.1439530368 3052.3341009202 1.0 drnf8
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 18 8213.1241360499 2683.0603053635 1.0 drnf9
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 19 8011.9615209157 2209.5976917376 1.0 drnf10
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 2 9446.4588094764 7368.4208264562 1.0 drnf11
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 20 7806.4379127956 1802.1495592482 1.0 drnf12
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 21 7699.8690747439 446.5653366595 1.0 drnf13
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 22 7701.4185512006 880.82100647396 1.0 drnf14
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 23 7706.5153346586 1377.5052116045 1.0 drnf15
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 3 9317.097857898 6964.7237062393 1.0 drnf16
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 4 9273.257238781 9159.4781189738 1.0 drnf17
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 5 9389.603947553 9614.2164663684 1.0 drnf18
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 6 9240.7266443216 8685.2290146002 1.0 drnf19
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 7 9336.5077253335 8319.9282502608 1.0 drnf20
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 8 9207.63375179 6648.4946373112 1.0 drnf21
+ #GMSCOMMENT 83a6a6a4-c117-4ff1-a155-0c6db338b1e9 POLY 9 9010.1307251567 6261.9601696876 1.0 drnf22
+
+ NUMBER OF FLOW-OBSERVATION DRAIN-CELL GROUPS.....:     23
+   NUMBER OF CELLS IN DRAIN-CELL GROUPS...........:    175
+   NUMBER OF DRAIN-CELL FLOWS.....................:     23
+
+ OBS1GHB6 -- OBSERVATION PROCESS (GENERAL HEAD BOUNDARY FLOW OBSERVATIONS)
+ VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT  753
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 10 5135.6501491474 9670.1723592943 1.0 ghbf0
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 11 5878.5141469255 9672.4651494109 1.0 ghbf1
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 12 6625.9637249368 9681.6363098773 1.0 ghbf2
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 13 7410.0979448136 9690.8074703437 1.0 ghbf3
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 14 8196.5249548071 9697.6858406935 1.0 ghbf4
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 15 8883.2427842156 9697.5169619414 1.0 ghbf5
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 22 879.72425723537 318.69186045393 1.0 ghbf6
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 23 1641.2864233179 322.38161430366 1.0 ghbf7
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 24 2405.8207999129 325.87263885433 1.0 ghbf8
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 25 3100.5346854946 315.39956520234 1.0 ghbf9
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 26 3676.5537363539 308.41751610102 1.0 ghbf10
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 27 4242.0997135611 311.90854065168 1.0 ghbf11
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 28 4814.6277398697 315.39956520234 1.0 ghbf12
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 29 5481.4134290461 322.38161430366 1.0 ghbf13
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 30 6245.9478056411 325.87263885433 1.0 ghbf14
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 31 7029.7644048299 314.3938261266 1.0 ghbf15
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 5 875.89132351675 9698.5681782972 1.0 ghbf16
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 6 1663.6615635928 9694.0673042176 1.0 ghbf17
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 7 2518.1832364493 9675.5445409882 1.0 ghbf18
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 8 3467.4841330301 9664.5591273541 1.0 ghbf19
+ #GMSCOMMENT 3689debb-0f01-404d-8a37-155443ff0163 ARC 9 4351.5159292705 9667.8795691777 1.0 ghbf20
+
+ NUMBER OF FLOW-OBSERVATION GENERAL-HEAD-CELL GROUPS:     21
+   NUMBER OF CELLS IN GENERAL-HEAD-CELL GROUPS......:    510
+   NUMBER OF GENERAL-HEAD-CELL FLOWS................:     21
+
+ OBS1STR6 -- OBSERVATION PROCESS (STREAMFLOW-ROUTING FLOW OBSERVATIONS)
+ VERSION 1.0, 10/15/98
+ INPUT READ FROM UNIT  756
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 10 4518.2031848371 5274.2466703314 1.0 strf0
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 11 4947.2634549374 5121.9522399886 1.0 strf1
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 12 5513.9744601552 4801.2553145553 1.0 strf2
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 13 6022.1106844719 4812.9702707355 1.0 strf3
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 14 6204.9361244827 5218.2585849135 1.0 strf4
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 15 6323.7802881327 5163.747453765 1.0 strf5
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 16 6440.8741391194 4932.5621582273 1.0 strf6
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 17 6565.9744072675 4754.4193763843 1.0 strf7
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 18 6755.1260127075 4804.4594836436 1.0 strf8
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 19 6936.2712009859 4929.5597517917 1.0 strf9
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 20 7134.4300257326 4955.5806075665 1.0 strf10
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 21 7362.4517740834 4935.6787184415 1.0 strf11
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 22 7616.094779795 4931.4038105145 1.0 strf12
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 23 7858.9573044333 4914.5090261919 1.0 strf13
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 24 8183.9185893057 4904.5686443723 1.0 strf14
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 25 1562.26626143 4334.686967102 1.0 strf15
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 26 2050.374550232 4359.5603849824 1.0 strf16
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 27 2493.4461022868 4493.780757429 1.0 strf17
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 28 2939.4041139642 4607.795912518 1.0 strf18
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 29 3449.6817216925 4547.3391008863 1.0 strf19
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 30 3992.1146108141 4448.4319772723 1.0 strf20
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 31 4525.0612435523 4367.9230178586 1.0 strf21
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 32 5004.7132130166 4454.1016223014 1.0 strf22
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 33 5386.84728798 4624.1909731753 1.0 strf23
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 4 1559.6367338825 5879.856118497 1.0 strf24
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 5 1880.020897286 5813.9195360551 1.0 strf25
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 6 2207.1677870937 5717.5506847939 1.0 strf26
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 7 2523.3252464945 5551.0185470881 1.0 strf27
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 8 3078.231666375 5359.974193275 1.0 strf28
+ #GMSCOMMENT a4955ecc-548c-4b5b-9d20-59c252cfb6fc ARC 9 3901.4306159512 5407.2769880439 1.0 strf29
+
+ NUMBER OF FLOW-OBSERVATION STREAM-REACH GROUPS...:     30
+   NUMBER OF CELLS IN STREAM-REACH GROUPS.........:    109
+   NUMBER OF STREAM-REACH FLOWS...................:     30
+
+ OBS1BAS6F -- OBSERVATION PROCESS (CONSTANT-HEAD BOUNDARY FLOW OBSERVATIONS)
+ VERSION 1.0, 12/03/99
+ INPUT READ FROM UNIT 755
+ #           CoverageGUID ObjectType ID X Y Time OBNAME
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 10 362.7076697759 6234.8481640641 1.0 chdf0
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 11 347.43238893091 5836.5794166545 1.0 chdf1
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 12 343.16000589155 5396.5239635997 1.0 chdf2
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 13 348.8565166107 4946.4996167863 1.0 chdf3
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 14 336.92225144361 4551.6968658754 1.0 chdf4
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 15 318.14310230139 4125.2497335365 1.0 chdf5
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 16 314.8563063415 3676.8330683569 1.0 chdf6
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 17 314.22963731665 3258.8457733759 1.0 chdf7
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 18 316.61998767652 2839.5110488668 1.0 chdf8
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 19 315.80890799761 2423.0378291276 1.0 chdf9
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 20 314.38840846167 2001.4566961574 1.0 chdf10
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 21 317.36892262827 1509.0543856094 1.0 chdf11
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 22 318.00415071069 999.02888212442 1.0 chdf12
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 23 316.9897352 559.79529059103 1.0 chdf13
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 3 360.04511078623 9427.3275229243 1.0 chdf14
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 4 364.60026305133 8967.2571441496 1.0 chdf15
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 5 355.48995852113 8482.1334279168 1.0 chdf16
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 6 348.65723012349 8049.3939627327 1.0 chdf17
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 7 350.93480625604 7596.1563123556 1.0 chdf18
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 8 353.21238238858 7099.6447154601 1.0 chdf19
+ #GMSCOMMENT 8717f744-f0a8-4a97-b3ed-2b392430b3b6 ARC 9 364.60026305133 6644.1294889505 1.0 chdf20
+
+ NUMBER OF FLOW-OBSERVATION CONSTANT-HEAD-CELL GROUPS:   21
+   NUMBER OF CELLS IN CONSTANT-HEAD-CELL GROUPS......:  350
+   NUMBER OF CONSTANT-HEAD-CELL FLOWS................:   21
+
+      78739 ELEMENTS IN X ARRAY ARE USED FOR OBSERVATIONS
+       9312 ELEMENTS IN Z ARRAY ARE USED FOR OBSERVATIONS
+        943 ELEMENTS IN IX ARRAY ARE USED FOR OBSERVATIONS
+
+ COMMON ERROR VARIANCE FOR ALL OBSERVATIONS SET TO:       1.000    
+
+     281332  ELEMENTS OF X ARRAY USED OUT OF     281332
+      71812  ELEMENTS OF Z ARRAY USED OUT OF      71812
+       6580  ELEMENTS OF IX ARRAY USED OUT OF       6580
+          0  ELEMENTS OF XHS ARRAY USED OUT OF          1
+
+ INFORMATION ON PARAMETERS LISTED IN SEN FILE
+                                         LOWER         UPPER       ALTERNATE
+                        VALUE IN SEN   REASONABLE    REASONABLE     SCALING
+    NAME     ISENS  LN   INPUT FILE      LIMIT         LIMIT         FACTOR
+ ----------  -----  --  ------------  ------------  ------------  ------------
+ HANI_111      1     0   0.98148       0.49000        1.9600        1.0000    
+ HANI_112      1     0    1.0334       0.52000        2.0700        1.0000    
+ HANI_113      1     0    1.0711       0.54000        2.1400        1.0000    
+ HANI_114      1     0    1.1254       0.56000        2.2500        1.0000    
+ VANI_121      1     0   0.20900E-01   0.10000E-01   0.42000E-01    1.0000    
+ VANI_122      1     0   0.12885E-01   0.60000E-02   0.26000E-01    1.0000    
+ VANI_123      1     0   0.30345E-01   0.15000E-01   0.61000E-01    1.0000    
+ VANI_124      1     0   0.14993       0.75000E-01   0.30000        1.0000    
+ DRN_1401      1     0   0.50638       0.37780       0.75673        1.0000    
+ DRN_1402      1     0   0.71965       0.53776       0.93954        1.0000    
+ DRN_1403      1     0   0.46817       0.34915       0.72398        1.0000    
+ DRN_1404      1     0   0.59232       0.44226       0.83040        1.0000    
+ DRN_1405      1     0   0.60762       0.45373       0.84351        1.0000    
+ DRN_1406      1     0   0.50476       0.37659       0.75535        1.0000    
+ DRN_1407      1     0   0.44964       0.33525       0.70810        1.0000    
+ DRN_1408      1     0   0.53307       0.39782       0.77961        1.0000    
+ DRN_1409      1     0   0.62460       0.46647       0.85807        1.0000    
+ DRN_1410      1     0   0.55460       0.41397       0.79807        1.0000    
+ DRN_1411      1     0   0.50833       0.37927       0.75840        1.0000    
+ DRN_1412      1     0   0.54740       0.40857       0.79190        1.0000    
+ DRN_1413      1     0   0.56280       0.42012       0.80510        1.0000    
+ DRN_1414      1     0   0.44844       0.33435       0.70707        1.0000    
+ DRN_1415      1     0   0.53656       0.40044       0.78260        1.0000    
+ DRN_1416      1     0   0.56156       0.41919       0.80403        1.0000    
+ DRN_1417      1     0   0.66814       0.49913       0.89539        1.0000    
+ DRN_1418      1     0   0.47307       0.35282       0.72818        1.0000    
+ DRN_1419      1     0   0.60232       0.44976       0.83897        1.0000    
+ DRN_1420      1     0   0.51187       0.38192       0.76144        1.0000    
+ DRN_1421      1     0   0.50035       0.37328       0.75157        1.0000    
+ DRN_1422      1     0   0.59749       0.44614       0.83482        1.0000    
+ DRN_1423      1     0   0.49297       0.36775       0.74524        1.0000    
+ GHB_1101      1     1   0.74144E-02   0.66746E-02   0.78527E-02    1.0000    
+ GHB_1102      1     1   0.83996E-02   0.75777E-02   0.88380E-02    1.0000    
+ GHB_1103      1     1   0.75411E-02   0.67907E-02   0.79794E-02    1.0000    
+ GHB_1104      1     1   0.68732E-02   0.61784E-02   0.73115E-02    1.0000    
+ GHB_1105      1     1   0.67527E-02   0.60680E-02   0.71911E-02    1.0000    
+ GHB_1106      1     1   0.63698E-02   0.57170E-02   0.68081E-02    1.0000    
+ GHB_1107      1     1   0.60067E-02   0.53842E-02   0.64451E-02    1.0000    
+ GHB_1108      1     1   0.56850E-02   0.50893E-02   0.61233E-02    1.0000    
+ GHB_1109      1     1   0.53642E-02   0.47953E-02   0.58026E-02    1.0000    
+ GHB_1110      1     1   0.50684E-02   0.45241E-02   0.55068E-02    1.0000    
+ GHB_1111      1     1   0.60728E-02   0.54448E-02   0.65112E-02    1.0000    
+ GHB_1112      1     1   0.71182E-02   0.64030E-02   0.75565E-02    1.0000    
+ GHB_1113      1     1   0.83317E-02   0.75155E-02   0.87701E-02    1.0000    
+ GHB_1114      1     1   0.70181E-02   0.63113E-02   0.74565E-02    1.0000    
+ GHB_1115      1     1   0.85908E-02   0.77529E-02   0.90291E-02    1.0000    
+ GHB_1116      1     1   0.73553E-02   0.66203E-02   0.77936E-02    1.0000    
+ GHB_1117      1     1   0.64696E-02   0.58084E-02   0.69079E-02    1.0000    
+ GHB_1118      1     1   0.78831E-02   0.71042E-02   0.83214E-02    1.0000    
+ GHB_1119      1     1   0.82533E-02   0.74435E-02   0.86916E-02    1.0000    
+ GHB_1120      1     1   0.75797E-02   0.68261E-02   0.80180E-02    1.0000    
+ GHB_1121      1     1   0.54446E-02   0.48689E-02   0.58829E-02    1.0000    
+ STR_1201      1     0    1.2797        1.1735        1.3854        1.0000    
+ STR_1222      1     0    1.2844        1.1779        1.3891        1.0000    
+ STR_1202      1     0   0.99737       0.91475        1.1636        1.0000    
+ STR_1223      1     0    1.2670        1.1619        1.3754        1.0000    
+ STR_1203      1     0    1.2910        1.1839        1.3943        1.0000    
+ STR_1224      1     0    1.2876        1.1808        1.3916        1.0000    
+ STR_1204      1     0    1.3340        1.2233        1.4281        1.0000    
+ STR_1225      1     0    1.3282        1.2180        1.4236        1.0000    
+ STR_1205      1     0   0.79526       0.72949        1.0048        1.0000    
+ STR_1226      1     0    1.3155        1.2064        1.4136        1.0000    
+ STR_1206      1     0    1.2695        1.1642        1.3774        1.0000    
+ STR_1227      1     0    1.4075        1.2907        1.4858        1.0000    
+ STR_1207      1     0    1.3304        1.2200        1.4253        1.0000    
+ STR_1228      1     0    1.1111        1.0190        1.2529        1.0000    
+ STR_1208      1     0    1.1911        1.0924        1.3159        1.0000    
+ STR_1229      1     0    1.4888        1.3652        1.5497        1.0000    
+ STR_1230      1     0    1.2810        1.1747        1.3864        1.0000    
+ STR_1209      1     0    1.4167        1.2991        1.4931        1.0000    
+ STR_1210      1     0   0.80920       0.74226        1.0158        1.0000    
+ STR_1211      1     0   0.96681       0.88674        1.1396        1.0000    
+ STR_1212      1     0    1.2913        1.1842        1.3946        1.0000    
+ STR_1213      1     0   0.96668       0.88662        1.1395        1.0000    
+ STR_1214      1     0    1.2781        1.1720        1.3841        1.0000    
+ STR_1215      1     0    1.1577        1.0617        1.2896        1.0000    
+ STR_1216      1     0    1.1318        1.0380        1.2692        1.0000    
+ STR_1217      1     0    1.1106        1.0185        1.2526        1.0000    
+ STR_1218      1     0    1.1004        1.0092        1.2446        1.0000    
+ STR_1219      1     0   0.96488       0.88497        1.1381        1.0000    
+ STR_1220      1     0   0.97324       0.89264        1.1446        1.0000    
+ STR_1221      1     0   0.96084       0.88127        1.1349        1.0000    
+ sc1v1         1     1   0.99039E-01   0.52735E-01   0.18236        1.0000    
+ sc1v2         1     1   0.99835E-01   0.52735E-01   0.18236        1.0000    
+ sc1v3         1     1   0.11197       0.52735E-01   0.18236        1.0000    
+ sc1v4         1     1   0.95080E-01   0.52735E-01   0.18236        1.0000    
+ sc1v5         1     1   0.10028       0.52735E-01   0.18236        1.0000    
+ sc1v6         1     1   0.88508E-01   0.52735E-01   0.18236        1.0000    
+ sc1v7         1     1   0.54669E-01   0.52735E-01   0.18236        1.0000    
+ sc1v8         1     1   0.10490       0.52735E-01   0.18236        1.0000    
+ sc1v9         1     1   0.10172       0.52735E-01   0.18236        1.0000    
+ sc2v1         1     1   0.35606       0.28889       0.93615        1.0000    
+ sc2v2         1     1   0.46258       0.28889       0.93615        1.0000    
+ sc2v3         1     1   0.71127       0.28889       0.93615        1.0000    
+ sc2v4         1     1   0.72888       0.28889       0.93615        1.0000    
+ sc2v5         1     1   0.70056       0.28889       0.93615        1.0000    
+ sc2v6         1     1   0.55082       0.28889       0.93615        1.0000    
+ sc2v7         1     1   0.34078       0.28889       0.93615        1.0000    
+ sc2v8         1     1   0.76165       0.28889       0.93615        1.0000    
+ sc2v9         1     1   0.60008       0.28889       0.93615        1.0000    
+ sc3v1         1     1   0.18561       0.99954E-01   0.36254        1.0000    
+ sc3v2         1     1   0.21282       0.99954E-01   0.36254        1.0000    
+ sc3v3         1     1   0.23821       0.99954E-01   0.36254        1.0000    
+ sc3v4         1     1   0.20600       0.99954E-01   0.36254        1.0000    
+ sc3v5         1     1   0.21203       0.99954E-01   0.36254        1.0000    
+ sc3v6         1     1   0.20955       0.99954E-01   0.36254        1.0000    
+ sc3v7         1     1   0.19688       0.99954E-01   0.36254        1.0000    
+ sc3v8         1     1   0.22579       0.99954E-01   0.36254        1.0000    
+ sc3v9         1     1   0.21666       0.99954E-01   0.36254        1.0000    
+ sc4v1         1     0    9.6929        5.0803        19.542        1.0000    
+ sc4v2         1     0    9.8091        5.0803        19.542        1.0000    
+ sc4v3         1     0    10.495        5.0803        19.542        1.0000    
+ sc4v4         1     0    7.8927        5.0803        19.542        1.0000    
+ sc4v5         1     0    10.495        5.0803        19.542        1.0000    
+ sc4v6         1     0    7.8023        5.0803        19.542        1.0000    
+ sc4v7         1     0    8.6953        5.0803        19.542        1.0000    
+ sc4v8         1     0    10.495        5.0803        19.542        1.0000    
+ sc4v9         1     0    10.495        5.0803        19.542        1.0000    
+ sc5v1         1     1   0.24290E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v2         1     1   0.23596E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v3         1     1   0.21475E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v4         1     1   0.66788E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v5         1     1   0.35762E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v6         1     1   0.36151E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v7         1     1   0.35153E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v8         1     1   0.10630E-02   0.31245E-04   0.25463E-02    1.0000    
+ sc5v9         1     1   0.23382E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v10        1     1   0.23912E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v11        1     1   0.54544E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v12        1     1   0.10630E-02   0.31245E-04   0.25463E-02    1.0000    
+ sc5v13        1     1   0.24799E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v14        1     1   0.24749E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v15        1     1   0.33500E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc5v16        1     1   0.10630E-02   0.31245E-04   0.25463E-02    1.0000    
+ sc6v1         1     1   0.97539E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc6v2         1     1   0.61110E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc6v3         1     1   0.12585E-02   0.31245E-04   0.25463E-02    1.0000    
+ sc7v1         1     1   0.56318E-03   0.31245E-04   0.25463E-02    1.0000    
+ sc7v2         1     1   0.79763E-04   0.31245E-04   0.25463E-02    1.0000    
+ sc7v3         1     1   0.99850E-04   0.31245E-04   0.25463E-02    1.0000    
+ sc8v1         1     1   0.20459E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v2         1     1   0.25729E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v3         1     1   0.25726E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v4         1     1   0.10898E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v5         1     1   0.10585E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v6         1     1   0.83696E-04   0.31278E-04   0.56533E-03    1.0000    
+ sc8v7         1     1   0.17659E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v8         1     1   0.10417E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v9         1     1   0.25404E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v10        1     1   0.11205E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v11        1     1   0.21013E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v12        1     1   0.11222E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v13        1     1   0.20871E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v14        1     1   0.24379E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v15        1     1   0.14155E-03   0.31278E-04   0.56533E-03    1.0000    
+ sc8v16        1     1   0.11299E-03   0.31278E-04   0.56533E-03    1.0000    
+ -----------------------------------------------------------------------------
+ FOR THE PARAMETERS LISTED IN THE TABLE ABOVE, PARAMETER VALUES IN INDIVIDUAL
+ PACKAGE INPUT FILES ARE REPLACED BY THE VALUES FROM THE SEN INPUT FILE.  THE
+ ALTERNATE SCALING FACTOR IS USED TO SCALE SENSITIVITIES IF IT IS LARGER THAN
+ THE PARAMETER VALUE IN ABSOLUTE VALUE AND THE PARAMETER IS NOT LOG-TRANSFORMED.
+
+ BECAUSE ISENALL < 0, ALL ISENS ARE SET TO 0
+
+ HEAD OBSERVATION VARIANCES ARE MULTIPLIED BY:       28.00    
+
+ OBSERVED HEAD DATA -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+                    REFER.
+       OBSERVATION  STRESS    TIME                              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET    OBSERVATION  STATISTIC     TYPE      SYM.
+     1 hed1             1    0.000       93.27       102.1      STD. DEV.      1
+     2 hed2             1    0.000       92.65      0.7491      STD. DEV.      1
+     3 hed3             1    0.000       92.28      0.7009      STD. DEV.      1
+     4 hed4             1    0.000       90.80       1.943      STD. DEV.      1
+     5 hed5             1    0.000       89.16      0.7083      STD. DEV.      1
+     6 hed6             1    0.000       88.85      0.6788      STD. DEV.      1
+     7 hed7             1    0.000       88.32      0.6540      STD. DEV.      1
+     8 hed8             1    0.000       88.17      0.6540      STD. DEV.      1
+     9 hed9             1    0.000       88.05      0.8964      STD. DEV.      1
+    10 hed10            1    0.000       87.80      0.9520      STD. DEV.      1
+    11 hed11            1    0.000       87.79      0.6487      STD. DEV.      1
+    12 hed12            1    0.000       85.52       9.549      STD. DEV.      1
+    13 hed13            1    0.000       84.88       3.735      STD. DEV.      1
+    14 hed14            1    0.000       84.62       5.894      STD. DEV.      1
+    15 hed15            1    0.000       84.51       1.806      STD. DEV.      1
+    16 hed16            1    0.000       84.40       3.735      STD. DEV.      1
+    17 hed17            1    0.000       84.00      0.9286      STD. DEV.      1
+    18 hed18            1    0.000       83.90       94.15      STD. DEV.      1
+
+                                                     HEAD CHANGE
+                                                      REFERENCE
+        OBSERVATION                   ROW     COL    OBSERVATION
+  OBS#     NAME       LAY  ROW  COL  OFFSET  OFFSET   (IF > 0)
+     1  hed1            4   44    8  -0.025  -0.407        0
+     2  hed2            3    6   10  -0.352   0.095        0
+     3  hed3            3   34    6  -0.238   0.279        0
+     4  hed4            3   31   12   0.487   0.103        0
+     5  hed5            3   40   18   0.086  -0.365        0
+     6  hed6            3   35   23   0.481  -0.055        0
+     7  hed7            3   42   23   0.393  -0.362        0
+     8  hed8            1   42   23   0.393  -0.362        0
+     9  hed9            3   30   21   0.238  -0.399        0
+    10  hed10           3    3   29   0.339  -0.278        0
+    11  hed11           3    7   33  -0.425  -0.167        0
+    12  hed12           3   15   36  -0.297   0.094        0
+    13  hed13           3   43   35  -0.405  -0.238        0
+    14  hed14           3   21   40  -0.211   0.088        0
+    15  hed15           3   10   43   0.028  -0.392        0
+    16  hed16           1    5   42   0.310  -0.285        0
+    17  hed17           1   25   41  -0.411   0.384        0
+    18  hed18           3   26   38  -0.365  -0.259        0
+
+ DRAIN-CELL FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       1.000    
+
+ OBSERVED DRAIN-CELL FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+ GROUP NUMBER:      1    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    19 drnf0            1    0.000      -1377.       1103.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    8.    48.     1.00
+          1.    9.    48.     1.00
+          1.    9.    49.     1.00
+          1.   10.    48.     1.00
+          1.   10.    49.     1.00
+          1.   11.    48.     1.00
+          1.   11.    49.     1.00
+          1.   12.    48.     1.00
+          1.   12.    49.     1.00
+
+ GROUP NUMBER:      2    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      6
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    20 drnf1            1    0.000      -1339.      0.4557E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   22.    44.     1.00
+          1.   22.    45.     1.00
+          1.   23.    44.     1.00
+          1.   23.    45.     1.00
+          1.   24.    44.     1.00
+          1.   24.    45.     1.00
+
+ GROUP NUMBER:      3    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    21 drnf2            1    0.000      -1553.       1961.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   20.    45.     0.00
+          1.   20.    45.     1.00
+          1.   20.    46.     1.00
+          1.   21.    44.     1.00
+          1.   21.    45.     1.00
+          1.   21.    46.     1.00
+          1.   22.    44.     1.00
+          1.   22.    45.     1.00
+          1.   22.    46.     1.00
+
+ GROUP NUMBER:      4    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    22 drnf3            1    0.000      -1454.       483.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   24.    44.     0.00
+          1.   24.    44.     1.00
+          1.   24.    45.     1.00
+          1.   25.    44.     1.00
+          1.   25.    45.     1.00
+          1.   26.    44.     1.00
+          1.   26.    45.     1.00
+          1.   27.    44.     1.00
+          1.   27.    45.     1.00
+
+ GROUP NUMBER:      5    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      7
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    23 drnf4            1    0.000      -1428.       531.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   27.    44.     0.00
+          1.   27.    44.     1.00
+          1.   27.    45.     1.00
+          1.   28.    44.     1.00
+          1.   28.    45.     1.00
+          1.   29.    44.     1.00
+          1.   29.    45.     1.00
+
+ GROUP NUMBER:      6    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    24 drnf5            1    0.000      -1584.       4559.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   29.    44.     0.00
+          1.   29.    44.     1.00
+          1.   29.    45.     1.00
+          1.   30.    43.     1.00
+          1.   30.    44.     1.00
+          1.   30.    45.     1.00
+          1.   31.    43.     1.00
+          1.   31.    44.     1.00
+          1.   31.    45.     1.00
+
+ GROUP NUMBER:      7    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      6
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    25 drnf6            1    0.000      -1467.       501.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   33.    43.     1.00
+          1.   33.    44.     1.00
+          1.   34.    43.     1.00
+          1.   34.    44.     1.00
+          1.   35.    43.     1.00
+          1.   35.    44.     1.00
+
+ GROUP NUMBER:      8    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    26 drnf7            1    0.000      -1354.       1782.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   31.    43.     0.00
+          1.   31.    43.     1.00
+          1.   31.    44.     1.00
+          1.   31.    45.     1.00
+          1.   32.    43.     1.00
+          1.   32.    44.     1.00
+          1.   33.    43.     1.00
+          1.   33.    44.     1.00
+
+ GROUP NUMBER:      9    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      6
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    27 drnf8            1    0.000      -1431.       519.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   35.    42.     1.00
+          1.   35.    43.     1.00
+          1.   35.    44.     1.00
+          1.   36.    42.     1.00
+          1.   36.    43.     1.00
+          1.   36.    44.     1.00
+
+ GROUP NUMBER:     10    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:     10
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    28 drnf9            1    0.000      -1532.       1237.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   36.    42.     0.00
+          1.   36.    42.     1.00
+          1.   36.    43.     1.00
+          1.   37.    42.     1.00
+          1.   37.    43.     1.00
+          1.   38.    41.     1.00
+          1.   38.    42.     1.00
+          1.   38.    43.     1.00
+          1.   39.    41.     1.00
+          1.   39.    42.     1.00
+
+ GROUP NUMBER:     11    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    29 drnf10           1    0.000      -1473.       521.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   39.    41.     0.00
+          1.   39.    41.     1.00
+          1.   39.    42.     1.00
+          1.   40.    40.     1.00
+          1.   40.    41.     1.00
+          1.   40.    42.     1.00
+          1.   41.    40.     1.00
+          1.   41.    41.     1.00
+
+ GROUP NUMBER:     12    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      7
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    30 drnf11           1    0.000      -1460.       492.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   12.    48.     0.00
+          1.   12.    48.     1.00
+          1.   12.    49.     1.00
+          1.   13.    48.     1.00
+          1.   13.    49.     1.00
+          1.   14.    48.     1.00
+          1.   14.    49.     1.00
+
+ GROUP NUMBER:     13    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    31 drnf12           1    0.000      -1475.       532.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   41.    40.     0.00
+          1.   41.    40.     1.00
+          1.   41.    41.     1.00
+          1.   42.    39.     1.00
+          1.   42.    40.     1.00
+          1.   42.    41.     1.00
+          1.   43.    39.     1.00
+          1.   43.    40.     1.00
+          1.   43.    41.     1.00
+
+ GROUP NUMBER:     14    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      6
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    32 drnf13           1    0.000      -1483.       575.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   48.    39.     1.00
+          1.   48.    40.     1.00
+          1.   49.    39.     1.00
+          1.   49.    40.     1.00
+          1.   50.    39.     1.00
+          1.   50.    40.     1.00
+
+ GROUP NUMBER:     15    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      6
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    33 drnf14           1    0.000      -1384.       962.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   46.    39.     1.00
+          1.   46.    40.     1.00
+          1.   47.    39.     1.00
+          1.   47.    40.     1.00
+          1.   48.    39.     1.00
+          1.   48.    40.     1.00
+
+ GROUP NUMBER:     16    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      9
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    34 drnf15           1    0.000      -1760.      0.3790E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   43.    39.     0.00
+          1.   43.    39.     1.00
+          1.   43.    40.     1.00
+          1.   44.    39.     1.00
+          1.   44.    40.     1.00
+          1.   45.    39.     1.00
+          1.   45.    40.     1.00
+          1.   46.    39.     1.00
+          1.   46.    40.     1.00
+
+ GROUP NUMBER:     17    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    35 drnf16           1    0.000      -1363.       1468.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   14.    48.     0.00
+          1.   14.    48.     1.00
+          1.   14.    49.     1.00
+          1.   15.    47.     1.00
+          1.   15.    48.     1.00
+          1.   15.    49.     1.00
+          1.   16.    47.     1.00
+          1.   16.    48.     1.00
+
+ GROUP NUMBER:     18    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    36 drnf17           1    0.000      -1454.       483.7      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    2.    47.     1.00
+          1.    2.    48.     1.00
+          1.    3.    47.     1.00
+          1.    3.    48.     1.00
+          1.    4.    47.     1.00
+          1.    4.    48.     1.00
+          1.    5.    47.     1.00
+          1.    5.    48.     1.00
+
+ GROUP NUMBER:     19    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      5
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    37 drnf18           1    0.000      -1373.       1170.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    48.     1.00
+          1.    1.    49.     1.00
+          1.    2.    47.     1.00
+          1.    2.    48.     1.00
+          1.    2.    49.     1.00
+
+ GROUP NUMBER:     20    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      7
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    38 drnf19           1    0.000      -1387.       914.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    5.    47.     0.00
+          1.    5.    47.     1.00
+          1.    5.    48.     1.00
+          1.    6.    47.     1.00
+          1.    6.    48.     1.00
+          1.    7.    47.     1.00
+          1.    7.    48.     1.00
+
+ GROUP NUMBER:     21    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    39 drnf20           1    0.000      -1498.       692.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    7.    47.     0.00
+          1.    7.    47.     1.00
+          1.    7.    48.     1.00
+          1.    8.    47.     1.00
+          1.    8.    48.     1.00
+          1.    8.    49.     1.00
+          1.    9.    48.     1.00
+          1.    9.    49.     1.00
+
+ GROUP NUMBER:     22    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      7
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    40 drnf21           1    0.000      -1508.       789.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   16.    47.     0.00
+          1.   16.    47.     1.00
+          1.   16.    48.     1.00
+          1.   17.    47.     1.00
+          1.   17.    48.     1.00
+          1.   18.    47.     1.00
+          1.   18.    48.     1.00
+
+ GROUP NUMBER:     23    BOUNDARY TYPE: DRN    NUMBER OF CELLS IN GROUP:      8
+ NUMBER OF FLOW OBSERVATIONS:      1
+
+                    REFER.              OBSERVED
+       OBSERVATION  STRESS    TIME     DRAIN FLOW               STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     GAIN (-)    STATISTIC     TYPE      SYM.
+    41 drnf22           1    0.000      -1484.       575.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   18.    46.     1.00
+          1.   18.    47.     1.00
+          1.   18.    48.     1.00
+          1.   19.    45.     1.00
+          1.   19.    46.     1.00
+          1.   19.    47.     1.00
+          1.   20.    45.     1.00
+          1.   20.    46.     1.00
+
+ GENERAL-HEAD-CELL FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       8.000    
+
+ OBSERVED GENERAL-HEAD-CELL FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+   GROUP NUMBER:     24   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    42 ghbf0            1    0.000      -161.9       81.97      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    28.     1.00
+          2.    1.    28.     1.00
+          3.    1.    28.     1.00
+          4.    1.    28.     1.00
+          5.    1.    28.     1.00
+          1.    1.    27.     1.00
+          2.    1.    27.     1.00
+          3.    1.    27.     1.00
+          4.    1.    27.     1.00
+          5.    1.    27.     1.00
+          1.    1.    26.     1.00
+          2.    1.    26.     1.00
+          3.    1.    26.     1.00
+          4.    1.    26.     1.00
+          5.    1.    26.     1.00
+          1.    1.    25.     1.00
+          2.    1.    25.     1.00
+          3.    1.    25.     1.00
+          4.    1.    25.     1.00
+          5.    1.    25.     1.00
+          1.    1.    24.     1.00
+          2.    1.    24.     1.00
+          3.    1.    24.     1.00
+          4.    1.    24.     1.00
+          5.    1.    24.     1.00
+
+   GROUP NUMBER:     25   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    43 ghbf1            1    0.000      -160.8       83.67      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    32.     1.00
+          2.    1.    32.     1.00
+          3.    1.    32.     1.00
+          4.    1.    32.     1.00
+          5.    1.    32.     1.00
+          1.    1.    31.     1.00
+          2.    1.    31.     1.00
+          3.    1.    31.     1.00
+          4.    1.    31.     1.00
+          5.    1.    31.     1.00
+          1.    1.    30.     1.00
+          2.    1.    30.     1.00
+          3.    1.    30.     1.00
+          4.    1.    30.     1.00
+          5.    1.    30.     1.00
+          1.    1.    29.     1.00
+          2.    1.    29.     1.00
+          3.    1.    29.     1.00
+          4.    1.    29.     1.00
+          5.    1.    29.     1.00
+          1.    1.    28.     1.00
+          2.    1.    28.     1.00
+          3.    1.    28.     1.00
+          4.    1.    28.     1.00
+          5.    1.    28.     1.00
+
+   GROUP NUMBER:     26   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    44 ghbf2            1    0.000      -168.2       80.90      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    36.     1.00
+          2.    1.    36.     1.00
+          3.    1.    36.     1.00
+          4.    1.    36.     1.00
+          5.    1.    36.     1.00
+          1.    1.    35.     1.00
+          2.    1.    35.     1.00
+          3.    1.    35.     1.00
+          4.    1.    35.     1.00
+          5.    1.    35.     1.00
+          1.    1.    34.     1.00
+          2.    1.    34.     1.00
+          3.    1.    34.     1.00
+          4.    1.    34.     1.00
+          5.    1.    34.     1.00
+          1.    1.    33.     1.00
+          2.    1.    33.     1.00
+          3.    1.    33.     1.00
+          4.    1.    33.     1.00
+          5.    1.    33.     1.00
+          1.    1.    32.     1.00
+          2.    1.    32.     1.00
+          3.    1.    32.     1.00
+          4.    1.    32.     1.00
+          5.    1.    32.     1.00
+
+   GROUP NUMBER:     27   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    45 ghbf3            1    0.000      -167.1       80.77      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    40.     1.00
+          2.    1.    40.     1.00
+          3.    1.    40.     1.00
+          4.    1.    40.     1.00
+          5.    1.    40.     1.00
+          1.    1.    39.     1.00
+          2.    1.    39.     1.00
+          3.    1.    39.     1.00
+          4.    1.    39.     1.00
+          5.    1.    39.     1.00
+          1.    1.    38.     1.00
+          2.    1.    38.     1.00
+          3.    1.    38.     1.00
+          4.    1.    38.     1.00
+          5.    1.    38.     1.00
+          1.    1.    37.     1.00
+          2.    1.    37.     1.00
+          3.    1.    37.     1.00
+          4.    1.    37.     1.00
+          5.    1.    37.     1.00
+          1.    1.    36.     1.00
+          2.    1.    36.     1.00
+          3.    1.    36.     1.00
+          4.    1.    36.     1.00
+          5.    1.    36.     1.00
+
+   GROUP NUMBER:     28   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    46 ghbf4            1    0.000      -146.5       142.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    44.     1.00
+          2.    1.    44.     1.00
+          3.    1.    44.     1.00
+          4.    1.    44.     1.00
+          5.    1.    44.     1.00
+          1.    1.    43.     1.00
+          2.    1.    43.     1.00
+          3.    1.    43.     1.00
+          4.    1.    43.     1.00
+          5.    1.    43.     1.00
+          1.    1.    42.     1.00
+          2.    1.    42.     1.00
+          3.    1.    42.     1.00
+          4.    1.    42.     1.00
+          5.    1.    42.     1.00
+          1.    1.    41.     1.00
+          2.    1.    41.     1.00
+          3.    1.    41.     1.00
+          4.    1.    41.     1.00
+          5.    1.    41.     1.00
+          1.    1.    40.     1.00
+          2.    1.    40.     1.00
+          3.    1.    40.     1.00
+          4.    1.    40.     1.00
+          5.    1.    40.     1.00
+
+   GROUP NUMBER:     29   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     20
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    47 ghbf5            1    0.000      -112.7       74.27      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    47.     1.00
+          2.    1.    47.     1.00
+          3.    1.    47.     1.00
+          4.    1.    47.     1.00
+          5.    1.    47.     1.00
+          1.    1.    46.     1.00
+          2.    1.    46.     1.00
+          3.    1.    46.     1.00
+          4.    1.    46.     1.00
+          5.    1.    46.     1.00
+          1.    1.    45.     1.00
+          2.    1.    45.     1.00
+          3.    1.    45.     1.00
+          4.    1.    45.     1.00
+          5.    1.    45.     1.00
+          1.    1.    44.     1.00
+          2.    1.    44.     1.00
+          3.    1.    44.     1.00
+          4.    1.    44.     1.00
+          5.    1.    44.     1.00
+
+   GROUP NUMBER:     30   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    48 ghbf6            1    0.000      -86.91       7445.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.     6.     1.00
+          2.   50.     6.     1.00
+          3.   50.     6.     1.00
+          4.   50.     6.     1.00
+          5.   50.     6.     1.00
+          1.   50.     5.     1.00
+          2.   50.     5.     1.00
+          3.   50.     5.     1.00
+          4.   50.     5.     1.00
+          5.   50.     5.     1.00
+          1.   50.     4.     1.00
+          2.   50.     4.     1.00
+          3.   50.     4.     1.00
+          4.   50.     4.     1.00
+          5.   50.     4.     1.00
+          1.   50.     3.     1.00
+          2.   50.     3.     1.00
+          3.   50.     3.     1.00
+          4.   50.     3.     1.00
+          5.   50.     3.     1.00
+          1.   50.     2.     1.00
+          2.   50.     2.     1.00
+          3.   50.     2.     1.00
+          4.   50.     2.     1.00
+          5.   50.     2.     1.00
+
+   GROUP NUMBER:     31   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    49 ghbf7            1    0.000      -109.3       75.54      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    10.     1.00
+          2.   50.    10.     1.00
+          3.   50.    10.     1.00
+          4.   50.    10.     1.00
+          5.   50.    10.     1.00
+          1.   50.     9.     1.00
+          2.   50.     9.     1.00
+          3.   50.     9.     1.00
+          4.   50.     9.     1.00
+          5.   50.     9.     1.00
+          1.   50.     8.     1.00
+          2.   50.     8.     1.00
+          3.   50.     8.     1.00
+          4.   50.     8.     1.00
+          5.   50.     8.     1.00
+          1.   50.     7.     1.00
+          2.   50.     7.     1.00
+          3.   50.     7.     1.00
+          4.   50.     7.     1.00
+          5.   50.     7.     1.00
+          1.   50.     6.     1.00
+          2.   50.     6.     1.00
+          3.   50.     6.     1.00
+          4.   50.     6.     1.00
+          5.   50.     6.     1.00
+
+   GROUP NUMBER:     32   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    50 ghbf8            1    0.000      -125.5       86.37      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    14.     1.00
+          2.   50.    14.     1.00
+          3.   50.    14.     1.00
+          4.   50.    14.     1.00
+          5.   50.    14.     1.00
+          1.   50.    13.     1.00
+          2.   50.    13.     1.00
+          3.   50.    13.     1.00
+          4.   50.    13.     1.00
+          5.   50.    13.     1.00
+          1.   50.    12.     1.00
+          2.   50.    12.     1.00
+          3.   50.    12.     1.00
+          4.   50.    12.     1.00
+          5.   50.    12.     1.00
+          1.   50.    11.     1.00
+          2.   50.    11.     1.00
+          3.   50.    11.     1.00
+          4.   50.    11.     1.00
+          5.   50.    11.     1.00
+          1.   50.    10.     1.00
+          2.   50.    10.     1.00
+          3.   50.    10.     1.00
+          4.   50.    10.     1.00
+          5.   50.    10.     1.00
+
+   GROUP NUMBER:     33   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     20
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    51 ghbf9            1    0.000      -125.1       86.31      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    17.     1.00
+          2.   50.    17.     1.00
+          3.   50.    17.     1.00
+          4.   50.    17.     1.00
+          5.   50.    17.     1.00
+          1.   50.    16.     1.00
+          2.   50.    16.     1.00
+          3.   50.    16.     1.00
+          4.   50.    16.     1.00
+          5.   50.    16.     1.00
+          1.   50.    15.     1.00
+          2.   50.    15.     1.00
+          3.   50.    15.     1.00
+          4.   50.    15.     1.00
+          5.   50.    15.     1.00
+          1.   50.    14.     1.00
+          2.   50.    14.     1.00
+          3.   50.    14.     1.00
+          4.   50.    14.     1.00
+          5.   50.    14.     1.00
+
+   GROUP NUMBER:     34   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     20
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    52 ghbf10           1    0.000      -126.5       88.34      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    20.     1.00
+          2.   50.    20.     1.00
+          3.   50.    20.     1.00
+          4.   50.    20.     1.00
+          5.   50.    20.     1.00
+          1.   50.    19.     1.00
+          2.   50.    19.     1.00
+          3.   50.    19.     1.00
+          4.   50.    19.     1.00
+          5.   50.    19.     1.00
+          1.   50.    18.     1.00
+          2.   50.    18.     1.00
+          3.   50.    18.     1.00
+          4.   50.    18.     1.00
+          5.   50.    18.     1.00
+          1.   50.    17.     1.00
+          2.   50.    17.     1.00
+          3.   50.    17.     1.00
+          4.   50.    17.     1.00
+          5.   50.    17.     1.00
+
+   GROUP NUMBER:     35   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     20
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    53 ghbf11           1    0.000      -139.2       134.4      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    23.     1.00
+          2.   50.    23.     1.00
+          3.   50.    23.     1.00
+          4.   50.    23.     1.00
+          5.   50.    23.     1.00
+          1.   50.    22.     1.00
+          2.   50.    22.     1.00
+          3.   50.    22.     1.00
+          4.   50.    22.     1.00
+          5.   50.    22.     1.00
+          1.   50.    21.     1.00
+          2.   50.    21.     1.00
+          3.   50.    21.     1.00
+          4.   50.    21.     1.00
+          5.   50.    21.     1.00
+          1.   50.    20.     1.00
+          2.   50.    20.     1.00
+          3.   50.    20.     1.00
+          4.   50.    20.     1.00
+          5.   50.    20.     1.00
+
+   GROUP NUMBER:     36   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     20
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    54 ghbf12           1    0.000      -171.2       86.84      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    26.     1.00
+          2.   50.    26.     1.00
+          3.   50.    26.     1.00
+          4.   50.    26.     1.00
+          5.   50.    26.     1.00
+          1.   50.    25.     1.00
+          2.   50.    25.     1.00
+          3.   50.    25.     1.00
+          4.   50.    25.     1.00
+          5.   50.    25.     1.00
+          1.   50.    24.     1.00
+          2.   50.    24.     1.00
+          3.   50.    24.     1.00
+          4.   50.    24.     1.00
+          5.   50.    24.     1.00
+          1.   50.    23.     1.00
+          2.   50.    23.     1.00
+          3.   50.    23.     1.00
+          4.   50.    23.     1.00
+          5.   50.    23.     1.00
+
+   GROUP NUMBER:     37   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    55 ghbf13           1    0.000      -218.2       2270.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    30.     1.00
+          2.   50.    30.     1.00
+          3.   50.    30.     1.00
+          4.   50.    30.     1.00
+          5.   50.    30.     1.00
+          1.   50.    29.     1.00
+          2.   50.    29.     1.00
+          3.   50.    29.     1.00
+          4.   50.    29.     1.00
+          5.   50.    29.     1.00
+          1.   50.    28.     1.00
+          2.   50.    28.     1.00
+          3.   50.    28.     1.00
+          4.   50.    28.     1.00
+          5.   50.    28.     1.00
+          1.   50.    27.     1.00
+          2.   50.    27.     1.00
+          3.   50.    27.     1.00
+          4.   50.    27.     1.00
+          5.   50.    27.     1.00
+          1.   50.    26.     1.00
+          2.   50.    26.     1.00
+          3.   50.    26.     1.00
+          4.   50.    26.     1.00
+          5.   50.    26.     1.00
+
+   GROUP NUMBER:     38   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    56 ghbf14           1    0.000      -218.5       9088.      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    34.     1.00
+          2.   50.    34.     1.00
+          3.   50.    34.     1.00
+          4.   50.    34.     1.00
+          5.   50.    34.     1.00
+          1.   50.    33.     1.00
+          2.   50.    33.     1.00
+          3.   50.    33.     1.00
+          4.   50.    33.     1.00
+          5.   50.    33.     1.00
+          1.   50.    32.     1.00
+          2.   50.    32.     1.00
+          3.   50.    32.     1.00
+          4.   50.    32.     1.00
+          5.   50.    32.     1.00
+          1.   50.    31.     1.00
+          2.   50.    31.     1.00
+          3.   50.    31.     1.00
+          4.   50.    31.     1.00
+          5.   50.    31.     1.00
+          1.   50.    30.     1.00
+          2.   50.    30.     1.00
+          3.   50.    30.     1.00
+          4.   50.    30.     1.00
+          5.   50.    30.     1.00
+
+   GROUP NUMBER:     39   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    57 ghbf15           1    0.000      -140.9       144.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   50.    38.     1.00
+          2.   50.    38.     1.00
+          3.   50.    38.     1.00
+          4.   50.    38.     1.00
+          5.   50.    38.     1.00
+          1.   50.    37.     1.00
+          2.   50.    37.     1.00
+          3.   50.    37.     1.00
+          4.   50.    37.     1.00
+          5.   50.    37.     1.00
+          1.   50.    36.     1.00
+          2.   50.    36.     1.00
+          3.   50.    36.     1.00
+          4.   50.    36.     1.00
+          5.   50.    36.     1.00
+          1.   50.    35.     1.00
+          2.   50.    35.     1.00
+          3.   50.    35.     1.00
+          4.   50.    35.     1.00
+          5.   50.    35.     1.00
+          1.   50.    34.     1.00
+          2.   50.    34.     1.00
+          3.   50.    34.     1.00
+          4.   50.    34.     1.00
+          5.   50.    34.     1.00
+
+   GROUP NUMBER:     40   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    58 ghbf16           1    0.000      -88.21       129.4      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.     6.     1.00
+          2.    1.     6.     1.00
+          3.    1.     6.     1.00
+          4.    1.     6.     1.00
+          5.    1.     6.     1.00
+          1.    1.     5.     1.00
+          2.    1.     5.     1.00
+          3.    1.     5.     1.00
+          4.    1.     5.     1.00
+          5.    1.     5.     1.00
+          1.    1.     4.     1.00
+          2.    1.     4.     1.00
+          3.    1.     4.     1.00
+          4.    1.     4.     1.00
+          5.    1.     4.     1.00
+          1.    1.     3.     1.00
+          2.    1.     3.     1.00
+          3.    1.     3.     1.00
+          4.    1.     3.     1.00
+          5.    1.     3.     1.00
+          1.    1.     2.     1.00
+          2.    1.     2.     1.00
+          3.    1.     2.     1.00
+          4.    1.     2.     1.00
+          5.    1.     2.     1.00
+
+   GROUP NUMBER:     41   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    59 ghbf17           1    0.000      -120.5       78.62      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    10.     1.00
+          2.    1.    10.     1.00
+          3.    1.    10.     1.00
+          4.    1.    10.     1.00
+          5.    1.    10.     1.00
+          1.    1.     9.     1.00
+          2.    1.     9.     1.00
+          3.    1.     9.     1.00
+          4.    1.     9.     1.00
+          5.    1.     9.     1.00
+          1.    1.     8.     1.00
+          2.    1.     8.     1.00
+          3.    1.     8.     1.00
+          4.    1.     8.     1.00
+          5.    1.     8.     1.00
+          1.    1.     7.     1.00
+          2.    1.     7.     1.00
+          3.    1.     7.     1.00
+          4.    1.     7.     1.00
+          5.    1.     7.     1.00
+          1.    1.     6.     1.00
+          2.    1.     6.     1.00
+          3.    1.     6.     1.00
+          4.    1.     6.     1.00
+          5.    1.     6.     1.00
+
+   GROUP NUMBER:     42   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     30
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    60 ghbf18           1    0.000      -146.6       142.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    15.     1.00
+          2.    1.    15.     1.00
+          3.    1.    15.     1.00
+          4.    1.    15.     1.00
+          5.    1.    15.     1.00
+          1.    1.    14.     1.00
+          2.    1.    14.     1.00
+          3.    1.    14.     1.00
+          4.    1.    14.     1.00
+          5.    1.    14.     1.00
+          1.    1.    13.     1.00
+          2.    1.    13.     1.00
+          3.    1.    13.     1.00
+          4.    1.    13.     1.00
+          5.    1.    13.     1.00
+          1.    1.    12.     1.00
+          2.    1.    12.     1.00
+          3.    1.    12.     1.00
+          4.    1.    12.     1.00
+          5.    1.    12.     1.00
+          1.    1.    11.     1.00
+          2.    1.    11.     1.00
+          3.    1.    11.     1.00
+          4.    1.    11.     1.00
+          5.    1.    11.     1.00
+          1.    1.    10.     1.00
+          2.    1.    10.     1.00
+          3.    1.    10.     1.00
+          4.    1.    10.     1.00
+          5.    1.    10.     1.00
+
+   GROUP NUMBER:     43   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     30
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    61 ghbf19           1    0.000      -143.8       162.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    20.     1.00
+          2.    1.    20.     1.00
+          3.    1.    20.     1.00
+          4.    1.    20.     1.00
+          5.    1.    20.     1.00
+          1.    1.    19.     1.00
+          2.    1.    19.     1.00
+          3.    1.    19.     1.00
+          4.    1.    19.     1.00
+          5.    1.    19.     1.00
+          1.    1.    18.     1.00
+          2.    1.    18.     1.00
+          3.    1.    18.     1.00
+          4.    1.    18.     1.00
+          5.    1.    18.     1.00
+          1.    1.    17.     1.00
+          2.    1.    17.     1.00
+          3.    1.    17.     1.00
+          4.    1.    17.     1.00
+          5.    1.    17.     1.00
+          1.    1.    16.     1.00
+          2.    1.    16.     1.00
+          3.    1.    16.     1.00
+          4.    1.    16.     1.00
+          5.    1.    16.     1.00
+          1.    1.    15.     1.00
+          2.    1.    15.     1.00
+          3.    1.    15.     1.00
+          4.    1.    15.     1.00
+          5.    1.    15.     1.00
+
+   GROUP NUMBER:     44   BOUNDARY TYPE: GHB   NUMBER OF CELLS IN GROUP:     25
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    62 ghbf20           1    0.000      -144.5       159.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.    24.     1.00
+          2.    1.    24.     1.00
+          3.    1.    24.     1.00
+          4.    1.    24.     1.00
+          5.    1.    24.     1.00
+          1.    1.    23.     1.00
+          2.    1.    23.     1.00
+          3.    1.    23.     1.00
+          4.    1.    23.     1.00
+          5.    1.    23.     1.00
+          1.    1.    22.     1.00
+          2.    1.    22.     1.00
+          3.    1.    22.     1.00
+          4.    1.    22.     1.00
+          5.    1.    22.     1.00
+          1.    1.    21.     1.00
+          2.    1.    21.     1.00
+          3.    1.    21.     1.00
+          4.    1.    21.     1.00
+          5.    1.    21.     1.00
+          1.    1.    20.     1.00
+          2.    1.    20.     1.00
+          3.    1.    20.     1.00
+          4.    1.    20.     1.00
+          5.    1.    20.     1.00
+
+ STREAMFLOW-ROUTING FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       2.000    
+
+ OBSERVED STREAMFLOW-ROUTING FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+   GROUP NUMBER:     45   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      5
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    63 strf0            1    0.000      -402.1       297.9      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         13.    1.     1.00
+         13.    2.     1.00
+         13.    3.     1.00
+         13.    4.     1.00
+         13.    5.     1.00
+
+   GROUP NUMBER:     46   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    64 strf1            1    0.000      -385.4       231.0      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         15.    1.     1.00
+         15.    2.     1.00
+         15.    3.     1.00
+
+   GROUP NUMBER:     47   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      8
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    65 strf2            1    0.000      -553.5       7574.      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         18.    1.     1.00
+         18.    2.     1.00
+         18.    3.     1.00
+         18.    4.     1.00
+         18.    5.     1.00
+         18.    6.     1.00
+         18.    7.     1.00
+         18.    8.     1.00
+
+   GROUP NUMBER:     48   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      6
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    66 strf3            1    0.000      -466.6       405.9      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         19.    1.     1.00
+         19.    2.     1.00
+         19.    3.     1.00
+         19.    4.     1.00
+         19.    5.     1.00
+         19.    6.     1.00
+
+   GROUP NUMBER:     49   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    67 strf4            1    0.000      -366.5       398.9      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         20.    1.     1.00
+         20.    2.     1.00
+
+   GROUP NUMBER:     50   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    68 strf5            1    0.000      -412.5       304.1      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         21.    1.     1.00
+         21.    2.     1.00
+         21.    3.     1.00
+
+   GROUP NUMBER:     51   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    69 strf6            1    0.000      -400.3       278.0      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         22.    1.     1.00
+         22.    2.     1.00
+         22.    3.     1.00
+
+   GROUP NUMBER:     52   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    70 strf7            1    0.000      -390.3       232.8      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         23.    1.     1.00
+         23.    2.     1.00
+
+   GROUP NUMBER:     53   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    71 strf8            1    0.000      -392.7       236.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         24.    1.     1.00
+         24.    2.     1.00
+         24.    3.     1.00
+
+   GROUP NUMBER:     54   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    72 strf9            1    0.000      -376.1       271.1      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         25.    1.     1.00
+         25.    2.     1.00
+
+   GROUP NUMBER:     55   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    73 strf10           1    0.000      -396.8       255.6      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         26.    1.     1.00
+         26.    2.     1.00
+
+   GROUP NUMBER:     56   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    74 strf11           1    0.000      -393.8       240.9      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         27.    1.     1.00
+         27.    2.     1.00
+
+   GROUP NUMBER:     57   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    75 strf12           1    0.000      -414.8       286.6      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         28.    1.     1.00
+         28.    2.     1.00
+         28.    3.     1.00
+
+   GROUP NUMBER:     58   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      2
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    76 strf13           1    0.000      -393.0       241.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         29.    1.     1.00
+         29.    2.     1.00
+
+   GROUP NUMBER:     59   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    77 strf14           1    0.000      -361.3      0.1555E+05  STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         30.    1.     1.00
+         30.    2.     1.00
+         30.    3.     1.00
+
+   GROUP NUMBER:     60   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    78 strf15           1    0.000      -446.4       218.2      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          2.    1.     1.00
+          2.    2.     1.00
+          2.    3.     1.00
+          2.    4.     1.00
+
+   GROUP NUMBER:     61   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    79 strf16           1    0.000      -381.0       244.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          4.    1.     1.00
+          4.    2.     1.00
+          4.    3.     1.00
+
+   GROUP NUMBER:     62   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      5
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    80 strf17           1    0.000      -409.0       353.0      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          6.    1.     1.00
+          6.    2.     1.00
+          6.    3.     1.00
+          6.    4.     1.00
+          6.    5.     1.00
+
+   GROUP NUMBER:     63   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    81 strf18           1    0.000      -389.5       233.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          8.    1.     1.00
+          8.    2.     1.00
+          8.    3.     1.00
+
+   GROUP NUMBER:     64   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    82 strf19           1    0.000      -387.9       229.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         10.    1.     1.00
+         10.    2.     1.00
+         10.    3.     1.00
+         10.    4.     1.00
+
+   GROUP NUMBER:     65   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    83 strf20           1    0.000      -393.1       241.4      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         12.    1.     1.00
+         12.    2.     1.00
+         12.    3.     1.00
+         12.    4.     1.00
+
+   GROUP NUMBER:     66   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    84 strf21           1    0.000      -412.9       303.6      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         14.    1.     1.00
+         14.    2.     1.00
+         14.    3.     1.00
+         14.    4.     1.00
+
+   GROUP NUMBER:     67   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    85 strf22           1    0.000      -418.0       257.1      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         16.    1.     1.00
+         16.    2.     1.00
+         16.    3.     1.00
+         16.    4.     1.00
+
+   GROUP NUMBER:     68   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    86 strf23           1    0.000      -424.6       219.2      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         17.    1.     1.00
+         17.    2.     1.00
+         17.    3.     1.00
+         17.    4.     1.00
+
+   GROUP NUMBER:     69   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    87 strf24           1    0.000      -431.6       200.6      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          1.    1.     1.00
+          1.    2.     1.00
+          1.    3.     1.00
+
+   GROUP NUMBER:     70   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    88 strf25           1    0.000      -382.0       238.5      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          3.    1.     1.00
+          3.    2.     1.00
+          3.    3.     1.00
+
+   GROUP NUMBER:     71   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      3
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    89 strf26           1    0.000      -395.0       245.5      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          5.    1.     1.00
+          5.    2.     1.00
+          5.    3.     1.00
+
+   GROUP NUMBER:     72   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      4
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    90 strf27           1    0.000      -402.0       298.1      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          7.    1.     1.00
+          7.    2.     1.00
+          7.    3.     1.00
+          7.    4.     1.00
+
+   GROUP NUMBER:     73   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      6
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    91 strf28           1    0.000      -416.9       264.2      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+          9.    1.     1.00
+          9.    2.     1.00
+          9.    3.     1.00
+          9.    4.     1.00
+          9.    5.     1.00
+          9.    6.     1.00
+
+   GROUP NUMBER:     74   BOUNDARY TYPE: STR   NUMBER OF CELLS IN GROUP:      6
+   NUMBER OF FLOW OBSERVATIONS:      1
+
+                                        OBSERVED
+                    REFER.             STREAM FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    92 strf29           1    0.000      -435.5       198.0      STD. DEV.      1
+
+     SEGMENT REACH    FACTOR
+         11.    1.     1.00
+         11.    2.     1.00
+         11.    3.     1.00
+         11.    4.     1.00
+         11.    5.     1.00
+         11.    6.     1.00
+
+ CONSTANT-HEAD-CELL FLOW OBSERVATION VARIANCES ARE MULTIPLIED BY:       8.000    
+
+ OBSERVED CONSTANT-HEAD-CELL FLOW DATA
+ -- TIME OFFSETS ARE MULTIPLIED BY:   1.0000    
+
+   GROUP NUMBER:  75   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    93 chdf0            1    0.000       8.720       281.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   18.     1.     0.50
+          2.   18.     1.     0.50
+          3.   18.     1.     0.50
+          4.   18.     1.     0.50
+          5.   18.     1.     0.50
+          1.   19.     1.     1.00
+          2.   19.     1.     1.00
+          3.   19.     1.     1.00
+          4.   19.     1.     1.00
+          5.   19.     1.     1.00
+          1.   20.     1.     0.57
+          2.   20.     1.     0.57
+          3.   20.     1.     0.57
+          4.   20.     1.     0.57
+          5.   20.     1.     0.57
+
+   GROUP NUMBER:  76   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    94 chdf1            1    0.000       20.97       122.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   20.     1.     0.43
+          2.   20.     1.     0.43
+          3.   20.     1.     0.43
+          4.   20.     1.     0.43
+          5.   20.     1.     0.43
+          1.   21.     1.     1.00
+          2.   21.     1.     1.00
+          3.   21.     1.     1.00
+          4.   21.     1.     1.00
+          5.   21.     1.     1.00
+          1.   22.     1.     0.67
+          2.   22.     1.     0.67
+          3.   22.     1.     0.67
+          4.   22.     1.     0.67
+          5.   22.     1.     0.67
+
+   GROUP NUMBER:  77   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    95 chdf2            1    0.000       41.25       389.5      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   22.     1.     0.33
+          2.   22.     1.     0.33
+          3.   22.     1.     0.33
+          4.   22.     1.     0.33
+          5.   22.     1.     0.33
+          1.   23.     1.     1.00
+          2.   23.     1.     1.00
+          3.   23.     1.     1.00
+          4.   23.     1.     1.00
+          5.   23.     1.     1.00
+          1.   24.     1.     1.00
+          2.   24.     1.     1.00
+          3.   24.     1.     1.00
+          4.   24.     1.     1.00
+          5.   24.     1.     1.00
+          1.   25.     1.     0.17
+          2.   25.     1.     0.17
+          3.   25.     1.     0.17
+          4.   25.     1.     0.17
+          5.   25.     1.     0.17
+
+   GROUP NUMBER:  78   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    96 chdf3            1    0.000       38.64       287.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   25.     1.     0.83
+          2.   25.     1.     0.83
+          3.   25.     1.     0.83
+          4.   25.     1.     0.83
+          5.   25.     1.     0.83
+          1.   26.     1.     1.00
+          2.   26.     1.     1.00
+          3.   26.     1.     1.00
+          4.   26.     1.     1.00
+          5.   26.     1.     1.00
+          1.   27.     1.     0.37
+          2.   27.     1.     0.37
+          3.   27.     1.     0.37
+          4.   27.     1.     0.37
+          5.   27.     1.     0.37
+
+   GROUP NUMBER:  79   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    97 chdf4            1    0.000       45.50      0.1243E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   27.     1.     0.63
+          2.   27.     1.     0.63
+          3.   27.     1.     0.63
+          4.   27.     1.     0.63
+          5.   27.     1.     0.63
+          1.   28.     1.     1.00
+          2.   28.     1.     1.00
+          3.   28.     1.     1.00
+          4.   28.     1.     1.00
+          5.   28.     1.     1.00
+          1.   29.     1.     0.30
+          2.   29.     1.     0.30
+          3.   29.     1.     0.30
+          4.   29.     1.     0.30
+          5.   29.     1.     0.30
+
+   GROUP NUMBER:  80   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    98 chdf5            1    0.000       33.34       179.7      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   29.     1.     0.70
+          2.   29.     1.     0.70
+          3.   29.     1.     0.70
+          4.   29.     1.     0.70
+          5.   29.     1.     0.70
+          1.   30.     1.     1.00
+          2.   30.     1.     1.00
+          3.   30.     1.     1.00
+          4.   30.     1.     1.00
+          5.   30.     1.     1.00
+          1.   31.     1.     0.83
+          2.   31.     1.     0.83
+          3.   31.     1.     0.83
+          4.   31.     1.     0.83
+          5.   31.     1.     0.83
+
+   GROUP NUMBER:  81   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+    99 chdf6            1    0.000       26.36       122.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   31.     1.     0.17
+          2.   31.     1.     0.17
+          3.   31.     1.     0.17
+          4.   31.     1.     0.17
+          5.   31.     1.     0.17
+          1.   32.     1.     1.00
+          2.   32.     1.     1.00
+          3.   32.     1.     1.00
+          4.   32.     1.     1.00
+          5.   32.     1.     1.00
+          1.   33.     1.     0.99
+          2.   33.     1.     0.99
+          3.   33.     1.     0.99
+          4.   33.     1.     0.99
+          5.   33.     1.     0.99
+
+   GROUP NUMBER:  82   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   100 chdf7            1    0.000       1.280       702.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   33.     1.     0.01
+          2.   33.     1.     0.01
+          3.   33.     1.     0.01
+          4.   33.     1.     0.01
+          5.   33.     1.     0.01
+          1.   34.     1.     1.00
+          2.   34.     1.     1.00
+          3.   34.     1.     1.00
+          4.   34.     1.     1.00
+          5.   34.     1.     1.00
+          1.   35.     1.     1.00
+          2.   35.     1.     1.00
+          3.   35.     1.     1.00
+          4.   35.     1.     1.00
+          5.   35.     1.     1.00
+          1.   36.     1.     0.21
+          2.   36.     1.     0.21
+          3.   36.     1.     0.21
+          4.   36.     1.     0.21
+          5.   36.     1.     0.21
+
+   GROUP NUMBER:  83   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   101 chdf8            1    0.000      -17.70       196.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   36.     1.     0.79
+          2.   36.     1.     0.79
+          3.   36.     1.     0.79
+          4.   36.     1.     0.79
+          5.   36.     1.     0.79
+          1.   37.     1.     1.00
+          2.   37.     1.     1.00
+          3.   37.     1.     1.00
+          4.   37.     1.     1.00
+          5.   37.     1.     1.00
+          1.   38.     1.     0.38
+          2.   38.     1.     0.38
+          3.   38.     1.     0.38
+          4.   38.     1.     0.38
+          5.   38.     1.     0.38
+
+   GROUP NUMBER:  84   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   102 chdf9            1    0.000      -27.76       128.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   38.     1.     0.62
+          2.   38.     1.     0.62
+          3.   38.     1.     0.62
+          4.   38.     1.     0.62
+          5.   38.     1.     0.62
+          1.   39.     1.     1.00
+          2.   39.     1.     1.00
+          3.   39.     1.     1.00
+          4.   39.     1.     1.00
+          5.   39.     1.     1.00
+          1.   40.     1.     0.56
+          2.   40.     1.     0.56
+          3.   40.     1.     0.56
+          4.   40.     1.     0.56
+          5.   40.     1.     0.56
+
+   GROUP NUMBER:  85   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   103 chdf10           1    0.000      -38.12       114.3      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   40.     1.     0.44
+          2.   40.     1.     0.44
+          3.   40.     1.     0.44
+          4.   40.     1.     0.44
+          5.   40.     1.     0.44
+          1.   41.     1.     1.00
+          2.   41.     1.     1.00
+          3.   41.     1.     1.00
+          4.   41.     1.     1.00
+          5.   41.     1.     1.00
+          1.   42.     1.     0.79
+          2.   42.     1.     0.79
+          3.   42.     1.     0.79
+          4.   42.     1.     0.79
+          5.   42.     1.     0.79
+
+   GROUP NUMBER:  86   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   104 chdf11           1    0.000      -42.74       124.2      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   42.     1.     0.21
+          2.   42.     1.     0.21
+          3.   42.     1.     0.21
+          4.   42.     1.     0.21
+          5.   42.     1.     0.21
+          1.   43.     1.     1.00
+          2.   43.     1.     1.00
+          3.   43.     1.     1.00
+          4.   43.     1.     1.00
+          5.   43.     1.     1.00
+          1.   44.     1.     1.00
+          2.   44.     1.     1.00
+          3.   44.     1.     1.00
+          4.   44.     1.     1.00
+          5.   44.     1.     1.00
+          1.   45.     1.     0.71
+          2.   45.     1.     0.71
+          3.   45.     1.     0.71
+          4.   45.     1.     0.71
+          5.   45.     1.     0.71
+
+   GROUP NUMBER:  87   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   105 chdf12           1    0.000      -23.68       148.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   45.     1.     0.29
+          2.   45.     1.     0.29
+          3.   45.     1.     0.29
+          4.   45.     1.     0.29
+          5.   45.     1.     0.29
+          1.   46.     1.     1.00
+          2.   46.     1.     1.00
+          3.   46.     1.     1.00
+          4.   46.     1.     1.00
+          5.   46.     1.     1.00
+          1.   47.     1.     1.00
+          2.   47.     1.     1.00
+          3.   47.     1.     1.00
+          4.   47.     1.     1.00
+          5.   47.     1.     1.00
+          1.   48.     1.     0.12
+          2.   48.     1.     0.12
+          3.   48.     1.     0.12
+          4.   48.     1.     0.12
+          5.   48.     1.     0.12
+
+   GROUP NUMBER:  88   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   106 chdf13           1    0.000      -10.76       301.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   48.     1.     0.88
+          2.   48.     1.     0.88
+          3.   48.     1.     0.88
+          4.   48.     1.     0.88
+          5.   48.     1.     0.88
+          1.   49.     1.     1.00
+          2.   49.     1.     1.00
+          3.   49.     1.     1.00
+          4.   49.     1.     1.00
+          5.   49.     1.     1.00
+          1.   50.     1.     1.00
+          2.   50.     1.     1.00
+          3.   50.     1.     1.00
+          4.   50.     1.     1.00
+          5.   50.     1.     1.00
+
+   GROUP NUMBER:  89   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   107 chdf14           1    0.000      -43.24       126.8      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    1.     1.     1.00
+          2.    1.     1.     1.00
+          3.    1.     1.     1.00
+          4.    1.     1.     1.00
+          5.    1.     1.     1.00
+          1.    2.     1.     1.00
+          2.    2.     1.     1.00
+          3.    2.     1.     1.00
+          4.    2.     1.     1.00
+          5.    2.     1.     1.00
+          1.    3.     1.     0.92
+          2.    3.     1.     0.92
+          3.    3.     1.     0.92
+          4.    3.     1.     0.92
+          5.    3.     1.     0.92
+
+   GROUP NUMBER:  90   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   108 chdf15           1    0.000      -54.55      0.1154E+05  STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    3.     1.     0.08
+          2.    3.     1.     0.08
+          3.    3.     1.     0.08
+          4.    3.     1.     0.08
+          5.    3.     1.     0.08
+          1.    4.     1.     1.00
+          2.    4.     1.     1.00
+          3.    4.     1.     1.00
+          4.    4.     1.     1.00
+          5.    4.     1.     1.00
+          1.    5.     1.     1.00
+          2.    5.     1.     1.00
+          3.    5.     1.     1.00
+          4.    5.     1.     1.00
+          5.    5.     1.     1.00
+          1.    6.     1.     0.56
+          2.    6.     1.     0.56
+          3.    6.     1.     0.56
+          4.    6.     1.     0.56
+          5.    6.     1.     0.56
+
+   GROUP NUMBER:  91   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   109 chdf16           1    0.000      -53.95       204.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    6.     1.     0.44
+          2.    6.     1.     0.44
+          3.    6.     1.     0.44
+          4.    6.     1.     0.44
+          5.    6.     1.     0.44
+          1.    7.     1.     1.00
+          2.    7.     1.     1.00
+          3.    7.     1.     1.00
+          4.    7.     1.     1.00
+          5.    7.     1.     1.00
+          1.    8.     1.     0.99
+          2.    8.     1.     0.99
+          3.    8.     1.     0.99
+          4.    8.     1.     0.99
+          5.    8.     1.     0.99
+
+   GROUP NUMBER:  92   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   110 chdf17           1    0.000      -44.45       132.1      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.    8.     1.     0.01
+          2.    8.     1.     0.01
+          3.    8.     1.     0.01
+          4.    8.     1.     0.01
+          5.    8.     1.     0.01
+          1.    9.     1.     1.00
+          2.    9.     1.     1.00
+          3.    9.     1.     1.00
+          4.    9.     1.     1.00
+          5.    9.     1.     1.00
+          1.   10.     1.     1.00
+          2.   10.     1.     1.00
+          3.   10.     1.     1.00
+          4.   10.     1.     1.00
+          5.   10.     1.     1.00
+          1.   11.     1.     0.09
+          2.   11.     1.     0.09
+          3.   11.     1.     0.09
+          4.   11.     1.     0.09
+          5.   11.     1.     0.09
+
+   GROUP NUMBER:  93   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   111 chdf18           1    0.000      -45.65       137.6      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   11.     1.     0.91
+          2.   11.     1.     0.91
+          3.   11.     1.     0.91
+          4.   11.     1.     0.91
+          5.   11.     1.     0.91
+          1.   12.     1.     1.00
+          2.   12.     1.     1.00
+          3.   12.     1.     1.00
+          4.   12.     1.     1.00
+          5.   12.     1.     1.00
+          1.   13.     1.     0.74
+          2.   13.     1.     0.74
+          3.   13.     1.     0.74
+          4.   13.     1.     0.74
+          5.   13.     1.     0.74
+
+   GROUP NUMBER:  94   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    20
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   112 chdf19           1    0.000      -11.74       284.9      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   13.     1.     0.26
+          2.   13.     1.     0.26
+          3.   13.     1.     0.26
+          4.   13.     1.     0.26
+          5.   13.     1.     0.26
+          1.   14.     1.     1.00
+          2.   14.     1.     1.00
+          3.   14.     1.     1.00
+          4.   14.     1.     1.00
+          5.   14.     1.     1.00
+          1.   15.     1.     1.00
+          2.   15.     1.     1.00
+          3.   15.     1.     1.00
+          4.   15.     1.     1.00
+          5.   15.     1.     1.00
+          1.   16.     1.     0.28
+          2.   16.     1.     0.28
+          3.   16.     1.     0.28
+          4.   16.     1.     0.28
+          5.   16.     1.     0.28
+
+   GROUP NUMBER:  95   BOUNDARY TYPE: CHD   NUMBER OF CELLS IN GROUP:    15
+   NUMBER OF FLOW OBSERVATIONS:     1
+
+                                        OBSERVED
+                    REFER.            BOUNDARY FLOW
+       OBSERVATION  STRESS    TIME     GAIN (-) OR              STATISTIC   PLOT
+  OBS#    NAME      PERIOD   OFFSET     LOSS (+)    STATISTIC     TYPE      SYM.
+   113 chdf20           1    0.000       3.220       541.0      STD. DEV.      1
+
+       LAYER  ROW  COLUMN    FACTOR
+          1.   16.     1.     0.72
+          2.   16.     1.     0.72
+          3.   16.     1.     0.72
+          4.   16.     1.     0.72
+          5.   16.     1.     0.72
+          1.   17.     1.     1.00
+          2.   17.     1.     1.00
+          3.   17.     1.     1.00
+          4.   17.     1.     1.00
+          5.   17.     1.     1.00
+          1.   18.     1.     0.50
+          2.   18.     1.     0.50
+          3.   18.     1.     0.50
+          4.   18.     1.     0.50
+          5.   18.     1.     0.50
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =       15
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       50
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        0
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.50000E-01
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =      999
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        2
+                                         DAMPING PARAMETER =    0.10000E+01
+
+ WETTING CAPABILITY IS ACTIVE IN   5 LAYERS
+  WETTING FACTOR=  0.2000000    
+  WETTING ITERATION INTERVAL=           1
+  IHDWET=           0
+
+
+ HUF2 -- HYDROGEOLOGIC-UNIT FLOW PACKAGE
+ ---------------------------------------------------------------------------
+UNIT UNIT_1    CORRESPONDS TO UNIT NO.     1
+UNIT UNIT_2    CORRESPONDS TO UNIT NO.     2
+UNIT UNIT_11   CORRESPONDS TO UNIT NO.     3
+UNIT UNIT_12   CORRESPONDS TO UNIT NO.     4
+UNIT UNIT_13   CORRESPONDS TO UNIT NO.     5
+UNIT UNIT_14   CORRESPONDS TO UNIT NO.     6
+UNIT UNIT_15   CORRESPONDS TO UNIT NO.     7
+UNIT UNIT_3    CORRESPONDS TO UNIT NO.     8
+UNIT UNIT_4    CORRESPONDS TO UNIT NO.     9
+UNIT UNIT_5    CORRESPONDS TO UNIT NO.    10
+UNIT UNIT_6    CORRESPONDS TO UNIT NO.    11
+UNIT UNIT_7    CORRESPONDS TO UNIT NO.    12
+UNIT UNIT_8    CORRESPONDS TO UNIT NO.    13
+UNIT UNIT_9    CORRESPONDS TO UNIT NO.    14
+UNIT UNIT_10   CORRESPONDS TO UNIT NO.    15
+
+
+   INTERPRETATION OF UNIT FLAGS:
+     UNIT      HANI           VK/VANI
+ ---------------------------------------------------------------------------
+ unit_1          VARIABLE    ANISOTROPY
+ unit_2          VARIABLE    ANISOTROPY
+ unit_11         VARIABLE    ANISOTROPY
+ unit_12         VARIABLE    ANISOTROPY
+ unit_13         VARIABLE    ANISOTROPY
+ unit_14         VARIABLE    ANISOTROPY
+ unit_15         VARIABLE    ANISOTROPY
+ unit_3          VARIABLE    ANISOTROPY
+ unit_4          VARIABLE    ANISOTROPY
+ unit_5          VARIABLE    ANISOTROPY
+ unit_6          VARIABLE    ANISOTROPY
+ unit_7          VARIABLE    ANISOTROPY
+ unit_8          VARIABLE    ANISOTROPY
+ unit_9          VARIABLE    ANISOTROPY
+ unit_10         VARIABLE    ANISOTROPY
+
+ PARAMETER NAME:MHANI_2      TYPE:HANI UNITS:   5
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_11   CORRESPONDS TO UNIT NO.     3
+                UNIT:  3   MULTIPLIER:MHANI_2   ZONE ARRAY:ALL
+UNIT UNIT_15   CORRESPONDS TO UNIT NO.     7
+                UNIT:  7   MULTIPLIER:MHANI_2   ZONE ARRAY:ALL
+UNIT UNIT_5    CORRESPONDS TO UNIT NO.    10
+                UNIT: 10   MULTIPLIER:MHANI_2   ZONE ARRAY:ALL
+UNIT UNIT_6    CORRESPONDS TO UNIT NO.    11
+                UNIT: 11   MULTIPLIER:MHANI_2   ZONE ARRAY:ALL
+UNIT UNIT_10   CORRESPONDS TO UNIT NO.    15
+                UNIT: 15   MULTIPLIER:MHANI_2   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHANI_6      TYPE:HANI UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_2    CORRESPONDS TO UNIT NO.     2
+                UNIT:  2   MULTIPLIER:MHANI_6   ZONE ARRAY:ALL
+UNIT UNIT_14   CORRESPONDS TO UNIT NO.     6
+                UNIT:  6   MULTIPLIER:MHANI_6   ZONE ARRAY:ALL
+UNIT UNIT_7    CORRESPONDS TO UNIT NO.    12
+                UNIT: 12   MULTIPLIER:MHANI_6   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHANI_7      TYPE:HANI UNITS:   4
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_13   CORRESPONDS TO UNIT NO.     5
+                UNIT:  5   MULTIPLIER:MHANI_7   ZONE ARRAY:ALL
+UNIT UNIT_3    CORRESPONDS TO UNIT NO.     8
+                UNIT:  8   MULTIPLIER:MHANI_7   ZONE ARRAY:ALL
+UNIT UNIT_8    CORRESPONDS TO UNIT NO.    13
+                UNIT: 13   MULTIPLIER:MHANI_7   ZONE ARRAY:ALL
+UNIT UNIT_9    CORRESPONDS TO UNIT NO.    14
+                UNIT: 14   MULTIPLIER:MHANI_7   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHANI_8      TYPE:HANI UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_1    CORRESPONDS TO UNIT NO.     1
+                UNIT:  1   MULTIPLIER:MHANI_8   ZONE ARRAY:ALL
+UNIT UNIT_12   CORRESPONDS TO UNIT NO.     4
+                UNIT:  4   MULTIPLIER:MHANI_8   ZONE ARRAY:ALL
+UNIT UNIT_4    CORRESPONDS TO UNIT NO.     9
+                UNIT:  9   MULTIPLIER:MHANI_8   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHK_2        TYPE:HK   UNITS:   5
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_11   CORRESPONDS TO UNIT NO.     3
+                UNIT:  3   MULTIPLIER:MHK_2   ZONE ARRAY:ALL
+UNIT UNIT_15   CORRESPONDS TO UNIT NO.     7
+                UNIT:  7   MULTIPLIER:MHK_2   ZONE ARRAY:ALL
+UNIT UNIT_5    CORRESPONDS TO UNIT NO.    10
+                UNIT: 10   MULTIPLIER:MHK_2   ZONE ARRAY:ALL
+UNIT UNIT_6    CORRESPONDS TO UNIT NO.    11
+                UNIT: 11   MULTIPLIER:MHK_2   ZONE ARRAY:ALL
+UNIT UNIT_10   CORRESPONDS TO UNIT NO.    15
+                UNIT: 15   MULTIPLIER:MHK_2   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHK_6        TYPE:HK   UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_2    CORRESPONDS TO UNIT NO.     2
+                UNIT:  2   MULTIPLIER:MHK_6   ZONE ARRAY:ALL
+UNIT UNIT_14   CORRESPONDS TO UNIT NO.     6
+                UNIT:  6   MULTIPLIER:MHK_6   ZONE ARRAY:ALL
+UNIT UNIT_7    CORRESPONDS TO UNIT NO.    12
+                UNIT: 12   MULTIPLIER:MHK_6   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHK_7        TYPE:HK   UNITS:   4
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_13   CORRESPONDS TO UNIT NO.     5
+                UNIT:  5   MULTIPLIER:MHK_7   ZONE ARRAY:ALL
+UNIT UNIT_3    CORRESPONDS TO UNIT NO.     8
+                UNIT:  8   MULTIPLIER:MHK_7   ZONE ARRAY:ALL
+UNIT UNIT_8    CORRESPONDS TO UNIT NO.    13
+                UNIT: 13   MULTIPLIER:MHK_7   ZONE ARRAY:ALL
+UNIT UNIT_9    CORRESPONDS TO UNIT NO.    14
+                UNIT: 14   MULTIPLIER:MHK_7   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MHK_8        TYPE:HK   UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_1    CORRESPONDS TO UNIT NO.     1
+                UNIT:  1   MULTIPLIER:MHK_8   ZONE ARRAY:ALL
+UNIT UNIT_12   CORRESPONDS TO UNIT NO.     4
+                UNIT:  4   MULTIPLIER:MHK_8   ZONE ARRAY:ALL
+UNIT UNIT_4    CORRESPONDS TO UNIT NO.     9
+                UNIT:  9   MULTIPLIER:MHK_8   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MVANI_2      TYPE:VANI UNITS:   5
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_11   CORRESPONDS TO UNIT NO.     3
+                UNIT:  3   MULTIPLIER:MVANI_2   ZONE ARRAY:ALL
+UNIT UNIT_15   CORRESPONDS TO UNIT NO.     7
+                UNIT:  7   MULTIPLIER:MVANI_2   ZONE ARRAY:ALL
+UNIT UNIT_5    CORRESPONDS TO UNIT NO.    10
+                UNIT: 10   MULTIPLIER:MVANI_2   ZONE ARRAY:ALL
+UNIT UNIT_6    CORRESPONDS TO UNIT NO.    11
+                UNIT: 11   MULTIPLIER:MVANI_2   ZONE ARRAY:ALL
+UNIT UNIT_10   CORRESPONDS TO UNIT NO.    15
+                UNIT: 15   MULTIPLIER:MVANI_2   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MVANI_6      TYPE:VANI UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_2    CORRESPONDS TO UNIT NO.     2
+                UNIT:  2   MULTIPLIER:MVANI_6   ZONE ARRAY:ALL
+UNIT UNIT_14   CORRESPONDS TO UNIT NO.     6
+                UNIT:  6   MULTIPLIER:MVANI_6   ZONE ARRAY:ALL
+UNIT UNIT_7    CORRESPONDS TO UNIT NO.    12
+                UNIT: 12   MULTIPLIER:MVANI_6   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MVANI_7      TYPE:VANI UNITS:   4
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_13   CORRESPONDS TO UNIT NO.     5
+                UNIT:  5   MULTIPLIER:MVANI_7   ZONE ARRAY:ALL
+UNIT UNIT_3    CORRESPONDS TO UNIT NO.     8
+                UNIT:  8   MULTIPLIER:MVANI_7   ZONE ARRAY:ALL
+UNIT UNIT_8    CORRESPONDS TO UNIT NO.    13
+                UNIT: 13   MULTIPLIER:MVANI_7   ZONE ARRAY:ALL
+UNIT UNIT_9    CORRESPONDS TO UNIT NO.    14
+                UNIT: 14   MULTIPLIER:MVANI_7   ZONE ARRAY:ALL
+
+ PARAMETER NAME:MVANI_8      TYPE:VANI UNITS:   3
+ The parameter value from the package file is:   1.0000    
+UNIT UNIT_1    CORRESPONDS TO UNIT NO.     1
+                UNIT:  1   MULTIPLIER:MVANI_8   ZONE ARRAY:ALL
+UNIT UNIT_12   CORRESPONDS TO UNIT NO.     4
+                UNIT:  4   MULTIPLIER:MVANI_8   ZONE ARRAY:ALL
+UNIT UNIT_4    CORRESPONDS TO UNIT NO.     9
+                UNIT:  9   MULTIPLIER:MVANI_8   ZONE ARRAY:ALL
+
+
+PRINTCODE FLAGS ARE SET AS FOLLOWS
+   UNIT       HK   HANI   VK    SS    SY
+------------------------------------------
+unit_1         0     0     0     0     0
+unit_2         0     0     0     0     0
+unit_11        0     0     0     0     0
+unit_12        0     0     0     0     0
+unit_13        0     0     0     0     0
+unit_14        0     0     0     0     0
+unit_15        0     0     0     0     0
+unit_3         0     0     0     0     0
+unit_4         0     0     0     0     0
+unit_5         0     0     0     0     0
+unit_6         0     0     0     0     0
+unit_7         0     0     0     0     0
+unit_8         0     0     0     0     0
+unit_9         0     0     0     0     0
+unit_10        0     0     0     0     0
+
+
+     0 Drain parameters
+
+
+     0 Evapotranspiration parameters
+
+
+     0 GHB parameters
+
+
+     0 Recharge parameters
+
+
+     0 Stream parameters
+
+
+     0 TIME-VARIANT SPECIFIED-HEAD PARAMETERS
+
+  168 PARAMETERS HAVE BEEN DEFINED IN ALL PACKAGES.
+ (SPACE IS ALLOCATED FOR 2000 PARAMETERS.)
+
+ SMALLEST AND LARGEST WEIGHTED RESIDUALS
+
+      SMALLEST WEIGHTED RESIDUALS      |       LARGEST WEIGHTED RESIDUALS
+                WEIGHTED   PERCENT OF  |                 WEIGHTED   PERCENT OF
+ NAME           RESIDUAL    OBJ FUNC   |  NAME           RESIDUAL    OBJ FUNC
+ drnf12         -2.00         5.80     |  strf15          1.77         4.53
+ strf29         -1.98         5.64     |  drnf6           1.06         1.64
+ strf3          -1.94         5.45     |  hed17          0.891         1.15
+ chdf6          -1.80         4.71     |  hed11          0.840         1.02
+ strf5          -1.48         3.16     |  strf24         0.749         0.81
+
+ STATISTICS FOR ALL RESIDUALS :
+ AVERAGE WEIGHTED RESIDUAL  :-0.411E+00
+ # RESIDUALS >= 0. :     30
+ # RESIDUALS < 0.  :     83
+ NUMBER OF RUNS  :   24  IN  113 OBSERVATIONS
+
+ INTERPRETING THE CALCULATED RUNS STATISTIC VALUE OF     -5.00    
+ NOTE: THE FOLLOWING APPLIES ONLY IF 
+        # RESIDUALS >= 0 . IS GREATER THAN 10 AND 
+        # RESIDUALS < 0.   IS GREATER THAN 10
+ THE NEGATIVE VALUE MAY INDICATE TOO FEW RUNS:
+    IF THE VALUE IS LESS THAN -1.28, THERE IS LESS THAN A 10 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.645, THERE IS LESS THAN A 5 PERCENT
+       CHANCE THE VALUES ARE RANDOM,
+    IF THE VALUE IS LESS THAN -1.96, THERE IS LESS THAN A 2.5 PERCENT
+       CHANCE THE VALUES ARE RANDOM.
+
+
+ CORRELATION BETWEEN ORDERED WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS
+ FOR OBSERVATIONS =    0.981    
+
+ --------------------------------------------------------------------------
+ COMMENTS ON THE INTERPRETATION OF THE CORRELATION BETWEEN
+ WEIGHTED RESIDUALS AND NORMAL ORDER STATISTICS:
+
+ The critical value for correlation at the 5% significance level is 0.978
+
+ IF the reported CORRELATION is GREATER than the 5% critical value, ACCEPT
+ the hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.  The probability that this   
+ conclusion is wrong is less than 5%.
+
+ IF the reported correlation IS LESS THAN the 5% critical value REJECT the
+ hypothesis that the weighted residuals are INDEPENDENT AND NORMALLY
+ DISTRIBUTED at the 5% significance level.
+
+ The analysis can also be done using the 10% significance level.
+ The associated critical value is 0.981
+ --------------------------------------------------------------------------
+
