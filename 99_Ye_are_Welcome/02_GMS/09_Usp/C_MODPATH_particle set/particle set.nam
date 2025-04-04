@@ -1,0 +1,8 @@
+list 97 "particle set.sum"
+main 10 "particle set.mdf"
+dis 19 "E:\10.2023\Usp_campus__23.01.25\C_MODFLOW\C.dis"
+locations 71 "particle set.loc"
+endpoint 75 "particle set.ept"
+pathline 76 "particle set.pth"
+head(binary) 730 "C:\pest\A\C_MODFLOW\C.hed"
+budget 40 "C:\pest\A\C_MODFLOW\C.ccf"

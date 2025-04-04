@@ -1,0 +1,32 @@
+# MF2K NAME file
+#
+# Output Files
+GLOBAL       701 "A007.glo"
+LIST         702 "A007.out"
+DATA(BINARY) 730 "A007.hed"
+DATA(BINARY) 740 "A007.ccf"
+LMT6         718 "A007.lmt"
+#
+# Obs-Sen-Pes Process Input Files
+OBS          750 "A007.obs"
+HOB          751 "A007.hob"
+GBOB         753 "A007.gbob"
+DROB         754 "A007.drob"
+CHOB         755 "A007.chob"
+STOB         756 "A007.stob"
+SEN          757 "A007.snn"
+ASP          771 "A007.asp"
+#
+# Global Input Files
+DIS          719 "A007.dis"
+#
+# Flow Process Input Files
+BAS6         703 "A007.ba6"
+LPF          704 "A007.lpf"
+OC           715 "A007.oc"
+RCH          716 "A007.rch"
+DRN          710 "A007.drn"
+GHB          711 "A007.ghb"
+STR          717 "A007.str"
+CHD          713 "A007.chd"
+PCG          714 "A007.pcg"

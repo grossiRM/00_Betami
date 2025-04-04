@@ -1,0 +1,36 @@
+#GMS MODFLOW Simulation
+#28 April 2023
+FREE
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound1" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound2" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound3" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound4" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound5" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound6" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound7" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound8" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound9" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound10" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound11" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound12" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound13" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound14" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound15" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/ibound16" 1 0 23625
+-999.0
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead1" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead2" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead3" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead4" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead5" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead6" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead7" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead8" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead9" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead10" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead11" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead12" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead13" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead14" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead15" 1 0 23625
+HDF5 1.0 -1 "A007.h5" "Arrays/StartHead16" 1 0 23625

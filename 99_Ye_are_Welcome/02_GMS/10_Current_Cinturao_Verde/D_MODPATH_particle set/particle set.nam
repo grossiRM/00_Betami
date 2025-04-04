@@ -1,0 +1,8 @@
+list 97 "particle set.sum"
+main 10 "particle set.mdf"
+dis 19 "D:\Current_Cinturao_Verde\model\D_MODFLOW\D.dis"
+locations 71 "particle set.loc"
+endpoint 75 "particle set.ept"
+pathline 76 "particle set.pth"
+head(binary) 730 "C:\pest\A\D_MODFLOW\D.hed"
+budget 40 "C:\pest\A\D_MODFLOW\D.ccf"

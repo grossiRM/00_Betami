@@ -1,0 +1,253 @@
+pcf
+* control data
+      restart   regularisation
+           62           82            1           75            5
+            1            1       single        point            1            0            0
+   2.0000      -2.0000      0.30000      3.00000E-02           10
+  0.20000       5.0000      1.00000E-03
+  0.10000    
+            7  5.00000E-03            3            3  5.00000E-03            3
+            0            0            0
+* singular value decomposition
+1
+1000 1.0e-007
+0
+* parameter groups
+ general      relative     1.00000E-02   0.0000         switch   2.0000     outside_pts
+* parameter data
+ hani_5011    none   factor     0.80829      0.24249       2.0207          general   1.0000       0.0000       1
+ hani_5012    none   factor      1.0468      0.31405       2.6171          general   1.0000       0.0000       1
+ hani_5013    none   factor      1.0198      0.30594       2.5495          general   1.0000       0.0000       1
+ hani_5014    none   factor      13.241       3.9724       33.104          general   1.0000       0.0000       1
+ hani_5015    none   factor      15.042       4.5125       37.604          general   1.0000       0.0000       1
+ vani_5021    none   factor      4.3848       1.0962       17.539          general   1.0000       0.0000       1
+ vani_5022    none   factor     1.78010E-02  7.12048E-03  0.21361          general   1.0000       0.0000       1
+ vani_5023    none   factor      5.4455       1.3614       21.782          general   1.0000       0.0000       1
+ vani_5024    none   factor     0.37854      7.57086E-02   1.1356          general   1.0000       0.0000       1
+ vani_5025    none   factor      6.6195      0.66195       19.859          general   1.0000       0.0000       1
+ drn_1        none   factor      2.2157      0.85208       5.9721          general   1.0000       0.0000       1
+ drn_2        none   factor     0.57819      3.33505E-02   4.7440          general   1.0000       0.0000       1
+ drn_3        none   factor      1.9007      0.69459       5.7359          general   1.0000       0.0000       1
+ drn_4        none   factor      1.5213      0.50492       5.4514          general   1.0000       0.0000       1
+ drn_5        none   factor      1.7571      0.62279       5.6282          general   1.0000       0.0000       1
+ drn_6        none   factor      1.9579      0.72321       5.7788          general   1.0000       0.0000       1
+ drn_7        none   factor      1.9480      0.71826       5.7714          general   1.0000       0.0000       1
+ drn_8        none   factor      2.5013      0.99492       6.1864          general   1.0000       0.0000       1
+ drn_9        none   factor     0.97558      0.23205       5.0421          general   1.0000       0.0000       1
+ drn_10       none   factor     0.56651      2.75088E-02   4.7353          general   1.0000       0.0000       1
+ ghb_11       none   factor     0.39871      7.02525E-02   2.9266          general   1.0000       0.0000       1
+ ghb_12       none   factor     0.27975      5.24087E-02   2.2129          general   1.0000       0.0000       1
+ ghb_13       none   factor     0.14301      3.18967E-02   1.3924          general   1.0000       0.0000       1
+ ghb_14       none   factor     0.43414      7.55672E-02   3.1392          general   1.0000       0.0000       1
+ ghb_15       none   factor     0.14165      3.16927E-02   1.3843          general   1.0000       0.0000       1
+ ghb_16       none   factor     0.27625      5.18827E-02   2.1919          general   1.0000       0.0000       1
+ ghb_17       none   factor     0.39838      7.02027E-02   2.9246          general   1.0000       0.0000       1
+ ghb_18       none   factor     0.30288      5.58778E-02   2.3517          general   1.0000       0.0000       1
+ ghb_19       none   factor     0.25932      4.93439E-02   2.0903          general   1.0000       0.0000       1
+ ghb_20       none   factor     0.14263      3.18401E-02   1.3901          general   1.0000       0.0000       1
+ ghb_21       none   factor     0.59007      9.89556E-02   4.0748          general   1.0000       0.0000       1
+ ghb_22       none   factor     0.43722      7.60293E-02   3.1577          general   1.0000       0.0000       1
+ ghb_23       none   factor     0.19626      3.98845E-02   1.7119          general   1.0000       0.0000       1
+ ghb_24       none   factor     0.13217      3.02709E-02   1.3274          general   1.0000       0.0000       1
+ ghb_25       none   factor     0.13009      2.99586E-02   1.3149          general   1.0000       0.0000       1
+ ghb_26       none   factor     0.13256      3.03290E-02   1.3297          general   1.0000       0.0000       1
+ ghb_27       none   factor     0.45915      7.93188E-02   3.2893          general   1.0000       0.0000       1
+ sc1v1        none   factor      1.9004      0.24955       20.668          general   1.0000       0.0000       1
+ sc1v2        none   factor      1.0374      0.24955       20.668          general   1.0000       0.0000       1
+ sc1v3        none   factor      3.4707      0.24955       20.668          general   1.0000       0.0000       1
+ sc1v4        none   factor     0.74559      0.24955       20.668          general   1.0000       0.0000       1
+ sc1v5        none   factor     0.74559      0.24955       20.668          general   1.0000       0.0000       1
+ sc2v1        log    factor     2.99000E-04  8.01880E-06  5.00205E-04      general   1.0000       0.0000       1
+ sc2v2        log    factor     4.17000E-04  8.01880E-06  5.00205E-04      general   1.0000       0.0000       1
+ sc2v3        log    factor     9.70000E-05  8.01880E-06  5.00205E-04      general   1.0000       0.0000       1
+ sc2v4        log    factor     2.08000E-04  8.01880E-06  5.00205E-04      general   1.0000       0.0000       1
+ sc2v5        log    factor     2.33000E-04  8.01880E-06  5.00205E-04      general   1.0000       0.0000       1
+ sc3v1        none   factor     0.32983      0.12397       11.150          general   1.0000       0.0000       1
+ sc3v2        none   factor      1.4552      0.12397       11.150          general   1.0000       0.0000       1
+ sc3v3        none   factor     0.32983      0.12397       11.150          general   1.0000       0.0000       1
+ sc3v4        none   factor     0.32983      0.12397       11.150          general   1.0000       0.0000       1
+ sc3v5        none   factor     0.32983      0.12397       11.150          general   1.0000       0.0000       1
+ sc4v1        log    factor     1.21000E-04  2.00008E-05  5.00073E-04      general   1.0000       0.0000       1
+ sc4v2        log    factor     1.19000E-04  2.00008E-05  5.00073E-04      general   1.0000       0.0000       1
+ sc4v3        log    factor     4.45000E-05  2.00008E-05  5.00073E-04      general   1.0000       0.0000       1
+ sc4v4        log    factor     5.76000E-05  2.00008E-05  5.00073E-04      general   1.0000       0.0000       1
+ sc4v5        log    factor     1.25000E-04  2.00008E-05  5.00073E-04      general   1.0000       0.0000       1
+ sc5v1        log    factor     1.47300E-03  7.99361E-04  1.00644E-02      general   1.0000       0.0000       1
+ sc5v2        log    factor     2.05000E-03  7.99361E-04  1.00644E-02      general   1.0000       0.0000       1
+ sc5v3        log    factor     1.47300E-03  7.99361E-04  1.00644E-02      general   1.0000       0.0000       1
+ sc5v4        log    factor     1.47300E-03  7.99361E-04  1.00644E-02      general   1.0000       0.0000       1
+ sc5v5        log    factor     7.62000E-03  7.99361E-04  1.00644E-02      general   1.0000       0.0000       1
+* observation groups
+ head
+ drain
+ ghb
+ const_head
+ regul_1
+* observation data
+ hed1           734.000       0.293991      head
+ hed2           735.247       0.271783      head
+ hed3           734.776       0.282116      head
+ hed4           734.390       0.293991      head
+ hed5           734.000       0.293991      head
+ hed6           729.170       0.128941      head
+ hed7           730.057       0.158716      head
+ hed8           730.487       0.172550      head
+ hed9           728.839       0.120962      head
+ hed10          730.669       0.180052      head
+ hed11          729.491       0.140187      head
+ hed12          731.154       0.196585      head
+ hed13          730.211       0.162046      head
+ hed14          742.466       5.577777E-02  head
+ hed15          742.802       4.977743E-02  head
+ hed16          725.910       5.577777E-02  head
+ hed17          726.331       6.392146E-02  head
+ hed18          733.895       0.293991      head
+ hed19          736.548       0.221366      head
+ hed20          739.842       0.113311      head
+ hed21          740.471       9.650069E-02  head
+ hed22          738.635       0.146115      head
+ hed23          732.802       0.262600      head
+ hed24          736.020       0.246725      head
+ hed25          736.246       0.233213      head
+ hed26          742.929       4.779536E-02  head
+ hed27          723.811       2.836744E-02  head
+ hed28          733.012       0.271783      head
+ hed29          744.292       3.028367E-02  head
+ hed30          722.846       1.884899E-02  head
+ hed31          726.385       6.392146E-02  head
+ hed32          741.190       8.082447E-02  head
+ hed33          740.540       9.419981E-02  head
+ hed34          732.381       0.246725      head
+ hed35          728.153       0.103545      head
+ hed36          740.588       9.419981E-02  head
+ hed37          736.997       0.205828      head
+ hed38          737.180       0.196585      head
+ hed39          738.594       0.149167      head
+ hed40          738.230       0.162046      head
+ hed41          740.073       0.105944      head
+ hed42          734.605       0.293991      head
+ hed43          732.947       0.271783      head
+ hed44          725.751       5.376820E-02  head
+ hed45          732.988       0.271783      head
+ hed46          737.636       0.180052      head
+ hed47          731.000       0.192231      head
+ dr0           -17.5755       3.763603E-02  drain
+ dr1           -15.7519       3.419230E-02  drain
+ dr2           -13.0632       2.933652E-02  drain
+ dr3           -15.5085       3.419230E-02  drain
+ dr4           -13.8093       3.061188E-02  drain
+ dr5           -30.1214       4.620784E-02  drain
+ dr6           -61.9506       4.822949E-03  drain
+ dr7           -15.3110       3.342275E-02  drain
+ dr8           -12.9187       2.933652E-02  drain
+ dr9           -61.9897       4.822949E-03  drain
+ gb0            5.81830       2.708896E-02  ghb
+ gb1            4.83217       2.448069E-02  ghb
+ gb2            8.99706       3.414863E-02  ghb
+ gb3            6.86113       2.953907E-02  ghb
+ gb4            5.28493       2.571284E-02  ghb
+ gb5            6.71400       2.953907E-02  ghb
+ gb6            11.9377       2.953907E-02  ghb
+ gb7            12.5232       2.784546E-02  ghb
+ gb8            34.7435       2.183719E-04  ghb
+ gb9            28.0230       2.189409E-03  ghb
+ gb10           5.01719       2.448069E-02  ghb
+ gb11           5.01419       2.448069E-02  ghb
+ gb12          -3.15227       7.905941E-03  ghb
+ gb13           4.39083       2.283434E-02  ghb
+ gb14           10.2937       3.276924E-02  ghb
+ gb15           5.33652       2.571284E-02  ghb
+ gb16           5.44726       2.571284E-02  ghb
+ ch0            3.49191       4.125383E-02  const_head
+ ch1           -4.09577       1.607383E-02  const_head
+ ch2           0.544927       6.463895E-02  const_head
+ ch3           0.464457       6.463895E-02  const_head
+ ch4           -1.66313       3.790996E-02  const_head
+ ch5           0.547796       6.463895E-02  const_head
+ ch6          -1.168589E-02   5.826728E-02  const_head
+ ch7            9.45180       3.451698E-03  const_head
+* model command line
+ E_bat1.bat
+* model input/output
+ E.tpl_1 E.snn_1
+ E.ins E._os
+* prior information
+ pi0 1.0 * sc1v1 - 1.0 * sc1v2 = 0.0 0.0183758453185 regul_1
+ pi1 1.0 * sc1v1 - 1.0 * sc1v3 = 0.0 1.81744674e-007 regul_1
+ pi2 1.0 * sc1v1 - 1.0 * sc1v4 = 0.0 0.0183803049861 regul_1
+ pi3 1.0 * sc1v1 - 1.0 * sc1v5 = 0.0 0.096880434551 regul_1
+ pi4 1.0 * sc1v2 - 1.0 * sc1v3 = 0.0 0.018407180504 regul_1
+ pi5 1.0 * sc1v2 - 1.0 * sc1v4 = 0.0 0.0 regul_1
+ pi6 1.0 * sc1v2 - 1.0 * sc1v5 = 0.0 0.1014384430903 regul_1
+ pi7 1.0 * sc1v3 - 1.0 * sc1v4 = 0.0 0.0180483938975 regul_1
+ pi8 1.0 * sc1v3 - 1.0 * sc1v5 = 0.0 0.1175617369571 regul_1
+ pi9 1.0 * sc1v4 - 1.0 * sc1v5 = 0.0 0.1109074789508 regul_1
+ pi10 1.0 * log(sc2v1) - 1.0 * log(sc2v2) = 0.0 0.0183753380096 regul_1
+ pi11 1.0 * log(sc2v1) - 1.0 * log(sc2v3) = 0.0 1.82335383e-007 regul_1
+ pi12 1.0 * log(sc2v1) - 1.0 * log(sc2v4) = 0.0 0.0183799303012 regul_1
+ pi13 1.0 * log(sc2v1) - 1.0 * log(sc2v5) = 0.0 0.096878711847 regul_1
+ pi14 1.0 * log(sc2v2) - 1.0 * log(sc2v3) = 0.0 0.0184078408478 regul_1
+ pi15 1.0 * log(sc2v2) - 1.0 * log(sc2v4) = 0.0 0.0 regul_1
+ pi16 1.0 * log(sc2v2) - 1.0 * log(sc2v5) = 0.0 0.101434860364 regul_1
+ pi17 1.0 * log(sc2v3) - 1.0 * log(sc2v4) = 0.0 0.0180493765036 regul_1
+ pi18 1.0 * log(sc2v3) - 1.0 * log(sc2v5) = 0.0 0.117570331524 regul_1
+ pi19 1.0 * log(sc2v4) - 1.0 * log(sc2v5) = 0.0 0.1109034282676 regul_1
+ pi20 1.0 * sc3v1 - 1.0 * sc3v2 = 0.0 0.0183751908875 regul_1
+ pi21 1.0 * sc3v1 - 1.0 * sc3v3 = 0.0 1.82652589e-007 regul_1
+ pi22 1.0 * sc3v1 - 1.0 * sc3v4 = 0.0 0.0183800686149 regul_1
+ pi23 1.0 * sc3v1 - 1.0 * sc3v5 = 0.0 0.0968791417469 regul_1
+ pi24 1.0 * sc3v2 - 1.0 * sc3v3 = 0.0 0.0184076934064 regul_1
+ pi25 1.0 * sc3v2 - 1.0 * sc3v4 = 0.0 0.0 regul_1
+ pi26 1.0 * sc3v2 - 1.0 * sc3v5 = 0.0 0.1014334789342 regul_1
+ pi27 1.0 * sc3v3 - 1.0 * sc3v4 = 0.0 0.0180495132299 regul_1
+ pi28 1.0 * sc3v3 - 1.0 * sc3v5 = 0.0 0.1175708273989 regul_1
+ pi29 1.0 * sc3v4 - 1.0 * sc3v5 = 0.0 0.1109039031286 regul_1
+ pi30 1.0 * log(sc4v1) - 1.0 * log(sc4v2) = 0.0 0.0183753380096 regul_1
+ pi31 1.0 * log(sc4v1) - 1.0 * log(sc4v3) = 0.0 1.82335383e-007 regul_1
+ pi32 1.0 * log(sc4v1) - 1.0 * log(sc4v4) = 0.0 0.0183799303012 regul_1
+ pi33 1.0 * log(sc4v1) - 1.0 * log(sc4v5) = 0.0 0.096878711847 regul_1
+ pi34 1.0 * log(sc4v2) - 1.0 * log(sc4v3) = 0.0 0.0184078408478 regul_1
+ pi35 1.0 * log(sc4v2) - 1.0 * log(sc4v4) = 0.0 0.0 regul_1
+ pi36 1.0 * log(sc4v2) - 1.0 * log(sc4v5) = 0.0 0.101434860364 regul_1
+ pi37 1.0 * log(sc4v3) - 1.0 * log(sc4v4) = 0.0 0.0180493765036 regul_1
+ pi38 1.0 * log(sc4v3) - 1.0 * log(sc4v5) = 0.0 0.117570331524 regul_1
+ pi39 1.0 * log(sc4v4) - 1.0 * log(sc4v5) = 0.0 0.1109034282676 regul_1
+ pi40 1.0 * log(sc5v1) - 1.0 * log(sc5v2) = 0.0 0.0183753380177 regul_1
+ pi41 1.0 * log(sc5v1) - 1.0 * log(sc5v3) = 0.0 1.82335383e-007 regul_1
+ pi42 1.0 * log(sc5v1) - 1.0 * log(sc5v4) = 0.0 0.0183799303094 regul_1
+ pi43 1.0 * log(sc5v1) - 1.0 * log(sc5v5) = 0.0 0.0968787118387 regul_1
+ pi44 1.0 * log(sc5v2) - 1.0 * log(sc5v3) = 0.0 0.0184078408559 regul_1
+ pi45 1.0 * log(sc5v2) - 1.0 * log(sc5v4) = 0.0 0.0 regul_1
+ pi46 1.0 * log(sc5v2) - 1.0 * log(sc5v5) = 0.0 0.1014348603645 regul_1
+ pi47 1.0 * log(sc5v3) - 1.0 * log(sc5v4) = 0.0 0.0180493765117 regul_1
+ pi48 1.0 * log(sc5v3) - 1.0 * log(sc5v5) = 0.0 0.1175703315108 regul_1
+ pi49 1.0 * log(sc5v4) - 1.0 * log(sc5v5) = 0.0 0.1109034282561 regul_1
+ pi50 1.0 * sc1v1 = 1.9003930091858 1.0 regul_1
+ pi51 1.0 * sc1v2 = 1.037425994873 1.0 regul_1
+ pi52 1.0 * sc1v3 = 3.4707250595093 1.0 regul_1
+ pi53 1.0 * sc1v4 = 0.7455880045891 1.0 regul_1
+ pi54 1.0 * sc1v5 = 0.7455880045891 1.0 regul_1
+ pi55 1.0 * log(sc2v1) = -8.11506652832 1.0 regul_1
+ pi56 1.0 * log(sc2v2) = -7.782424449921 1.0 regul_1
+ pi57 1.0 * log(sc2v3) = -9.24079990387 1.0 regul_1
+ pi58 1.0 * log(sc2v4) = -8.47797203064 1.0 regul_1
+ pi59 1.0 * log(sc2v5) = -8.364472389221 1.0 regul_1
+ pi60 1.0 * sc3v1 = 0.3298330008984 1.0 regul_1
+ pi61 1.0 * sc3v2 = 1.4551630020142 1.0 regul_1
+ pi62 1.0 * sc3v3 = 0.3298330008984 1.0 regul_1
+ pi63 1.0 * sc3v4 = 0.3298330008984 1.0 regul_1
+ pi64 1.0 * sc3v5 = 0.3298330008984 1.0 regul_1
+ pi65 1.0 * log(sc4v1) = -9.019720077515 1.0 regul_1
+ pi66 1.0 * log(sc4v2) = -9.036387443542 1.0 regul_1
+ pi67 1.0 * log(sc4v3) = -10.0200214386 1.0 regul_1
+ pi68 1.0 * log(sc4v4) = -9.761987686157 1.0 regul_1
+ pi69 1.0 * log(sc4v5) = -8.987196922302 1.0 regul_1
+ pi70 1.0 * log(sc5v1) = -6.520453929901 1.0 regul_1
+ pi71 1.0 * log(sc5v2) = -6.189915657043 1.0 regul_1
+ pi72 1.0 * log(sc5v3) = -6.520453929901 1.0 regul_1
+ pi73 1.0 * log(sc5v4) = -6.520453929901 1.0 regul_1
+ pi74 1.0 * log(sc5v5) = -4.876978874207 1.0 regul_1
+* regularisation
+  0.40000      0.44000      0.10000    
+  0.10000      1.00000E-06  1.00000E+06
+   1.3000      1.00000E-02

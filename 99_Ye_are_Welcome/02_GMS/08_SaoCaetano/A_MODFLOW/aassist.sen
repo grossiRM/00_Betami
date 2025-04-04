@@ -1,0 +1,49 @@
+                       PARAMETER SENSITIVITIES: CASE aassist
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            11.0000         2.283171E-02
+   par2            pargp            11.0000         5.555386E-03
+   par3            pargp            11.0000         2.519019E-02
+   par4            pargp            11.0000         2.657925E-02
+   par5            pargp            11.0000         9.969540E-03
+   par6            pargp            11.0000         7.180544E-03
+   par7            pargp            11.0000          2.22286    
+   par8            pargp            11.0000         1.415781E-02
+   par9            pargp            11.0000         1.354314E-02
+   par10           pargp            11.0000         1.389612E-02
+   par11           pargp            11.0000         1.441463E-02
+   par12           pargp            11.0000         2.085102E-02
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            11.0441         2.004930E-02
+   par2            pargp            11.0371         4.778550E-03
+   par3            pargp            11.0511         3.595628E-03
+   par4            pargp            11.0001         3.226182E-03
+   par5            pargp            11.0177         2.194108E-02
+   par6            pargp            11.0454         1.730849E-02
+   par7            pargp            11.0016         0.181219    
+   par8            pargp            10.9085         6.391737E-02
+   par9            pargp            10.8841         9.224579E-03
+   par10           pargp            11.0038         5.023272E-03
+   par11           pargp            11.0140         1.533672E-02
+   par12           pargp            10.9878         4.692709E-02
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            11.0437         3.698548E-02
+   par2            pargp            11.0458         1.128024E-02
+   par3            pargp            11.0511         7.254829E-03
+   par4            pargp            10.9976         7.164152E-03
+   par5            pargp            11.1722         5.697309E-03
+   par6            pargp            11.0467         5.194556E-03
+   par7            pargp            11.0080         1.698523E-02
+   par8            pargp            10.8165         3.333095E-03
+   par9            pargp            10.8828         0.156603    
+   par10           pargp            11.0115         3.675366E-03
+   par11           pargp            11.0146         5.729229E-03
+   par12           pargp            10.9029         5.062595E-02

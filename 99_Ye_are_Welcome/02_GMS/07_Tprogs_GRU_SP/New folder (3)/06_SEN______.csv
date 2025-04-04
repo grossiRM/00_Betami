@@ -1,0 +1,414 @@
+                          PARAMETER SENSITIVITIES: CASE e
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.808290         7.107257E-02
+   hani_5012       general          1.04680         4.058014E-03
+   hani_5013       general          1.01980         2.339079E-02
+   hani_5014       general          13.2410         1.704381E-03
+   hani_5015       general          15.0420         3.724303E-03
+   vani_5021       general          4.38480         1.284209E-03
+   vani_5022       general         1.780100E-02      3.16829    
+   vani_5023       general          5.44550         5.173985E-03
+   vani_5024       general         0.378540         6.107117E-02
+   vani_5025       general          6.61950         8.628470E-03
+   drn_1           general          2.21570         1.061749E-02
+   drn_2           general         0.578190         1.840014E-02
+   drn_3           general          1.90070         1.206278E-02
+   drn_4           general          1.52130         1.511662E-02
+   drn_5           general          1.75710         1.320599E-02
+   drn_6           general          1.95790         1.168502E-02
+   drn_7           general          1.94800         2.913807E-02
+   drn_8           general          2.50130         9.533903E-03
+   drn_9           general         0.975580         2.348982E-02
+   drn_10          general         0.566510         4.963885E-02
+   ghb_11          general         0.398710         4.601354E-03
+   ghb_12          general         0.279750         8.089279E-02
+   ghb_13          general         0.143010         0.422250    
+   ghb_14          general         0.434140         2.659201E-02
+   ghb_15          general         0.141650         1.592019E-02
+   ghb_16          general         0.276250         0.204469    
+   ghb_17          general         0.398380         6.858258E-03
+   ghb_18          general         0.302880         1.160656E-02
+   ghb_19          general         0.259320         3.721272E-02
+   ghb_20          general         0.142630         0.398428    
+   ghb_21          general         0.590070         3.887988E-02
+   ghb_22          general         0.437220         5.322452E-02
+   ghb_23          general         0.196260         0.300090    
+   ghb_24          general         0.132170         3.529118E-02
+   ghb_25          general         0.130090         0.176690    
+   ghb_26          general         0.132560         0.172589    
+   ghb_27          general         0.459150         9.506598E-03
+   sc1v1           general          1.90040         1.204941E-02
+   sc1v2           general          1.03740         3.194234E-03
+   sc1v3           general          3.47070         9.427064E-04
+   sc1v4           general         0.745590         4.975542E-02
+   sc1v5           general         0.745590         3.289952E-02
+   sc2v1           general         2.990000E-04     8.168378E-02
+   sc2v2           general         4.170000E-04     5.275801E-02
+   sc2v3           general         9.700000E-05     2.086104E-02
+   sc2v4           general         2.080000E-04     7.913450E-03
+   sc2v5           general         2.330000E-04     0.133875    
+   sc3v1           general         0.329830         0.172371    
+   sc3v2           general          1.45520         1.179072E-03
+   sc3v3           general         0.329830         0.172607    
+   sc3v4           general         0.329830         7.228826E-02
+   sc3v5           general         0.329830         8.008403E-02
+   sc4v1           general         1.210000E-04     0.129517    
+   sc4v2           general         1.190000E-04     2.348007E-02
+   sc4v3           general         4.450000E-05     4.981054E-03
+   sc4v4           general         5.760000E-05     5.317659E-02
+   sc4v5           general         1.250000E-04     0.132369    
+   sc5v1           general         1.473000E-03     1.054138E-02
+   sc5v2           general         2.050000E-03     0.131036    
+   sc5v3           general         1.473000E-03     1.119736E-02
+   sc5v4           general         1.473000E-03     2.274776E-02
+   sc5v5           general         7.620000E-03     5.789187E-02
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "head" ----->
+
+ Number of observations with non-zero weight =    47
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.555595         0.120609    
+   hani_5012       general          1.14990         3.901984E-03
+   hani_5013       general         0.960254         4.012133E-02
+   hani_5014       general          13.2517         2.941574E-03
+   hani_5015       general          15.0228         6.342011E-03
+   vani_5021       general          4.44259         1.305776E-03
+   vani_5022       general         1.230897E-02      5.43129    
+   vani_5023       general          5.49325         8.667785E-03
+   vani_5024       general         0.321112         0.106311    
+   vani_5025       general          6.59118         1.472290E-02
+   drn_1           general          2.18779         1.840337E-02
+   drn_2           general         0.569376         1.326228E-02
+   drn_3           general          1.91539         2.087939E-02
+   drn_4           general          1.58508         2.615538E-02
+   drn_5           general          1.79046         2.245843E-02
+   drn_6           general          1.97270         2.033133E-02
+   drn_7           general          2.00536         4.985462E-02
+   drn_8           general          2.50875         1.645930E-02
+   drn_9           general         0.938085         4.073788E-02
+   drn_10          general         0.660847         8.477133E-02
+   ghb_11          general         0.477074         5.732062E-03
+   ghb_12          general         0.449721         0.139917    
+   ghb_13          general         0.148632         0.723551    
+   ghb_14          general         0.450786         1.663504E-02
+   ghb_15          general         0.170113         1.996858E-02
+   ghb_16          general         0.307733         0.349741    
+   ghb_17          general         0.367493         1.128899E-02
+   ghb_18          general         0.215358         1.842771E-02
+   ghb_19          general         0.179109         2.687145E-02
+   ghb_20          general         5.759677E-02     0.681864    
+   ghb_21          general         0.658183         6.761901E-02
+   ghb_22          general         0.565677         9.243806E-02
+   ghb_23          general         0.166193         0.496208    
+   ghb_24          general         7.837740E-02     3.003437E-02
+   ghb_25          general         0.233890         0.307086    
+   ghb_26          general         3.032900E-02     0.287882    
+   ghb_27          general         0.409952         5.393310E-03
+   sc1v1           general          1.91088         2.046214E-02
+   sc1v2           general          1.06990         2.124424E-03
+   sc1v3           general          3.44858         6.650637E-04
+   sc1v4           general         0.462267         5.288632E-02
+   sc1v5           general         0.417929         5.543943E-02
+   sc2v1           general         4.487748E-04     9.166687E-02
+   sc2v2           general         5.002050E-04     9.179736E-02
+   sc2v3           general         7.811991E-05     1.724423E-02
+   sc2v4           general         2.358118E-04     5.385728E-03
+   sc2v5           general         5.002050E-04     0.228347    
+   sc3v1           general         0.469351         0.295150    
+   sc3v2           general          1.57159         1.701052E-03
+   sc3v3           general         0.299769         0.295437    
+   sc3v4           general         0.255885         0.123046    
+   sc3v5           general         0.123970         0.126040    
+   sc4v1           general         8.135617E-05     0.221543    
+   sc4v2           general         1.119358E-04     1.747647E-02
+   sc4v3           general         3.269936E-05     7.104320E-03
+   sc4v4           general         4.748036E-05     9.224860E-02
+   sc4v5           general         1.032995E-04     0.226442    
+   sc5v1           general         1.171526E-03     6.379368E-03
+   sc5v2           general         3.058944E-03     0.224048    
+   sc5v3           general         2.642961E-03     6.702129E-03
+   sc5v4           general         3.525943E-03     1.692553E-02
+   sc5v5           general         9.982419E-03     9.766426E-02
+
+
+
+ Composite sensitivities for observation group "drain" ----->
+
+ Number of observations with non-zero weight =    10
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.555595         0.116494    
+   hani_5012       general          1.14990         2.572265E-02
+   hani_5013       general         0.960254         3.179747E-02
+   hani_5014       general          13.2517         1.002715E-03
+   hani_5015       general          15.0228         5.696678E-03
+   vani_5021       general          4.44259         3.977888E-03
+   vani_5022       general         1.230897E-02      4.18544    
+   vani_5023       general          5.49325         7.785760E-03
+   vani_5024       general         0.321112         2.886371E-02
+   vani_5025       general          6.59118         1.285322E-02
+   drn_1           general          2.18779         6.668110E-03
+   drn_2           general         0.569376         2.222130E-02
+   drn_3           general          1.91539         9.570196E-03
+   drn_4           general          1.58508         8.795600E-03
+   drn_5           general          1.79046         9.580883E-03
+   drn_6           general          1.97270         5.789410E-03
+   drn_7           general          2.00536         4.009932E-02
+   drn_8           general          2.50875         7.505117E-03
+   drn_9           general         0.938085         1.297241E-02
+   drn_10          general         0.660847         4.288358E-02
+   ghb_11          general         0.477074         7.273605E-03
+   ghb_12          general         0.449721         4.167338E-02
+   ghb_13          general         0.148632         0.565897    
+   ghb_14          general         0.450786         1.881608E-02
+   ghb_15          general         0.170113         3.215553E-02
+   ghb_16          general         0.307733         0.287531    
+   ghb_17          general         0.367493         8.744204E-03
+   ghb_18          general         0.215358         1.486755E-02
+   ghb_19          general         0.179109         4.538791E-02
+   ghb_20          general         5.759677E-02     0.553837    
+   ghb_21          general         0.658183         1.832640E-02
+   ghb_22          general         0.565677         2.344177E-02
+   ghb_23          general         0.166193         0.668326    
+   ghb_24          general         7.837740E-02     0.249271    
+   ghb_25          general         0.233890         0.103931    
+   ghb_26          general         3.032900E-02     0.129630    
+   ghb_27          general         0.409952         7.316681E-02
+   sc1v1           general          1.91088         1.660961E-02
+   sc1v2           general          1.06990         2.365339E-02
+   sc1v3           general          3.44858         5.852251E-04
+   sc1v4           general         0.462267         0.316966    
+   sc1v5           general         0.417929         5.263913E-02
+   sc2v1           general         4.487748E-04     0.512160    
+   sc2v2           general         5.002050E-04     2.674022E-02
+   sc2v3           general         7.811991E-05     2.975715E-02
+   sc2v4           general         2.358118E-04     5.814838E-02
+   sc2v5           general         5.002050E-04     0.199763    
+   sc3v1           general         0.469351         0.235357    
+   sc3v2           general          1.57159         4.051254E-03
+   sc3v3           general         0.299769         0.236027    
+   sc3v4           general         0.255885         5.103962E-02
+   sc3v5           general         0.123970         0.128367    
+   sc4v1           general         8.135617E-05     0.179865    
+   sc4v2           general         1.119358E-04     1.085970E-02
+   sc4v3           general         3.269936E-05     6.859115E-03
+   sc4v4           general         4.748036E-05     2.921227E-02
+   sc4v5           general         1.032995E-04     0.183213    
+   sc5v1           general         1.171526E-03     7.539329E-02
+   sc5v2           general         3.058944E-03     0.179768    
+   sc5v3           general         2.642961E-03     5.581085E-02
+   sc5v4           general         3.525943E-03     3.541502E-02
+   sc5v5           general         9.982419E-03     7.914222E-02
+
+
+
+ Composite sensitivities for observation group "ghb" ----->
+
+ Number of observations with non-zero weight =    17
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.555595         3.891718E-02
+   hani_5012       general          1.14990         2.004541E-03
+   hani_5013       general         0.960254         6.923761E-03
+   hani_5014       general          13.2517         3.428189E-04
+   hani_5015       general          15.0228         1.839508E-03
+   vani_5021       general          4.44259         2.692970E-03
+   vani_5022       general         1.230897E-02      1.34711    
+   vani_5023       general          5.49325         3.381827E-03
+   vani_5024       general         0.321112         8.491113E-03
+   vani_5025       general          6.59118         4.066450E-03
+   drn_1           general          2.18779         2.352563E-03
+   drn_2           general         0.569376         2.588779E-02
+   drn_3           general          1.91539         2.004613E-03
+   drn_4           general          1.58508         3.168711E-03
+   drn_5           general          1.79046         3.695123E-03
+   drn_6           general          1.97270         1.797003E-03
+   drn_7           general          2.00536         1.327858E-02
+   drn_8           general          2.50875         1.650681E-03
+   drn_9           general         0.938085         3.520457E-03
+   drn_10          general         0.660847         3.405806E-02
+   ghb_11          general         0.477074         6.258138E-03
+   ghb_12          general         0.449721         1.626771E-02
+   ghb_13          general         0.148632         0.183314    
+   ghb_14          general         0.450786         3.153122E-02
+   ghb_15          general         0.170113         3.191599E-02
+   ghb_16          general         0.307733         9.310603E-02
+   ghb_17          general         0.367493         2.695429E-03
+   ghb_18          general         0.215358         1.075097E-02
+   ghb_19          general         0.179109         4.772418E-02
+   ghb_20          general         5.759677E-02     0.178515    
+   ghb_21          general         0.658183         5.468970E-03
+   ghb_22          general         0.565677         1.897715E-02
+   ghb_23          general         0.166193         0.237673    
+   ghb_24          general         7.837740E-02     1.808840E-02
+   ghb_25          general         0.233890         3.158943E-02
+   ghb_26          general         3.032900E-02     0.213569    
+   ghb_27          general         0.409952         4.478975E-03
+   sc1v1           general          1.91088         8.776539E-03
+   sc1v2           general          1.06990         9.414211E-04
+   sc1v3           general          3.44858         1.330489E-03
+   sc1v4           general         0.462267         8.111997E-03
+   sc1v5           general         0.417929         2.405021E-02
+   sc2v1           general         4.487748E-04     1.033716E-02
+   sc2v2           general         5.002050E-04     6.689136E-03
+   sc2v3           general         7.811991E-05     3.023676E-02
+   sc2v4           general         2.358118E-04     4.648777E-03
+   sc2v5           general         5.002050E-04     6.268310E-02
+   sc3v1           general         0.469351         7.631854E-02
+   sc3v2           general          1.57159         1.638395E-03
+   sc3v3           general         0.299769         8.006469E-02
+   sc3v4           general         0.255885         1.268342E-02
+   sc3v5           general         0.123970         5.913097E-02
+   sc4v1           general         8.135617E-05     5.959542E-02
+   sc4v2           general         1.119358E-04     2.841315E-02
+   sc4v3           general         3.269936E-05     5.736566E-03
+   sc4v4           general         4.748036E-05     8.623319E-03
+   sc4v5           general         1.032995E-04     6.155509E-02
+   sc5v1           general         1.171526E-03     1.372989E-02
+   sc5v2           general         3.058944E-03     5.958420E-02
+   sc5v3           general         2.642961E-03     5.572944E-03
+   sc5v4           general         3.525943E-03     2.802835E-02
+   sc5v5           general         9.982419E-03     2.688483E-02
+
+
+
+ Composite sensitivities for observation group "const_head" ----->
+
+ Number of observations with non-zero weight =     8
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.555595         2.402730E-02
+   hani_5012       general          1.14990         1.235382E-02
+   hani_5013       general         0.960254         1.122191E-02
+   hani_5014       general          13.2517         2.106423E-03
+   hani_5015       general          15.0228         1.737641E-03
+   vani_5021       general          4.44259         7.546220E-03
+   vani_5022       general         1.230897E-02     0.940955    
+   vani_5023       general          5.49325         8.543971E-03
+   vani_5024       general         0.321112         1.132285E-02
+   vani_5025       general          6.59118         2.722805E-03
+   drn_1           general          2.18779         7.710720E-03
+   drn_2           general         0.569376         0.160318    
+   drn_3           general          1.91539         8.911640E-03
+   drn_4           general          1.58508         1.515232E-02
+   drn_5           general          1.79046         2.661944E-02
+   drn_6           general          1.97270         3.280805E-03
+   drn_7           general          2.00536         1.021285E-02
+   drn_8           general          2.50875         9.939453E-03
+   drn_9           general         0.938085         1.924486E-02
+   drn_10          general         0.660847         5.223862E-02
+   ghb_11          general         0.477074         2.882449E-02
+   ghb_12          general         0.449721         8.873959E-02
+   ghb_13          general         0.148632         0.100767    
+   ghb_14          general         0.450786         0.244335    
+   ghb_15          general         0.170113         8.154804E-02
+   ghb_16          general         0.307733         4.675370E-02
+   ghb_17          general         0.367493         1.976602E-02
+   ghb_18          general         0.215358         3.956102E-02
+   ghb_19          general         0.179109         0.327204    
+   ghb_20          general         5.759677E-02     8.570343E-02
+   ghb_21          general         0.658183         1.845399E-02
+   ghb_22          general         0.565677         1.457520E-02
+   ghb_23          general         0.166193         9.895239E-02
+   ghb_24          general         7.837740E-02     3.393980E-02
+   ghb_25          general         0.233890         6.110207E-02
+   ghb_26          general         3.032900E-02     0.191718    
+   ghb_27          general         0.409952         5.986240E-03
+   sc1v1           general          1.91088         4.825772E-03
+   sc1v2           general          1.06990         6.164188E-03
+   sc1v3           general          3.44858         8.341058E-03
+   sc1v4           general         0.462267         7.922412E-02
+   sc1v5           general         0.417929         2.628996E-02
+   sc2v1           general         4.487748E-04     2.521327E-02
+   sc2v2           general         5.002050E-04     1.605411E-02
+   sc2v3           general         7.811991E-05     0.173048    
+   sc2v4           general         2.358118E-04     1.404879E-02
+   sc2v5           general         5.002050E-04     5.618749E-02
+   sc3v1           general         0.469351         4.437706E-02
+   sc3v2           general          1.57159         2.901553E-03
+   sc3v3           general         0.299769         3.916105E-02
+   sc3v4           general         0.255885         0.147103    
+   sc3v5           general         0.123970         0.289765    
+   sc4v1           general         8.135617E-05     4.161853E-02
+   sc4v2           general         1.119358E-04     0.208688    
+   sc4v3           general         3.269936E-05     2.534821E-02
+   sc4v4           general         4.748036E-05     4.123158E-02
+   sc4v5           general         1.032995E-04     3.847468E-02
+   sc5v1           general         1.171526E-03     2.317843E-02
+   sc5v2           general         3.058944E-03     6.949437E-02
+   sc5v3           general         2.642961E-03     8.133404E-02
+   sc5v4           general         3.525943E-03     0.197410    
+   sc5v5           general         9.982419E-03     9.920912E-02
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    82
+ Parameter name    Group          Current value    Sensitivity
+   hani_5011       general         0.555595         7.107257E-02
+   hani_5012       general          1.14990         4.058014E-03
+   hani_5013       general         0.960254         2.339079E-02
+   hani_5014       general          13.2517         1.704381E-03
+   hani_5015       general          15.0228         3.724303E-03
+   vani_5021       general          4.44259         1.284209E-03
+   vani_5022       general         1.230897E-02      3.16829    
+   vani_5023       general          5.49325         5.173985E-03
+   vani_5024       general         0.321112         6.107117E-02
+   vani_5025       general          6.59118         8.628470E-03
+   drn_1           general          2.18779         1.061749E-02
+   drn_2           general         0.569376         1.840014E-02
+   drn_3           general          1.91539         1.206278E-02
+   drn_4           general          1.58508         1.511662E-02
+   drn_5           general          1.79046         1.320599E-02
+   drn_6           general          1.97270         1.168502E-02
+   drn_7           general          2.00536         2.913807E-02
+   drn_8           general          2.50875         9.533903E-03
+   drn_9           general         0.938085         2.348982E-02
+   drn_10          general         0.660847         4.963885E-02
+   ghb_11          general         0.477074         4.601354E-03
+   ghb_12          general         0.449721         8.089279E-02
+   ghb_13          general         0.148632         0.422250    
+   ghb_14          general         0.450786         2.659201E-02
+   ghb_15          general         0.170113         1.592019E-02
+   ghb_16          general         0.307733         0.204469    
+   ghb_17          general         0.367493         6.858258E-03
+   ghb_18          general         0.215358         1.160656E-02
+   ghb_19          general         0.179109         3.721272E-02
+   ghb_20          general         5.759677E-02     0.398428    
+   ghb_21          general         0.658183         3.887988E-02
+   ghb_22          general         0.565677         5.322452E-02
+   ghb_23          general         0.166193         0.300090    
+   ghb_24          general         7.837740E-02     3.529118E-02
+   ghb_25          general         0.233890         0.176690    
+   ghb_26          general         3.032900E-02     0.172589    
+   ghb_27          general         0.409952         9.506598E-03
+   sc1v1           general          1.91088         1.204941E-02
+   sc1v2           general          1.06990         3.194234E-03
+   sc1v3           general          3.44858         9.427064E-04
+   sc1v4           general         0.462267         4.975542E-02
+   sc1v5           general         0.417929         3.289952E-02
+   sc2v1           general         4.487748E-04     8.168378E-02
+   sc2v2           general         5.002050E-04     5.275801E-02
+   sc2v3           general         7.811991E-05     2.086104E-02
+   sc2v4           general         2.358118E-04     7.913450E-03
+   sc2v5           general         5.002050E-04     0.133875    
+   sc3v1           general         0.469351         0.172371    
+   sc3v2           general          1.57159         1.179072E-03
+   sc3v3           general         0.299769         0.172607    
+   sc3v4           general         0.255885         7.228826E-02
+   sc3v5           general         0.123970         8.008403E-02
+   sc4v1           general         8.135617E-05     0.129517    
+   sc4v2           general         1.119358E-04     2.348007E-02
+   sc4v3           general         3.269936E-05     4.981054E-03
+   sc4v4           general         4.748036E-05     5.317659E-02
+   sc4v5           general         1.032995E-04     0.132369    
+   sc5v1           general         1.171526E-03     1.054138E-02
+   sc5v2           general         3.058944E-03     0.131036    
+   sc5v3           general         2.642961E-03     1.119736E-02
+   sc5v4           general         3.525943E-03     2.274776E-02
+   sc5v5           general         9.982419E-03     5.789187E-02

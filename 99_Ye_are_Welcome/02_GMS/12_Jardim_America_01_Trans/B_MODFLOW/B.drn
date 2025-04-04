@@ -1,0 +1,6 @@
+#GMS_HDF5_01
+80 40 AUX IFACE AUX CONDFACT AUX CELLGRP
+        80         0         0
+GMS_HDF5_01 "B.h5" "Drain" 1
+        -1         0         0
+        -1         0         0

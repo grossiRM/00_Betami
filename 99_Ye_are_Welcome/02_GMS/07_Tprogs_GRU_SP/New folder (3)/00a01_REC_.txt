@@ -1,0 +1,764 @@
+
+                         PEST RUN RECORD: CASE e
+
+
+PEST Version: 17.5
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    62
+   Number of adjustable parameters                :    62
+   Number of parameter groups                     :     1
+   Number of observations                         :    82
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   E_bat1.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      E.tpl_1
+   for model input files:
+      E.snn_1
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      E.ins
+   for reading model output files:
+      E._os
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 1000
+   Ratio of lowest/highest singular value        :  1.000000E-07
+   Record eigenvectors in SVD file               : no
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+general      relative    1.0000E-02   none         switch       2.000     outside_pts
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+hani_5011    none              factor     0.808290       0.242490        2.02070    
+hani_5012    none              factor      1.04680       0.314050        2.61710    
+hani_5013    none              factor      1.01980       0.305940        2.54950    
+hani_5014    none              factor      13.2410        3.97240        33.1040    
+hani_5015    none              factor      15.0420        4.51250        37.6040    
+vani_5021    none              factor      4.38480        1.09620        17.5390    
+vani_5022    none              factor     1.780100E-02   7.120480E-03   0.213610    
+vani_5023    none              factor      5.44550        1.36140        21.7820    
+vani_5024    none              factor     0.378540       7.570860E-02    1.13560    
+vani_5025    none              factor      6.61950       0.661950        19.8590    
+drn_1        none              factor      2.21570       0.852080        5.97210    
+drn_2        none              factor     0.578190       3.335050E-02    4.74400    
+drn_3        none              factor      1.90070       0.694590        5.73590    
+drn_4        none              factor      1.52130       0.504920        5.45140    
+drn_5        none              factor      1.75710       0.622790        5.62820    
+drn_6        none              factor      1.95790       0.723210        5.77880    
+drn_7        none              factor      1.94800       0.718260        5.77140    
+drn_8        none              factor      2.50130       0.994920        6.18640    
+drn_9        none              factor     0.975580       0.232050        5.04210    
+drn_10       none              factor     0.566510       2.750880E-02    4.73530    
+ghb_11       none              factor     0.398710       7.025250E-02    2.92660    
+ghb_12       none              factor     0.279750       5.240870E-02    2.21290    
+ghb_13       none              factor     0.143010       3.189670E-02    1.39240    
+ghb_14       none              factor     0.434140       7.556720E-02    3.13920    
+ghb_15       none              factor     0.141650       3.169270E-02    1.38430    
+ghb_16       none              factor     0.276250       5.188270E-02    2.19190    
+ghb_17       none              factor     0.398380       7.020270E-02    2.92460    
+ghb_18       none              factor     0.302880       5.587780E-02    2.35170    
+ghb_19       none              factor     0.259320       4.934390E-02    2.09030    
+ghb_20       none              factor     0.142630       3.184010E-02    1.39010    
+ghb_21       none              factor     0.590070       9.895560E-02    4.07480    
+ghb_22       none              factor     0.437220       7.602930E-02    3.15770    
+ghb_23       none              factor     0.196260       3.988450E-02    1.71190    
+ghb_24       none              factor     0.132170       3.027090E-02    1.32740    
+ghb_25       none              factor     0.130090       2.995860E-02    1.31490    
+ghb_26       none              factor     0.132560       3.032900E-02    1.32970    
+ghb_27       none              factor     0.459150       7.931880E-02    3.28930    
+sc1v1        none              factor      1.90040       0.249550        20.6680    
+sc1v2        none              factor      1.03740       0.249550        20.6680    
+sc1v3        none              factor      3.47070       0.249550        20.6680    
+sc1v4        none              factor     0.745590       0.249550        20.6680    
+sc1v5        none              factor     0.745590       0.249550        20.6680    
+sc2v1        log               factor     2.990000E-04   8.018800E-06   5.002050E-04
+sc2v2        log               factor     4.170000E-04   8.018800E-06   5.002050E-04
+sc2v3        log               factor     9.700000E-05   8.018800E-06   5.002050E-04
+sc2v4        log               factor     2.080000E-04   8.018800E-06   5.002050E-04
+sc2v5        log               factor     2.330000E-04   8.018800E-06   5.002050E-04
+sc3v1        none              factor     0.329830       0.123970        11.1500    
+sc3v2        none              factor      1.45520       0.123970        11.1500    
+sc3v3        none              factor     0.329830       0.123970        11.1500    
+sc3v4        none              factor     0.329830       0.123970        11.1500    
+sc3v5        none              factor     0.329830       0.123970        11.1500    
+sc4v1        log               factor     1.210000E-04   2.000080E-05   5.000730E-04
+sc4v2        log               factor     1.190000E-04   2.000080E-05   5.000730E-04
+sc4v3        log               factor     4.450000E-05   2.000080E-05   5.000730E-04
+sc4v4        log               factor     5.760000E-05   2.000080E-05   5.000730E-04
+sc4v5        log               factor     1.250000E-04   2.000080E-05   5.000730E-04
+sc5v1        log               factor     1.473000E-03   7.993610E-04   1.006440E-02
+sc5v2        log               factor     2.050000E-03   7.993610E-04   1.006440E-02
+sc5v3        log               factor     1.473000E-03   7.993610E-04   1.006440E-02
+sc5v4        log               factor     1.473000E-03   7.993610E-04   1.006440E-02
+sc5v5        log               factor     7.620000E-03   7.993610E-04   1.006440E-02
+
+Name         Group          Scale         Offset        Model command number
+hani_5011    general       1.00000        0.00000            1
+hani_5012    general       1.00000        0.00000            1
+hani_5013    general       1.00000        0.00000            1
+hani_5014    general       1.00000        0.00000            1
+hani_5015    general       1.00000        0.00000            1
+vani_5021    general       1.00000        0.00000            1
+vani_5022    general       1.00000        0.00000            1
+vani_5023    general       1.00000        0.00000            1
+vani_5024    general       1.00000        0.00000            1
+vani_5025    general       1.00000        0.00000            1
+drn_1        general       1.00000        0.00000            1
+drn_2        general       1.00000        0.00000            1
+drn_3        general       1.00000        0.00000            1
+drn_4        general       1.00000        0.00000            1
+drn_5        general       1.00000        0.00000            1
+drn_6        general       1.00000        0.00000            1
+drn_7        general       1.00000        0.00000            1
+drn_8        general       1.00000        0.00000            1
+drn_9        general       1.00000        0.00000            1
+drn_10       general       1.00000        0.00000            1
+ghb_11       general       1.00000        0.00000            1
+ghb_12       general       1.00000        0.00000            1
+ghb_13       general       1.00000        0.00000            1
+ghb_14       general       1.00000        0.00000            1
+ghb_15       general       1.00000        0.00000            1
+ghb_16       general       1.00000        0.00000            1
+ghb_17       general       1.00000        0.00000            1
+ghb_18       general       1.00000        0.00000            1
+ghb_19       general       1.00000        0.00000            1
+ghb_20       general       1.00000        0.00000            1
+ghb_21       general       1.00000        0.00000            1
+ghb_22       general       1.00000        0.00000            1
+ghb_23       general       1.00000        0.00000            1
+ghb_24       general       1.00000        0.00000            1
+ghb_25       general       1.00000        0.00000            1
+ghb_26       general       1.00000        0.00000            1
+ghb_27       general       1.00000        0.00000            1
+sc1v1        general       1.00000        0.00000            1
+sc1v2        general       1.00000        0.00000            1
+sc1v3        general       1.00000        0.00000            1
+sc1v4        general       1.00000        0.00000            1
+sc1v5        general       1.00000        0.00000            1
+sc2v1        general       1.00000        0.00000            1
+sc2v2        general       1.00000        0.00000            1
+sc2v3        general       1.00000        0.00000            1
+sc2v4        general       1.00000        0.00000            1
+sc2v5        general       1.00000        0.00000            1
+sc3v1        general       1.00000        0.00000            1
+sc3v2        general       1.00000        0.00000            1
+sc3v3        general       1.00000        0.00000            1
+sc3v4        general       1.00000        0.00000            1
+sc3v5        general       1.00000        0.00000            1
+sc4v1        general       1.00000        0.00000            1
+sc4v2        general       1.00000        0.00000            1
+sc4v3        general       1.00000        0.00000            1
+sc4v4        general       1.00000        0.00000            1
+sc4v5        general       1.00000        0.00000            1
+sc5v1        general       1.00000        0.00000            1
+sc5v2        general       1.00000        0.00000            1
+sc5v3        general       1.00000        0.00000            1
+sc5v4        general       1.00000        0.00000            1
+sc5v5        general       1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ hed1                    734.000         0.2940       head        
+ hed2                    735.247         0.2718       head        
+ hed3                    734.776         0.2821       head        
+ hed4                    734.390         0.2940       head        
+ hed5                    734.000         0.2940       head        
+ hed6                    729.170         0.1289       head        
+ hed7                    730.057         0.1587       head        
+ hed8                    730.487         0.1726       head        
+ hed9                    728.839         0.1210       head        
+ hed10                   730.669         0.1801       head        
+ hed11                   729.491         0.1402       head        
+ hed12                   731.154         0.1966       head        
+ hed13                   730.211         0.1620       head        
+ hed14                   742.466         5.5778E-02   head        
+ hed15                   742.802         4.9777E-02   head        
+ hed16                   725.910         5.5778E-02   head        
+ hed17                   726.331         6.3921E-02   head        
+ hed18                   733.895         0.2940       head        
+ hed19                   736.548         0.2214       head        
+ hed20                   739.842         0.1133       head        
+ hed21                   740.471         9.6501E-02   head        
+ hed22                   738.635         0.1461       head        
+ hed23                   732.802         0.2626       head        
+ hed24                   736.020         0.2467       head        
+ hed25                   736.246         0.2332       head        
+ hed26                   742.929         4.7795E-02   head        
+ hed27                   723.811         2.8367E-02   head        
+ hed28                   733.012         0.2718       head        
+ hed29                   744.292         3.0284E-02   head        
+ hed30                   722.846         1.8849E-02   head        
+ hed31                   726.385         6.3921E-02   head        
+ hed32                   741.190         8.0824E-02   head        
+ hed33                   740.540         9.4200E-02   head        
+ hed34                   732.381         0.2467       head        
+ hed35                   728.153         0.1035       head        
+ hed36                   740.588         9.4200E-02   head        
+ hed37                   736.997         0.2058       head        
+ hed38                   737.180         0.1966       head        
+ hed39                   738.594         0.1492       head        
+ hed40                   738.230         0.1620       head        
+ hed41                   740.073         0.1059       head        
+ hed42                   734.605         0.2940       head        
+ hed43                   732.947         0.2718       head        
+ hed44                   725.751         5.3768E-02   head        
+ hed45                   732.988         0.2718       head        
+ hed46                   737.636         0.1801       head        
+ hed47                   731.000         0.1922       head        
+ dr0                    -17.5755         3.7636E-02   drain       
+ dr1                    -15.7519         3.4192E-02   drain       
+ dr2                    -13.0632         2.9337E-02   drain       
+ dr3                    -15.5085         3.4192E-02   drain       
+ dr4                    -13.8093         3.0612E-02   drain       
+ dr5                    -30.1214         4.6208E-02   drain       
+ dr6                    -61.9506         4.8229E-03   drain       
+ dr7                    -15.3110         3.3423E-02   drain       
+ dr8                    -12.9187         2.9337E-02   drain       
+ dr9                    -61.9897         4.8229E-03   drain       
+ gb0                     5.81830         2.7089E-02   ghb         
+ gb1                     4.83217         2.4481E-02   ghb         
+ gb2                     8.99706         3.4149E-02   ghb         
+ gb3                     6.86113         2.9539E-02   ghb         
+ gb4                     5.28493         2.5713E-02   ghb         
+ gb5                     6.71400         2.9539E-02   ghb         
+ gb6                     11.9377         2.9539E-02   ghb         
+ gb7                     12.5232         2.7845E-02   ghb         
+ gb8                     34.7435         2.1837E-04   ghb         
+ gb9                     28.0230         2.1894E-03   ghb         
+ gb10                    5.01719         2.4481E-02   ghb         
+ gb11                    5.01419         2.4481E-02   ghb         
+ gb12                   -3.15227         7.9059E-03   ghb         
+ gb13                    4.39083         2.2834E-02   ghb         
+ gb14                    10.2937         3.2769E-02   ghb         
+ gb15                    5.33652         2.5713E-02   ghb         
+ gb16                    5.44726         2.5713E-02   ghb         
+ ch0                     3.49191         4.1254E-02   const_head  
+ ch1                    -4.09577         1.6074E-02   const_head  
+ ch2                    0.544927         6.4639E-02   const_head  
+ ch3                    0.464457         6.4639E-02   const_head  
+ ch4                    -1.66313         3.7910E-02   const_head  
+ ch5                    0.547796         6.4639E-02   const_head  
+ ch6                   -1.168589E-02     5.8267E-02   const_head  
+ ch7                     9.45180         3.4517E-03   const_head  
+
+
+Control settings:-
+
+   Initial lambda                                               :  2.0000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -2.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  5.0000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   3
+   Maximum number of consecutive failures to lower phi          :   3
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   3
+   Maximum number of optimisation iterations                    :   1
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   7.9838    
+   Contribution to phi from observation group "head"        =   4.8430    
+   Contribution to phi from observation group "drain"       =   1.0369    
+   Contribution to phi from observation group "ghb"         =  0.96120    
+   Contribution to phi from observation group "const_head"  =   1.1427    
+
+      Current parameter values
+      hani_5011       0.808290    
+      hani_5012        1.04680    
+      hani_5013        1.01980    
+      hani_5014        13.2410    
+      hani_5015        15.0420    
+      vani_5021        4.38480    
+      vani_5022       1.780100E-02
+      vani_5023        5.44550    
+      vani_5024       0.378540    
+      vani_5025        6.61950    
+      drn_1            2.21570    
+      drn_2           0.578190    
+      drn_3            1.90070    
+      drn_4            1.52130    
+      drn_5            1.75710    
+      drn_6            1.95790    
+      drn_7            1.94800    
+      drn_8            2.50130    
+      drn_9           0.975580    
+      drn_10          0.566510    
+      ghb_11          0.398710    
+      ghb_12          0.279750    
+      ghb_13          0.143010    
+      ghb_14          0.434140    
+      ghb_15          0.141650    
+      ghb_16          0.276250    
+      ghb_17          0.398380    
+      ghb_18          0.302880    
+      ghb_19          0.259320    
+      ghb_20          0.142630    
+      ghb_21          0.590070    
+      ghb_22          0.437220    
+      ghb_23          0.196260    
+      ghb_24          0.132170    
+      ghb_25          0.130090    
+      ghb_26          0.132560    
+      ghb_27          0.459150    
+      sc1v1            1.90040    
+      sc1v2            1.03740    
+      sc1v3            3.47070    
+      sc1v4           0.745590    
+      sc1v5           0.745590    
+      sc2v1           2.990000E-04
+      sc2v2           4.170000E-04
+      sc2v3           9.700000E-05
+      sc2v4           2.080000E-04
+      sc2v5           2.330000E-04
+      sc3v1           0.329830    
+      sc3v2            1.45520    
+      sc3v3           0.329830    
+      sc3v4           0.329830    
+      sc3v5           0.329830    
+      sc4v1           1.210000E-04
+      sc4v2           1.190000E-04
+      sc4v3           4.450000E-05
+      sc4v4           5.760000E-05
+      sc4v5           1.250000E-04
+      sc5v1           1.473000E-03
+      sc5v2           2.050000E-03
+      sc5v3           1.473000E-03
+      sc5v4           1.473000E-03
+      sc5v5           7.620000E-03
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   7.9838    
+   Contribution to phi from observation group "head"        :   4.8430    
+   Contribution to phi from observation group "drain"       :   1.0369    
+   Contribution to phi from observation group "ghb"         :  0.96120    
+   Contribution to phi from observation group "const_head"  :   1.1427    
+
+       Lambda =   2.0000     ----->
+          Phi =   7.3642      (  0.922 of starting phi)
+
+       Lambda =   1.0000     ----->
+          Phi =   7.4550      (  0.934 of starting phi)
+
+       Lambda =   4.0000     ----->
+          Phi =   7.0791      (  0.887 of starting phi)
+
+       Lambda =   8.0000     ----->
+          Phi =   6.6884      (  0.838 of starting phi)
+
+       Lambda =   16.000     ----->
+          Phi =   6.6505      (  0.833 of starting phi)
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0300
+   Lowest phi this iteration:   6.6505    
+
+      Current parameter values                 Previous parameter values
+      hani_5011       0.555595                 hani_5011        0.808290    
+      hani_5012        1.14990                 hani_5012         1.04680    
+      hani_5013       0.960254                 hani_5013         1.01980    
+      hani_5014        13.2517                 hani_5014         13.2410    
+      hani_5015        15.0228                 hani_5015         15.0420    
+      vani_5021        4.44259                 vani_5021         4.38480    
+      vani_5022       1.230897E-02             vani_5022        1.780100E-02
+      vani_5023        5.49325                 vani_5023         5.44550    
+      vani_5024       0.321112                 vani_5024        0.378540    
+      vani_5025        6.59118                 vani_5025         6.61950    
+      drn_1            2.18779                 drn_1             2.21570    
+      drn_2           0.569376                 drn_2            0.578190    
+      drn_3            1.91539                 drn_3             1.90070    
+      drn_4            1.58508                 drn_4             1.52130    
+      drn_5            1.79046                 drn_5             1.75710    
+      drn_6            1.97270                 drn_6             1.95790    
+      drn_7            2.00536                 drn_7             1.94800    
+      drn_8            2.50875                 drn_8             2.50130    
+      drn_9           0.938085                 drn_9            0.975580    
+      drn_10          0.660847                 drn_10           0.566510    
+      ghb_11          0.477074                 ghb_11           0.398710    
+      ghb_12          0.449721                 ghb_12           0.279750    
+      ghb_13          0.148632                 ghb_13           0.143010    
+      ghb_14          0.450786                 ghb_14           0.434140    
+      ghb_15          0.170113                 ghb_15           0.141650    
+      ghb_16          0.307733                 ghb_16           0.276250    
+      ghb_17          0.367493                 ghb_17           0.398380    
+      ghb_18          0.215358                 ghb_18           0.302880    
+      ghb_19          0.179109                 ghb_19           0.259320    
+      ghb_20          5.759677E-02             ghb_20           0.142630    
+      ghb_21          0.658183                 ghb_21           0.590070    
+      ghb_22          0.565677                 ghb_22           0.437220    
+      ghb_23          0.166193                 ghb_23           0.196260    
+      ghb_24          7.837740E-02             ghb_24           0.132170    
+      ghb_25          0.233890                 ghb_25           0.130090    
+      ghb_26          3.032900E-02             ghb_26           0.132560    
+      ghb_27          0.409952                 ghb_27           0.459150    
+      sc1v1            1.91088                 sc1v1             1.90040    
+      sc1v2            1.06990                 sc1v2             1.03740    
+      sc1v3            3.44858                 sc1v3             3.47070    
+      sc1v4           0.462267                 sc1v4            0.745590    
+      sc1v5           0.417929                 sc1v5            0.745590    
+      sc2v1           4.487748E-04             sc2v1            2.990000E-04
+      sc2v2           5.002050E-04             sc2v2            4.170000E-04
+      sc2v3           7.811991E-05             sc2v3            9.700000E-05
+      sc2v4           2.358118E-04             sc2v4            2.080000E-04
+      sc2v5           5.002050E-04             sc2v5            2.330000E-04
+      sc3v1           0.469351                 sc3v1            0.329830    
+      sc3v2            1.57159                 sc3v2             1.45520    
+      sc3v3           0.299769                 sc3v3            0.329830    
+      sc3v4           0.255885                 sc3v4            0.329830    
+      sc3v5           0.123970                 sc3v5            0.329830    
+      sc4v1           8.135617E-05             sc4v1            1.210000E-04
+      sc4v2           1.119358E-04             sc4v2            1.190000E-04
+      sc4v3           3.269936E-05             sc4v3            4.450000E-05
+      sc4v4           4.748036E-05             sc4v4            5.760000E-05
+      sc4v5           1.032995E-04             sc4v5            1.250000E-04
+      sc5v1           1.171526E-03             sc5v1            1.473000E-03
+      sc5v2           3.058944E-03             sc5v2            2.050000E-03
+      sc5v3           2.642961E-03             sc5v3            1.473000E-03
+      sc5v4           3.525943E-03             sc5v4            1.473000E-03
+      sc5v5           9.982419E-03             sc5v5            7.620000E-03
+   Maximum   factor change:  4.371     ["ghb_26"]
+   Maximum relative change:  1.394     ["sc5v4"]
+
+   Optimisation complete: optimisation iteration limit of   1 realized.
+   Total model calls:     74
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ hani_5011      0.555595    
+ hani_5012       1.14990    
+ hani_5013      0.960254    
+ hani_5014       13.2517    
+ hani_5015       15.0228    
+ vani_5021       4.44259    
+ vani_5022      1.230897E-02
+ vani_5023       5.49325    
+ vani_5024      0.321112    
+ vani_5025       6.59118    
+ drn_1           2.18779    
+ drn_2          0.569376    
+ drn_3           1.91539    
+ drn_4           1.58508    
+ drn_5           1.79046    
+ drn_6           1.97270    
+ drn_7           2.00536    
+ drn_8           2.50875    
+ drn_9          0.938085    
+ drn_10         0.660847    
+ ghb_11         0.477074    
+ ghb_12         0.449721    
+ ghb_13         0.148632    
+ ghb_14         0.450786    
+ ghb_15         0.170113    
+ ghb_16         0.307733    
+ ghb_17         0.367493    
+ ghb_18         0.215358    
+ ghb_19         0.179109    
+ ghb_20         5.759677E-02
+ ghb_21         0.658183    
+ ghb_22         0.565677    
+ ghb_23         0.166193    
+ ghb_24         7.837740E-02
+ ghb_25         0.233890    
+ ghb_26         3.032900E-02
+ ghb_27         0.409952    
+ sc1v1           1.91088    
+ sc1v2           1.06990    
+ sc1v3           3.44858    
+ sc1v4          0.462267    
+ sc1v5          0.417929    
+ sc2v1          4.487748E-04
+ sc2v2          5.002050E-04
+ sc2v3          7.811991E-05
+ sc2v4          2.358118E-04
+ sc2v5          5.002050E-04
+ sc3v1          0.469351    
+ sc3v2           1.57159    
+ sc3v3          0.299769    
+ sc3v4          0.255885    
+ sc3v5          0.123970    
+ sc4v1          8.135617E-05
+ sc4v2          1.119358E-04
+ sc4v3          3.269936E-05
+ sc4v4          4.748036E-05
+ sc4v5          1.032995E-04
+ sc5v1          1.171526E-03
+ sc5v2          3.058944E-03
+ sc5v3          2.642961E-03
+ sc5v4          3.525943E-03
+ sc5v5          9.982419E-03
+
+See file e.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+hed1                   734.000        735.797       -1.79680       0.2940      head        
+hed2                   735.247        734.945       0.301700       0.2718      head        
+hed3                   734.776        734.420       0.356300       0.2821      head        
+hed4                   734.390        734.431      -4.070000E-02   0.2940      head        
+hed5                   734.000        735.640       -1.64030       0.2940      head        
+hed6                   729.170        732.299       -3.12930       0.1289      head        
+hed7                   730.057        733.587       -3.53020       0.1587      head        
+hed8                   730.487        728.566        1.92090       0.1726      head        
+hed9                   728.839        734.081       -5.24220       0.1210      head        
+hed10                  730.669        729.463        1.20640       0.1801      head        
+hed11                  729.491        732.207       -2.71620       0.1402      head        
+hed12                  731.154        731.713      -0.558500       0.1966      head        
+hed13                  730.211        732.391       -2.18030       0.1620      head        
+hed14                  742.466        740.215        2.25130       5.5778E-02  head        
+hed15                  742.802        741.454        1.34800       4.9777E-02  head        
+hed16                  725.910        724.731        1.17950       5.5778E-02  head        
+hed17                  726.331        725.398       0.932700       6.3921E-02  head        
+hed18                  733.895        730.658        3.23670       0.2940      head        
+hed19                  736.548        740.370       -3.82190       0.2214      head        
+hed20                  739.842        740.218      -0.376200       0.1133      head        
+hed21                  740.471        741.381      -0.910000       9.6501E-02  head        
+hed22                  738.635        739.437      -0.802100       0.1461      head        
+hed23                  732.802        733.308      -0.506200       0.2626      head        
+hed24                  736.020        734.821        1.19920       0.2467      head        
+hed25                  736.246        735.742       0.503600       0.2332      head        
+hed26                  742.929        741.578        1.35080       4.7795E-02  head        
+hed27                  723.811        727.782       -3.97130       2.8367E-02  head        
+hed28                  733.012        733.799      -0.786700       0.2718      head        
+hed29                  744.292        745.362       -1.06990       3.0284E-02  head        
+hed30                  722.846        723.511      -0.664500       1.8849E-02  head        
+hed31                  726.385        724.840        1.54530       6.3921E-02  head        
+hed32                  741.190        739.010        2.17980       8.0824E-02  head        
+hed33                  740.540        737.104        3.43570       9.4200E-02  head        
+hed34                  732.381        733.684       -1.30330       0.2467      head        
+hed35                  728.153        728.428      -0.274900       0.1035      head        
+hed36                  740.588        738.238        2.35030       9.4200E-02  head        
+hed37                  736.997        736.204       0.793000       0.2058      head        
+hed38                  737.180        735.130        2.04960       0.1966      head        
+hed39                  738.594        740.019       -1.42520       0.1492      head        
+hed40                  738.230        738.961      -0.731200       0.1620      head        
+hed41                  740.073        737.061        3.01200       0.1059      head        
+hed42                  734.605        734.669      -6.350000E-02   0.2940      head        
+hed43                  732.947        733.877      -0.930000       0.2718      head        
+hed44                  725.751        727.879       -2.12780       5.3768E-02  head        
+hed45                  732.988        733.963      -0.974700       0.2718      head        
+hed46                  737.636        740.541       -2.90530       0.1801      head        
+hed47                  731.000        732.129       -1.12870       0.1922      head        
+dr0                   -17.5755       -6.00306       -11.5724       3.7636E-02  drain       
+dr1                   -15.7519       -12.3914       -3.36053       3.4192E-02  drain       
+dr2                   -13.0632       -1.18895       -11.8743       2.9337E-02  drain       
+dr3                   -15.5085      -0.647201       -14.8613       3.4192E-02  drain       
+dr4                   -13.8093       -10.3500       -3.45932       3.0612E-02  drain       
+dr5                   -30.1214       -35.5555        5.43412       4.6208E-02  drain       
+dr6                   -61.9506       -3.99644       -57.9542       4.8229E-03  drain       
+dr7                   -15.3110       -14.0934       -1.21765       3.3423E-02  drain       
+dr8                   -12.9187       -4.81705       -8.10165       2.9337E-02  drain       
+dr9                   -61.9897       -61.7500      -0.239670       4.8229E-03  drain       
+gb0                    5.81830        5.25829       0.560013       2.7089E-02  ghb         
+gb1                    4.83217        6.90976       -2.07759       2.4481E-02  ghb         
+gb2                    8.99706       0.773531        8.22353       3.4149E-02  ghb         
+gb3                    6.86113        11.0859       -4.22477       2.9539E-02  ghb         
+gb4                    5.28493        3.43079        1.85415       2.5713E-02  ghb         
+gb5                    6.71400        4.97484        1.73916       2.9539E-02  ghb         
+gb6                    11.9377        13.1698       -1.23212       2.9539E-02  ghb         
+gb7                    12.5232        16.6731       -4.14994       2.7845E-02  ghb         
+gb8                    34.7435        5.74095        29.0026       2.1837E-04  ghb         
+gb9                    28.0230        49.6165       -21.5935       2.1894E-03  ghb         
+gb10                   5.01719        14.4029       -9.38568       2.4481E-02  ghb         
+gb11                   5.01419        2.84206        2.17214       2.4481E-02  ghb         
+gb12                  -3.15227       -3.23149       7.922100E-02   7.9059E-03  ghb         
+gb13                   4.39083        3.65781       0.733025       2.2834E-02  ghb         
+gb14                   10.2937       0.162129        10.1316       3.2769E-02  ghb         
+gb15                   5.33652        9.27667       -3.94014       2.5713E-02  ghb         
+gb16                   5.44726        17.5265       -12.0792       2.5713E-02  ghb         
+ch0                    3.49191        3.30269       0.189217       4.1254E-02  const_head  
+ch1                   -4.09577       -9.06458        4.96881       1.6074E-02  const_head  
+ch2                   0.544927       -1.33331        1.87824       6.4639E-02  const_head  
+ch3                   0.464457      -0.760215        1.22467       6.4639E-02  const_head  
+ch4                   -1.66313       -17.6103        15.9471       3.7910E-02  const_head  
+ch5                   0.547796       0.479305       6.849130E-02   6.4639E-02  const_head  
+ch6                  -1.168589E-02    8.63009       -8.64177       5.8267E-02  const_head  
+ch7                    9.45180        4.99500        4.45680       3.4517E-03  const_head  
+
+See file e.res for more details of residuals in graph-ready format.
+
+See file e.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   6.6505    
+  Contribution to phi from observation group "head"         =   4.8188    
+  Contribution to phi from observation group "drain"        =  0.79299    
+  Contribution to phi from observation group "ghb"          =  0.39198    
+  Contribution to phi from observation group "const_head"   =  0.64673    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99999    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    82
+     Mean value of non-zero weighted residuals                      = -5.5787E-02
+     Maximum weighted residual [observation "hed18"]                =  0.9516    
+     Minimum weighted residual [observation "hed19"]                = -0.8460    
+     Standard variance of weighted residuals                        =  0.3325    
+     Standard error of weighted residuals                           =  0.5766    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "head":-
+     Number of residuals with non-zero weight                       =    47
+     Mean value of non-zero weighted residuals                      = -6.2770E-02
+     Maximum weighted residual [observation "hed18"]                =  0.9516    
+     Minimum weighted residual [observation "hed19"]                = -0.8460    
+     "Variance" of weighted residuals                               =  0.1025    
+     "Standard error" of weighted residuals                         =  0.3202    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "drain":-
+     Number of residuals with non-zero weight                       =    10
+     Mean value of non-zero weighted residuals                      = -0.1821    
+     Maximum weighted residual [observation "dr5"]                  =  0.2511    
+     Minimum weighted residual [observation "dr3"]                  = -0.5081    
+     "Variance" of weighted residuals                               =  7.9299E-02
+     "Standard error" of weighted residuals                         =  0.2816    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "ghb":-
+     Number of residuals with non-zero weight                       =    17
+     Mean value of non-zero weighted residuals                      = -1.2508E-02
+     Maximum weighted residual [observation "gb14"]                 =  0.3320    
+     Minimum weighted residual [observation "gb16"]                 = -0.3106    
+     "Variance" of weighted residuals                               =  2.3057E-02
+     "Standard error" of weighted residuals                         =  0.1518    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "const_head":-
+     Number of residuals with non-zero weight                       =     8
+     Mean value of non-zero weighted residuals                      =  5.1134E-02
+     Maximum weighted residual [observation "ch4"]                  =  0.6046    
+     Minimum weighted residual [observation "ch6"]                  = -0.5035    
+     "Variance" of weighted residuals                               =  8.0842E-02
+     "Standard error" of weighted residuals                         =  0.2843    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+

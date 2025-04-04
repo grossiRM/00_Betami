@@ -1,0 +1,31 @@
+740 -888.0 0 0
+1 1 1 1 1 1 
+0 0 0 0 0 0 
+-1.0 -1.0 -1.0 -1.0 -1.0 -1.0 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+0.2   1   0
+HDF5 1.0 -1 "D.h5" "Arrays/HK1" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI1" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI1" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET1" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HK2" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI2" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI2" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET2" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HK3" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI3" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI3" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET3" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HK4" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI4" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI4" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET4" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HK5" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI5" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI5" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET5" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HK6" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/HANI6" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/VANI6" 1 0 16800
+HDF5 1.0 -1 "D.h5" "Arrays/WET6" 1 0 16800
