@@ -1,0 +1,21 @@
+# MF2K NAME file
+#
+# Output Files
+GLOBAL          1 "A1.glo"
+LIST            2 "A1.out"
+DATA(BINARY)    3 "A1.hed"
+DATA(BINARY)   40 "A1.ccf"
+DATA(BINARY)   13 "A1.ccf2"
+LMT6            4 "A1.lmt"
+#
+# Global Input Files
+DIS             7 "A1.dis"
+#
+# Flow Process Input Files
+BAS6            8 "A1.ba6"
+LPF             9 "A1.lpf"
+OC             10 "A1.oc"
+RCH            11 "A1.rch"
+STR            14 "A1.str"
+SFR            15 "A1.sfr2"
+PCG            12 "A1.pcg"

@@ -1,0 +1,9 @@
+40 -888.0 0 0
+1 
+0 
+-1.0 
+1 
+0 
+HDF5 1.0 -1 "A1.h5" "Arrays/HK1" 1 0 150
+HDF5 1.0 -1 "A1.h5" "Arrays/HANI1" 1 0 150
+HDF5 1.0 -1 "A1.h5" "Arrays/VANI1" 1 0 150
