@@ -1,0 +1,24 @@
+2025-01-18 13:26:55.471898 starting: opening schur_example.log for logging
+2025-01-18 13:26:55.471898 starting: pre-loading base components
+2025-01-18 13:26:55.471898 starting: loading jco: freyberg.jcb
+2025-01-18 13:26:55.481900 finished: loading jco: freyberg.jcb took: 0:00:00.010002
+2025-01-18 13:26:55.481900 starting: loading parcov
+2025-01-18 13:26:55.578922 finished: loading parcov took: 0:00:00.097022
+2025-01-18 13:26:55.579923 starting: loading obscov
+2025-01-18 13:26:55.580923 finished: loading obscov took: 0:00:00.001000
+2025-01-18 13:26:55.580923 starting: loading forecasts
+2025-01-18 13:26:55.586924 finished: loading forecasts took: 0:00:00.006001
+2025-01-18 13:26:55.586924 forecast names: or28c05_0,or28c05_1,sw_gw_0,sw_gw_1
+2025-01-18 13:26:55.586924 finished: pre-loading base components took: 0:00:00.115026
+2025-01-18 13:26:55.586924 starting: dropping prior information
+2025-01-18 13:26:55.586924 starting: removing 0 prior info from jco, pst, and obs cov
+2025-01-18 13:26:55.588924 finished: removing 0 prior info from jco, pst, and obs cov took: 0:00:00.002000
+2025-01-18 13:26:55.588924 finished: dropping prior information took: 0:00:00.002000
+2025-01-18 13:26:55.593926 starting: Schur's complement
+2025-01-18 13:26:55.594925 starting: xtqx
+2025-01-18 13:26:55.615929 finished: xtqx took: 0:00:00.021004
+2025-01-18 13:26:55.645936 finished: Schur's complement took: 0:00:00.052010
+2025-01-18 13:26:57.343807 starting: propagating prior to predictions
+2025-01-18 13:26:57.345807 finished: propagating prior to predictions took: 0:00:00.002000
+2025-01-18 13:26:57.345807 starting: propagating posterior to predictions
+2025-01-18 13:26:57.346808 finished: propagating posterior to predictions took: 0:00:00.001001

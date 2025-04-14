@@ -1,8 +1,0 @@
-2025-01-10 14:59:24.299833 starting: opening PstFrom.log for logging
-2025-01-10 14:59:24.299833 starting PstFrom process
-2025-01-10 14:59:24.299833 starting: setting up dirs
-2025-01-10 14:59:24.299833 starting: removing existing new_d 'a_Beta'
-2025-01-10 14:59:24.299833 finished: removing existing new_d 'a_Beta' took: 0:00:00
-2025-01-10 14:59:24.299833 starting: copying original_d '..\a_REF_01_extra_crispy' to new_d 'a_Beta'
-2025-01-10 14:59:24.315459 finished: copying original_d '..\a_REF_01_extra_crispy' to new_d 'a_Beta' took: 0:00:00.015626
-2025-01-10 14:59:24.315459 finished: setting up dirs took: 0:00:00.015626

@@ -1,1 +1,0 @@
-https://flopy.readthedocs.io/en/3.4.1/Notebooks/mf6_data_tutorial02.html

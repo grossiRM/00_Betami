@@ -1,0 +1,293 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.6.1 02/10/2025
+
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
+                             Build 20220726_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
+/c /module:win64\mod_mf6\ /object:win64\obj_mf6\
+
+System command used to initiate simulation:
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/OUTER/DIS                               
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/OUTER/NPF                               
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/OUTER/IC                                
+
+
+ Setting Discretization Options
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 1
+    NROW = 7
+    NCOL = 7
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+    IDOMAIN set from input file
+ End Setting Discretization Griddata
+
+
+ The specified IDOMAIN results in a reduced number of cells.
+ Number of user nodes: 49
+ Number of nodes in solution: 40
+
+
+ Setting NPF Options
+    XT3D formulation is selected.
+    Specific discharge will be calculated at cell centers and written to DATA-SPDIS in budget file when requested.
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 not provided.  Setting K33 = K.
+    K22 not provided.  Setting K22 = K.
+ End Setting NPF Griddata
+
+XT3D IN USE, BUT ANGLE1 NOT SPECIFIED. SETTING ANGLE1 TO ZERO.
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/OUTER/CHD-LEFT                          
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =       7
+ END OF CHD BASE DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/OUTER/CHD-RIGHT                         
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =       7
+ END OF CHD BASE DIMENSIONS
+    STRT set from input file
+
+ XT3D is active.
+
+
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1019
+      FILE NAME: outer.dis.grb
+
+ OPENED outer.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1019   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ # File generated by Flopy version 3.9.1 on 04/09/2025 at 08:30:37.
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1020
+      FILE NAME: outer.cbc
+
+ OPENED outer.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1020   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1021
+      FILE NAME: outer.hds
+
+ OPENED outer.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1021   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE SAVED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1020 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL OUTER            PACKAGE NPF             CONNECTED TO MODEL OUTER            PACKAGE NPF              ON UNIT   1020 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL OUTER            PACKAGE OUTER           CONNECTED TO MODEL OUTER            PACKAGE CHD-LEFT         ON UNIT   1020 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL OUTER            PACKAGE OUTER           CONNECTED TO MODEL OUTER            PACKAGE CHD-RIGHT        ON UNIT   1020 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1021 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 CHD =         116.6667                   CHD =         116.6667     CHD-LEFT                         
+                 CHD =           0.0000                   CHD =           0.0000     CHD-RIGHT                        
+        FLOW-JA-FACE =          50.0000          FLOW-JA-FACE =          50.0000     GWF-GWF_1                        
+    FLOW-JA-FACE-CHD =           0.0000      FLOW-JA-FACE-CHD =           0.0000     GWF-GWF_1                        
+
+            TOTAL IN =         166.6667              TOTAL IN =         166.6667
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 CHD =           0.0000                   CHD =           0.0000     CHD-LEFT                         
+                 CHD =         116.6667                   CHD =         116.6667     CHD-RIGHT                        
+        FLOW-JA-FACE =          50.0000          FLOW-JA-FACE =          50.0000     GWF-GWF_1                        
+    FLOW-JA-FACE-CHD =           0.0000      FLOW-JA-FACE-CHD =           0.0000     GWF-GWF_1                        
+
+           TOTAL OUT =         166.6667             TOTAL OUT =         166.6667
+
+            IN - OUT =       1.1087E-09              IN - OUT =       1.1087E-09
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+
+
+end timestep
+
+ UBDSV06 SAVING     FLOW-JA-FACE IN MODEL OUTER            PACKAGE GWF-GWF_1       CONNECTED TO MODEL INNER            PACKAGE GWF-GWF_1        ON UNIT   1020 AT TIME STEP      1, STRESS PERIOD      1
+
+ EXG GWF-GWF_1   PERIOD      1   STEP        1
+ --------------------------------------------------------------------
+   NUMBER   CELLID                    RATE       NAME                
+ --------------------------------------------------------------------
+     1      (1,3,2)              -5.5555556      LEFT                
+     2      (1,3,2)              -5.5555556      LEFT                
+     3      (1,3,2)              -5.5555556      LEFT                
+     4      (1,4,2)              -5.5555556      LEFT                
+     5      (1,4,2)              -5.5555556      LEFT                
+     6      (1,4,2)              -5.5555556      LEFT                
+     7      (1,5,2)              -5.5555556      LEFT                
+     8      (1,5,2)              -5.5555556      LEFT                
+     9      (1,5,2)              -5.5555556      LEFT                
+     10     (1,6,3)              -4.67994532E-11 BOTTOM              
+     11     (1,6,3)              -8.12862954E-11 BOTTOM              
+     12     (1,6,3)              -8.58109139E-11 BOTTOM              
+     13     (1,6,4)              -1.11112453E-10 BOTTOM              
+     14     (1,6,4)              -1.30323477E-10 BOTTOM              
+     15     (1,6,4)              -1.23153931E-10 BOTTOM              
+     16     (1,6,5)              -1.34428912E-10 BOTTOM              
+     17     (1,6,5)              -1.42417173E-10 BOTTOM              
+     18     (1,6,5)              -1.36109124E-10 BOTTOM              
+     19     (1,3,6)               5.5555556      RIGHT               
+     20     (1,3,6)               5.5555556      RIGHT               
+     21     (1,3,6)               5.5555556      RIGHT               
+     22     (1,4,6)               5.5555556      RIGHT               
+     23     (1,4,6)               5.5555556      RIGHT               
+     24     (1,4,6)               5.5555556      RIGHT               
+     25     (1,5,6)               5.5555556      RIGHT               
+     26     (1,5,6)               5.5555556      RIGHT               
+     27     (1,5,6)               5.5555556      RIGHT               
+     28     (1,2,3)               3.72936126E-11 TOP                 
+     29     (1,2,3)               2.06564238E-11 TOP                 
+     30     (1,2,3)              -4.06230605E-13 TOP                 
+     31     (1,2,4)              -5.31663602E-11 TOP                 
+     32     (1,2,4)              -8.59513728E-11 TOP                 
+     33     (1,2,4)              -8.47739656E-11 TOP                 
+     34     (1,2,5)              -8.90736374E-11 TOP                 
+     35     (1,2,5)              -8.77616284E-11 TOP                 
+     36     (1,2,5)              -1.10220721E-10 TOP                 
+ --------------------------------------------------------------------
+
+
