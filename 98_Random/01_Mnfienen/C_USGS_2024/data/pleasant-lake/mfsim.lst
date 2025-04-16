@@ -1,8 +1,8 @@
                                    MODFLOW 6
                 U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
-                            VERSION 6.6.0 12/20/2024
+                            VERSION 6.6.1 02/10/2025
 
-   MODFLOW 6 compiled Dec 31 2024 17:10:16 with Intel(R) Fortran Intel(R) 64
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
    Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
                              Build 20220726_000000
 
@@ -56,7 +56,7 @@ MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
 /c /module:win64\mod_mf6\ /object:win64\obj_mf6\
 
 System command used to initiate simulation:
-C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\envs\pyclass\Scripts\mf6.exe
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
 
 MODFLOW was compiled using uniform precision.
 
@@ -1527,19 +1527,19 @@ PROCESSING MODEL CONNECTIONS
                     ALLOCATED   
  DATA TYPE           MEMORY     
  -------------------------------
- Character        1.47500000E-02
+ Character        1.50500000E-02
  Logical          4.80000000E-05
  Integer          4.7522160     
  Real             10.351896     
  -------------------------------
- Total            15.118910     
+ Total            15.119210     
  Virtual          0.0000000     
  -------------------------------
 
 
  
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2025/02/25 14:48:18
- Elapsed run time:  4.102 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2025/04/16 15:41:46
+ Elapsed run time:  4.219 Seconds
 
 WARNING REPORT:
 
