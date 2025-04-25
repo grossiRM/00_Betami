@@ -5,3 +5,4 @@ Excel Summary 			E:\15_REPOS\00_BETAMI\99_Ye_are_welcome\99_xls\01_Summary.xlsx
 
 
 06 -  https://flopy.readthedocs.io/en/3.4.1/Notebooks/lgr_tutorial01.html
+

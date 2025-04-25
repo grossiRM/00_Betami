@@ -1,7 +1,0 @@
-,0,1,2,3,4,5,6
-sfr.reach01.csv,"('extin', 'ext-inflow', (0,))","('inflow', 'inflow', (0,))","('frommvr', 'from-mvr', (0,))","('gwf', 'sfr', (0,))","('outflow', 'outflow', (0,))","('extout', 'ext-outflow', (0,))","('tomvr', 'to-mvr', (0,))"
-sfr.reach24.csv,"('extin', 'ext-inflow', (23,))","('inflow', 'inflow', (23,))","('frommvr', 'from-mvr', (23,))","('gwf', 'sfr', (23,))","('outflow', 'outflow', (23,))","('extout', 'ext-outflow', (23,))","('tomvr', 'to-mvr', (23,))"
-sfr.reach29.csv,"('extin', 'ext-inflow', (28,))","('inflow', 'inflow', (28,))","('frommvr', 'from-mvr', (28,))","('gwf', 'sfr', (28,))","('outflow', 'outflow', (28,))","('extout', 'ext-outflow', (28,))","('tomvr', 'to-mvr', (28,))"
-sfr.reach31.csv,"('extin', 'ext-inflow', (30,))","('inflow', 'inflow', (30,))","('frommvr', 'from-mvr', (30,))","('gwf', 'sfr', (30,))","('outflow', 'outflow', (30,))","('extout', 'ext-outflow', (30,))","('tomvr', 'to-mvr', (30,))"
-sfr.allreaches.csv,"('extin', 'ext-inflow', 'allreaches')","('inflow', 'inflow', 'allreaches')","('frommvr', 'from-mvr', 'allreaches')","('gwf', 'sfr', 'allreaches')","('outflow', 'outflow', 'allreaches')","('extout', 'ext-outflow', 'allreaches')","('tomvr', 'to-mvr', 'allreaches')"
-sfr.stage.csv,"('s01', 'stage', (0,))","('s24', 'stage', (23,))","('s29', 'stage', (28,))","('s31', 'stage', (30,))",,,
