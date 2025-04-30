@@ -1,0 +1,6 @@
+FHB1 allows MODFLOW users to specify flow or head boundary conditions that vary at times other than starting and ending times of stress periods and associated time steps.
+
+	- greater flexibility in simulating natural geohydrologic systems
+	- improves the efficiency
+	- CHD, GHB in smaller-scale  ...  from larger-scale models.
+	- And pumping Wells
