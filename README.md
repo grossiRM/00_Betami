@@ -1,6 +1,4 @@
 # 01_Betami
-MODFLOW|PEST, pstFROM, floPY, pyEMU, MF6, MT3DMS
-...
 MODFLOW | Py
 Folders in continual update, seeking to rationalize the learning curve. 
 MODFLOW|PEST, pstFROM, floPY, pyEMU, MF6, MT3DMS
