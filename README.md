@@ -1,4 +1,5 @@
 # 01_Betami
+Folders in continual update, seeking to rationalize the learning curve.
 MODFLOW | Py
 MODFLOW|PEST, pstFROM, floPY, pyEMU, MF6, MT3DMS
 
