@@ -1,0 +1,292 @@
+                              ZONEBUDGET Version 6
+                             U.S. GEOLOGICAL SURVEY
+                            VERSION 6.6.1 02/10/2025
+
+ OPENED zonebud.zbnam
+ FILE TYPE:NAM   UNIT   22   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED zonebud.zon
+ FILE TYPE:ZON   UNIT   24   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED ex01_mf6.cbb
+ FILE TYPE:BUD   UNIT   23   STATUS:OLD                 
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READ                
+
+
+ OPENED ex01_mf6.dis.grb
+ FILE TYPE:GRB   UNIT   25   STATUS:OLD                 
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READ                
+
+
+ OPENED zonebud.csv
+ FILE TYPE:CSV   UNIT   21   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+Reading budget file to determine number of terms per time step.
+    1.00000        FLOW-JA-FACE                 
+    1.00000                 WEL WEL_0           
+    1.00000                 RIV RIV_0           
+    1.00000                RCHA RCHA_0          
+Detected 4 unique flow terms in budget file.
+
+Processing zone dimensions
+    NCELLS = 1260
+End processing zone dimensions
+
+Processing zone griddata
+
+                    IZONE
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                1           1           1           1           1           1           1           1           1           1
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                2           2           2           2           2           2           2           2           2           2
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+                3           3           3           3           3           3           3           3           3           3
+
+    Successfully read zone array with NCELLS = 1260
+    Minimum user-specified zone number is 1
+    Maximum user-specified zone number is 3
+
+
+               USER ZONE          ZONE NUMBER           CELL COUNT
+    --------------------------------------------------------------
+                       0                    0                    0
+                       1                    1                  420
+                       2                    2                  420
+                       3                    3                  420
+    --------------------------------------------------------------
+
+End processing zone griddata
+
+Reading records from budget file
+    1.00000        FLOW-JA-FACE                 
+    1.00000                 WEL WEL_0           
+    1.00000                 RIV RIV_0           
+    1.00000                RCHA RCHA_0          
+Done reading records from budget file
+
+
+  VOLUME BUDGET FOR ZONE 1 AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE/MODEL   
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL_0                            
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0                            
+                RCHA =      525000.0000                  RCHA =      525000.0000     RCHA_0                           
+              ZONE 2 =       42854.7484                ZONE 2 =       42854.7484                                      
+
+            TOTAL IN =      567854.7484              TOTAL IN =      567854.7484
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =           0.0000                   WEL =           0.0000     WEL_0                            
+                 RIV =      375000.0000                   RIV =      375000.0000     RIV_0                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
+              ZONE 2 =      192854.7484                ZONE 2 =      192854.7484                                      
+
+           TOTAL OUT =      567854.7484             TOTAL OUT =      567854.7484
+
+            IN - OUT =      -8.6636E-07              IN - OUT =      -8.6636E-07
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+  VOLUME BUDGET FOR ZONE 2 AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE/MODEL   
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL_0                            
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
+              ZONE 1 =      192854.7484                ZONE 1 =      192854.7484                                      
+              ZONE 3 =       42854.2256                ZONE 3 =       42854.2256                                      
+
+            TOTAL IN =      235708.9740              TOTAL IN =      235708.9740
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =           0.0000                   WEL =           0.0000     WEL_0                            
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
+              ZONE 1 =       42854.7484                ZONE 1 =       42854.7484                                      
+              ZONE 3 =      192854.2256                ZONE 3 =      192854.2256                                      
+
+           TOTAL OUT =      235708.9740             TOTAL OUT =      235708.9740
+
+            IN - OUT =      -2.5143E-07              IN - OUT =      -2.5143E-07
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+  VOLUME BUDGET FOR ZONE 3 AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE/MODEL   
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 WEL =           0.0000                   WEL =           0.0000     WEL_0                            
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
+              ZONE 2 =      192854.2256                ZONE 2 =      192854.2256                                      
+
+            TOTAL IN =      192854.2256              TOTAL IN =      192854.2256
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 WEL =      150000.0000                   WEL =      150000.0000     WEL_0                            
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCHA_0                           
+              ZONE 2 =       42854.2256                ZONE 2 =       42854.2256                                      
+
+           TOTAL OUT =      192854.2256             TOTAL OUT =      192854.2256
+
+            IN - OUT =       3.5414E-07              IN - OUT =       3.5414E-07
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+Reading records from budget file
+Done reading records.  Exiting time loop.
+
+Normal Termination

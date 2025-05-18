@@ -1,0 +1,2690 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.6.1 02/10/2025
+
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
+                             Build 20220726_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
+/c /module:win64\mod_mf6\ /object:win64\obj_mf6\
+
+System command used to initiate simulation:
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    STRESS PACKAGE INPUT WILL BE PRINTED FOR ALL MODEL STRESS PACKAGES
+    PACKAGE FLOWS WILL BE PRINTED FOR ALL MODEL PACKAGES
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/DIS                            
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/NPF                            
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/FREYBERG/IC                             
+
+
+ Setting Discretization Options
+    Model length unit [0=UND, 1=FEET, 2=METERS, 3=CENTIMETERS] set as 2
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 1
+    NROW = 40
+    NCOL = 20
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+    IDOMAIN set from input file
+ End Setting Discretization Griddata
+
+
+ The specified IDOMAIN results in a reduced number of cells.
+ Number of user nodes: 800
+ Number of nodes in solution: 705
+
+
+ Setting NPF Options
+    Cell-by-cell flow information will be saved to binary file whenever ICBCFL is not zero.
+    Specific discharge will be calculated at cell centers and written to DATA-SPDIS in budget file when requested.
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 not provided.  Setting K33 = K.
+    K22 not provided.  Setting K22 = K.
+ End Setting NPF Griddata
+
+
+ WEL   -- WEL PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/WEL-1                          
+
+ PROCESSING WEL BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF WEL CELLS WILL BE PRINTED.
+    WEL FLOWS WILL BE PRINTED TO LISTING FILE.
+ END OF WEL BASE OPTIONS
+
+ PROCESSING WEL OPTIONS
+ END OF WEL OPTIONS
+
+ PROCESSING WEL BASE DIMENSIONS
+    MAXBOUND =       6
+ END OF WEL BASE DIMENSIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/RIV-1                          
+
+ PROCESSING RIV BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF RIV CELLS WILL BE PRINTED.
+    RIV FLOWS WILL BE PRINTED TO LISTING FILE.
+ END OF RIV BASE OPTIONS
+
+ PROCESSING RIV OPTIONS
+ END OF RIV OPTIONS
+
+ PROCESSING RIV BASE DIMENSIONS
+    MAXBOUND =      40
+ END OF RIV BASE DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/RCH-1                          
+
+ PROCESSING RCH BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF RCH CELLS WILL BE PRINTED.
+    RCH FLOWS WILL BE PRINTED TO LISTING FILE.
+ END OF RCH BASE OPTIONS
+
+ PROCESSING RCHA OPTIONS
+    RECHARGE INPUT WILL BE READ AS ARRAY(S).
+ END OF RCHA OPTIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/CHD-1                          
+
+ PROCESSING CHD BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF CHD CELLS WILL BE PRINTED.
+    CHD FLOWS WILL BE PRINTED TO LISTING FILE.
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =      10
+ END OF CHD BASE DIMENSIONS
+    STRT set from input file
+
+ STO -- STORAGE PACKAGE, VERSION 1, 5/19/2014 INPUT READ FROM MEMPATH: __INPUT__/FREYBERG/STO                            
+
+
+ PROCESSING STORAGE OPTIONS
+    CELL-BY-CELL FLOW INFORMATION WILL BE SAVED TO BINARY FILE WHENEVER ICBCFL IS NOT ZERO.
+ END OF STORAGE OPTIONS
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1016
+      FILE NAME: freyberg.dis.grb
+
+ OPENED freyberg.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1016   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ # File generated by Flopy version 3.9.1 on 05/16/2025 at 17:24:54.
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1017
+      FILE NAME: freyberg.cbc
+
+ OPENED freyberg.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1017   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1018
+      FILE NAME: freyberg.hds
+
+ OPENED freyberg.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1018   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+
+
+ PROCESSING STORAGE PERIOD DATA
+ END PROCESSING STORAGE PERIOD DATA
+
+
+ STRESS PERIOD 1 IS STEADY-STATE
+
+ ----------------------------------
+  WEL NO.    LAYER    ROW     COL  
+ ----------------------------------
+     1         1       9      13   
+     2         1      11       2   
+     3         1      18       7   
+     4         1      23      16   
+     5         1      26      12   
+     6         1      31      15   
+ ----------------------------------
+
+
+ ----------------------------------
+  RIV NO.    LAYER    ROW     COL  
+ ----------------------------------
+     1         1       1      15   
+     2         1       2      15   
+     3         1       3      15   
+     4         1       4      15   
+     5         1       5      15   
+     6         1       6      15   
+     7         1       7      15   
+     8         1       8      15   
+     9         1       9      12   
+     10        1      10       8   
+     11        1      11       4   
+     12        1      11      20   
+     13        1      12      16   
+     14        1      13      12   
+     15        1      14       8   
+     16        1      15       4   
+     17        1      15      20   
+     18        1      16      16   
+     19        1      17      12   
+     20        1      18       8   
+     21        1      19       4   
+     22        1      20       2   
+     23        1      21       1   
+     24        1      22       1   
+     25        1      23       1   
+     26        1      24       1   
+     27        1      25       1   
+     28        1      26       1   
+     29        1      27       1   
+     30        1      28       1   
+     31        1      29       1   
+     32        1      30       1   
+     33        1      30      20   
+     34        1      31      18   
+     35        1      32      15   
+     36        1      33      11   
+     37        1      34       6   
+     38        1      34      20   
+     39        1      35      13   
+     40        1      36       5   
+ ----------------------------------
+
+
+ ----------------------------------
+  RCH NO.    LAYER    ROW     COL  
+ ----------------------------------
+     1         1       1       1   
+     2         1       1       2   
+     3         1       1       3   
+     4         1       1       4   
+     5         1       1       5   
+     6         1       1       6   
+     7         1       1       7   
+     8         1       1       8   
+     9         1       1       9   
+     10        1       1      10   
+     11        1       1      11   
+     12        1       1      12   
+     13        1       1      13   
+     14        1       1      14   
+     15        1       1      15   
+     16        1       1      16   
+     17        1       1      17   
+     18        1       1      18   
+     19        1       1      19   
+     20        1       1      20   
+     21        1       2       1   
+     22        1       2       2   
+     23        1       2       3   
+     24        1       2       4   
+     25        1       2       5   
+     26        1       2       6   
+     27        1       2       7   
+     28        1       2       8   
+     29        1       2       9   
+     30        1       2      10   
+     31        1       2      11   
+     32        1       2      12   
+     33        1       2      13   
+     34        1       2      14   
+     35        1       2      15   
+     36        1       2      16   
+     37        1       2      17   
+     38        1       2      18   
+     39        1       2      19   
+     40        1       2      20   
+     41        1       3       1   
+     42        1       3       2   
+     43        1       3       3   
+     44        1       3       4   
+     45        1       3       5   
+     46        1       3       6   
+     47        1       3       7   
+     48        1       3       8   
+     49        1       3       9   
+     50        1       3      10   
+     51        1       3      11   
+     52        1       3      12   
+     53        1       3      13   
+     54        1       3      14   
+     55        1       3      15   
+     56        1       3      16   
+     57        1       3      17   
+     58        1       3      18   
+     59        1       3      19   
+     60        1       3      20   
+     61        1       4       1   
+     62        1       4       2   
+     63        1       4       3   
+     64        1       4       4   
+     65        1       4       5   
+     66        1       4       6   
+     67        1       4       7   
+     68        1       4       8   
+     69        1       4       9   
+     70        1       4      10   
+     71        1       4      11   
+     72        1       4      12   
+     73        1       4      13   
+     74        1       4      14   
+     75        1       4      15   
+     76        1       4      16   
+     77        1       4      17   
+     78        1       4      18   
+     79        1       4      19   
+     80        1       4      20   
+     81        1       5       1   
+     82        1       5       2   
+     83        1       5       3   
+     84        1       5       4   
+     85        1       5       5   
+     86        1       5       6   
+     87        1       5       7   
+     88        1       5       8   
+     89        1       5       9   
+     90        1       5      10   
+     91        1       5      11   
+     92        1       5      12   
+     93        1       5      13   
+     94        1       5      14   
+     95        1       5      15   
+     96        1       5      16   
+     97        1       5      17   
+     98        1       5      18   
+     99        1       5      19   
+    100        1       5      20   
+    101        1       6       1   
+    102        1       6       2   
+    103        1       6       3   
+    104        1       6       4   
+    105        1       6       5   
+    106        1       6       6   
+    107        1       6       7   
+    108        1       6       8   
+    109        1       6       9   
+    110        1       6      10   
+    111        1       6      11   
+    112        1       6      12   
+    113        1       6      13   
+    114        1       6      14   
+    115        1       6      15   
+    116        1       6      16   
+    117        1       6      17   
+    118        1       6      18   
+    119        1       6      19   
+    120        1       6      20   
+    121        1       7       1   
+    122        1       7       2   
+    123        1       7       3   
+    124        1       7       4   
+    125        1       7       5   
+    126        1       7       6   
+    127        1       7       7   
+    128        1       7       8   
+    129        1       7       9   
+    130        1       7      10   
+    131        1       7      11   
+    132        1       7      12   
+    133        1       7      13   
+    134        1       7      14   
+    135        1       7      15   
+    136        1       7      16   
+    137        1       7      17   
+    138        1       7      18   
+    139        1       7      19   
+    140        1       7      20   
+    141        1       8       1   
+    142        1       8       2   
+    143        1       8       3   
+    144        1       8       4   
+    145        1       8       5   
+    146        1       8       6   
+    147        1       8       7   
+    148        1       8       8   
+    149        1       8       9   
+    150        1       8      10   
+    151        1       8      11   
+    152        1       8      12   
+    153        1       8      13   
+    154        1       8      14   
+    155        1       8      15   
+    156        1       8      16   
+    157        1       8      17   
+    158        1       8      18   
+    159        1       8      19   
+    160        1       8      20   
+    161        1       9       1   
+    162        1       9       2   
+    163        1       9       3   
+    164        1       9       4   
+    165       -1      -1      -1   
+    166       -1      -1      -1   
+    167       -1      -1      -1   
+    168        1       9       5   
+    169        1       9       6   
+    170        1       9       7   
+    171        1       9       8   
+    172        1       9       9   
+    173        1       9      10   
+    174        1       9      11   
+    175        1       9      12   
+    176        1       9      13   
+    177        1       9      14   
+    178        1       9      15   
+    179        1       9      16   
+    180        1       9      17   
+    181        1       9      18   
+    182        1       9      19   
+    183        1       9      20   
+    184        1      10       1   
+    185       -1      -1      -1   
+    186       -1      -1      -1   
+    187       -1      -1      -1   
+    188       -1      -1      -1   
+    189        1      10       2   
+    190        1      10       3   
+    191        1      10       4   
+    192        1      10       5   
+    193        1      10       6   
+    194        1      10       7   
+    195        1      10       8   
+    196        1      10       9   
+    197        1      10      10   
+    198        1      10      11   
+    199        1      10      12   
+    200        1      10      13   
+    201        1      10      14   
+    202        1      10      15   
+    203        1      10      16   
+    204        1      10      17   
+    205       -1      -1      -1   
+    206       -1      -1      -1   
+    207       -1      -1      -1   
+    208       -1      -1      -1   
+    209        1      10      18   
+    210        1      10      19   
+    211        1      10      20   
+    212        1      11       1   
+    213        1      11       2   
+    214        1      11       3   
+    215        1      11       4   
+    216        1      11       5   
+    217        1      11       6   
+    218        1      11       7   
+    219        1      11       8   
+    220        1      11       9   
+    221        1      11      10   
+    222        1      11      11   
+    223        1      11      12   
+    224        1      11      13   
+    225       -1      -1      -1   
+    226       -1      -1      -1   
+    227       -1      -1      -1   
+    228       -1      -1      -1   
+    229        1      11      14   
+    230        1      11      15   
+    231        1      11      16   
+    232        1      11      17   
+    233        1      11      18   
+    234        1      11      19   
+    235        1      11      20   
+    236        1      12       1   
+    237        1      12       2   
+    238        1      12       3   
+    239        1      12       4   
+    240        1      12       5   
+    241        1      12       6   
+    242        1      12       7   
+    243        1      12       8   
+    244        1      12       9   
+    245       -1      -1      -1   
+    246       -1      -1      -1   
+    247       -1      -1      -1   
+    248       -1      -1      -1   
+    249        1      12      10   
+    250        1      12      11   
+    251        1      12      12   
+    252        1      12      13   
+    253        1      12      14   
+    254        1      12      15   
+    255        1      12      16   
+    256        1      12      17   
+    257        1      12      18   
+    258        1      12      19   
+    259        1      12      20   
+    260        1      13       1   
+    261        1      13       2   
+    262        1      13       3   
+    263        1      13       4   
+    264        1      13       5   
+    265       -1      -1      -1   
+    266       -1      -1      -1   
+    267       -1      -1      -1   
+    268       -1      -1      -1   
+    269        1      13       6   
+    270        1      13       7   
+    271        1      13       8   
+    272        1      13       9   
+    273        1      13      10   
+    274        1      13      11   
+    275        1      13      12   
+    276        1      13      13   
+    277        1      13      14   
+    278        1      13      15   
+    279        1      13      16   
+    280        1      13      17   
+    281        1      13      18   
+    282        1      13      19   
+    283        1      13      20   
+    284        1      14       1   
+    285       -1      -1      -1   
+    286       -1      -1      -1   
+    287       -1      -1      -1   
+    288       -1      -1      -1   
+    289        1      14       2   
+    290        1      14       3   
+    291        1      14       4   
+    292        1      14       5   
+    293        1      14       6   
+    294        1      14       7   
+    295        1      14       8   
+    296        1      14       9   
+    297        1      14      10   
+    298        1      14      11   
+    299        1      14      12   
+    300        1      14      13   
+    301        1      14      14   
+    302        1      14      15   
+    303        1      14      16   
+    304        1      14      17   
+    305       -1      -1      -1   
+    306       -1      -1      -1   
+    307       -1      -1      -1   
+    308       -1      -1      -1   
+    309        1      14      18   
+    310        1      14      19   
+    311        1      14      20   
+    312        1      15       1   
+    313        1      15       2   
+    314        1      15       3   
+    315        1      15       4   
+    316        1      15       5   
+    317        1      15       6   
+    318        1      15       7   
+    319        1      15       8   
+    320        1      15       9   
+    321        1      15      10   
+    322        1      15      11   
+    323        1      15      12   
+    324        1      15      13   
+    325       -1      -1      -1   
+    326       -1      -1      -1   
+    327       -1      -1      -1   
+    328       -1      -1      -1   
+    329        1      15      14   
+    330        1      15      15   
+    331        1      15      16   
+    332        1      15      17   
+    333        1      15      18   
+    334        1      15      19   
+    335        1      15      20   
+    336        1      16       1   
+    337        1      16       2   
+    338        1      16       3   
+    339        1      16       4   
+    340        1      16       5   
+    341        1      16       6   
+    342        1      16       7   
+    343        1      16       8   
+    344        1      16       9   
+    345       -1      -1      -1   
+    346       -1      -1      -1   
+    347       -1      -1      -1   
+    348       -1      -1      -1   
+    349        1      16      10   
+    350        1      16      11   
+    351        1      16      12   
+    352        1      16      13   
+    353        1      16      14   
+    354        1      16      15   
+    355        1      16      16   
+    356        1      16      17   
+    357        1      16      18   
+    358        1      16      19   
+    359        1      16      20   
+    360        1      17       1   
+    361        1      17       2   
+    362        1      17       3   
+    363        1      17       4   
+    364        1      17       5   
+    365       -1      -1      -1   
+    366       -1      -1      -1   
+    367       -1      -1      -1   
+    368       -1      -1      -1   
+    369        1      17       6   
+    370        1      17       7   
+    371        1      17       8   
+    372        1      17       9   
+    373        1      17      10   
+    374        1      17      11   
+    375        1      17      12   
+    376        1      17      13   
+    377        1      17      14   
+    378        1      17      15   
+    379        1      17      16   
+    380        1      17      17   
+    381        1      17      18   
+    382        1      17      19   
+    383        1      17      20   
+    384        1      18       1   
+    385       -1      -1      -1   
+    386       -1      -1      -1   
+    387       -1      -1      -1   
+    388       -1      -1      -1   
+    389        1      18       2   
+    390        1      18       3   
+    391        1      18       4   
+    392        1      18       5   
+    393        1      18       6   
+    394        1      18       7   
+    395        1      18       8   
+    396        1      18       9   
+    397        1      18      10   
+    398        1      18      11   
+    399        1      18      12   
+    400        1      18      13   
+    401        1      18      14   
+    402        1      18      15   
+    403        1      18      16   
+    404        1      18      17   
+    405       -1      -1      -1   
+    406       -1      -1      -1   
+    407       -1      -1      -1   
+    408       -1      -1      -1   
+    409        1      18      18   
+    410        1      18      19   
+    411        1      18      20   
+    412        1      19       1   
+    413        1      19       2   
+    414        1      19       3   
+    415        1      19       4   
+    416        1      19       5   
+    417        1      19       6   
+    418        1      19       7   
+    419        1      19       8   
+    420        1      19       9   
+    421        1      19      10   
+    422        1      19      11   
+    423        1      19      12   
+    424        1      19      13   
+    425       -1      -1      -1   
+    426       -1      -1      -1   
+    427        1      19      14   
+    428        1      19      15   
+    429        1      19      16   
+    430        1      19      17   
+    431        1      19      18   
+    432        1      19      19   
+    433        1      19      20   
+    434        1      20       1   
+    435        1      20       2   
+    436        1      20       3   
+    437        1      20       4   
+    438        1      20       5   
+    439        1      20       6   
+    440        1      20       7   
+    441        1      20       8   
+    442        1      20       9   
+    443        1      20      10   
+    444        1      20      11   
+    445        1      20      12   
+    446       -1      -1      -1   
+    447        1      20      13   
+    448        1      20      14   
+    449        1      20      15   
+    450        1      20      16   
+    451        1      20      17   
+    452        1      20      18   
+    453        1      20      19   
+    454        1      20      20   
+    455        1      21       1   
+    456        1      21       2   
+    457        1      21       3   
+    458        1      21       4   
+    459        1      21       5   
+    460        1      21       6   
+    461        1      21       7   
+    462        1      21       8   
+    463        1      21       9   
+    464        1      21      10   
+    465        1      21      11   
+    466        1      21      12   
+    467        1      21      13   
+    468        1      21      14   
+    469        1      21      15   
+    470        1      21      16   
+    471        1      21      17   
+    472        1      21      18   
+    473        1      21      19   
+    474        1      21      20   
+    475        1      22       1   
+    476        1      22       2   
+    477        1      22       3   
+    478        1      22       4   
+    479        1      22       5   
+    480        1      22       6   
+    481        1      22       7   
+    482        1      22       8   
+    483        1      22       9   
+    484        1      22      10   
+    485        1      22      11   
+    486        1      22      12   
+    487        1      22      13   
+    488        1      22      14   
+    489        1      22      15   
+    490        1      22      16   
+    491        1      22      17   
+    492        1      22      18   
+    493        1      22      19   
+    494        1      22      20   
+    495        1      23       1   
+    496        1      23       2   
+    497        1      23       3   
+    498        1      23       4   
+    499        1      23       5   
+    500        1      23       6   
+    501        1      23       7   
+    502        1      23       8   
+    503        1      23       9   
+    504        1      23      10   
+    505        1      23      11   
+    506        1      23      12   
+    507        1      23      13   
+    508        1      23      14   
+    509        1      23      15   
+    510        1      23      16   
+    511        1      23      17   
+    512        1      23      18   
+    513        1      23      19   
+    514        1      23      20   
+    515        1      24       1   
+    516        1      24       2   
+    517        1      24       3   
+    518        1      24       4   
+    519        1      24       5   
+    520        1      24       6   
+    521        1      24       7   
+    522        1      24       8   
+    523        1      24       9   
+    524        1      24      10   
+    525        1      24      11   
+    526        1      24      12   
+    527        1      24      13   
+    528        1      24      14   
+    529        1      24      15   
+    530        1      24      16   
+    531        1      24      17   
+    532        1      24      18   
+    533        1      24      19   
+    534        1      24      20   
+    535        1      25       1   
+    536        1      25       2   
+    537        1      25       3   
+    538        1      25       4   
+    539        1      25       5   
+    540        1      25       6   
+    541        1      25       7   
+    542        1      25       8   
+    543        1      25       9   
+    544        1      25      10   
+    545        1      25      11   
+    546        1      25      12   
+    547        1      25      13   
+    548        1      25      14   
+    549        1      25      15   
+    550        1      25      16   
+    551        1      25      17   
+    552        1      25      18   
+    553        1      25      19   
+    554        1      25      20   
+    555        1      26       1   
+    556        1      26       2   
+    557        1      26       3   
+    558        1      26       4   
+    559        1      26       5   
+    560        1      26       6   
+    561        1      26       7   
+    562        1      26       8   
+    563        1      26       9   
+    564        1      26      10   
+    565        1      26      11   
+    566        1      26      12   
+    567        1      26      13   
+    568        1      26      14   
+    569        1      26      15   
+    570        1      26      16   
+    571        1      26      17   
+    572        1      26      18   
+    573        1      26      19   
+    574        1      26      20   
+    575        1      27       1   
+    576        1      27       2   
+    577        1      27       3   
+    578        1      27       4   
+    579        1      27       5   
+    580        1      27       6   
+    581        1      27       7   
+    582        1      27       8   
+    583        1      27       9   
+    584        1      27      10   
+    585        1      27      11   
+    586        1      27      12   
+    587        1      27      13   
+    588        1      27      14   
+    589        1      27      15   
+    590        1      27      16   
+    591        1      27      17   
+    592        1      27      18   
+    593        1      27      19   
+    594        1      27      20   
+    595        1      28       1   
+    596        1      28       2   
+    597        1      28       3   
+    598        1      28       4   
+    599        1      28       5   
+    600        1      28       6   
+    601        1      28       7   
+    602        1      28       8   
+    603        1      28       9   
+    604        1      28      10   
+    605        1      28      11   
+    606        1      28      12   
+    607        1      28      13   
+    608        1      28      14   
+    609        1      28      15   
+    610        1      28      16   
+    611        1      28      17   
+    612        1      28      18   
+    613        1      28      19   
+    614        1      28      20   
+    615        1      29       1   
+    616        1      29       2   
+    617        1      29       3   
+    618        1      29       4   
+    619        1      29       5   
+    620        1      29       6   
+    621        1      29       7   
+    622        1      29       8   
+    623        1      29       9   
+    624        1      29      10   
+    625        1      29      11   
+    626        1      29      12   
+    627        1      29      13   
+    628        1      29      14   
+    629        1      29      15   
+    630        1      29      16   
+    631        1      29      17   
+    632        1      29      18   
+    633        1      29      19   
+    634        1      29      20   
+    635        1      30       1   
+    636        1      30       2   
+    637        1      30       3   
+    638        1      30       4   
+    639        1      30       5   
+    640        1      30       6   
+    641       -1      -1      -1   
+    642        1      30       7   
+    643        1      30       8   
+    644        1      30       9   
+    645        1      30      10   
+    646        1      30      11   
+    647        1      30      12   
+    648        1      30      13   
+    649        1      30      14   
+    650        1      30      15   
+    651        1      30      16   
+    652        1      30      17   
+    653        1      30      18   
+    654        1      30      19   
+    655        1      30      20   
+    656        1      31       1   
+    657        1      31       2   
+    658        1      31       3   
+    659        1      31       4   
+    660        1      31       5   
+    661       -1      -1      -1   
+    662       -1      -1      -1   
+    663        1      31       6   
+    664        1      31       7   
+    665        1      31       8   
+    666        1      31       9   
+    667        1      31      10   
+    668        1      31      11   
+    669        1      31      12   
+    670        1      31      13   
+    671        1      31      14   
+    672        1      31      15   
+    673        1      31      16   
+    674        1      31      17   
+    675        1      31      18   
+    676        1      31      19   
+    677        1      31      20   
+    678        1      32       1   
+    679        1      32       2   
+    680        1      32       3   
+    681       -1      -1      -1   
+    682       -1      -1      -1   
+    683       -1      -1      -1   
+    684        1      32       4   
+    685        1      32       5   
+    686        1      32       6   
+    687        1      32       7   
+    688        1      32       8   
+    689        1      32       9   
+    690        1      32      10   
+    691        1      32      11   
+    692        1      32      12   
+    693        1      32      13   
+    694        1      32      14   
+    695        1      32      15   
+    696        1      32      16   
+    697        1      32      17   
+    698        1      32      18   
+    699        1      32      19   
+    700        1      32      20   
+    701       -1      -1      -1   
+    702       -1      -1      -1   
+    703       -1      -1      -1   
+    704       -1      -1      -1   
+    705        1      33       1   
+    706        1      33       2   
+    707        1      33       3   
+    708        1      33       4   
+    709        1      33       5   
+    710        1      33       6   
+    711        1      33       7   
+    712        1      33       8   
+    713        1      33       9   
+    714        1      33      10   
+    715        1      33      11   
+    716        1      33      12   
+    717        1      33      13   
+    718        1      33      14   
+    719        1      33      15   
+    720       -1      -1      -1   
+    721       -1      -1      -1   
+    722       -1      -1      -1   
+    723       -1      -1      -1   
+    724       -1      -1      -1   
+    725        1      33      16   
+    726        1      33      17   
+    727        1      33      18   
+    728        1      33      19   
+    729        1      33      20   
+    730        1      34       1   
+    731        1      34       2   
+    732        1      34       3   
+    733        1      34       4   
+    734        1      34       5   
+    735        1      34       6   
+    736        1      34       7   
+    737        1      34       8   
+    738        1      34       9   
+    739        1      34      10   
+    740       -1      -1      -1   
+    741       -1      -1      -1   
+    742       -1      -1      -1   
+    743       -1      -1      -1   
+    744       -1      -1      -1   
+    745       -1      -1      -1   
+    746        1      34      11   
+    747        1      34      12   
+    748        1      34      13   
+    749        1      34      14   
+    750        1      34      15   
+    751        1      34      16   
+    752        1      34      17   
+    753        1      34      18   
+    754        1      34      19   
+    755        1      34      20   
+    756        1      35       1   
+    757        1      35       2   
+    758        1      35       3   
+    759       -1      -1      -1   
+    760       -1      -1      -1   
+    761       -1      -1      -1   
+    762       -1      -1      -1   
+    763       -1      -1      -1   
+    764       -1      -1      -1   
+    765       -1      -1      -1   
+    766        1      35       4   
+    767        1      35       5   
+    768        1      35       6   
+    769        1      35       7   
+    770        1      35       8   
+    771        1      35       9   
+    772        1      35      10   
+    773        1      35      11   
+    774        1      35      12   
+    775        1      35      13   
+    776        1      35      14   
+    777        1      35      15   
+    778       -1      -1      -1   
+    779       -1      -1      -1   
+    780       -1      -1      -1   
+    781       -1      -1      -1   
+    782       -1      -1      -1   
+    783       -1      -1      -1   
+    784       -1      -1      -1   
+    785       -1      -1      -1   
+    786        1      35      16   
+    787        1      35      17   
+    788        1      35      18   
+    789        1      35      19   
+    790        1      35      20   
+    791        1      36       1   
+    792        1      36       2   
+    793        1      36       3   
+    794        1      36       4   
+    795        1      36       5   
+    796       -1      -1      -1   
+    797       -1      -1      -1   
+    798       -1      -1      -1   
+    799       -1      -1      -1   
+    800       -1      -1      -1   
+ ----------------------------------
+
+
+ ----------------------------------
+  CHD NO.    LAYER    ROW     COL  
+ ----------------------------------
+     1         1      35      16   
+     2         1      35      17   
+     3         1      35      18   
+     4         1      35      19   
+     5         1      35      20   
+     6         1      36       1   
+     7         1      36       2   
+     8         1      36       3   
+     9         1      36       4   
+     10        1      36       5   
+ ----------------------------------
+
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING           STO-SY ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL FREYBERG         PACKAGE NPF             CONNECTED TO MODEL FREYBERG         PACKAGE NPF              ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              WEL IN MODEL FREYBERG         PACKAGE FREYBERG        CONNECTED TO MODEL FREYBERG         PACKAGE WEL-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL FREYBERG         PACKAGE FREYBERG        CONNECTED TO MODEL FREYBERG         PACKAGE RIV-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING             RCHA IN MODEL FREYBERG         PACKAGE FREYBERG        CONNECTED TO MODEL FREYBERG         PACKAGE RCH-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL FREYBERG         PACKAGE FREYBERG        CONNECTED TO MODEL FREYBERG         PACKAGE CHD-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+
+    CALCULATED INTERCELL FLOW FOR PERIOD 1 STEP 1
+(1,1,1): (1,1,2) -1.444009E-04 (1,2,1) 4.440087E-05
+(1,1,2): (1,1,1) 1.444009E-04 (1,1,3) -2.881988E-04 (1,2,2) 4.379794E-05
+(1,1,3): (1,1,2) 2.881988E-04 (1,1,4) -4.107234E-04 (1,2,3) 2.252462E-05
+(1,1,4): (1,1,3) 4.107234E-04 (1,1,5) -5.263409E-04 (1,2,4) 1.561746E-05
+(1,1,5): (1,1,4) 5.263409E-04 (1,1,6) -6.754432E-04 (1,2,5) 4.910231E-05
+(1,1,6): (1,1,5) 6.754432E-04 (1,1,7) -8.115149E-04 (1,2,6) 3.607167E-05
+(1,1,7): (1,1,6) 8.115149E-04 (1,1,8) -9.188949E-04 (1,2,7) 7.380066E-06
+(1,1,8): (1,1,7) 9.188949E-04 (1,1,9) -1.005527E-03 (1,2,8) -1.336834E-05
+(1,1,9): (1,1,8) 1.005527E-03 (1,1,10) -1.060810E-03 (1,2,9) -4.471621E-05
+(1,1,10): (1,1,9) 1.060810E-03 (1,1,11) -1.047130E-03 (1,2,10) -1.136806E-04
+(1,1,11): (1,1,10) 1.047130E-03 (1,1,12) -1.020958E-03 (1,2,11) -1.261720E-04
+(1,1,12): (1,1,11) 1.020958E-03 (1,1,13) -9.966353E-04 (1,2,12) -1.243225E-04
+(1,1,13): (1,1,12) 9.966353E-04 (1,1,14) -9.815401E-04 (1,2,13) -1.150951E-04
+(1,1,14): (1,1,13) 9.815401E-04 (1,1,15) -8.863962E-04 (1,2,14) -1.951439E-04
+(1,1,15): (1,1,14) 8.863962E-04 (1,1,16) -2.796508E-05 (1,2,15) -3.492041E-04
+(1,1,16): (1,1,15) 2.796508E-05 (1,1,17) 5.048502E-05 (1,2,16) -1.784501E-04
+(1,1,17): (1,1,16) -5.048502E-05 (1,1,18) 4.914899E-05 (1,2,17) -9.866397E-05
+(1,1,18): (1,1,17) -4.914899E-05 (1,1,19) 4.275514E-05 (1,2,18) -9.360615E-05
+(1,1,19): (1,1,18) -4.275514E-05 (1,1,20) 3.100009E-05 (1,2,19) -8.824495E-05
+(1,1,20): (1,1,19) -3.100009E-05 (1,2,20) -6.899991E-05
+(1,2,1): (1,1,1) -4.440087E-05 (1,2,2) -1.428337E-04 (1,3,1) 8.723456E-05
+(1,2,2): (1,1,2) -4.379794E-05 (1,2,1) 1.428337E-04 (1,2,3) -2.801443E-04 (1,3,2) 8.110855E-05
+(1,2,3): (1,1,3) -2.252462E-05 (1,2,2) 2.801443E-04 (1,2,4) -4.035315E-04 (1,3,3) 4.591184E-05
+(1,2,4): (1,1,4) -1.561746E-05 (1,2,3) 4.035315E-04 (1,2,5) -5.571902E-04 (1,3,4) 6.927618E-05
+(1,2,5): (1,1,5) -4.910231E-05 (1,2,4) 5.571902E-04 (1,2,6) -6.776564E-04 (1,3,5) 6.956852E-05
+(1,2,6): (1,1,6) -3.607167E-05 (1,2,5) 6.776564E-04 (1,2,7) -7.790336E-04 (1,3,6) 3.744886E-05
+(1,2,7): (1,1,7) -7.380066E-06 (1,2,6) 7.790336E-04 (1,2,8) -8.811060E-04 (1,3,7) 9.452456E-06
+(1,2,8): (1,1,8) 1.336834E-05 (1,2,7) 8.811060E-04 (1,2,9) -9.676956E-04 (1,3,8) -2.677877E-05
+(1,2,9): (1,1,9) 4.471621E-05 (1,2,8) 9.676956E-04 (1,2,10) -1.034435E-03 (1,3,9) -7.797687E-05
+(1,2,10): (1,1,10) 1.136806E-04 (1,2,9) 1.034435E-03 (1,2,11) -1.100582E-03 (1,3,10) -1.475333E-04
+(1,2,11): (1,1,11) 1.261720E-04 (1,2,10) 1.100582E-03 (1,2,12) -1.109890E-03 (1,3,11) -2.168639E-04
+(1,2,12): (1,1,12) 1.243225E-04 (1,2,11) 1.109890E-03 (1,2,13) -1.089119E-03 (1,3,12) -2.450941E-04
+(1,2,13): (1,1,13) 1.150951E-04 (1,2,12) 1.089119E-03 (1,2,14) -1.063027E-03 (1,3,13) -2.411868E-04
+(1,2,14): (1,1,14) 1.951439E-04 (1,2,13) 1.063027E-03 (1,2,15) -1.081783E-03 (1,3,14) -2.763881E-04
+(1,2,15): (1,1,15) 3.492041E-04 (1,2,14) 1.081783E-03 (1,2,16) 1.338733E-04 (1,3,15) -3.245922E-04
+(1,2,16): (1,1,16) 1.784501E-04 (1,2,15) -1.338733E-04 (1,2,17) 1.046233E-04 (1,3,16) -2.492001E-04
+(1,2,17): (1,1,17) 9.866397E-05 (1,2,16) -1.046233E-04 (1,2,18) 6.525442E-05 (1,3,17) -1.592951E-04
+(1,2,18): (1,1,18) 9.360615E-05 (1,2,17) -6.525442E-05 (1,2,19) 5.171505E-05 (1,3,18) -1.800668E-04
+(1,2,19): (1,1,19) 8.824495E-05 (1,2,18) -5.171505E-05 (1,2,20) 3.390894E-05 (1,3,19) -1.704388E-04
+(1,2,20): (1,1,20) 6.899991E-05 (1,2,19) -3.390894E-05 (1,3,20) -1.350910E-04
+(1,3,1): (1,2,1) -8.723456E-05 (1,3,2) -1.592058E-04 (1,4,1) 1.464403E-04
+(1,3,2): (1,2,2) -8.110855E-05 (1,3,1) 1.592058E-04 (1,3,3) -2.866661E-04 (1,4,2) 1.085689E-04
+(1,3,3): (1,2,3) -4.591184E-05 (1,3,2) 2.866661E-04 (1,3,4) -4.222830E-04 (1,4,3) 8.152871E-05
+(1,3,4): (1,2,4) -6.927618E-05 (1,3,3) 4.222830E-04 (1,3,5) -5.756986E-04 (1,4,4) 1.226917E-04
+(1,3,5): (1,2,5) -6.956852E-05 (1,3,4) 5.756986E-04 (1,3,6) -7.092746E-04 (1,4,5) 1.031446E-04
+(1,3,6): (1,2,6) -3.744886E-05 (1,3,5) 7.092746E-04 (1,3,7) -8.410373E-04 (1,4,6) 6.921155E-05
+(1,3,7): (1,2,7) -9.452456E-06 (1,3,6) 8.410373E-04 (1,3,8) -9.447534E-04 (1,4,7) 1.316859E-05
+(1,3,8): (1,2,8) 2.677877E-05 (1,3,7) 9.447534E-04 (1,3,9) -1.009017E-03 (1,4,8) -6.251512E-05
+(1,3,9): (1,2,9) 7.797687E-05 (1,3,8) 1.009017E-03 (1,3,10) -1.008291E-03 (1,4,9) -1.787026E-04
+(1,3,10): (1,2,10) 1.475333E-04 (1,3,9) 1.008291E-03 (1,3,11) -9.683516E-04 (1,4,10) -2.874731E-04
+(1,3,11): (1,2,11) 2.168639E-04 (1,3,10) 9.683516E-04 (1,3,12) -9.494204E-04 (1,4,11) -3.357951E-04
+(1,3,12): (1,2,12) 2.450941E-04 (1,3,11) 9.494204E-04 (1,3,13) -9.662279E-04 (1,4,12) -3.282866E-04
+(1,3,13): (1,2,13) 2.411868E-04 (1,3,12) 9.662279E-04 (1,3,14) -1.049350E-03 (1,4,13) -2.580645E-04
+(1,3,14): (1,2,14) 2.763881E-04 (1,3,13) 1.049350E-03 (1,3,15) -1.093570E-03 (1,4,14) -3.321682E-04
+(1,3,15): (1,2,15) 3.245922E-04 (1,3,14) 1.093570E-03 (1,3,16) 1.896525E-04 (1,4,15) -3.280713E-04
+(1,3,16): (1,2,16) 2.492001E-04 (1,3,15) -1.896525E-04 (1,3,17) 1.411609E-04 (1,4,16) -3.007085E-04
+(1,3,17): (1,2,17) 1.592951E-04 (1,3,16) -1.411609E-04 (1,3,18) 9.344788E-05 (1,4,17) -2.115821E-04
+(1,3,18): (1,2,18) 1.800668E-04 (1,3,17) -9.344788E-05 (1,3,19) 7.331769E-05 (1,4,18) -2.599366E-04
+(1,3,19): (1,2,19) 1.704388E-04 (1,3,18) -7.331769E-05 (1,3,20) 3.529475E-05 (1,4,19) -2.324159E-04
+(1,3,20): (1,2,20) 1.350910E-04 (1,3,19) -3.529475E-05 (1,4,20) -1.997962E-04
+(1,4,1): (1,3,1) -1.464403E-04 (1,4,2) -1.176274E-04 (1,5,1) 1.640677E-04
+(1,4,2): (1,3,2) -1.085689E-04 (1,4,1) 1.176274E-04 (1,4,3) -2.352808E-04 (1,5,2) 1.262223E-04
+(1,4,3): (1,3,3) -8.152871E-05 (1,4,2) 2.352808E-04 (1,4,4) -3.997943E-04 (1,5,3) 1.460422E-04
+(1,4,4): (1,3,4) -1.226917E-04 (1,4,3) 3.997943E-04 (1,4,5) -5.728109E-04 (1,5,4) 1.957083E-04
+(1,4,5): (1,3,5) -1.031446E-04 (1,4,4) 5.728109E-04 (1,4,6) -6.935840E-04 (1,5,5) 1.239176E-04
+(1,4,6): (1,3,6) -6.921155E-05 (1,4,5) 6.935840E-04 (1,4,7) -8.045433E-04 (1,5,6) 8.017091E-05
+(1,4,7): (1,3,7) -1.316859E-05 (1,4,6) 8.045433E-04 (1,4,8) -9.836820E-04 (1,5,7) 9.230726E-05
+(1,4,8): (1,3,8) 6.251512E-05 (1,4,7) 9.836820E-04 (1,4,9) -1.052417E-03 (1,5,8) -9.377993E-05
+(1,4,9): (1,3,9) 1.787026E-04 (1,4,8) 1.052417E-03 (1,4,10) -1.051354E-03 (1,5,9) -2.797658E-04
+(1,4,10): (1,3,10) 2.874731E-04 (1,4,9) 1.051354E-03 (1,4,11) -1.102783E-03 (1,5,10) -3.360437E-04
+(1,4,11): (1,3,11) 3.357951E-04 (1,4,10) 1.102783E-03 (1,4,12) -1.162447E-03 (1,5,11) -3.761317E-04
+(1,4,12): (1,3,12) 3.282866E-04 (1,4,11) 1.162447E-03 (1,4,13) -1.231256E-03 (1,5,12) -3.594777E-04
+(1,4,13): (1,3,13) 2.580645E-04 (1,4,12) 1.231256E-03 (1,4,14) -1.233547E-03 (1,5,13) -3.557727E-04
+(1,4,14): (1,3,14) 3.321682E-04 (1,4,13) 1.233547E-03 (1,4,15) -1.256901E-03 (1,5,14) -4.088145E-04
+(1,4,15): (1,3,15) 3.280713E-04 (1,4,14) 1.256901E-03 (1,4,16) 2.332090E-04 (1,5,15) -3.815643E-04
+(1,4,16): (1,3,16) 3.007085E-04 (1,4,15) -2.332090E-04 (1,4,17) 1.508025E-04 (1,5,16) -3.183019E-04
+(1,4,17): (1,3,17) 2.115821E-04 (1,4,16) -1.508025E-04 (1,4,18) 1.210433E-04 (1,5,17) -2.818229E-04
+(1,4,18): (1,3,18) 2.599366E-04 (1,4,17) -1.210433E-04 (1,4,19) 8.230482E-05 (1,5,18) -3.211981E-04
+(1,4,19): (1,3,19) 2.324159E-04 (1,4,18) -8.230482E-05 (1,4,20) 4.423155E-05 (1,5,19) -2.943426E-04
+(1,4,20): (1,3,20) 1.997962E-04 (1,4,19) -4.423155E-05 (1,5,20) -2.555647E-04
+(1,5,1): (1,4,1) -1.640677E-04 (1,5,2) -1.384735E-04 (1,6,1) 2.025412E-04
+(1,5,2): (1,4,2) -1.262223E-04 (1,5,1) 1.384735E-04 (1,5,3) -2.853339E-04 (1,6,2) 1.730828E-04
+(1,5,3): (1,4,3) -1.460422E-04 (1,5,2) 2.853339E-04 (1,5,4) -4.566067E-04 (1,6,3) 2.173151E-04
+(1,5,4): (1,4,4) -1.957083E-04 (1,5,3) 4.566067E-04 (1,5,5) -6.164334E-04 (1,6,4) 2.555350E-04
+(1,5,5): (1,4,5) -1.239176E-04 (1,5,4) 6.164334E-04 (1,5,6) -7.655233E-04 (1,6,5) 1.730076E-04
+(1,5,6): (1,4,6) -8.017091E-05 (1,5,5) 7.655233E-04 (1,5,7) -8.857032E-04 (1,6,6) 1.003508E-04
+(1,5,7): (1,4,7) -9.230726E-05 (1,5,6) 8.857032E-04 (1,5,8) -8.538320E-04 (1,6,7) -3.956396E-05
+(1,5,8): (1,4,8) 9.377993E-05 (1,5,7) 8.538320E-04 (1,5,9) -9.192883E-04 (1,6,8) -1.283235E-04
+(1,5,9): (1,4,9) 2.797658E-04 (1,5,8) 9.192883E-04 (1,5,10) -1.125317E-03 (1,6,9) -1.737374E-04
+(1,5,10): (1,4,10) 3.360437E-04 (1,5,9) 1.125317E-03 (1,5,11) -1.209449E-03 (1,6,10) -3.519118E-04
+(1,5,11): (1,4,11) 3.761317E-04 (1,5,10) 1.209449E-03 (1,5,12) -1.191714E-03 (1,6,11) -4.938666E-04
+(1,5,12): (1,4,12) 3.594777E-04 (1,5,11) 1.191714E-03 (1,5,13) -1.191291E-03 (1,6,12) -4.599008E-04
+(1,5,13): (1,4,13) 3.557727E-04 (1,5,12) 1.191291E-03 (1,5,14) -1.244932E-03 (1,6,13) -4.021318E-04
+(1,5,14): (1,4,14) 4.088145E-04 (1,5,13) 1.244932E-03 (1,5,15) -1.367927E-03 (1,6,14) -3.858193E-04
+(1,5,15): (1,4,15) 3.815643E-04 (1,5,14) 1.367927E-03 (1,5,16) 2.163514E-04 (1,6,15) -3.686314E-04
+(1,5,16): (1,4,16) 3.183019E-04 (1,5,15) -2.163514E-04 (1,5,17) 1.649950E-04 (1,6,16) -3.669455E-04
+(1,5,17): (1,4,17) 2.818229E-04 (1,5,16) -1.649950E-04 (1,5,18) 1.632831E-04 (1,6,17) -3.801110E-04
+(1,5,18): (1,4,18) 3.211981E-04 (1,5,17) -1.632831E-04 (1,5,19) 1.185581E-04 (1,6,18) -3.764731E-04
+(1,5,19): (1,4,19) 2.943426E-04 (1,5,18) -1.185581E-04 (1,5,20) 6.600399E-05 (1,6,19) -3.417886E-04
+(1,5,20): (1,4,20) 2.555647E-04 (1,5,19) -6.600399E-05 (1,6,20) -2.895607E-04
+(1,6,1): (1,5,1) -2.025412E-04 (1,6,2) -1.278862E-04 (1,7,1) 2.304274E-04
+(1,6,2): (1,5,2) -1.730828E-04 (1,6,1) 1.278862E-04 (1,6,3) -2.627950E-04 (1,7,2) 2.079915E-04
+(1,6,3): (1,5,3) -2.173151E-04 (1,6,2) 2.627950E-04 (1,6,4) -4.215314E-04 (1,7,3) 2.760515E-04
+(1,6,4): (1,5,4) -2.555350E-04 (1,6,3) 4.215314E-04 (1,6,5) -5.746766E-04 (1,7,4) 3.086801E-04
+(1,6,5): (1,5,5) -1.730076E-04 (1,6,4) 5.746766E-04 (1,6,6) -6.466202E-04 (1,7,5) 1.449512E-04
+(1,6,6): (1,5,6) -1.003508E-04 (1,6,5) 6.466202E-04 (1,6,7) -7.090969E-04 (1,7,6) 6.282748E-05
+(1,6,7): (1,5,7) 3.956396E-05 (1,6,6) 7.090969E-04 (1,6,8) -8.266273E-04 (1,7,7) -2.203353E-05
+(1,6,8): (1,5,8) 1.283235E-04 (1,6,7) 8.266273E-04 (1,6,9) -8.533971E-04 (1,7,8) -2.015538E-04
+(1,6,9): (1,5,9) 1.737374E-04 (1,6,8) 8.533971E-04 (1,6,10) -8.432486E-04 (1,7,9) -2.838859E-04
+(1,6,10): (1,5,10) 3.519118E-04 (1,6,9) 8.432486E-04 (1,6,11) -9.034151E-04 (1,7,10) -3.917453E-04
+(1,6,11): (1,5,11) 4.938666E-04 (1,6,10) 9.034151E-04 (1,6,12) -1.052468E-03 (1,7,11) -4.448135E-04
+(1,6,12): (1,5,12) 4.599008E-04 (1,6,11) 1.052468E-03 (1,6,13) -1.126261E-03 (1,7,12) -4.861084E-04
+(1,6,13): (1,5,13) 4.021318E-04 (1,6,12) 1.126261E-03 (1,6,14) -1.195731E-03 (1,7,13) -4.326614E-04
+(1,6,14): (1,5,14) 3.858193E-04 (1,6,13) 1.195731E-03 (1,6,15) -1.298760E-03 (1,7,14) -3.827906E-04
+(1,6,15): (1,5,15) 3.686314E-04 (1,6,14) 1.298760E-03 (1,6,16) 1.426602E-04 (1,7,15) -3.295006E-04
+(1,6,16): (1,5,16) 3.669455E-04 (1,6,15) -1.426602E-04 (1,6,17) 2.058807E-04 (1,7,16) -5.301661E-04
+(1,6,17): (1,5,17) 3.801110E-04 (1,6,16) -2.058807E-04 (1,6,18) 2.193926E-04 (1,7,17) -4.936229E-04
+(1,6,18): (1,5,18) 3.764731E-04 (1,6,17) -2.193926E-04 (1,6,19) 1.730853E-04 (1,7,18) -4.301658E-04
+(1,6,19): (1,5,19) 3.417886E-04 (1,6,18) -1.730853E-04 (1,6,20) 6.834260E-05 (1,7,19) -3.370459E-04
+(1,6,20): (1,5,20) 2.895607E-04 (1,6,19) -6.834260E-05 (1,7,20) -3.212181E-04
+(1,7,1): (1,6,1) -2.304274E-04 (1,7,2) -1.277046E-04 (1,8,1) 2.581320E-04
+(1,7,2): (1,6,2) -2.079915E-04 (1,7,1) 1.277046E-04 (1,7,3) -3.101265E-04 (1,8,2) 2.904134E-04
+(1,7,3): (1,6,3) -2.760515E-04 (1,7,2) 3.101265E-04 (1,7,4) -4.622976E-04 (1,8,3) 3.282226E-04
+(1,7,4): (1,6,4) -3.086801E-04 (1,7,3) 4.622976E-04 (1,7,5) -6.754864E-04 (1,8,4) 4.218690E-04
+(1,7,5): (1,6,5) -1.449512E-04 (1,7,4) 6.754864E-04 (1,7,6) -7.861308E-04 (1,8,5) 1.555955E-04
+(1,7,6): (1,6,6) -6.282748E-05 (1,7,5) 7.861308E-04 (1,7,7) -8.646945E-04 (1,8,6) 4.139127E-05
+(1,7,7): (1,6,7) 2.203353E-05 (1,7,6) 8.646945E-04 (1,7,8) -9.577914E-04 (1,8,7) -2.893668E-05
+(1,7,8): (1,6,8) 2.015538E-04 (1,7,7) 9.577914E-04 (1,7,9) -9.302164E-04 (1,8,8) -3.291289E-04
+(1,7,9): (1,6,9) 2.838859E-04 (1,7,8) 9.302164E-04 (1,7,10) -9.008174E-04 (1,8,9) -4.132849E-04
+(1,7,10): (1,6,10) 3.917453E-04 (1,7,9) 9.008174E-04 (1,7,11) -8.547079E-04 (1,8,10) -5.378547E-04
+(1,7,11): (1,6,11) 4.448135E-04 (1,7,10) 8.547079E-04 (1,7,12) -8.931649E-04 (1,8,11) -5.063565E-04
+(1,7,12): (1,6,12) 4.861084E-04 (1,7,11) 8.931649E-04 (1,7,13) -9.318675E-04 (1,8,12) -5.474058E-04
+(1,7,13): (1,6,13) 4.326614E-04 (1,7,12) 9.318675E-04 (1,7,14) -9.524112E-04 (1,8,13) -5.121177E-04
+(1,7,14): (1,6,14) 3.827906E-04 (1,7,13) 9.524112E-04 (1,7,15) -1.008211E-03 (1,8,14) -4.269911E-04
+(1,7,15): (1,6,15) 3.295006E-04 (1,7,14) 1.008211E-03 (1,7,16) -4.303645E-05 (1,8,15) -3.189564E-04
+(1,7,16): (1,6,16) 5.301661E-04 (1,7,15) 4.303645E-05 (1,7,17) 2.558283E-04 (1,8,16) -9.290308E-04
+(1,7,17): (1,6,17) 4.936229E-04 (1,7,16) -2.558283E-04 (1,7,18) 2.807394E-04 (1,8,17) -6.185340E-04
+(1,7,18): (1,6,18) 4.301658E-04 (1,7,17) -2.807394E-04 (1,7,19) 1.789541E-04 (1,8,18) -4.283805E-04
+(1,7,19): (1,6,19) 3.370459E-04 (1,7,18) -1.789541E-04 (1,7,20) 9.563688E-05 (1,8,19) -3.537286E-04
+(1,7,20): (1,6,20) 3.212181E-04 (1,7,19) -9.563688E-05 (1,8,20) -3.255812E-04
+(1,8,1): (1,7,1) -2.581320E-04 (1,8,2) -1.058843E-04 (1,9,1) 2.640163E-04
+(1,8,2): (1,7,2) -2.904134E-04 (1,8,1) 1.058843E-04 (1,8,3) -2.623139E-04 (1,9,2) 3.468430E-04
+(1,8,3): (1,7,3) -3.282226E-04 (1,8,2) 2.623139E-04 (1,8,4) -5.139614E-04 (1,9,3) 4.798701E-04
+(1,8,4): (1,7,4) -4.218690E-04 (1,8,3) 5.139614E-04 (1,8,5) -1.068762E-03 (1,9,4) 8.766700E-04
+(1,8,5): (1,7,5) -1.555955E-04 (1,8,4) 1.068762E-03 (1,8,6) -1.013167E-03
+(1,8,6): (1,7,6) -4.139127E-05 (1,8,5) 1.013167E-03 (1,8,7) -1.071776E-03
+(1,8,7): (1,7,7) 2.893668E-05 (1,8,6) 1.071776E-03 (1,8,8) -1.200712E-03
+(1,8,8): (1,7,8) 3.291289E-04 (1,8,7) 1.200712E-03 (1,8,9) -7.785349E-04 (1,9,8) -8.513063E-04
+(1,8,9): (1,7,9) 4.132849E-04 (1,8,8) 7.785349E-04 (1,8,10) -6.755237E-04 (1,9,9) -6.162961E-04
+(1,8,10): (1,7,10) 5.378547E-04 (1,8,9) 6.755237E-04 (1,8,11) -7.187619E-04 (1,9,10) -5.946165E-04
+(1,8,11): (1,7,11) 5.063565E-04 (1,8,10) 7.187619E-04 (1,8,12) -8.287674E-04 (1,9,11) -4.963510E-04
+(1,8,12): (1,7,12) 5.474058E-04 (1,8,11) 8.287674E-04 (1,8,13) -8.759733E-04 (1,9,12) -6.001999E-04
+(1,8,13): (1,7,13) 5.121177E-04 (1,8,12) 8.759733E-04 (1,8,14) -9.245991E-04 (1,9,13) -5.634919E-04
+(1,8,14): (1,7,14) 4.269911E-04 (1,8,13) 9.245991E-04 (1,8,15) -1.049380E-03 (1,9,14) -4.022106E-04
+(1,8,15): (1,7,15) 3.189564E-04 (1,8,14) 1.049380E-03 (1,8,16) -6.178914E-04 (1,9,15) -3.327103E-04
+(1,8,16): (1,7,16) 9.290308E-04 (1,8,15) 6.178914E-04 (1,8,17) 4.854608E-04 (1,9,16) -2.132383E-03
+(1,8,17): (1,7,17) 6.185340E-04 (1,8,16) -4.854608E-04 (1,8,18) 4.114647E-04 (1,9,17) -6.445379E-04
+(1,8,18): (1,7,18) 4.283805E-04 (1,8,17) -4.114647E-04 (1,8,19) 2.701351E-04 (1,9,18) -3.870510E-04
+(1,8,19): (1,7,19) 3.537286E-04 (1,8,18) -2.701351E-04 (1,8,20) 1.308852E-04 (1,9,19) -3.144787E-04
+(1,8,20): (1,7,20) 3.255812E-04 (1,8,19) -1.308852E-04 (1,9,20) -2.946960E-04
+(1,9,1): (1,8,1) -2.640163E-04 (1,9,2) -8.625153E-05 (1,10,1) 2.502678E-04
+(1,9,2): (1,8,2) -3.468430E-04 (1,9,1) 8.625153E-05 (1,9,3) -1.779000E-04 (1,10,2) 3.384915E-04
+(1,9,3): (1,8,3) -4.798701E-04 (1,9,2) 1.779000E-04 (1,9,4) -1.996605E-04 (1,10,3) 4.016305E-04
+(1,9,4): (1,8,4) -8.766700E-04 (1,9,3) 1.996605E-04 (1,10,4) 5.770095E-04
+(1,9,8): (1,8,8) 8.513063E-04 (1,9,9) -9.513063E-04
+(1,9,9): (1,8,9) 6.162961E-04 (1,9,8) 9.513063E-04 (1,9,10) -7.175282E-04 (1,10,9) -9.500742E-04
+(1,9,10): (1,8,10) 5.946165E-04 (1,9,9) 7.175282E-04 (1,9,11) -6.961789E-04 (1,10,10) -7.159657E-04
+(1,9,11): (1,8,11) 4.963510E-04 (1,9,10) 6.961789E-04 (1,9,12) -7.439675E-04 (1,10,11) -5.485624E-04
+(1,9,12): (1,8,12) 6.001999E-04 (1,9,11) 7.439675E-04 (1,9,13) -7.930491E-04 (1,10,12) -6.511184E-04
+(1,9,13): (1,8,13) 5.634919E-04 (1,9,12) 7.930491E-04 (1,9,14) -7.192485E-04 (1,10,13) -7.372924E-04
+(1,9,14): (1,8,14) 4.022106E-04 (1,9,13) 7.192485E-04 (1,9,15) -9.379064E-04 (1,10,14) -2.835527E-04
+(1,9,15): (1,8,15) 3.327103E-04 (1,9,14) 9.379064E-04 (1,9,16) -2.273344E-03 (1,10,15) 9.619728E-04
+(1,9,16): (1,8,16) 2.132383E-03 (1,9,15) 2.273344E-03 (1,9,17) 1.781205E-03 (1,10,16) 1.913069E-03
+(1,9,17): (1,8,17) 6.445379E-04 (1,9,16) -1.781205E-03 (1,9,18) 7.690907E-04 (1,10,17) 2.675763E-04
+(1,9,18): (1,8,18) 3.870510E-04 (1,9,17) -7.690907E-04 (1,9,19) 3.873837E-04 (1,10,18) -1.053440E-04
+(1,9,19): (1,8,19) 3.144787E-04 (1,9,18) -3.873837E-04 (1,9,20) 1.565214E-04 (1,10,19) -1.836163E-04
+(1,9,20): (1,8,20) 2.946960E-04 (1,9,19) -1.565214E-04 (1,10,20) -2.381747E-04
+(1,10,1): (1,9,1) -2.502678E-04 (1,10,2) -6.425124E-05 (1,11,1) 2.145191E-04
+(1,10,2): (1,9,2) -3.384915E-04 (1,10,1) 6.425124E-05 (1,10,3) -9.623445E-05 (1,11,2) 2.704747E-04
+(1,10,3): (1,9,3) -4.016305E-04 (1,10,2) 9.623445E-05 (1,10,4) -9.148219E-05 (1,11,3) 2.968783E-04
+(1,10,4): (1,9,4) -5.770095E-04 (1,10,3) 9.148219E-05 (1,11,4) 3.855273E-04
+(1,10,9): (1,9,9) 9.500742E-04 (1,10,10) -4.104403E-04 (1,11,9) -6.396340E-04
+(1,10,10): (1,9,10) 7.159657E-04 (1,10,9) 4.104403E-04 (1,10,11) -6.185849E-04 (1,11,10) -6.078211E-04
+(1,10,11): (1,9,11) 5.485624E-04 (1,10,10) 6.185849E-04 (1,10,12) -7.942505E-04 (1,11,11) -4.728968E-04
+(1,10,12): (1,9,12) 6.511184E-04 (1,10,11) 7.942505E-04 (1,10,13) -8.757130E-04 (1,11,12) -6.696559E-04
+(1,10,13): (1,9,13) 7.372924E-04 (1,10,12) 8.757130E-04 (1,10,14) -2.272221E-04 (1,11,13) -1.485783E-03
+(1,10,14): (1,9,14) 2.835527E-04 (1,10,13) 2.272221E-04 (1,10,15) 3.071081E-04 (1,11,14) -9.178829E-04
+(1,10,15): (1,9,15) -9.619728E-04 (1,10,14) -3.071081E-04 (1,10,16) -1.478036E-03 (1,11,15) -1.546916E-03
+(1,10,16): (1,9,16) -1.913069E-03 (1,10,15) 1.478036E-03 (1,10,17) 2.815263E-04 (1,11,16) 5.350623E-05
+(1,10,17): (1,9,17) -2.675763E-04 (1,10,16) -2.815263E-04 (1,10,18) 4.141154E-04 (1,11,17) 3.498719E-05
+(1,10,18): (1,9,18) 1.053440E-04 (1,10,17) -4.141154E-04 (1,10,19) 2.847432E-04 (1,11,18) -7.597181E-05
+(1,10,19): (1,9,19) 1.836163E-04 (1,10,18) -2.847432E-04 (1,10,20) 1.537726E-04 (1,11,19) -1.526457E-04
+(1,10,20): (1,9,20) 2.381747E-04 (1,10,19) -1.537726E-04 (1,11,20) -1.844020E-04
+(1,11,1): (1,10,1) -2.145191E-04 (1,11,2) -4.970478E-05 (1,12,1) 1.642239E-04
+(1,11,2): (1,10,2) -2.704747E-04 (1,11,1) 4.970478E-05 (1,11,3) -5.256234E-05 (1,12,2) 1.733323E-04
+(1,11,3): (1,10,3) -2.968783E-04 (1,11,2) 5.256234E-05 (1,11,4) -4.984711E-05 (1,12,3) 1.941630E-04
+(1,11,4): (1,10,4) -3.855273E-04 (1,11,3) 4.984711E-05 (1,12,4) 2.356802E-04
+(1,11,9): (1,10,9) 6.396340E-04 (1,11,10) -2.837610E-04 (1,12,9) -4.558730E-04
+(1,11,10): (1,10,10) 6.078211E-04 (1,11,9) 2.837610E-04 (1,11,11) -5.053140E-04 (1,12,10) -4.862681E-04
+(1,11,11): (1,10,11) 4.728968E-04 (1,11,10) 5.053140E-04 (1,11,12) -7.401620E-04 (1,12,11) -3.380487E-04
+(1,11,12): (1,10,12) 6.696559E-04 (1,11,11) 7.401620E-04 (1,11,13) -1.378243E-03 (1,12,12) -1.315746E-04
+(1,11,13): (1,10,13) 1.485783E-03 (1,11,12) 1.378243E-03 (1,11,14) 5.351375E-04 (1,12,13) 6.008359E-04
+(1,11,14): (1,10,14) 9.178829E-04 (1,11,13) -5.351375E-04 (1,11,15) -3.021832E-04 (1,12,14) -1.805623E-04
+(1,11,15): (1,10,15) 1.546916E-03 (1,11,14) 3.021832E-04 (1,11,16) 1.568575E-04 (1,12,15) -3.425833E-04
+(1,11,16): (1,10,16) -5.350623E-05 (1,11,15) -1.568575E-04 (1,11,17) 2.304095E-04 (1,12,16) -1.200458E-04
+(1,11,17): (1,10,17) -3.498719E-05 (1,11,16) -2.304095E-04 (1,11,18) 2.629463E-04 (1,12,17) -9.754957E-05
+(1,11,18): (1,10,18) 7.597181E-05 (1,11,17) -2.629463E-04 (1,11,19) 2.024292E-04 (1,12,18) -1.154547E-04
+(1,11,19): (1,10,19) 1.526457E-04 (1,11,18) -2.024292E-04 (1,11,20) 1.088481E-04 (1,12,19) -1.590647E-04
+(1,11,20): (1,10,20) 1.844020E-04 (1,11,19) -1.088481E-04 (1,12,20) -1.755539E-04
+(1,12,1): (1,11,1) -1.642239E-04 (1,12,2) -1.995768E-05 (1,13,1) 8.418154E-05
+(1,12,2): (1,11,2) -1.733323E-04 (1,12,1) 1.995768E-05 (1,12,3) -3.268534E-05 (1,13,2) 8.605995E-05
+(1,12,3): (1,11,3) -1.941630E-04 (1,12,2) 3.268534E-05 (1,12,4) -2.500295E-05 (1,13,3) 8.648065E-05
+(1,12,4): (1,11,4) -2.356802E-04 (1,12,3) 2.500295E-05 (1,13,4) 1.106773E-04
+(1,12,9): (1,11,9) 4.558730E-04 (1,12,10) -2.251931E-04 (1,13,9) -3.306800E-04
+(1,12,10): (1,11,10) 4.862681E-04 (1,12,9) 2.251931E-04 (1,12,11) -4.782455E-04 (1,13,10) -3.332157E-04
+(1,12,11): (1,11,11) 3.380487E-04 (1,12,10) 4.782455E-04 (1,12,12) -6.538294E-04 (1,13,11) -2.624648E-04
+(1,12,12): (1,11,12) 1.315746E-04 (1,12,11) 6.538294E-04 (1,12,13) -7.198119E-04 (1,13,12) -1.655921E-04
+(1,12,13): (1,11,13) -6.008359E-04 (1,12,12) 7.198119E-04 (1,12,14) -2.901071E-04 (1,13,13) 7.113110E-05
+(1,12,14): (1,11,14) 1.805623E-04 (1,12,13) 2.901071E-04 (1,12,15) -4.236437E-04 (1,13,14) -1.470256E-04
+(1,12,15): (1,11,15) 3.425833E-04 (1,12,14) 4.236437E-04 (1,12,16) 2.815822E-04 (1,13,15) -3.034750E-04
+(1,12,16): (1,11,16) 1.200458E-04 (1,12,15) -2.815822E-04 (1,12,17) 2.554120E-04 (1,13,16) -1.938756E-04
+(1,12,17): (1,11,17) 9.754957E-05 (1,12,16) -2.554120E-04 (1,12,18) 2.419813E-04 (1,13,17) -1.841189E-04
+(1,12,18): (1,11,18) 1.154547E-04 (1,12,17) -2.419813E-04 (1,12,19) 1.878312E-04 (1,13,18) -1.613046E-04
+(1,12,19): (1,11,19) 1.590647E-04 (1,12,18) -1.878312E-04 (1,12,20) 9.724275E-05 (1,13,19) -1.684762E-04
+(1,12,20): (1,11,20) 1.755539E-04 (1,12,19) -9.724275E-05 (1,13,20) -1.783111E-04
+(1,13,1): (1,12,1) -8.418154E-05 (1,13,2) -7.459984E-06 (1,14,1) -8.358476E-06
+(1,13,2): (1,12,2) -8.605995E-05 (1,13,1) 7.459984E-06 (1,13,3) -1.725998E-05 (1,14,2) -4.140057E-06
+(1,13,3): (1,12,3) -8.648065E-05 (1,13,2) 1.725998E-05 (1,13,4) -2.301524E-05 (1,14,3) -7.764093E-06
+(1,13,4): (1,12,4) -1.106773E-04 (1,13,3) 2.301524E-05 (1,14,4) -1.233797E-05
+(1,13,9): (1,12,9) 3.306800E-04 (1,13,10) -2.047673E-04 (1,14,9) -2.259126E-04
+(1,13,10): (1,12,10) 3.332157E-04 (1,13,9) 2.047673E-04 (1,13,11) -3.953773E-04 (1,14,10) -2.426057E-04
+(1,13,11): (1,12,11) 2.624648E-04 (1,13,10) 3.953773E-04 (1,13,12) -5.823058E-04 (1,14,11) -1.755363E-04
+(1,13,12): (1,12,12) 1.655921E-04 (1,13,11) 5.823058E-04 (1,13,13) -7.129981E-04 (1,14,12) -1.348998E-04
+(1,13,13): (1,12,13) -7.113110E-05 (1,13,12) 7.129981E-04 (1,13,14) -6.250479E-04 (1,14,13) -1.168191E-04
+(1,13,14): (1,12,14) 1.470256E-04 (1,13,13) 6.250479E-04 (1,13,15) -6.430663E-04 (1,14,14) -2.290072E-04
+(1,13,15): (1,12,15) 3.034750E-04 (1,13,14) 6.430663E-04 (1,13,16) 4.187427E-04 (1,14,15) -3.338838E-04
+(1,13,16): (1,12,16) 1.938756E-04 (1,13,15) -4.187427E-04 (1,13,17) 3.494559E-04 (1,14,16) -2.245888E-04
+(1,13,17): (1,12,17) 1.841189E-04 (1,13,16) -3.494559E-04 (1,13,18) 2.512402E-04 (1,14,17) -1.859032E-04
+(1,13,18): (1,12,18) 1.613046E-04 (1,13,17) -2.512402E-04 (1,13,19) 1.672496E-04 (1,14,18) -1.773141E-04
+(1,13,19): (1,12,19) 1.684762E-04 (1,13,18) -1.672496E-04 (1,13,20) 8.225678E-05 (1,14,19) -1.834834E-04
+(1,13,20): (1,12,20) 1.783111E-04 (1,13,19) -8.225678E-05 (1,14,20) -1.960544E-04
+(1,14,1): (1,13,1) 8.358476E-06 (1,14,2) -2.906341E-06 (1,15,1) -1.054521E-04
+(1,14,2): (1,13,2) 4.140057E-06 (1,14,1) 2.906341E-06 (1,14,3) -2.037933E-05 (1,15,2) -8.666706E-05
+(1,14,3): (1,13,3) 7.764093E-06 (1,14,2) 2.037933E-05 (1,14,4) -2.770994E-05 (1,15,3) -1.004335E-04
+(1,14,4): (1,13,4) 1.233797E-05 (1,14,3) 2.770994E-05 (1,15,4) -1.400479E-04
+(1,14,9): (1,13,9) 2.259126E-04 (1,14,10) -1.832303E-04 (1,15,9) -1.426823E-04
+(1,14,10): (1,13,10) 2.426057E-04 (1,14,9) 1.832303E-04 (1,14,11) -3.635397E-04 (1,15,10) -1.622962E-04
+(1,14,11): (1,13,11) 1.755363E-04 (1,14,10) 3.635397E-04 (1,14,12) -4.825120E-04 (1,15,11) -1.565640E-04
+(1,14,12): (1,13,12) 1.348998E-04 (1,14,11) 4.825120E-04 (1,14,13) -5.406245E-04 (1,15,12) -1.767873E-04
+(1,14,13): (1,13,13) 1.168191E-04 (1,14,12) 5.406245E-04 (1,14,14) -6.178161E-04 (1,15,13) -1.396275E-04
+(1,14,14): (1,13,14) 2.290072E-04 (1,14,13) 6.178161E-04 (1,14,15) -7.612945E-04 (1,15,14) -1.855288E-04
+(1,14,15): (1,13,15) 3.338838E-04 (1,14,14) 7.612945E-04 (1,14,16) 4.816534E-04 (1,15,15) -2.980044E-04
+(1,14,16): (1,13,16) 2.245888E-04 (1,14,15) -4.816534E-04 (1,14,17) 3.813574E-04 (1,15,16) -2.242928E-04
+(1,14,17): (1,13,17) 1.859032E-04 (1,14,16) -3.813574E-04 (1,14,18) 2.662885E-04 (1,15,17) -1.708343E-04
+(1,14,18): (1,13,18) 1.773141E-04 (1,14,17) -2.662885E-04 (1,14,19) 1.671358E-04 (1,15,18) -1.781613E-04
+(1,14,19): (1,13,19) 1.834834E-04 (1,14,18) -1.671358E-04 (1,14,20) 8.136761E-05 (1,15,19) -1.977152E-04
+(1,14,20): (1,13,20) 1.960544E-04 (1,14,19) -8.136761E-05 (1,15,20) -2.146868E-04
+(1,15,1): (1,14,1) 1.054521E-04 (1,15,2) -4.426890E-06 (1,16,1) -2.010252E-04
+(1,15,2): (1,14,2) 8.666706E-05 (1,15,1) 4.426890E-06 (1,15,3) -2.404014E-05 (1,16,2) -1.670538E-04
+(1,15,3): (1,14,3) 1.004335E-04 (1,15,2) 2.404014E-05 (1,15,4) -1.963876E-05 (1,16,3) -2.048349E-04
+(1,15,4): (1,14,4) 1.400479E-04 (1,15,3) 1.963876E-05 (1,16,4) -2.596867E-04
+(1,15,9): (1,14,9) 1.426823E-04 (1,15,10) -1.550759E-04 (1,16,9) -8.760640E-05
+(1,15,10): (1,14,10) 1.622962E-04 (1,15,9) 1.550759E-04 (1,15,11) -3.080176E-04 (1,16,10) -1.093546E-04
+(1,15,11): (1,14,11) 1.565640E-04 (1,15,10) 3.080176E-04 (1,15,12) -4.540388E-04 (1,16,11) -1.105429E-04
+(1,15,12): (1,14,12) 1.767873E-04 (1,15,11) 4.540388E-04 (1,15,13) -5.500842E-04 (1,16,12) -1.807419E-04
+(1,15,13): (1,14,13) 1.396275E-04 (1,15,12) 5.500842E-04 (1,15,14) -5.881031E-04 (1,16,13) -2.016085E-04
+(1,15,14): (1,14,14) 1.855288E-04 (1,15,13) 5.881031E-04 (1,15,15) -6.575803E-04 (1,16,14) -2.160517E-04
+(1,15,15): (1,14,15) 2.980044E-04 (1,15,14) 6.575803E-04 (1,15,16) 4.438018E-04 (1,16,15) -2.414807E-04
+(1,15,16): (1,14,16) 2.242928E-04 (1,15,15) -4.438018E-04 (1,15,17) 3.334449E-04 (1,16,16) -2.139358E-04
+(1,15,17): (1,14,17) 1.708343E-04 (1,15,16) -3.334449E-04 (1,15,18) 2.325902E-04 (1,16,17) -1.699796E-04
+(1,15,18): (1,14,18) 1.781613E-04 (1,15,17) -2.325902E-04 (1,15,19) 1.667866E-04 (1,16,18) -2.123578E-04
+(1,15,19): (1,14,19) 1.977152E-04 (1,15,18) -1.667866E-04 (1,15,20) 8.086369E-05 (1,16,19) -2.117922E-04
+(1,15,20): (1,14,20) 2.146868E-04 (1,15,19) -8.086369E-05 (1,16,20) -2.338231E-04
+(1,16,1): (1,15,1) 2.010252E-04 (1,16,2) -1.259755E-05 (1,17,1) -2.884277E-04
+(1,16,2): (1,15,2) 1.670538E-04 (1,16,1) 1.259755E-05 (1,16,3) -1.514566E-05 (1,17,2) -2.645057E-04
+(1,16,3): (1,15,3) 2.048349E-04 (1,16,2) 1.514566E-05 (1,16,4) -4.828783E-06 (1,17,3) -3.151518E-04
+(1,16,4): (1,15,4) 2.596867E-04 (1,16,3) 4.828783E-06 (1,17,4) -3.645155E-04
+(1,16,9): (1,15,9) 8.760640E-05 (1,16,10) -1.454583E-04 (1,17,9) -4.214808E-05
+(1,16,10): (1,15,10) 1.093546E-04 (1,16,9) 1.454583E-04 (1,16,11) -2.905765E-04 (1,17,10) -6.423643E-05
+(1,16,11): (1,15,11) 1.105429E-04 (1,16,10) 2.905765E-04 (1,16,12) -4.121663E-04 (1,17,11) -8.895302E-05
+(1,16,12): (1,15,12) 1.807419E-04 (1,16,11) 4.121663E-04 (1,16,13) -5.273938E-04 (1,17,12) -1.655143E-04
+(1,16,13): (1,15,13) 2.016085E-04 (1,16,12) 5.273938E-04 (1,16,14) -6.106398E-04 (1,17,13) -2.183626E-04
+(1,16,14): (1,15,14) 2.160517E-04 (1,16,13) 6.106398E-04 (1,16,15) -6.769700E-04 (1,17,14) -2.497216E-04
+(1,16,15): (1,15,15) 2.414807E-04 (1,16,14) 6.769700E-04 (1,16,16) 4.572763E-04 (1,17,15) -2.439521E-04
+(1,16,16): (1,15,16) 2.139358E-04 (1,16,15) -4.572763E-04 (1,16,17) 3.596451E-04 (1,17,16) -2.163046E-04
+(1,16,17): (1,15,17) 1.699796E-04 (1,16,16) -3.596451E-04 (1,16,18) 2.739142E-04 (1,17,17) -1.842486E-04
+(1,16,18): (1,15,18) 2.123578E-04 (1,16,17) -2.739142E-04 (1,16,19) 1.818369E-04 (1,17,18) -2.202805E-04
+(1,16,19): (1,15,19) 2.117922E-04 (1,16,18) -1.818369E-04 (1,16,20) 8.247785E-05 (1,17,19) -2.124332E-04
+(1,16,20): (1,15,20) 2.338231E-04 (1,16,19) -8.247785E-05 (1,17,20) -2.513452E-04
+(1,17,1): (1,16,1) 2.884277E-04 (1,17,2) -2.164512E-05 (1,18,1) -3.667826E-04
+(1,17,2): (1,16,2) 2.645057E-04 (1,17,1) 2.164512E-05 (1,17,3) -2.011480E-05 (1,18,2) -3.660360E-04
+(1,17,3): (1,16,3) 3.151518E-04 (1,17,2) 2.011480E-05 (1,17,4) 5.965761E-06 (1,18,3) -4.412323E-04
+(1,17,4): (1,16,4) 3.645155E-04 (1,17,3) -5.965761E-06 (1,18,4) -4.585497E-04
+(1,17,9): (1,16,9) 4.214808E-05 (1,17,10) -1.616944E-04 (1,18,9) 1.954628E-05
+(1,17,10): (1,16,10) 6.423643E-05 (1,17,9) 1.616944E-04 (1,17,11) -3.177558E-04 (1,18,10) -8.175025E-06
+(1,17,11): (1,16,11) 8.895302E-05 (1,17,10) 3.177558E-04 (1,17,12) -4.796901E-04 (1,18,11) -2.701870E-05
+(1,17,12): (1,16,12) 1.655143E-04 (1,17,11) 4.796901E-04 (1,17,13) -6.209781E-04 (1,18,12) -1.242263E-04
+(1,17,13): (1,16,13) 2.183626E-04 (1,17,12) 6.209781E-04 (1,17,14) -6.594321E-04 (1,18,13) -2.799086E-04
+(1,17,14): (1,16,14) 2.497216E-04 (1,17,13) 6.594321E-04 (1,17,15) -6.811420E-04 (1,18,14) -3.280116E-04
+(1,17,15): (1,16,15) 2.439521E-04 (1,17,14) 6.811420E-04 (1,17,16) 4.438639E-04 (1,18,15) -2.429667E-04
+(1,17,16): (1,16,16) 2.163046E-04 (1,17,15) -4.438639E-04 (1,17,17) 3.500872E-04 (1,18,16) -2.225279E-04
+(1,17,17): (1,16,17) 1.842486E-04 (1,17,16) -3.500872E-04 (1,17,18) 2.707019E-04 (1,18,17) -2.048633E-04
+(1,17,18): (1,16,18) 2.202805E-04 (1,17,17) -2.707019E-04 (1,17,19) 1.783213E-04 (1,18,18) -2.278999E-04
+(1,17,19): (1,16,19) 2.124332E-04 (1,17,18) -1.783213E-04 (1,17,20) 8.768178E-05 (1,18,19) -2.217936E-04
+(1,17,20): (1,16,20) 2.513452E-04 (1,17,19) -8.768178E-05 (1,18,20) -2.636634E-04
+(1,18,1): (1,17,1) 3.667826E-04 (1,18,2) -2.320147E-05 (1,19,1) -4.435811E-04
+(1,18,2): (1,17,2) 3.660360E-04 (1,18,1) 2.320147E-05 (1,18,3) -4.150683E-05 (1,19,2) -4.477307E-04
+(1,18,3): (1,17,3) 4.412323E-04 (1,18,2) 4.150683E-05 (1,18,4) 5.452322E-06 (1,19,3) -5.881915E-04
+(1,18,4): (1,17,4) 4.585497E-04 (1,18,3) -5.452322E-06 (1,19,4) -5.530974E-04
+(1,18,9): (1,17,9) -1.954628E-05 (1,18,10) -1.698564E-04 (1,19,9) 8.940263E-05
+(1,18,10): (1,17,10) 8.175025E-06 (1,18,9) 1.698564E-04 (1,18,11) -3.579892E-04 (1,19,10) 7.995778E-05
+(1,18,11): (1,17,11) 2.701870E-05 (1,18,10) 3.579892E-04 (1,18,12) -5.150813E-04 (1,19,11) 3.007345E-05
+(1,18,12): (1,17,12) 1.242263E-04 (1,18,11) 5.150813E-04 (1,18,13) -6.656421E-04 (1,19,12) -7.366547E-05
+(1,18,13): (1,17,13) 2.799086E-04 (1,18,12) 6.656421E-04 (1,18,14) -7.195636E-04 (1,19,13) -3.259872E-04
+(1,18,14): (1,17,14) 3.280116E-04 (1,18,13) 7.195636E-04 (1,18,15) -6.225990E-04 (1,19,14) -5.249762E-04
+(1,18,15): (1,17,15) 2.429667E-04 (1,18,14) 6.225990E-04 (1,18,16) 5.202616E-04 (1,19,15) -2.461219E-04
+(1,18,16): (1,17,16) 2.225279E-04 (1,18,15) -5.202616E-04 (1,18,17) 4.292455E-04 (1,19,16) -2.315118E-04
+(1,18,17): (1,17,17) 2.048633E-04 (1,18,16) -4.292455E-04 (1,18,18) 3.187262E-04 (1,19,17) -1.943441E-04
+(1,18,18): (1,17,18) 2.278999E-04 (1,18,17) -3.187262E-04 (1,18,19) 2.015180E-04 (1,19,18) -2.106917E-04
+(1,18,19): (1,17,19) 2.217936E-04 (1,18,18) -2.015180E-04 (1,18,20) 1.102012E-04 (1,19,19) -2.304768E-04
+(1,18,20): (1,17,20) 2.636634E-04 (1,18,19) -1.102012E-04 (1,19,20) -2.534623E-04
+(1,19,1): (1,18,1) 4.435811E-04 (1,19,2) -3.097410E-05 (1,20,1) -5.126070E-04
+(1,19,2): (1,18,2) 4.477307E-04 (1,19,1) 3.097410E-05 (1,19,3) -4.440545E-05 (1,20,2) -5.342993E-04
+(1,19,3): (1,18,3) 5.881915E-04 (1,19,2) 4.440545E-05 (1,19,4) -3.021465E-05 (1,20,3) -7.023823E-04
+(1,19,4): (1,18,4) 5.530974E-04 (1,19,3) 3.021465E-05 (1,20,4) -6.833120E-04
+(1,19,9): (1,18,9) -8.940263E-05 (1,19,10) -1.960489E-04 (1,20,9) 1.854516E-04
+(1,19,10): (1,18,10) -7.995778E-05 (1,19,9) 1.960489E-04 (1,19,11) -3.837010E-04 (1,20,10) 1.676099E-04
+(1,19,11): (1,18,11) -3.007345E-05 (1,19,10) 3.837010E-04 (1,19,12) -5.377908E-04 (1,20,11) 8.416322E-05
+(1,19,12): (1,18,12) 7.366547E-05 (1,19,11) 5.377908E-04 (1,19,13) -6.757410E-04 (1,20,12) -3.571532E-05
+(1,19,13): (1,18,13) 3.259872E-04 (1,19,12) 6.757410E-04 (1,19,14) -7.966962E-04 (1,20,13) -3.050320E-04
+(1,19,14): (1,18,14) 5.249762E-04 (1,19,13) 7.966962E-04 (1,19,15) -3.281638E-04 (1,20,14) -1.093509E-03
+(1,19,15): (1,18,15) 2.461219E-04 (1,19,14) 3.281638E-04 (1,19,16) 5.434810E-04 (1,20,15) -2.506856E-04
+(1,19,16): (1,18,16) 2.315118E-04 (1,19,15) -5.434810E-04 (1,19,17) 4.312981E-04 (1,20,16) -2.193289E-04
+(1,19,17): (1,18,17) 1.943441E-04 (1,19,16) -4.312981E-04 (1,19,18) 3.274386E-04 (1,20,17) -1.904845E-04
+(1,19,18): (1,18,18) 2.106917E-04 (1,19,17) -3.274386E-04 (1,19,19) 2.315751E-04 (1,20,18) -2.148282E-04
+(1,19,19): (1,18,19) 2.304768E-04 (1,19,18) -2.315751E-04 (1,19,20) 1.127484E-04 (1,20,19) -2.116501E-04
+(1,19,20): (1,18,20) 2.534623E-04 (1,19,19) -1.127484E-04 (1,20,20) -2.407139E-04
+(1,20,1): (1,19,1) 5.126070E-04 (1,20,2) -2.803489E-05 (1,21,1) -5.845721E-04
+(1,20,2): (1,19,2) 5.342993E-04 (1,20,1) 2.803489E-05 (1,20,3) -6.623212E-05 (1,21,2) -5.961021E-04
+(1,20,3): (1,19,3) 7.023823E-04 (1,20,2) 6.623212E-05 (1,20,4) -8.561096E-05 (1,21,3) -7.830034E-04
+(1,20,4): (1,19,4) 6.833120E-04 (1,20,3) 8.561096E-05 (1,21,4) -8.689230E-04
+(1,20,9): (1,19,9) -1.854516E-04 (1,20,10) -2.703850E-04 (1,21,9) 3.558366E-04
+(1,20,10): (1,19,10) -1.676099E-04 (1,20,9) 2.703850E-04 (1,20,11) -4.856258E-04 (1,21,10) 2.828507E-04
+(1,20,11): (1,19,11) -8.416322E-05 (1,20,10) 4.856258E-04 (1,20,12) -6.560662E-04 (1,21,11) 1.546036E-04
+(1,20,12): (1,19,12) 3.571532E-05 (1,20,11) 6.560662E-04 (1,20,13) -9.256732E-04 (1,21,12) 1.338917E-04
+(1,20,13): (1,19,13) 3.050320E-04 (1,20,12) 9.256732E-04 (1,20,14) -1.464091E-03 (1,21,13) 1.333861E-04
+(1,20,14): (1,19,14) 1.093509E-03 (1,20,13) 1.464091E-03 (1,20,15) 5.167307E-04 (1,21,14) 7.256695E-04
+(1,20,15): (1,19,15) 2.506856E-04 (1,20,14) -5.167307E-04 (1,20,16) 5.560417E-04 (1,21,15) -2.047236E-04
+(1,20,16): (1,19,16) 2.193289E-04 (1,20,15) -5.560417E-04 (1,20,17) 4.444370E-04 (1,21,16) -2.077242E-04
+(1,20,17): (1,19,17) 1.904845E-04 (1,20,16) -4.444370E-04 (1,20,18) 3.343829E-04 (1,21,17) -1.804304E-04
+(1,20,18): (1,19,18) 2.148282E-04 (1,20,17) -3.343829E-04 (1,20,19) 2.221042E-04 (1,21,18) -2.025496E-04
+(1,20,19): (1,19,19) 2.116501E-04 (1,20,18) -2.221042E-04 (1,20,20) 1.003698E-04 (1,21,19) -1.899157E-04
+(1,20,20): (1,19,20) 2.407139E-04 (1,20,19) -1.003698E-04 (1,21,20) -2.403440E-04
+(1,21,1): (1,20,1) 5.845721E-04 (1,21,2) -6.281194E-05 (1,22,1) -6.217602E-04
+(1,21,2): (1,20,2) 5.961021E-04 (1,21,1) 6.281194E-05 (1,21,3) -1.142397E-04 (1,22,2) -6.446743E-04
+(1,21,3): (1,20,3) 7.830034E-04 (1,21,2) 1.142397E-04 (1,21,4) -1.083909E-04 (1,22,3) -8.888523E-04
+(1,21,4): (1,20,4) 8.689230E-04 (1,21,3) 1.083909E-04 (1,22,4) -1.077314E-03
+(1,21,9): (1,20,9) -3.558366E-04 (1,21,10) -4.049239E-04 (1,22,9) 6.607604E-04
+(1,21,10): (1,20,10) -2.828507E-04 (1,21,9) 4.049239E-04 (1,21,11) -5.809499E-04 (1,22,10) 3.588767E-04
+(1,21,11): (1,20,11) -1.546036E-04 (1,21,10) 5.809499E-04 (1,21,12) -7.287284E-04 (1,22,11) 2.023821E-04
+(1,21,12): (1,20,12) -1.338917E-04 (1,21,11) 7.287284E-04 (1,21,13) -8.011889E-04 (1,22,12) 1.063522E-04
+(1,21,13): (1,20,13) -1.333861E-04 (1,21,12) 8.011889E-04 (1,21,14) -8.439276E-04 (1,22,13) 7.612476E-05
+(1,21,14): (1,20,14) -7.256695E-04 (1,21,13) 8.439276E-04 (1,21,15) -3.846222E-04 (1,22,14) 1.663640E-04
+(1,21,15): (1,20,15) 2.047236E-04 (1,21,14) 3.846222E-04 (1,21,16) 5.481090E-04 (1,22,15) -2.200971E-04
+(1,21,16): (1,20,16) 2.077242E-04 (1,21,15) -5.481090E-04 (1,21,17) 4.317218E-04 (1,22,16) -1.913370E-04
+(1,21,17): (1,20,17) 1.804304E-04 (1,21,16) -4.317218E-04 (1,21,18) 3.160983E-04 (1,22,17) -1.648069E-04
+(1,21,18): (1,20,18) 2.025496E-04 (1,21,17) -3.160983E-04 (1,21,19) 2.088093E-04 (1,22,18) -1.952606E-04
+(1,21,19): (1,20,19) 1.899157E-04 (1,21,18) -2.088093E-04 (1,21,20) 1.101779E-04 (1,22,19) -1.912843E-04
+(1,21,20): (1,20,20) 2.403440E-04 (1,21,19) -1.101779E-04 (1,22,20) -2.301662E-04
+(1,22,1): (1,21,1) 6.217602E-04 (1,22,2) -9.860951E-05 (1,23,1) -6.231507E-04
+(1,22,2): (1,21,2) 6.446743E-04 (1,22,1) 9.860951E-05 (1,22,3) -1.647589E-04 (1,23,2) -6.785250E-04
+(1,22,3): (1,21,3) 8.888523E-04 (1,22,2) 1.647589E-04 (1,22,4) -2.038393E-04 (1,23,3) -9.497718E-04
+(1,22,4): (1,21,4) 1.077314E-03 (1,22,3) 2.038393E-04 (1,23,4) -1.381153E-03
+(1,22,7): (1,22,8) -5.103758E-04 (1,23,7) 4.103758E-04
+(1,22,8): (1,22,7) 5.103758E-04 (1,22,9) -8.509677E-04 (1,23,8) 2.405919E-04
+(1,22,9): (1,21,9) -6.607604E-04 (1,22,8) 8.509677E-04 (1,22,10) -6.990521E-04 (1,23,9) 4.088448E-04
+(1,22,10): (1,21,10) -3.588767E-04 (1,22,9) 6.990521E-04 (1,22,11) -6.934299E-04 (1,23,10) 2.532546E-04
+(1,22,11): (1,21,11) -2.023821E-04 (1,22,10) 6.934299E-04 (1,22,12) -7.342832E-04 (1,23,11) 1.432354E-04
+(1,22,12): (1,21,12) -1.063522E-04 (1,22,11) 7.342832E-04 (1,22,13) -8.117481E-04 (1,23,12) 8.381706E-05
+(1,22,13): (1,21,13) -7.612476E-05 (1,22,12) 8.117481E-04 (1,22,14) -8.707013E-04 (1,23,13) 3.507797E-05
+(1,22,14): (1,21,14) -1.663640E-04 (1,22,13) 8.707013E-04 (1,22,15) -7.540125E-04 (1,23,14) -5.032477E-05
+(1,22,15): (1,21,15) 2.200971E-04 (1,22,14) 7.540125E-04 (1,22,16) 5.644148E-04 (1,23,15) -2.149909E-04
+(1,22,16): (1,21,16) 1.913370E-04 (1,22,15) -5.644148E-04 (1,22,17) 4.706126E-04 (1,23,16) -1.975348E-04
+(1,22,17): (1,21,17) 1.648069E-04 (1,22,16) -4.706126E-04 (1,22,18) 3.677650E-04 (1,23,17) -1.619593E-04
+(1,22,18): (1,21,18) 1.952606E-04 (1,22,17) -3.677650E-04 (1,22,19) 2.443158E-04 (1,23,18) -1.718114E-04
+(1,22,19): (1,21,19) 1.912843E-04 (1,22,18) -2.443158E-04 (1,22,20) 1.266497E-04 (1,23,19) -1.736182E-04
+(1,22,20): (1,21,20) 2.301662E-04 (1,22,19) -1.266497E-04 (1,23,20) -2.035164E-04
+(1,23,1): (1,22,1) 6.231507E-04 (1,23,2) -1.353569E-04 (1,24,1) -5.877938E-04
+(1,23,2): (1,22,2) 6.785250E-04 (1,23,1) 1.353569E-04 (1,23,3) -2.394143E-04 (1,24,2) -6.744676E-04
+(1,23,3): (1,22,3) 9.497718E-04 (1,23,2) 2.394143E-04 (1,23,4) -4.873837E-04 (1,24,3) -8.018024E-04
+(1,23,4): (1,22,4) 1.381153E-03 (1,23,3) 4.873837E-04 (1,23,5) -1.035691E-03 (1,24,4) -9.328460E-04
+(1,23,5): (1,23,4) 1.035691E-03 (1,24,5) -1.135691E-03
+(1,23,7): (1,22,7) -4.103758E-04 (1,23,8) -4.924050E-04 (1,24,7) 8.027808E-04
+(1,23,8): (1,22,8) -2.405919E-04 (1,23,7) 4.924050E-04 (1,23,9) -6.955479E-04 (1,24,8) 3.437348E-04
+(1,23,9): (1,22,9) -4.088448E-04 (1,23,8) 6.955479E-04 (1,23,10) -7.398232E-04 (1,24,9) 3.531201E-04
+(1,23,10): (1,22,10) -2.532546E-04 (1,23,9) 7.398232E-04 (1,23,11) -7.477751E-04 (1,24,10) 1.612065E-04
+(1,23,11): (1,22,11) -1.432354E-04 (1,23,10) 7.477751E-04 (1,23,12) -7.806658E-04 (1,24,11) 7.612614E-05
+(1,23,12): (1,22,12) -8.381706E-05 (1,23,11) 7.806658E-04 (1,23,13) -8.171252E-04 (1,24,12) 2.027649E-05
+(1,23,13): (1,22,13) -3.507797E-05 (1,23,12) 8.171252E-04 (1,23,14) -8.790878E-04 (1,24,13) -2.959467E-06
+(1,23,14): (1,22,14) 5.032477E-05 (1,23,13) 8.790878E-04 (1,23,15) -9.303714E-04 (1,24,14) -9.904112E-05
+(1,23,15): (1,22,15) 2.149909E-04 (1,23,14) 9.303714E-04 (1,23,16) 6.054677E-04 (1,24,15) -2.256264E-04
+(1,23,16): (1,22,16) 1.975348E-04 (1,23,15) -6.054677E-04 (1,23,17) 4.487126E-04 (1,24,16) -1.407797E-04
+(1,23,17): (1,22,17) 1.619593E-04 (1,23,16) -4.487126E-04 (1,23,18) 3.241633E-04 (1,24,17) -1.374100E-04
+(1,23,18): (1,22,18) 1.718114E-04 (1,23,17) -3.241633E-04 (1,23,19) 2.238139E-04 (1,24,18) -1.714620E-04
+(1,23,19): (1,22,19) 1.736182E-04 (1,23,18) -2.238139E-04 (1,23,20) 1.271456E-04 (1,24,19) -1.769499E-04
+(1,23,20): (1,22,20) 2.035164E-04 (1,23,19) -1.271456E-04 (1,24,20) -1.763709E-04
+(1,24,1): (1,23,1) 5.877938E-04 (1,24,2) -1.677246E-04 (1,25,1) -5.200692E-04
+(1,24,2): (1,23,2) 6.744676E-04 (1,24,1) 1.677246E-04 (1,24,3) -3.279769E-04 (1,25,2) -6.142153E-04
+(1,24,3): (1,23,3) 8.018024E-04 (1,24,2) 3.279769E-04 (1,24,4) -5.262544E-04 (1,25,3) -7.035249E-04
+(1,24,4): (1,23,4) 9.328460E-04 (1,24,3) 5.262544E-04 (1,24,5) -9.683135E-04 (1,25,4) -5.907869E-04
+(1,24,5): (1,23,5) 1.135691E-03 (1,24,4) 9.683135E-04 (1,24,6) -1.581363E-03 (1,25,5) -6.226415E-04
+(1,24,6): (1,24,5) 1.581363E-03 (1,24,7) -1.465412E-03 (1,25,6) -2.159512E-04
+(1,24,7): (1,23,7) -8.027808E-04 (1,24,6) 1.465412E-03 (1,24,8) -1.033381E-03 (1,25,7) 2.707499E-04
+(1,24,8): (1,23,8) -3.437348E-04 (1,24,7) 1.033381E-03 (1,24,9) -1.094379E-03 (1,25,8) 3.047331E-04
+(1,24,9): (1,23,9) -3.531201E-04 (1,24,8) 1.094379E-03 (1,24,10) -9.648374E-04 (1,25,9) 1.235784E-04
+(1,24,10): (1,23,10) -1.612065E-04 (1,24,9) 9.648374E-04 (1,24,11) -8.951988E-04 (1,25,10) -8.432113E-06
+(1,24,11): (1,23,11) -7.612614E-05 (1,24,10) 8.951988E-04 (1,24,12) -9.359250E-04 (1,25,11) 1.685237E-05
+(1,24,12): (1,23,12) -2.027649E-05 (1,24,11) 9.359250E-04 (1,24,13) -9.922857E-04 (1,25,12) -2.336289E-05
+(1,24,13): (1,23,13) 2.959467E-06 (1,24,12) 9.922857E-04 (1,24,14) -1.045209E-03 (1,25,13) -5.003577E-05
+(1,24,14): (1,23,14) 9.904112E-05 (1,24,13) 1.045209E-03 (1,24,15) -1.086100E-03 (1,25,14) -1.581506E-04
+(1,24,15): (1,23,15) 2.256264E-04 (1,24,14) 1.086100E-03 (1,24,16) 5.491441E-04 (1,25,15) -2.380236E-04
+(1,24,16): (1,23,16) 1.407797E-04 (1,24,15) -5.491441E-04 (1,24,17) 4.477890E-04 (1,25,16) -1.394245E-04
+(1,24,17): (1,23,17) 1.374100E-04 (1,24,16) -4.477890E-04 (1,24,18) 3.590419E-04 (1,25,17) -1.486629E-04
+(1,24,18): (1,23,18) 1.714620E-04 (1,24,17) -3.590419E-04 (1,24,19) 2.325195E-04 (1,25,18) -1.449396E-04
+(1,24,19): (1,23,19) 1.769499E-04 (1,24,18) -2.325195E-04 (1,24,20) 1.192132E-04 (1,25,19) -1.636435E-04
+(1,24,20): (1,23,20) 1.763709E-04 (1,24,19) -1.192132E-04 (1,25,20) -1.571577E-04
+(1,25,1): (1,24,1) 5.200692E-04 (1,25,2) -1.648774E-04 (1,26,1) -4.551918E-04
+(1,25,2): (1,24,2) 6.142153E-04 (1,25,1) 1.648774E-04 (1,25,3) -3.624716E-04 (1,26,2) -5.166212E-04
+(1,25,3): (1,24,3) 7.035249E-04 (1,25,2) 3.624716E-04 (1,25,4) -5.726740E-04 (1,26,3) -5.933225E-04
+(1,25,4): (1,24,4) 5.907869E-04 (1,25,3) 5.726740E-04 (1,25,5) -8.079924E-04 (1,26,4) -4.554684E-04
+(1,25,5): (1,24,5) 6.226415E-04 (1,25,4) 8.079924E-04 (1,25,6) -1.139573E-03 (1,26,5) -3.910613E-04
+(1,25,6): (1,24,6) 2.159512E-04 (1,25,5) 1.139573E-03 (1,25,7) -1.286375E-03 (1,26,6) -1.691488E-04
+(1,25,7): (1,24,7) -2.707499E-04 (1,25,6) 1.286375E-03 (1,25,8) -1.121219E-03 (1,26,7) 5.593664E-06
+(1,25,8): (1,24,8) -3.047331E-04 (1,25,7) 1.121219E-03 (1,25,9) -9.777056E-04 (1,26,8) 6.122002E-05
+(1,25,9): (1,24,9) -1.235784E-04 (1,25,8) 9.777056E-04 (1,25,10) -1.023992E-03 (1,26,9) 6.986500E-05
+(1,25,10): (1,24,10) 8.432113E-06 (1,25,9) 1.023992E-03 (1,25,11) -1.025276E-03 (1,26,10) -1.071483E-04
+(1,25,11): (1,24,11) -1.685237E-05 (1,25,10) 1.025276E-03 (1,25,12) -1.034701E-03 (1,26,11) -7.372278E-05
+(1,25,12): (1,24,12) 2.336289E-05 (1,25,11) 1.034701E-03 (1,25,13) -1.015363E-03 (1,26,12) -1.427005E-04
+(1,25,13): (1,24,13) 5.003577E-05 (1,25,12) 1.015363E-03 (1,25,14) -1.061907E-03 (1,26,13) -1.034916E-04
+(1,25,14): (1,24,14) 1.581506E-04 (1,25,13) 1.061907E-03 (1,25,15) -1.189015E-03 (1,26,14) -1.310427E-04
+(1,25,15): (1,24,15) 2.380236E-04 (1,25,14) 1.189015E-03 (1,25,16) 5.865896E-04 (1,26,15) -2.318714E-04
+(1,25,16): (1,24,16) 1.394245E-04 (1,25,15) -5.865896E-04 (1,25,17) 4.613251E-04 (1,26,16) -1.141600E-04
+(1,25,17): (1,24,17) 1.486629E-04 (1,25,16) -4.613251E-04 (1,25,18) 3.541589E-04 (1,26,17) -1.414968E-04
+(1,25,18): (1,24,18) 1.449396E-04 (1,25,17) -3.541589E-04 (1,25,19) 2.498640E-04 (1,26,18) -1.406447E-04
+(1,25,19): (1,24,19) 1.636435E-04 (1,25,18) -2.498640E-04 (1,25,20) 1.255797E-04 (1,26,19) -1.393593E-04
+(1,25,20): (1,24,20) 1.571577E-04 (1,25,19) -1.255797E-04 (1,26,20) -1.315780E-04
+(1,26,1): (1,25,1) 4.551918E-04 (1,26,2) -1.418577E-04 (1,27,1) -4.133341E-04
+(1,26,2): (1,25,2) 5.166212E-04 (1,26,1) 1.418577E-04 (1,26,3) -3.288058E-04 (1,27,2) -4.296730E-04
+(1,26,3): (1,25,3) 5.933225E-04 (1,26,2) 3.288058E-04 (1,26,4) -5.447371E-04 (1,27,3) -4.773912E-04
+(1,26,4): (1,25,4) 4.554684E-04 (1,26,3) 5.447371E-04 (1,26,5) -7.759756E-04 (1,27,4) -3.242300E-04
+(1,26,5): (1,25,5) 3.910613E-04 (1,26,4) 7.759756E-04 (1,26,6) -1.015791E-03 (1,27,5) -2.512460E-04
+(1,26,6): (1,25,6) 1.691488E-04 (1,26,5) 1.015791E-03 (1,26,7) -1.094291E-03 (1,27,6) -1.906486E-04
+(1,26,7): (1,25,7) -5.593664E-06 (1,26,6) 1.094291E-03 (1,26,8) -1.182917E-03 (1,27,7) -5.780130E-06
+(1,26,8): (1,25,8) -6.122002E-05 (1,26,7) 1.182917E-03 (1,26,9) -1.224221E-03 (1,27,8) 2.523660E-06
+(1,26,9): (1,25,9) -6.986500E-05 (1,26,8) 1.224221E-03 (1,26,10) -1.291014E-03 (1,27,9) 3.665803E-05
+(1,26,10): (1,25,10) 1.071483E-04 (1,26,9) 1.291014E-03 (1,26,11) -9.116071E-04 (1,27,10) 2.434449E-04
+(1,26,11): (1,25,11) 7.372278E-05 (1,26,10) 9.116071E-04 (1,26,12) -1.033536E-03 (1,27,11) -5.179394E-05
+(1,26,12): (1,25,12) 1.427005E-04 (1,26,11) 1.033536E-03 (1,26,13) -1.035282E-03 (1,27,12) -2.409549E-04
+(1,26,13): (1,25,13) 1.034916E-04 (1,26,12) 1.035282E-03 (1,26,14) -1.182176E-03 (1,27,13) -5.659755E-05
+(1,26,14): (1,25,14) 1.310427E-04 (1,26,13) 1.182176E-03 (1,26,15) -1.353820E-03 (1,27,14) -5.939833E-05
+(1,26,15): (1,25,15) 2.318714E-04 (1,26,14) 1.353820E-03 (1,26,16) 6.345946E-04 (1,27,15) -1.991394E-04
+(1,26,16): (1,25,16) 1.141600E-04 (1,26,15) -6.345946E-04 (1,26,17) 5.228739E-04 (1,27,16) -1.024393E-04
+(1,26,17): (1,25,17) 1.414968E-04 (1,26,16) -5.228739E-04 (1,26,18) 4.004194E-04 (1,27,17) -1.190423E-04
+(1,26,18): (1,25,18) 1.406447E-04 (1,26,17) -4.004194E-04 (1,26,19) 2.556541E-04 (1,27,18) -9.587943E-05
+(1,26,19): (1,25,19) 1.393593E-04 (1,26,18) -2.556541E-04 (1,26,20) 1.194667E-04 (1,27,19) -1.031718E-04
+(1,26,20): (1,25,20) 1.315780E-04 (1,26,19) -1.194667E-04 (1,27,20) -1.121113E-04
+(1,27,1): (1,26,1) 4.133341E-04 (1,27,2) -1.570935E-04 (1,28,1) -3.562406E-04
+(1,27,2): (1,26,2) 4.296730E-04 (1,27,1) 1.570935E-04 (1,27,3) -3.084557E-04 (1,28,2) -3.783108E-04
+(1,27,3): (1,26,3) 4.773912E-04 (1,27,2) 3.084557E-04 (1,27,4) -5.098549E-04 (1,28,3) -3.759919E-04
+(1,27,4): (1,26,4) 3.242300E-04 (1,27,3) 5.098549E-04 (1,27,5) -6.144773E-04 (1,28,4) -3.196076E-04
+(1,27,5): (1,26,5) 2.512460E-04 (1,27,4) 6.144773E-04 (1,27,6) -7.372898E-04 (1,28,5) -2.284336E-04
+(1,27,6): (1,26,6) 1.906486E-04 (1,27,5) 7.372898E-04 (1,27,7) -9.262360E-04 (1,28,6) -1.017024E-04
+(1,27,7): (1,26,7) 5.780130E-06 (1,27,6) 9.262360E-04 (1,27,8) -9.953646E-04 (1,28,7) -3.665155E-05
+(1,27,8): (1,26,8) -2.523660E-06 (1,27,7) 9.953646E-04 (1,27,9) -9.957658E-04 (1,28,8) -9.707513E-05
+(1,27,9): (1,26,9) -3.665803E-05 (1,27,8) 9.957658E-04 (1,27,10) -8.823141E-04 (1,28,9) -1.767937E-04
+(1,27,10): (1,26,10) -2.434449E-04 (1,27,9) 8.823141E-04 (1,27,11) -5.799391E-04 (1,28,10) -1.589301E-04
+(1,27,11): (1,26,11) 5.179394E-05 (1,27,10) 5.799391E-04 (1,27,12) -6.382583E-04 (1,28,11) -9.347482E-05
+(1,27,12): (1,26,12) 2.409549E-04 (1,27,11) 6.382583E-04 (1,27,13) -8.899498E-04 (1,28,12) -8.926329E-05
+(1,27,13): (1,26,13) 5.659755E-05 (1,27,12) 8.899498E-04 (1,27,14) -9.402580E-04 (1,28,13) -1.062894E-04
+(1,27,14): (1,26,14) 5.939833E-05 (1,27,13) 9.402580E-04 (1,27,15) -9.952789E-04 (1,28,14) -1.043774E-04
+(1,27,15): (1,26,15) 1.991394E-04 (1,27,14) 9.952789E-04 (1,27,16) 5.606420E-04 (1,28,15) -1.567000E-04
+(1,27,16): (1,26,16) 1.024393E-04 (1,27,15) -5.606420E-04 (1,27,17) 4.652248E-04 (1,28,16) -1.070221E-04
+(1,27,17): (1,26,17) 1.190423E-04 (1,27,16) -4.652248E-04 (1,27,18) 3.333327E-04 (1,28,17) -8.715017E-05
+(1,27,18): (1,26,18) 9.587943E-05 (1,27,17) -3.333327E-04 (1,27,19) 2.198124E-04 (1,28,18) -8.235914E-05
+(1,27,19): (1,26,19) 1.031718E-04 (1,27,18) -2.198124E-04 (1,27,20) 1.138058E-04 (1,28,19) -9.716525E-05
+(1,27,20): (1,26,20) 1.121113E-04 (1,27,19) -1.138058E-04 (1,28,20) -9.830545E-05
+(1,28,1): (1,27,1) 3.562406E-04 (1,28,2) -1.639797E-04 (1,29,1) -2.922609E-04
+(1,28,2): (1,27,2) 3.783108E-04 (1,28,1) 1.639797E-04 (1,28,3) -2.679828E-04 (1,29,2) -3.743077E-04
+(1,28,3): (1,27,3) 3.759919E-04 (1,28,2) 2.679828E-04 (1,28,4) -4.241914E-04 (1,29,3) -3.197834E-04
+(1,28,4): (1,27,4) 3.196076E-04 (1,28,3) 4.241914E-04 (1,28,5) -5.761158E-04 (1,29,4) -2.676832E-04
+(1,28,5): (1,27,5) 2.284336E-04 (1,28,4) 5.761158E-04 (1,28,6) -6.632558E-04 (1,29,5) -2.412936E-04
+(1,28,6): (1,27,6) 1.017024E-04 (1,28,5) 6.632558E-04 (1,28,7) -6.507147E-04 (1,29,6) -2.142435E-04
+(1,28,7): (1,27,7) 3.665155E-05 (1,28,6) 6.507147E-04 (1,28,8) -8.301398E-04 (1,29,7) 4.277357E-05
+(1,28,8): (1,27,8) 9.707513E-05 (1,28,7) 8.301398E-04 (1,28,9) -9.871515E-04 (1,29,8) -4.006349E-05
+(1,28,9): (1,27,9) 1.767937E-04 (1,28,8) 9.871515E-04 (1,28,10) -8.306178E-04 (1,29,9) -4.333274E-04
+(1,28,10): (1,27,10) 1.589301E-04 (1,28,9) 8.306178E-04 (1,28,11) -8.871005E-04 (1,29,10) -2.024474E-04
+(1,28,11): (1,27,11) 9.347482E-05 (1,28,10) 8.871005E-04 (1,28,12) -9.539236E-04 (1,29,11) -1.266517E-04
+(1,28,12): (1,27,12) 8.926329E-05 (1,28,11) 9.539236E-04 (1,28,13) -9.204134E-04 (1,29,12) -2.227734E-04
+(1,28,13): (1,27,13) 1.062894E-04 (1,28,12) 9.204134E-04 (1,28,14) -9.646626E-04 (1,29,13) -1.620402E-04
+(1,28,14): (1,27,14) 1.043774E-04 (1,28,13) 9.646626E-04 (1,28,15) -1.026912E-03 (1,29,14) -1.421279E-04
+(1,28,15): (1,27,15) 1.567000E-04 (1,28,14) 1.026912E-03 (1,28,16) 5.988731E-04 (1,29,15) -1.546908E-04
+(1,28,16): (1,27,16) 1.070221E-04 (1,28,15) -5.988731E-04 (1,28,17) 4.705179E-04 (1,29,16) -7.866688E-05
+(1,28,17): (1,27,17) 8.715017E-05 (1,28,16) -4.705179E-04 (1,28,18) 3.426367E-04 (1,29,17) -5.926901E-05
+(1,28,18): (1,27,18) 8.235914E-05 (1,28,17) -3.426367E-04 (1,28,19) 2.253797E-04 (1,29,18) -6.510213E-05
+(1,28,19): (1,27,19) 9.716525E-05 (1,28,18) -2.253797E-04 (1,28,20) 1.103429E-04 (1,29,19) -8.212847E-05
+(1,28,20): (1,27,20) 9.830545E-05 (1,28,19) -1.103429E-04 (1,29,20) -8.796253E-05
+(1,29,1): (1,28,1) 2.922609E-04 (1,29,2) -1.458668E-04 (1,30,1) -2.463940E-04
+(1,29,2): (1,28,2) 3.743077E-04 (1,29,1) 1.458668E-04 (1,29,3) -2.672113E-04 (1,30,2) -3.529632E-04
+(1,29,3): (1,28,3) 3.197834E-04 (1,29,2) 2.672113E-04 (1,29,4) -3.744765E-04 (1,30,3) -3.125182E-04
+(1,29,4): (1,28,4) 2.676832E-04 (1,29,3) 3.744765E-04 (1,29,5) -4.870499E-04 (1,30,4) -2.551098E-04
+(1,29,5): (1,28,5) 2.412936E-04 (1,29,4) 4.870499E-04 (1,29,6) -6.624675E-04 (1,30,5) -1.658761E-04
+(1,29,6): (1,28,6) 2.142435E-04 (1,29,5) 6.624675E-04 (1,29,7) -3.677851E-04 (1,30,6) 1.110742E-04
+(1,29,7): (1,28,7) -4.277357E-05 (1,29,6) 3.677851E-04 (1,29,8) -3.835533E-04 (1,30,7) -4.145821E-05
+(1,29,8): (1,28,8) 4.006349E-05 (1,29,7) 3.835533E-04 (1,29,9) -4.793330E-04 (1,30,8) -4.428381E-05
+(1,29,9): (1,28,9) 4.333274E-04 (1,29,8) 4.793330E-04 (1,29,10) -9.355372E-04 (1,30,9) -7.712323E-05
+(1,29,10): (1,28,10) 2.024474E-04 (1,29,9) 9.355372E-04 (1,29,11) -9.305656E-04 (1,30,10) -3.074189E-04
+(1,29,11): (1,28,11) 1.266517E-04 (1,29,10) 9.305656E-04 (1,29,12) -9.431020E-04 (1,30,11) -2.141154E-04
+(1,29,12): (1,28,12) 2.227734E-04 (1,29,11) 9.431020E-04 (1,29,13) -9.272971E-04 (1,30,12) -3.385783E-04
+(1,29,13): (1,28,13) 1.620402E-04 (1,29,12) 9.272971E-04 (1,29,14) -9.143374E-04 (1,30,13) -2.750000E-04
+(1,29,14): (1,28,14) 1.421279E-04 (1,29,13) 9.143374E-04 (1,29,15) -9.992736E-04 (1,30,14) -1.571917E-04
+(1,29,15): (1,28,15) 1.546908E-04 (1,29,14) 9.992736E-04 (1,29,16) 4.688226E-04 (1,30,15) -1.597003E-04
+(1,29,16): (1,28,16) 7.866688E-05 (1,29,15) -4.688226E-04 (1,29,17) 3.598446E-04 (1,30,16) -6.968888E-05
+(1,29,17): (1,28,17) 5.926901E-05 (1,29,16) -3.598446E-04 (1,29,18) 2.775974E-04 (1,30,17) -7.702174E-05
+(1,29,18): (1,28,18) 6.510213E-05 (1,29,17) -2.775974E-04 (1,29,19) 1.865359E-04 (1,30,18) -7.404063E-05
+(1,29,19): (1,28,19) 8.212847E-05 (1,29,18) -1.865359E-04 (1,29,20) 9.685458E-05 (1,30,19) -9.244718E-05
+(1,29,20): (1,28,20) 8.796253E-05 (1,29,19) -9.685458E-05 (1,30,20) -9.110795E-05
+(1,30,1): (1,29,1) 2.463940E-04 (1,30,2) -1.346076E-04 (1,31,1) -2.117864E-04
+(1,30,2): (1,29,2) 3.529632E-04 (1,30,1) 1.346076E-04 (1,30,3) -3.193912E-04 (1,31,2) -2.681796E-04
+(1,30,3): (1,29,3) 3.125182E-04 (1,30,2) 3.193912E-04 (1,30,4) -4.350150E-04 (1,31,3) -2.968944E-04
+(1,30,4): (1,29,4) 2.551098E-04 (1,30,3) 4.350150E-04 (1,30,5) -4.827311E-04 (1,31,4) -3.073937E-04
+(1,30,5): (1,29,5) 1.658761E-04 (1,30,4) 4.827311E-04 (1,30,6) -4.383357E-04 (1,31,5) -3.102715E-04
+(1,30,6): (1,29,6) -1.110742E-04 (1,30,5) 4.383357E-04 (1,30,7) -2.361694E-04 (1,31,6) -1.910921E-04
+(1,30,7): (1,29,7) 4.145821E-05 (1,30,6) 2.361694E-04 (1,30,8) -2.863586E-04 (1,31,7) -9.126901E-05
+(1,30,8): (1,29,8) 4.428381E-05 (1,30,7) 2.863586E-04 (1,30,9) -3.275122E-04 (1,31,8) -1.031302E-04
+(1,30,9): (1,29,9) 7.712323E-05 (1,30,8) 3.275122E-04 (1,30,10) -3.892854E-04 (1,31,9) -1.153500E-04
+(1,30,10): (1,29,10) 3.074189E-04 (1,30,9) 3.892854E-04 (1,30,11) -6.074382E-04 (1,31,10) -1.892662E-04
+(1,30,11): (1,29,11) 2.141154E-04 (1,30,10) 6.074382E-04 (1,30,12) -7.037118E-04 (1,31,11) -2.178417E-04
+(1,30,12): (1,29,12) 3.385783E-04 (1,30,11) 7.037118E-04 (1,30,13) -8.427347E-04 (1,31,12) -2.995554E-04
+(1,30,13): (1,29,13) 2.750000E-04 (1,30,12) 8.427347E-04 (1,30,14) -9.111542E-04 (1,31,13) -3.065805E-04
+(1,30,14): (1,29,14) 1.571917E-04 (1,30,13) 9.111542E-04 (1,30,15) -1.015808E-03 (1,31,14) -1.525376E-04
+(1,30,15): (1,29,15) 1.597003E-04 (1,30,14) 1.015808E-03 (1,30,16) 4.880572E-04 (1,31,15) -1.256062E-04
+(1,30,16): (1,29,16) 6.968888E-05 (1,30,15) -4.880572E-04 (1,30,17) 3.673415E-04 (1,31,16) -4.897317E-05
+(1,30,17): (1,29,17) 7.702174E-05 (1,30,16) -3.673415E-04 (1,30,18) 2.717245E-04 (1,31,17) -8.140475E-05
+(1,30,18): (1,29,18) 7.404063E-05 (1,30,17) -2.717245E-04 (1,30,19) 1.582643E-04 (1,31,18) -6.058045E-05
+(1,30,19): (1,29,19) 9.244718E-05 (1,30,18) -1.582643E-04 (1,30,20) 7.088984E-05 (1,31,19) -1.050727E-04
+(1,30,20): (1,29,20) 9.110795E-05 (1,30,19) -7.088984E-05 (1,31,20) -1.202181E-04
+(1,31,1): (1,30,1) 2.117864E-04 (1,31,2) -1.564283E-04 (1,32,1) -1.553581E-04
+(1,31,2): (1,30,2) 2.681796E-04 (1,31,1) 1.564283E-04 (1,31,3) -2.745869E-04 (1,32,2) -2.500210E-04
+(1,31,3): (1,30,3) 2.968944E-04 (1,31,2) 2.745869E-04 (1,31,4) -3.448762E-04 (1,32,3) -3.266050E-04
+(1,31,4): (1,30,4) 3.073937E-04 (1,31,3) 3.448762E-04 (1,31,5) -3.257049E-04 (1,32,4) -4.265650E-04
+(1,31,5): (1,30,5) 3.102715E-04 (1,31,4) 3.257049E-04 (1,31,6) -2.612493E-04 (1,32,5) -4.747272E-04
+(1,31,6): (1,30,6) 1.910921E-04 (1,31,5) 2.612493E-04 (1,31,7) -2.935021E-04 (1,32,6) -2.588393E-04
+(1,31,7): (1,30,7) 9.126901E-05 (1,31,6) 2.935021E-04 (1,31,8) -3.959147E-04 (1,32,7) -8.885638E-05
+(1,31,8): (1,30,8) 1.031302E-04 (1,31,7) 3.959147E-04 (1,31,9) -4.524057E-04 (1,32,8) -1.466393E-04
+(1,31,9): (1,30,9) 1.153500E-04 (1,31,8) 4.524057E-04 (1,31,10) -5.471906E-04 (1,32,9) -1.205651E-04
+(1,31,10): (1,30,10) 1.892662E-04 (1,31,9) 5.471906E-04 (1,31,11) -6.299319E-04 (1,32,10) -2.065249E-04
+(1,31,11): (1,30,11) 2.178417E-04 (1,31,10) 6.299319E-04 (1,31,12) -7.477209E-04 (1,32,11) -2.000527E-04
+(1,31,12): (1,30,12) 2.995554E-04 (1,31,11) 7.477209E-04 (1,31,13) -7.902929E-04 (1,32,12) -3.569834E-04
+(1,31,13): (1,30,13) 3.065805E-04 (1,31,12) 7.902929E-04 (1,31,14) -8.045253E-04 (1,32,13) -3.923481E-04
+(1,31,14): (1,30,14) 1.525376E-04 (1,31,13) 8.045253E-04 (1,31,15) -8.032654E-04 (1,32,14) -2.537975E-04
+(1,31,15): (1,30,15) 1.256062E-04 (1,31,14) 8.032654E-04 (1,31,16) 3.141646E-04 (1,32,15) -6.864658E-05
+(1,31,16): (1,30,16) 4.897317E-05 (1,31,15) -3.141646E-04 (1,31,17) 2.289108E-04 (1,32,16) -6.371940E-05
+(1,31,17): (1,30,17) 8.140475E-05 (1,31,16) -2.289108E-04 (1,31,18) 1.588876E-04 (1,32,17) -1.113816E-04
+(1,31,18): (1,30,18) 6.058045E-05 (1,31,17) -1.588876E-04 (1,31,19) 8.621251E-05 (1,32,18) -8.790531E-05
+(1,31,19): (1,30,19) 1.050727E-04 (1,31,18) -8.621251E-05 (1,31,20) 5.029026E-05 (1,32,19) -1.691504E-04
+(1,31,20): (1,30,20) 1.202181E-04 (1,31,19) -5.029026E-05 (1,32,20) -1.699278E-04
+(1,32,1): (1,31,1) 1.553581E-04 (1,32,2) -2.553581E-04
+(1,32,2): (1,31,2) 2.500210E-04 (1,32,1) 2.553581E-04 (1,32,3) -3.143702E-04 (1,33,2) -2.910089E-04
+(1,32,3): (1,31,3) 3.266050E-04 (1,32,2) 3.143702E-04 (1,32,4) -4.297209E-04 (1,33,3) -3.112543E-04
+(1,32,4): (1,31,4) 4.265650E-04 (1,32,3) 4.297209E-04 (1,32,5) -4.485844E-04 (1,33,4) -5.077015E-04
+(1,32,5): (1,31,5) 4.747272E-04 (1,32,4) 4.485844E-04 (1,32,6) -4.179776E-04 (1,33,5) -6.053340E-04
+(1,32,6): (1,31,6) 2.588393E-04 (1,32,5) 4.179776E-04 (1,32,7) -1.633511E-04 (1,33,6) -6.134658E-04
+(1,32,7): (1,31,7) 8.885638E-05 (1,32,6) 1.633511E-04 (1,32,8) -2.279193E-04 (1,33,7) -1.242882E-04
+(1,32,8): (1,31,8) 1.466393E-04 (1,32,7) 2.279193E-04 (1,32,9) -4.747414E-04 (1,33,8) 1.828886E-07
+(1,32,9): (1,31,9) 1.205651E-04 (1,32,8) 4.747414E-04 (1,32,10) -6.735422E-04 (1,33,9) -2.176434E-05
+(1,32,10): (1,31,10) 2.065249E-04 (1,32,9) 6.735422E-04 (1,32,11) -6.593449E-04 (1,33,10) -3.207223E-04
+(1,32,11): (1,31,11) 2.000527E-04 (1,32,10) 6.593449E-04 (1,32,12) -6.454370E-04 (1,33,11) -3.139606E-04
+(1,32,12): (1,31,12) 3.569834E-04 (1,32,11) 6.454370E-04 (1,32,13) -5.827540E-04 (1,33,12) -5.196663E-04
+(1,32,13): (1,31,13) 3.923481E-04 (1,32,12) 5.827540E-04 (1,32,14) -7.012547E-04 (1,33,13) -3.738474E-04
+(1,32,14): (1,31,14) 2.537975E-04 (1,32,13) 7.012547E-04 (1,32,15) -4.840192E-04 (1,33,14) -5.710330E-04
+(1,32,15): (1,31,15) 6.864658E-05 (1,32,14) 4.840192E-04 (1,32,16) 2.440946E-04 (1,33,15) -7.474318E-05
+(1,32,16): (1,31,16) 6.371940E-05 (1,32,15) -2.440946E-04 (1,32,17) 2.278544E-04 (1,33,16) -1.474792E-04
+(1,32,17): (1,31,17) 1.113816E-04 (1,32,16) -2.278544E-04 (1,32,18) 1.595467E-04 (1,33,17) -1.430739E-04
+(1,32,18): (1,31,18) 8.790531E-05 (1,32,17) -1.595467E-04 (1,32,19) 1.105797E-04 (1,33,18) -1.389382E-04
+(1,32,19): (1,31,19) 1.691504E-04 (1,32,18) -1.105797E-04 (1,32,20) 5.304713E-05 (1,33,19) -2.116179E-04
+(1,32,20): (1,31,20) 1.699278E-04 (1,32,19) -5.304713E-05 (1,33,20) -2.168807E-04
+(1,33,2): (1,32,2) 2.910089E-04 (1,33,3) -3.910089E-04
+(1,33,3): (1,32,3) 3.112543E-04 (1,33,2) 3.910089E-04 (1,33,4) -4.515289E-04 (1,34,3) -3.507343E-04
+(1,33,4): (1,32,4) 5.077015E-04 (1,33,3) 4.515289E-04 (1,33,5) -5.083023E-04 (1,34,4) -5.509281E-04
+(1,33,5): (1,32,5) 6.053340E-04 (1,33,4) 5.083023E-04 (1,33,6) -5.903017E-04 (1,34,5) -6.233346E-04
+(1,33,6): (1,32,6) 6.134658E-04 (1,33,5) 5.903017E-04 (1,33,7) -7.727794E-04 (1,34,6) -5.309881E-04
+(1,33,7): (1,32,7) 1.242882E-04 (1,33,6) 7.727794E-04 (1,33,8) -5.079145E-04 (1,34,7) -4.891531E-04
+(1,33,8): (1,32,8) -1.828886E-07 (1,33,7) 5.079145E-04 (1,33,9) -1.475880E-04 (1,34,8) -4.601436E-04
+(1,33,9): (1,32,9) 2.176434E-05 (1,33,8) 1.475880E-04 (1,33,10) -2.092277E-04 (1,34,9) -6.012465E-05
+(1,33,10): (1,32,10) 3.207223E-04 (1,33,9) 2.092277E-04 (1,33,11) -5.763071E-04 (1,34,10) -5.364284E-05
+(1,33,11): (1,32,11) 3.139606E-04 (1,33,10) 5.763071E-04 (1,33,12) -6.545222E-04 (1,34,11) -3.357455E-04
+(1,33,12): (1,32,12) 5.196663E-04 (1,33,11) 6.545222E-04 (1,33,13) -1.264021E-04 (1,34,12) -1.147786E-03
+(1,33,13): (1,32,13) 3.738474E-04 (1,33,12) 1.264021E-04 (1,33,14) -2.806497E-04 (1,34,13) -3.195998E-04
+(1,33,14): (1,32,14) 5.710330E-04 (1,33,13) 2.806497E-04 (1,33,15) -5.936140E-04 (1,34,14) -3.580687E-04
+(1,33,15): (1,32,15) 7.474318E-05 (1,33,14) 5.936140E-04 (1,33,16) 5.022026E-04 (1,34,15) -1.316336E-04
+(1,33,16): (1,32,16) 1.474792E-04 (1,33,15) -5.022026E-04 (1,33,17) 3.683214E-04 (1,34,16) -1.135980E-04
+(1,33,17): (1,32,17) 1.430739E-04 (1,33,16) -3.683214E-04 (1,33,18) 2.487542E-04 (1,34,17) -1.235067E-04
+(1,33,18): (1,32,18) 1.389382E-04 (1,33,17) -2.487542E-04 (1,33,19) 1.921808E-04 (1,34,18) -1.823648E-04
+(1,33,19): (1,32,19) 2.116179E-04 (1,33,18) -1.921808E-04 (1,33,20) 8.473006E-05 (1,34,19) -2.041672E-04
+(1,33,20): (1,32,20) 2.168807E-04 (1,33,19) -8.473006E-05 (1,34,20) -2.321507E-04
+(1,34,3): (1,33,3) 3.507343E-04 (1,34,4) -4.507343E-04
+(1,34,4): (1,33,4) 5.509281E-04 (1,34,3) 4.507343E-04 (1,34,5) -6.091523E-04 (1,35,4) -4.925102E-04
+(1,34,5): (1,33,5) 6.233346E-04 (1,34,4) 6.091523E-04 (1,34,6) -5.685234E-04 (1,35,5) -7.639634E-04
+(1,34,6): (1,33,6) 5.309881E-04 (1,34,5) 5.685234E-04 (1,34,7) -6.414173E-04 (1,35,6) -5.580942E-04
+(1,34,7): (1,33,7) 4.891531E-04 (1,34,6) 6.414173E-04 (1,34,8) -6.957427E-04 (1,35,7) -5.348277E-04
+(1,34,8): (1,33,8) 4.601436E-04 (1,34,7) 6.957427E-04 (1,34,9) -8.232063E-04 (1,35,8) -4.326799E-04
+(1,34,9): (1,33,9) 6.012465E-05 (1,34,8) 8.232063E-04 (1,34,10) -8.795677E-04 (1,35,9) -1.037633E-04
+(1,34,10): (1,33,10) 5.364284E-05 (1,34,9) 8.795677E-04 (1,34,11) -1.045763E-03 (1,35,10) 1.255293E-05
+(1,34,11): (1,33,11) 3.357455E-04 (1,34,10) 1.045763E-03 (1,34,12) -1.663180E-03 (1,35,11) 1.816712E-04
+(1,34,12): (1,33,12) 1.147786E-03 (1,34,11) 1.663180E-03 (1,34,13) 6.025673E-04 (1,35,12) 7.864661E-04
+(1,34,13): (1,33,13) 3.195998E-04 (1,34,12) -6.025673E-04 (1,34,14) 3.446707E-05 (1,35,13) 1.485004E-04
+(1,34,14): (1,33,14) 3.580687E-04 (1,34,13) -3.446707E-05 (1,34,15) -3.476765E-04 (1,35,14) -7.592506E-05
+(1,34,15): (1,33,15) 1.316336E-04 (1,34,14) 3.476765E-04 (1,34,16) 5.150336E-04 (1,35,15) -1.251799E-04
+(1,34,16): (1,33,16) 1.135980E-04 (1,34,15) -5.150336E-04 (1,34,17) 4.381061E-04 (1,35,16) -1.366704E-04
+(1,34,17): (1,33,17) 1.235067E-04 (1,34,16) -4.381061E-04 (1,34,18) 3.595152E-04 (1,35,17) -1.449159E-04
+(1,34,18): (1,33,18) 1.823648E-04 (1,34,17) -3.595152E-04 (1,34,19) 2.451970E-04 (1,35,18) -1.680465E-04
+(1,34,19): (1,33,19) 2.041672E-04 (1,34,18) -2.451970E-04 (1,34,20) 1.627445E-04 (1,35,19) -2.217147E-04
+(1,34,20): (1,33,20) 2.321507E-04 (1,34,19) -1.627445E-04 (1,35,20) -1.694062E-04
+(1,35,4): (1,34,4) 4.925102E-04 (1,35,5) -5.925102E-04
+(1,35,5): (1,34,5) 7.639634E-04 (1,35,4) 5.925102E-04 (1,35,6) -5.423985E-04 (1,36,5) -9.140751E-04
+(1,35,6): (1,34,6) 5.580942E-04 (1,35,5) 5.423985E-04 (1,35,7) -5.098250E-04 (1,36,6) -6.906677E-04
+(1,35,7): (1,34,7) 5.348277E-04 (1,35,6) 5.098250E-04 (1,35,8) -5.905679E-04 (1,36,7) -5.540849E-04
+(1,35,8): (1,34,8) 4.326799E-04 (1,35,7) 5.905679E-04 (1,35,9) -6.582623E-04 (1,36,8) -4.649855E-04
+(1,35,9): (1,34,9) 1.037633E-04 (1,35,8) 6.582623E-04 (1,35,10) -6.164552E-04 (1,36,9) -2.455704E-04
+(1,35,10): (1,34,10) -1.255293E-05 (1,35,9) 6.164552E-04 (1,35,11) -6.451613E-04 (1,36,10) -5.874101E-05
+(1,35,11): (1,34,11) -1.816712E-04 (1,35,10) 6.451613E-04 (1,35,12) -5.920791E-04 (1,36,11) 2.858901E-05
+(1,35,12): (1,34,12) -7.864661E-04 (1,35,11) 5.920791E-04 (1,35,13) -1.596894E-04 (1,36,12) 2.540763E-04
+(1,35,13): (1,34,13) -1.485004E-04 (1,35,12) 1.596894E-04 (1,35,14) -2.689084E-04 (1,36,13) 1.577195E-04
+(1,35,14): (1,34,14) 7.592506E-05 (1,35,13) 2.689084E-04 (1,35,15) -4.102502E-04 (1,36,14) -3.458321E-05
+(1,35,15): (1,34,15) 1.251799E-04 (1,35,14) 4.102502E-04 (1,35,16) 5.642128E-04 (1,36,15) -1.272962E-04
+(1,35,16): (1,34,16) 1.366704E-04 (1,35,15) -5.642128E-04 (1,35,17) 4.492005E-04 (1,36,16) -1.216582E-04
+(1,35,17): (1,34,17) 1.449159E-04 (1,35,16) -4.492005E-04 (1,35,18) 3.251487E-04 (1,36,17) -1.208641E-04
+(1,35,18): (1,34,18) 1.680465E-04 (1,35,17) -3.251487E-04 (1,35,19) 2.316340E-04 (1,36,18) -1.745319E-04
+(1,35,19): (1,34,19) 2.217147E-04 (1,35,18) -2.316340E-04 (1,35,20) 2.694062E-04 (1,36,19) -3.594868E-04
+(1,35,20): (1,34,20) 1.694062E-04 (1,35,19) -2.694062E-04
+(1,36,5): (1,35,5) 9.140751E-04 (1,36,6) -4.427708E-04 (1,37,5) -5.713043E-04
+(1,36,6): (1,35,6) 6.906677E-04 (1,36,5) 4.427708E-04 (1,36,7) -4.957279E-04 (1,37,6) -7.377106E-04
+(1,36,7): (1,35,7) 5.540849E-04 (1,36,6) 4.957279E-04 (1,36,8) -4.812033E-04 (1,37,7) -6.686095E-04
+(1,36,8): (1,35,8) 4.649855E-04 (1,36,7) 4.812033E-04 (1,36,9) -4.877295E-04 (1,37,8) -5.584593E-04
+(1,36,9): (1,35,9) 2.455704E-04 (1,36,8) 4.877295E-04 (1,36,10) -3.882445E-04 (1,37,9) -4.450554E-04
+(1,36,10): (1,35,10) 5.874101E-05 (1,36,9) 3.882445E-04 (1,36,11) -4.416718E-04 (1,37,10) -1.053137E-04
+(1,36,11): (1,35,11) -2.858901E-05 (1,36,10) 4.416718E-04 (1,36,12) -4.847163E-04 (1,37,11) -2.836651E-05
+(1,36,12): (1,35,12) -2.540763E-04 (1,36,11) 4.847163E-04 (1,36,13) -4.150528E-04 (1,37,12) 8.441290E-05
+(1,36,13): (1,35,13) -1.577195E-04 (1,36,12) 4.150528E-04 (1,36,14) -4.327146E-04 (1,37,13) 7.538121E-05
+(1,36,14): (1,35,14) 3.458321E-05 (1,36,13) 4.327146E-04 (1,36,15) -5.448502E-04 (1,37,14) -2.244759E-05
+(1,36,15): (1,35,15) 1.272962E-04 (1,36,14) 5.448502E-04 (1,36,16) 5.462833E-04 (1,37,15) -1.221785E-04
+(1,36,16): (1,35,16) 1.216582E-04 (1,36,15) -5.462833E-04 (1,36,17) 4.081129E-04 (1,37,16) -8.348778E-05
+(1,36,17): (1,35,17) 1.208641E-04 (1,36,16) -4.081129E-04 (1,36,18) 3.354204E-04 (1,37,17) -1.481716E-04
+(1,36,18): (1,35,18) 1.745319E-04 (1,36,17) -3.354204E-04 (1,36,19) 2.564528E-04 (1,37,18) -1.955643E-04
+(1,36,19): (1,35,19) 3.594868E-04 (1,36,18) -2.564528E-04 (1,37,19) -2.030340E-04
+(1,37,5): (1,36,5) 5.713043E-04 (1,37,6) -6.713043E-04
+(1,37,6): (1,36,6) 7.377106E-04 (1,37,5) 6.713043E-04 (1,37,7) -4.407683E-04 (1,38,6) -1.068247E-03
+(1,37,7): (1,36,7) 6.686095E-04 (1,37,6) 4.407683E-04 (1,37,8) -4.098091E-04 (1,38,7) -7.995687E-04
+(1,37,8): (1,36,8) 5.584593E-04 (1,37,7) 4.098091E-04 (1,37,9) -4.247802E-04 (1,38,8) -6.434881E-04
+(1,37,9): (1,36,9) 4.450554E-04 (1,37,8) 4.247802E-04 (1,37,10) -4.281542E-04 (1,38,9) -5.416813E-04
+(1,37,10): (1,36,10) 1.053137E-04 (1,37,9) 4.281542E-04 (1,37,11) -4.769630E-04 (1,38,10) -1.565049E-04
+(1,37,11): (1,36,11) 2.836651E-05 (1,37,10) 4.769630E-04 (1,37,12) -4.794858E-04 (1,38,11) -1.258437E-04
+(1,37,12): (1,36,12) -8.441290E-05 (1,37,11) 4.794858E-04 (1,37,13) -4.248615E-04 (1,38,12) -7.021140E-05
+(1,37,13): (1,36,13) -7.538121E-05 (1,37,12) 4.248615E-04 (1,37,14) -4.570566E-04 (1,38,13) 7.576281E-06
+(1,37,14): (1,36,14) 2.244759E-05 (1,37,13) 4.570566E-04 (1,37,15) -5.756180E-04 (1,38,14) -3.886210E-06
+(1,37,15): (1,36,15) 1.221785E-04 (1,37,14) 5.756180E-04 (1,37,16) 5.639104E-04 (1,38,15) -9.177757E-05
+(1,37,16): (1,36,16) 8.348778E-05 (1,37,15) -5.639104E-04 (1,37,17) 4.824160E-04 (1,38,16) -1.019934E-04
+(1,37,17): (1,36,17) 1.481716E-04 (1,37,16) -4.824160E-04 (1,37,18) 4.036510E-04 (1,38,17) -1.694065E-04
+(1,37,18): (1,36,18) 1.955643E-04 (1,37,17) -4.036510E-04 (1,37,19) 3.030340E-04 (1,38,18) -1.949473E-04
+(1,37,19): (1,36,19) 2.030340E-04 (1,37,18) -3.030340E-04
+(1,38,6): (1,37,6) 1.068247E-03 (1,38,7) -2.739900E-04 (1,39,6) -8.942566E-04
+(1,38,7): (1,37,7) 7.995687E-04 (1,38,6) 2.739900E-04 (1,38,8) -3.060112E-04 (1,39,7) -8.675475E-04
+(1,38,8): (1,37,8) 6.434881E-04 (1,38,7) 3.060112E-04 (1,38,9) -2.847201E-04 (1,39,8) -7.647792E-04
+(1,38,9): (1,37,9) 5.416813E-04 (1,38,8) 2.847201E-04 (1,38,10) -2.580599E-04 (1,39,9) -6.683416E-04
+(1,38,10): (1,37,10) 1.565049E-04 (1,38,9) 2.580599E-04 (1,38,11) -2.707339E-04 (1,39,10) -2.438309E-04
+(1,38,11): (1,37,11) 1.258437E-04 (1,38,10) 2.707339E-04 (1,38,12) -3.166706E-04 (1,39,11) -1.799070E-04
+(1,38,12): (1,37,12) 7.021140E-05 (1,38,11) 3.166706E-04 (1,38,13) -3.069936E-04 (1,39,12) -1.798884E-04
+(1,38,13): (1,37,13) -7.576281E-06 (1,38,12) 3.069936E-04 (1,38,14) -3.059414E-04 (1,39,13) -9.347593E-05
+(1,38,14): (1,37,14) 3.886210E-06 (1,38,13) 3.059414E-04 (1,38,15) -3.709992E-04 (1,39,14) -3.882832E-05
+(1,38,15): (1,37,15) 9.177757E-05 (1,38,14) 3.709992E-04 (1,38,16) 4.835965E-04 (1,39,15) -7.262061E-05
+(1,38,16): (1,37,16) 1.019934E-04 (1,38,15) -4.835965E-04 (1,38,17) 3.741213E-04 (1,39,16) -9.251829E-05
+(1,38,17): (1,37,17) 1.694065E-04 (1,38,16) -3.741213E-04 (1,38,18) 2.949473E-04 (1,39,17) -1.902325E-04
+(1,38,18): (1,37,18) 1.949473E-04 (1,38,17) -2.949473E-04
+(1,39,6): (1,38,6) 8.942566E-04 (1,39,7) -1.944666E-04 (1,40,6) -7.997900E-04
+(1,39,7): (1,38,7) 8.675475E-04 (1,39,6) 1.944666E-04 (1,39,8) -2.925424E-04 (1,40,7) -8.694717E-04
+(1,39,8): (1,38,8) 7.647792E-04 (1,39,7) 2.925424E-04 (1,39,9) -2.209247E-04 (1,40,8) -9.363970E-04
+(1,39,9): (1,38,9) 6.683416E-04 (1,39,8) 2.209247E-04 (1,39,10) -3.324658E-04 (1,40,9) -6.568005E-04
+(1,39,10): (1,38,10) 2.438309E-04 (1,39,9) 3.324658E-04 (1,39,11) -2.373268E-04 (1,40,10) -4.389699E-04
+(1,39,11): (1,38,11) 1.799070E-04 (1,39,10) 2.373268E-04 (1,39,12) -3.219488E-04 (1,40,11) -1.952850E-04
+(1,39,12): (1,38,12) 1.798884E-04 (1,39,11) 3.219488E-04 (1,39,13) -3.608225E-04 (1,40,12) -2.410147E-04
+(1,39,13): (1,38,13) 9.347593E-05 (1,39,12) 3.608225E-04 (1,39,14) -3.012425E-04 (1,40,13) -2.530559E-04
+(1,39,14): (1,38,14) 3.882832E-05 (1,39,13) 3.012425E-04 (1,39,15) -3.709160E-04 (1,40,14) -6.915485E-05
+(1,39,15): (1,38,15) 7.262061E-05 (1,39,14) 3.709160E-04 (1,39,16) 4.827508E-04 (1,40,15) 2.102243E-04
+(1,39,16): (1,38,16) 9.251829E-05 (1,39,15) -4.827508E-04 (1,39,17) 2.902325E-04
+(1,39,17): (1,38,17) 1.902325E-04 (1,39,16) -2.902325E-04
+(1,40,6): (1,39,6) 7.997900E-04 (1,40,7) -3.775437E-04
+(1,40,7): (1,39,7) 8.694717E-04 (1,40,6) 3.775437E-04 (1,40,8) -1.977550E-04
+(1,40,8): (1,39,8) 9.363970E-04 (1,40,7) 1.977550E-04 (1,40,9) -2.294671E-04
+(1,40,9): (1,39,9) 6.568005E-04 (1,40,8) 2.294671E-04 (1,40,10) -1.826830E-04
+(1,40,10): (1,39,10) 4.389699E-04 (1,40,9) 1.826830E-04 (1,40,11) 0.00000
+(1,40,11): (1,39,11) 1.952850E-04 (1,40,10) 0.00000 (1,40,12) -2.979488E-04
+(1,40,12): (1,39,12) 2.410147E-04 (1,40,11) 2.979488E-04 (1,40,13) -2.219286E-04
+(1,40,13): (1,39,13) 2.530559E-04 (1,40,12) 2.219286E-04 (1,40,14) -9.960818E-05
+(1,40,14): (1,39,14) 6.915485E-05 (1,40,13) 9.960818E-05 (1,40,15) -1.347488E-04
+(1,40,15): (1,39,15) -2.102243E-04 (1,40,14) 1.347488E-04
+
+ WEL PACKAGE (WEL-1) FLOW RATES   PERIOD      1   STEP        1
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,9,16)             -8.20000000E-03
+     2      (1,11,13)            -4.10000000E-03
+     3      (1,20,14)            -3.90000000E-03
+     4      (1,26,10)            -8.30000000E-04
+     5      (1,29,6)             -7.20000000E-04
+     6      (1,34,12)            -4.30000000E-03
+ -----------------------------------------------
+
+
+
+
+ RIV PACKAGE (RIV-1) FLOW RATES   PERIOD      1   STEP        1
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,1,15)             -6.09227033E-04
+     2      (1,2,15)             -1.34026812E-03
+     3      (1,3,15)             -1.37974350E-03
+     4      (1,4,15)             -1.53661716E-03
+     5      (1,5,15)             -1.69721116E-03
+     6      (1,6,15)             -1.58055059E-03
+     7      (1,7,15)             -1.07571852E-03
+     8      (1,8,15)             -5.17734258E-04
+     9      (1,9,15)             -5.92459776E-05
+     10     (1,10,15)             4.19403246E-03
+     11     (1,11,15)            -1.76337297E-03
+     12     (1,12,15)            -8.44334184E-04
+     13     (1,13,15)            -1.13140017E-03
+     14     (1,14,15)            -1.37882736E-03
+     15     (1,15,15)            -1.25790580E-03
+     16     (1,16,15)            -1.23177494E-03
+     17     (1,17,15)            -1.22599128E-03
+     18     (1,18,15)            -1.23970539E-03
+     19     (1,19,15)            -9.67080998E-04
+     20     (1,20,15)            -1.85273089E-04
+     21     (1,21,15)            -1.01735764E-03
+     22     (1,22,15)            -1.42353346E-03
+     23     (1,23,15)            -1.62520365E-03
+     24     (1,24,15)            -1.72284684E-03
+     25     (1,25,15)            -1.88175718E-03
+     26     (1,26,15)            -2.12114656E-03
+     27     (1,27,15)            -1.69836026E-03
+     28     (1,28,15)            -1.72779444E-03
+     29     (1,29,15)            -1.56308669E-03
+     30     (1,30,15)            -1.63795960E-03
+     31     (1,31,15)            -1.27438963E-03
+     32     (1,32,15)            -8.22017171E-04
+     33     (1,33,15)            -1.13892629E-03
+     34     (1,34,15)            -9.69163814E-04
+     35     (1,35,15)            -1.07234665E-03
+     36     (1,36,15)            -1.19625126E-03
+     37     (1,37,15)            -1.26992928E-03
+     38     (1,38,15)            -9.73752659E-04
+     39     (1,39,15)            -1.23651177E-03
+     40     (1,40,15)             0.0000000     
+ -----------------------------------------------
+
+
+
+
+ RCHA PACKAGE (RCH-1) FLOW RATES   PERIOD      1   STEP        1
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,1,1)               1.00000000E-04
+     2      (1,1,2)               1.00000000E-04
+     3      (1,1,3)               1.00000000E-04
+     4      (1,1,4)               1.00000000E-04
+     5      (1,1,5)               1.00000000E-04
+     6      (1,1,6)               1.00000000E-04
+     7      (1,1,7)               1.00000000E-04
+     8      (1,1,8)               1.00000000E-04
+     9      (1,1,9)               1.00000000E-04
+     10     (1,1,10)              1.00000000E-04
+     11     (1,1,11)              1.00000000E-04
+     12     (1,1,12)              1.00000000E-04
+     13     (1,1,13)              1.00000000E-04
+     14     (1,1,14)              1.00000000E-04
+     15     (1,1,15)              1.00000000E-04
+     16     (1,1,16)              1.00000000E-04
+     17     (1,1,17)              1.00000000E-04
+     18     (1,1,18)              1.00000000E-04
+     19     (1,1,19)              1.00000000E-04
+     20     (1,1,20)              1.00000000E-04
+     21     (1,2,1)               1.00000000E-04
+     22     (1,2,2)               1.00000000E-04
+     23     (1,2,3)               1.00000000E-04
+     24     (1,2,4)               1.00000000E-04
+     25     (1,2,5)               1.00000000E-04
+     26     (1,2,6)               1.00000000E-04
+     27     (1,2,7)               1.00000000E-04
+     28     (1,2,8)               1.00000000E-04
+     29     (1,2,9)               1.00000000E-04
+     30     (1,2,10)              1.00000000E-04
+     31     (1,2,11)              1.00000000E-04
+     32     (1,2,12)              1.00000000E-04
+     33     (1,2,13)              1.00000000E-04
+     34     (1,2,14)              1.00000000E-04
+     35     (1,2,15)              1.00000000E-04
+     36     (1,2,16)              1.00000000E-04
+     37     (1,2,17)              1.00000000E-04
+     38     (1,2,18)              1.00000000E-04
+     39     (1,2,19)              1.00000000E-04
+     40     (1,2,20)              1.00000000E-04
+     41     (1,3,1)               1.00000000E-04
+     42     (1,3,2)               1.00000000E-04
+     43     (1,3,3)               1.00000000E-04
+     44     (1,3,4)               1.00000000E-04
+     45     (1,3,5)               1.00000000E-04
+     46     (1,3,6)               1.00000000E-04
+     47     (1,3,7)               1.00000000E-04
+     48     (1,3,8)               1.00000000E-04
+     49     (1,3,9)               1.00000000E-04
+     50     (1,3,10)              1.00000000E-04
+     51     (1,3,11)              1.00000000E-04
+     52     (1,3,12)              1.00000000E-04
+     53     (1,3,13)              1.00000000E-04
+     54     (1,3,14)              1.00000000E-04
+     55     (1,3,15)              1.00000000E-04
+     56     (1,3,16)              1.00000000E-04
+     57     (1,3,17)              1.00000000E-04
+     58     (1,3,18)              1.00000000E-04
+     59     (1,3,19)              1.00000000E-04
+     60     (1,3,20)              1.00000000E-04
+     61     (1,4,1)               1.00000000E-04
+     62     (1,4,2)               1.00000000E-04
+     63     (1,4,3)               1.00000000E-04
+     64     (1,4,4)               1.00000000E-04
+     65     (1,4,5)               1.00000000E-04
+     66     (1,4,6)               1.00000000E-04
+     67     (1,4,7)               1.00000000E-04
+     68     (1,4,8)               1.00000000E-04
+     69     (1,4,9)               1.00000000E-04
+     70     (1,4,10)              1.00000000E-04
+     71     (1,4,11)              1.00000000E-04
+     72     (1,4,12)              1.00000000E-04
+     73     (1,4,13)              1.00000000E-04
+     74     (1,4,14)              1.00000000E-04
+     75     (1,4,15)              1.00000000E-04
+     76     (1,4,16)              1.00000000E-04
+     77     (1,4,17)              1.00000000E-04
+     78     (1,4,18)              1.00000000E-04
+     79     (1,4,19)              1.00000000E-04
+     80     (1,4,20)              1.00000000E-04
+     81     (1,5,1)               1.00000000E-04
+     82     (1,5,2)               1.00000000E-04
+     83     (1,5,3)               1.00000000E-04
+     84     (1,5,4)               1.00000000E-04
+     85     (1,5,5)               1.00000000E-04
+     86     (1,5,6)               1.00000000E-04
+     87     (1,5,7)               1.00000000E-04
+     88     (1,5,8)               1.00000000E-04
+     89     (1,5,9)               1.00000000E-04
+     90     (1,5,10)              1.00000000E-04
+     91     (1,5,11)              1.00000000E-04
+     92     (1,5,12)              1.00000000E-04
+     93     (1,5,13)              1.00000000E-04
+     94     (1,5,14)              1.00000000E-04
+     95     (1,5,15)              1.00000000E-04
+     96     (1,5,16)              1.00000000E-04
+     97     (1,5,17)              1.00000000E-04
+     98     (1,5,18)              1.00000000E-04
+     99     (1,5,19)              1.00000000E-04
+    100     (1,5,20)              1.00000000E-04
+    101     (1,6,1)               1.00000000E-04
+    102     (1,6,2)               1.00000000E-04
+    103     (1,6,3)               1.00000000E-04
+    104     (1,6,4)               1.00000000E-04
+    105     (1,6,5)               1.00000000E-04
+    106     (1,6,6)               1.00000000E-04
+    107     (1,6,7)               1.00000000E-04
+    108     (1,6,8)               1.00000000E-04
+    109     (1,6,9)               1.00000000E-04
+    110     (1,6,10)              1.00000000E-04
+    111     (1,6,11)              1.00000000E-04
+    112     (1,6,12)              1.00000000E-04
+    113     (1,6,13)              1.00000000E-04
+    114     (1,6,14)              1.00000000E-04
+    115     (1,6,15)              1.00000000E-04
+    116     (1,6,16)              1.00000000E-04
+    117     (1,6,17)              1.00000000E-04
+    118     (1,6,18)              1.00000000E-04
+    119     (1,6,19)              1.00000000E-04
+    120     (1,6,20)              1.00000000E-04
+    121     (1,7,1)               1.00000000E-04
+    122     (1,7,2)               1.00000000E-04
+    123     (1,7,3)               1.00000000E-04
+    124     (1,7,4)               1.00000000E-04
+    125     (1,7,5)               1.00000000E-04
+    126     (1,7,6)               1.00000000E-04
+    127     (1,7,7)               1.00000000E-04
+    128     (1,7,8)               1.00000000E-04
+    129     (1,7,9)               1.00000000E-04
+    130     (1,7,10)              1.00000000E-04
+    131     (1,7,11)              1.00000000E-04
+    132     (1,7,12)              1.00000000E-04
+    133     (1,7,13)              1.00000000E-04
+    134     (1,7,14)              1.00000000E-04
+    135     (1,7,15)              1.00000000E-04
+    136     (1,7,16)              1.00000000E-04
+    137     (1,7,17)              1.00000000E-04
+    138     (1,7,18)              1.00000000E-04
+    139     (1,7,19)              1.00000000E-04
+    140     (1,7,20)              1.00000000E-04
+    141     (1,8,1)               1.00000000E-04
+    142     (1,8,2)               1.00000000E-04
+    143     (1,8,3)               1.00000000E-04
+    144     (1,8,4)               1.00000000E-04
+    145     (1,8,5)               1.00000000E-04
+    146     (1,8,6)               1.00000000E-04
+    147     (1,8,7)               1.00000000E-04
+    148     (1,8,8)               1.00000000E-04
+    149     (1,8,9)               1.00000000E-04
+    150     (1,8,10)              1.00000000E-04
+    151     (1,8,11)              1.00000000E-04
+    152     (1,8,12)              1.00000000E-04
+    153     (1,8,13)              1.00000000E-04
+    154     (1,8,14)              1.00000000E-04
+    155     (1,8,15)              1.00000000E-04
+    156     (1,8,16)              1.00000000E-04
+    157     (1,8,17)              1.00000000E-04
+    158     (1,8,18)              1.00000000E-04
+    159     (1,8,19)              1.00000000E-04
+    160     (1,8,20)              1.00000000E-04
+    161     (1,9,1)               1.00000000E-04
+    162     (1,9,2)               1.00000000E-04
+    163     (1,9,3)               1.00000000E-04
+    164     (1,9,4)               1.00000000E-04
+    168     (1,9,8)               1.00000000E-04
+    169     (1,9,9)               1.00000000E-04
+    170     (1,9,10)              1.00000000E-04
+    171     (1,9,11)              1.00000000E-04
+    172     (1,9,12)              1.00000000E-04
+    173     (1,9,13)              1.00000000E-04
+    174     (1,9,14)              1.00000000E-04
+    175     (1,9,15)              1.00000000E-04
+    176     (1,9,16)              1.00000000E-04
+    177     (1,9,17)              1.00000000E-04
+    178     (1,9,18)              1.00000000E-04
+    179     (1,9,19)              1.00000000E-04
+    180     (1,9,20)              1.00000000E-04
+    181     (1,10,1)              1.00000000E-04
+    182     (1,10,2)              1.00000000E-04
+    183     (1,10,3)              1.00000000E-04
+    184     (1,10,4)              1.00000000E-04
+    189     (1,10,9)              1.00000000E-04
+    190     (1,10,10)             1.00000000E-04
+    191     (1,10,11)             1.00000000E-04
+    192     (1,10,12)             1.00000000E-04
+    193     (1,10,13)             1.00000000E-04
+    194     (1,10,14)             1.00000000E-04
+    195     (1,10,15)             1.00000000E-04
+    196     (1,10,16)             1.00000000E-04
+    197     (1,10,17)             1.00000000E-04
+    198     (1,10,18)             1.00000000E-04
+    199     (1,10,19)             1.00000000E-04
+    200     (1,10,20)             1.00000000E-04
+    201     (1,11,1)              1.00000000E-04
+    202     (1,11,2)              1.00000000E-04
+    203     (1,11,3)              1.00000000E-04
+    204     (1,11,4)              1.00000000E-04
+    209     (1,11,9)              1.00000000E-04
+    210     (1,11,10)             1.00000000E-04
+    211     (1,11,11)             1.00000000E-04
+    212     (1,11,12)             1.00000000E-04
+    213     (1,11,13)             1.00000000E-04
+    214     (1,11,14)             1.00000000E-04
+    215     (1,11,15)             1.00000000E-04
+    216     (1,11,16)             1.00000000E-04
+    217     (1,11,17)             1.00000000E-04
+    218     (1,11,18)             1.00000000E-04
+    219     (1,11,19)             1.00000000E-04
+    220     (1,11,20)             1.00000000E-04
+    221     (1,12,1)              1.00000000E-04
+    222     (1,12,2)              1.00000000E-04
+    223     (1,12,3)              1.00000000E-04
+    224     (1,12,4)              1.00000000E-04
+    229     (1,12,9)              1.00000000E-04
+    230     (1,12,10)             1.00000000E-04
+    231     (1,12,11)             1.00000000E-04
+    232     (1,12,12)             1.00000000E-04
+    233     (1,12,13)             1.00000000E-04
+    234     (1,12,14)             1.00000000E-04
+    235     (1,12,15)             1.00000000E-04
+    236     (1,12,16)             1.00000000E-04
+    237     (1,12,17)             1.00000000E-04
+    238     (1,12,18)             1.00000000E-04
+    239     (1,12,19)             1.00000000E-04
+    240     (1,12,20)             1.00000000E-04
+    241     (1,13,1)              1.00000000E-04
+    242     (1,13,2)              1.00000000E-04
+    243     (1,13,3)              1.00000000E-04
+    244     (1,13,4)              1.00000000E-04
+    249     (1,13,9)              1.00000000E-04
+    250     (1,13,10)             1.00000000E-04
+    251     (1,13,11)             1.00000000E-04
+    252     (1,13,12)             1.00000000E-04
+    253     (1,13,13)             1.00000000E-04
+    254     (1,13,14)             1.00000000E-04
+    255     (1,13,15)             1.00000000E-04
+    256     (1,13,16)             1.00000000E-04
+    257     (1,13,17)             1.00000000E-04
+    258     (1,13,18)             1.00000000E-04
+    259     (1,13,19)             1.00000000E-04
+    260     (1,13,20)             1.00000000E-04
+    261     (1,14,1)              1.00000000E-04
+    262     (1,14,2)              1.00000000E-04
+    263     (1,14,3)              1.00000000E-04
+    264     (1,14,4)              1.00000000E-04
+    269     (1,14,9)              1.00000000E-04
+    270     (1,14,10)             1.00000000E-04
+    271     (1,14,11)             1.00000000E-04
+    272     (1,14,12)             1.00000000E-04
+    273     (1,14,13)             1.00000000E-04
+    274     (1,14,14)             1.00000000E-04
+    275     (1,14,15)             1.00000000E-04
+    276     (1,14,16)             1.00000000E-04
+    277     (1,14,17)             1.00000000E-04
+    278     (1,14,18)             1.00000000E-04
+    279     (1,14,19)             1.00000000E-04
+    280     (1,14,20)             1.00000000E-04
+    281     (1,15,1)              1.00000000E-04
+    282     (1,15,2)              1.00000000E-04
+    283     (1,15,3)              1.00000000E-04
+    284     (1,15,4)              1.00000000E-04
+    289     (1,15,9)              1.00000000E-04
+    290     (1,15,10)             1.00000000E-04
+    291     (1,15,11)             1.00000000E-04
+    292     (1,15,12)             1.00000000E-04
+    293     (1,15,13)             1.00000000E-04
+    294     (1,15,14)             1.00000000E-04
+    295     (1,15,15)             1.00000000E-04
+    296     (1,15,16)             1.00000000E-04
+    297     (1,15,17)             1.00000000E-04
+    298     (1,15,18)             1.00000000E-04
+    299     (1,15,19)             1.00000000E-04
+    300     (1,15,20)             1.00000000E-04
+    301     (1,16,1)              1.00000000E-04
+    302     (1,16,2)              1.00000000E-04
+    303     (1,16,3)              1.00000000E-04
+    304     (1,16,4)              1.00000000E-04
+    309     (1,16,9)              1.00000000E-04
+    310     (1,16,10)             1.00000000E-04
+    311     (1,16,11)             1.00000000E-04
+    312     (1,16,12)             1.00000000E-04
+    313     (1,16,13)             1.00000000E-04
+    314     (1,16,14)             1.00000000E-04
+    315     (1,16,15)             1.00000000E-04
+    316     (1,16,16)             1.00000000E-04
+    317     (1,16,17)             1.00000000E-04
+    318     (1,16,18)             1.00000000E-04
+    319     (1,16,19)             1.00000000E-04
+    320     (1,16,20)             1.00000000E-04
+    321     (1,17,1)              1.00000000E-04
+    322     (1,17,2)              1.00000000E-04
+    323     (1,17,3)              1.00000000E-04
+    324     (1,17,4)              1.00000000E-04
+    329     (1,17,9)              1.00000000E-04
+    330     (1,17,10)             1.00000000E-04
+    331     (1,17,11)             1.00000000E-04
+    332     (1,17,12)             1.00000000E-04
+    333     (1,17,13)             1.00000000E-04
+    334     (1,17,14)             1.00000000E-04
+    335     (1,17,15)             1.00000000E-04
+    336     (1,17,16)             1.00000000E-04
+    337     (1,17,17)             1.00000000E-04
+    338     (1,17,18)             1.00000000E-04
+    339     (1,17,19)             1.00000000E-04
+    340     (1,17,20)             1.00000000E-04
+    341     (1,18,1)              1.00000000E-04
+    342     (1,18,2)              1.00000000E-04
+    343     (1,18,3)              1.00000000E-04
+    344     (1,18,4)              1.00000000E-04
+    349     (1,18,9)              1.00000000E-04
+    350     (1,18,10)             1.00000000E-04
+    351     (1,18,11)             1.00000000E-04
+    352     (1,18,12)             1.00000000E-04
+    353     (1,18,13)             1.00000000E-04
+    354     (1,18,14)             1.00000000E-04
+    355     (1,18,15)             1.00000000E-04
+    356     (1,18,16)             1.00000000E-04
+    357     (1,18,17)             1.00000000E-04
+    358     (1,18,18)             1.00000000E-04
+    359     (1,18,19)             1.00000000E-04
+    360     (1,18,20)             1.00000000E-04
+    361     (1,19,1)              1.00000000E-04
+    362     (1,19,2)              1.00000000E-04
+    363     (1,19,3)              1.00000000E-04
+    364     (1,19,4)              1.00000000E-04
+    369     (1,19,9)              1.00000000E-04
+    370     (1,19,10)             1.00000000E-04
+    371     (1,19,11)             1.00000000E-04
+    372     (1,19,12)             1.00000000E-04
+    373     (1,19,13)             1.00000000E-04
+    374     (1,19,14)             1.00000000E-04
+    375     (1,19,15)             1.00000000E-04
+    376     (1,19,16)             1.00000000E-04
+    377     (1,19,17)             1.00000000E-04
+    378     (1,19,18)             1.00000000E-04
+    379     (1,19,19)             1.00000000E-04
+    380     (1,19,20)             1.00000000E-04
+    381     (1,20,1)              1.00000000E-04
+    382     (1,20,2)              1.00000000E-04
+    383     (1,20,3)              1.00000000E-04
+    384     (1,20,4)              1.00000000E-04
+    389     (1,20,9)              1.00000000E-04
+    390     (1,20,10)             1.00000000E-04
+    391     (1,20,11)             1.00000000E-04
+    392     (1,20,12)             1.00000000E-04
+    393     (1,20,13)             1.00000000E-04
+    394     (1,20,14)             1.00000000E-04
+    395     (1,20,15)             1.00000000E-04
+    396     (1,20,16)             1.00000000E-04
+    397     (1,20,17)             1.00000000E-04
+    398     (1,20,18)             1.00000000E-04
+    399     (1,20,19)             1.00000000E-04
+    400     (1,20,20)             1.00000000E-04
+    401     (1,21,1)              1.00000000E-04
+    402     (1,21,2)              1.00000000E-04
+    403     (1,21,3)              1.00000000E-04
+    404     (1,21,4)              1.00000000E-04
+    409     (1,21,9)              1.00000000E-04
+    410     (1,21,10)             1.00000000E-04
+    411     (1,21,11)             1.00000000E-04
+    412     (1,21,12)             1.00000000E-04
+    413     (1,21,13)             1.00000000E-04
+    414     (1,21,14)             1.00000000E-04
+    415     (1,21,15)             1.00000000E-04
+    416     (1,21,16)             1.00000000E-04
+    417     (1,21,17)             1.00000000E-04
+    418     (1,21,18)             1.00000000E-04
+    419     (1,21,19)             1.00000000E-04
+    420     (1,21,20)             1.00000000E-04
+    421     (1,22,1)              1.00000000E-04
+    422     (1,22,2)              1.00000000E-04
+    423     (1,22,3)              1.00000000E-04
+    424     (1,22,4)              1.00000000E-04
+    427     (1,22,7)              1.00000000E-04
+    428     (1,22,8)              1.00000000E-04
+    429     (1,22,9)              1.00000000E-04
+    430     (1,22,10)             1.00000000E-04
+    431     (1,22,11)             1.00000000E-04
+    432     (1,22,12)             1.00000000E-04
+    433     (1,22,13)             1.00000000E-04
+    434     (1,22,14)             1.00000000E-04
+    435     (1,22,15)             1.00000000E-04
+    436     (1,22,16)             1.00000000E-04
+    437     (1,22,17)             1.00000000E-04
+    438     (1,22,18)             1.00000000E-04
+    439     (1,22,19)             1.00000000E-04
+    440     (1,22,20)             1.00000000E-04
+    441     (1,23,1)              1.00000000E-04
+    442     (1,23,2)              1.00000000E-04
+    443     (1,23,3)              1.00000000E-04
+    444     (1,23,4)              1.00000000E-04
+    445     (1,23,5)              1.00000000E-04
+    447     (1,23,7)              1.00000000E-04
+    448     (1,23,8)              1.00000000E-04
+    449     (1,23,9)              1.00000000E-04
+    450     (1,23,10)             1.00000000E-04
+    451     (1,23,11)             1.00000000E-04
+    452     (1,23,12)             1.00000000E-04
+    453     (1,23,13)             1.00000000E-04
+    454     (1,23,14)             1.00000000E-04
+    455     (1,23,15)             1.00000000E-04
+    456     (1,23,16)             1.00000000E-04
+    457     (1,23,17)             1.00000000E-04
+    458     (1,23,18)             1.00000000E-04
+    459     (1,23,19)             1.00000000E-04
+    460     (1,23,20)             1.00000000E-04
+    461     (1,24,1)              1.00000000E-04
+    462     (1,24,2)              1.00000000E-04
+    463     (1,24,3)              1.00000000E-04
+    464     (1,24,4)              1.00000000E-04
+    465     (1,24,5)              1.00000000E-04
+    466     (1,24,6)              1.00000000E-04
+    467     (1,24,7)              1.00000000E-04
+    468     (1,24,8)              1.00000000E-04
+    469     (1,24,9)              1.00000000E-04
+    470     (1,24,10)             1.00000000E-04
+    471     (1,24,11)             1.00000000E-04
+    472     (1,24,12)             1.00000000E-04
+    473     (1,24,13)             1.00000000E-04
+    474     (1,24,14)             1.00000000E-04
+    475     (1,24,15)             1.00000000E-04
+    476     (1,24,16)             1.00000000E-04
+    477     (1,24,17)             1.00000000E-04
+    478     (1,24,18)             1.00000000E-04
+    479     (1,24,19)             1.00000000E-04
+    480     (1,24,20)             1.00000000E-04
+    481     (1,25,1)              1.00000000E-04
+    482     (1,25,2)              1.00000000E-04
+    483     (1,25,3)              1.00000000E-04
+    484     (1,25,4)              1.00000000E-04
+    485     (1,25,5)              1.00000000E-04
+    486     (1,25,6)              1.00000000E-04
+    487     (1,25,7)              1.00000000E-04
+    488     (1,25,8)              1.00000000E-04
+    489     (1,25,9)              1.00000000E-04
+    490     (1,25,10)             1.00000000E-04
+    491     (1,25,11)             1.00000000E-04
+    492     (1,25,12)             1.00000000E-04
+    493     (1,25,13)             1.00000000E-04
+    494     (1,25,14)             1.00000000E-04
+    495     (1,25,15)             1.00000000E-04
+    496     (1,25,16)             1.00000000E-04
+    497     (1,25,17)             1.00000000E-04
+    498     (1,25,18)             1.00000000E-04
+    499     (1,25,19)             1.00000000E-04
+    500     (1,25,20)             1.00000000E-04
+    501     (1,26,1)              1.00000000E-04
+    502     (1,26,2)              1.00000000E-04
+    503     (1,26,3)              1.00000000E-04
+    504     (1,26,4)              1.00000000E-04
+    505     (1,26,5)              1.00000000E-04
+    506     (1,26,6)              1.00000000E-04
+    507     (1,26,7)              1.00000000E-04
+    508     (1,26,8)              1.00000000E-04
+    509     (1,26,9)              1.00000000E-04
+    510     (1,26,10)             1.00000000E-04
+    511     (1,26,11)             1.00000000E-04
+    512     (1,26,12)             1.00000000E-04
+    513     (1,26,13)             1.00000000E-04
+    514     (1,26,14)             1.00000000E-04
+    515     (1,26,15)             1.00000000E-04
+    516     (1,26,16)             1.00000000E-04
+    517     (1,26,17)             1.00000000E-04
+    518     (1,26,18)             1.00000000E-04
+    519     (1,26,19)             1.00000000E-04
+    520     (1,26,20)             1.00000000E-04
+    521     (1,27,1)              1.00000000E-04
+    522     (1,27,2)              1.00000000E-04
+    523     (1,27,3)              1.00000000E-04
+    524     (1,27,4)              1.00000000E-04
+    525     (1,27,5)              1.00000000E-04
+    526     (1,27,6)              1.00000000E-04
+    527     (1,27,7)              1.00000000E-04
+    528     (1,27,8)              1.00000000E-04
+    529     (1,27,9)              1.00000000E-04
+    530     (1,27,10)             1.00000000E-04
+    531     (1,27,11)             1.00000000E-04
+    532     (1,27,12)             1.00000000E-04
+    533     (1,27,13)             1.00000000E-04
+    534     (1,27,14)             1.00000000E-04
+    535     (1,27,15)             1.00000000E-04
+    536     (1,27,16)             1.00000000E-04
+    537     (1,27,17)             1.00000000E-04
+    538     (1,27,18)             1.00000000E-04
+    539     (1,27,19)             1.00000000E-04
+    540     (1,27,20)             1.00000000E-04
+    541     (1,28,1)              1.00000000E-04
+    542     (1,28,2)              1.00000000E-04
+    543     (1,28,3)              1.00000000E-04
+    544     (1,28,4)              1.00000000E-04
+    545     (1,28,5)              1.00000000E-04
+    546     (1,28,6)              1.00000000E-04
+    547     (1,28,7)              1.00000000E-04
+    548     (1,28,8)              1.00000000E-04
+    549     (1,28,9)              1.00000000E-04
+    550     (1,28,10)             1.00000000E-04
+    551     (1,28,11)             1.00000000E-04
+    552     (1,28,12)             1.00000000E-04
+    553     (1,28,13)             1.00000000E-04
+    554     (1,28,14)             1.00000000E-04
+    555     (1,28,15)             1.00000000E-04
+    556     (1,28,16)             1.00000000E-04
+    557     (1,28,17)             1.00000000E-04
+    558     (1,28,18)             1.00000000E-04
+    559     (1,28,19)             1.00000000E-04
+    560     (1,28,20)             1.00000000E-04
+    561     (1,29,1)              1.00000000E-04
+    562     (1,29,2)              1.00000000E-04
+    563     (1,29,3)              1.00000000E-04
+    564     (1,29,4)              1.00000000E-04
+    565     (1,29,5)              1.00000000E-04
+    566     (1,29,6)              1.00000000E-04
+    567     (1,29,7)              1.00000000E-04
+    568     (1,29,8)              1.00000000E-04
+    569     (1,29,9)              1.00000000E-04
+    570     (1,29,10)             1.00000000E-04
+    571     (1,29,11)             1.00000000E-04
+    572     (1,29,12)             1.00000000E-04
+    573     (1,29,13)             1.00000000E-04
+    574     (1,29,14)             1.00000000E-04
+    575     (1,29,15)             1.00000000E-04
+    576     (1,29,16)             1.00000000E-04
+    577     (1,29,17)             1.00000000E-04
+    578     (1,29,18)             1.00000000E-04
+    579     (1,29,19)             1.00000000E-04
+    580     (1,29,20)             1.00000000E-04
+    581     (1,30,1)              1.00000000E-04
+    582     (1,30,2)              1.00000000E-04
+    583     (1,30,3)              1.00000000E-04
+    584     (1,30,4)              1.00000000E-04
+    585     (1,30,5)              1.00000000E-04
+    586     (1,30,6)              1.00000000E-04
+    587     (1,30,7)              1.00000000E-04
+    588     (1,30,8)              1.00000000E-04
+    589     (1,30,9)              1.00000000E-04
+    590     (1,30,10)             1.00000000E-04
+    591     (1,30,11)             1.00000000E-04
+    592     (1,30,12)             1.00000000E-04
+    593     (1,30,13)             1.00000000E-04
+    594     (1,30,14)             1.00000000E-04
+    595     (1,30,15)             1.00000000E-04
+    596     (1,30,16)             1.00000000E-04
+    597     (1,30,17)             1.00000000E-04
+    598     (1,30,18)             1.00000000E-04
+    599     (1,30,19)             1.00000000E-04
+    600     (1,30,20)             1.00000000E-04
+    601     (1,31,1)              1.00000000E-04
+    602     (1,31,2)              1.00000000E-04
+    603     (1,31,3)              1.00000000E-04
+    604     (1,31,4)              1.00000000E-04
+    605     (1,31,5)              1.00000000E-04
+    606     (1,31,6)              1.00000000E-04
+    607     (1,31,7)              1.00000000E-04
+    608     (1,31,8)              1.00000000E-04
+    609     (1,31,9)              1.00000000E-04
+    610     (1,31,10)             1.00000000E-04
+    611     (1,31,11)             1.00000000E-04
+    612     (1,31,12)             1.00000000E-04
+    613     (1,31,13)             1.00000000E-04
+    614     (1,31,14)             1.00000000E-04
+    615     (1,31,15)             1.00000000E-04
+    616     (1,31,16)             1.00000000E-04
+    617     (1,31,17)             1.00000000E-04
+    618     (1,31,18)             1.00000000E-04
+    619     (1,31,19)             1.00000000E-04
+    620     (1,31,20)             1.00000000E-04
+    621     (1,32,1)              1.00000000E-04
+    622     (1,32,2)              1.00000000E-04
+    623     (1,32,3)              1.00000000E-04
+    624     (1,32,4)              1.00000000E-04
+    625     (1,32,5)              1.00000000E-04
+    626     (1,32,6)              1.00000000E-04
+    627     (1,32,7)              1.00000000E-04
+    628     (1,32,8)              1.00000000E-04
+    629     (1,32,9)              1.00000000E-04
+    630     (1,32,10)             1.00000000E-04
+    631     (1,32,11)             1.00000000E-04
+    632     (1,32,12)             1.00000000E-04
+    633     (1,32,13)             1.00000000E-04
+    634     (1,32,14)             1.00000000E-04
+    635     (1,32,15)             1.00000000E-04
+    636     (1,32,16)             1.00000000E-04
+    637     (1,32,17)             1.00000000E-04
+    638     (1,32,18)             1.00000000E-04
+    639     (1,32,19)             1.00000000E-04
+    640     (1,32,20)             1.00000000E-04
+    642     (1,33,2)              1.00000000E-04
+    643     (1,33,3)              1.00000000E-04
+    644     (1,33,4)              1.00000000E-04
+    645     (1,33,5)              1.00000000E-04
+    646     (1,33,6)              1.00000000E-04
+    647     (1,33,7)              1.00000000E-04
+    648     (1,33,8)              1.00000000E-04
+    649     (1,33,9)              1.00000000E-04
+    650     (1,33,10)             1.00000000E-04
+    651     (1,33,11)             1.00000000E-04
+    652     (1,33,12)             1.00000000E-04
+    653     (1,33,13)             1.00000000E-04
+    654     (1,33,14)             1.00000000E-04
+    655     (1,33,15)             1.00000000E-04
+    656     (1,33,16)             1.00000000E-04
+    657     (1,33,17)             1.00000000E-04
+    658     (1,33,18)             1.00000000E-04
+    659     (1,33,19)             1.00000000E-04
+    660     (1,33,20)             1.00000000E-04
+    663     (1,34,3)              1.00000000E-04
+    664     (1,34,4)              1.00000000E-04
+    665     (1,34,5)              1.00000000E-04
+    666     (1,34,6)              1.00000000E-04
+    667     (1,34,7)              1.00000000E-04
+    668     (1,34,8)              1.00000000E-04
+    669     (1,34,9)              1.00000000E-04
+    670     (1,34,10)             1.00000000E-04
+    671     (1,34,11)             1.00000000E-04
+    672     (1,34,12)             1.00000000E-04
+    673     (1,34,13)             1.00000000E-04
+    674     (1,34,14)             1.00000000E-04
+    675     (1,34,15)             1.00000000E-04
+    676     (1,34,16)             1.00000000E-04
+    677     (1,34,17)             1.00000000E-04
+    678     (1,34,18)             1.00000000E-04
+    679     (1,34,19)             1.00000000E-04
+    680     (1,34,20)             1.00000000E-04
+    684     (1,35,4)              1.00000000E-04
+    685     (1,35,5)              1.00000000E-04
+    686     (1,35,6)              1.00000000E-04
+    687     (1,35,7)              1.00000000E-04
+    688     (1,35,8)              1.00000000E-04
+    689     (1,35,9)              1.00000000E-04
+    690     (1,35,10)             1.00000000E-04
+    691     (1,35,11)             1.00000000E-04
+    692     (1,35,12)             1.00000000E-04
+    693     (1,35,13)             1.00000000E-04
+    694     (1,35,14)             1.00000000E-04
+    695     (1,35,15)             1.00000000E-04
+    696     (1,35,16)             1.00000000E-04
+    697     (1,35,17)             1.00000000E-04
+    698     (1,35,18)             1.00000000E-04
+    699     (1,35,19)             1.00000000E-04
+    700     (1,35,20)             1.00000000E-04
+    705     (1,36,5)              1.00000000E-04
+    706     (1,36,6)              1.00000000E-04
+    707     (1,36,7)              1.00000000E-04
+    708     (1,36,8)              1.00000000E-04
+    709     (1,36,9)              1.00000000E-04
+    710     (1,36,10)             1.00000000E-04
+    711     (1,36,11)             1.00000000E-04
+    712     (1,36,12)             1.00000000E-04
+    713     (1,36,13)             1.00000000E-04
+    714     (1,36,14)             1.00000000E-04
+    715     (1,36,15)             1.00000000E-04
+    716     (1,36,16)             1.00000000E-04
+    717     (1,36,17)             1.00000000E-04
+    718     (1,36,18)             1.00000000E-04
+    719     (1,36,19)             1.00000000E-04
+    725     (1,37,5)              1.00000000E-04
+    726     (1,37,6)              1.00000000E-04
+    727     (1,37,7)              1.00000000E-04
+    728     (1,37,8)              1.00000000E-04
+    729     (1,37,9)              1.00000000E-04
+    730     (1,37,10)             1.00000000E-04
+    731     (1,37,11)             1.00000000E-04
+    732     (1,37,12)             1.00000000E-04
+    733     (1,37,13)             1.00000000E-04
+    734     (1,37,14)             1.00000000E-04
+    735     (1,37,15)             1.00000000E-04
+    736     (1,37,16)             1.00000000E-04
+    737     (1,37,17)             1.00000000E-04
+    738     (1,37,18)             1.00000000E-04
+    739     (1,37,19)             1.00000000E-04
+    746     (1,38,6)              1.00000000E-04
+    747     (1,38,7)              1.00000000E-04
+    748     (1,38,8)              1.00000000E-04
+    749     (1,38,9)              1.00000000E-04
+    750     (1,38,10)             1.00000000E-04
+    751     (1,38,11)             1.00000000E-04
+    752     (1,38,12)             1.00000000E-04
+    753     (1,38,13)             1.00000000E-04
+    754     (1,38,14)             1.00000000E-04
+    755     (1,38,15)             1.00000000E-04
+    756     (1,38,16)             1.00000000E-04
+    757     (1,38,17)             1.00000000E-04
+    758     (1,38,18)             1.00000000E-04
+    766     (1,39,6)              1.00000000E-04
+    767     (1,39,7)              1.00000000E-04
+    768     (1,39,8)              1.00000000E-04
+    769     (1,39,9)              1.00000000E-04
+    770     (1,39,10)             1.00000000E-04
+    771     (1,39,11)             1.00000000E-04
+    772     (1,39,12)             1.00000000E-04
+    773     (1,39,13)             1.00000000E-04
+    774     (1,39,14)             1.00000000E-04
+    775     (1,39,15)             1.00000000E-04
+    776     (1,39,16)             1.00000000E-04
+    777     (1,39,17)             1.00000000E-04
+    786     (1,40,6)              0.0000000     
+    787     (1,40,7)              0.0000000     
+    788     (1,40,8)              0.0000000     
+    789     (1,40,9)              0.0000000     
+    790     (1,40,10)             0.0000000     
+    791     (1,40,11)             0.0000000     
+    792     (1,40,12)             0.0000000     
+    793     (1,40,13)             0.0000000     
+    794     (1,40,14)             0.0000000     
+    795     (1,40,15)             0.0000000     
+ -----------------------------------------------
+
+
+
+
+ CHD PACKAGE (CHD-1) FLOW RATES   PERIOD      1   STEP        1
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,40,6)             -4.22246291E-04
+     2      (1,40,7)             -1.04926042E-03
+     3      (1,40,8)             -9.04684836E-04
+     4      (1,40,9)             -7.03584651E-04
+     5      (1,40,10)            -6.21652854E-04
+     6      (1,40,11)             1.02663833E-04
+     7      (1,40,12)            -3.17034947E-04
+     8      (1,40,13)            -3.75376307E-04
+     9      (1,40,14)            -3.40142592E-05
+     10     (1,40,15)             7.54755705E-05
+ -----------------------------------------------
+
+
+
+
+ HEAD WILL BE SAVED ON UNIT 1018 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+              STO-SY =           0.0000                STO-SY =           0.0000     STORAGE                          
+                 WEL =           0.0000                   WEL =           0.0000     WEL-1                            
+                 RIV =       4.1940E-02                   RIV =       4.1940E-03     RIV-1                            
+                RCHA =           0.6950                  RCHA =       6.9500E-02     RCH-1                            
+                 CHD =       2.1022E-03                   CHD =       2.1022E-04     CHD-1                            
+
+            TOTAL IN =           0.7390              TOTAL IN =       7.3904E-02
+
+          OUT:                                     OUT:
+          ----                                     ----
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+              STO-SY =           0.0000                STO-SY =           0.0000     STORAGE                          
+                 WEL =           0.2205                   WEL =       2.2050E-02     WEL-1                            
+                 RIV =           0.4739                   RIV =       4.7394E-02     RIV-1                            
+                RCHA =           0.0000                  RCHA =           0.0000     RCH-1                            
+                 CHD =       4.4599E-02                   CHD =       4.4599E-03     CHD-1                            
+
+           TOTAL OUT =           0.7390             TOTAL OUT =       7.3904E-02
+
+            IN - OUT =      -3.1774E-10              IN - OUT =      -3.1774E-11
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  10.000     0.16667     2.77778E-03 1.15741E-04 3.16881E-07
+ STRESS PERIOD TIME  10.000     0.16667     2.77778E-03 1.15741E-04 3.16881E-07
+         TOTAL TIME  10.000     0.16667     2.77778E-03 1.15741E-04 3.16881E-07
+
+
+end timestep
+

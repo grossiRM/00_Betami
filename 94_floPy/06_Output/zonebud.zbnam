@@ -1,0 +1,5 @@
+BEGIN ZONEBUDGET
+  ZON   zonebud.zon
+  BUD   test001e_UZF_3lay.cbc
+  GRB   test001e_UZF_3lay.dis.grb
+END ZONEBUDGET
