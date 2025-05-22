@@ -1,0 +1,15 @@
+Description of Example Simulations
+
+The MODFLOW simulation that is the basis for the nine MODPATH example simulations is described in:
+
+Pollock, DW., 2012, User Guide for MODPATH Version 6 -- A Particle-Tracking Model for MODFLOW, U.S. Geological Survey Techniques and Methods 6-A41, 58 p.
+
+The user guide contains descriptions amd discussions of MODPATH simulations 1 through 5. Simulations 6 through 9 were added later to illustrate features of MODPATH.
+
+Simulation 6 is a time series simulation in which particle starting locations are read from a starting locations file using input style 1. Input style 1 is the most general form of starting location input that allows information for each particle to be read directly from the file.
+
+Simulation 7 is a time series simulation in which particle starting locations are read from a starting locations file using input style 2. Input style 2 allows an arbitrary set of particle spatial locations to be read for particles in a particle group. A common set of release time data is read for each group and then applied to the particles in the group.
+
+Simulation 8 is a time series simulation in which particle starting locations are read from a starting locations file using input style 3. Input style 3 reads a common set of release time and spatial location template data for particles in a group and then generates all of the particles in the group.It is equivalent to the automatic particle generation scheme that is used when starting locations are specified in the simulation file. This simulation uses 2D layer mask arrays to define irregularly-shaped region of starting locations for two particle groups.
+
+Simulation 9 is a variation of simulation 5. The simulation is a backward tracking endpoint simulation with mutliple release times from the well in layer 5. In contrast to simulation 5, this simulation uses a starting location file with input style 3 and releases particles at 0, 45000, and 60000 days using the variable release time option for defining multiple particle release times.

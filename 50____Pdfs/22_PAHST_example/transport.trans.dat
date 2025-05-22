@@ -1,0 +1,337 @@
+# <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+# <WPhast>
+#   <!--Exported from C:\Programs\phastpp-trunk\P4W\example\transport.p4w-->
+#   <!--Exported to   C:\Programs\phastpp-trunk\P4W\example\transport.trans.dat-->
+#   <SiteMap src="transport.sitemap.jpg" worldfile="transport.sitemap.jgw"/>
+# </WPhast>
+# 
+SOLUTE_TRANSPORT true
+	-diffusivity  1e-009
+STEADY_FLOW false
+FREE_SURFACE_BC true
+SOLUTION_METHOD
+	-iterative_solver   true
+	-tolerance          1e-010
+	-save_directions    20
+	-maximum_iterations 500
+	-space_differencing 0
+	-time_differencing  1
+	-cross_dispersion   false
+	-rebalance_fraction 0.5
+	-rebalance_by_cell  false
+UNITS
+	-time                             years
+	-horizontal_grid                  m
+	-vertical_grid                    m
+	-map_horizontal                   m
+	-map_vertical                     m
+	-head                             m
+	-hydraulic_conductivity           meters/day
+	-specific_storage                 1/m
+	-dispersivity                     m
+	-flux                             meters/day
+	-leaky_hydraulic_conductivity     meters/day
+	-leaky_thickness                  m
+	-well_diameter                    m
+	-well_flow_rate                   m^3/s
+	-well_depth                       m
+	-river_bed_hydraulic_conductivity meters/day
+	-river_bed_thickness              m
+	-river_width                      m
+	-river_depth                      m
+	-drain_hydraulic_conductivity     meters/day
+	-drain_thickness                  m
+	-drain_width                      m
+	-equilibrium_phases               WATER
+	-exchange                         WATER
+	-surface                          WATER
+	-solid_solutions                  WATER
+	-kinetics                         WATER
+	-gas_phase                        WATER
+GRID
+	-uniform X 275000 285000 21
+	-uniform Y 810000 830000 41
+	-uniform Z -150 20 18
+	-snap X 0.001
+	-snap Y 0.001
+	-snap Z 0.001
+	-chemistry_dimensions XYZ
+	-print_orientation XY
+	-grid_origin   0  0  0
+	-grid_angle    0
+MEDIA
+	-domain
+		-active                   0
+		-Kx                       90
+		-Ky                       90
+		-Kz                       20
+		-porosity                 0.39
+		-specific_storage         0.39
+		-long_dispersivity        1
+		-horizontal_dispersivity  1
+		-vertical_dispersivity    1
+		-tortuosity               1
+	-prism
+		-description Model extent--Bedrock to sealevel
+		-top       CONSTANT   GRID 0
+		-bottom    ARCRASTER  GRID ArcData\bedrock.txt
+		-perimeter SHAPE      MAP ArcData\ModelExtent.shp
+		-active                   1
+		-Kx                       XYZ GRID Parameters\kh_meters
+		-Ky                       XYZ GRID Parameters\kh_meters
+		-Kz                       XYZ GRID Parameters\kz_meters
+	-prism
+		-description Onshore media
+		-bottom    CONSTANT   GRID 0
+		-perimeter SHAPE      MAP ArcData\OnShore.shp
+		-active                   1
+		-Kx                       XYZ GRID Parameters\kh_meters
+		-Ky                       XYZ GRID Parameters\kh_meters
+		-Kz                       XYZ GRID Parameters\kz_meters
+	-prism
+		-description Ponds
+		-bottom    SHAPE      GRID ArcData\SimpleBath.shp 10
+		-perimeter SHAPE      MAP ArcData\SimplePonds.shp
+		-Kx                       10000
+		-Ky                       10000
+		-Kz                       10000
+		-porosity                 1
+FLUX_BC
+	-box 274137.3464959 808221.489841864 0 286103.836532608 830595.394180466 20 GRID
+		-description Rainfall
+		-face Z
+		-associated_solution
+			0 years	3
+		-flux
+			0 years	-0.00188
+SPECIFIED_HEAD_BC
+	-prism
+		-description Specified head offshore
+		-top       CONSTANT   GRID 10
+		-bottom    CONSTANT   GRID -10
+		-perimeter SHAPE      MAP ArcData\OffShore.shp
+		-exterior_cells_only    ALL
+		-head
+			0 seconds	0
+		-associated_solution
+			0 years	1
+FLUX_BC
+	-box 279725 821500 0 279825 821600 20 GRID
+		-description Beds 1-4
+		-face Z
+		-associated_solution
+			0 years	2
+		-flux
+			0 years	0
+			1936 years	-0.037
+			1941 years	-0.114
+			1946 years	-0.023
+			1956 years	-0.126
+			1971 years	-0.05
+			1978 years	-0.114
+			1984 years	0
+			1996 years	0
+FLUX_BC
+	-box 279625 821425 0 279725 821525 20 GRID
+		-description Beds 5-9
+		-face Z
+		-associated_solution
+			0 years	2
+		-flux
+			0 years	0
+			1936 years	0
+			1941 years	-0.114
+			1946 years	-0.023
+			1956 years	-0.126
+			1971 years	-0.05
+			1978 years	0
+			1984 years	-0.038
+			1996 years	0
+FLUX_BC
+	-box 279525 821475 0 279625 821575 20 GRID
+		-description Beds 9-12
+		-face Z
+		-associated_solution
+			0 years	2
+		-flux
+			0 years	0
+			1936 years	0
+			1941 years	-0.114
+			1946 years	-0.023
+			1956 years	-0.126
+			1971 years	-0.05
+			1978 years	0
+			1984 years	-0.038
+			1996 years	0
+FLUX_BC
+	-box 279400 821575 0 279500 821675 20 GRID
+		-description Beds 13-16
+		-face Z
+		-associated_solution
+			0 years	2
+		-flux
+			0 years	0
+			1936 years	0
+			1941 years	-0.114
+			1946 years	-0.023
+			1956 years	0
+			1971 years	0
+			1978 years	0
+			1984 years	0
+			1996 years	0
+FLUX_BC
+	-box 279500 821700 0 279600 821800 20 GRID
+		-description Beds 19-25
+		-face Z
+		-associated_solution
+			0 years	2
+		-flux
+			0 years	0
+			1936 years	0
+			1941 years	-0.114
+			1946 years	-0.023
+			1956 years	0
+			1971 years	0
+			1978 years	0
+			1984 years	0
+			1996 years	0
+HEAD_IC
+	-domain
+		-head                     XYZ GRID flow.head.dat
+CHEMISTRY_IC
+	-domain
+		-solution            1
+DRAIN 1 Coonamessett River
+	-xy_coordinate_system GRID
+	-z_coordinate_system  GRID
+	-point 277290.447273407 814369.346460286
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      0
+		-z                           0
+	-point 277321.697059428 814759.968785556
+	-point 277321.697059428 815853.711296313
+	-point 277509.195775558 816634.955946853
+	-point 277462.321096526 817291.201453307
+	-point 277384.196631472 817853.697601696
+	-point 277227.947701363 818494.318215139
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      9.144
+		-z                           9.144
+DRAIN 2 Backus River
+	-xy_coordinate_system GRID
+	-z_coordinate_system  GRID
+	-point 278007.10075559 814232.33257573
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      0
+		-z                           0
+	-point 278148.641656825 814614.493009064
+	-point 278148.641656825 815477.892506597
+	-point 278318.490738307 816284.675643635
+	-point 278389.261188924 816808.376978204
+	-point 278785.575712382 817473.619214008
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      7.62
+		-z                           7.62
+DRAIN 3 Childs River
+	-xy_coordinate_system GRID
+	-z_coordinate_system  GRID
+	-point 280993.613771645 815024.961622645
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      0
+		-z                           0
+	-point 281248.387393868 815520.354776967
+	-point 281290.849664238 816256.367463388
+	-point 281375.774204979 816581.911536229
+	-point 281375.774204979 817332.078312773
+	-point 281503.161016091 817940.704188083
+	-point 281701.318277819 818280.402351047
+	-point 281658.856007449 818804.103685615
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      10.668
+		-z                           10.668
+DRAIN 4 Quashnet River
+	-xy_coordinate_system GRID
+	-z_coordinate_system  GRID
+	-point 282493.947324734 815718.512038696
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      0
+		-z                           0
+	-point 282904.415938316 816553.603355982
+	-point 283244.114101279 817516.081484379
+	-point 283187.497740785 818068.090999194
+	-point 283343.192732143 818832.411865862
+	-point 283229.960011156 819738.273633765
+	-point 282961.032298809 820757.368122656
+	-point 282762.875037081 821224.453096731
+		-width                       20
+		-bed_hydraulic_conductivity  90
+		-bed_thickness               1
+		-bottom                      10.668
+		-z                           10.668
+PRINT_INITIAL
+	-boundary_conditions        false
+	-components                 false
+	-conductances               false
+	-echo_input                 true
+	-fluid_properties           true
+	-force_chemistry_print      false
+	-HDF_chemistry              true
+	-HDF_heads                  true
+	-HDF_media                  true
+	-HDF_steady_flow_velocities true
+	-heads                      true
+	-media_properties           false
+	-solution_method            true
+	-steady_flow_velocities     false
+	-wells                      true
+	-xyz_chemistry              false
+	-xyz_components             false
+	-xyz_heads                  false
+	-xyz_steady_flow_velocities false
+	-xyz_wells                  false
+PRINT_FREQUENCY
+	-save_final_heads true
+	0
+		-bc_flow_rates          0
+		-boundary_conditions    false 
+		-components             0
+		-conductances           0
+		-end_of_period_default  true 
+		-flow_balance           end 
+		-force_chemistry_print  0
+		-HDF_chemistry          end 
+		-HDF_heads              end 
+		-HDF_velocities         end 
+		-heads                  end 
+		-progress_statistics    end 
+		-restart_file           0
+		-velocities             0
+		-wells                  end 
+		-xyz_chemistry          0
+		-xyz_components         0
+		-xyz_heads              0
+		-xyz_velocities         0
+		-xyz_wells              0
+		-zone_flow              end 
+		-zone_flow_heads        end 
+		-zone_flow_tsv          end 
+TIME_CONTROL
+	-time_step
+		0 1
+	-time_change
+		1946
+	-start_time 1936

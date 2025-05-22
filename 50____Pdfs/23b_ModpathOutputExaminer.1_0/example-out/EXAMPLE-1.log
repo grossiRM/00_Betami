@@ -1,0 +1,29 @@
+  MFI -- MODFLOW Data Editor
+ 
+  MODOUT: 0
+  Length of X array: 10000000
+  Maximum number of variables: 2000
+  Maximum number of arrays: 1500
+  Maximum number of file names: 300
+  Maximum number of stress periods: 999
+  Maximum length of a list of stresses: 50000
+ 
+ ISIMTYPE,ITRACKDIR,ISINK,ISOURCE,IRTOPT,ISTOPT,                   IPGOPT,ITPOPT,IBDOPT,IRZONE,IRRFAC,IADVOBS
+ 1 1 1 1 2 2 1 1 2 2 1 1
+ MPPERIOD,MPSTEP,TFRAC 3 1 0.00000000E+00
+ NPGROUP 1
+ PGNAME  PG00
+ IGRID,IAROPT,ILOCPT,RTSTART,IOPTREL,IPCH 1 1 1 0.00000000E+00 1 1
+ MinLayer,MinRow,MinColumn,MaxLayer,MaxRow,MaxColumn 1 1 1 1 25 25
+ Nfaces 1
+ Face, NProws, NPcolumns 6 2 2
+
+                MP6 IZONE =              1 FOR LAYER  1
+
+                MP6 IZONE =              1 FOR LAYER  2
+
+                MP6 IZONE =              1 FOR LAYER  3
+
+                MP6 IZONE =              1 FOR LAYER  4
+
+                MP6 IZONE =              2 FOR LAYER  5

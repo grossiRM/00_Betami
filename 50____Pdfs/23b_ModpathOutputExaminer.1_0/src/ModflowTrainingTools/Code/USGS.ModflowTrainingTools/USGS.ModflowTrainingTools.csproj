@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B9E464F-3028-4477-9DBB-F119A93C16F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USGS.ModflowTrainingTools</RootNamespace>
+    <AssemblyName>USGS.ModflowTrainingTools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\GeoAPI\bin\Debug\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="USGS.Puma, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\USGS.Puma\bin\Debug\USGS.Puma.dll</HintPath>
+    </Reference>
+    <Reference Include="USGS.Puma.Modflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\USGS.Puma.Modflow\bin\Debug\USGS.Puma.Modflow.dll</HintPath>
+    </Reference>
+    <Reference Include="USGS.Puma.Modpath, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\USGS.Puma.Modpath\bin\Debug\USGS.Puma.Modpath.dll</HintPath>
+    </Reference>
+    <Reference Include="USGS.Puma.NTS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\USGS.Puma.NTS\bin\Debug\USGS.Puma.NTS.dll</HintPath>
+    </Reference>
+    <Reference Include="USGS.Puma.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\PumaFramework\Code\USGS.Puma.UI\bin\Debug\USGS.Puma.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaselinePointEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaselinePointEditDialog.Designer.cs">
+      <DependentUpon>BaselinePointEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basemap.cs" />
+    <Compile Include="BasemapAddLayerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasemapAddLayerDialog.Designer.cs">
+      <DependentUpon>BasemapAddLayerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasemapEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasemapEditDialog.Designer.cs">
+      <DependentUpon>BasemapEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasemapLayer.cs" />
+    <Compile Include="ContourEngineData.cs" />
+    <Compile Include="ModflowMetadaEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModflowMetadaEditDialog.Designer.cs">
+      <DependentUpon>ModflowMetadaEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModflowOutputContoursEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModflowOutputContoursEditDialog.Designer.cs">
+      <DependentUpon>ModflowOutputContoursEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPdfDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPdfDialog.Designer.cs">
+      <DependentUpon>PrintPdfDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveNewBinaryOutputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveNewBinaryOutputDialog.Designer.cs">
+      <DependentUpon>SaveNewBinaryOutputDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaselinePointEditDialog.resx">
+      <DependentUpon>BaselinePointEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasemapAddLayerDialog.resx">
+      <DependentUpon>BasemapAddLayerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasemapEditDialog.resx">
+      <DependentUpon>BasemapEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModflowMetadaEditDialog.resx">
+      <DependentUpon>ModflowMetadaEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModflowOutputContoursEditDialog.resx">
+      <DependentUpon>ModflowOutputContoursEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPdfDialog.resx">
+      <DependentUpon>PrintPdfDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveNewBinaryOutputDialog.resx">
+      <DependentUpon>SaveNewBinaryOutputDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

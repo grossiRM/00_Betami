@@ -1,0 +1,73 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USGS.ModflowTrainingTools", "USGS.ModflowTrainingTools\USGS.ModflowTrainingTools.csproj", "{1B9E464F-3028-4477-9DBB-F119A93C16F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{C05AB3A8-F051-47BD-8266-7EB0B0946E2B}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\AnalysisLayer.bmp = Resources\AnalysisLayer.bmp
+		Resources\AnimationLoop.bmp = Resources\AnimationLoop.bmp
+		Resources\AnimationLoop2.bmp = Resources\AnimationLoop2.bmp
+		Resources\Basemap_1.bmp = Resources\Basemap_1.bmp
+		Resources\BinaryLayerArraySelectedBoth2.bmp = Resources\BinaryLayerArraySelectedBoth2.bmp
+		Resources\BinaryLayerArraySelectedReference2.bmp = Resources\BinaryLayerArraySelectedReference2.bmp
+		Resources\BinaryLayerFile.bmp = Resources\BinaryLayerFile.bmp
+		Resources\BinaryLayerFileSelectedBoth.bmp = Resources\BinaryLayerFileSelectedBoth.bmp
+		Resources\BinaryLayerFileSelectedCurrent.bmp = Resources\BinaryLayerFileSelectedCurrent.bmp
+		Resources\BinaryLayerFileSelectedCurrent2.bmp = Resources\BinaryLayerFileSelectedCurrent2.bmp
+		Resources\BinaryLayerFileSelectedReference.bmp = Resources\BinaryLayerFileSelectedReference.bmp
+		Resources\ContourLayer.bmp = Resources\ContourLayer.bmp
+		Resources\EditMetadata.bmp = Resources\EditMetadata.bmp
+		Resources\EditSymbology.bmp = Resources\EditSymbology.bmp
+		Resources\FilterData.bmp = Resources\FilterData.bmp
+		Resources\find.bmp = Resources\find.bmp
+		Resources\folder_closed.bmp = Resources\folder_closed.bmp
+		Resources\folder_open.bmp = Resources\folder_open.bmp
+		Resources\globe.bmp = Resources\globe.bmp
+		Resources\GriddedValuesLayer.bmp = Resources\GriddedValuesLayer.bmp
+		Resources\hand_1.bmp = Resources\hand_1.bmp
+		Resources\hand_2.bmp = Resources\hand_2.bmp
+		Resources\HideSidePanels.bmp = Resources\HideSidePanels.bmp
+		Resources\LayerArray.bmp = Resources\LayerArray.bmp
+		Resources\map_rolled_up.bmp = Resources\map_rolled_up.bmp
+		Resources\MoveFirst.bmp = Resources\MoveFirst.bmp
+		Resources\MoveForwardAnimate.bmp = Resources\MoveForwardAnimate.bmp
+		Resources\MoveLast.bmp = Resources\MoveLast.bmp
+		Resources\MoveNext.bmp = Resources\MoveNext.bmp
+		Resources\MovePrevious.bmp = Resources\MovePrevious.bmp
+		Resources\ParticleTrackingMap.bmp = Resources\ParticleTrackingMap.bmp
+		Resources\QueryFilterEndpointBmp.bmp = Resources\QueryFilterEndpointBmp.bmp
+		Resources\QueryFilterPathlineBmp.bmp = Resources\QueryFilterPathlineBmp.bmp
+		Resources\QueryFilterTimeseriesBmp.bmp = Resources\QueryFilterTimeseriesBmp.bmp
+		Resources\ReCenter.bmp = Resources\ReCenter.bmp
+		Resources\SelectArrow.bmp = Resources\SelectArrow.bmp
+		Resources\ShowSidePanels.bmp = Resources\ShowSidePanels.bmp
+		Resources\StopAnimation.bmp = Resources\StopAnimation.bmp
+		Resources\ToggleContentsPanelBmp.bmp = Resources\ToggleContentsPanelBmp.bmp
+		Resources\ToggleGrid.bmp = Resources\ToggleGrid.bmp
+		Resources\ToggleMapPanelBmp.bmp = Resources\ToggleMapPanelBmp.bmp
+		Resources\ToggleUtilityPanelBmp.bmp = Resources\ToggleUtilityPanelBmp.bmp
+		Resources\USGS_visual_identity.bmp = Resources\USGS_visual_identity.bmp
+		Resources\ViewBasemap.bmp = Resources\ViewBasemap.bmp
+		Resources\ZoomIn.bmp = Resources\ZoomIn.bmp
+		Resources\ZoomOut.bmp = Resources\ZoomOut.bmp
+		Resources\ZoomToGrid.bmp = Resources\ZoomToGrid.bmp
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B9E464F-3028-4477-9DBB-F119A93C16F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9E464F-3028-4477-9DBB-F119A93C16F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9E464F-3028-4477-9DBB-F119A93C16F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9E464F-3028-4477-9DBB-F119A93C16F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

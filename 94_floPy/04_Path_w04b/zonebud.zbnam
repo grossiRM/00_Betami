@@ -1,5 +1,0 @@
-BEGIN ZONEBUDGET
-  ZON   zonebud.zon
-  BUD   ex01_mf6.cbb
-  GRB   ex01_mf6.dis.grb
-END ZONEBUDGET
