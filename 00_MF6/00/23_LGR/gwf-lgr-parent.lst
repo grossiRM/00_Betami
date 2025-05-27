@@ -1,0 +1,1113 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.6.1 02/10/2025
+
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
+                             Build 20220726_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
+/c /module:win64\mod_mf6\ /object:win64\obj_mf6\
+
+System command used to initiate simulation:
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    NEWTON-RAPHSON method enabled for the model.
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/GWF-LGR-PARENT/DIS                      
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/GWF-LGR-PARENT/NPF                      
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/GWF-LGR-PARENT/IC                       
+
+
+ Setting Discretization Options
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 3
+    NROW = 15
+    NCOL = 15
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+    IDOMAIN set from input file
+ End Setting Discretization Griddata
+
+
+ The specified IDOMAIN results in a reduced number of cells.
+ Number of user nodes: 675
+ Number of nodes in solution: 615
+
+
+ Setting NPF Options
+    Cell-by-cell flow information will be saved to binary file whenever ICBCFL is not zero.
+    Alternative cell averaging [1=logarithmic, 2=AMT-LMK, 3=AMT-HMK] set to: 2
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 set from input file
+    K22 not provided.  Setting K22 = K.
+ End Setting NPF Griddata
+
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/GWF-LGR-PARENT/CHD-1                    
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =      45
+ END OF CHD BASE DIMENSIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/GWF-LGR-PARENT/CHD-2                    
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =      45
+ END OF CHD BASE DIMENSIONS
+
+ SFR   -- SFR PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+ # File generated by Flopy version 3.9.1 on 05/26/2025 at 15:48:19.
+
+ PROCESSING SFR OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+
+ OPENED gwf-lgr-parent.sfr.bud
+ FILE TYPE:DATA(BINARY)   UNIT 1021   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    SFR  BUDGET  WILL BE SAVED TO FILE: gwf-lgr-parent.sfr.bud
+    OPENED ON UNIT: 1021
+    MOVER OPTION ENABLED
+    TIME CONVERSION VALUE (86400.00000000000) SPECIFIED.
+ END OF SFR OPTIONS
+
+ PROCESSING SFR DIMENSIONS
+    NREACHES = 18
+ END OF SFR DIMENSIONS
+
+ PROCESSING SFR PACKAGEDATA
+ END OF SFR PACKAGEDATA
+
+ PROCESSING SFR CONNECTIONDATA
+ END OF SFR CONNECTIONDATA
+    STRT set from input file
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1024
+      FILE NAME: gwf-lgr-parent.dis.grb
+
+ OPENED gwf-lgr-parent.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1024   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ # File generated by Flopy version 3.9.1 on 05/26/2025 at 15:48:19.
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1025
+      FILE NAME: gwf-lgr-parent.bud
+
+ OPENED gwf-lgr-parent.bud
+ FILE TYPE:DATA(BINARY)   UNIT 1025   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1026
+      FILE NAME: gwf-lgr-parent.hds
+
+ OPENED gwf-lgr-parent.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1026   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+ SFR PACKAGE (SFR-PARENT) CONVERSION DATA
+    UNIT CONVERSION VALUE (86400.00000000000).
+
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE SAVED
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL GWF-LGR-PARENT   PACKAGE GWF-LGR-PARENT  CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE CHD-1            ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL GWF-LGR-PARENT   PACKAGE GWF-LGR-PARENT  CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE CHD-2            ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              SFR IN MODEL GWF-LGR-PARENT   PACKAGE GWF-LGR-PARENT  CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1025 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING     FLOW-JA-FACE IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              GWF IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE GWF-LGR-PARENT   ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING         RAINFALL IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING      EVAPORATION IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING           RUNOFF IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       EXT-INFLOW IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING      EXT-OUTFLOW IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING          STORAGE IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING         FROM-MVR IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING           TO-MVR IN MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT      CONNECTED TO MODEL GWF-LGR-PARENT   PACKAGE SFR-PARENT       ON UNIT   1021 AT TIME STEP      1, STRESS PERIOD      1
+1
+  HEAD IN LAYER   1 AT END OF TIME STEP   1 IN STRESS PERIOD    1
+  ---------------------------------------------------------------------------
+
+                1               2               3               4               5               6               7               8               9              10
+               11              12              13              14              15
+ ................................................................................................................................................................................................................................................
+   1      49.7500         49.3325         48.8843         48.4343         47.9877         47.5576         47.1533         46.7774         46.4286         46.1041    
+          45.8015         45.5181         45.2512         44.9969         44.7500    
+   2      49.7500         49.3183         48.8857         48.4324         47.9800         47.5460         47.1404         46.7653         46.4178         46.0945    
+          45.7931         45.5110         45.2457         44.9940         44.7500    
+   3      49.7500         49.3015         48.8994         48.4300         47.9637         47.5213         47.1139         46.7409         46.3962         46.0754    
+          45.7762         45.4965         45.2346         44.9877         44.7500    
+   4      49.7500         49.2996         48.8967         48.4278         47.9363         47.4807         47.0719         46.7039         46.3640         46.0467    
+          45.7508         45.4744         45.2169         44.9777         44.7500    
+   5      49.7500         49.2764         48.8544         48.4487         47.8930         47.4190         47.0113         46.6544         46.3218         46.0087    
+          45.7168         45.4441         45.1913         44.9628         44.7500    
+   6      49.7500         49.2316         48.7550         48.3692         47.8172         47.3261         46.9273         46.5940         46.2710         45.9613    
+          45.6744         45.4050         45.1549         44.9410         44.7500    
+   7      49.7500         49.1664        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.2149         45.9039    
+          45.6243         45.3571         45.0960         44.9045         44.7500    
+   8      49.7500         49.1204        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.1296         45.8322    
+          45.5681         45.2976         45.1069         44.9241         44.7500    
+   9      49.7500         49.0902        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     45.9960         45.7323    
+          45.5029         45.2938         45.1223         44.9348         44.7500    
+  10      49.7500         49.0786        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.0873         45.8084    
+          45.5631         45.3408         45.1412         44.9442         44.7500    
+  11      49.7500         49.0893        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.1376         45.8565    
+          45.6038         45.3726         45.1590         44.9527         44.7500    
+  12      49.7500         49.1322         48.5370         48.0017         47.5674         47.1622         46.7694         46.4558         46.1697         45.8918    
+          45.6346         45.3966         45.1739         44.9598         44.7500    
+  13      49.7500         49.1620         48.5957         48.0775         47.6243         47.2108         46.8288         46.4980         46.1986         45.9180    
+          45.6572         45.4141         45.1852         44.9653         44.7500    
+  14      49.7500         49.1809         48.6313         48.1215         47.6623         47.2449         46.8647         46.5261         46.2194         45.9356    
+          45.6720         45.4256         45.1927         44.9690         44.7500    
+  15      49.7500         49.1900         48.6481         48.1422         47.6813         47.2623         46.8819         46.5402         46.2301         45.9445    
+          45.6794         45.4313         45.1965         44.9709         44.7500    
+1
+  HEAD IN LAYER   2 AT END OF TIME STEP   1 IN STRESS PERIOD    1
+  ---------------------------------------------------------------------------
+
+                1               2               3               4               5               6               7               8               9              10
+               11              12              13              14              15
+ ................................................................................................................................................................................................................................................
+   1      49.7500         49.3299         48.8842         48.4342         47.9876         47.5576         47.1533         46.7774         46.4286         46.1041    
+          45.8015         45.5181         45.2512         44.9970         44.7500    
+   2      49.7500         49.3180         48.8855         48.4324         47.9799         47.5459         47.1404         46.7653         46.4178         46.0946    
+          45.7931         45.5110         45.2458         44.9940         44.7500    
+   3      49.7500         49.3042         48.8949         48.4298         47.9636         47.5213         47.1139         46.7409         46.3962         46.0754    
+          45.7762         45.4965         45.2346         44.9878         44.7500    
+   4      49.7500         49.2995         48.8899         48.4270         47.9362         47.4807         47.0718         46.7039         46.3640         46.0467    
+          45.7508         45.4744         45.2169         44.9777         44.7500    
+   5      49.7500         49.2763         48.8488         48.4330         47.8926         47.4190         47.0113         46.6544         46.3218         46.0087    
+          45.7168         45.4441         45.1914         44.9629         44.7500    
+   6      49.7500         49.2316         48.7545         48.3545         47.8169         47.3271         46.9279         46.5939         46.2710         45.9613    
+          45.6744         45.4051         45.1553         44.9413         44.7500    
+   7      49.7500         49.1670        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.2146         45.9039    
+          45.6244         45.3577         45.1049         44.9110         44.7500    
+   8      49.7500         49.1209        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.1305         45.8329    
+          45.5688         45.3061         45.1089         44.9244         44.7500    
+   9      49.7500         49.0907        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.0212         45.7501    
+          45.5153         45.3009         45.1225         44.9348         44.7500    
+  10      49.7500         49.0792        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.0881         45.8092    
+          45.5636         45.3412         45.1413         44.9442         44.7500    
+  11      49.7500         49.0899        1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30    1.000000E+30     46.1374         45.8566    
+          45.6038         45.3727         45.1591         44.9527         44.7500    
+  12      49.7500         49.1321         48.5372         48.0040         47.5680         47.1623         46.7698         46.4559         46.1697         45.8918    
+          45.6347         45.3967         45.1739         44.9598         44.7500    
+  13      49.7500         49.1619         48.5956         48.0775         47.6242         47.2108         46.8288         46.4980         46.1986         45.9180    
+          45.6572         45.4142         45.1852         44.9653         44.7500    
+  14      49.7500         49.1808         48.6312         48.1214         47.6623         47.2449         46.8647         46.5261         46.2194         45.9357    
+          45.6720         45.4256         45.1928         44.9690         44.7500    
+  15      49.7500         49.1899         48.6480         48.1421         47.6813         47.2623         46.8819         46.5402         46.2302         45.9446    
+          45.6794         45.4313         45.1966         44.9709         44.7500    
+1
+  HEAD IN LAYER   3 AT END OF TIME STEP   1 IN STRESS PERIOD    1
+  ---------------------------------------------------------------------------
+
+                1               2               3               4               5               6               7               8               9              10
+               11              12              13              14              15
+ ................................................................................................................................................................................................................................................
+   1      49.7500         49.3287         48.8841         48.4342         47.9876         47.5576         47.1532         46.7774         46.4286         46.1042    
+          45.8015         45.5181         45.2512         44.9970         44.7500    
+   2      49.7500         49.3179         48.8853         48.4323         47.9799         47.5459         47.1404         46.7653         46.4178         46.0946    
+          45.7931         45.5110         45.2458         44.9940         44.7500    
+   3      49.7500         49.3054         48.8928         48.4297         47.9636         47.5212         47.1139         46.7409         46.3962         46.0754    
+          45.7762         45.4965         45.2346         44.9878         44.7500    
+   4      49.7500         49.2995         48.8866         48.4263         47.9362         47.4807         47.0718         46.7039         46.3640         46.0467    
+          45.7508         45.4744         45.2169         44.9777         44.7500    
+   5      49.7500         49.2762         48.8461         48.4255         47.8923         47.4190         47.0114         46.6544         46.3218         46.0087    
+          45.7168         45.4441         45.1914         44.9629         44.7500    
+   6      49.7500         49.2316         48.7550         48.3483         47.8172         47.3287         46.9290         46.5941         46.2709         45.9613    
+          45.6744         45.4051         45.1556         44.9415         44.7500    
+   7      49.7500         49.1694         48.6410         48.2216         47.7295         47.2253         46.8366         46.5317         46.2133         45.9039    
+          45.6244         45.3581         45.1091         44.9140         44.7500    
+   8      49.7500         49.1234         48.5542         48.1193         47.6621         47.1686         46.7657         46.4474         46.1301         45.8335    
+          45.5694         45.3101         45.1100         44.9247         44.7500    
+   9      49.7500         49.0933         48.4914         48.0256         47.5818         47.1238         46.7029         46.3630         46.0318         45.7585    
+          45.5212         45.3044         45.1227         44.9348         44.7500    
+  10      49.7500         49.0817         48.4599         47.9519         47.5207         47.1017         46.6783         46.3677         46.0877         45.8098    
+          45.5641         45.3414         45.1413         44.9443         44.7500    
+  11      49.7500         49.0924         48.4687         47.9343         47.5147         47.1158         46.6943         46.4069         46.1362         45.8566    
+          45.6039         45.3727         45.1591         44.9527         44.7500    
+  12      49.7500         49.1321         48.5382         48.0064         47.5689         47.1627         46.7708         46.4562         46.1696         45.8918    
+          45.6347         45.3967         45.1740         44.9598         44.7500    
+  13      49.7500         49.1618         48.5955         48.0776         47.6243         47.2108         46.8288         46.4980         46.1986         45.9180    
+          45.6572         45.4142         45.1852         44.9653         44.7500    
+  14      49.7500         49.1807         48.6311         48.1214         47.6622         47.2449         46.8647         46.5261         46.2194         45.9357    
+          45.6720         45.4256         45.1928         44.9690         44.7500    
+  15      49.7500         49.1898         48.6480         48.1421         47.6813         47.2623         46.8819         46.5402         46.2302         45.9446    
+          45.6794         45.4313         45.1966         44.9709         44.7500    
+
+ HEAD WILL BE SAVED ON UNIT 1026 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  SFR-PARENT BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE SFR-PARENT      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 GWF =          62.0743                   GWF =          62.0743
+            RAINFALL =           0.0000              RAINFALL =           0.0000
+         EVAPORATION =           0.0000           EVAPORATION =           0.0000
+              RUNOFF =           0.0000                RUNOFF =           0.0000
+          EXT-INFLOW =          40.0000            EXT-INFLOW =          40.0000
+         EXT-OUTFLOW =       6.5594E-07           EXT-OUTFLOW =       6.5594E-07
+             STORAGE =           0.0000               STORAGE =           0.0000
+            FROM-MVR =         150.5356              FROM-MVR =         150.5356
+              TO-MVR =           0.0000                TO-MVR =           0.0000
+
+            TOTAL IN =         252.6099              TOTAL IN =         252.6099
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 GWF =          33.5902                   GWF =          33.5902
+            RAINFALL =           0.0000              RAINFALL =           0.0000
+         EVAPORATION =           0.0000           EVAPORATION =           0.0000
+              RUNOFF =           0.0000                RUNOFF =           0.0000
+          EXT-INFLOW =           0.0000            EXT-INFLOW =           0.0000
+         EXT-OUTFLOW =         210.5558           EXT-OUTFLOW =         210.5558
+             STORAGE =           0.0000               STORAGE =           0.0000
+            FROM-MVR =           0.0000              FROM-MVR =           0.0000
+              TO-MVR =           8.4638                TO-MVR =           8.4638
+
+           TOTAL OUT =         252.6099             TOTAL OUT =         252.6099
+
+            IN - OUT =           0.0000              IN - OUT =           0.0000
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 CHD =         274.4479                   CHD =         274.4479     CHD-1                            
+                 CHD =           0.0000                   CHD =           0.0000     CHD-2                            
+                 SFR =          33.5902                   SFR =          33.5902     SFR-PARENT                       
+        FLOW-JA-FACE =         350.7417          FLOW-JA-FACE =         350.7417     GWF-GWF_1                        
+    FLOW-JA-FACE-CHD =           0.0000      FLOW-JA-FACE-CHD =           0.0000     GWF-GWF_1                        
+
+            TOTAL IN =         658.7798              TOTAL IN =         658.7798
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 CHD =           0.0000                   CHD =           0.0000     CHD-1                            
+                 CHD =         103.8921                   CHD =         103.8921     CHD-2                            
+                 SFR =          62.0743                   SFR =          62.0743     SFR-PARENT                       
+        FLOW-JA-FACE =         492.8134          FLOW-JA-FACE =         492.8134     GWF-GWF_1                        
+    FLOW-JA-FACE-CHD =           0.0000      FLOW-JA-FACE-CHD =           0.0000     GWF-GWF_1                        
+
+           TOTAL OUT =         658.7798             TOTAL OUT =         658.7798
+
+            IN - OUT =      -9.0968E-07              IN - OUT =      -9.0968E-07
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+
+
+end timestep
+
+
+ EXG GWF-GWF_1   PERIOD      1   STEP        1
+ -----------------------------------------------
+   NUMBER   CELLID                    RATE      
+ -----------------------------------------------
+     1      (1,7,2)              -0.75009674    
+     2      (1,6,3)              -4.24716001E-02
+     3      (1,6,3)              -0.32837442    
+     4      (1,6,3)              -0.61304311    
+     5      (1,6,4)               7.06647747E-02
+     6      (1,6,4)              -0.39705722    
+     7      (1,6,4)              -0.78504493    
+     8      (1,6,5)               0.13963486    
+     9      (1,6,5)              -0.23490980    
+     10     (1,6,5)              -0.61119492    
+     11     (1,6,6)               5.83451322E-02
+     12     (1,6,6)              -0.38836131    
+     13     (1,6,6)              -0.83262963    
+     14     (1,6,7)              -0.15609336    
+     15     (1,6,7)              -0.28300048    
+     16     (1,6,7)              -0.46624242    
+     17     (1,6,8)               5.19927414E-02
+     18     (1,6,8)              -0.15452706    
+     19     (1,7,9)               0.41299266    
+     20     (1,6,8)              -0.32474768    
+     21     (1,7,2)              -0.77458030    
+     22     (1,7,9)               0.37669894    
+     23     (1,7,2)              -0.81177521    
+     24     (1,7,9)               0.34125231    
+     25     (1,8,2)              -0.78294385    
+     26     (1,8,9)               0.40096728    
+     27     (1,8,2)              -0.81938134    
+     28     (1,8,9)               0.35655120    
+     29     (1,8,2)              -0.85076169    
+     30     (1,8,9)               0.29258342    
+     31     (1,9,2)              -0.83560105    
+     32     (1,9,9)               0.30767638    
+     33     (1,9,2)              -0.85832765    
+     34     (1,9,9)               0.38880450    
+     35     (1,9,2)              -0.87148447    
+     36     (1,9,9)               0.40888678    
+     37     (1,10,2)             -0.86754286    
+     38     (1,10,9)              0.30516198    
+     39     (1,10,2)             -0.87580734    
+     40     (1,10,9)              0.31713389    
+     41     (1,10,2)             -0.87687543    
+     42     (1,10,9)              0.33484097    
+     43     (1,11,2)             -0.89199378    
+     44     (1,11,9)              0.29497523    
+     45     (1,11,2)             -0.88952372    
+     46     (1,11,9)              0.31578803    
+     47     (1,11,2)             -0.89338854    
+     48     (1,12,3)              0.14049852    
+     49     (1,12,3)             -0.20103813    
+     50     (1,12,3)             -0.60416968    
+     51     (1,12,4)              8.50219236E-02
+     52     (1,12,4)             -0.56290832    
+     53     (1,12,4)             -0.85224484    
+     54     (1,12,5)              1.86054181E-02
+     55     (1,12,5)             -0.16798534    
+     56     (1,12,5)             -0.41714240    
+     57     (1,12,6)              0.15970724    
+     58     (1,12,6)             -0.12056121    
+     59     (1,12,6)             -0.41501782    
+     60     (1,12,7)              5.43936629E-02
+     61     (1,12,7)             -0.27259410    
+     62     (1,12,7)             -0.48536907    
+     63     (1,12,8)              1.39382447E-02
+     64     (1,12,8)             -0.12774490    
+     65     (1,11,9)              0.34264896    
+     66     (1,12,8)             -0.25736286    
+     67     (1,7,2)              -0.78841260    
+     68     (1,6,3)              -5.97125549E-02
+     69     (1,6,3)              -0.36758536    
+     70     (1,6,3)              -0.68053116    
+     71     (1,6,4)               2.07943534E-02
+     72     (1,6,4)              -0.45024362    
+     73     (1,6,4)              -0.87773161    
+     74     (1,6,5)               0.14877784    
+     75     (1,6,5)              -0.27517937    
+     76     (1,6,5)              -0.70610816    
+     77     (1,6,6)               5.97801866E-02
+     78     (1,6,6)              -0.44427694    
+     79     (1,6,6)              -0.90786892    
+     80     (1,6,7)              -0.14092106    
+     81     (1,6,7)              -0.33784739    
+     82     (1,6,7)              -0.55985699    
+     83     (1,6,8)               5.51549116E-02
+     84     (1,6,8)              -0.18694907    
+     85     (1,7,9)               0.53024983    
+     86     (1,6,8)              -0.38687509    
+     87     (1,7,2)              -0.81425566    
+     88     (1,7,9)               0.48564489    
+     89     (1,7,2)              -0.85331735    
+     90     (1,7,9)               0.44159712    
+     91     (1,8,2)              -0.83152894    
+     92     (1,8,9)               0.52594822    
+     93     (1,8,2)              -0.87032170    
+     94     (1,8,9)               0.47008725    
+     95     (1,8,2)              -0.90373654    
+     96     (1,8,9)               0.39148940    
+     97     (1,9,2)              -0.89378839    
+     98     (1,9,9)               0.47039683    
+     99     (1,9,2)              -0.91829113    
+    100     (1,9,9)               0.53122931    
+    101     (1,9,2)              -0.93273717    
+    102     (1,9,9)               0.55488519    
+    103     (1,10,2)             -0.93132085    
+    104     (1,10,9)              0.40759455    
+    105     (1,10,2)             -0.94033188    
+    106     (1,10,9)              0.42274251    
+    107     (1,10,2)             -0.94141208    
+    108     (1,10,9)              0.44517336    
+    109     (1,11,2)             -0.95577884    
+    110     (1,11,9)              0.38897472    
+    111     (1,11,2)             -0.95304540    
+    112     (1,11,9)              0.41529246    
+    113     (1,11,2)             -0.95678678    
+    114     (1,12,3)              0.14840536    
+    115     (1,12,3)             -0.23433551    
+    116     (1,12,3)             -0.69476685    
+    117     (1,12,4)              0.10149339    
+    118     (1,12,4)             -0.56089336    
+    119     (1,12,4)             -0.91192965    
+    120     (1,12,5)              3.89428648E-02
+    121     (1,12,5)             -0.20446306    
+    122     (1,12,5)             -0.50625355    
+    123     (1,12,6)              0.18806393    
+    124     (1,12,6)             -0.15007806    
+    125     (1,12,6)             -0.50855565    
+    126     (1,12,7)              6.08782756E-02
+    127     (1,12,7)             -0.33339669    
+    128     (1,12,7)             -0.59593064    
+    129     (1,12,8)              1.56879477E-02
+    130     (1,12,8)             -0.15841897    
+    131     (1,11,9)              0.44902780    
+    132     (1,12,8)             -0.31549467    
+    133     (1,7,2)              -0.74866228    
+    134     (1,6,3)              -8.59508994E-02
+    135     (1,6,3)              -0.37370234    
+    136     (1,6,3)              -0.67195236    
+    137     (1,6,4)              -4.25786946E-02
+    138     (1,6,4)              -0.46247080    
+    139     (1,6,4)              -0.86536140    
+    140     (1,6,5)               0.12056600    
+    141     (1,6,5)              -0.28037727    
+    142     (1,6,5)              -0.68795419    
+    143     (1,6,6)               3.65692018E-02
+    144     (1,6,6)              -0.42532068    
+    145     (1,6,6)              -0.82692692    
+    146     (1,6,7)              -0.11890829    
+    147     (1,6,7)              -0.33463403    
+    148     (1,6,7)              -0.54959473    
+    149     (1,6,8)               3.85718411E-02
+    150     (1,6,8)              -0.19110815    
+    151     (1,7,9)               0.53382586    
+    152     (1,6,8)              -0.37882903    
+    153     (1,7,2)              -0.77208274    
+    154     (1,7,9)               0.49197248    
+    155     (1,7,2)              -0.80710974    
+    156     (1,7,9)               0.44989056    
+    157     (1,8,2)              -0.79057531    
+    158     (1,8,9)               0.53104231    
+    159     (1,8,2)              -0.82552276    
+    160     (1,8,9)               0.47827096    
+    161     (1,8,2)              -0.85547775    
+    162     (1,8,9)               0.40684535    
+    163     (1,9,2)              -0.84896015    
+    164     (1,9,9)               0.51430749    
+    165     (1,9,2)              -0.87117995    
+    166     (1,9,9)               0.54466414    
+    167     (1,9,2)              -0.88452462    
+    168     (1,9,9)               0.56388229    
+    169     (1,10,2)             -0.88487931    
+    170     (1,10,9)              0.41549284    
+    171     (1,10,2)             -0.89316312    
+    172     (1,10,9)              0.42951472    
+    173     (1,10,2)             -0.89399472    
+    174     (1,10,9)              0.45058235    
+    175     (1,11,2)             -0.90694189    
+    176     (1,11,9)              0.39562978    
+    177     (1,11,2)             -0.90435692    
+    178     (1,11,9)              0.42056099    
+    179     (1,11,2)             -0.90693452    
+    180     (1,12,3)              0.12044156    
+    181     (1,12,3)             -0.23695108    
+    182     (1,12,3)             -0.67159281    
+    183     (1,12,4)              9.26395828E-02
+    184     (1,12,4)             -0.47148981    
+    185     (1,12,4)             -0.80617093    
+    186     (1,12,5)              4.42367659E-02
+    187     (1,12,5)             -0.20284309    
+    188     (1,12,5)             -0.49087545    
+    189     (1,12,6)              0.16789029    
+    190     (1,12,6)             -0.15238156    
+    191     (1,12,6)             -0.49159097    
+    192     (1,12,7)              4.38310642E-02
+    193     (1,12,7)             -0.32298200    
+    194     (1,12,7)             -0.57161159    
+    195     (1,12,8)              8.94648691E-03
+    196     (1,12,8)             -0.16033697    
+    197     (1,11,9)              0.45218160    
+    198     (1,12,8)             -0.30839863    
+    199     (2,7,2)              -0.81893977    
+    200     (2,6,3)              -0.12384830    
+    201     (2,6,3)              -0.38145036    
+    202     (2,6,3)              -0.65382467    
+    203     (2,6,4)              -5.57304632E-02
+    204     (2,6,4)              -0.41969884    
+    205     (2,6,4)              -0.78306890    
+    206     (2,6,5)               7.54788601E-02
+    207     (2,6,5)              -0.28730108    
+    208     (2,6,5)              -0.65609499    
+    209     (2,6,6)              -7.97206227E-03
+    210     (2,6,6)              -0.41520781    
+    211     (2,6,6)              -0.75783814    
+    212     (2,6,7)              -0.12296635    
+    213     (2,6,7)              -0.33630908    
+    214     (2,6,7)              -0.53518612    
+    215     (2,6,8)               1.12500663E-02
+    216     (2,6,8)              -0.19733648    
+    217     (2,7,9)               0.50548390    
+    218     (2,6,8)              -0.36499077    
+    219     (2,7,2)              -0.84234936    
+    220     (2,7,9)               0.47046153    
+    221     (2,7,2)              -0.87699313    
+    222     (2,7,9)               0.43425142    
+    223     (2,8,2)              -0.86652787    
+    224     (2,8,9)               0.50280566    
+    225     (2,8,2)              -0.90122968    
+    226     (2,8,9)               0.45806364    
+    227     (2,8,2)              -0.93075269    
+    228     (2,8,9)               0.39987007    
+    229     (2,9,2)              -0.92900295    
+    230     (2,9,9)               0.47308750    
+    231     (2,9,2)              -0.95127309    
+    232     (2,9,9)               0.48359107    
+    233     (2,9,2)              -0.96481115    
+    234     (2,9,9)               0.49723655    
+    235     (2,10,2)             -0.96813635    
+    236     (2,10,9)              0.39891322    
+    237     (2,10,2)             -0.97659998    
+    238     (2,10,9)              0.41041752    
+    239     (2,10,2)             -0.97721346    
+    240     (2,10,9)              0.42823984    
+    241     (2,11,2)             -0.99024203    
+    242     (2,11,9)              0.38078613    
+    243     (2,11,2)             -0.98751555    
+    244     (2,11,9)              0.40197212    
+    245     (2,11,2)             -0.98896150    
+    246     (2,12,3)              7.73252934E-02
+    247     (2,12,3)             -0.24211642    
+    248     (2,12,3)             -0.63452251    
+    249     (2,12,4)              5.93433097E-02
+    250     (2,12,4)             -0.41500515    
+    251     (2,12,4)             -0.71971987    
+    252     (2,12,5)              3.23383273E-02
+    253     (2,12,5)             -0.20393986    
+    254     (2,12,5)             -0.46731828    
+    255     (2,12,6)              0.13364845    
+    256     (2,12,6)             -0.15653874    
+    257     (2,12,6)             -0.46355890    
+    258     (2,12,7)              1.16240641E-02
+    259     (2,12,7)             -0.31500973    
+    260     (2,12,7)             -0.53999254    
+    261     (2,12,8)             -6.20558851E-03
+    262     (2,12,8)             -0.16407379    
+    263     (2,11,9)              0.42839637    
+    264     (2,12,8)             -0.29694919    
+    265     (2,7,2)              -0.84468430    
+    266     (2,6,3)              -0.18177349    
+    267     (2,6,3)              -0.39588641    
+    268     (2,6,3)              -0.62782486    
+    269     (2,6,4)              -0.14547473    
+    270     (2,6,4)              -0.44331051    
+    271     (2,6,4)              -0.74904170    
+    272     (2,6,5)               6.44177720E-03
+    273     (2,6,5)              -0.29954422    
+    274     (2,6,5)              -0.61061902    
+    275     (2,6,6)              -7.03027943E-02
+    276     (2,6,6)              -0.40712108    
+    277     (2,6,6)              -0.68522912    
+    278     (2,6,7)              -0.14915285    
+    279     (2,6,7)              -0.33957599    
+    280     (2,6,7)              -0.51047035    
+    281     (2,6,8)              -3.06789544E-02
+    282     (2,6,8)              -0.20734442    
+    283     (2,7,9)               0.54818241    
+    284     (2,6,8)              -0.34702690    
+    285     (2,7,2)              -0.86525178    
+    286     (2,7,9)               0.51711785    
+    287     (2,7,2)              -0.89541441    
+    288     (2,7,9)               0.48378327    
+    289     (2,8,2)              -0.89661856    
+    290     (2,8,9)               0.54744607    
+    291     (2,8,2)              -0.92691122    
+    292     (2,8,9)               0.50692740    
+    293     (2,8,2)              -0.95243635    
+    294     (2,8,9)               0.45605546    
+    295     (2,9,2)              -0.95915427    
+    296     (2,9,9)               0.53937053    
+    297     (2,9,2)              -0.97880687    
+    298     (2,9,9)               0.53959613    
+    299     (2,9,2)              -0.99079063    
+    300     (2,9,9)               0.54992078    
+    301     (2,10,2)             -0.99883778    
+    302     (2,10,9)              0.44274439    
+    303     (2,10,2)             -1.0064813     
+    304     (2,10,9)              0.45271515    
+    305     (2,10,2)             -1.0067804     
+    306     (2,10,9)              0.46889111    
+    307     (2,11,2)             -1.0184190     
+    308     (2,11,9)              0.42221992    
+    309     (2,11,2)             -1.0158932     
+    310     (2,11,9)              0.44142578    
+    311     (2,11,2)             -1.0160066     
+    312     (2,12,3)              1.64737829E-02
+    313     (2,12,3)             -0.24852244    
+    314     (2,12,3)             -0.57882872    
+    315     (2,12,4)              1.37682255E-02
+    316     (2,12,4)             -0.36721555    
+    317     (2,12,4)             -0.62537934    
+    318     (2,12,5)              3.30118500E-03
+    319     (2,12,5)             -0.20448781    
+    320     (2,12,5)             -0.42896853    
+    321     (2,12,6)              8.28172004E-02
+    322     (2,12,6)             -0.16223991    
+    323     (2,12,6)             -0.42126031    
+    324     (2,12,7)             -3.62114902E-02
+    325     (2,12,7)             -0.30815882    
+    326     (2,12,7)             -0.49768584    
+    327     (2,12,8)             -3.27841885E-02
+    328     (2,12,8)             -0.16985138    
+    329     (2,11,9)              0.46483489    
+    330     (2,12,8)             -0.28115866    
+    331     (2,7,2)              -0.82361183    
+    332     (2,6,3)              -0.26162549    
+    333     (3,7,3)               3.5847705     
+    334     (2,6,3)              -0.41628348    
+    335     (3,7,3)               0.96250996    
+    336     (2,6,3)              -0.58839499    
+    337     (3,7,3)              -1.9556790     
+    338     (2,6,4)              -0.25879486    
+    339     (3,7,4)               4.9986310     
+    340     (2,6,4)              -0.47383308    
+    341     (3,7,4)               1.3526106     
+    342     (2,6,4)              -0.69850189    
+    343     (3,7,4)              -2.4566986     
+    344     (2,6,5)              -9.15543629E-02
+    345     (3,7,5)               4.6203387     
+    346     (2,6,5)              -0.31673045    
+    347     (3,7,5)               0.80242796    
+    348     (2,6,5)              -0.54568327    
+    349     (3,7,5)              -3.0795180     
+    350     (2,6,6)              -0.16198852    
+    351     (3,7,6)               4.4468729     
+    352     (2,6,6)              -0.40675747    
+    353     (3,7,6)               0.29676116    
+    354     (2,6,6)              -0.60683795    
+    355     (3,7,6)              -3.0956475     
+    356     (2,6,7)              -0.20341574    
+    357     (3,7,7)               3.0037253     
+    358     (2,6,7)              -0.34842404    
+    359     (3,7,7)               0.54507748    
+    360     (2,6,7)              -0.47585109    
+    361     (3,7,7)              -1.6154763     
+    362     (2,6,8)              -9.08011827E-02
+    363     (3,7,8)               2.8580850     
+    364     (2,6,8)              -0.22133614    
+    365     (3,7,8)               0.64483579    
+    366     (2,7,9)               0.55900749    
+    367     (2,6,8)              -0.32267046    
+    368     (3,7,8)              -1.0733100     
+    369     (2,7,2)              -0.83836156    
+    370     (3,7,3)               2.9834362     
+    371     (3,7,3)              -0.13927542    
+    372     (3,7,3)              -3.4097229     
+    373     (3,7,4)               4.1480790     
+    374     (3,7,4)               0.10010099    
+    375     (3,7,4)              -4.0619545     
+    376     (3,7,5)               4.2307747     
+    377     (3,7,5)               7.52661218E-03
+    378     (3,7,5)              -4.3838507     
+    379     (3,7,6)               3.7725063     
+    380     (3,7,6)              -0.86797689    
+    381     (3,7,6)              -3.9611091     
+    382     (3,7,7)               2.7425706     
+    383     (3,7,7)              -0.46400535    
+    384     (3,7,7)              -2.7667579     
+    385     (3,7,8)               2.4313697     
+    386     (3,7,8)              -7.46169489E-03
+    387     (2,7,9)               0.53654673    
+    388     (3,7,8)              -1.9301710     
+    389     (2,7,2)              -0.85987720    
+    390     (3,7,3)               2.1062607     
+    391     (3,7,3)              -1.3307408     
+    392     (3,7,3)              -4.6956338     
+    393     (3,7,4)               2.6957404     
+    394     (3,7,4)              -1.2394469     
+    395     (3,7,4)              -5.3355885     
+    396     (3,7,5)               3.5400477     
+    397     (3,7,5)              -0.75619204    
+    398     (3,7,5)              -5.3557613     
+    399     (3,7,6)               2.8065620     
+    400     (3,7,6)              -1.3482887     
+    401     (3,7,6)              -4.4995952     
+    402     (3,7,7)               2.1725342     
+    403     (3,7,7)              -1.3607446     
+    404     (3,7,7)              -3.7277302     
+    405     (3,7,8)               1.5835878     
+    406     (3,7,8)              -0.92469659    
+    407     (2,7,9)               0.51142782    
+    408     (3,7,8)              -2.8884388     
+    409     (2,8,2)              -0.87801744    
+    410     (3,8,3)               4.2388366     
+    411     (3,8,3)               0.65433089    
+    412     (3,8,3)              -2.7913976     
+    413     (3,8,4)               5.0269990     
+    414     (3,8,4)               1.1083789     
+    415     (3,8,4)              -2.7959030     
+    416     (3,8,5)               5.2327866     
+    417     (3,8,5)               0.99865301    
+    418     (3,8,5)              -3.7203863     
+    419     (3,8,6)               4.0056903     
+    420     (3,8,6)               0.28536438    
+    421     (3,8,6)              -3.0599295     
+    422     (3,8,7)               4.0000056     
+    423     (3,8,7)               0.30783760    
+    424     (3,8,7)              -2.1339290     
+    425     (3,8,8)               3.6257685     
+    426     (3,8,8)               1.0314088     
+    427     (2,8,9)               0.55971351    
+    428     (3,8,8)              -1.0388650     
+    429     (2,8,2)              -0.89965225    
+    430     (3,8,3)               3.3568027     
+    431     (3,8,3)              -0.35271103    
+    432     (3,8,3)              -3.8534602     
+    433     (3,8,4)               3.8403224     
+    434     (3,8,4)              -1.32474791E-02
+    435     (3,8,4)              -3.8777608     
+    436     (3,8,5)               4.4373251     
+    437     (3,8,5)               0.43902067    
+    438     (3,8,5)              -4.3464498     
+    439     (3,8,6)               3.4155815     
+    440     (3,8,6)              -0.21218936    
+    441     (3,8,6)              -3.6806300     
+    442     (3,8,7)               3.2040076     
+    443     (3,8,7)              -0.55137340    
+    444     (3,8,7)              -3.0422643     
+    445     (3,8,8)               2.5540127     
+    446     (3,8,8)              -0.14642304    
+    447     (2,8,9)               0.52964220    
+    448     (3,8,8)              -2.1860634     
+    449     (2,8,2)              -0.91769641    
+    450     (3,8,3)               2.6211569     
+    451     (3,8,3)              -1.1969144     
+    452     (3,8,3)              -4.7639130     
+    453     (3,8,4)               2.7743727     
+    454     (3,8,4)              -1.0422001     
+    455     (3,8,4)              -4.9934981     
+    456     (3,8,5)               3.2609575     
+    457     (3,8,5)              -0.61457003    
+    458     (3,8,5)              -4.9627116     
+    459     (3,8,6)               2.9520198     
+    460     (3,8,6)              -0.71377637    
+    461     (3,8,6)              -4.2992253     
+    462     (3,8,7)               2.3495676     
+    463     (3,8,7)              -1.3435658     
+    464     (3,8,7)              -3.9303990     
+    465     (3,8,8)               1.3325658     
+    466     (3,8,8)              -1.5896143     
+    467     (2,8,9)               0.49286688    
+    468     (3,8,8)              -3.5890141     
+    469     (2,9,2)              -0.93633393    
+    470     (3,9,3)               4.1701196     
+    471     (3,9,3)               0.26914068    
+    472     (3,9,3)              -3.4436225     
+    473     (3,9,4)               5.1151893     
+    474     (3,9,4)               1.2085588     
+    475     (3,9,4)              -2.7997696     
+    476     (3,9,5)               4.9634291     
+    477     (3,9,5)               1.1291104     
+    478     (3,9,5)              -2.8910568     
+    479     (3,9,6)               4.0306547     
+    480     (3,9,6)               0.36874613    
+    481     (3,9,6)              -3.3742317     
+    482     (3,9,7)               3.6126919     
+    483     (3,9,7)               0.23643268    
+    484     (3,9,7)              -2.5932312     
+    485     (3,9,8)               2.9461794     
+    486     (3,9,8)              -0.26726257    
+    487     (2,9,9)               0.57122217    
+    488     (3,9,8)              -2.3533030     
+    489     (2,9,2)              -0.95051507    
+    490     (3,9,3)               3.5919662     
+    491     (3,9,3)              -0.36495022    
+    492     (3,9,3)              -4.2944784     
+    493     (3,9,4)               4.0462874     
+    494     (3,9,4)              -0.13064591    
+    495     (3,9,4)              -4.0608762     
+    496     (3,9,5)               3.8868901     
+    497     (3,9,5)               4.17967639E-02
+    498     (3,9,5)              -4.1077702     
+    499     (3,9,6)               3.5597729     
+    500     (3,9,6)              -9.89256253E-02
+    501     (3,9,6)              -3.9628111     
+    502     (3,9,7)               2.6954836     
+    503     (3,9,7)              -0.30020107    
+    504     (3,9,7)              -3.3443295     
+    505     (3,9,8)               1.7352067     
+    506     (3,9,8)              -0.58864968    
+    507     (2,9,9)               0.56705027    
+    508     (3,9,8)              -2.5124579     
+    509     (2,9,2)              -0.95911916    
+    510     (3,9,3)               3.2411846     
+    511     (3,9,3)              -0.64175013    
+    512     (3,9,3)              -4.8272084     
+    513     (3,9,4)               2.8213258     
+    514     (3,9,4)              -1.6184109     
+    515     (3,9,4)              -5.3228359     
+    516     (3,9,5)               2.9455454     
+    517     (3,9,5)              -0.94318778    
+    518     (3,9,5)              -5.3449153     
+    519     (3,9,6)               3.2549740     
+    520     (3,9,6)              -0.40983209    
+    521     (3,9,6)              -4.3444468     
+    522     (3,9,7)               2.2015877     
+    523     (3,9,7)              -0.64960354    
+    524     (3,9,7)              -3.7151227     
+    525     (3,9,8)               1.4933001     
+    526     (3,9,8)              -0.51794087    
+    527     (2,9,9)               0.57366499    
+    528     (3,9,8)              -2.2601115     
+    529     (2,10,2)             -0.97334298    
+    530     (3,10,3)              4.0624565     
+    531     (3,10,3)              0.17338461    
+    532     (3,10,3)             -4.3099502     
+    533     (3,10,4)              4.2324708     
+    534     (3,10,4)              8.58613335E-02
+    535     (3,10,4)             -3.3234553     
+    536     (3,10,5)              4.3608245     
+    537     (3,10,5)              0.42642120    
+    538     (3,10,5)             -3.8690630     
+    539     (3,10,6)              3.7085264     
+    540     (3,10,6)              0.12471488    
+    541     (3,10,6)             -3.8437323     
+    542     (3,10,7)              2.7317235     
+    543     (3,10,7)             -5.60581132E-02
+    544     (3,10,7)             -3.0089991     
+    545     (3,10,8)              1.3808383     
+    546     (3,10,8)             -0.66314668    
+    547     (2,10,9)              0.46409775    
+    548     (3,10,8)             -2.0525521     
+    549     (2,10,2)             -0.97898729    
+    550     (3,10,3)              3.8323425     
+    551     (3,10,3)             -9.24084234E-02
+    552     (3,10,3)             -4.7678220     
+    553     (3,10,4)              3.1899913     
+    554     (3,10,4)             -0.41022066    
+    555     (3,10,4)             -3.8686141     
+    556     (3,10,5)              3.7197307     
+    557     (3,10,5)             -0.27436066    
+    558     (3,10,5)             -4.2659229     
+    559     (3,10,6)              3.5265927     
+    560     (3,10,6)             -3.92130002E-02
+    561     (3,10,6)             -4.0301556     
+    562     (3,10,7)              2.4682311     
+    563     (3,10,7)             -0.28229980    
+    564     (3,10,7)             -3.1340287     
+    565     (3,10,8)              1.6012381     
+    566     (3,10,8)             -0.42326172    
+    567     (2,10,9)              0.47114720    
+    568     (3,10,8)             -1.7836209     
+    569     (2,10,2)             -0.97902361    
+    570     (3,10,3)              3.8308618     
+    571     (3,10,3)             -0.11025845    
+    572     (3,10,3)             -4.8876143     
+    573     (3,10,4)              2.7476689     
+    574     (3,10,4)             -0.70384644    
+    575     (3,10,4)             -4.2047698     
+    576     (3,10,5)              3.3245332     
+    577     (3,10,5)             -0.76181890    
+    578     (3,10,5)             -4.1751273     
+    579     (3,10,6)              3.6144204     
+    580     (3,10,6)              3.87033019E-02
+    581     (3,10,6)             -3.9588973     
+    582     (3,10,7)              2.4611104     
+    583     (3,10,7)             -0.33939100    
+    584     (3,10,7)             -3.1068027     
+    585     (3,10,8)              1.9145703     
+    586     (3,10,8)              0.14780403    
+    587     (2,10,9)              0.48322103    
+    588     (3,10,8)             -1.3230132     
+    589     (2,11,2)             -0.98799552    
+    590     (3,11,3)              3.6012647     
+    591     (3,11,3)             -0.32112099    
+    592     (3,11,3)             -5.1516992     
+    593     (3,11,4)              3.2334072     
+    594     (3,11,4)             -0.39469919    
+    595     (3,11,4)             -3.9010365     
+    596     (3,11,5)              3.1485215     
+    597     (3,11,5)             -0.69139538    
+    598     (3,11,5)             -3.7356333     
+    599     (3,11,6)              3.2464887     
+    600     (3,11,6)             -0.28375922    
+    601     (3,11,6)             -4.2168054     
+    602     (3,11,7)              2.1300226     
+    603     (3,11,7)             -1.0172715     
+    604     (3,11,7)             -3.6731292     
+    605     (3,11,8)              0.91319902    
+    606     (3,11,8)             -0.68620333    
+    607     (2,11,9)              0.44317761    
+    608     (3,11,8)             -2.1331389     
+    609     (2,11,2)             -0.98610885    
+    610     (3,11,3)              3.6781828     
+    611     (3,11,3)             -7.90288831E-02
+    612     (3,11,3)             -4.7642068     
+    613     (3,11,4)              3.3667338     
+    614     (3,11,4)             -0.77447725    
+    615     (3,11,4)             -4.2477158     
+    616     (3,11,5)              2.7346748     
+    617     (3,11,5)             -0.35214391    
+    618     (3,11,5)             -3.3944445     
+    619     (3,11,6)              3.4130211     
+    620     (3,11,6)             -1.15750124E-02
+    621     (3,11,6)             -3.7205238     
+    622     (3,11,7)              2.8891942     
+    623     (3,11,7)             -1.0833376     
+    624     (3,11,7)             -3.6872188     
+    625     (3,11,8)              1.5093881     
+    626     (3,11,8)             -0.12219210    
+    627     (2,11,9)              0.45742791    
+    628     (3,11,8)             -1.5895005     
+    629     (2,11,2)             -0.98539797    
+    630     (2,12,3)             -6.69211193E-02
+    631     (3,11,3)              3.7071648     
+    632     (2,12,3)             -0.25797011    
+    633     (3,11,3)              0.46788662    
+    634     (2,12,3)             -0.50072401    
+    635     (3,11,3)             -3.6480596     
+    636     (2,12,4)             -6.13239382E-02
+    637     (3,11,4)              3.8883400     
+    638     (2,12,4)             -0.33380058    
+    639     (3,11,4)             -0.73156153    
+    640     (2,12,4)             -0.52430194    
+    641     (3,11,4)             -3.9615542     
+    642     (2,12,5)             -5.04221434E-02
+    643     (3,11,5)              2.9059696     
+    644     (2,12,5)             -0.20771339    
+    645     (3,11,5)              0.23906149    
+    646     (2,12,5)             -0.37434285    
+    647     (3,11,5)             -2.5861780     
+    648     (2,12,6)              1.00636506E-02
+    649     (3,11,6)              3.4528307     
+    650     (2,12,6)             -0.17044939    
+    651     (3,11,6)              0.39219221    
+    652     (2,12,6)             -0.36112086    
+    653     (3,11,6)             -2.8406849     
+    654     (2,12,7)             -0.10767984    
+    655     (3,11,7)              3.5097739     
+    656     (2,12,7)             -0.30612797    
+    657     (3,11,7)              0.14504212    
+    658     (2,12,7)             -0.44530956    
+    659     (3,11,7)             -2.2148125     
+    660     (2,12,8)             -7.53685158E-02
+    661     (3,11,8)              2.1822875     
+    662     (2,12,8)             -0.17864392    
+    663     (3,11,8)              0.43123023    
+    664     (2,11,9)              0.47434403    
+    665     (2,12,8)             -0.25976308    
+    666     (3,11,8)             -0.94416326    
+ -----------------------------------------------
+
+
