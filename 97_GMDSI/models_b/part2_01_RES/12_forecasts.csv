@@ -1,0 +1,5 @@
+,obsnme,obsval,weight,obgnme,i,j,oname,otype,time,totim,usecol,zone
+oname:sfr_otype:lst_usecol:tailwater_time:4383.5,oname:sfr_otype:lst_usecol:tailwater_time:4383.5,92.91136813210963,1.0,oname:sfr_otype:lst_usecol:tailwater,,,sfr,lst,4383.5,,tailwater,
+oname:sfr_otype:lst_usecol:headwater_time:4383.5,oname:sfr_otype:lst_usecol:headwater_time:4383.5,-127.1925056532082,1.0,oname:sfr_otype:lst_usecol:headwater,,,sfr,lst,4383.5,,headwater,
+oname:hds_otype:lst_usecol:trgw-0-9-1_time:4383.5,oname:hds_otype:lst_usecol:trgw-0-9-1_time:4383.5,35.55984105,1.0,oname:hds_otype:lst_usecol:trgw-0-9-1,,,hds,lst,4383.5,,trgw-0-9-1,
+part_time,part_time,99170.37143,1.0,part,,,,,,,,
