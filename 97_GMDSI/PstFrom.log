@@ -1,0 +1,30 @@
+2025-06-05 15:47:19.878035 starting: opening PstFrom.log for logging
+2025-06-05 15:47:19.879035 starting PstFrom process
+2025-06-05 15:47:19.879035 starting: setting up dirs
+2025-06-05 15:47:19.879035 starting: removing existing new_d 'part2_01_OUTb'
+2025-06-05 15:47:19.899040 finished: removing existing new_d 'part2_01_OUTb' took: 0:00:00.020005
+2025-06-05 15:47:19.899040 starting: copying original_d 'E:\15_REPOS\00_BETAMI\97_GMDSI\models\monthly_model_files_1lyr_newstress_2' to new_d 'part2_01_OUTb'
+2025-06-05 15:47:19.970056 finished: copying original_d 'E:\15_REPOS\00_BETAMI\97_GMDSI\models\monthly_model_files_1lyr_newstress_2' to new_d 'part2_01_OUTb' took: 0:00:00.071016
+2025-06-05 15:47:19.971056 finished: setting up dirs took: 0:00:00.092021
+2025-06-05 15:47:19.975733 transform was not passed, setting default tranform to 'log'
+2025-06-05 15:47:19.975733 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt']
+2025-06-05 15:47:19.976733 starting: loading array part2_01_OUTb\freyberg6.npf_k_layer1.txt
+2025-06-05 15:47:19.985736 finished: loading array part2_01_OUTb\freyberg6.npf_k_layer1.txt took: 0:00:00.009003
+2025-06-05 15:47:19.985736 loaded array 'E:\15_REPOS\00_BETAMI\97_GMDSI\models\monthly_model_files_1lyr_newstress_2\freyberg6.npf_k_layer1.txt' of shape (40, 20)
+2025-06-05 15:47:19.987736 starting: writing array-style template file 'part2_01_OUTb\p_inst0_grid.csv.tpl'
+2025-06-05 15:47:19.987736 starting: writing template file part2_01_OUTb\p_inst0_grid.csv.tpl for ['p_inst:0']
+2025-06-05 15:47:20.000739 finished: writing template file part2_01_OUTb\p_inst0_grid.csv.tpl for ['p_inst:0'] took: 0:00:00.013003
+2025-06-05 15:47:20.000739 starting: writing array-based template file 'part2_01_OUTb\p_inst0_grid.csv.tpl'
+2025-06-05 15:47:20.005740 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt'] took: 0:00:00.030007
+2025-06-05 15:47:20.010741 starting: adding observations from output file heads.csv
+2025-06-05 15:47:20.011741 starting: adding observations from tabular output file '['heads.csv']'
+2025-06-05 15:47:20.011741 starting: reading list-style file: part2_01_OUTb\heads.csv
+2025-06-05 15:47:20.014742 finished: reading list-style file: part2_01_OUTb\heads.csv took: 0:00:00.003001
+2025-06-05 15:47:20.016743 starting: building insfile for tabular output file heads.csv
+2025-06-05 15:47:20.021744 finished: building insfile for tabular output file heads.csv took: 0:00:00.005001
+2025-06-05 15:47:20.021744 starting: adding observation from instruction file 'part2_01_OUTb\heads.csv.ins'
+2025-06-05 15:47:20.038747 finished: adding observation from instruction file 'part2_01_OUTb\heads.csv.ins' took: 0:00:00.017003
+2025-06-05 15:47:20.039748 finished: adding observations from tabular output file '['heads.csv']' took: 0:00:00.028007
+2025-06-05 15:47:20.039748 finished: adding observations from output file heads.csv took: 0:00:00.029007
+2025-06-05 15:47:20.095675 forward_run line:pyemu.os_utils.run(r'mf6')
+

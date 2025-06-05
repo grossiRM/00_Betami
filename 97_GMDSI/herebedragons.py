@@ -9,9 +9,19 @@ import matplotlib.pyplot as plt
 import zipfile
 import shutil
 import sys
-# sys.path.insert(0,os.path.join("..","..","dependencies"))                               
 import pyemu
 import flopy
+
+bin_path = os.path.join( "..", "bin", "win")
+
+def prep_bins(dest_path):
+    files = os.listdir(bin_path)
+    for f in files:
+        if os.path.exists(os.path.join(dest_path,f)):
+            os.remove(os.path.join(dest_path,f))
+        shutil.copy2(os.path.join(bin_path,f),os.path.join(dest_path,f))
+
+
 
 def prep_forecasts(pst, model_times=False):
     pred_csv = os.path.join('..', '..', 'models', 'daily_freyberg_mf6_truth',"pred_data.csv")
@@ -81,20 +91,6 @@ def prep_deps(template_ws, dep_dir=None):
     #     shutil.copytree(org_d, new_d)
     return
 
-
-if "linux" in platform.platform().lower():
-    bin_path = os.path.join("..","..", "bin_new", "linux")
-elif "darwin" in platform.platform().lower() or "macos" in platform.platform().lower():
-    bin_path = os.path.join("..","..", "bin_new", "mac")
-else:
-    bin_path = os.path.join("..", "..", "bin_new", "win")
-
-def prep_bins(dest_path):
-    files = os.listdir(bin_path)
-    for f in files:
-        if os.path.exists(os.path.join(dest_path,f)):
-            os.remove(os.path.join(dest_path,f))
-        shutil.copy2(os.path.join(bin_path,f),os.path.join(dest_path,f))
 
 def run_notebook(notebook_filename, path):
     notebook_filename = os.path.join(path,notebook_filename)

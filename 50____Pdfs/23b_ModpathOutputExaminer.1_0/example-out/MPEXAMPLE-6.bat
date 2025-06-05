@@ -1,2 +1,0 @@
- MP6 EXAMPLE-6
- PAUSE

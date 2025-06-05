@@ -5,8 +5,8 @@ conda info --envs
 	jupyter notebook
 ---------------------------------------------------------------------------------------
 Restart - folder 00
-https://www.youtube.com/watch?v=cbDu9QuJGdI	01	35:29 Katie Freyberg				58:02 Katie
-https://www.youtube.com/watch?v=kbptE_LRE7E	02
+https://www.youtube.com/watch?v=cbDu9QuJGdI	01	35:29 Freyberg (i)	58:02 Katie (iii)
+https://www.youtube.com/watch?v=kbptE_LRE7E	02	 2:30 Freyberg (ii)     17.08  (Bayes...)  18:03 Fienen (Objective function 37:00...)   ; Freyberg (iii)
 https://www.youtube.com/watch?v=xs9Zx4_4vL4	03
 https://www.youtube.com/watch?v=evD5HybJwp0	04
 https://www.youtube.com/watch?v=MNaqUkATW1Q	05
