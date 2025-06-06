@@ -1,4 +1,4 @@
-OPEN GIT BASH HERE .
+OPEN GIT BASH HERE 
 CTRL INSERT
 CTRL C
 ---------------------------------------------------------------------------------------
