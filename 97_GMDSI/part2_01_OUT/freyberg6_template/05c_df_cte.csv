@@ -1,0 +1,2 @@
+,parnme,parval1,pargp,tpl_filename,input_filename,partype,partrans,parubnd,parlbnd,parchglim,scale,offset,dercom
+pname:npfklayer1cn_inst:0_ptype:cn_pstyle:m,pname:npfklayer1cn_inst:0_ptype:cn_pstyle:m,1.0,npfklayer1cn,part2_01_OUT\freyberg6_template\npfklayer1cn_inst0_constant.csv.tpl,part2_01_OUT\freyberg6_template\mult\npfklayer1cn_inst0_constant.csv,constant,log,5.0,0.2,factor,1.0,0.0,1

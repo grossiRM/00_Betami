@@ -1,4 +1,4 @@
-2025-06-05 15:47:23.744179 starting: opening plot_pst_helper.log for logging
-2025-06-05 15:47:23.744179 plot_utils.pst_helper()
-2025-06-05 15:47:23.744179 starting: plot res_phi_pie
-2025-06-05 15:47:23.875200 finished: plot res_phi_pie took: 0:00:00.131021
+2025-06-06 14:23:19.165193 starting: opening plot_pst_helper.log for logging
+2025-06-06 14:23:19.165193 plot_utils.pst_helper()
+2025-06-06 14:23:19.166193 starting: plot res_phi_pie
+2025-06-06 14:23:19.282219 finished: plot res_phi_pie took: 0:00:00.116026
