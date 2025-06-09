@@ -1,0 +1,69 @@
+time,elapsed_seconds,message
+10:36:39,6.79e-05,PEST++ performance logger started
+10:36:39,0.0008521,starting to process control file
+10:36:39,0.0215715,finished processing control file
+10:36:39,0.0189948,initializing
+10:36:39,0.0003221,using glm algorithm
+10:36:39,0.000102,using REDSVD for truncated svd solve
+10:36:39,0.0001014,maxsing: 10000000
+10:36:39,0.0001042,eigthresh:  1e-06
+10:36:39,9.64e-05,initializing localizer
+10:36:39,0.0001031,not using localization
+10:36:39,0.0001037,using lambda multipliers: 
+10:36:39,0.0001048,using lambda scaling factors: 
+10:36:39,9.81e-05,acceptable phi factor:  1.05
+10:36:39,9.85e-05,lambda increase factor:  10
+10:36:39,9.88e-05,lambda decrease factor:  0.75
+10:36:39,0.0002282,max run fail:  1
+10:36:39,0.0001022,initializing prior parameter covariance matrix
+10:36:39,1.12e-05,initializing parcov
+10:36:39,0.0011382,parcov loaded  from parameter bounds, using par_sigma_range 4
+10:36:39,0.0017965,initializing observation noise covariance matrix
+10:36:39,0.0004555,obscov loaded  from observation weights
+10:36:39,0.0006157,using reg_factor:  0
+10:36:39,9.32e-05,drawing parameter realizations:  100
+10:36:39,0.0017137,parameters not grouped by parameter groups, reordering par ensemble
+10:36:39,0.0021983,making standard normal draws
+10:36:39,0.0024345,scaling by std
+10:36:39,6.12e-05,checking realization for invalid values
+10:36:39,0.0005642,resizing reals matrix
+10:36:39,0.0002319,filling reals matrix and adding mean values
+10:36:39,0.0038111,not using prior parameter covariance matrix scaling
+10:36:39,9.22e-05,drawing observation noise realizations:  100
+10:36:39,0.0010563,making standard normal draws
+10:36:39,0.0009709,scaling by std
+10:36:39,2.72e-05,checking realization for invalid values
+10:36:39,0.0002295,resizing reals matrix
+10:36:39,9.29e-05,filling reals matrix and adding mean values
+10:36:39,0.0012291,setting weights ensemble from control file weights
+10:36:39,0.0847709,saved weight ensemble to  freyberg_prior.weights.csv
+10:36:39,2.78e-05,checking for denormal values in weights ensemble
+10:36:39,0.0002605,adding 'base' parameter values to ensemble
+10:36:39,0.0019937,adding 'base' observation values to ensemble
+10:36:39,0.0004207,adding 'base' weight values to weight ensemble
+10:36:39,0.0002741,checking for denormal values in pe
+10:36:39,0.127369,saved initial parameter ensemble to  freyberg_prior.0.par.csv
+10:36:39,0.0001177,checking for denormal values in obs + noise ensemble
+10:36:39,0.09112,saved obs+noise observation ensemble (obsval + noise realizations) to  freyberg_prior.obs+noise.csv
+10:36:39,0.0001416,using subset in lambda testing, number of realizations used in subset testing:  4
+10:36:39,8.9e-05,subset how:  RANDOM
+10:36:39,0.0018687,centering on ensemble mean vector
+10:36:39,3.54e-05,running initial ensemble
+10:36:39,0.0002309,running initial ensemble of size 100
+10:36:39,3.42e-05,queuing 100 runs
+10:36:39,0.040748,making runs
+10:37:37,57.9141,processing runs
+10:37:37,0.12217,saved initial obs ensemble to freyberg_prior.0.obs.csv
+10:37:37,0.0241865,calc pre-drop phi
+10:37:37,0.0038099,pre-drop initial phi summary
+10:37:37,0.0068367,checking for prior-data conflict...
+10:37:37,0.0015755,WARNING: 9 non-zero weighted observations are in conflict with the prior simulated ensemble.
+
+10:37:37,0.0003998,  WARNING: Prior-data conflict detected.  Continuing with IES parameter
+           adjustment will likely result in parameter and forecast bias.
+           Consider using 'ies_drop_conflicts' as a quick fix.
+10:37:37,0.0911976,saved adjusted weight ensemble to  freyberg_prior.adjusted.weights.csv
+10:37:37,1.91e-05,calc initial phi
+10:37:37,0.003173,initial phi summary
+10:37:37,0.0065998,current lambda: 1
+10:37:37,0.0001091,initialization complete

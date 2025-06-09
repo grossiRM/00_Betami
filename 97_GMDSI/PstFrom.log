@@ -1,30 +1,18 @@
-2025-06-06 14:23:11.034118 starting: opening PstFrom.log for logging
-2025-06-06 14:23:11.034118 starting PstFrom process
-2025-06-06 14:23:11.034118 starting: setting up dirs
-2025-06-06 14:23:11.035118 starting: removing existing new_d 'part2_01_OUT_b\beta_template'
-2025-06-06 14:23:11.135141 finished: removing existing new_d 'part2_01_OUT_b\beta_template' took: 0:00:00.100023
-2025-06-06 14:23:11.135141 starting: copying original_d 'part2_01_OUT_b' to new_d 'part2_01_OUT_b\beta_template'
-2025-06-06 14:23:15.043025 finished: copying original_d 'part2_01_OUT_b' to new_d 'part2_01_OUT_b\beta_template' took: 0:00:03.907884
-2025-06-06 14:23:15.044025 finished: setting up dirs took: 0:00:04.009907
-2025-06-06 14:23:15.126105 transform was not passed, setting default tranform to 'log'
-2025-06-06 14:23:15.126105 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt']
-2025-06-06 14:23:15.126105 starting: loading array part2_01_OUT_b\beta_template\freyberg6.npf_k_layer1.txt
-2025-06-06 14:23:15.136107 finished: loading array part2_01_OUT_b\beta_template\freyberg6.npf_k_layer1.txt took: 0:00:00.010002
-2025-06-06 14:23:15.137108 loaded array 'part2_01_OUT_b\freyberg6.npf_k_layer1.txt' of shape (40, 20)
-2025-06-06 14:23:15.139108 starting: writing array-style template file 'part2_01_OUT_b\beta_template\p_inst0_grid.csv.tpl'
-2025-06-06 14:23:15.139108 starting: writing template file part2_01_OUT_b\beta_template\p_inst0_grid.csv.tpl for ['p_inst:0']
-2025-06-06 14:23:15.154112 finished: writing template file part2_01_OUT_b\beta_template\p_inst0_grid.csv.tpl for ['p_inst:0'] took: 0:00:00.015004
-2025-06-06 14:23:15.154112 starting: writing array-based template file 'part2_01_OUT_b\beta_template\p_inst0_grid.csv.tpl'
-2025-06-06 14:23:15.160113 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt'] took: 0:00:00.034008
-2025-06-06 14:23:15.161113 starting: adding observations from output file heads.csv
-2025-06-06 14:23:15.161113 starting: adding observations from tabular output file '['heads.csv']'
-2025-06-06 14:23:15.162113 starting: reading list-style file: part2_01_OUT_b\beta_template\heads.csv
-2025-06-06 14:23:15.165114 finished: reading list-style file: part2_01_OUT_b\beta_template\heads.csv took: 0:00:00.003001
-2025-06-06 14:23:15.167114 starting: building insfile for tabular output file heads.csv
-2025-06-06 14:23:15.173116 finished: building insfile for tabular output file heads.csv took: 0:00:00.006002
-2025-06-06 14:23:15.173116 starting: adding observation from instruction file 'part2_01_OUT_b\beta_template\heads.csv.ins'
-2025-06-06 14:23:15.191120 finished: adding observation from instruction file 'part2_01_OUT_b\beta_template\heads.csv.ins' took: 0:00:00.018004
-2025-06-06 14:23:15.192120 finished: adding observations from tabular output file '['heads.csv']' took: 0:00:00.031007
-2025-06-06 14:23:15.192120 finished: adding observations from output file heads.csv took: 0:00:00.031007
-2025-06-06 14:23:15.264335 forward_run line:pyemu.os_utils.run(r'mf6')
-
+2025-06-07 14:14:40.883093 starting: opening PstFrom.log for logging
+2025-06-07 14:14:40.883093 starting PstFrom process
+2025-06-07 14:14:40.883093 starting: setting up dirs
+2025-06-07 14:14:40.883093 starting: removing existing new_d 'part2_01b2\beta_t2'
+2025-06-07 14:14:41.008105 finished: removing existing new_d 'part2_01b2\beta_t2' took: 0:00:00.125012
+2025-06-07 14:14:41.008105 starting: copying original_d 'E:\15_REPOS\00_BETAMI\97_GMDSI\00\part2_01b' to new_d 'part2_01b2\beta_t2'
+2025-06-07 14:14:41.658567 finished: copying original_d 'E:\15_REPOS\00_BETAMI\97_GMDSI\00\part2_01b' to new_d 'part2_01b2\beta_t2' took: 0:00:00.650462
+2025-06-07 14:14:41.658567 finished: setting up dirs took: 0:00:00.775474
+2025-06-07 14:14:41.720271 starting: adding observations from output file heads.csv
+2025-06-07 14:14:41.720271 starting: adding observations from tabular output file '['heads.csv']'
+2025-06-07 14:14:41.720271 starting: reading list-style file: part2_01b2\beta_t2\heads.csv
+2025-06-07 14:14:41.726802 finished: reading list-style file: part2_01b2\beta_t2\heads.csv took: 0:00:00.006531
+2025-06-07 14:14:41.726802 starting: building insfile for tabular output file heads.csv
+2025-06-07 14:14:41.736807 finished: building insfile for tabular output file heads.csv took: 0:00:00.010005
+2025-06-07 14:14:41.736807 starting: adding observation from instruction file 'part2_01b2\beta_t2\heads.csv.ins'
+2025-06-07 14:14:41.752437 finished: adding observation from instruction file 'part2_01b2\beta_t2\heads.csv.ins' took: 0:00:00.015630
+2025-06-07 14:14:41.752437 finished: adding observations from tabular output file '['heads.csv']' took: 0:00:00.032166
+2025-06-07 14:14:41.752437 finished: adding observations from output file heads.csv took: 0:00:00.032166
