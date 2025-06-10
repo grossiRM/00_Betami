@@ -1,0 +1,196 @@
+
+PANTHER master listening on socket:0.0.0.0:4004 (IPv4)
+running model 50 times
+06/10/25 15:35:55->waiting for agents to appear
+
+06/10/25 15:35:55->new connection from:DESKTOP-AIRQM2M:64542
+06/10/25 15:35:55->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 socket:DESKTOP-AIRQM2M:64542 number of agents:1
+06/10/25 15:35:55->new connection from:DESKTOP-AIRQM2M:64543
+06/10/25 15:35:55->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 socket:DESKTOP-AIRQM2M:64543 number of agents:2
+06/10/25 15:35:55->new connection from:DESKTOP-AIRQM2M:64544
+06/10/25 15:35:55->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 socket:DESKTOP-AIRQM2M:64544 number of agents:3
+06/10/25 15:35:55->new connection from:DESKTOP-AIRQM2M:64545
+06/10/25 15:35:55->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 socket:DESKTOP-AIRQM2M:64545 number of agents:4
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64546
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 socket:DESKTOP-AIRQM2M:64546 number of agents:5
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64547
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 socket:DESKTOP-AIRQM2M:64547 number of agents:6
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64548
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 socket:DESKTOP-AIRQM2M:64548 number of agents:7
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 socket:DESKTOP-AIRQM2M:64542
+06/10/25 15:35:56->Sending run_id:0 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 group_id:2  da_cycle:-9999   realization:0 concurrent:1)
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64549
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 socket:DESKTOP-AIRQM2M:64549 number of agents:8
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 socket:DESKTOP-AIRQM2M:64543
+06/10/25 15:35:56->Sending run_id:1 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 group_id:2  da_cycle:-9999   realization:1 concurrent:1)
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64550
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 socket:DESKTOP-AIRQM2M:64550 number of agents:9
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 socket:DESKTOP-AIRQM2M:64544
+06/10/25 15:35:56->Sending run_id:2 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 group_id:2  da_cycle:-9999   realization:2 concurrent:1)
+06/10/25 15:35:56->new connection from:DESKTOP-AIRQM2M:64551
+06/10/25 15:35:56->initializing new agent connection from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 socket:DESKTOP-AIRQM2M:64551 number of agents:10
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 socket:DESKTOP-AIRQM2M:64545
+06/10/25 15:35:56->Sending run_id:3 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 group_id:2  da_cycle:-9999   realization:3 concurrent:1)
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 socket:DESKTOP-AIRQM2M:64546
+06/10/25 15:35:56->Sending run_id:4 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 group_id:2  da_cycle:-9999   realization:4 concurrent:1)
+06/10/25 15:35:56->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 socket:DESKTOP-AIRQM2M:64547
+06/10/25 15:35:56->Sending run_id:5 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 group_id:2  da_cycle:-9999   realization:5 concurrent:1)
+06/10/25 15:35:57->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 socket:DESKTOP-AIRQM2M:64548
+06/10/25 15:35:57->Sending run_id:6 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 group_id:2  da_cycle:-9999   realization:6 concurrent:1)
+06/10/25 15:35:57->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 socket:DESKTOP-AIRQM2M:64549
+06/10/25 15:35:57->Sending run_id:7 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 group_id:2  da_cycle:-9999   realization:7 concurrent:1)
+06/10/25 15:35:57->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 socket:DESKTOP-AIRQM2M:64550
+06/10/25 15:35:57->Sending run_id:8 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 group_id:2  da_cycle:-9999   realization:8 concurrent:1)
+06/10/25 15:35:57->new agent ready:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 socket:DESKTOP-AIRQM2M:64551
+06/10/25 15:35:57->Sending run_id:9 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 group_id:2  da_cycle:-9999   realization:9 concurrent:1)
+06/10/25 15:36:02-> run_id:0 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0  run_time:0.0969833  avg_run_time:0.0969833 group_id:2  da_cycle:-9999   realization:0  worker_time:0.0951667 concurrent:1
+06/10/25 15:36:02->run 0 processed
+06/10/25 15:36:02->Sending run_id:10 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 group_id:2  da_cycle:-9999   realization:10 concurrent:1)
+06/10/25 15:36:02-> run_id:1 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1  run_time:0.09875  avg_run_time:0.0978667 group_id:2  da_cycle:-9999   realization:1  worker_time:0.09685 concurrent:1
+06/10/25 15:36:02->run 1 processed
+06/10/25 15:36:02->Sending run_id:11 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 group_id:2  da_cycle:-9999   realization:11 concurrent:1)
+06/10/25 15:36:02-> run_id:2 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2  run_time:0.0972  avg_run_time:0.0976444 group_id:2  da_cycle:-9999   realization:2  worker_time:0.0955167 concurrent:1
+06/10/25 15:36:02->run 2 processed
+06/10/25 15:36:02->Sending run_id:12 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 group_id:2  da_cycle:-9999   realization:12 concurrent:1)
+06/10/25 15:36:02-> run_id:3 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3  run_time:0.103617  avg_run_time:0.0991375 group_id:2  da_cycle:-9999   realization:3  worker_time:0.101817 concurrent:1
+06/10/25 15:36:02->run 3 processed
+06/10/25 15:36:02->Sending run_id:13 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 group_id:2  da_cycle:-9999   realization:13 concurrent:1)
+06/10/25 15:36:03-> run_id:5 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5  run_time:0.102083  avg_run_time:0.0997267 group_id:2  da_cycle:-9999   realization:5  worker_time:0.1004 concurrent:1
+06/10/25 15:36:03->run 5 processed
+06/10/25 15:36:03->Sending run_id:14 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 group_id:2  da_cycle:-9999   realization:14 concurrent:1)
+06/10/25 15:36:03-> run_id:4 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4  run_time:0.10325  avg_run_time:0.100314 group_id:2  da_cycle:-9999   realization:4  worker_time:0.101517 concurrent:1
+06/10/25 15:36:03->run 4 processed
+06/10/25 15:36:03->Sending run_id:15 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 group_id:2  da_cycle:-9999   realization:15 concurrent:1)
+06/10/25 15:36:03-> run_id:6 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6  run_time:0.103267  avg_run_time:0.100736 group_id:2  da_cycle:-9999   realization:6  worker_time:0.101483 concurrent:1
+06/10/25 15:36:03->run 6 processed
+06/10/25 15:36:03->Sending run_id:16 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 group_id:2  da_cycle:-9999   realization:16 concurrent:1)
+06/10/25 15:36:03-> run_id:7 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7  run_time:0.103617  avg_run_time:0.101096 group_id:2  da_cycle:-9999   realization:7  worker_time:0.101733 concurrent:1
+06/10/25 15:36:03->run 7 processed
+06/10/25 15:36:03->Sending run_id:17 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 group_id:2  da_cycle:-9999   realization:17 concurrent:1)
+06/10/25 15:36:03-> run_id:8 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8  run_time:0.103267  avg_run_time:0.101337 group_id:2  da_cycle:-9999   realization:8  worker_time:0.1014 concurrent:1
+06/10/25 15:36:03->run 8 processed
+06/10/25 15:36:03->Sending run_id:18 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 group_id:2  da_cycle:-9999   realization:18 concurrent:1)
+06/10/25 15:36:03-> run_id:9 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9  run_time:0.1033  avg_run_time:0.101533 group_id:2  da_cycle:-9999   realization:9  worker_time:0.1015 concurrent:1
+06/10/25 15:36:03->run 9 processed
+06/10/25 15:36:03->Sending run_id:19 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 group_id:2  da_cycle:-9999   realization:19 concurrent:1)
+06/10/25 15:36:07-> run_id:10 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0  run_time:0.0900667  avg_run_time:0.100842 group_id:2  da_cycle:-9999   realization:10  worker_time:0.0811333 concurrent:1
+06/10/25 15:36:07->run 10 processed
+06/10/25 15:36:07->Sending run_id:20 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 group_id:2  da_cycle:-9999   realization:20 concurrent:1)
+06/10/25 15:36:07-> run_id:11 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1  run_time:0.0909167  avg_run_time:0.100058 group_id:2  da_cycle:-9999   realization:11  worker_time:0.0810333 concurrent:1
+06/10/25 15:36:07->run 11 processed
+06/10/25 15:36:07->Sending run_id:21 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 group_id:2  da_cycle:-9999   realization:21 concurrent:1)
+06/10/25 15:36:07-> run_id:12 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2  run_time:0.0899833  avg_run_time:0.0993367 group_id:2  da_cycle:-9999   realization:12  worker_time:0.081 concurrent:1
+06/10/25 15:36:07->run 12 processed
+06/10/25 15:36:07->Sending run_id:22 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 group_id:2  da_cycle:-9999   realization:22 concurrent:1)
+06/10/25 15:36:08-> run_id:13 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3  run_time:0.09575  avg_run_time:0.09855 group_id:2  da_cycle:-9999   realization:13  worker_time:0.0859167 concurrent:1
+06/10/25 15:36:08->run 13 processed
+06/10/25 15:36:08->Sending run_id:23 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 group_id:2  da_cycle:-9999   realization:23 concurrent:1)
+06/10/25 15:36:08-> run_id:14 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5  run_time:0.09485  avg_run_time:0.0978267 group_id:2  da_cycle:-9999   realization:14  worker_time:0.0857833 concurrent:1
+06/10/25 15:36:08->run 14 processed
+06/10/25 15:36:08->Sending run_id:24 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 group_id:2  da_cycle:-9999   realization:24 concurrent:1)
+06/10/25 15:36:08-> run_id:15 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4  run_time:0.0953667  avg_run_time:0.0970383 group_id:2  da_cycle:-9999   realization:15  worker_time:0.0857833 concurrent:1
+06/10/25 15:36:08->run 15 processed
+06/10/25 15:36:08->Sending run_id:25 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 group_id:2  da_cycle:-9999   realization:25 concurrent:1)
+06/10/25 15:36:08-> run_id:16 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6  run_time:0.0954  avg_run_time:0.0962517 group_id:2  da_cycle:-9999   realization:16  worker_time:0.0856667 concurrent:1
+06/10/25 15:36:08->run 16 processed
+06/10/25 15:36:08->Sending run_id:26 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 group_id:2  da_cycle:-9999   realization:26 concurrent:1)
+06/10/25 15:36:08-> run_id:17 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7  run_time:0.0955667  avg_run_time:0.0954467 group_id:2  da_cycle:-9999   realization:17  worker_time:0.0856167 concurrent:1
+06/10/25 15:36:08->run 17 processed
+06/10/25 15:36:08->Sending run_id:27 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 group_id:2  da_cycle:-9999   realization:27 concurrent:1)
+06/10/25 15:36:08-> run_id:18 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8  run_time:0.09555  avg_run_time:0.094675 group_id:2  da_cycle:-9999   realization:18  worker_time:0.0860167 concurrent:1
+06/10/25 15:36:08->run 18 processed
+06/10/25 15:36:08->Sending run_id:28 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 group_id:2  da_cycle:-9999   realization:28 concurrent:1)
+06/10/25 15:36:08-> run_id:19 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9  run_time:0.0955833  avg_run_time:0.0939033 group_id:2  da_cycle:-9999   realization:19  worker_time:0.0860167 concurrent:1
+06/10/25 15:36:08->run 19 processed
+06/10/25 15:36:08->Sending run_id:29 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 group_id:2  da_cycle:-9999   realization:29 concurrent:1)
+06/10/25 15:36:11-> run_id:20 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0  run_time:0.0840667  avg_run_time:0.0933033 group_id:2  da_cycle:-9999   realization:20  worker_time:0.0762167 concurrent:1
+06/10/25 15:36:11->run 20 processed
+06/10/25 15:36:11->Sending run_id:30 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 group_id:2  da_cycle:-9999   realization:30 concurrent:1)
+06/10/25 15:36:12-> run_id:21 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1  run_time:0.0846  avg_run_time:0.0926717 group_id:2  da_cycle:-9999   realization:21  worker_time:0.0763333 concurrent:1
+06/10/25 15:36:12->run 21 processed
+06/10/25 15:36:12->Sending run_id:31 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 group_id:2  da_cycle:-9999   realization:31 concurrent:1)
+06/10/25 15:36:12-> run_id:22 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2  run_time:0.08665  avg_run_time:0.0923383 group_id:2  da_cycle:-9999   realization:22  worker_time:0.0814667 concurrent:1
+06/10/25 15:36:12->run 22 processed
+06/10/25 15:36:12->Sending run_id:32 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 group_id:2  da_cycle:-9999   realization:32 concurrent:1)
+06/10/25 15:36:13-> run_id:23 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3  run_time:0.0924  avg_run_time:0.0920033 group_id:2  da_cycle:-9999   realization:23  worker_time:0.08715 concurrent:1
+06/10/25 15:36:13->run 23 processed
+06/10/25 15:36:13-> run_id:25 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4  run_time:0.0914  avg_run_time:0.0916067 group_id:2  da_cycle:-9999   realization:25  worker_time:0.0856 concurrent:1
+06/10/25 15:36:13->run 25 processed
+06/10/25 15:36:13->Sending run_id:33 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 group_id:2  da_cycle:-9999   realization:33 concurrent:1)
+06/10/25 15:36:13->Sending run_id:34 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 group_id:2  da_cycle:-9999   realization:34 concurrent:1)
+06/10/25 15:36:13-> run_id:24 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5  run_time:0.0915833  avg_run_time:0.09128 group_id:2  da_cycle:-9999   realization:24  worker_time:0.08655 concurrent:1
+06/10/25 15:36:13->run 24 processed
+06/10/25 15:36:13->Sending run_id:35 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 group_id:2  da_cycle:-9999   realization:35 concurrent:1)
+06/10/25 15:36:13-> run_id:26 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6  run_time:0.0921  avg_run_time:0.09095 group_id:2  da_cycle:-9999   realization:26  worker_time:0.08695 concurrent:1
+06/10/25 15:36:13->run 26 processed
+06/10/25 15:36:13->Sending run_id:36 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 group_id:2  da_cycle:-9999   realization:36 concurrent:1)
+06/10/25 15:36:14-> run_id:27 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7  run_time:0.0922667  avg_run_time:0.09062 group_id:2  da_cycle:-9999   realization:27  worker_time:0.0872667 concurrent:1
+06/10/25 15:36:14->run 27 processed
+06/10/25 15:36:14->Sending run_id:37 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 group_id:2  da_cycle:-9999   realization:37 concurrent:1)
+06/10/25 15:36:14-> run_id:28 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8  run_time:0.0916  avg_run_time:0.090225 group_id:2  da_cycle:-9999   realization:28  worker_time:0.0858167 concurrent:1
+06/10/25 15:36:14->run 28 processed
+06/10/25 15:36:14->Sending run_id:38 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 group_id:2  da_cycle:-9999   realization:38 concurrent:1)
+06/10/25 15:36:14-> run_id:29 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9  run_time:0.09235  avg_run_time:0.0899017 group_id:2  da_cycle:-9999   realization:29  worker_time:0.0873833 concurrent:1
+06/10/25 15:36:14->run 29 processed
+06/10/25 15:36:14->Sending run_id:39 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 group_id:2  da_cycle:-9999   realization:39 concurrent:1)
+06/10/25 15:36:17-> run_id:30 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0  run_time:0.0864667  avg_run_time:0.0901417 group_id:2  da_cycle:-9999   realization:30  worker_time:0.0871167 concurrent:1
+06/10/25 15:36:17->run 30 processed
+06/10/25 15:36:17->Sending run_id:40 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0 group_id:2  da_cycle:-9999   realization:40 concurrent:1)
+06/10/25 15:36:17-> run_id:31 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1  run_time:0.0865  avg_run_time:0.0903317 group_id:2  da_cycle:-9999   realization:31  worker_time:0.0871333 concurrent:1
+06/10/25 15:36:17->run 31 processed
+06/10/25 15:36:17->Sending run_id:41 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1 group_id:2  da_cycle:-9999   realization:41 concurrent:1)
+06/10/25 15:36:17-> run_id:32 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2  run_time:0.0877333  avg_run_time:0.09044 group_id:2  da_cycle:-9999   realization:32  worker_time:0.0870333 concurrent:1
+06/10/25 15:36:17->run 32 processed
+06/10/25 15:36:17->Sending run_id:42 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2 group_id:2  da_cycle:-9999   realization:42 concurrent:1)
+06/10/25 15:36:19-> run_id:34 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4  run_time:0.0920333  avg_run_time:0.0905033 group_id:2  da_cycle:-9999   realization:34  worker_time:0.0909333 concurrent:1
+06/10/25 15:36:19->run 34 processed
+06/10/25 15:36:19->Sending run_id:43 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4 group_id:2  da_cycle:-9999   realization:43 concurrent:1)
+06/10/25 15:36:19-> run_id:33 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3  run_time:0.0934833  avg_run_time:0.0906117 group_id:2  da_cycle:-9999   realization:33  worker_time:0.0928 concurrent:1
+06/10/25 15:36:19->run 33 processed
+06/10/25 15:36:19->Sending run_id:44 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3 group_id:2  da_cycle:-9999   realization:44 concurrent:1)
+06/10/25 15:36:19-> run_id:35 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5  run_time:0.0929667  avg_run_time:0.09075 group_id:2  da_cycle:-9999   realization:35  worker_time:0.0925667 concurrent:1
+06/10/25 15:36:19->run 35 processed
+06/10/25 15:36:19->Sending run_id:45 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5 group_id:2  da_cycle:-9999   realization:45 concurrent:1)
+06/10/25 15:36:19-> run_id:36 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6  run_time:0.0959167  avg_run_time:0.0911317 group_id:2  da_cycle:-9999   realization:36  worker_time:0.0979333 concurrent:1
+06/10/25 15:36:19->run 36 processed
+06/10/25 15:36:19->Sending run_id:46 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6 group_id:2  da_cycle:-9999   realization:46 concurrent:1)
+06/10/25 15:36:20-> run_id:37 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7  run_time:0.09595  avg_run_time:0.0915 group_id:2  da_cycle:-9999   realization:37  worker_time:0.09785 concurrent:1
+06/10/25 15:36:20->run 37 processed
+06/10/25 15:36:20->Sending run_id:47 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7 group_id:2  da_cycle:-9999   realization:47 concurrent:1)
+06/10/25 15:36:20-> run_id:38 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8  run_time:0.0958333  avg_run_time:0.0919233 group_id:2  da_cycle:-9999   realization:38  worker_time:0.0982667 concurrent:1
+06/10/25 15:36:20->run 38 processed
+06/10/25 15:36:20->Sending run_id:48 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8 group_id:2  da_cycle:-9999   realization:48 concurrent:1)
+06/10/25 15:36:20-> run_id:39 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9  run_time:0.0951833  avg_run_time:0.0922067 group_id:2  da_cycle:-9999   realization:39  worker_time:0.0964 concurrent:1
+06/10/25 15:36:20->run 39 processed
+06/10/25 15:36:20->Sending run_id:49 to:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9 group_id:2  da_cycle:-9999   realization:BASE concurrent:1)
+06/10/25 15:36:22-> run_id:40 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_0  run_time:0.0903833  avg_run_time:0.0925983 group_id:2  da_cycle:-9999   realization:40  worker_time:0.0925 concurrent:1
+06/10/25 15:36:22->run 40 processed
+06/10/25 15:36:23-> run_id:41 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_1  run_time:0.0903333  avg_run_time:0.0929817 group_id:2  da_cycle:-9999   realization:41  worker_time:0.0922833 concurrent:1
+06/10/25 15:36:23->run 41 processed
+06/10/25 15:36:23-> run_id:42 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_2  run_time:0.09075  avg_run_time:0.0932833 group_id:2  da_cycle:-9999   realization:42  worker_time:0.0920667 concurrent:1
+06/10/25 15:36:23->run 42 processed
+06/10/25 15:36:24-> run_id:43 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_4  run_time:0.0927333  avg_run_time:0.0933533 group_id:2  da_cycle:-9999   realization:43  worker_time:0.0916333 concurrent:1
+06/10/25 15:36:24->run 43 processed
+06/10/25 15:36:24-> run_id:44 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_3  run_time:0.09335  avg_run_time:0.09334 group_id:2  da_cycle:-9999   realization:44  worker_time:0.09145 concurrent:1
+06/10/25 15:36:24->run 44 processed
+06/10/25 15:36:25-> run_id:45 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_5  run_time:0.09565  avg_run_time:0.0936083 group_id:2  da_cycle:-9999   realization:45  worker_time:0.0965333 concurrent:1
+06/10/25 15:36:25->run 45 processed
+06/10/25 15:36:25-> run_id:46 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_6  run_time:0.0951167  avg_run_time:0.0935283 group_id:2  da_cycle:-9999   realization:46  worker_time:0.09265 concurrent:1
+06/10/25 15:36:25->run 46 processed
+06/10/25 15:36:25-> run_id:49 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_9  run_time:0.0922167  avg_run_time:0.0932317 group_id:2  da_cycle:-9999   realization:base  worker_time:0.0876 concurrent:1
+06/10/25 15:36:25->run 49 processed
+06/10/25 15:36:25-> run_id:47 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_7  run_time:0.0952667  avg_run_time:0.0931633 group_id:2  da_cycle:-9999   realization:47  worker_time:0.0928833 concurrent:1
+06/10/25 15:36:25->run 47 processed
+06/10/25 15:36:25-> run_id:48 received from:DESKTOP-AIRQM2M$E:\15_REPOS\00_BETAMI\97_GMDSI\worker_8  run_time:0.0951667  avg_run_time:0.0930967 group_id:2  da_cycle:-9999   realization:48  worker_time:0.0928167 concurrent:1
+06/10/25 15:36:25->run 48 processed
+
+---------------------
+   50 runs complete :  0 runs failed
+   0.0931 avg run time (min) : 0.559 run mgr time (min)
+   10 agents connected
+
+
+
+06/10/25 15:36:28->Started idle ping thread.
+06/10/25 15:36:28->Panther idle ping thread resumed.
+06/10/25 15:36:29->Stopped idle ping thread, as Panther manager is shutting down.

@@ -1,0 +1,1652 @@
+2025-06-10 15:14:52.324782 starting: opening PstFrom.log for logging
+2025-06-10 15:14:52.324782 starting PstFrom process
+2025-06-10 15:14:52.324782 starting: setting up dirs
+2025-06-10 15:14:52.324782 starting: copying original_d '01_setup_pestpp' to new_d '01_setup_pestpp\template2'
+2025-06-10 15:14:53.207434 finished: copying original_d '01_setup_pestpp' to new_d '01_setup_pestpp\template2' took: 0:00:00.882652
+2025-06-10 15:14:53.207434 finished: setting up dirs took: 0:00:00.882652
+2025-06-10 15:14:53.223042 WARNING: add_py_function() command: replace_time_with_datetime(csv_file) is not being called directly
+2025-06-10 15:14:53.244825 starting: adding observations from output file datetime_sfr.csv
+2025-06-10 15:14:53.244825 starting: adding observations from tabular output file '['datetime_sfr.csv']'
+2025-06-10 15:14:53.244825 starting: reading list-style file: 01_setup_pestpp\template2\datetime_sfr.csv
+2025-06-10 15:14:53.244825 finished: reading list-style file: 01_setup_pestpp\template2\datetime_sfr.csv took: 0:00:00
+2025-06-10 15:14:53.244825 starting: building insfile for tabular output file datetime_sfr.csv
+2025-06-10 15:14:53.244825 finished: building insfile for tabular output file datetime_sfr.csv took: 0:00:00
+2025-06-10 15:14:53.244825 starting: adding observation from instruction file '01_setup_pestpp\template2\datetime_sfr.csv.ins'
+2025-06-10 15:14:53.244825 finished: adding observation from instruction file '01_setup_pestpp\template2\datetime_sfr.csv.ins' took: 0:00:00
+2025-06-10 15:14:53.244825 finished: adding observations from tabular output file '['datetime_sfr.csv']' took: 0:00:00
+2025-06-10 15:14:53.244825 finished: adding observations from output file datetime_sfr.csv took: 0:00:00
+2025-06-10 15:14:53.334847 starting: adding observations from output file datetime_heads.csv
+2025-06-10 15:14:53.334847 starting: adding observations from tabular output file '['datetime_heads.csv']'
+2025-06-10 15:14:53.334847 starting: reading list-style file: 01_setup_pestpp\template2\datetime_heads.csv
+2025-06-10 15:14:53.344854 finished: reading list-style file: 01_setup_pestpp\template2\datetime_heads.csv took: 0:00:00.010007
+2025-06-10 15:14:53.344854 starting: building insfile for tabular output file datetime_heads.csv
+2025-06-10 15:14:53.360484 finished: building insfile for tabular output file datetime_heads.csv took: 0:00:00.015630
+2025-06-10 15:14:53.360484 starting: adding observation from instruction file '01_setup_pestpp\template2\datetime_heads.csv.ins'
+2025-06-10 15:14:53.376111 finished: adding observation from instruction file '01_setup_pestpp\template2\datetime_heads.csv.ins' took: 0:00:00.015627
+2025-06-10 15:14:53.376111 finished: adding observations from tabular output file '['datetime_heads.csv']' took: 0:00:00.041264
+2025-06-10 15:14:53.376111 finished: adding observations from output file datetime_heads.csv took: 0:00:00.041264
+2025-06-10 15:14:53.507440 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:53.507440 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt']
+2025-06-10 15:14:53.507440 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:53.507440 WARNING: 0) Inconsistency between geostruct transform and partrans.
+2025-06-10 15:14:53.507440 WARNING: 1) Setting geostruct transform to log
+2025-06-10 15:14:53.507440 WARNING: -) Better to pass an appropriately transformed geostruct
+2025-06-10 15:14:53.507440 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer1.txt
+2025-06-10 15:14:53.507440 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer1.txt took: 0:00:00
+2025-06-10 15:14:53.507440 loaded array '01_setup_pestpp\freyberg6.npf_k_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:53.507440 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:53.507440 starting: writing template file 01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.tpl for ['npf_k_layer1_gr_inst:0']
+2025-06-10 15:14:53.523065 finished: writing template file 01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.tpl for ['npf_k_layer1_gr_inst:0'] took: 0:00:00.015625
+2025-06-10 15:14:53.523065 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:53.523065 saving zone array 01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k_layer1_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:53.538692 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt'] took: 0:00:00.031252
+2025-06-10 15:14:53.538692 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:53.538692 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt']
+2025-06-10 15:14:53.538692 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:53.538692 WARNING: 0) Inconsistency between geostruct transform and partrans.
+2025-06-10 15:14:53.538692 WARNING: 1) Setting geostruct transform to log
+2025-06-10 15:14:53.538692 WARNING: -) Better to pass an appropriately transformed geostruct
+2025-06-10 15:14:53.538692 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer1.txt
+2025-06-10 15:14:53.538692 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer1.txt took: 0:00:00
+2025-06-10 15:14:53.538692 loaded array '01_setup_pestpp\freyberg6.npf_k_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:53.545197 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer1_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:53.545197 starting: setting up pilot point parameters
+2025-06-10 15:14:53.545197 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:53.545197 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:53.545197 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:53.545197 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:53.545197 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:53.545197 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:53.545197 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:53.545197 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:53.545197 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:53.545197 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:53.545197 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:53.545197 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:53.545197 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:53.545197 OK - using spatial reference in parent object.
+2025-06-10 15:14:53.607704 29 pilot point parameters created
+2025-06-10 15:14:53.607704 pilot point 'pargp':n,p,f,_,k,_,l,a,y,e,r,1,_,p,p
+2025-06-10 15:14:53.607704 finished: setting up pilot point parameters took: 0:00:00.062507
+2025-06-10 15:14:53.623329 starting: calculating factors for pargp=npf_k_layer1_pp
+2025-06-10 15:14:53.623329 saving krige variance file:01_setup_pestpp\template2\npf_k_layer1_pp_inst0pp.var.dat
+2025-06-10 15:14:53.623329 saving krige factors file:01_setup_pestpp\template2\npf_k_layer1_pp_inst0pp.fac
+2025-06-10 15:14:57.732833 finished: calculating factors for pargp=npf_k_layer1_pp took: 0:00:04.109504
+2025-06-10 15:14:57.732833 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer1_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:57.732833 saving zone array 01_setup_pestpp\template2\npf_k_layer1_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k_layer1_pp_inst0pp.dat.tpl
+2025-06-10 15:14:57.739339 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer1.txt'] took: 0:00:04.200647
+2025-06-10 15:14:57.739339 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:57.739339 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer2.txt']
+2025-06-10 15:14:57.739339 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:04.231899
+2025-06-10 15:14:57.739339 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer2.txt
+2025-06-10 15:14:57.739339 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer2.txt took: 0:00:00
+2025-06-10 15:14:57.739339 loaded array '01_setup_pestpp\freyberg6.npf_k_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:57.739339 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:57.739339 starting: writing template file 01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.tpl for ['npf_k_layer2_gr_inst:0']
+2025-06-10 15:14:57.754967 finished: writing template file 01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.tpl for ['npf_k_layer2_gr_inst:0'] took: 0:00:00.015628
+2025-06-10 15:14:57.754967 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:57.754967 saving zone array 01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k_layer2_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:57.770594 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer2.txt'] took: 0:00:00.031255
+2025-06-10 15:14:57.770594 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:57.770594 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer2.txt']
+2025-06-10 15:14:57.770594 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:04.231902
+2025-06-10 15:14:57.770594 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer2.txt
+2025-06-10 15:14:57.770594 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer2.txt took: 0:00:00
+2025-06-10 15:14:57.770594 loaded array '01_setup_pestpp\freyberg6.npf_k_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:57.770594 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer2_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:57.770594 starting: setting up pilot point parameters
+2025-06-10 15:14:57.770594 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:57.770594 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:57.770594 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:57.770594 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:57.770594 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:57.770594 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:57.770594 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:57.770594 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:57.770594 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:57.770594 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:57.770594 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:57.770594 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:57.770594 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:57.770594 OK - using spatial reference in parent object.
+2025-06-10 15:14:57.839618 29 pilot point parameters created
+2025-06-10 15:14:57.839618 pilot point 'pargp':n,p,f,_,k,_,l,a,y,e,r,2,_,p,p
+2025-06-10 15:14:57.839618 finished: setting up pilot point parameters took: 0:00:00.069024
+2025-06-10 15:14:57.839618 reusing factors
+2025-06-10 15:14:57.839618 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer2_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:57.839618 saving zone array 01_setup_pestpp\template2\npf_k_layer2_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k_layer2_pp_inst0pp.dat.tpl
+2025-06-10 15:14:57.855260 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer2.txt'] took: 0:00:00.084666
+2025-06-10 15:14:57.855260 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:57.855260 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer3.txt']
+2025-06-10 15:14:57.855260 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:57.855260 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer3.txt
+2025-06-10 15:14:57.855260 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer3.txt took: 0:00:00
+2025-06-10 15:14:57.855260 loaded array '01_setup_pestpp\freyberg6.npf_k_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:57.855260 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:57.855260 starting: writing template file 01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.tpl for ['npf_k_layer3_gr_inst:0']
+2025-06-10 15:14:57.870886 finished: writing template file 01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.tpl for ['npf_k_layer3_gr_inst:0'] took: 0:00:00.015626
+2025-06-10 15:14:57.870886 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:57.870886 saving zone array 01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k_layer3_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:57.870886 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k_layer3.txt'] took: 0:00:00.015626
+2025-06-10 15:14:57.870886 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:57.870886 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer3.txt']
+2025-06-10 15:14:57.870886 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:57.870886 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer3.txt
+2025-06-10 15:14:57.886512 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k_layer3.txt took: 0:00:00.015626
+2025-06-10 15:14:57.886512 loaded array '01_setup_pestpp\freyberg6.npf_k_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:57.886512 starting: writing array-style template file '01_setup_pestpp\template2\npf_k_layer3_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:57.886512 starting: setting up pilot point parameters
+2025-06-10 15:14:57.886512 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:57.886512 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:57.886512 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:57.886512 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:57.886512 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:57.886512 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:57.886512 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:57.886512 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:57.886512 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:57.886512 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:57.886512 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:57.886512 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:57.886512 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:57.886512 OK - using spatial reference in parent object.
+2025-06-10 15:14:57.955510 29 pilot point parameters created
+2025-06-10 15:14:57.955510 pilot point 'pargp':n,p,f,_,k,_,l,a,y,e,r,3,_,p,p
+2025-06-10 15:14:57.955510 finished: setting up pilot point parameters took: 0:00:00.068998
+2025-06-10 15:14:57.955510 reusing factors
+2025-06-10 15:14:57.955510 starting: writing array-based template file '01_setup_pestpp\template2\npf_k_layer3_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:57.955510 saving zone array 01_setup_pestpp\template2\npf_k_layer3_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k_layer3_pp_inst0pp.dat.tpl
+2025-06-10 15:14:57.955510 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k_layer3.txt'] took: 0:00:00.084624
+2025-06-10 15:14:57.986762 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:57.986762 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer1.txt']
+2025-06-10 15:14:57.986762 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.131502
+2025-06-10 15:14:57.986762 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer1.txt
+2025-06-10 15:14:58.002388 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer1.txt took: 0:00:00.015626
+2025-06-10 15:14:58.002388 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.002388 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.002388 starting: writing template file 01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.tpl for ['npf_k33_layer1_gr_inst:0']
+2025-06-10 15:14:58.018014 finished: writing template file 01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.tpl for ['npf_k33_layer1_gr_inst:0'] took: 0:00:00.015626
+2025-06-10 15:14:58.018014 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.018014 saving zone array 01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer1_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.018014 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer1.txt'] took: 0:00:00.031252
+2025-06-10 15:14:58.018014 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.018014 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer1.txt']
+2025-06-10 15:14:58.018014 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.147128
+2025-06-10 15:14:58.018014 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer1.txt
+2025-06-10 15:14:58.018014 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer1.txt took: 0:00:00
+2025-06-10 15:14:58.018014 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.018014 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer1_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.018014 starting: setting up pilot point parameters
+2025-06-10 15:14:58.018014 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.018014 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.018014 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.018014 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.018014 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.018014 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.018014 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.018014 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.018014 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.018014 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.018014 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.018014 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.018014 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.018014 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.087025 29 pilot point parameters created
+2025-06-10 15:14:58.087025 pilot point 'pargp':n,p,f,_,k,3,3,_,l,a,y,e,r,1,_,p,p
+2025-06-10 15:14:58.087025 finished: setting up pilot point parameters took: 0:00:00.069011
+2025-06-10 15:14:58.102651 reusing factors
+2025-06-10 15:14:58.102651 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer1_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.102651 saving zone array 01_setup_pestpp\template2\npf_k33_layer1_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer1_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.102651 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer1.txt'] took: 0:00:00.084637
+2025-06-10 15:14:58.102651 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.102651 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer2.txt']
+2025-06-10 15:14:58.102651 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.102651 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer2.txt
+2025-06-10 15:14:58.118277 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer2.txt took: 0:00:00.015626
+2025-06-10 15:14:58.118277 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.118277 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.118277 starting: writing template file 01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.tpl for ['npf_k33_layer2_gr_inst:0']
+2025-06-10 15:14:58.133903 finished: writing template file 01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.tpl for ['npf_k33_layer2_gr_inst:0'] took: 0:00:00.015626
+2025-06-10 15:14:58.133903 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.133903 saving zone array 01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer2_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.140409 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer2.txt'] took: 0:00:00.037758
+2025-06-10 15:14:58.140409 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.140409 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer2.txt']
+2025-06-10 15:14:58.140409 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.140409 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer2.txt
+2025-06-10 15:14:58.140409 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer2.txt took: 0:00:00
+2025-06-10 15:14:58.140409 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.140409 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer2_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.140409 starting: setting up pilot point parameters
+2025-06-10 15:14:58.140409 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.140409 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.140409 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.140409 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.140409 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.140409 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.140409 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.140409 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.140409 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.140409 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.140409 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.140409 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.140409 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.140409 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.202915 29 pilot point parameters created
+2025-06-10 15:14:58.202915 pilot point 'pargp':n,p,f,_,k,3,3,_,l,a,y,e,r,2,_,p,p
+2025-06-10 15:14:58.202915 finished: setting up pilot point parameters took: 0:00:00.062506
+2025-06-10 15:14:58.218541 reusing factors
+2025-06-10 15:14:58.218541 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer2_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.218541 saving zone array 01_setup_pestpp\template2\npf_k33_layer2_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer2_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.218541 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer2.txt'] took: 0:00:00.078132
+2025-06-10 15:14:58.218541 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.218541 starting: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer3.txt']
+2025-06-10 15:14:58.218541 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.115890
+2025-06-10 15:14:58.218541 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer3.txt
+2025-06-10 15:14:58.218541 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer3.txt took: 0:00:00
+2025-06-10 15:14:58.218541 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:58.234168 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.234168 starting: writing template file 01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.tpl for ['npf_k33_layer3_gr_inst:0']
+2025-06-10 15:14:58.240673 finished: writing template file 01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.tpl for ['npf_k33_layer3_gr_inst:0'] took: 0:00:00.006505
+2025-06-10 15:14:58.240673 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.240673 saving zone array 01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer3_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.240673 finished: adding grid type m style parameters for file(s) ['freyberg6.npf_k33_layer3.txt'] took: 0:00:00.022132
+2025-06-10 15:14:58.240673 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.240673 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer3.txt']
+2025-06-10 15:14:58.240673 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.100264
+2025-06-10 15:14:58.240673 starting: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer3.txt
+2025-06-10 15:14:58.240673 finished: loading array 01_setup_pestpp\template2\freyberg6.npf_k33_layer3.txt took: 0:00:00
+2025-06-10 15:14:58.240673 loaded array '01_setup_pestpp\freyberg6.npf_k33_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:58.256301 starting: writing array-style template file '01_setup_pestpp\template2\npf_k33_layer3_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.256301 starting: setting up pilot point parameters
+2025-06-10 15:14:58.256301 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.256301 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.256301 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.256301 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.256301 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.256301 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.256301 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.256301 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.256301 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.256301 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.256301 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.256301 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.256301 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.256301 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.318805 29 pilot point parameters created
+2025-06-10 15:14:58.318805 pilot point 'pargp':n,p,f,_,k,3,3,_,l,a,y,e,r,3,_,p,p
+2025-06-10 15:14:58.318805 finished: setting up pilot point parameters took: 0:00:00.062504
+2025-06-10 15:14:58.318805 reusing factors
+2025-06-10 15:14:58.318805 starting: writing array-based template file '01_setup_pestpp\template2\npf_k33_layer3_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.318805 saving zone array 01_setup_pestpp\template2\npf_k33_layer3_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\npf_k33_layer3_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.334431 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.npf_k33_layer3.txt'] took: 0:00:00.093758
+2025-06-10 15:14:58.356564 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.356564 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer1.txt']
+2025-06-10 15:14:58.356564 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.356564 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer1.txt
+2025-06-10 15:14:58.356564 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer1.txt took: 0:00:00
+2025-06-10 15:14:58.356564 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.372190 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.372190 starting: writing template file 01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.tpl for ['sto_ss_layer1_gr_inst:0']
+2025-06-10 15:14:58.387817 finished: writing template file 01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.tpl for ['sto_ss_layer1_gr_inst:0'] took: 0:00:00.015627
+2025-06-10 15:14:58.387817 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.387817 saving zone array 01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer1_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.387817 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer1.txt'] took: 0:00:00.031253
+2025-06-10 15:14:58.387817 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.387817 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer1.txt']
+2025-06-10 15:14:58.387817 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.387817 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer1.txt
+2025-06-10 15:14:58.387817 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer1.txt took: 0:00:00
+2025-06-10 15:14:58.387817 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.387817 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer1_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.387817 starting: setting up pilot point parameters
+2025-06-10 15:14:58.387817 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.387817 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.387817 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.387817 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.387817 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.387817 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.387817 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.387817 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.387817 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.387817 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.387817 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.387817 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.387817 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.387817 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.456857 29 pilot point parameters created
+2025-06-10 15:14:58.456857 pilot point 'pargp':s,t,o,_,s,s,_,l,a,y,e,r,1,_,p,p
+2025-06-10 15:14:58.456857 finished: setting up pilot point parameters took: 0:00:00.069040
+2025-06-10 15:14:58.456857 reusing factors
+2025-06-10 15:14:58.456857 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer1_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.456857 saving zone array 01_setup_pestpp\template2\sto_ss_layer1_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer1_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.472482 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer1.txt'] took: 0:00:00.084665
+2025-06-10 15:14:58.472482 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.472482 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer2.txt']
+2025-06-10 15:14:58.472482 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.115918
+2025-06-10 15:14:58.472482 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer2.txt
+2025-06-10 15:14:58.472482 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer2.txt took: 0:00:00
+2025-06-10 15:14:58.472482 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.472482 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.472482 starting: writing template file 01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.tpl for ['sto_ss_layer2_gr_inst:0']
+2025-06-10 15:14:58.488116 finished: writing template file 01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.tpl for ['sto_ss_layer2_gr_inst:0'] took: 0:00:00.015634
+2025-06-10 15:14:58.488116 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.488116 saving zone array 01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer2_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.503748 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer2.txt'] took: 0:00:00.031266
+2025-06-10 15:14:58.503748 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.503748 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer2.txt']
+2025-06-10 15:14:58.503748 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.115931
+2025-06-10 15:14:58.503748 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer2.txt
+2025-06-10 15:14:58.503748 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer2.txt took: 0:00:00
+2025-06-10 15:14:58.503748 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.503748 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer2_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.503748 starting: setting up pilot point parameters
+2025-06-10 15:14:58.503748 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.503748 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.503748 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.503748 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.503748 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.503748 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.503748 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.503748 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.503748 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.503748 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.503748 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.503748 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.503748 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.503748 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.641426 29 pilot point parameters created
+2025-06-10 15:14:58.641426 pilot point 'pargp':s,t,o,_,s,s,_,l,a,y,e,r,2,_,p,p
+2025-06-10 15:14:58.641426 finished: setting up pilot point parameters took: 0:00:00.137678
+2025-06-10 15:14:58.641426 reusing factors
+2025-06-10 15:14:58.641426 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer2_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.641426 saving zone array 01_setup_pestpp\template2\sto_ss_layer2_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer2_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.657195 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer2.txt'] took: 0:00:00.153447
+2025-06-10 15:14:58.657195 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.657195 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer3.txt']
+2025-06-10 15:14:58.657195 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.657195 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer3.txt
+2025-06-10 15:14:58.657195 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer3.txt took: 0:00:00
+2025-06-10 15:14:58.657195 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:58.657195 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.657195 starting: writing template file 01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.tpl for ['sto_ss_layer3_gr_inst:0']
+2025-06-10 15:14:58.672680 finished: writing template file 01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.tpl for ['sto_ss_layer3_gr_inst:0'] took: 0:00:00.015485
+2025-06-10 15:14:58.672680 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.672680 saving zone array 01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer3_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.688306 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_ss_layer3.txt'] took: 0:00:00.031111
+2025-06-10 15:14:58.688306 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.688306 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer3.txt']
+2025-06-10 15:14:58.688306 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.688306 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer3.txt
+2025-06-10 15:14:58.688306 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_ss_layer3.txt took: 0:00:00
+2025-06-10 15:14:58.688306 loaded array '01_setup_pestpp\freyberg6.sto_ss_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:58.688306 starting: writing array-style template file '01_setup_pestpp\template2\sto_ss_layer3_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.688306 starting: setting up pilot point parameters
+2025-06-10 15:14:58.688306 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.688306 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.688306 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.688306 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.688306 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.688306 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.688306 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.688306 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.688306 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.688306 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.688306 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.688306 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.688306 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.688306 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.757328 29 pilot point parameters created
+2025-06-10 15:14:58.757328 pilot point 'pargp':s,t,o,_,s,s,_,l,a,y,e,r,3,_,p,p
+2025-06-10 15:14:58.757328 finished: setting up pilot point parameters took: 0:00:00.069022
+2025-06-10 15:14:58.757328 reusing factors
+2025-06-10 15:14:58.757328 starting: writing array-based template file '01_setup_pestpp\template2\sto_ss_layer3_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.757328 saving zone array 01_setup_pestpp\template2\sto_ss_layer3_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_ss_layer3_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.772955 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_ss_layer3.txt'] took: 0:00:00.084649
+2025-06-10 15:14:58.788587 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.788587 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer1.txt']
+2025-06-10 15:14:58.788587 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.131392
+2025-06-10 15:14:58.788587 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer1.txt
+2025-06-10 15:14:58.804207 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer1.txt took: 0:00:00.015620
+2025-06-10 15:14:58.804207 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.804207 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.804207 starting: writing template file 01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.tpl for ['sto_sy_layer1_gr_inst:0']
+2025-06-10 15:14:58.819835 finished: writing template file 01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.tpl for ['sto_sy_layer1_gr_inst:0'] took: 0:00:00.015628
+2025-06-10 15:14:58.819835 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.819835 saving zone array 01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer1_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.819835 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer1.txt'] took: 0:00:00.031248
+2025-06-10 15:14:58.819835 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.819835 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer1.txt']
+2025-06-10 15:14:58.819835 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.131529
+2025-06-10 15:14:58.819835 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer1.txt
+2025-06-10 15:14:58.819835 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer1.txt took: 0:00:00
+2025-06-10 15:14:58.819835 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer1.txt' of shape (40, 20)
+2025-06-10 15:14:58.835466 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer1_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.835466 starting: setting up pilot point parameters
+2025-06-10 15:14:58.835466 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.835466 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.835466 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.835466 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.835466 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.835466 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.835466 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.835466 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.835466 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.835466 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.835466 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.835466 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.835466 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.835466 OK - using spatial reference in parent object.
+2025-06-10 15:14:58.888868 29 pilot point parameters created
+2025-06-10 15:14:58.888868 pilot point 'pargp':s,t,o,_,s,y,_,l,a,y,e,r,1,_,p,p
+2025-06-10 15:14:58.888868 finished: setting up pilot point parameters took: 0:00:00.053402
+2025-06-10 15:14:58.904494 reusing factors
+2025-06-10 15:14:58.904494 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer1_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:58.904494 saving zone array 01_setup_pestpp\template2\sto_sy_layer1_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer1_pp_inst0pp.dat.tpl
+2025-06-10 15:14:58.904494 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer1.txt'] took: 0:00:00.084659
+2025-06-10 15:14:58.904494 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.904494 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer2.txt']
+2025-06-10 15:14:58.904494 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.904494 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer2.txt
+2025-06-10 15:14:58.920116 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer2.txt took: 0:00:00.015622
+2025-06-10 15:14:58.920116 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.920116 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.920116 starting: writing template file 01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.tpl for ['sto_sy_layer2_gr_inst:0']
+2025-06-10 15:14:58.935732 finished: writing template file 01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.tpl for ['sto_sy_layer2_gr_inst:0'] took: 0:00:00.015616
+2025-06-10 15:14:58.935732 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:58.935732 saving zone array 01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer2_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:58.942250 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer2.txt'] took: 0:00:00.037756
+2025-06-10 15:14:58.942250 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:58.942250 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer2.txt']
+2025-06-10 15:14:58.942250 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:58.942250 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer2.txt
+2025-06-10 15:14:58.942250 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer2.txt took: 0:00:00
+2025-06-10 15:14:58.942250 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer2.txt' of shape (40, 20)
+2025-06-10 15:14:58.942250 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer2_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:58.942250 starting: setting up pilot point parameters
+2025-06-10 15:14:58.942250 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:58.942250 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:58.942250 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:58.942250 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:58.942250 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:58.942250 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:58.942250 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:58.942250 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:58.942250 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:58.942250 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:58.942250 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:58.942250 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:58.942250 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:58.942250 OK - using spatial reference in parent object.
+2025-06-10 15:14:59.004765 29 pilot point parameters created
+2025-06-10 15:14:59.004765 pilot point 'pargp':s,t,o,_,s,y,_,l,a,y,e,r,2,_,p,p
+2025-06-10 15:14:59.004765 finished: setting up pilot point parameters took: 0:00:00.062515
+2025-06-10 15:14:59.020397 reusing factors
+2025-06-10 15:14:59.020397 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer2_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:59.020397 saving zone array 01_setup_pestpp\template2\sto_sy_layer2_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer2_pp_inst0pp.dat.tpl
+2025-06-10 15:14:59.020397 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer2.txt'] took: 0:00:00.078147
+2025-06-10 15:14:59.020397 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.020397 starting: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer3.txt']
+2025-06-10 15:14:59.020397 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:500.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.115903
+2025-06-10 15:14:59.020397 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer3.txt
+2025-06-10 15:14:59.020397 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer3.txt took: 0:00:00
+2025-06-10 15:14:59.020397 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:59.020397 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:59.020397 starting: writing template file 01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.tpl for ['sto_sy_layer3_gr_inst:0']
+2025-06-10 15:14:59.042514 finished: writing template file 01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.tpl for ['sto_sy_layer3_gr_inst:0'] took: 0:00:00.022117
+2025-06-10 15:14:59.042514 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:59.042514 saving zone array 01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer3_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:59.042514 finished: adding grid type m style parameters for file(s) ['freyberg6.sto_sy_layer3.txt'] took: 0:00:00.022117
+2025-06-10 15:14:59.042514 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.042514 starting: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer3.txt']
+2025-06-10 15:14:59.042514 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:2000.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.100264
+2025-06-10 15:14:59.042514 starting: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer3.txt
+2025-06-10 15:14:59.042514 finished: loading array 01_setup_pestpp\template2\freyberg6.sto_sy_layer3.txt took: 0:00:00
+2025-06-10 15:14:59.042514 loaded array '01_setup_pestpp\freyberg6.sto_sy_layer3.txt' of shape (40, 20)
+2025-06-10 15:14:59.058156 starting: writing array-style template file '01_setup_pestpp\template2\sto_sy_layer3_pp_inst0_pilotpoints.csv.tpl'
+2025-06-10 15:14:59.058156 starting: setting up pilot point parameters
+2025-06-10 15:14:59.058156 WARNING: Directly passing 'pp_space' has been deprecated and will eventually be removed, please use pp_options['pp_space'] instead.
+2025-06-10 15:14:59.058156 'use_pp_zones' not set in pp_options, Setting to default value: [False]
+2025-06-10 15:14:59.058156 'spatial_reference' not set in pp_options, Setting to default value: [None]
+2025-06-10 15:14:59.058156 'try_use_ppu' not set in pp_options, Setting to default value: [True]
+2025-06-10 15:14:59.058156 'num_threads' not set in pp_options, Setting to default value: [10]
+2025-06-10 15:14:59.058156 'minpts_interp' not set in pp_options, Setting to default value: [1]
+2025-06-10 15:14:59.058156 'maxpts_interp' not set in pp_options, Setting to default value: [20]
+2025-06-10 15:14:59.058156 'search_radius' not set in pp_options, Setting to default value: [10000000000.0]
+2025-06-10 15:14:59.058156 'fill_value' not set in pp_options, Setting to default value: [1.0]
+2025-06-10 15:14:59.058156 'lower_limit' not set in pp_options, Setting to default value: [1e-30]
+2025-06-10 15:14:59.058156 'upper_limit' not set in pp_options, Setting to default value: [1e+30]
+2025-06-10 15:14:59.058156 WARNING: `use_ppu` requested but failed to import
+falling back to pyemu pp methods
+2025-06-10 15:14:59.058156 No spatial reference (containing cell spacing) passed.
+2025-06-10 15:14:59.058156 OK - using spatial reference in parent object.
+2025-06-10 15:14:59.120654 29 pilot point parameters created
+2025-06-10 15:14:59.120654 pilot point 'pargp':s,t,o,_,s,y,_,l,a,y,e,r,3,_,p,p
+2025-06-10 15:14:59.120654 finished: setting up pilot point parameters took: 0:00:00.062498
+2025-06-10 15:14:59.120654 reusing factors
+2025-06-10 15:14:59.120654 starting: writing array-based template file '01_setup_pestpp\template2\sto_sy_layer3_pp_inst0pp.dat.tpl'
+2025-06-10 15:14:59.120654 saving zone array 01_setup_pestpp\template2\sto_sy_layer3_pp_inst0pp.dat.zone for tpl file 01_setup_pestpp\template2\sto_sy_layer3_pp_inst0pp.dat.tpl
+2025-06-10 15:14:59.120654 finished: adding pilotpoints type m style parameters for file(s) ['freyberg6.sto_sy_layer3.txt'] took: 0:00:00.078140
+2025-06-10 15:14:59.359011 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.359011 starting: adding grid type m style parameters for file(s) ['freyberg6.rch_recharge_1.txt', 'freyberg6.rch_recharge_10.txt', 'freyberg6.rch_recharge_11.txt', 'freyberg6.rch_recharge_12.txt', 'freyberg6.rch_recharge_13.txt', 'freyberg6.rch_recharge_14.txt', 'freyberg6.rch_recharge_15.txt', 'freyberg6.rch_recharge_16.txt', 'freyberg6.rch_recharge_17.txt', 'freyberg6.rch_recharge_18.txt', 'freyberg6.rch_recharge_19.txt', 'freyberg6.rch_recharge_2.txt', 'freyberg6.rch_recharge_20.txt', 'freyberg6.rch_recharge_21.txt', 'freyberg6.rch_recharge_22.txt', 'freyberg6.rch_recharge_23.txt', 'freyberg6.rch_recharge_24.txt', 'freyberg6.rch_recharge_25.txt', 'freyberg6.rch_recharge_3.txt', 'freyberg6.rch_recharge_4.txt', 'freyberg6.rch_recharge_5.txt', 'freyberg6.rch_recharge_6.txt', 'freyberg6.rch_recharge_7.txt', 'freyberg6.rch_recharge_8.txt', 'freyberg6.rch_recharge_9.txt']
+2025-06-10 15:14:59.359011 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:1000.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.359011 WARNING: 0) Inconsistency between geostruct transform and partrans.
+2025-06-10 15:14:59.359011 WARNING: 1) Setting geostruct transform to log
+2025-06-10 15:14:59.359011 WARNING: -) Better to pass an appropriately transformed geostruct
+2025-06-10 15:14:59.359011 WARNING: Discrepancy between number of filenames (25) and number of formatter strings (1). Will repeat first (free)
+2025-06-10 15:14:59.359011 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_1.txt
+2025-06-10 15:14:59.374637 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_1.txt took: 0:00:00.015626
+2025-06-10 15:14:59.374637 loaded array '01_setup_pestpp\freyberg6.rch_recharge_1.txt' of shape (40, 20)
+2025-06-10 15:14:59.374637 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_10.txt
+2025-06-10 15:14:59.374637 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_10.txt took: 0:00:00
+2025-06-10 15:14:59.374637 loaded array '01_setup_pestpp\freyberg6.rch_recharge_10.txt' of shape (40, 20)
+2025-06-10 15:14:59.390250 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_11.txt
+2025-06-10 15:14:59.390250 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_11.txt took: 0:00:00
+2025-06-10 15:14:59.390250 loaded array '01_setup_pestpp\freyberg6.rch_recharge_11.txt' of shape (40, 20)
+2025-06-10 15:14:59.390250 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_12.txt
+2025-06-10 15:14:59.405889 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_12.txt took: 0:00:00.015639
+2025-06-10 15:14:59.405889 loaded array '01_setup_pestpp\freyberg6.rch_recharge_12.txt' of shape (40, 20)
+2025-06-10 15:14:59.405889 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_13.txt
+2025-06-10 15:14:59.405889 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_13.txt took: 0:00:00
+2025-06-10 15:14:59.405889 loaded array '01_setup_pestpp\freyberg6.rch_recharge_13.txt' of shape (40, 20)
+2025-06-10 15:14:59.421509 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_14.txt
+2025-06-10 15:14:59.421509 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_14.txt took: 0:00:00
+2025-06-10 15:14:59.421509 loaded array '01_setup_pestpp\freyberg6.rch_recharge_14.txt' of shape (40, 20)
+2025-06-10 15:14:59.421509 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_15.txt
+2025-06-10 15:14:59.437141 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_15.txt took: 0:00:00.015632
+2025-06-10 15:14:59.437141 loaded array '01_setup_pestpp\freyberg6.rch_recharge_15.txt' of shape (40, 20)
+2025-06-10 15:14:59.437141 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_16.txt
+2025-06-10 15:14:59.443654 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_16.txt took: 0:00:00.006513
+2025-06-10 15:14:59.443654 loaded array '01_setup_pestpp\freyberg6.rch_recharge_16.txt' of shape (40, 20)
+2025-06-10 15:14:59.443654 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_17.txt
+2025-06-10 15:14:59.459296 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_17.txt took: 0:00:00.015642
+2025-06-10 15:14:59.459296 loaded array '01_setup_pestpp\freyberg6.rch_recharge_17.txt' of shape (40, 20)
+2025-06-10 15:14:59.459296 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_18.txt
+2025-06-10 15:14:59.459296 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_18.txt took: 0:00:00
+2025-06-10 15:14:59.459296 loaded array '01_setup_pestpp\freyberg6.rch_recharge_18.txt' of shape (40, 20)
+2025-06-10 15:14:59.459296 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_19.txt
+2025-06-10 15:14:59.474916 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_19.txt took: 0:00:00.015620
+2025-06-10 15:14:59.474916 loaded array '01_setup_pestpp\freyberg6.rch_recharge_19.txt' of shape (40, 20)
+2025-06-10 15:14:59.474916 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_2.txt
+2025-06-10 15:14:59.490548 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_2.txt took: 0:00:00.015632
+2025-06-10 15:14:59.490548 loaded array '01_setup_pestpp\freyberg6.rch_recharge_2.txt' of shape (40, 20)
+2025-06-10 15:14:59.490548 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_20.txt
+2025-06-10 15:14:59.490548 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_20.txt took: 0:00:00
+2025-06-10 15:14:59.490548 loaded array '01_setup_pestpp\freyberg6.rch_recharge_20.txt' of shape (40, 20)
+2025-06-10 15:14:59.490548 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_21.txt
+2025-06-10 15:14:59.506174 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_21.txt took: 0:00:00.015626
+2025-06-10 15:14:59.506174 loaded array '01_setup_pestpp\freyberg6.rch_recharge_21.txt' of shape (40, 20)
+2025-06-10 15:14:59.506174 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_22.txt
+2025-06-10 15:14:59.506174 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_22.txt took: 0:00:00
+2025-06-10 15:14:59.506174 loaded array '01_setup_pestpp\freyberg6.rch_recharge_22.txt' of shape (40, 20)
+2025-06-10 15:14:59.521800 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_23.txt
+2025-06-10 15:14:59.521800 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_23.txt took: 0:00:00
+2025-06-10 15:14:59.521800 loaded array '01_setup_pestpp\freyberg6.rch_recharge_23.txt' of shape (40, 20)
+2025-06-10 15:14:59.521800 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_24.txt
+2025-06-10 15:14:59.537426 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_24.txt took: 0:00:00.015626
+2025-06-10 15:14:59.537426 loaded array '01_setup_pestpp\freyberg6.rch_recharge_24.txt' of shape (40, 20)
+2025-06-10 15:14:59.543934 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_25.txt
+2025-06-10 15:14:59.543934 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_25.txt took: 0:00:00
+2025-06-10 15:14:59.543934 loaded array '01_setup_pestpp\freyberg6.rch_recharge_25.txt' of shape (40, 20)
+2025-06-10 15:14:59.543934 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_3.txt
+2025-06-10 15:14:59.559576 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_3.txt took: 0:00:00.015642
+2025-06-10 15:14:59.559576 loaded array '01_setup_pestpp\freyberg6.rch_recharge_3.txt' of shape (40, 20)
+2025-06-10 15:14:59.559576 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_4.txt
+2025-06-10 15:14:59.559576 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_4.txt took: 0:00:00
+2025-06-10 15:14:59.559576 loaded array '01_setup_pestpp\freyberg6.rch_recharge_4.txt' of shape (40, 20)
+2025-06-10 15:14:59.559576 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_5.txt
+2025-06-10 15:14:59.575189 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_5.txt took: 0:00:00.015613
+2025-06-10 15:14:59.575189 loaded array '01_setup_pestpp\freyberg6.rch_recharge_5.txt' of shape (40, 20)
+2025-06-10 15:14:59.575189 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_6.txt
+2025-06-10 15:14:59.590828 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_6.txt took: 0:00:00.015639
+2025-06-10 15:14:59.590828 loaded array '01_setup_pestpp\freyberg6.rch_recharge_6.txt' of shape (40, 20)
+2025-06-10 15:14:59.590828 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_7.txt
+2025-06-10 15:14:59.590828 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_7.txt took: 0:00:00
+2025-06-10 15:14:59.590828 loaded array '01_setup_pestpp\freyberg6.rch_recharge_7.txt' of shape (40, 20)
+2025-06-10 15:14:59.590828 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_8.txt
+2025-06-10 15:14:59.606448 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_8.txt took: 0:00:00.015620
+2025-06-10 15:14:59.606448 loaded array '01_setup_pestpp\freyberg6.rch_recharge_8.txt' of shape (40, 20)
+2025-06-10 15:14:59.606448 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_9.txt
+2025-06-10 15:14:59.622080 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_9.txt took: 0:00:00.015632
+2025-06-10 15:14:59.622080 loaded array '01_setup_pestpp\freyberg6.rch_recharge_9.txt' of shape (40, 20)
+2025-06-10 15:14:59.622080 starting: writing array-style template file '01_setup_pestpp\template2\rch_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:59.622080 starting: writing template file 01_setup_pestpp\template2\rch_gr_inst0_grid.csv.tpl for ['rch_gr_inst:0']
+2025-06-10 15:14:59.637702 finished: writing template file 01_setup_pestpp\template2\rch_gr_inst0_grid.csv.tpl for ['rch_gr_inst:0'] took: 0:00:00.015622
+2025-06-10 15:14:59.637702 starting: writing array-based template file '01_setup_pestpp\template2\rch_gr_inst0_grid.csv.tpl'
+2025-06-10 15:14:59.637702 saving zone array 01_setup_pestpp\template2\rch_gr_inst0_grid.csv.zone for tpl file 01_setup_pestpp\template2\rch_gr_inst0_grid.csv.tpl
+2025-06-10 15:14:59.644222 finished: adding grid type m style parameters for file(s) ['freyberg6.rch_recharge_1.txt', 'freyberg6.rch_recharge_10.txt', 'freyberg6.rch_recharge_11.txt', 'freyberg6.rch_recharge_12.txt', 'freyberg6.rch_recharge_13.txt', 'freyberg6.rch_recharge_14.txt', 'freyberg6.rch_recharge_15.txt', 'freyberg6.rch_recharge_16.txt', 'freyberg6.rch_recharge_17.txt', 'freyberg6.rch_recharge_18.txt', 'freyberg6.rch_recharge_19.txt', 'freyberg6.rch_recharge_2.txt', 'freyberg6.rch_recharge_20.txt', 'freyberg6.rch_recharge_21.txt', 'freyberg6.rch_recharge_22.txt', 'freyberg6.rch_recharge_23.txt', 'freyberg6.rch_recharge_24.txt', 'freyberg6.rch_recharge_25.txt', 'freyberg6.rch_recharge_3.txt', 'freyberg6.rch_recharge_4.txt', 'freyberg6.rch_recharge_5.txt', 'freyberg6.rch_recharge_6.txt', 'freyberg6.rch_recharge_7.txt', 'freyberg6.rch_recharge_8.txt', 'freyberg6.rch_recharge_9.txt'] took: 0:00:00.285211
+2025-06-10 15:14:59.644222 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.644222 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_1.txt']
+2025-06-10 15:14:59.644222 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.644222 WARNING: 0) Inconsistency between geostruct transform and partrans.
+2025-06-10 15:14:59.644222 WARNING: 1) Setting geostruct transform to log
+2025-06-10 15:14:59.644222 WARNING: -) Better to pass an appropriately transformed geostruct
+2025-06-10 15:14:59.644222 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_1.txt
+2025-06-10 15:14:59.644222 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_1.txt took: 0:00:00
+2025-06-10 15:14:59.644222 loaded array '01_setup_pestpp\freyberg6.rch_recharge_1.txt' of shape (40, 20)
+2025-06-10 15:14:59.644222 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.644222 starting: writing template file 01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.tpl for ['rch_recharge_1_cn_inst:0']
+2025-06-10 15:14:59.644222 finished: writing template file 01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.tpl for ['rch_recharge_1_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.644222 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.644222 saving zone array 01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_1_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.659861 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_1.txt'] took: 0:00:00.015639
+2025-06-10 15:14:59.659861 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.659861 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_10.txt']
+2025-06-10 15:14:59.659861 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015639
+2025-06-10 15:14:59.659861 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_10.txt
+2025-06-10 15:14:59.659861 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_10.txt took: 0:00:00
+2025-06-10 15:14:59.659861 loaded array '01_setup_pestpp\freyberg6.rch_recharge_10.txt' of shape (40, 20)
+2025-06-10 15:14:59.659861 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.659861 starting: writing template file 01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.tpl for ['rch_recharge_10_cn_inst:0']
+2025-06-10 15:14:59.659861 finished: writing template file 01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.tpl for ['rch_recharge_10_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.659861 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.659861 saving zone array 01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_10_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.675479 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_10.txt'] took: 0:00:00.015618
+2025-06-10 15:14:59.675479 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.675479 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_11.txt']
+2025-06-10 15:14:59.675479 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.675479 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_11.txt
+2025-06-10 15:14:59.675479 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_11.txt took: 0:00:00
+2025-06-10 15:14:59.675479 loaded array '01_setup_pestpp\freyberg6.rch_recharge_11.txt' of shape (40, 20)
+2025-06-10 15:14:59.675479 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.675479 starting: writing template file 01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.tpl for ['rch_recharge_11_cn_inst:0']
+2025-06-10 15:14:59.691103 finished: writing template file 01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.tpl for ['rch_recharge_11_cn_inst:0'] took: 0:00:00.015624
+2025-06-10 15:14:59.691103 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.691103 saving zone array 01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_11_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.691103 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_11.txt'] took: 0:00:00.015624
+2025-06-10 15:14:59.691103 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.691103 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_12.txt']
+2025-06-10 15:14:59.691103 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015624
+2025-06-10 15:14:59.691103 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_12.txt
+2025-06-10 15:14:59.691103 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_12.txt took: 0:00:00
+2025-06-10 15:14:59.691103 loaded array '01_setup_pestpp\freyberg6.rch_recharge_12.txt' of shape (40, 20)
+2025-06-10 15:14:59.691103 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.691103 starting: writing template file 01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.tpl for ['rch_recharge_12_cn_inst:0']
+2025-06-10 15:14:59.706730 finished: writing template file 01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.tpl for ['rch_recharge_12_cn_inst:0'] took: 0:00:00.015627
+2025-06-10 15:14:59.706730 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.706730 saving zone array 01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_12_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.706730 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_12.txt'] took: 0:00:00.015627
+2025-06-10 15:14:59.706730 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.706730 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_13.txt']
+2025-06-10 15:14:59.706730 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.706730 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_13.txt
+2025-06-10 15:14:59.706730 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_13.txt took: 0:00:00
+2025-06-10 15:14:59.706730 loaded array '01_setup_pestpp\freyberg6.rch_recharge_13.txt' of shape (40, 20)
+2025-06-10 15:14:59.706730 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.706730 starting: writing template file 01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.tpl for ['rch_recharge_13_cn_inst:0']
+2025-06-10 15:14:59.722355 finished: writing template file 01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.tpl for ['rch_recharge_13_cn_inst:0'] took: 0:00:00.015625
+2025-06-10 15:14:59.722355 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.722355 saving zone array 01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_13_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.722355 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_13.txt'] took: 0:00:00.015625
+2025-06-10 15:14:59.722355 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.722355 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_14.txt']
+2025-06-10 15:14:59.722355 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015625
+2025-06-10 15:14:59.722355 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_14.txt
+2025-06-10 15:14:59.722355 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_14.txt took: 0:00:00
+2025-06-10 15:14:59.722355 loaded array '01_setup_pestpp\freyberg6.rch_recharge_14.txt' of shape (40, 20)
+2025-06-10 15:14:59.722355 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.722355 starting: writing template file 01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.tpl for ['rch_recharge_14_cn_inst:0']
+2025-06-10 15:14:59.737989 finished: writing template file 01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.tpl for ['rch_recharge_14_cn_inst:0'] took: 0:00:00.015634
+2025-06-10 15:14:59.737989 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.744494 saving zone array 01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_14_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.744494 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_14.txt'] took: 0:00:00.022139
+2025-06-10 15:14:59.744494 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.744494 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_15.txt']
+2025-06-10 15:14:59.744494 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.744494 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_15.txt
+2025-06-10 15:14:59.744494 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_15.txt took: 0:00:00
+2025-06-10 15:14:59.744494 loaded array '01_setup_pestpp\freyberg6.rch_recharge_15.txt' of shape (40, 20)
+2025-06-10 15:14:59.744494 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.744494 starting: writing template file 01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.tpl for ['rch_recharge_15_cn_inst:0']
+2025-06-10 15:14:59.760133 finished: writing template file 01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.tpl for ['rch_recharge_15_cn_inst:0'] took: 0:00:00.015639
+2025-06-10 15:14:59.760133 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.760133 saving zone array 01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_15_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.760133 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_15.txt'] took: 0:00:00.015639
+2025-06-10 15:14:59.760133 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.760133 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_16.txt']
+2025-06-10 15:14:59.760133 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015639
+2025-06-10 15:14:59.760133 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_16.txt
+2025-06-10 15:14:59.760133 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_16.txt took: 0:00:00
+2025-06-10 15:14:59.760133 loaded array '01_setup_pestpp\freyberg6.rch_recharge_16.txt' of shape (40, 20)
+2025-06-10 15:14:59.760133 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.760133 starting: writing template file 01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.tpl for ['rch_recharge_16_cn_inst:0']
+2025-06-10 15:14:59.775750 finished: writing template file 01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.tpl for ['rch_recharge_16_cn_inst:0'] took: 0:00:00.015617
+2025-06-10 15:14:59.775750 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.775750 saving zone array 01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_16_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.775750 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_16.txt'] took: 0:00:00.015617
+2025-06-10 15:14:59.775750 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.775750 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_17.txt']
+2025-06-10 15:14:59.775750 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.775750 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_17.txt
+2025-06-10 15:14:59.775750 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_17.txt took: 0:00:00
+2025-06-10 15:14:59.775750 loaded array '01_setup_pestpp\freyberg6.rch_recharge_17.txt' of shape (40, 20)
+2025-06-10 15:14:59.775750 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.775750 starting: writing template file 01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.tpl for ['rch_recharge_17_cn_inst:0']
+2025-06-10 15:14:59.791386 finished: writing template file 01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.tpl for ['rch_recharge_17_cn_inst:0'] took: 0:00:00.015636
+2025-06-10 15:14:59.791386 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.791386 saving zone array 01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_17_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.791386 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_17.txt'] took: 0:00:00.015636
+2025-06-10 15:14:59.791386 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.791386 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_18.txt']
+2025-06-10 15:14:59.791386 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015636
+2025-06-10 15:14:59.791386 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_18.txt
+2025-06-10 15:14:59.791386 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_18.txt took: 0:00:00
+2025-06-10 15:14:59.791386 loaded array '01_setup_pestpp\freyberg6.rch_recharge_18.txt' of shape (40, 20)
+2025-06-10 15:14:59.791386 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.791386 starting: writing template file 01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.tpl for ['rch_recharge_18_cn_inst:0']
+2025-06-10 15:14:59.807012 finished: writing template file 01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.tpl for ['rch_recharge_18_cn_inst:0'] took: 0:00:00.015626
+2025-06-10 15:14:59.807012 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.807012 saving zone array 01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_18_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.807012 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_18.txt'] took: 0:00:00.015626
+2025-06-10 15:14:59.807012 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.807012 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_19.txt']
+2025-06-10 15:14:59.807012 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.807012 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_19.txt
+2025-06-10 15:14:59.807012 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_19.txt took: 0:00:00
+2025-06-10 15:14:59.807012 loaded array '01_setup_pestpp\freyberg6.rch_recharge_19.txt' of shape (40, 20)
+2025-06-10 15:14:59.822644 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.822644 starting: writing template file 01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.tpl for ['rch_recharge_19_cn_inst:0']
+2025-06-10 15:14:59.822644 finished: writing template file 01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.tpl for ['rch_recharge_19_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.822644 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.822644 saving zone array 01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_19_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.822644 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_19.txt'] took: 0:00:00.015632
+2025-06-10 15:14:59.822644 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.822644 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_2.txt']
+2025-06-10 15:14:59.822644 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015632
+2025-06-10 15:14:59.822644 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_2.txt
+2025-06-10 15:14:59.822644 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_2.txt took: 0:00:00
+2025-06-10 15:14:59.822644 loaded array '01_setup_pestpp\freyberg6.rch_recharge_2.txt' of shape (40, 20)
+2025-06-10 15:14:59.838270 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.838270 starting: writing template file 01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.tpl for ['rch_recharge_2_cn_inst:0']
+2025-06-10 15:14:59.844785 finished: writing template file 01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.tpl for ['rch_recharge_2_cn_inst:0'] took: 0:00:00.006515
+2025-06-10 15:14:59.844785 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.844785 saving zone array 01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_2_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.844785 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_2.txt'] took: 0:00:00.022141
+2025-06-10 15:14:59.844785 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.844785 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_20.txt']
+2025-06-10 15:14:59.844785 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.844785 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_20.txt
+2025-06-10 15:14:59.844785 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_20.txt took: 0:00:00
+2025-06-10 15:14:59.844785 loaded array '01_setup_pestpp\freyberg6.rch_recharge_20.txt' of shape (40, 20)
+2025-06-10 15:14:59.844785 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.844785 starting: writing template file 01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.tpl for ['rch_recharge_20_cn_inst:0']
+2025-06-10 15:14:59.860430 finished: writing template file 01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.tpl for ['rch_recharge_20_cn_inst:0'] took: 0:00:00.015645
+2025-06-10 15:14:59.860430 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.860430 saving zone array 01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_20_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.860430 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_20.txt'] took: 0:00:00.015645
+2025-06-10 15:14:59.860430 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.860430 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_21.txt']
+2025-06-10 15:14:59.860430 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015645
+2025-06-10 15:14:59.860430 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_21.txt
+2025-06-10 15:14:59.860430 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_21.txt took: 0:00:00
+2025-06-10 15:14:59.860430 loaded array '01_setup_pestpp\freyberg6.rch_recharge_21.txt' of shape (40, 20)
+2025-06-10 15:14:59.860430 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.860430 starting: writing template file 01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.tpl for ['rch_recharge_21_cn_inst:0']
+2025-06-10 15:14:59.876050 finished: writing template file 01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.tpl for ['rch_recharge_21_cn_inst:0'] took: 0:00:00.015620
+2025-06-10 15:14:59.876050 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.876050 saving zone array 01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_21_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.876050 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_21.txt'] took: 0:00:00.015620
+2025-06-10 15:14:59.876050 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.876050 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_22.txt']
+2025-06-10 15:14:59.876050 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.876050 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_22.txt
+2025-06-10 15:14:59.876050 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_22.txt took: 0:00:00
+2025-06-10 15:14:59.876050 loaded array '01_setup_pestpp\freyberg6.rch_recharge_22.txt' of shape (40, 20)
+2025-06-10 15:14:59.891681 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.891681 starting: writing template file 01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.tpl for ['rch_recharge_22_cn_inst:0']
+2025-06-10 15:14:59.891681 finished: writing template file 01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.tpl for ['rch_recharge_22_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.891681 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.891681 saving zone array 01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_22_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.891681 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_22.txt'] took: 0:00:00.015631
+2025-06-10 15:14:59.891681 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.891681 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_23.txt']
+2025-06-10 15:14:59.891681 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015631
+2025-06-10 15:14:59.907307 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_23.txt
+2025-06-10 15:14:59.907307 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_23.txt took: 0:00:00
+2025-06-10 15:14:59.907307 loaded array '01_setup_pestpp\freyberg6.rch_recharge_23.txt' of shape (40, 20)
+2025-06-10 15:14:59.907307 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.907307 starting: writing template file 01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.tpl for ['rch_recharge_23_cn_inst:0']
+2025-06-10 15:14:59.907307 finished: writing template file 01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.tpl for ['rch_recharge_23_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.907307 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.907307 saving zone array 01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_23_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.922933 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_23.txt'] took: 0:00:00.031252
+2025-06-10 15:14:59.922933 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.922933 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_24.txt']
+2025-06-10 15:14:59.922933 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.922933 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_24.txt
+2025-06-10 15:14:59.922933 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_24.txt took: 0:00:00
+2025-06-10 15:14:59.922933 loaded array '01_setup_pestpp\freyberg6.rch_recharge_24.txt' of shape (40, 20)
+2025-06-10 15:14:59.922933 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.922933 starting: writing template file 01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.tpl for ['rch_recharge_24_cn_inst:0']
+2025-06-10 15:14:59.922933 finished: writing template file 01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.tpl for ['rch_recharge_24_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.922933 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.922933 saving zone array 01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_24_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.938552 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_24.txt'] took: 0:00:00.015619
+2025-06-10 15:14:59.938552 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.938552 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_25.txt']
+2025-06-10 15:14:59.938552 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015619
+2025-06-10 15:14:59.938552 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_25.txt
+2025-06-10 15:14:59.938552 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_25.txt took: 0:00:00
+2025-06-10 15:14:59.938552 loaded array '01_setup_pestpp\freyberg6.rch_recharge_25.txt' of shape (40, 20)
+2025-06-10 15:14:59.938552 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.938552 starting: writing template file 01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.tpl for ['rch_recharge_25_cn_inst:0']
+2025-06-10 15:14:59.945058 finished: writing template file 01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.tpl for ['rch_recharge_25_cn_inst:0'] took: 0:00:00.006506
+2025-06-10 15:14:59.945058 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.945058 saving zone array 01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_25_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.945058 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_25.txt'] took: 0:00:00.006506
+2025-06-10 15:14:59.945058 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.945058 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_3.txt']
+2025-06-10 15:14:59.945058 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.945058 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_3.txt
+2025-06-10 15:14:59.945058 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_3.txt took: 0:00:00
+2025-06-10 15:14:59.945058 loaded array '01_setup_pestpp\freyberg6.rch_recharge_3.txt' of shape (40, 20)
+2025-06-10 15:14:59.960701 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.960701 starting: writing template file 01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.tpl for ['rch_recharge_3_cn_inst:0']
+2025-06-10 15:14:59.960701 finished: writing template file 01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.tpl for ['rch_recharge_3_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.960701 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.960701 saving zone array 01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_3_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.976327 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_3.txt'] took: 0:00:00.031269
+2025-06-10 15:14:59.976327 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.976327 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_4.txt']
+2025-06-10 15:14:59.976327 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.031269
+2025-06-10 15:14:59.976327 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_4.txt
+2025-06-10 15:14:59.976327 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_4.txt took: 0:00:00
+2025-06-10 15:14:59.976327 loaded array '01_setup_pestpp\freyberg6.rch_recharge_4.txt' of shape (40, 20)
+2025-06-10 15:14:59.976327 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.976327 starting: writing template file 01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.tpl for ['rch_recharge_4_cn_inst:0']
+2025-06-10 15:14:59.976327 finished: writing template file 01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.tpl for ['rch_recharge_4_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.976327 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.976327 saving zone array 01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_4_cn_inst0_constant.csv.tpl
+2025-06-10 15:14:59.991946 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_4.txt'] took: 0:00:00.015619
+2025-06-10 15:14:59.991946 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:14:59.991946 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_5.txt']
+2025-06-10 15:14:59.991946 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:14:59.991946 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_5.txt
+2025-06-10 15:14:59.991946 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_5.txt took: 0:00:00
+2025-06-10 15:14:59.991946 loaded array '01_setup_pestpp\freyberg6.rch_recharge_5.txt' of shape (40, 20)
+2025-06-10 15:14:59.991946 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.991946 starting: writing template file 01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.tpl for ['rch_recharge_5_cn_inst:0']
+2025-06-10 15:14:59.991946 finished: writing template file 01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.tpl for ['rch_recharge_5_cn_inst:0'] took: 0:00:00
+2025-06-10 15:14:59.991946 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.tpl'
+2025-06-10 15:14:59.991946 saving zone array 01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_5_cn_inst0_constant.csv.tpl
+2025-06-10 15:15:00.007565 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_5.txt'] took: 0:00:00.015619
+2025-06-10 15:15:00.007565 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.007565 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_6.txt']
+2025-06-10 15:15:00.007565 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015619
+2025-06-10 15:15:00.007565 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_6.txt
+2025-06-10 15:15:00.007565 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_6.txt took: 0:00:00
+2025-06-10 15:15:00.007565 loaded array '01_setup_pestpp\freyberg6.rch_recharge_6.txt' of shape (40, 20)
+2025-06-10 15:15:00.007565 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.007565 starting: writing template file 01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.tpl for ['rch_recharge_6_cn_inst:0']
+2025-06-10 15:15:00.007565 finished: writing template file 01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.tpl for ['rch_recharge_6_cn_inst:0'] took: 0:00:00
+2025-06-10 15:15:00.007565 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.023193 saving zone array 01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_6_cn_inst0_constant.csv.tpl
+2025-06-10 15:15:00.023193 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_6.txt'] took: 0:00:00.015628
+2025-06-10 15:15:00.023193 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.023193 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_7.txt']
+2025-06-10 15:15:00.023193 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.023193 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_7.txt
+2025-06-10 15:15:00.023193 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_7.txt took: 0:00:00
+2025-06-10 15:15:00.023193 loaded array '01_setup_pestpp\freyberg6.rch_recharge_7.txt' of shape (40, 20)
+2025-06-10 15:15:00.023193 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.023193 starting: writing template file 01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.tpl for ['rch_recharge_7_cn_inst:0']
+2025-06-10 15:15:00.038817 finished: writing template file 01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.tpl for ['rch_recharge_7_cn_inst:0'] took: 0:00:00.015624
+2025-06-10 15:15:00.038817 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.038817 saving zone array 01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_7_cn_inst0_constant.csv.tpl
+2025-06-10 15:15:00.045324 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_7.txt'] took: 0:00:00.022131
+2025-06-10 15:15:00.045324 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.045324 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_8.txt']
+2025-06-10 15:15:00.045324 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.022131
+2025-06-10 15:15:00.045324 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_8.txt
+2025-06-10 15:15:00.045324 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_8.txt took: 0:00:00
+2025-06-10 15:15:00.045324 loaded array '01_setup_pestpp\freyberg6.rch_recharge_8.txt' of shape (40, 20)
+2025-06-10 15:15:00.045324 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.045324 starting: writing template file 01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.tpl for ['rch_recharge_8_cn_inst:0']
+2025-06-10 15:15:00.045324 finished: writing template file 01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.tpl for ['rch_recharge_8_cn_inst:0'] took: 0:00:00
+2025-06-10 15:15:00.045324 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.045324 saving zone array 01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_8_cn_inst0_constant.csv.tpl
+2025-06-10 15:15:00.060954 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_8.txt'] took: 0:00:00.015630
+2025-06-10 15:15:00.060954 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.060954 starting: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_9.txt']
+2025-06-10 15:15:00.060954 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.060954 starting: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_9.txt
+2025-06-10 15:15:00.060954 finished: loading array 01_setup_pestpp\template2\freyberg6.rch_recharge_9.txt took: 0:00:00
+2025-06-10 15:15:00.060954 loaded array '01_setup_pestpp\freyberg6.rch_recharge_9.txt' of shape (40, 20)
+2025-06-10 15:15:00.060954 starting: writing array-style template file '01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.060954 starting: writing template file 01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.tpl for ['rch_recharge_9_cn_inst:0']
+2025-06-10 15:15:00.060954 finished: writing template file 01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.tpl for ['rch_recharge_9_cn_inst:0'] took: 0:00:00
+2025-06-10 15:15:00.060954 starting: writing array-based template file '01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.060954 saving zone array 01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.zone for tpl file 01_setup_pestpp\template2\rch_recharge_9_cn_inst0_constant.csv.tpl
+2025-06-10 15:15:00.076579 finished: adding constant type m style parameters for file(s) ['freyberg6.rch_recharge_9.txt'] took: 0:00:00.015625
+2025-06-10 15:15:00.076579 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.076579 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_1.txt']
+2025-06-10 15:15:00.076579 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.015625
+2025-06-10 15:15:00.076579 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt
+2025-06-10 15:15:00.076579 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt
+2025-06-10 15:15:00.076579 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt took: 0:00:00
+2025-06-10 15:15:00.076579 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt' of shape (6, 4)
+2025-06-10 15:15:00.076579 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt took: 0:00:00
+2025-06-10 15:15:00.076579 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_0_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.092205 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_0_inst0_constant.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.092205 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_1.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.092205 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.092205 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_1.txt']
+2025-06-10 15:15:00.092205 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt
+2025-06-10 15:15:00.092205 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt
+2025-06-10 15:15:00.092205 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt took: 0:00:00
+2025-06-10 15:15:00.092205 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt' of shape (6, 4)
+2025-06-10 15:15:00.092205 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_1.txt took: 0:00:00
+2025-06-10 15:15:00.092205 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_0_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.107831 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_0_inst0_grid.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.107831 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_1.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.107831 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.107831 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_10.txt']
+2025-06-10 15:15:00.107831 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.107831 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt
+2025-06-10 15:15:00.107831 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt
+2025-06-10 15:15:00.107831 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt took: 0:00:00
+2025-06-10 15:15:00.107831 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt' of shape (6, 4)
+2025-06-10 15:15:00.123457 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt took: 0:00:00.015626
+2025-06-10 15:15:00.123457 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_9_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.123457 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_9_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.139083 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_10.txt'] took: 0:00:00.031252
+2025-06-10 15:15:00.139083 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.139083 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_10.txt']
+2025-06-10 15:15:00.139083 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt
+2025-06-10 15:15:00.139083 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt
+2025-06-10 15:15:00.139083 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt took: 0:00:00
+2025-06-10 15:15:00.139083 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt' of shape (6, 4)
+2025-06-10 15:15:00.139083 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_10.txt took: 0:00:00
+2025-06-10 15:15:00.139083 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_9_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.145588 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_9_inst0_grid.csv.tpl' took: 0:00:00.006505
+2025-06-10 15:15:00.145588 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_10.txt'] took: 0:00:00.006505
+2025-06-10 15:15:00.145588 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.145588 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_11.txt']
+2025-06-10 15:15:00.145588 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.037757
+2025-06-10 15:15:00.145588 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt
+2025-06-10 15:15:00.145588 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt
+2025-06-10 15:15:00.145588 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt took: 0:00:00
+2025-06-10 15:15:00.145588 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt' of shape (6, 4)
+2025-06-10 15:15:00.145588 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt took: 0:00:00
+2025-06-10 15:15:00.145588 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_10_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.161216 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_10_inst0_constant.csv.tpl' took: 0:00:00.015628
+2025-06-10 15:15:00.161216 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_11.txt'] took: 0:00:00.015628
+2025-06-10 15:15:00.161216 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.176843 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_11.txt']
+2025-06-10 15:15:00.176843 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt
+2025-06-10 15:15:00.176843 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt
+2025-06-10 15:15:00.176843 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt took: 0:00:00
+2025-06-10 15:15:00.176843 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt' of shape (6, 4)
+2025-06-10 15:15:00.176843 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_11.txt took: 0:00:00
+2025-06-10 15:15:00.176843 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_10_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.176843 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_10_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.192469 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_11.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.192469 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.192469 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_12.txt']
+2025-06-10 15:15:00.192469 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.192469 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt
+2025-06-10 15:15:00.192469 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt
+2025-06-10 15:15:00.192469 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt took: 0:00:00
+2025-06-10 15:15:00.192469 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt' of shape (6, 4)
+2025-06-10 15:15:00.192469 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt took: 0:00:00
+2025-06-10 15:15:00.192469 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_11_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.208094 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_11_inst0_constant.csv.tpl' took: 0:00:00.015625
+2025-06-10 15:15:00.208094 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_12.txt'] took: 0:00:00.015625
+2025-06-10 15:15:00.208094 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.208094 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_12.txt']
+2025-06-10 15:15:00.208094 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt
+2025-06-10 15:15:00.208094 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt
+2025-06-10 15:15:00.208094 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt took: 0:00:00
+2025-06-10 15:15:00.208094 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt' of shape (6, 4)
+2025-06-10 15:15:00.208094 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_12.txt took: 0:00:00
+2025-06-10 15:15:00.208094 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_11_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.223720 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_11_inst0_grid.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.223720 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_12.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.223720 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.223720 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_13.txt']
+2025-06-10 15:15:00.223720 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.031251
+2025-06-10 15:15:00.223720 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt
+2025-06-10 15:15:00.223720 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt
+2025-06-10 15:15:00.223720 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt took: 0:00:00
+2025-06-10 15:15:00.223720 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt' of shape (6, 4)
+2025-06-10 15:15:00.223720 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt took: 0:00:00
+2025-06-10 15:15:00.223720 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_12_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.245860 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_12_inst0_constant.csv.tpl' took: 0:00:00.022140
+2025-06-10 15:15:00.245860 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_13.txt'] took: 0:00:00.022140
+2025-06-10 15:15:00.245860 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.245860 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_13.txt']
+2025-06-10 15:15:00.245860 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt
+2025-06-10 15:15:00.245860 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt
+2025-06-10 15:15:00.245860 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt took: 0:00:00
+2025-06-10 15:15:00.245860 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt' of shape (6, 4)
+2025-06-10 15:15:00.245860 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_13.txt took: 0:00:00
+2025-06-10 15:15:00.245860 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_12_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.261499 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_12_inst0_grid.csv.tpl' took: 0:00:00.015639
+2025-06-10 15:15:00.261499 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_13.txt'] took: 0:00:00.015639
+2025-06-10 15:15:00.261499 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.261499 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_14.txt']
+2025-06-10 15:15:00.261499 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.261499 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt
+2025-06-10 15:15:00.261499 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt
+2025-06-10 15:15:00.261499 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt took: 0:00:00
+2025-06-10 15:15:00.261499 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt' of shape (6, 4)
+2025-06-10 15:15:00.261499 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt took: 0:00:00
+2025-06-10 15:15:00.261499 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_13_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.277129 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_13_inst0_constant.csv.tpl' took: 0:00:00.015630
+2025-06-10 15:15:00.277129 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_14.txt'] took: 0:00:00.015630
+2025-06-10 15:15:00.277129 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.277129 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_14.txt']
+2025-06-10 15:15:00.277129 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt
+2025-06-10 15:15:00.277129 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt
+2025-06-10 15:15:00.277129 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt took: 0:00:00
+2025-06-10 15:15:00.277129 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt' of shape (6, 4)
+2025-06-10 15:15:00.277129 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_14.txt took: 0:00:00
+2025-06-10 15:15:00.277129 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_13_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.292755 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_13_inst0_grid.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.292755 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_14.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.292755 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.292755 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_15.txt']
+2025-06-10 15:15:00.292755 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.031256
+2025-06-10 15:15:00.292755 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt
+2025-06-10 15:15:00.292755 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt
+2025-06-10 15:15:00.292755 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt took: 0:00:00
+2025-06-10 15:15:00.292755 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt' of shape (6, 4)
+2025-06-10 15:15:00.308367 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt took: 0:00:00.015612
+2025-06-10 15:15:00.308367 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_14_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.308367 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_14_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.308367 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_15.txt'] took: 0:00:00.015612
+2025-06-10 15:15:00.308367 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.324000 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_15.txt']
+2025-06-10 15:15:00.324000 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt
+2025-06-10 15:15:00.324000 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt
+2025-06-10 15:15:00.324000 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt took: 0:00:00
+2025-06-10 15:15:00.324000 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt' of shape (6, 4)
+2025-06-10 15:15:00.324000 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_15.txt took: 0:00:00
+2025-06-10 15:15:00.324000 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_14_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.324000 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_14_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.339632 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_15.txt'] took: 0:00:00.015632
+2025-06-10 15:15:00.339632 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.339632 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_16.txt']
+2025-06-10 15:15:00.339632 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.339632 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt
+2025-06-10 15:15:00.339632 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt
+2025-06-10 15:15:00.339632 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt took: 0:00:00
+2025-06-10 15:15:00.339632 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt' of shape (6, 4)
+2025-06-10 15:15:00.339632 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt took: 0:00:00
+2025-06-10 15:15:00.339632 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_15_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.346145 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_15_inst0_constant.csv.tpl' took: 0:00:00.006513
+2025-06-10 15:15:00.346145 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_16.txt'] took: 0:00:00.006513
+2025-06-10 15:15:00.346145 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.346145 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_16.txt']
+2025-06-10 15:15:00.346145 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt
+2025-06-10 15:15:00.346145 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt
+2025-06-10 15:15:00.361781 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt took: 0:00:00.015636
+2025-06-10 15:15:00.361781 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt' of shape (6, 4)
+2025-06-10 15:15:00.361781 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_16.txt took: 0:00:00.015636
+2025-06-10 15:15:00.361781 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_15_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.361781 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_15_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.361781 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_16.txt'] took: 0:00:00.015636
+2025-06-10 15:15:00.361781 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.361781 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_17.txt']
+2025-06-10 15:15:00.361781 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.022149
+2025-06-10 15:15:00.377407 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt
+2025-06-10 15:15:00.377407 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt
+2025-06-10 15:15:00.377407 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt took: 0:00:00
+2025-06-10 15:15:00.377407 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt' of shape (6, 4)
+2025-06-10 15:15:00.377407 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt took: 0:00:00
+2025-06-10 15:15:00.377407 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_16_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.393033 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_16_inst0_constant.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.393033 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_17.txt'] took: 0:00:00.031252
+2025-06-10 15:15:00.393033 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.393033 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_17.txt']
+2025-06-10 15:15:00.393033 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt
+2025-06-10 15:15:00.393033 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt
+2025-06-10 15:15:00.393033 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt took: 0:00:00
+2025-06-10 15:15:00.393033 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt' of shape (6, 4)
+2025-06-10 15:15:00.393033 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_17.txt took: 0:00:00
+2025-06-10 15:15:00.393033 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_16_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.408651 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_16_inst0_grid.csv.tpl' took: 0:00:00.015618
+2025-06-10 15:15:00.408651 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_17.txt'] took: 0:00:00.015618
+2025-06-10 15:15:00.408651 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.408651 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_18.txt']
+2025-06-10 15:15:00.408651 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.408651 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt
+2025-06-10 15:15:00.408651 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt
+2025-06-10 15:15:00.408651 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt took: 0:00:00
+2025-06-10 15:15:00.408651 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt' of shape (6, 4)
+2025-06-10 15:15:00.408651 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt took: 0:00:00
+2025-06-10 15:15:00.408651 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_17_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.424291 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_17_inst0_constant.csv.tpl' took: 0:00:00.015640
+2025-06-10 15:15:00.424291 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_18.txt'] took: 0:00:00.015640
+2025-06-10 15:15:00.424291 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.424291 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_18.txt']
+2025-06-10 15:15:00.424291 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt
+2025-06-10 15:15:00.424291 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt
+2025-06-10 15:15:00.424291 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt took: 0:00:00
+2025-06-10 15:15:00.424291 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt' of shape (6, 4)
+2025-06-10 15:15:00.424291 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_18.txt took: 0:00:00
+2025-06-10 15:15:00.424291 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_17_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.446426 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_17_inst0_grid.csv.tpl' took: 0:00:00.022135
+2025-06-10 15:15:00.446426 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_18.txt'] took: 0:00:00.022135
+2025-06-10 15:15:00.446426 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.446426 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_19.txt']
+2025-06-10 15:15:00.446426 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.037775
+2025-06-10 15:15:00.446426 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt
+2025-06-10 15:15:00.446426 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt
+2025-06-10 15:15:00.446426 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt took: 0:00:00
+2025-06-10 15:15:00.446426 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt' of shape (6, 4)
+2025-06-10 15:15:00.446426 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt took: 0:00:00
+2025-06-10 15:15:00.446426 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_18_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.462068 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_18_inst0_constant.csv.tpl' took: 0:00:00.015642
+2025-06-10 15:15:00.462068 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_19.txt'] took: 0:00:00.015642
+2025-06-10 15:15:00.462068 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.462068 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_19.txt']
+2025-06-10 15:15:00.462068 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt
+2025-06-10 15:15:00.462068 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt
+2025-06-10 15:15:00.462068 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt took: 0:00:00
+2025-06-10 15:15:00.462068 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt' of shape (6, 4)
+2025-06-10 15:15:00.462068 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_19.txt took: 0:00:00
+2025-06-10 15:15:00.462068 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_18_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.477694 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_18_inst0_grid.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.477694 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_19.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.477694 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.477694 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_2.txt']
+2025-06-10 15:15:00.477694 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.477694 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt
+2025-06-10 15:15:00.477694 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt
+2025-06-10 15:15:00.477694 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt took: 0:00:00
+2025-06-10 15:15:00.477694 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt' of shape (6, 4)
+2025-06-10 15:15:00.477694 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt took: 0:00:00
+2025-06-10 15:15:00.477694 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_1_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.493317 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_1_inst0_constant.csv.tpl' took: 0:00:00.015623
+2025-06-10 15:15:00.493317 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_2.txt'] took: 0:00:00.015623
+2025-06-10 15:15:00.493317 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.493317 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_2.txt']
+2025-06-10 15:15:00.493317 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt
+2025-06-10 15:15:00.493317 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt
+2025-06-10 15:15:00.508940 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt took: 0:00:00.015623
+2025-06-10 15:15:00.508940 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt' of shape (6, 4)
+2025-06-10 15:15:00.508940 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_2.txt took: 0:00:00.015623
+2025-06-10 15:15:00.508940 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_1_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.508940 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_1_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.508940 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_2.txt'] took: 0:00:00.015623
+2025-06-10 15:15:00.508940 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.524572 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_20.txt']
+2025-06-10 15:15:00.524572 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.046878
+2025-06-10 15:15:00.524572 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt
+2025-06-10 15:15:00.524572 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt
+2025-06-10 15:15:00.524572 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt took: 0:00:00
+2025-06-10 15:15:00.524572 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt' of shape (6, 4)
+2025-06-10 15:15:00.524572 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt took: 0:00:00
+2025-06-10 15:15:00.524572 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_19_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.524572 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_19_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.540193 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_20.txt'] took: 0:00:00.015621
+2025-06-10 15:15:00.540193 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.540193 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_20.txt']
+2025-06-10 15:15:00.540193 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt
+2025-06-10 15:15:00.540193 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt
+2025-06-10 15:15:00.540193 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt took: 0:00:00
+2025-06-10 15:15:00.540193 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt' of shape (6, 4)
+2025-06-10 15:15:00.546698 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_20.txt took: 0:00:00.006505
+2025-06-10 15:15:00.546698 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_19_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.546698 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_19_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.546698 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_20.txt'] took: 0:00:00.006505
+2025-06-10 15:15:00.546698 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.546698 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_21.txt']
+2025-06-10 15:15:00.546698 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.546698 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt
+2025-06-10 15:15:00.546698 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt
+2025-06-10 15:15:00.562340 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt took: 0:00:00.015642
+2025-06-10 15:15:00.562340 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt' of shape (6, 4)
+2025-06-10 15:15:00.562340 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt took: 0:00:00.015642
+2025-06-10 15:15:00.562340 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_20_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.562340 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_20_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.577966 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_21.txt'] took: 0:00:00.031268
+2025-06-10 15:15:00.577966 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.577966 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_21.txt']
+2025-06-10 15:15:00.577966 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt
+2025-06-10 15:15:00.577966 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt
+2025-06-10 15:15:00.577966 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt took: 0:00:00
+2025-06-10 15:15:00.577966 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt' of shape (6, 4)
+2025-06-10 15:15:00.577966 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_21.txt took: 0:00:00
+2025-06-10 15:15:00.577966 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_20_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.593578 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_20_inst0_grid.csv.tpl' took: 0:00:00.015612
+2025-06-10 15:15:00.593578 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_21.txt'] took: 0:00:00.015612
+2025-06-10 15:15:00.593578 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.593578 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_22.txt']
+2025-06-10 15:15:00.593578 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.046880
+2025-06-10 15:15:00.593578 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt
+2025-06-10 15:15:00.593578 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt
+2025-06-10 15:15:00.593578 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt took: 0:00:00
+2025-06-10 15:15:00.593578 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt' of shape (6, 4)
+2025-06-10 15:15:00.593578 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt took: 0:00:00
+2025-06-10 15:15:00.593578 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_21_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.609205 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_21_inst0_constant.csv.tpl' took: 0:00:00.015627
+2025-06-10 15:15:00.609205 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_22.txt'] took: 0:00:00.015627
+2025-06-10 15:15:00.609205 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.609205 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_22.txt']
+2025-06-10 15:15:00.609205 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt
+2025-06-10 15:15:00.609205 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt
+2025-06-10 15:15:00.609205 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt took: 0:00:00
+2025-06-10 15:15:00.609205 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt' of shape (6, 4)
+2025-06-10 15:15:00.609205 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_22.txt took: 0:00:00
+2025-06-10 15:15:00.609205 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_21_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.624844 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_21_inst0_grid.csv.tpl' took: 0:00:00.015639
+2025-06-10 15:15:00.640464 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_22.txt'] took: 0:00:00.031259
+2025-06-10 15:15:00.640464 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.640464 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_23.txt']
+2025-06-10 15:15:00.640464 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.640464 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt
+2025-06-10 15:15:00.640464 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt
+2025-06-10 15:15:00.640464 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt took: 0:00:00
+2025-06-10 15:15:00.640464 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt' of shape (6, 4)
+2025-06-10 15:15:00.640464 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt took: 0:00:00
+2025-06-10 15:15:00.640464 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_22_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.646969 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_22_inst0_constant.csv.tpl' took: 0:00:00.006505
+2025-06-10 15:15:00.662605 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_23.txt'] took: 0:00:00.022141
+2025-06-10 15:15:00.662605 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.662605 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_23.txt']
+2025-06-10 15:15:00.662605 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt
+2025-06-10 15:15:00.662605 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt
+2025-06-10 15:15:00.662605 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt took: 0:00:00
+2025-06-10 15:15:00.662605 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt' of shape (6, 4)
+2025-06-10 15:15:00.662605 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_23.txt took: 0:00:00
+2025-06-10 15:15:00.662605 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_22_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.662605 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_22_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.678237 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_23.txt'] took: 0:00:00.015632
+2025-06-10 15:15:00.678237 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.678237 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_24.txt']
+2025-06-10 15:15:00.678237 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.037773
+2025-06-10 15:15:00.678237 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt
+2025-06-10 15:15:00.678237 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt
+2025-06-10 15:15:00.678237 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt took: 0:00:00
+2025-06-10 15:15:00.678237 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt' of shape (6, 4)
+2025-06-10 15:15:00.678237 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt took: 0:00:00
+2025-06-10 15:15:00.678237 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_23_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.693849 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_23_inst0_constant.csv.tpl' took: 0:00:00.015612
+2025-06-10 15:15:00.693849 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_24.txt'] took: 0:00:00.015612
+2025-06-10 15:15:00.693849 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.693849 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_24.txt']
+2025-06-10 15:15:00.693849 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt
+2025-06-10 15:15:00.693849 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt
+2025-06-10 15:15:00.693849 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt took: 0:00:00
+2025-06-10 15:15:00.693849 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt' of shape (6, 4)
+2025-06-10 15:15:00.693849 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_24.txt took: 0:00:00
+2025-06-10 15:15:00.693849 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_23_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.709476 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_23_inst0_grid.csv.tpl' took: 0:00:00.015627
+2025-06-10 15:15:00.709476 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_24.txt'] took: 0:00:00.015627
+2025-06-10 15:15:00.709476 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.709476 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_25.txt']
+2025-06-10 15:15:00.709476 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.709476 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt
+2025-06-10 15:15:00.709476 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt
+2025-06-10 15:15:00.709476 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt took: 0:00:00
+2025-06-10 15:15:00.709476 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt' of shape (6, 4)
+2025-06-10 15:15:00.709476 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt took: 0:00:00
+2025-06-10 15:15:00.709476 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_24_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.725115 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_24_inst0_constant.csv.tpl' took: 0:00:00.015639
+2025-06-10 15:15:00.725115 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_25.txt'] took: 0:00:00.015639
+2025-06-10 15:15:00.725115 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.725115 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_25.txt']
+2025-06-10 15:15:00.725115 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt
+2025-06-10 15:15:00.725115 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt
+2025-06-10 15:15:00.725115 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt took: 0:00:00
+2025-06-10 15:15:00.725115 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt' of shape (6, 4)
+2025-06-10 15:15:00.725115 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_25.txt took: 0:00:00
+2025-06-10 15:15:00.725115 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_24_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.747240 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_24_inst0_grid.csv.tpl' took: 0:00:00.022125
+2025-06-10 15:15:00.747240 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_25.txt'] took: 0:00:00.022125
+2025-06-10 15:15:00.747240 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.747240 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_3.txt']
+2025-06-10 15:15:00.747240 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.037764
+2025-06-10 15:15:00.747240 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt
+2025-06-10 15:15:00.747240 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt
+2025-06-10 15:15:00.747240 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt took: 0:00:00
+2025-06-10 15:15:00.747240 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt' of shape (6, 4)
+2025-06-10 15:15:00.747240 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt took: 0:00:00
+2025-06-10 15:15:00.747240 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_2_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.762869 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_2_inst0_constant.csv.tpl' took: 0:00:00.015629
+2025-06-10 15:15:00.762869 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_3.txt'] took: 0:00:00.015629
+2025-06-10 15:15:00.762869 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.762869 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_3.txt']
+2025-06-10 15:15:00.762869 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt
+2025-06-10 15:15:00.762869 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt
+2025-06-10 15:15:00.762869 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt took: 0:00:00
+2025-06-10 15:15:00.762869 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt' of shape (6, 4)
+2025-06-10 15:15:00.762869 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_3.txt took: 0:00:00
+2025-06-10 15:15:00.762869 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_2_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.778508 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_2_inst0_grid.csv.tpl' took: 0:00:00.015639
+2025-06-10 15:15:00.778508 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_3.txt'] took: 0:00:00.015639
+2025-06-10 15:15:00.778508 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.778508 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_4.txt']
+2025-06-10 15:15:00.778508 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.778508 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt
+2025-06-10 15:15:00.778508 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt
+2025-06-10 15:15:00.778508 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt took: 0:00:00
+2025-06-10 15:15:00.778508 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt' of shape (6, 4)
+2025-06-10 15:15:00.794121 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt took: 0:00:00.015613
+2025-06-10 15:15:00.794121 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_3_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.794121 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_3_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.794121 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_4.txt'] took: 0:00:00.015613
+2025-06-10 15:15:00.794121 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.794121 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_4.txt']
+2025-06-10 15:15:00.794121 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt
+2025-06-10 15:15:00.794121 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt
+2025-06-10 15:15:00.809760 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt took: 0:00:00.015639
+2025-06-10 15:15:00.809760 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt' of shape (6, 4)
+2025-06-10 15:15:00.809760 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_4.txt took: 0:00:00.015639
+2025-06-10 15:15:00.809760 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_3_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.809760 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_3_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.825380 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_4.txt'] took: 0:00:00.031259
+2025-06-10 15:15:00.825380 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.825380 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_5.txt']
+2025-06-10 15:15:00.825380 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.046872
+2025-06-10 15:15:00.825380 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt
+2025-06-10 15:15:00.825380 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt
+2025-06-10 15:15:00.825380 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt took: 0:00:00
+2025-06-10 15:15:00.825380 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt' of shape (6, 4)
+2025-06-10 15:15:00.825380 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt took: 0:00:00
+2025-06-10 15:15:00.825380 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_4_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.825380 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_4_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.840999 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_5.txt'] took: 0:00:00.015619
+2025-06-10 15:15:00.840999 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.840999 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_5.txt']
+2025-06-10 15:15:00.840999 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt
+2025-06-10 15:15:00.840999 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt
+2025-06-10 15:15:00.847513 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt took: 0:00:00.006514
+2025-06-10 15:15:00.847513 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt' of shape (6, 4)
+2025-06-10 15:15:00.847513 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_5.txt took: 0:00:00.006514
+2025-06-10 15:15:00.847513 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_4_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.847513 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_4_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.847513 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_5.txt'] took: 0:00:00.006514
+2025-06-10 15:15:00.863155 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.863155 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_6.txt']
+2025-06-10 15:15:00.863155 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.863155 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt
+2025-06-10 15:15:00.863155 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt
+2025-06-10 15:15:00.863155 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt took: 0:00:00
+2025-06-10 15:15:00.863155 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt' of shape (6, 4)
+2025-06-10 15:15:00.863155 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt took: 0:00:00
+2025-06-10 15:15:00.863155 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_5_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.863155 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_5_inst0_constant.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.878776 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_6.txt'] took: 0:00:00.015621
+2025-06-10 15:15:00.878776 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.878776 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_6.txt']
+2025-06-10 15:15:00.878776 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt
+2025-06-10 15:15:00.878776 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt
+2025-06-10 15:15:00.878776 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt took: 0:00:00
+2025-06-10 15:15:00.878776 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt' of shape (6, 4)
+2025-06-10 15:15:00.878776 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_6.txt took: 0:00:00
+2025-06-10 15:15:00.878776 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_5_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.894394 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_5_inst0_grid.csv.tpl' took: 0:00:00.015618
+2025-06-10 15:15:00.894394 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_6.txt'] took: 0:00:00.015618
+2025-06-10 15:15:00.894394 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.894394 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_7.txt']
+2025-06-10 15:15:00.894394 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.031239
+2025-06-10 15:15:00.894394 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt
+2025-06-10 15:15:00.894394 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt
+2025-06-10 15:15:00.894394 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt took: 0:00:00
+2025-06-10 15:15:00.894394 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt' of shape (6, 4)
+2025-06-10 15:15:00.894394 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt took: 0:00:00
+2025-06-10 15:15:00.894394 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_6_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.910020 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_6_inst0_constant.csv.tpl' took: 0:00:00.015626
+2025-06-10 15:15:00.910020 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_7.txt'] took: 0:00:00.015626
+2025-06-10 15:15:00.910020 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.910020 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_7.txt']
+2025-06-10 15:15:00.910020 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt
+2025-06-10 15:15:00.910020 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt
+2025-06-10 15:15:00.910020 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt took: 0:00:00
+2025-06-10 15:15:00.910020 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt' of shape (6, 4)
+2025-06-10 15:15:00.910020 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_7.txt took: 0:00:00
+2025-06-10 15:15:00.910020 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_6_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.925659 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_6_inst0_grid.csv.tpl' took: 0:00:00.015639
+2025-06-10 15:15:00.925659 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_7.txt'] took: 0:00:00.015639
+2025-06-10 15:15:00.925659 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.925659 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_8.txt']
+2025-06-10 15:15:00.925659 starting: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+
+2025-06-10 15:15:00.925659 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt
+2025-06-10 15:15:00.925659 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt
+2025-06-10 15:15:00.925659 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt took: 0:00:00
+2025-06-10 15:15:00.925659 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt' of shape (6, 4)
+2025-06-10 15:15:00.925659 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt took: 0:00:00
+2025-06-10 15:15:00.925659 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_7_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.947798 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_7_inst0_constant.csv.tpl' took: 0:00:00.022139
+2025-06-10 15:15:00.947798 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_8.txt'] took: 0:00:00.022139
+2025-06-10 15:15:00.947798 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.947798 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_8.txt']
+2025-06-10 15:15:00.947798 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt
+2025-06-10 15:15:00.947798 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt
+2025-06-10 15:15:00.947798 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt took: 0:00:00
+2025-06-10 15:15:00.947798 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt' of shape (6, 4)
+2025-06-10 15:15:00.947798 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_8.txt took: 0:00:00
+2025-06-10 15:15:00.947798 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_7_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.963435 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_7_inst0_grid.csv.tpl' took: 0:00:00.015637
+2025-06-10 15:15:00.963435 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_8.txt'] took: 0:00:00.015637
+2025-06-10 15:15:00.963435 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.963435 starting: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_9.txt']
+2025-06-10 15:15:00.963435 finished: using geostruct:name:struct1,nugget:0.0,structures:
+name:var1,contribution:1.0,a:60.0,anisotropy:1.0,bearing:0.0
+ took: 0:00:00.037776
+2025-06-10 15:15:00.963435 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt
+2025-06-10 15:15:00.963435 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt
+2025-06-10 15:15:00.963435 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt took: 0:00:00
+2025-06-10 15:15:00.963435 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt' of shape (6, 4)
+2025-06-10 15:15:00.963435 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt took: 0:00:00
+2025-06-10 15:15:00.963435 starting: writing list-style template file '01_setup_pestpp\template2\twel_mlt_8_inst0_constant.csv.tpl'
+2025-06-10 15:15:00.979067 finished: writing list-style template file '01_setup_pestpp\template2\twel_mlt_8_inst0_constant.csv.tpl' took: 0:00:00.015632
+2025-06-10 15:15:00.979067 finished: adding constant type m style parameters for file(s) ['freyberg6.wel_stress_period_data_9.txt'] took: 0:00:00.015632
+2025-06-10 15:15:00.979067 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.979067 starting: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_9.txt']
+2025-06-10 15:15:00.979067 starting: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt
+2025-06-10 15:15:00.979067 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt
+2025-06-10 15:15:00.979067 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt took: 0:00:00
+2025-06-10 15:15:00.979067 loaded list-style '01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt' of shape (6, 4)
+2025-06-10 15:15:00.994680 finished: loading list-style 01_setup_pestpp\template2\freyberg6.wel_stress_period_data_9.txt took: 0:00:00.015613
+2025-06-10 15:15:00.994680 starting: writing list-style template file '01_setup_pestpp\template2\wel_grid_8_inst0_grid.csv.tpl'
+2025-06-10 15:15:00.994680 finished: writing list-style template file '01_setup_pestpp\template2\wel_grid_8_inst0_grid.csv.tpl' took: 0:00:00
+2025-06-10 15:15:00.994680 finished: adding grid type m style parameters for file(s) ['freyberg6.wel_stress_period_data_9.txt'] took: 0:00:00.015613
+2025-06-10 15:15:00.994680 transform was not passed, setting default tranform to 'log'
+2025-06-10 15:15:00.994680 starting: adding grid type m style parameters for file(s) ['freyberg6.sfr_packagedata.txt']
+2025-06-10 15:15:00.994680 starting: loading list-style 01_setup_pestpp\template2\freyberg6.sfr_packagedata.txt
+2025-06-10 15:15:00.994680 starting: reading list-style file: 01_setup_pestpp\template2\freyberg6.sfr_packagedata.txt
+2025-06-10 15:15:01.010306 finished: reading list-style file: 01_setup_pestpp\template2\freyberg6.sfr_packagedata.txt took: 0:00:00.015626
+2025-06-10 15:15:01.010306 loaded list-style '01_setup_pestpp\template2\freyberg6.sfr_packagedata.txt' of shape (40, 15)
+2025-06-10 15:15:01.010306 finished: loading list-style 01_setup_pestpp\template2\freyberg6.sfr_packagedata.txt took: 0:00:00.015626
+2025-06-10 15:15:01.010306 starting: writing list-style template file '01_setup_pestpp\template2\sfr_rhk_inst0_grid.csv.tpl'
+2025-06-10 15:15:01.025931 finished: writing list-style template file '01_setup_pestpp\template2\sfr_rhk_inst0_grid.csv.tpl' took: 0:00:00.015625
+2025-06-10 15:15:01.025931 finished: adding grid type m style parameters for file(s) ['freyberg6.sfr_packagedata.txt'] took: 0:00:00.031251
+2025-06-10 15:26:27.578561 forward_run line:pyemu.os_utils.run(r'mf6')
+
+2025-06-10 15:26:27.649742 starting: drawing realizations
+2025-06-10 15:26:27.670010 starting: spectral simulation for grid-scale pars
+2025-06-10 15:26:27.690084 starting: SpecSim: drawing 300 realization for group npf_k_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:27.781880 finished: SpecSim: drawing 300 realization for group npf_k_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.091796
+2025-06-10 15:26:27.781880 starting: SpecSim: drawing 300 realization for group npf_k_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:27.873290 finished: SpecSim: drawing 300 realization for group npf_k_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.091410
+2025-06-10 15:26:27.873290 starting: SpecSim: drawing 300 realization for group npf_k_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:27.962604 finished: SpecSim: drawing 300 realization for group npf_k_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.089314
+2025-06-10 15:26:27.964632 starting: SpecSim: drawing 300 realization for group npf_k33_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.046358 finished: SpecSim: drawing 300 realization for group npf_k33_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.081726
+2025-06-10 15:26:28.056564 starting: SpecSim: drawing 300 realization for group npf_k33_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.137884 finished: SpecSim: drawing 300 realization for group npf_k33_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.081320
+2025-06-10 15:26:28.146101 starting: SpecSim: drawing 300 realization for group npf_k33_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.229602 finished: SpecSim: drawing 300 realization for group npf_k33_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.083501
+2025-06-10 15:26:28.229602 starting: SpecSim: drawing 300 realization for group sto_ss_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.321148 finished: SpecSim: drawing 300 realization for group sto_ss_layer1_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.091546
+2025-06-10 15:26:28.321148 starting: SpecSim: drawing 300 realization for group sto_ss_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.412220 finished: SpecSim: drawing 300 realization for group sto_ss_layer2_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.091072
+2025-06-10 15:26:28.412220 starting: SpecSim: drawing 300 realization for group sto_ss_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111)
+2025-06-10 15:26:28.503419 finished: SpecSim: drawing 300 realization for group sto_ss_layer3_gr with 706 pars, (log) variance 0.1111111111111111 (sill 0.1111111111111111) took: 0:00:00.091199
+2025-06-10 15:26:28.503419 starting: SpecSim: drawing 300 realization for group sto_sy_layer1_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944)
+2025-06-10 15:26:28.594796 finished: SpecSim: drawing 300 realization for group sto_sy_layer1_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944) took: 0:00:00.091377
+2025-06-10 15:26:28.594796 starting: SpecSim: drawing 300 realization for group sto_sy_layer2_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944)
+2025-06-10 15:26:28.685201 finished: SpecSim: drawing 300 realization for group sto_sy_layer2_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944) took: 0:00:00.090405
+2025-06-10 15:26:28.685201 starting: SpecSim: drawing 300 realization for group sto_sy_layer3_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944)
+2025-06-10 15:26:28.775642 finished: SpecSim: drawing 300 realization for group sto_sy_layer3_gr with 706 pars, (log) variance 0.00021097647577319944 (sill 0.00021097647577319944) took: 0:00:00.090441
+2025-06-10 15:26:28.856114 starting: SpecSim: drawing 300 realization for group rch_gr with 706 pars, (log) variance 0.006323463658479584 (sill 0.006323463658479584)
+2025-06-10 15:26:28.987195 finished: SpecSim: drawing 300 realization for group rch_gr with 706 pars, (log) variance 0.006323463658479584 (sill 0.006323463658479584) took: 0:00:00.131081
+2025-06-10 15:26:28.995211 finished: spectral simulation for grid-scale pars took: 0:00:01.325201
+2025-06-10 15:26:28.995211 starting: Drawing 588 non-specsim pars
+2025-06-10 15:26:29.648102 finished: Drawing 588 non-specsim pars took: 0:00:00.652891
+2025-06-10 15:26:29.650115 starting: Joining specsim and non-specsim pars
+2025-06-10 15:26:29.710310 finished: Joining specsim and non-specsim pars took: 0:00:00.060195
+2025-06-10 15:26:29.710310 finished: drawing realizations took: 0:00:02.060568

@@ -1,0 +1,2 @@
+PEST instruction files *.ins
+PEST template files    *.tpl
