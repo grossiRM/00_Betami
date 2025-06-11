@@ -1,5 +1,0 @@
-time,elapsed_seconds,message
-15:40:30,0.0001059,PEST++ performance logger started
-15:40:30,0.000915,starting to process control file
-15:40:30,0.406365,finished processing control file
-15:40:30,0.234537,starting basic model IO error checking

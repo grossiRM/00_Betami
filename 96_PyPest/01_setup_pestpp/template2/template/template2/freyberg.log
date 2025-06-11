@@ -1,0 +1,20 @@
+time,elapsed_seconds,message
+09:41:15,8.34e-05,PEST++ performance logger started
+09:41:15,0.0008809,starting to process control file
+09:41:15,0.166589,finished processing control file
+09:41:15,0.129646,starting basic model IO error checking
+09:41:15,0.462625,finished basic model IO error checking
+09:41:15,0.0296,initializing
+09:41:15,0.0040526,'noptmax'=0, running control file parameter values and quitting
+09:41:15,0.013118,saving control file parameter ensemble to  freyberg.base.par.csv
+09:41:15,0.0087631,initializing prior parameter covariance matrix
+09:41:15,5.35e-05,initializing parcov
+09:41:15,0.0175261,parcov loaded  from parameter bounds, using par_sigma_range 4
+09:41:16,0.0362951,running control file parameter values
+09:41:16,0.0001804,queuing 1 runs
+09:41:16,0.0306214,making runs
+09:41:16,0.421942,processing runs
+09:41:16,0.0135281,the following par:obs realization runs failed: BASE:BASE,
+09:41:16,3.77e-05,dropping failed realizations
+09:41:16,0.0005178,control file parameter value run failed...bummer
+09:41:16,1.7e-05,EnsembleMethod error: control file parameter value run failed
