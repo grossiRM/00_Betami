@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------------
 Anaconda Prompt
 conda info --envs
+	conda env create -f environment_gmdsitut.yml 
 	conda activate gmdsitut
 	jupyter notebook
 ---------------------------------------------------------------------------------------

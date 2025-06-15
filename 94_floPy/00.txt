@@ -1,8 +1,6 @@
-
-
-
 https://flopy.readthedocs.io/en/stable/examples.html			floPy
 https://flopy.readthedocs.io/en/3.4.2/examples.html			floPy
 https://flopy.readthedocs.io/en/3.3.5
 
-conda activate flopy							Environment
+
+
