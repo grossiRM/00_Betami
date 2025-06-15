@@ -3,4 +3,7 @@ https://flopy.readthedocs.io/en/3.4.2/examples.html			floPy
 https://flopy.readthedocs.io/en/3.3.5
 
 
+https://flopy.readthedocs.io/en/3.4.2/Notebooks/groundwater2023_watershed_example.html
+https://flopy.readthedocs.io/en/3.4.2/Notebooks/mf6_parallel_model_splitting_example.html
+
 
