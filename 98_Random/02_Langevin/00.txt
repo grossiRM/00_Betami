@@ -1,5 +1,0 @@
-
-
-08a_groundwater2023_watershed_example.ipynb		https://flopy.readthedocs.io/en/3.4.2/Notebooks/groundwater2023_watershed_example.html
-08b_mf6_parallel_model_splitting_example.ipynb		https://flopy.readthedocs.io/en/3.4.2/Notebooks/mf6_parallel_model_splitting_example.html	Flopy	Parallel
-

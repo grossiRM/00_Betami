@@ -1,6 +1,0 @@
-
-set_idomain
-geometries
-
-08b	string2geom
-08b	densify_geometry

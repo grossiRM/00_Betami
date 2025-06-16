@@ -141,6 +141,9 @@ def get_simulation_cell_count(simulation: flopy.mf6.MFSimulation,) -> Tuple[int,
 ncells, nactive = get_simulation_cell_count(sim) ;  print("nr. of cells:", ncells, ", active:", nactive)
 #__________________
 #__________________
+def read_solver_csv():
+    fpath = sim_ws / "ims.inner.csv"
+    return pd.read_csv(fpath)
 #__________________
 #__________________
 #__________________
