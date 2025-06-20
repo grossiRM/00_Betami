@@ -1,33 +1,13 @@
-OPEN GIT BASH HERE 
-CTRL INSERT
-CTRL C
----------------------------------------------------------------------------------------
-git init
-git add .
-git commit -m "001"
-git push origin 
----------------------------------------------------------------------------------------
-Anaconda Prompt
+---------------------------------------------------------------------------------------------------------------------- install	
+Github 			https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
+	git init		git add .	git commit -m "001"	
+	git push origin  	git pull ()	50 MB(Max!)
+Anaconda		https://www.youtube.com/watch?v=CnHxJ48Eeug
+Jupyter Notebook 	https://www.youtube.com/watch?v=HW29067qVWk
+---------------------------------------------------------------------------------------------------------------------- run	
+Anaconda Prompt		# Tips in your directory OPEN GIT BASH HERE	# CTRL INSERT	CTRL C
 conda env create -f environment_gmdsitut.yml 
 conda info --envs
-	conda activate gmdsitut
-	conda activate gis
-	jupyter notebook
----------------------------------------------------------------------------------------
-https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
-https://www.youtube.com/@regenerativetoday4244/playlists
----------------------------------------------------------------------------------------
-conda info --envs
-conda list -n mfsetup
-	conda list
-conda list -n mfsetup vc
-conda list -n mfsetup mfsetup		none example
-
-conda create --name gmdsitut2 --clone gmdsitut
-conda info --envs
-conda env remove --name gmdsitut2
----------------------------------------------------------------------------------------
-https://doi-usgs.github.io/modflow-setup/installation.html
-python -m ipykernel install --user --name mfsetup --display-name "mfsetup"
-
-
+	conda activate gmdsitut		conda activate gis
+jupyter notebook
+---------------------------------------------------------------------------------------------------------------------- start scripting!
