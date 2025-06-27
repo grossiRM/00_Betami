@@ -1,0 +1,41 @@
+def build_head_data(df, year=1908):
+    dfr = df.loc[df.index == year] ;     xlabel = None ;     x = [] ;     y = []
+    for k in range(14):
+        tag = f"HD{k + 1:02d}" ;         h = dfr[tag].values[0]
+        if k == 0:
+            z0 = -25.0 ;             xlabel = -1.0 * h
+        else:
+            z0 = zelevs[k]
+        z1 = zelevs[k + 1] ; h *= -1.0 ; x += [h, h] ; y += [-z0, -z1]
+    return xlabel, x, y
+
+iyears = (1908, 1916, 1926, 1936, 1946, 1956, 1966, 1976, 1986, 1996, 2006)  ; colors = get_colors(vmax=len(iyears) - 1)
+xrange = (-10, 50) ; fig, ax = plt.subplots(nrows=1, ncols=1, sharey=True, figsize=(0.75 * 6.8, 4.0)) ; ax.set_xlim(xrange) ; ax.set_ylim(-botm[-1], 0)
+
+for z in botm:
+    ax.axhline(y=-z, xmin=-30, xmax=160, lw=0.5, color="0.5")
+
+label = ""
+for k in (1, 2, 3):
+    label = set_label(label, text="Confining unit")   ; ax.fill_between(xrange, edges[k], y2=edges[k + 1], color="brown", lw=0, label=label)
+ypos = -0.5 * (zelevs[2] + zelevs[3])                 ; ax.text(40, ypos, "Confining unit", ha="left", va="center", size=8, color="white")
+label = ""
+for k in (7, 8, 9):
+    label = set_label(label, text="Thick aquitard")   ; ax.fill_between(xrange, edges[k], y2=edges[k + 1], color="tan", lw=0, label=label)
+ypos = -0.5 * (zelevs[8] + zelevs[9])                 ; ax.text(40, ypos, "Thick aquitard", ha="left", va="center", size=8, color="white")
+zo = 105
+for idx, iyear in enumerate(iyears[:-1]):
+    xlabel, x, y = build_head_data(df_heads_year, year=iyear) ;     xlabel1, x1, y1 = build_head_data(df_heads_year, year=iyears[idx + 1])
+    ax.fill_betweenx(y, x, x2=x1, color=colors[idx], zorder=zo, step="mid", lw=0) ;     ax.plot(x, y, lw=0.5, color="black", zorder=201)
+    ax.text(xlabel, 24, f"{iyear}", ha="center", va="bottom", rotation=90, size=7)
+    if iyear == 1996:
+        ax.plot(x1, y1, lw=0.5, color="black", zorder=zo) ; ax.text(xlabel1,24,f"{iyears[idx + 1]}",ha="center",va="bottom",rotation=90,size=7,)
+    zo += 1
+
+# add layer labels
+for k in llabels: 
+    print_label(ax, edges, k)
+
+constant_heads(ax, annotate=True, xrange=xrange)
+ax.set_xlabel("Depth to water, in meters below land surface") ; ax.set_ylabel("Depth below land surface, in meters")
+styles.remove_edge_ticks(ax) ; fig.tight_layout(pad=0.5) ; plt.show()

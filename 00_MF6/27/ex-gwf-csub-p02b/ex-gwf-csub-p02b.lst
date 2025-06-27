@@ -1,0 +1,2010 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.6.1 02/10/2025
+
+   MODFLOW 6 compiled Feb 14 2025 13:40:10 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.7.0
+                             Build 20220726_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /O2 /heap-arrays:0 /fpe:0 /traceback /nologo /fpp
+/c /module:win64\mod_mf6\ /object:win64\obj_mf6\
+
+System command used to initiate simulation:
+C:\Users\gross.DESKTOP-AIRQM2M\anaconda3\Scripts\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    NEWTON-RAPHSON method enabled for the model.
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/EX-GWF-CSUB-P02B/DIS                    
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/EX-GWF-CSUB-P02B/NPF                    
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/EX-GWF-CSUB-P02B/IC                     
+
+
+ Setting Discretization Options
+    Model length unit [0=UND, 1=FEET, 2=METERS, 3=CENTIMETERS] set as 2
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 1
+    NROW = 1
+    NCOL = 3
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+ End Setting Discretization Griddata
+
+ Setting NPF Options
+    Specific discharge will be calculated at cell centers and written to DATA-SPDIS in budget file when requested.
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 not provided.  Setting K33 = K.
+    K22 not provided.  Setting K22 = K.
+ End Setting NPF Griddata
+
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/EX-GWF-CSUB-P02B/CHD_0                  
+
+ PROCESSING CHD BASE OPTIONS
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =       2
+ END OF CHD BASE DIMENSIONS
+    STRT set from input file
+
+ STO -- STORAGE PACKAGE, VERSION 1, 5/19/2014 INPUT READ FROM MEMPATH: __INPUT__/EX-GWF-CSUB-P02B/STO                    
+
+
+ PROCESSING STORAGE OPTIONS
+ END OF STORAGE OPTIONS
+
+ CSUB -- COMPACTION PACKAGE, VERSION 1, 12/15/2019 INPUT READ FROM UNIT 1011
+
+
+ # File generated by Flopy version 3.9.1 on 06/26/2025 at 10:48:07.
+ PROCESSING CSUB OPTIONS
+    CSUB BOUNDARIES HAVE NAMES IN LAST COLUMN.
+    LISTS OF CSUB CELLS WILL BE PRINTED.
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+
+ OPENED ex-gwf-csub-p02b.csub.obs
+ FILE TYPE:OBS   UNIT 1014   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF CSUB OPTIONS
+
+
+ CSUB PACKAGE SETTINGS
+    NUMBER OF DELAY CELLS = 19
+    EFFECTIVE-STRESS FORMULATION
+    ELASTIC AND INELASTIC SPECIFIC STORAGE COEFFICIENTS WILL BE 
+      SPECIFIED
+    THICKNESS AND VOID RATIO WILL NOT BE ADJUSTED DURING THE
+      SIMULATION
+    INTERBED THICKNESS WILL BE SPECIFIED AS A THICKNESS
+    PRECONSOLIDATION STRESS WILL BE SPECIFIED RELATIVE TO INITIAL
+      STRESS CONDITIONS
+    DELAY INTERBED HEADS WILL BE SPECIFIED RELATIVE TO INITIAL 
+      GWF HEADS
+    SPECIFIC STORAGE VALUES WILL BE CALCULATED USING THE CURRENT
+      EFFECTIVE STRESS
+    GAMMAW        = 9806.650000000000
+    BETA          = .000000000000000
+    GAMMAW * BETA = .000000000000000
+
+ PROCESSING CSUB DIMENSIONS
+    NINTERBEDS = 1
+ END OF CSUB DIMENSIONS
+
+The observation utility is active for "CSUB"
+ # File generated by Flopy version 3.9.1 on 06/26/2025 at 10:48:07.
+
+Processing observation options:
+
+Text output number of digits of precision set to: 10
+The PRINT_INPUT option has been specified.
+
+
+ OBSERVATIONS READ FROM FILE "ex-gwf-csub-p02b.csub.obs"
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ NAME                                     TYPE                                       TIME         LOCATION DATA                              OUTPUT FILENAME                                                                 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ TCOMP                                    CONTINUOUS  INTERBED-COMPACTION            ALL TIMES    "  1"                                      ex-gwf-csub-p02b.csub.obs.csv                                                   
+ SK                                       CONTINUOUS  SK                             ALL TIMES    "  1"                                      ex-gwf-csub-p02b.csub.obs.csv                                                   
+ QTOP                                     CONTINUOUS  DELAY-FLOWTOP                  ALL TIMES    "  1"                                      ex-gwf-csub-p02b.csub.obs.csv                                                   
+ QBOT                                     CONTINUOUS  DELAY-FLOWBOT                  ALL TIMES    "  1"                                      ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0001                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  1"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0002                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  2"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0003                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  3"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0004                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  4"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0005                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  5"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0006                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  6"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0007                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  7"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0008                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  8"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0009                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  9"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0010                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  10"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0011                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  11"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0012                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  12"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0013                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  13"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0014                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  14"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0015                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  15"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0016                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  16"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0017                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  17"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0018                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  18"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ H0019                                    CONTINUOUS  DELAY-HEAD                     ALL TIMES    "  1  19"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ EST                                      CONTINUOUS  DELAY-ESTRESS                  ALL TIMES    "  1  1"                                   ex-gwf-csub-p02b.csub.obs.csv                                                   
+ ESM                                      CONTINUOUS  DELAY-ESTRESS                  ALL TIMES    "  1  11"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ ESB                                      CONTINUOUS  DELAY-ESTRESS                  ALL TIMES    "  1  19"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ GS                                       CONTINUOUS  GSTRESS-CELL                   ALL TIMES    "  1 1 2"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ ES                                       CONTINUOUS  ESTRESS-CELL                   ALL TIMES    "  1 1 2"                                  ex-gwf-csub-p02b.csub.obs.csv                                                   
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ CG_SKE_CR =   0.000000    
+
+ CG_THETA =  0.2000000    
+
+ SGM =   1.700000    
+
+ SGS =   2.000000    
+
+ PROCESSING CSUB PACKAGEDATA
+ END OF CSUB PACKAGEDATA
+
+ CSUB PACKAGE INTERBED DATA
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ INTERBED          CELLID          CDELAY      PCS       THICK       RNB       SSV_CC     SSV_CR     THETA        KV         H0     BOUNDNAME                               
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1                (1,1,2)          DELAY    -1.00       1.00       1.00       1.000E-02  1.000E-05  0.450      2.500E-06  1.00      IB1                                     
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+The observation utility is active for "EX-GWF-CSUB-P02B"
+ # File generated by Flopy version 3.9.1 on 06/26/2025 at 10:48:07.
+
+Processing observation options:
+
+Text output number of digits of precision set to: 10
+The PRINT_INPUT option has been specified.
+
+
+ OBSERVATIONS READ FROM FILE "ex-gwf-csub-p02b.obs"
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ NAME                                     TYPE                                       TIME         LOCATION DATA                              OUTPUT FILENAME                                                                 
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ H1_1_2                                   CONTINUOUS  HEAD                           ALL TIMES    "  1 1 2"                                  gwf_obs.csv                                                                     
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1017
+      FILE NAME: ex-gwf-csub-p02b.dis.grb
+
+ OPENED ex-gwf-csub-p02b.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1017   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ # File generated by Flopy version 3.9.1 on 06/26/2025 at 10:48:07.
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1018
+      FILE NAME: ex-gwf-csub-p02.cbc
+
+ OPENED ex-gwf-csub-p02.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1018   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1019
+      FILE NAME: ex-gwf-csub-p02.hds
+
+ OPENED ex-gwf-csub-p02.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1019   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE SAVED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+
+
+ PROCESSING STORAGE PERIOD DATA
+ END PROCESSING STORAGE PERIOD DATA
+
+
+ STRESS PERIOD 1 IS TRANSIENT
+
+
+ REUSING CSUBS FROM LAST STRESS PERIOD
+
+ CSUB PACKAGE CALCULATED INITIAL INTERBED STRESSES AT THE CELL BOTTOM
+ ---------------------------------------------------------------------------------------------------------------------------
+ INTERBED                                                          PRECONSOLIDATION                                         
+ NUMBER            CELLID        GEOSTATIC STRESS EFFECTIVE STRESS      STRESS      BOUNDNAME                               
+ ---------------------------------------------------------------------------------------------------------------------------
+ 1                (1,1,2)         2000.00000       1000.00000       999.000000      IB1                                     
+ ---------------------------------------------------------------------------------------------------------------------------
+
+
+
+ CSUB PACKAGE CALCULATED INITIAL DELAY INTERBED STRESSES
+ --------------------------------------------------------------------------------------------------------------------------------------
+ INTERBED                                                                     PRECONSOLIDATION                                         
+ NUMBER            CELLID        DELAY CELL GEOSTATIC STRESS EFFECTIVE STRESS      STRESS      BOUNDNAME                               
+ --------------------------------------------------------------------------------------------------------------------------------------
+ 1                (1,1,2)        1           1998.10526       998.052632       998.052632      IB1                                     
+                                 2           1998.21053       998.105263       998.105263                                              
+                                 3           1998.31579       998.157895       998.157895                                              
+                                 4           1998.42105       998.210526       998.210526                                              
+                                 5           1998.52632       998.263158       998.263158                                              
+                                 6           1998.63158       998.315789       998.315789                                              
+                                 7           1998.73684       998.368421       998.368421                                              
+                                 8           1998.84211       998.421053       998.421053                                              
+                                 9           1998.94737       998.473684       998.473684                                              
+                                 10          1999.05263       998.526316       998.526316                                              
+                                 11          1999.15789       998.578947       998.578947                                              
+                                 12          1999.26316       998.631579       998.631579                                              
+                                 13          1999.36842       998.684211       998.684211                                              
+                                 14          1999.47368       998.736842       998.736842                                              
+                                 15          1999.57895       998.789474       998.789474                                              
+                                 16          1999.68421       998.842105       998.842105                                              
+                                 17          1999.78947       998.894737       998.894737                                              
+                                 18          1999.89474       998.947368       998.947368                                              
+                                 19          2000.00000       999.000000       999.000000                                              
+ --------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ CSUB PACKAGE COMPRESSION INDICES
+ ----------------------------------------------------------------------------------------------------------
+ INTERBED                                                                                                  
+ NUMBER            CELLID               CC               CR        BOUNDNAME                               
+ ----------------------------------------------------------------------------------------------------------
+ 1                (1,1,2)         20.9326053       2.093260534E-02 IB1                                     
+ ----------------------------------------------------------------------------------------------------------
+
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="2" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      2, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    2, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="3" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      3, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    3, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="4" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      4, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    4, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="5" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      5, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    5, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="6" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      6, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    6, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="7" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      7, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    7, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="8" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      8, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    8, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="9" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP      9, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP    9, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="10" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     10, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   10, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="11" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     11, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   11, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="12" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     12, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   12, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="13" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     13, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   13, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="14" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     14, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   14, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="15" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     15, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   15, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="16" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     16, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   16, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="17" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     17, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   17, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="18" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     18, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   18, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="19" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     19, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   19, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="20" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     20, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   20, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="21" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     21, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   21, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="22" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     22, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   22, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="23" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     23, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   23, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="24" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     24, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   24, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="25" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     25, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   25, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="26" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     26, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   26, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="27" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     27, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   27, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="28" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     28, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   28, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="29" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     29, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   29, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="30" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     30, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   30, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="31" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     31, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   31, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="32" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     32, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   32, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="33" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     33, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   33, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="34" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     34, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   34, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="35" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     35, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   35, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="36" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     36, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   36, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="37" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     37, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   37, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="38" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     38, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   38, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="39" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     39, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   39, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="40" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     40, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   40, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="41" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     41, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   41, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="42" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     42, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   42, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="43" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     43, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   43, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="44" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     44, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   44, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="45" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     45, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   45, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="46" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     46, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   46, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="47" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     47, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   47, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="48" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     48, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   48, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="49" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     49, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   49, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="50" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     50, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   50, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="51" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     51, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   51, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="52" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     52, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   52, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="53" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     53, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   53, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="54" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     54, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   54, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="55" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     55, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   55, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="56" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     56, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   56, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="57" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     57, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   57, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="58" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     58, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   58, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="59" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     59, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   59, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="60" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     60, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   60, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="61" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     61, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   61, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="62" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     62, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   62, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="63" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     63, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   63, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="64" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     64, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   64, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="65" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     65, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   65, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="66" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     66, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   66, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="67" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     67, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   67, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="68" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     68, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   68, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="69" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     69, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   69, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="70" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     70, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   70, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="71" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     71, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   71, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="72" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     72, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   72, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="73" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     73, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   73, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="74" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     74, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   74, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="75" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     75, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   75, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="76" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     76, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   76, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="77" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     77, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   77, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="78" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     78, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   78, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="79" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     79, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   79, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="80" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     80, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   80, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="81" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     81, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   81, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="82" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     82, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   82, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="83" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     83, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   83, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="84" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     84, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   84, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="85" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     85, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   85, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="86" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     86, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   86, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="87" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     87, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   87, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="88" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     88, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   88, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="89" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     89, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   89, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="90" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     90, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   90, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="91" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     91, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   91, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="92" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     92, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   92, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="93" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     93, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   93, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="94" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     94, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   94, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="95" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     95, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   95, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="96" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     96, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   96, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="97" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     97, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   97, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="98" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     98, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   98, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="99" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP     99, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP   99, STRESS PERIOD    1
+
+end timestep
+
+
+start timestep kper="1" kstp="100" mode="normal"
+
+ UBDSV1 SAVING           STO-SS ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL EX-GWF-CSUB-P02B PACKAGE NPF             CONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE NPF              ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-CGELASTIC  ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV06 SAVING    CSUB-ELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV06 SAVING  CSUB-INELASTIC  IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CSUB             ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV1 SAVING  CSUB-WATERCOMP  ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL EX-GWF-CSUB-P02B PACKAGE EX-GWF-CSUB-P02BCONNECTED TO MODEL EX-GWF-CSUB-P02B PACKAGE CHD_0            ON UNIT   1018 AT TIME STEP    100, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1019 AT END OF TIME STEP  100, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP  100, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+      CSUB-CGELASTIC =           0.0000        CSUB-CGELASTIC =           0.0000     CSUB                             
+        CSUB-ELASTIC =           0.0000          CSUB-ELASTIC =           0.0000     CSUB                             
+      CSUB-INELASTIC =       9.2644E-03        CSUB-INELASTIC =       1.8349E-06     CSUB                             
+      CSUB-WATERCOMP =           0.0000        CSUB-WATERCOMP =           0.0000     CSUB                             
+                 CHD =           0.0000                   CHD =           0.0000     CHD_0                            
+
+            TOTAL IN =       9.2644E-03              TOTAL IN =       1.8349E-06
+
+          OUT:                                     OUT:
+          ----                                     ----
+              STO-SS =           0.0000                STO-SS =           0.0000     STORAGE                          
+      CSUB-CGELASTIC =           0.0000        CSUB-CGELASTIC =           0.0000     CSUB                             
+        CSUB-ELASTIC =           0.0000          CSUB-ELASTIC =           0.0000     CSUB                             
+      CSUB-INELASTIC =           0.0000        CSUB-INELASTIC =           0.0000     CSUB                             
+      CSUB-WATERCOMP =           0.0000        CSUB-WATERCOMP =           0.0000     CSUB                             
+                 CHD =       9.2649E-03                   CHD =       1.8359E-06     CHD_0                            
+
+           TOTAL OUT =       9.2649E-03             TOTAL OUT =       1.8359E-06
+
+            IN - OUT =      -5.0279E-07              IN - OUT =      -9.7886E-10
+
+ PERCENT DISCREPANCY =          -0.01     PERCENT DISCREPANCY =          -0.05
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP  100 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH 4.14581E+06  69097.      1151.6      47.984     0.13137    
+ STRESS PERIOD TIME 8.64000E+07 1.44000E+06  24000.      1000.0      2.7379    
+         TOTAL TIME 8.64000E+07 1.44000E+06  24000.      1000.0      2.7379    
+
+
+end timestep
+
+
+ PERCENT COMPACTION WAS LESS THAN 1 PERCENT IN ALL INTERBEDS
+
+ COARSE-GRAINED STORAGE PERCENT COMPACTION WAS LESS THAN 1 PERCENT IN ALL CELLS
