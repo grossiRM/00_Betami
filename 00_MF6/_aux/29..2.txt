@@ -1,0 +1,66 @@
+def plot_compaction(sim, silent=True):
+    with styles.USGSPlot():
+        name = sim.name
+
+fig, axes = plt.subplots(ncols=2, nrows=3, figsize=(6,6), sharex=True, constrained_layout=True)
+axes = axes.flatten()
+
+idx = 0
+ax = axes[idx]
+ax.set_xlim(0, 120)
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Interbed compaction\n{compaction_heading[0]}"
+styles.heading(ax, letter="A", heading=ht)
+styles.remove_edge_ticks(ax)
+
+idx += 1
+ax = axes[idx]
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Interbed compaction\n{compaction_heading[1]}"
+styles.heading(ax, letter="B", heading=ht)
+styles.remove_edge_ticks(ax)
+
+idx += 1
+ax = axes[idx]
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Coarse-grained compaction\n{compaction_heading[0]}"
+styles.heading(ax, letter="C", heading=ht)
+styles.remove_edge_ticks(ax)
+
+idx += 1
+ax = axes[idx]
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Coarse-grained compaction\n{compaction_heading[1]}"
+styles.heading(ax, letter="D", heading=ht)
+styles.remove_edge_ticks(ax)
+styles.graph_legend(ax, ncol=2, loc="lower right")
+
+idx += 1
+ax = axes[idx]
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Total compaction\n{compaction_heading[0]}"
+styles.heading(ax, letter="E", heading=ht)
+styles.remove_edge_ticks(ax)
+ax.set_ylabel(" ")
+ax.set_xlabel(" ")
+
+idx += 1
+ax = axes.flat[idx]
+ax.set_ylim(0, 1)
+plot_compaction_values(ax, sim, tagbase=plot_tags[idx])
+ht = f"Total compaction\n{compaction_heading[1]}"
+styles.heading(ax, letter="F", heading=ht)
+styles.remove_edge_ticks(ax)
+
+ax = fig.add_subplot(111, frame_on=False, xticks=[], yticks=[])
+ax.set_ylabel(
+    "Downward vertical displacement at the top of the model layer, in meters"
+)
+ax.set_xlabel("Simulation time, in years")
+
+plt.show()

@@ -1,0 +1,78 @@
+sim = build_models() ; gwf = sim.get_model(sim_name) ; name = 'ex-gwf-csub-p04' ; extents = gwf.modelgrid.extent  #  name = sim.name
+
+hobj = gwf.output.head()   ; h0 = hobj.get_data(kstpkper=(0, 0)) ; h1 = hobj.get_data(kstpkper=(59, 1)) ; hsxs0 = h0[0, 8, :] ; hsxs1 = h1[0, 8, :]
+dx   = gwf.dis.delr.array  ; hxloc = np.arange(1000, 2000.0 * 15, 2000.0) ; y = 2000.0 * 11.5  ; xsloc = [(extents[0], extents[1]), (y, y)]
+
+w1loc = (9.5 * 2000.0, 11.75 * 2000.0) ; w2loc = (6.5 * 2000.0, 8.5 * 2000.0)
+
+fig = plt.figure(figsize=(6.8, 5), constrained_layout=True)
+
+gs = mpl.gridspec.GridSpec(7, 10, figure=fig, wspace=100)
+plt.axis("off")
+
+ax = fig.add_subplot(gs[:, 0:6])
+
+mm = flopy.plot.PlotMapView(model=gwf, ax=ax, extent=extents)
+mm.plot_grid(lw=0.5, color="0.5")
+mm.plot_bc(ftype="WEL", kper=1, plotAll=True)
+mm.plot_bc(ftype="CHD", color="blue")
+mm.plot_bc(ftype="RCH", color="green")
+mm.plot_inactive(color_noflow="0.75")
+mm.ax.plot(xsloc[0], xsloc[1], color="orange", lw=1.5)
+
+cl = mm.contour_array(h0,masked_values=[1.0e30],levels=np.arange(115, 200, 5),colors="black",linestyles="dotted",linewidths=0.75,)
+ax.clabel(cl, fmt="%3i", inline_spacing=0.1)
+
+ax = fig.add_subplot(gs[0:5, 6:])
+
+mm = flopy.plot.PlotCrossSection(model=gwf, ax=ax, line={"row": 8})
+mm.plot_grid(lw=0.5, color="0.5")
+
+mm.ax.plot(-1000,-1000,"s",ms=5,color="green",mec="black",mew=0.5,label="Recharge",)
+mm.ax.plot(-1000, -1000, "s", ms=5, color="red", mec="black", mew=0.5, label="Well")
+mm.ax.plot(-1000,-1000,"s",ms=5,color="blue",mec="black",mew=0.5,label="Constant head",)
+mm.ax.plot(-1000,-1000,"s",ms=5,color="0.75",mec="black",mew=0.5,label="Inactive",)
+mm.ax.plot([-1000, -1001],[-1000, -1000],color="orange",lw=1.5,label="Cross-section line",)
+ax.fill_between([0, dx.sum()], y1=150, y2=-100, color="cyan", alpha=0.5)
+ax.fill_between([0, dx.sum()], y1=-100, y2=-150, color="#D2B48C", alpha=0.5)
+ax.fill_between([0, dx.sum()], y1=-150, y2=-350, color="#00BFFF", alpha=0.5)
+ax.fill_between([dx.cumsum()[8], dx.cumsum()[9]], y1=50, y2=-100, color="red", lw=0)
+
+ax.plot(hxloc,hsxs0,lw=0.75,color="black",ls="dotted",label="Steady-state\nwater level",)
+ax.plot(hxloc,hsxs1,lw=0.75,color="black",ls="dashed",label="Water-level\nafter period 2",)
+ax.set_ylabel("Elevation, in meters")
+ax.set_xlabel("x-coordinate along model row 9, in meters")
+styles.graph_legend(mm.ax,ncol=2,bbox_to_anchor=(0.7, -0.6),borderaxespad=0,frameon=False,loc="lower center",)
+plt.show()
+
+
+
+
+figure_size = (6.8, 5.5) ; arrow_props = dict(facecolor="black", arrowstyle="-", lw=0.5)
+plot_tags = ("W1L","W2L","S1L","S2L","C1L","C2L",)      ; compaction_heading = ("row 9, column 10", "row 12, column 7")
+def get_csub_observations(sim):
+    sim = build_models() ; gwf = sim.get_model(sim_name) ; csub_obs = gwf.csub.output.obs().data ; csub_obs["totim"] /= 365.25 ; name = 'ex-gwf-csub-p04'
+    slist = [name for name in csub_obs.dtype.names if "PC" in name]
+    for tag in slist:
+        csub_obs[tag][0] = csub_obs[tag][1]
+    sk_tags = ("SK1L2","SK2L4",)
+    for tag in sk_tags:
+        if tag in csub_obs.dtype.names:
+            csub_obs[tag][0] = csub_obs[tag][1]
+    return csub_obs
+
+def calc_compaction_at_surface(sim):
+    csub_obs = get_csub_observations(sim)
+    for tag in plot_tags:
+        for k in (3, 2, 1):
+            tag0 = f"{tag}{k}" ; tag1 = f"{tag}{k + 1}" ; csub_obs[tag0] += csub_obs[tag1]
+    return csub_obs
+
+def plot_compaction_values(ax, sim, tagbase="W1L"):
+    colors = ["#FFF8DC", "#D2B48C", "#CD853F", "#8B4513"][::-1]
+    obs = calc_compaction_at_surface(sim)
+    for k in range(nlay):
+        fc = colors[k]
+        tag = f"{tagbase}{k + 1}"
+        label = f"Layer {k + 1}"
+        ax.fill_between(obs["totim"], obs[tag], y2=0, color=fc, label=label)
