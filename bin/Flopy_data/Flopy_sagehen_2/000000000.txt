@@ -1,0 +1,6 @@
+err
+
+sim.set_sim_path(sim_ws)
+
+
+ # most subclasses have a modelgrid property, but not MfUsg

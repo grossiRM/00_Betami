@@ -1,7 +1,6 @@
 ---------------------------------------------------------------------------------------------------------------------- install	
-Github 			https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely
-	git init		git add .	git commit -m "001"	
-	git push origin  	git pull ()	50 MB(Max!)
+Github 			https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely		12:20 !
+			git init		git add .	git commit -m "001"	git push origin  				[otherwise] git pull ()	50 MB(Max!)
 Anaconda		https://www.youtube.com/watch?v=CnHxJ48Eeug
 Jupyter Notebook 	https://www.youtube.com/watch?v=HW29067qVWk
 ---------------------------------------------------------------------------------------------------------------------- run	
