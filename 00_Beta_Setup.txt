@@ -10,3 +10,27 @@ conda info --envs
 	conda activate gmdsitut		conda activate gis
 jupyter notebook
 ---------------------------------------------------------------------------------------------------------------------- start scripting!
+
+
+
+
+Again ..		
+__________________________________ New remote | local | REPO
+Github 			https://www.youtube.com/watch?v=jq1ROBgmEzw&t=2s
+at new folder (name) -- open git bash here
+	git init
+	touch alpha.txt
+	git add .
+	git commit -m "first commit"
+	git log --oneline		
+create a new REPO
+	copy adress -- http//... 
+back at the folder (name) -- already oppened bash prompt 
+	git remote add origin http//...
+	// git pull origin main
+	git rebase origin/main
+	git log --oneline
+	git switch main
+	git merge
+	//git push origin		
+______________________________________________ !

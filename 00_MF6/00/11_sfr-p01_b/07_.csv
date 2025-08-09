@@ -1,9 +1,0 @@
-,0,1,2
-0,r01_stage,stage,3
-1,r02_stage,stage,14
-2,r03_stage,stage,26
-3,r04_stage,stage,35
-4,r01_flow,downstream-flow,3
-5,r02_flow,downstream-flow,14
-6,r03_flow,downstream-flow,26
-7,r04_flow,downstream-flow,35
