@@ -10,12 +10,26 @@ conda info --envs
 	conda activate gmdsitut		conda activate gis
 jupyter notebook
 ---------------------------------------------------------------------------------------------------------------------- start scripting!
-
-
-
-
+* Possible config err at first copy / clone ... <> Code Local HTTPS SSH Git HubCLI ... workout!
+---------------------------------------------------------------------------------------------------------------------- 
 Again ..		
-__________________________________ New remote | local | REPO
+create a new REPO
+	copy adress -- http//... 		*
+________
+back at the folder (name) -- already oppened bash prompt 
+	git init
+	git remote add origin http//...
+	git pull origin main
+	//git rebase origin/main
+	//git log --oneline
+	git switch main			* master
+	git merge
+________
+	git add .
+	git commit -m "first commit"
+	git log --oneline		
+______________________________________________ !
+New remote | local | REPO
 Github 			https://www.youtube.com/watch?v=jq1ROBgmEzw&t=2s
 at new folder (name) -- open git bash here
 	git init
@@ -23,14 +37,4 @@ at new folder (name) -- open git bash here
 	git add .
 	git commit -m "first commit"
 	git log --oneline		
-create a new REPO
-	copy adress -- http//... 
-back at the folder (name) -- already oppened bash prompt 
-	git remote add origin http//...
-	// git pull origin main
-	git rebase origin/main
-	git log --oneline
-	git switch main
-	git merge
-	//git push origin		
 ______________________________________________ !
