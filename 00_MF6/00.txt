@@ -5,7 +5,8 @@ E:\15_REPOS\00_BETAMI\00_MF6\99_Summary_MF6_.xlsx				Excel	02
 Linkedin_posts:
 06								Next 		30 - 36 (37  - 46 again)
 -								- 		-  - -  -	
-05								Next 		23 - 29 (07) - 26_29+02(Jacob, SUB)
+05	Seguindo com a lista |USGS|. Modelagem de fluxo de águas subterrâneas .. 
+	https://www.linkedin.com/pulse/seguindo-com-lista-usgs-modelagem-de-fluxo-%25C3%25A1guas-rodrigo-m-grossi-rl3wf/?trackingId=KQI73aH8RIOPW%2F6OG3V3sg%3D%3D
 -								- 		-  - -  -	
 04	MODFLOW | Breaking the MF6 code				Exemplos	14 - 22 (08)
 -	https://www.linkedin.com/pulse/modflow-breaking-mf6-code-iv-rodrigo-m-grossi-jsplf/?trackingId=MHA0nSPUT%2BeVSbUXPUyddg%3D%3D
