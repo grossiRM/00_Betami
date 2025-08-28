@@ -3,15 +3,17 @@ Folders in continual update, seeking to rationalize the learning curve. <br> | M
 
 
 Take a look at some examples:<br>
-[https://github.com/grossiRM/00_Betami/blob/main/00_MF6/01_ex-gwf-twri_b.ipynb]<br> 
-[https://github.com/grossiRM/00_Betami/blob/main/00_MF6/19_ex-gwf-bump_b.ipynb]<br> 
-[https://github.com/grossiRM/00_Betami/blob/main/00_MF6/28_ex-gwf-csub-p03_b.ipynb]<br> 
+[https://github.com/grossiRM/00_Betami/blob/main/00_MF6/21_ex-gwf-hani_b.ipynb]<br> 
+[next]<br> 
 
 Keep track of the originals: <br>
 https://modflow6-examples.readthedocs.io/en/master/examples.html		Sources	MF6, floPy
 
 Linkedin_posts:
 -								- 		-  - -  -	
+06	MF|PEST
+	[https://www.linkedin.com/pulse/mf-pest-trough-despair-isto-mesmo-o-cocho-do-rodrigo-m-grossi-spzuf/?trackingId=HH15U6tGQhWZwZ9qUVfpGg%3D%3D] <br> 
+-
 05	Seguindo com a lista |USGS|. Modelagem de fluxo de águas subterrâneas .. <br> 
 	[https://www.linkedin.com/pulse/seguindo-com-lista-usgs-modelagem-de-fluxo-%25C3%25A1guas-rodrigo-m-grossi-rl3wf/?trackingId=KQI73aH8RIOPW%2F6OG3V3sg%3D%3D] <br> 
 -								- 		-  - -  -	
