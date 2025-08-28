@@ -11,7 +11,8 @@ Keep track of the originals: <br>
 [https://modflow6-examples.readthedocs.io/en/master/notebook_examples.html]		Sources	MF6, floPy
 
 Linkedin_posts:
--								- 		-  - -  -	
+-								- 		-  - -  
+-	
 06	GMSDI	_part1_06_freyberg_GLM_surf <br>
 	[https://www.linkedin.com/pulse/mf-pest-trough-despair-isto-mesmo-o-cocho-do-rodrigo-m-grossi-spzuf/?trackingId=HH15U6tGQhWZwZ9qUVfpGg%3D%3D] <br> 
 -
