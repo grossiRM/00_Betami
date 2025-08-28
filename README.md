@@ -4,10 +4,10 @@ Folders in continual update, seeking to rationalize the learning curve. <br> | M
 
 Take a look at some examples:<br>
 [https://github.com/grossiRM/00_Betami/blob/main/00_MF6/21_ex-gwf-hani_b.ipynb]<br> 
-[next]<br> 
+[https://github.com/grossiRM/00_Betami/blob/main/98_Random/97_then/06_Plot_3D/04.ipynb]<br> 
 
 Keep track of the originals: <br>
-https://modflow6-examples.readthedocs.io/en/master/examples.html		Sources	MF6, floPy
+[https://modflow6-examples.readthedocs.io/en/master/notebook_examples.html]		Sources	MF6, floPy
 
 Linkedin_posts:
 -								- 		-  - -  -	
