@@ -1,7 +1,3 @@
-https://modflow6-examples.readthedocs.io/en/master/examples.html		Sources	MF6, floPy
-E:\15_REPOS\00_BETAMI\99_Ye_are_welcome\99_xls\01_Summary.xlsx			Excel	01
-E:\15_REPOS\00_BETAMI\00_MF6\99_Summary_MF6_.xlsx				Excel	02 	
-
 Linkedin_posts:
 06								Next 		30 - 36 (37  - 46 again)
 -								- 		-  - -  -	

@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------------------------- install	
+Github 			https://www.theserverside.com/video/How-to-use-the-git-remote-add-origin-command-to-push-remotely		12:20 !
+			git init		git add .	git commit -m "001"	git push origin  				[otherwise] git pull ()	50 MB(Max!)
+Anaconda		https://www.youtube.com/watch?v=CnHxJ48Eeug
+Jupyter Notebook 	https://www.youtube.com/watch?v=HW29067qVWk
+---------------------------------------------------------------------------------------------------------------------- run	
+Anaconda Prompt		# Tips in your directory OPEN GIT BASH HERE	# CTRL INSERT	CTRL C
+conda env create -f environment_gmdsitut.yml 
+conda info --envs
+	conda activate gmdsitut		conda activate gis
+jupyter notebook
+---------------------------------------------------------------------------------------------------------------------- start scripting!
+* Possible config err at first copy / clone ... <> Code Local HTTPS SSH Git HubCLI ... workout!
+---------------------------------------------------------------------------------------------------------------------- 
+Again ..		
+create a new REPO
+	copy adress -- http//... 		*
+________
+back at the folder (name) -- already oppened bash prompt 
+	git init
+	git remote add origin http//...
+	git pull origin main
+	//git rebase origin/main
+	//git log --oneline
+	git switch main			* master
+	git merge
+________
+	git add .
+	git commit -m "first commit"
+	git log --oneline		
+______________________________________________ !
+New remote | local | REPO
+Github 			https://www.youtube.com/watch?v=jq1ROBgmEzw&t=2s
+at new folder (name) -- open git bash here
+	git init
+	touch alpha.txt
+	git add .
+	git commit -m "first commit"
+	git log --oneline		
+______________________________________________ !
+.gitignore
+git rm -rf --cached .
+git add .
+
