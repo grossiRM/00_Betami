@@ -2,6 +2,7 @@ __pycache__/
 .ipynb_checkpoints/
 .github/
 .gitignore
+.github/workflows
 
 a00
 
@@ -12,3 +13,4 @@ prior.jcb
 00_mf6examples.pdf
 
 libmf6.dll
+mkl_mc3.2.dll

@@ -38,3 +38,7 @@ at new folder (name) -- open git bash here
 	git commit -m "first commit"
 	git log --oneline		
 ______________________________________________ !
+.gitignore
+git rm -rf --cached .
+git add .
+
