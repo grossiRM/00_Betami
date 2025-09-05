@@ -5,13 +5,13 @@ Folders in continual update, seeking to rationalize the learning curve. <br> | M
 Take a look at some examples:<br>
 [https://github.com/grossiRM/00_Betami/blob/main/00_MF6/21_ex-gwf-hani_b.ipynb] <br> 
 .. <br> 
-[https://github.com/grossiRM/00_Betami/blob/main/99_Ye_are_Welcome/01_Algebra_Linear/001_Owl_SVD.ipynb] <br> 
+[https://github.com/grossiRM/00_Betami/blob/main/99_Ye_are_welcome/01_Algebra_Linear/001_Owl_SVD.ipynb] <br> 
 
 Keep track of the originals: <br>
 [https://modflow6-examples.readthedocs.io/en/master/notebook_examples.html] <br> 
 
 
-Linkedin_posts:
+## Linkedin_posts:
 -								- 		-  - -  -
 06	GMSDI	_part1_06_freyberg_GLM_surf <br>
 	[https://www.linkedin.com/pulse/mf-pest-trough-despair-isto-mesmo-o-cocho-do-rodrigo-m-grossi-spzuf/?trackingId=HH15U6tGQhWZwZ9qUVfpGg%3D%3D] <br> 
