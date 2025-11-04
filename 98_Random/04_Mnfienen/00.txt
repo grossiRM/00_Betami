@@ -1,3 +1,0 @@
-https://doi-usgs.github.io/modflow-setup/
-
-E:\15_REPOS\a04_JDhughes\python-for-hydrology\notebooks\part1_flopy	08_Modflow-setup-demo.ipynb	pleasant
