@@ -1,15 +1,10 @@
-# 01_Betami
-Folders in continual update, seeking to rationalize the learning curve. <br> | MODFLOW | Py | ![](https://komarev.com/ghpvc/?username=grossiRM)
+Folders in continual update, seeking to rationalize the learning curve. <br> | MODFLOW | Python | ![](https://komarev.com/ghpvc/?username=grossiRM)
 
+## Destaques:
+[https://github.com/grossiRM/00_Betami/blob/main/01_MF6/11_ex-gwf-sfr-p01_b.ipynb] <br> 
 
-Take a look at some examples:<br>
-[https://github.com/grossiRM/00_Betami/blob/main/00_MF6/21_ex-gwf-hani_b.ipynb] <br> 
-.. <br> 
-[https://github.com/grossiRM/00_Betami/blob/main/99_Ye_are_welcome/01_Algebra_Linear/001_Owl_SVD.ipynb] <br> 
-
-Keep track of the originals: <br>
+## Originals:
 [https://modflow6-examples.readthedocs.io/en/master/notebook_examples.html] <br> 
-
 
 ## Linkedin_posts:
 -								- 		-  - -  -
