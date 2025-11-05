@@ -1,0 +1,46 @@
+import numpy as np
+from mymf import mymf
+
+def f(Q):
+    model = mymf()
+    model.run(Q)
+
+    objval = Q
+    minhead = model.minhead()
+    if minhead <= -1.0:
+        penalty = 1.e+5 * (minhead + 1.0) ** 2
+        objval = objval + penalty
+        print("pumpting rate: %f, penalty : %f, objval: %f" % (Q, penalty, objval))
+    else:
+        print("pumpting rate: %f, objval: %f" % (Q, objval))
+
+    return objval
+
+import scipy.optimize as opt
+# Use Nelder-Mead/Simplex method for this problem
+results = opt.minimize(f,x0=-50.,method="Nelder-Mead",tol = 1.e-2)
+#results = opt.minimize(f,x0=-50.,method="BFGS",options={'gtol': 0.1,'disp':True,'eps': 1.e-6})
+
+# What do you expect changes in head with variable pumping rates?
+#model = mymf()
+#model.run(-1)
+#model.minhead()
+#model.run(-10)
+#model.minhead()
+#model.run(-100)
+#model.minhead()
+
+# plot pumping rate vs. head drop
+#model = mymf()
+#import matplotlib.pyplot as plt
+#x = np.linspace(-900,-1000,101)
+#y = []
+#for i in x:
+#    model.run(i)
+#    y.append(model.minhead())
+#plt.plot(x,y,'.-')
+#plt.xlabel('Q')
+#plt.ylabel('head drop')
+#plt.show()
+
+

@@ -1,0 +1,10 @@
+"""
+example (adapted) from flopy document tutorial2 (https://modflowpy.github.io/flopydoc/tutorial2.html)
+similar to the tutorial 1 but now it becomes transient flow model in an unconfined aquifer
+Time varying boundaries are applied
+
+Initial conditions – head is 10.0 everywhere
+Period 1 (1 day) – steady state with left and right GHB stage = 10.
+Period 2 (100 days) – left GHB with stage = 10., right GHB with stage set to 0.
+Period 3 (100 days) – pumping well at model center with rate = -10., left and right GHB = 10., and 0.
+"""

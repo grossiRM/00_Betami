@@ -7,3 +7,5 @@ https://flopy.readthedocs.io/en/3.4.2/Notebooks/mf6_parallel_model_splitting_exa
 https://flopy.readthedocs.io/en/3.4.3/examples.html#modflow-6-examples
 
 https://modflow6-examples.readthedocs.io/en/latest/examples.html
+
+	https://modflow6-examples.readthedocs.io/en/latest/_notebooks/ex-gwt-prudic2004t2.html

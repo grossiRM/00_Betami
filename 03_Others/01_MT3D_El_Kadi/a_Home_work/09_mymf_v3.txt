@@ -1,0 +1,132 @@
+"""
+mymf version 3:
+- incorporate flat initial condition as input (line 170
+- plot with automatically generated contour levels (line 128), ugly colorbar and title
+"""
+import numpy as np
+import flopy
+import flopy.utils.binaryfile as bf
+import matplotlib.pyplot as plt
+
+class mymf:
+    """
+    modflow model for multiple well pumping
+    every values are represented as 2D np array
+    """
+    def __init__(self,init_head):
+        """
+        initialize parameters
+        :param init_head: integer
+        """
+
+        # Assign name for modflow model object
+        modelname = 'modflow'
+
+        # Model domain and grid definition - we consider those values as given
+        Lx = 1000.
+        Ly = 1000.
+        ztop = 0.
+        zbot = -50.
+        nlay = 1
+        nrow = 10
+        ncol = 10
+        delr = Lx / ncol  # spacings along a row, can be an array
+        delc = Ly / nrow  # spacings along a column, can be an array
+        delv = (ztop - zbot) / nlay
+        botm = np.linspace(ztop, zbot, nlay + 1)
+
+        # Variables for the BAS package
+        # active > 0, inactive = 0, or constant head < 0
+        ibound = np.ones((nlay, nrow, ncol), dtype=np.int32)
+        ibound[:, :, 0] = -1
+        ibound[:, :, -1] = -1
+
+        # initial head value also serves as boundary conditions
+        strt = np.ones((nlay, nrow, ncol), dtype=np.float32)
+        strt[:, :, 0] = init_head
+        strt[:, :, -1] = init_head
+
+        # to access variables within the class
+        self.nrow = nrow
+        self.ncol = ncol
+        self.modelname = modelname
+
+        # Create modflow model object
+        self.mf = flopy.modflow.Modflow(modelname, exe_name='mf2005')
+
+        # Create the discretization object
+        dis = flopy.modflow.ModflowDis(self.mf, nlay, nrow, ncol, delr=delr, delc=delc,
+                                       top=ztop, botm=botm[1:])
+
+        # Add BAS package
+        bas = flopy.modflow.ModflowBas(self.mf, ibound=ibound, strt=strt)
+
+        # Add LPF package to the MODFLOW model
+        # hk array of horizontal hydraulic conductivity, vka vertical hydraulic conductivity
+        lpf = flopy.modflow.ModflowLpf(self.mf, hk=10., vka=10., ipakcb=53)
+
+        # Add OC package to the MODFLOW model
+        spd = {(0, 0): ['print head', 'print budget', 'save head', 'save budget']}
+        oc = flopy.modflow.ModflowOc(self.mf, stress_period_data=spd, compact=True)
+
+        # Add PCG package to the MODFLOW model
+        pcg = flopy.modflow.ModflowPcg(self.mf)
+
+    def run(self, well_rcs, Qs):
+        wel_sp = []
+        for items in zip(well_rcs,Qs):
+            wel_sp.append([0, items[0][0], items[0][1], items[1]])  # lay, row, col index, pumping rate
+            stress_period_data = {0: wel_sp}  # define well stress period {period, well info dictionary}
+
+        wel = flopy.modflow.ModflowWel(self.mf, stress_period_data=stress_period_data)
+
+        # MODFLOW input
+        # Write the MODFLOW model input files
+        # If we cannot (over)write input files, try to write until it succeeds
+        while True:
+            try:
+                self.mf.write_input()
+            except OSError as err:
+                print("File writing error: %s" % (err))
+            else:  # if we succeed, get out of the loop
+                break
+
+        # Run the MODFLOW model
+        success, buff = self.mf.run_model(silent=True)
+
+        return success
+
+
+    def head(self):
+        """
+            minimum head value
+        """
+
+        hds = bf.HeadFile(self.modelname + '.hds')
+        times = hds.get_times()  # simulation time, steady state
+        heads = hds.get_data(totim=times[-1])
+        hds.close()  # close the file object for the next run
+
+        return heads
+
+    def minhead(self):
+        """
+            minimum head value
+        """
+
+        return self.head().min()
+
+    def plot(self,title="head"):
+        fig = plt.figure(figsize=(10, 10))
+        ax = fig.add_subplot(1, 1, 1, aspect='equal')
+
+        modelmap = flopy.plot.ModelMap(model=self.mf, layer=0)
+        qm = modelmap.plot_ibound()
+        lc = modelmap.plot_grid()
+
+        levels = np.linspace(self.head().min(), self.head().max(), 11)
+        cs = modelmap.contour_array(self.head(), levels=levels)
+        fig.colorbar(cs)
+        plt.title(title)
+        plt.show()
+        return # return nothing, but function should end with return
